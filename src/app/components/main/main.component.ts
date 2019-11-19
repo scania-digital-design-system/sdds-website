@@ -4,7 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { PageService } from '../../app.service';
 // import { Item } from '../../app.interface';
 
-// import { components as docs } from 'corporate-ui-dev/.data/docs.json';
+import { components as docs } from 'corporate-ui-dev/.data/docs.json';
 
 @Component({
   selector: '[main-component]',
@@ -31,7 +31,7 @@ export class MainComponent {
         this.item = this.getPage(this.items, paths);
         this.class = this.item.url;
 
-        // this.item.content.info = (docs.find(item => item.tag === this.item.content.tag) || {})['props'];
+        this.item.content.info = (docs.find(item => item.tag === this.item.content.tag) || {})['props'];
         // Is this a bad idea, it might lead to circular references.
         this.item.parent = this.parent;
         // console.log(this.item);
