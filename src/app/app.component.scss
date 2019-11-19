@@ -1,0 +1,30 @@
+:host {
+    display: grid;
+    grid-template-areas: 
+        "nav main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 250px;
+    overflow: hidden;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #494949;
+    color: #bfbfbf;
+
+    --link-color: #fff;
+    --link-color-hover: #fff;
+    --link-color-active: #fff;
+    overflow-y: auto;
+}
+a {
+    color: #fff;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "content";
+    grid-template-rows: 100px 1fr;
+    overflow-y: auto;
+}

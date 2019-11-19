@@ -1,11 +1,64 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterModule, Router } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
+import { PageService } from './app.service';
+import { EscapeHtmlPipe, MarkdownPipe } from './app.pipe';
 
-const routes: Routes = [];
+import { PageComponent } from './components/page/page.component';
+import { TogglerComponent } from './components/toggler/toggler.component';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [
+    EscapeHtmlPipe,
+    MarkdownPipe,
+    PageComponent,
+    TogglerComponent
+  ],
+  entryComponents: [PageComponent],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([])
+  ],
+  exports: [
+    RouterModule,
+    TogglerComponent
+  ],
+  providers: [PageService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  constructor(private router: Router, private ps: PageService) {
+    this.ps.pages.subscribe(items => {
+      const routes = this.contentToRoute(items);
+
+      this.ps.setRoutes(routes);
+    });
+
+    this.ps.routes.subscribe(items => {
+      // console.log(1, items);
+
+      this.router.resetConfig([
+        ...items,
+        { path: '**', redirectTo: 'none' }
+      ]);
+    });
+  }
+
+  contentToRoute(items) {
+    return items.reduce((accumulator, item, index) => {
+      let route:any = { path: item.url, data: item.content, component: PageComponent };
+
+      if(item.items) route.children = this.contentToRoute(item.items);
+
+      let routes = [ route ];
+
+      if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
+  
+      return accumulator.concat(routes);
+    }, []);
+  }
+}

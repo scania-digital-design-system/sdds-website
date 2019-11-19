@@ -1,0 +1,11 @@
+:host {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+h2 {
+    margin: 0;
+    color: inherit;
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "id": 3,
+    "url": "info",
+    "content": {
+      "id": 3,
+      "title": "Info",
+      "description": "Some info goes here."
+    },
+    "items": [
+      {
+        "id": 1,
+        "url": "corporateui",
+        "content": {
+          "id": 1,
+          "title": "Corporate Ui",
+          "description": "[![Build Status](https://travis-ci.com/scania/corporate-ui-dev.svg?branch=master)](https://travis-ci.com/scania/corporate-ui-dev)\n[![npm version](http://img.shields.io/npm/v/corporate-ui-dev.svg?style=flat&color=1081C2)](https://npmjs.org/package/corporate-ui-dev)\n[![Github release](https://img.shields.io/github/v/tag/scania/corporate-ui-dev.svg?label=release&color=1081C2)](https://github.com/scania/corporate-ui-dev/releases)\n[![Components library](https://img.shields.io/badge/Components%20library-master-f4871a.svg)](https://d1kybmg72qo0dt.cloudfront.net/build/global/branch/master/www/index.html?selectedKind=Info&selectedStory=Corporate%20UI&full=0&addons=0&stories=1&panelRight=0)\n[![Join Slack](https://img.shields.io/badge/slack-join-%23dd3072.svg)](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n![](https://img.shields.io/github/license/scania/corporate-ui-dev.svg?style=flat)\n\n# Corporate UI Development Repository\n\nIn this repository we're developing the next generation components for Corporate UI. We're improving a lot of our findings that we've done implementing the current production version of the library: https://github.com/scania/corporate-ui\n\n**Demo page**\n\n[Simple HTML ↗](https://codepen.io/corporate-ui/pen/OYmqpr) | [Angular ↗](https://github.com/scania/corporate-ui-angular) | [React ↗](https://github.com/scania/corporate-ui-react) | [Vue ↗](https://github.com/scania/corporate-ui-vue)\n\n\n## Wiki\n\n[Github wiki](https://github.com/scania/corporate-ui-dev/wiki) includes: \n- [Developing components](https://github.com/scania/corporate-ui-dev/wiki/Developing-components)\n- [Project focus and structure](https://github.com/scania/corporate-ui-dev/wiki/Project-focus-and-structure)\n- [Upgrade from version 3 to 4](https://github.com/scania/corporate-ui-dev/wiki/Upgrade-from-version-3.x-to-4.x)\n- [Components status](https://github.com/scania/corporate-ui-dev/wiki/Component-status)\n- [Browser support](https://github.com/scania/corporate-ui-dev/wiki/Browser-Support)\n- and more. \n\n\n## Quick start\n\nSeveral options to add corporate-ui in the project: \n\n1. Add via CDN, link to the script by adding the following to the `<head></head>`.\n\n   ```\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   Replace `x` with [available releases](https://github.com/scania/corporate-ui-dev/releases).\n\n2. Install corporate-ui via NPM package by running the command below.\n\n   ```\n   npm i corporate-ui-dev\n   ```\n\n   Import component as a module with `defineCustomElements` function.\n\n   ```js\n   import { defineCustomElements } from 'corporate-ui-dev';\n\n   defineCustomElements(['c-theme', 'c-footer', 'c-content']);\n\n   // to import all components pass an 'all' value\n   // defineCustomElements('all');\n   ```\n   \n   See all available components in the [components library](https://d1kybmg72qo0dt.cloudfront.net/build/global/branch/master/www/index.html).\n\n## Styling\n\nTo apply the styling, you need to add a theme package and use c-theme component. Check out [Scania theme repository](https://github.com/scania/scania-theme/) for detail documentation.\n\n1. CDN link\n\n   Make sure to include scania-theme script BEFORE the corporate-ui script.\n   ```html\n   <script src=\"https://static.scania.com/build/global/themes/scania/1.x/scania-theme.js\"></script>\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   \n2. NPM package\n   \n   Install scania-theme package by running the command below.\n   ```shell\n   npm i scania-theme\n   ```\n   \n   Import theme in the project and use it with `addTheme` function from corporate-ui.\n   ```js\n   import { defineCustomElements, addTheme } from 'corporate-ui-dev'; \n   import { theme as scania } from 'scania-theme'; \n\n   defineCustomElements('all'); \n   addTheme(scania);\n   ```\n3. Add theme to project\n\n   Initialize the theme with the `c-theme` component. Set `global` attribute to true in order to enable bootstrap styling.\n   \n   ```html\n   <c-theme name=\"scania\" global=\"true\"></c-theme>\n   ```\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/scania/corporate-ui-dev/blob/master/CONTRIBUTING.md) for the directions to create a pull request and coding standard.\n\n- [Report bug](https://github.com/scania/corporate-ui-dev/issues/new/choose)\n- [Request feature](https://github.com/scania/corporate-ui-dev/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22)\n\n## Community\n\nGet in touch with the team and the community:\n- [Join us on slack](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n- [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac)\n\n\n## License\n\nAll CSS, HTML and JS code are available under the MIT license. The Scania brand identity, logos and photographs found in this repository are copyrighted Scania CV AB and are not available on an open source basis or to be used as examples or in any other way, if not specifically ordered by Scania CV AB.",
+          "template": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "url": "components",
+    "content": {
+      "id": 1,
+      "title": "Components",
+      "description": "Info about components."
+    },
+    "items": [
+      {
+        "id": 1,
+        "url": "overview",
+        "content": {
+          "id": 1,
+          "title": "Overview",
+          "description": "Select a item to see examples and get more information.",
+          "template": 2
+        }
+      },
+      {
+        "id": 1,
+        "url": "header",
+        "content": {
+          "id": 1,
+          "title": "Header",
+          "tag": "c-header",
+          "description": "A header display a logotype, site name, short-name, item links, and a symbol. The site name will be displayed on the right hand side of the logotype on desktop mode. Short name will be placed at the top centered in mobile mode. You can add one or several link items to the header that will be displayed at the right side of the header. This location is also used for language selectors and user menus.\n\nThere are two ways to populate link items, by adding JSON objects to item attribute, or by having it in ```slot=\"items\"```. See examples below to understand different ways of displaying header component.\n\nTo include navigation component in the header as a main navigation, you need to define the slot name such as ```slot=\"navigation\"```. The navigation is a responsive component. If you make your browser window narrower you will see how the navigation changes its appearance on mobile view.",
+          "examples": [
+            {
+              "id": 1,
+              "title": "Basic use",
+              "text": "<c-header site-name=\"App 1\">\n  <a href=\"global\" slot=\"items\">global</a>\n</c-header>\n"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
+        "id": 2,
+        "url": "footer",
+        "content": {
+          "id": 2,
+          "title": "Footer",
+          "tag": "c-footer",
+          "description": "By default, the footer element renders with a copyright text and a wordmark. You can add several few item links and social media icons to the footer. There are two ways to generate links and social media icons. Either by using the attributes or slot. To have your links as the footer links, set the slot attribute to ```slot=\"items\"```. And for social media, set the slot attribute to ```slot=\"social-media-items\"```. See examples and properties below for more information.",
+          "examples": [
+            {
+              "id": 6,
+              "title": "Basic use",
+              "text": "<c-footer>\n  <a href=\"/contact\" slot=\"items\">contact</a>\n</c-footer>"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
+        "id": 2,
+        "url": "navigation",
+        "content": {
+          "id": 2,
+          "title": "Navigation",
+          "tag": "c-navigation",
+          "description": "The navigation has a desktop mode and a mobile mode where the break point is at 992px viewport width. The navigation is highly customizable as it can host both primary and secondary items.\n\nYou can populate navigation links in two ways: JSON objects or providing it in a slot. See examples below to see how it works with different ways of populating navigation links.",
+          "examples": [
+            {
+              "id": 5,
+              "title": "Basic use",
+              "text": "<c-navigation>\n  <a href=\"/\" slot=\"primary-items\" active>home</a>\n  <a href=\"/info\" slot=\"primary-items\">info</a>\n  <a href=\"/user\" slot=\"secondary-items\">user</a>\n</c-navigation>"
+            }
+          ],
+          "template": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "url": "none",
+    "content": {
+      "id": 3,
+      "title": "Not found",
+      "description": "This page could not be found.",
+      "template": 1
+    }
+  }
+]

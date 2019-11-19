@@ -1,0 +1,30 @@
+:host {
+    padding-top: 15px;
+
+    ::ng-deep {
+
+        .btn {
+
+            &:after {
+                margin-left: auto;
+            }
+
+            + div {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+h3 {
+    display: inline-block;
+    margin: 10px 0 20px;
+}

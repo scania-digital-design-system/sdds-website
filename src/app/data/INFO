@@ -1,0 +1,74 @@
+// Some API info
+
+examples/
+[
+  {
+    id: 1,
+    title: 'Header 1',
+    text: `
+      <c-header site-name="App">
+        <a routerLink="/global" slot="items">global</a>
+      </c-header>
+    `
+  },
+  {
+    id: 5,
+    title: 'Graph 1',
+    text: '<c-graph data="{}"></c-graph>'
+  }
+]
+
+
+content/
+[
+  {
+    id: 1,
+    title: 'Components',
+    examples: [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    id: 2,
+    title: 'Patterns',
+    examples: [
+      4,
+      5,
+      6
+    ]
+  }
+]
+
+
+pages/
+[
+  {
+    id: 0,
+    path: 'components',
+    items: [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    id: 1,
+    path: 'home',
+    content: 1,
+    template: 1
+  },
+  {
+    id: 2,
+    path: 'info',
+    content: 2,
+    template: 1
+  },
+  {
+    id: 3,
+    path: 'Graph',
+    content: 3,
+    template: 2
+  }
+]
