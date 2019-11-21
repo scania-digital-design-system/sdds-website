@@ -1,10 +1,12 @@
 import { Component, HostBinding } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from '../../app.service';
-// import { Item } from '../../app.interface';
+import { Path } from '../../app.interface';
 
 import { components as docs } from 'corporate-ui-dev/.data/docs.json';
+import { name } from '../../../../package.json';
 
 @Component({
   selector: '[main-component]',
@@ -14,13 +16,13 @@ import { components as docs } from 'corporate-ui-dev/.data/docs.json';
 export class MainComponent {
   @HostBinding('class') class;
 
-  item: any = { content: {} };
-  items: Array<Object>;
-  parent: Object = {};
+  item: Path = { content: {} };
+  items: Array<Path>;
+  parent: Path = {};
   // docs: ArrayObject = {};
 
-  constructor(private router: Router, private ps: PageService) {
-    this.ps.pages.subscribe((items: Array<Object>) => {
+  constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
+    this.ps.pages.subscribe((items: Array<Path>) => {
       this.items = items;
     });
 
@@ -36,12 +38,14 @@ export class MainComponent {
         this.item.parent = this.parent;
         // console.log(this.item);
 
+        document.title = this.titleCase.transform(`${name.replace(/-/g, ' ')} | ${this.item.content.title}`);
+
         this.ps.setPage(this.item);
       }
     });
   }
 
-  getPage(items, paths) {
+  getPage(items: Array<Path>, paths: Array<String>) {
     const path = paths.shift();
     const item = items.find(sub => sub.url === path) || {};
 

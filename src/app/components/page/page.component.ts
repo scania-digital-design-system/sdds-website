@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+
 import { PageService } from '../../app.service';
-// import { Item } from '../../app.interface';
+import { Path } from '../../app.interface';
 
 import { default as templates } from '../../data/templates.json';
 
@@ -11,11 +12,11 @@ import { default as templates } from '../../data/templates.json';
   styleUrls: ['./page.component.scss']
 })
 export class PageComponent {
-  item: Object;
+  item: Path;
   template: Object;
 
   constructor(public ps: PageService) {
-    this.ps.page.subscribe((item: any) => {
+    this.ps.page.subscribe((item: Path) => {
       if(!item.id) return;
 
       // console.log(item);

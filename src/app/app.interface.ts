@@ -12,10 +12,10 @@ export interface Page {
   tag?: string;
   description?: string;
   template?: number;
-  examples?: Item[];
+  examples?: Example[];
   info?: Object[];
 }
-export interface Item {
+export interface Example {
   id?: number;
   title?: string;
   text?: string;

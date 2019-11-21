@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from './app.service';
 import { EscapeHtmlPipe, MarkdownPipe } from './app.pipe';
@@ -26,7 +27,10 @@ import { TogglerComponent } from './components/toggler/toggler.component';
     RouterModule,
     TogglerComponent
   ],
-  providers: [PageService],
+  providers: [
+    PageService,
+    TitleCasePipe
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppRoutingModule {

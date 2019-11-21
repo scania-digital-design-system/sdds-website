@@ -13,8 +13,8 @@ export class PageService {
   private _pages: BehaviorSubject<ReadonlyArray<Path>> = new BehaviorSubject([]);
   private _routes: BehaviorSubject<ReadonlyArray<Route>> = new BehaviorSubject([]);
 
-  public readonly page: Observable<Object> = this._page.asObservable();
-  public readonly pages: Observable<ReadonlyArray<Object>> = this._pages.asObservable();
+  public readonly page: Observable<Path> = this._page.asObservable();
+  public readonly pages: Observable<ReadonlyArray<Path>> = this._pages.asObservable();
   public readonly routes: Observable<ReadonlyArray<Route>> = this._routes.asObservable();
 
   constructor(/*private http: HttpClient*/) {
