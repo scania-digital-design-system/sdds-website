@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { applyPolyfills, defineCustomElements, addTheme } from 'corporate-ui-dev';
+import { defineCustomElements, addTheme } from 'corporate-ui-dev';
 import { theme as scania } from 'scania-theme';
 
 import { AppModule } from './app/app.module';
@@ -14,7 +14,5 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-applyPolyfills().then(() => {
-  defineCustomElements(window);
-  addTheme(scania);
-});
+defineCustomElements(['c-header', 'c-content']);
+addTheme(scania);
