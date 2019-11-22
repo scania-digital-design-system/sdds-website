@@ -7,7 +7,7 @@ import { default as templates } from '../../data/templates.json';
 
 @Component({
   template: templates.map(item => `
-    <ng-template [ngIf]='template.id === ${item.id}'>${item.content}</ng-template>
+    <ng-template [ngIf]='template.id === ${item.id}'>${item.items.map(sub => sub.content).join('')}</ng-template>
   `).join(''),
   styleUrls: ['./page.component.scss']
 })
