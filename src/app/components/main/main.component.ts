@@ -3,9 +3,8 @@ import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from '../../app.service';
-import { Path } from '../../app.interface';
+import { Path, Doc } from '../../app.interface';
 
-import { components as docs } from 'corporate-ui-dev/.data/docs.json';
 import { name } from '../../../../package.json';
 
 @Component({
@@ -18,12 +17,17 @@ export class MainComponent {
 
   item: Path = { content: {} };
   items: Array<Path>;
+  docs: Array<Doc>;
   parent: Path = {};
   // docs: ArrayObject = {};
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Path>) => {
       this.items = items;
+    });
+
+    this.ps.docs.subscribe((docs: Array<Doc>) => {
+      this.docs = docs;
     });
 
     this.router.events.subscribe(route => {
@@ -33,7 +37,7 @@ export class MainComponent {
         this.item = this.getPage(this.items, paths);
         this.class = this.item.url;
 
-        this.item.content.info = (docs.find(item => item.tag === this.item.content.tag) || {})['props'];
+        this.item.content.info = (this.docs.find((item: Doc = {}) => item.tag === this.item.content.tag) || {}).props;
         // Is this a bad idea, it might lead to circular references.
         this.item.parent = this.parent;
         // console.log(this.item);
