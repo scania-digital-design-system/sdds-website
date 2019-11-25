@@ -1,22 +1,38 @@
 
 export interface Path {
-  id?: number;
-  url?: string;
+  id?: Number;
+  url?: String;
   content?: Page;
   items?: Path[];
   parent?: Path;
 }
 export interface Page {
-  id?: number;
-  title?: string;
-  tag?: string;
-  description?: string;
-  template?: number;
+  id?: Number;
+  title?: String;
+  tag?: String;
+  description?: String;
+  template?: Number;
   examples?: Example[];
   info?: Object[];
 }
 export interface Example {
-  id?: number;
-  title?: string;
-  text?: string;
+  id?: Number;
+  title?: String;
+  text?: String;
+}
+export interface Doc {
+  filePath?: String;
+  encapsulation?: String;
+  tag?: String;
+  docs?: String;
+  docsTags?: String[];
+  usage?: {};
+  props?: Object[];
+  methods?: String[];
+  events?: String[];
+  styles?: String[];
+  slots?: String[];
+  dependents?: String[];
+  dependencies?: String[];
+  dependencyGraph?: Object;
 }

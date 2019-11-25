@@ -22,11 +22,11 @@
   },
   {
     "id": 1,
-    "url": "components",
+    "url": "elements",
     "content": {
       "id": 1,
-      "title": "Components",
-      "description": "Info about components."
+      "title": "Elements",
+      "description": "Info about elements."
     },
     "items": [
       {
@@ -41,17 +41,40 @@
       },
       {
         "id": 1,
-        "url": "header",
+        "url": "content",
         "content": {
           "id": 1,
-          "title": "Header",
-          "tag": "c-header",
-          "description": "A header display a logotype, site name, short-name, item links, and a symbol. The site name will be displayed on the right hand side of the logotype on desktop mode. Short name will be placed at the top centered in mobile mode. You can add one or several link items to the header that will be displayed at the right side of the header. This location is also used for language selectors and user menus.\n\nThere are two ways to populate link items, by adding JSON objects to item attribute, or by having it in ```slot=\"items\"```. See examples below to understand different ways of displaying header component.\n\nTo include navigation component in the header as a main navigation, you need to define the slot name such as ```slot=\"navigation\"```. The navigation is a responsive component. If you make your browser window narrower you will see how the navigation changes its appearance on mobile view.",
+          "title": "Content",
+          "tag": "c-content",
+          "description": "The content component styles the page to push the footer down. It is important to wrap your content inside this component to ensure the footer never slides up the page if the content is not long enough. Check out the full page example in the templates section.",
+          "examples": [
+            {
+              "id": 1,
+              "title": "Content with section",
+              "text": "<c-content>\n  <section>\n    <h3>A Title of the page</h3>\n    <!-- ... -->\n    <!-- Your application content goes here -->\n  </section>\n</c-content>"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
+        "id": 1,
+        "url": "dealer-header",
+        "content": {
+          "id": 1,
+          "title": "Dealer header",
+          "tag": "c-dealer-header",
+          "description": "",
           "examples": [
             {
               "id": 1,
               "title": "Basic use",
-              "text": "<c-header site-name=\"App 1\">\n  <a href=\"global\" slot=\"items\">global</a>\n</c-header>\n"
+              "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
+            },
+            {
+              "id": 1,
+              "title": "With dealer logo",
+              "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/' logo='https://scania.github.io/corporate-ui-docs/images/bilmetro-logo.png'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
             }
           ],
           "template": 1
@@ -76,12 +99,48 @@
         }
       },
       {
+        "id": 1,
+        "url": "header",
+        "content": {
+          "id": 1,
+          "title": "Header",
+          "tag": "c-header",
+          "description": "A header display a logotype, site name, short-name, item links, and a symbol. The site name will be displayed on the right hand side of the logotype on desktop mode. Short name will be placed at the top centered in mobile mode. You can add one or several link items to the header that will be displayed at the right side of the header. This location is also used for language selectors and user menus.\n\nThere are two ways to populate link items, by adding JSON objects to item attribute, or by having it in ```slot=\"items\"```. See examples below to understand different ways of displaying header component.\n\nTo include navigation component in the header as a main navigation, you need to define the slot name such as ```slot=\"navigation\"```. The navigation is a responsive component. If you make your browser window narrower you will see how the navigation changes its appearance on mobile view.",
+          "examples": [
+            {
+              "id": 1,
+              "title": "Basic use",
+              "text": "<c-header site-name=\"App 1\">\n  <a href=\"global\" slot=\"items\">global</a>\n</c-header>\n"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
         "id": 2,
         "url": "navigation",
         "content": {
           "id": 2,
           "title": "Navigation",
           "tag": "c-navigation",
+          "description": "The navigation has a desktop mode and a mobile mode where the break point is at 992px viewport width. The navigation is highly customizable as it can host both primary and secondary items.\n\nYou can populate navigation links in two ways: JSON objects or providing it in a slot. See examples below to see how it works with different ways of populating navigation links.",
+          "examples": [
+            {
+              "id": 5,
+              "title": "Basic use",
+              "text": "<c-navigation>\n  <a href=\"/\" slot=\"primary-items\" active>home</a>\n  <a href=\"/info\" slot=\"primary-items\">info</a>\n  <a href=\"/user\" slot=\"secondary-items\">user</a>\n</c-navigation>"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
+        "id": 2,
+        "url": "theme",
+        "content": {
+          "id": 2,
+          "title": "Theme",
+          "tag": "c-theme",
           "description": "The navigation has a desktop mode and a mobile mode where the break point is at 992px viewport width. The navigation is highly customizable as it can host both primary and secondary items.\n\nYou can populate navigation links in two ways: JSON objects or providing it in a slot. See examples below to see how it works with different ways of populating navigation links.",
           "examples": [
             {
