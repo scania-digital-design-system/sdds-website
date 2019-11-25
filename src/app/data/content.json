@@ -156,10 +156,10 @@
   },
   {
     "id": 2,
-    "url": "components2",
+    "url": "components",
     "content": {
       "id": 1,
-      "title": "Bootstrap Component",
+      "title": "Component",
       "description": "Info about Bootstrap components."
     },
     "items": [
