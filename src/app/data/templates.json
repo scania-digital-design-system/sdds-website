@@ -46,5 +46,21 @@
                 "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
             }
         ]
+    },
+    {
+        "id": 4,
+        "title": "Bootstrap Components",
+        "items": [
+            {
+                "id": 1,
+                "title": "Description",
+                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
+            },
+            {
+                "id": 2,
+                "title": "Examples",
+                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+            }
+        ]
     }
 ]
