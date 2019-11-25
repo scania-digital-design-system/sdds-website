@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Component page",
+        "title": "Examples and Technical Docs",
         "items": [
             {
                 "id": 1,
@@ -44,6 +44,39 @@
                 "id": 1,
                 "title": "Description",
                 "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Examples",
+        "items": [
+            {
+                "id": 1,
+                "title": "Examples",
+                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Color list",
+        "items": [
+            {
+                "id": 1,
+                "title": "Colors",
+                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><h4>{{example.title}}</h4><p *ngIf='example.description'>{{example.description}}</p><div color-list [type]='example.type' class='row' classes='col-sm-6 col-md-4 col-lg-2 mb-5'></div></section>"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Icon list",
+        "items": [
+            {
+                "id": 1,
+                "title": "Examples",
+                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><pre>{{example.text}}</pre><h5 class='mb-5 mt-5'>Icon List</h5><div icon-list class='row'></div></section>"
             }
         ]
     }

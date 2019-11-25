@@ -1,0 +1,21 @@
+.color {
+  height: 80px;
+  text-align: right;
+  span {
+    background-color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+}
+.color[class*="secondary"] {
+  border: 1px solid #c3c3c3;
+  span {
+    margin-top: -2px;
+    margin-right: -2px;
+    border-style: inherit;
+    border-color: inherit;
+    border-width: 0 0 1px 1px;
+  }
+}
