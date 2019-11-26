@@ -12,12 +12,22 @@
             margin: 1px 1px 21px;
             border: 40px solid #fff;
             outline: 1px solid #e8e8e8;
+
+            .progress {
+                margin-top: 5px;
+            }
         }
         c-code-sample {
             padding: 40px;
             background-color: #e8e8e8;
         }
+
+        #modalExample {
+            display: block !important;
+            position: static !important;
+        }
     }
+
 }
 
 :host-context(main.overview) {
