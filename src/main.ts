@@ -11,6 +11,6 @@ if (environment.production) enableProdMode();
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
-  
+
 defineCustomElements(['c-header', 'c-content']);
 addTheme(scania);
