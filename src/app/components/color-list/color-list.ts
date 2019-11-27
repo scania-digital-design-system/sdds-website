@@ -14,13 +14,17 @@ export class ColorListComponent {
 
   ngOnInit() {
     this.colors = this.getColors(this.type);
-    this.ngZone.run( () => {
-      this.colors = this.getColors(this.type);
+    window['CorporateUi'].store.subscribe(() => {
+      this.ngZone.run( () => {
+        this.colors = this.getColors(this.type);
+      });
     });
   }
 
   getColors(type) {
-    const allColors = window['CorporateUi'].store.getState().color.items;
+    const theme = window['CorporateUi'].store.getState().theme;
+    const currentTheme = theme.current;
+    const allColors = theme.items[currentTheme].colors ? theme.items[currentTheme].colors : {};
     let colorArr = []
     Object.entries(allColors).filter(([name, item]) => {
       if(item['type'] === type) {

@@ -12,12 +12,18 @@ export class IconListComponent {
   constructor(private ngZone: NgZone ) { }
 
   ngOnInit() {
-    this.icons = window['CorporateUi'].store.getState().icon.items;
+    this.getIcons();
     window['CorporateUi'].store.subscribe(() => {
       this.ngZone.run( () => {
-        this.icons = window['CorporateUi'].store.getState().icon.items;
+        this.getIcons();
       });
     });
+  }
+
+  getIcons() {
+    const theme = window['CorporateUi'].store.getState().theme;
+    const currentTheme = theme.current;
+    this.icons = theme.items[currentTheme].icons;
   }
 
 }
