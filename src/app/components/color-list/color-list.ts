@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, NgZone } from '@angular/core';
 
 @Component({
   selector: '[color-list]',
@@ -10,8 +10,13 @@ export class ColorListComponent {
   @Input() type: String;
   @Input() classes: String;
 
+  constructor(private ngZone: NgZone ) { }
+
   ngOnInit() {
     this.colors = this.getColors(this.type);
+    this.ngZone.run( () => {
+      this.colors = this.getColors(this.type);
+    });
   }
 
   getColors(type) {
@@ -27,7 +32,7 @@ export class ColorListComponent {
 
   renderColor(name, hex) {
     const cssVar = `var(--${name})`;
-    const supportCssVar = window.CSS && window.CSS.supports('background-color', cssVar);
+    const supportCssVar = window['CSS'] && window['CSS'].supports('background-color', cssVar);
 
     return supportCssVar ? cssVar : hex;
   }
