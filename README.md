@@ -1,5 +1,5 @@
 # Corporate UI Site
-*To run this project locally you will need NodeJS locally.*
+*To run this project locally you will need **NodeJS** locally and for some actions **Ruby**.*
 
 Clone this repo, install all dependencies and start the application:
 ```
@@ -9,8 +9,8 @@ npm i
 npm start
 ```
 
-## Locally setup:
-Create npm links of **Corporate Ui** and **Scania theme**:
+## Locally setup
+Create npm links of **Corporate Ui** and **Scania theme**
 ```
 cd ../corporate-ui-dev
 npm link
@@ -18,11 +18,29 @@ cd ../scania-theme
 npm link
 ```
 
-Add links to **Corporate Ui** and **Scania theme**:
+Add links to **Corporate Ui** and **Scania theme**
 ```
 cd corporate-ui-site
 npm link corporate-ui-dev
 npm link scania-theme
+```
+
+Run locally with either **Angular** or **Jekyll** default is angular
+```
+npm run angular
+npm run jekyll
+```
+Visit http://localhost:1337/corporate-ui-site/
+
+## Publish updates
+You need to have **Ruby** installed then install **Jekyll**
+```
+gem install jekyll bundler
+```
+
+Deploy the package
+```
+npm run deploy
 ```
 
 ## Technical notes
