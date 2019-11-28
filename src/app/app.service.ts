@@ -14,15 +14,21 @@ export class PageService {
   private _pages: BehaviorSubject<ReadonlyArray<Path>> = new BehaviorSubject([]);
   private _routes: BehaviorSubject<ReadonlyArray<Route>> = new BehaviorSubject([]);
   private _docs: BehaviorSubject<Array<Doc>> = new BehaviorSubject([]);
+  private _theme: BehaviorSubject<Object> = new BehaviorSubject({});
 
   public readonly page: Observable<Path> = this._page.asObservable();
   public readonly pages: Observable<ReadonlyArray<Path>> = this._pages.asObservable();
   public readonly routes: Observable<ReadonlyArray<Route>> = this._routes.asObservable();
   public readonly docs: Observable<Array<Doc>> = this._docs.asObservable();
+  public readonly theme: Observable<Object> = this._theme.asObservable();
 
   constructor(/*private http: HttpClient*/) {
     this.setPages(content);
     this.setDocs(docs);
+    window['CorporateUi'].store.subscribe(() => {
+      const current = window['CorporateUi'].store.getState().theme.current;
+      this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
+    });
     // this.http.get('app/content/data.json')
     //   .subscribe((items: Array<Item>) => {
     //     this.setPages(items);
@@ -40,5 +46,8 @@ export class PageService {
   }
   setDocs(docs: Array<Doc>) {
     this._docs.next(docs);
+  }
+  setTheme(theme: Object) {
+    this._theme.next(theme);
   }
 }

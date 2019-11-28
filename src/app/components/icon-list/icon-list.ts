@@ -1,4 +1,6 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, OnInit, OnDestroy } from '@angular/core';
+
+import { PageService } from '../../app.service';
 
 @Component({
   selector: '[icon-list]',
@@ -6,24 +8,22 @@ import { Component, NgZone } from '@angular/core';
   styleUrls: ['./icon-list.scss']
 })
 
-export class IconListComponent {
-  icons: String[];
+export class IconListComponent implements OnInit, OnDestroy {
+  icons: Object[];
+  subscribeStore;
 
-  constructor(private ngZone: NgZone ) { }
+  constructor(private ps: PageService, private ngZone: NgZone ) { }
 
   ngOnInit() {
-    this.getIcons();
-    window['CorporateUi'].store.subscribe(() => {
+    this.subscribeStore = this.ps.theme.subscribe((item: Object) => {
       this.ngZone.run( () => {
-        this.getIcons();
+        this.icons = item['icons'];
       });
     });
   }
 
-  getIcons() {
-    const theme = window['CorporateUi'].store.getState().theme;
-    const currentTheme = theme.current;
-    this.icons = theme.items[currentTheme].icons;
+  ngOnDestroy() {
+    this.subscribeStore.unsubscribe();
   }
 
 }

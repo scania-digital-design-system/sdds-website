@@ -1,30 +1,34 @@
-import { Component, Input, NgZone } from '@angular/core';
+import { Component, Input, NgZone, OnInit, OnDestroy } from '@angular/core';
+
+import { PageService } from '../../app.service';
 
 @Component({
   selector: '[color-list]',
   templateUrl: './color-list.html',
   styleUrls: ['./color-list.scss']
 })
-export class ColorListComponent {
-  colors: String[];
+export class ColorListComponent implements OnInit, OnDestroy {
+  colors: Object[];
+  subscribeStore;
+
   @Input() type: String;
   @Input() classes: String;
 
-  constructor(private ngZone: NgZone ) { }
+  constructor(private ps: PageService, private ngZone: NgZone ) {}
 
-  ngOnInit() {
-    this.colors = this.getColors(this.type);
-    window['CorporateUi'].store.subscribe(() => {
+  ngOnInit() {    
+    this.subscribeStore = this.ps.theme.subscribe((item: Object) => {
       this.ngZone.run( () => {
-        this.colors = this.getColors(this.type);
+        this.colors = this.getColors(this.type, item['colors']);
       });
     });
   }
 
-  getColors(type) {
-    const theme = window['CorporateUi'].store.getState().theme;
-    const currentTheme = theme.current;
-    const allColors = theme.items[currentTheme].colors ? theme.items[currentTheme].colors : {};
+  ngOnDestroy() {
+    this.subscribeStore.unsubscribe();
+  }
+
+  getColors(type, allColors = {}) {
     let colorArr = []
     Object.entries(allColors).filter(([name, item]) => {
       if(item['type'] === type) {
