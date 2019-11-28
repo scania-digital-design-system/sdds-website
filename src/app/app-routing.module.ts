@@ -9,8 +9,8 @@ import { EscapeHtmlPipe, MarkdownPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
-import { ColorListComponent } from './components/color-list/color-list';
-import { IconListComponent } from './components/icon-list/icon-list';
+import { ColorListComponent } from './components/color-list/color-list.component';
+import { IconListComponent } from './components/icon-list/icon-list.component';
 
 @NgModule({
   declarations: [

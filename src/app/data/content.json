@@ -91,8 +91,18 @@
           "examples": [
             {
               "id": 6,
+              "title": "Custom text",
+              "text": "<c-footer text='Some copyright related text can be set here.'></c-footer>"
+            },
+            {
+              "id": 7,
               "title": "Basic use",
-              "text": "<c-footer>\n  <a href=\"/contact\" slot=\"items\">contact</a>\n</c-footer>"
+              "text": "<c-footer>\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' slot='items'>Contact us</a>\n</c-footer>"
+            },
+            {
+              "id": 8,
+              "title": "With social items",
+              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'>\n  </c-icon></a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'>\n  </c-icon></a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'>\n  </c-icon></a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
             }
           ],
           "template": 1
@@ -129,6 +139,16 @@
               "id": 5,
               "title": "Basic use",
               "text": "<c-navigation>\n  <a href=\"/\" slot=\"primary-items\" active>home</a>\n  <a href=\"/info\" slot=\"primary-items\">info</a>\n  <a href=\"/user\" slot=\"secondary-items\">user</a>\n</c-navigation>"
+            },
+            {
+              "id": 6,
+              "title": "Width dropdown",
+              "text": "<c-navigation>\n  <a href='/' slot='primary-items' active=''>home</a>\n\n  <div class='dropdown' slot='secondary-items'>\n    <a href='' class='dropdown-toggle nav-item' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>user</a>\n\n    <div class='dropdown-menu'>\n      <a class='dropdown-item' href='#'>Action</a>\n      <a class='dropdown-item' href='#'>Another action</a>\n      <a class='dropdown-item' href='#'>Something else here</a>\n    </div>\n  </div>\n</c-navigation>"
+            },
+            {
+              "id": 7,
+              "title": "With subnavigation",
+              "text": "<c-navigation>\n  <a href='/home' slot='primary-items'>home</a>\n  <a href='/about' class='parent' slot='primary-items' active=''>about</a>\n  <a href='/profile' class='parent' slot='primary-items'>profile</a>\n  <a href='/abc' class='parent' slot='primary-items'>abc</a>\n  <a href='/xyz' class='parent' slot='primary-items'>xyz</a>\n  <a href='/more' slot='secondary-items'>more</a>\n\n  <c-navigation slot='sub' caption='About' target='/about' active=''>\n    <a href='/about' slot='primary-items' active=''>About 1</a>\n    <a href='/about2' slot='primary-items'>About 2</a>\n    <a href='/about3' slot='secondary-items'>About 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/profile'>\n    <a href='/profile' slot='primary-items'>Profile 1</a>\n    <a href='/profile2' slot='primary-items'>Profile 2</a>\n    <a href='/profile3' slot='secondary-items'>Profile 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/abc'>\n    <a href='/abc' slot='primary-items'>abc 1</a>\n    <a href='/abc2' slot='primary-items'>abc 2</a>\n    <a href='/abc3' slot='secondary-items'>abc 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/xyz'>\n    <a href='/xyz' slot='primary-items'>xyz 1</a>\n    <a href='/xyz2' slot='primary-items'>xyz 2</a>\n    <a href='/xyz3' slot='secondary-items'>xyz 3</a>\n  </c-navigation>\n</c-navigation>"
             }
           ],
           "template": 1
@@ -141,15 +161,21 @@
           "id": 2,
           "title": "Theme",
           "tag": "c-theme",
-          "description": "The navigation has a desktop mode and a mobile mode where the break point is at 992px viewport width. The navigation is highly customizable as it can host both primary and secondary items.\n\nYou can populate navigation links in two ways: JSON objects or providing it in a slot. See examples below to see how it works with different ways of populating navigation links.",
+          "description": "Theme component will set the theme styling for all other components by default. You can set the theme name attribute to set a theme. Put the theme component anywhere in your page inside the body tag. We use Redux to store the theme value in a global store. The other components then subscribed to the store and will be updated for any changes.",
           "examples": [
             {
               "id": 5,
               "title": "Basic use",
-              "text": "<c-navigation>\n  <a href=\"/\" slot=\"primary-items\" active>home</a>\n  <a href=\"/info\" slot=\"primary-items\">info</a>\n  <a href=\"/user\" slot=\"secondary-items\">user</a>\n</c-navigation>"
+              "text": "<c-theme name='scania' global='true'></c-theme>"
+            },
+            {
+              "id": 6,
+              "title": "Bootstrap custom events",
+              "description": "All custom events for Bootstrap plugins are available globally in the CorporateUi.$ object. For example, this is how to trigger Bootstrap modal event",
+              "text": "CorporateUi.$('#exampleModal').modal();"
             }
           ],
-          "template": 1
+          "template": 7
         }
       }
     ]
@@ -504,6 +530,25 @@
         }
       },
       {
+        "id" : 18,
+        "url": "loading",
+        "content": {
+          "id": 1,
+          "title": "Loading",
+          "template": 4,
+          "examples": [
+            {
+              "title": "Loading class on button",
+              "text": "<button type='button' class='btn btn-primary loading'>Primary</button>\n<button type='button' class='btn btn-secondary loading'>Secondary</button>\n<a href='/' class='btn btn-success loading'>Success</a>"
+            },
+            {
+              "title": "Loading class on table",
+              "text": "<table class='table loading'>\n  <thead>\n    <tr>\n      <th>Id</th>\n      <th>Name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>1</th>\n      <td>Mark</td>\n      <td>Lorem ipsum dolor sit amet</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>June</td>\n      <td>Consectetur adipiscing elit</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Augusta</td>\n      <td>Sed do eiusmod tempor incididunt</td>\n    </tr>\n  </tbody>\n</table>"
+            }
+          ]
+        }
+      },
+      {
       "id": 12,
         "url": "media-objects",
         "content": {
@@ -662,12 +707,12 @@
       },
       {
         "id": 16,
-        "url": "progressbar",
+        "url": "progress",
         "content": {
           "id": 1,
-          "title": "Progressbar",
-          "tag": "Progressbar",
-          "description": "Progressbar",
+          "title": "Progress",
+          "tag": "Progress",
+          "description": "Progress",
           "examples": [
             {
               "id": 1,
@@ -813,25 +858,6 @@
         }
       },
       {
-        "id" : 3,
-        "url": "loading",
-        "content": {
-          "id": 1,
-          "title": "Loading",
-          "template": 4,
-          "examples": [
-            {
-              "title": "Loading class on button",
-              "text": "<button type='button' class='btn btn-primary loading'>Primary</button>\n<button type='button' class='btn btn-secondary loading'>Secondary</button>\n<a href='/' class='btn btn-success loading'>Success</a>"
-            },
-            {
-              "title": "Loading class on table",
-              "text": "<table class='table loading'>\n  <thead>\n    <tr>\n      <th>Id</th>\n      <th>Name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>1</th>\n      <td>Mark</td>\n      <td>Lorem ipsum dolor sit amet</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>June</td>\n      <td>Consectetur adipiscing elit</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Augusta</td>\n      <td>Sed do eiusmod tempor incididunt</td>\n    </tr>\n  </tbody>\n</table>"
-            }
-          ]
-        }
-      },
-      {
         "id" : 4,
         "url": "colors",
         "content": {
@@ -859,7 +885,7 @@
         "url": "icons",
         "content": {
           "id": 1,
-          "title": "Icon list",
+          "title": "Icons",
           "template": 6,
           "examples": [
             {
