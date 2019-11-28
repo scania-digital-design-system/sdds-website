@@ -35,7 +35,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "corporate-ui-dev": "^4.0.0-gamma.1",
+    "corporate-ui-dev": "^4.0.0-gamma.2",
     "gh-pages": "2.1.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
