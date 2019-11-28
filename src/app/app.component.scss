@@ -1,10 +1,21 @@
+/* autoprefixer grid: autoplace */
+
 :host {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "nav main";
     grid-template-rows: 1fr;
-    grid-template-columns: 250px;
+    grid-template-columns: 250px 1fr;
     overflow: hidden;
+
+    ::ng-deep nav a {
+        color: #fff;
+
+        &:hover {
+            background-color: transparent;
+            color: #bfbfbf;
+        }
+    }
 }
 
 nav {
@@ -13,7 +24,7 @@ nav {
     color: #bfbfbf;
 
     --link-color: #fff;
-    --link-color-hover: #fff;
+    --link-color-hover: #bfbfbf;
     --link-color-active: #fff;
     overflow-y: auto;
 }
@@ -21,10 +32,6 @@ a {
     color: #fff;
 }
 main {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "content";
-    grid-template-rows: 100px 1fr;
+    grid-area: main;
     overflow-y: auto;
 }

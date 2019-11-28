@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Page, Doc } from './app.interface';
 
 import { default as content } from './data/content.json';
-// import { components as docs } from 'corporate-ui-dev/.data/docs.json';
+import { components as docs } from 'corporate-ui-dev/dist/data/docs.json';
 
 @Injectable()
 export class PageService {
@@ -22,7 +22,7 @@ export class PageService {
 
   constructor(/*private http: HttpClient*/) {
     this.setPages(content);
-    this.setDocs([]);
+    this.setDocs(docs);
     // this.http.get('app/content/data.json')
     //   .subscribe((items: Array<Item>) => {
     //     this.setPages(items);
