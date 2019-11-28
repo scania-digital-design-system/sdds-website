@@ -66,7 +66,7 @@
     {
         "id": 5,
         "title": "Color list",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Colors",
@@ -77,7 +77,7 @@
     {
         "id": 6,
         "title": "Icon list",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Examples",
