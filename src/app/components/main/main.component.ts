@@ -3,7 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from '../../app.service';
-import { Path, Doc } from '../../app.interface';
+import { Page, Doc } from '../../app.interface';
 
 import { name } from '../../../../package.json';
 
@@ -15,14 +15,14 @@ import { name } from '../../../../package.json';
 export class MainComponent {
   @HostBinding('class') class;
 
-  item: Path = { content: {} };
-  items: Array<Path>;
+  item: Page = { content: {} };
+  items: Array<Page>;
   docs: Array<Doc>;
-  parent: Path = {};
+  parent: Page = {};
   // docs: ArrayObject = {};
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
-    this.ps.pages.subscribe((items: Array<Path>) => {
+    this.ps.pages.subscribe((items: Array<Page>) => {
       this.items = items;
     });
 
@@ -49,7 +49,7 @@ export class MainComponent {
     });
   }
 
-  getPage(items: Array<Path>, paths: Array<String>) {
+  getPage(items: Array<Page>, paths: Array<String>) {
     const path = paths.shift();
     const item = items.find(sub => sub.url === path) || {};
 

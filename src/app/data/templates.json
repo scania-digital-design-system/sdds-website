@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Component page",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Description",
@@ -23,7 +23,7 @@
     {
         "id": 2,
         "title": "Overview page",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Description",
@@ -39,7 +39,7 @@
     {
         "id": 3,
         "title": "Markdown",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Description",
@@ -50,7 +50,7 @@
     {
         "id": 4,
         "title": "Bootstrap Components",
-        "items": [
+        "sections": [
             {
                 "id": 1,
                 "title": "Description",
