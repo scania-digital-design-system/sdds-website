@@ -1,12 +1,12 @@
 
-export interface Path {
+export interface Page {
   id?: Number;
   url?: String;
-  content?: Page;
-  items?: Path[];
-  parent?: Path;
+  content?: Content;
+  items?: Page[];
+  parent?: Page;
 }
-export interface Page {
+export interface Content {
   id?: Number;
   title?: String;
   tag?: String;
@@ -19,6 +19,16 @@ export interface Example {
   id?: Number;
   title?: String;
   text?: String;
+}
+export interface Template {
+  id?: Number;
+  title?: String;
+  sections?: Section[];
+}
+export interface Section {
+  id?: Number;
+  title?: String;
+  content?: String;
 }
 export interface Doc {
   filePath?: String;
