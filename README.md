@@ -28,16 +28,16 @@ npm link scania-theme
 Run locally with either **Angular** or **Jekyll** default is angular
 ```
 npm run angular
-npm run jekyll
 ```
-Visit http://localhost:1337/corporate-ui-site/
-
-## Publish updates
 You need to have **Ruby** installed then install **Jekyll**
 ```
 gem install jekyll bundler
+npm run jekyll
 ```
 
+Visit http://localhost:1337/corporate-ui-site/
+
+## Publish updates
 Deploy the package
 ```
 npm run deploy

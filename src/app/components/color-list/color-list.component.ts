@@ -4,8 +4,8 @@ import { PageService } from '../../app.service';
 
 @Component({
   selector: '[color-list]',
-  templateUrl: './color-list.html',
-  styleUrls: ['./color-list.scss']
+  templateUrl: './color-list.component.html',
+  styleUrls: ['./color-list.component.scss']
 })
 export class ColorListComponent implements OnInit, OnDestroy {
   colors: Object[];
@@ -16,7 +16,7 @@ export class ColorListComponent implements OnInit, OnDestroy {
 
   constructor(private ps: PageService, private ngZone: NgZone ) {}
 
-  ngOnInit() {    
+  ngOnInit() {
     this.subscribeStore = this.ps.theme.subscribe((item: Object) => {
       this.ngZone.run( () => {
         this.colors = this.getColors(this.type, item['colors']);

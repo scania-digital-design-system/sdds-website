@@ -4,8 +4,8 @@ import { PageService } from '../../app.service';
 
 @Component({
   selector: '[icon-list]',
-  templateUrl: './icon-list.html',
-  styleUrls: ['./icon-list.scss']
+  templateUrl: './icon-list.component.html',
+  styleUrls: ['./icon-list.component.scss']
 })
 
 export class IconListComponent implements OnInit, OnDestroy {
