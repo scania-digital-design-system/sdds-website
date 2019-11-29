@@ -14,12 +14,12 @@ import { IconListComponent } from './components/icon-list/icon-list';
 
 @NgModule({
   declarations: [
-    ColorListComponent,
     EscapeHtmlPipe,
-    IconListComponent,
     MarkdownPipe,
     PageComponent,
-    TogglerComponent
+    TogglerComponent,
+    ColorListComponent,
+    IconListComponent
   ],
   entryComponents: [PageComponent],
   imports: [
@@ -29,6 +29,7 @@ import { IconListComponent } from './components/icon-list/icon-list';
   ],
   exports: [
     RouterModule,
+    MarkdownPipe,
     TogglerComponent
   ],
   providers: [
