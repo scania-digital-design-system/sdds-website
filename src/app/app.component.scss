@@ -3,8 +3,9 @@
 :host {
     display: grid;
     grid-template-areas:
+        "note note"
         "nav main";
-    grid-template-rows: 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 250px 1fr;
     overflow: hidden;
 
@@ -34,4 +35,7 @@ a {
 main {
     grid-area: main;
     overflow-y: auto;
+}
+note-component {
+    grid-area: note;
 }

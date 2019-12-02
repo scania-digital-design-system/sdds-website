@@ -1,0 +1,11 @@
+:host {
+    display: block;
+}
+
+.alert {
+    margin: 0;
+
+    ::ng-deep p {
+        margin: 0;
+    }
+}
