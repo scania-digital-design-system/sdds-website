@@ -29,7 +29,7 @@ export class PageService {
     this.setDocs(docs);
     // TODO: This data object should be moved to some data flow.
     this.setNote({
-      description: 'We are currently facing issues using the navigation in **IE**. A workaround is to copy the page URl and paste in a new window'
+      description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
     });
 
     window['CorporateUi'].store.subscribe(() => {
