@@ -1,4 +1,7 @@
 
+// TODO: When StencilJS needs to change there setting for readme or we need to always render readme´s
+// export * from 'corporate-ui-dev/dist/data/docs';
+
 export interface Page {
   id?: Number;
   url?: String;
@@ -30,6 +33,16 @@ export interface Section {
   title?: String;
   content?: String;
 }
+
+// TODO: Get this from Corporate UI
+export interface Theme {
+  colors?: Object;
+  components?: Object;
+  favicons?: Object;
+  icons?: Object;
+}
+
+// TODO: Get this from StencilJS
 export interface Doc {
   filePath?: String;
   encapsulation?: String;
