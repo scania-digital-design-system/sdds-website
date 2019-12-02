@@ -1,6 +1,7 @@
-import { Component, Input, NgZone, OnInit, OnDestroy } from '@angular/core';
+import { Component, NgZone, Input, OnInit, OnDestroy } from '@angular/core';
 
 import { PageService } from '../../app.service';
+import { Theme } from '../../app.interface';
 
 @Component({
   selector: '[color-list]',
@@ -8,18 +9,19 @@ import { PageService } from '../../app.service';
   styleUrls: ['./color-list.component.scss']
 })
 export class ColorListComponent implements OnInit, OnDestroy {
-  colors: Object[];
+  colors: Object;
   subscribeStore;
 
   @Input() type: String;
   @Input() classes: String;
 
-  constructor(private ps: PageService, private ngZone: NgZone ) {}
+  constructor(private ps: PageService, private zone: NgZone) { }
 
   ngOnInit() {
-    this.subscribeStore = this.ps.theme.subscribe((item: Object) => {
-      this.ngZone.run( () => {
-        this.colors = this.getColors(this.type, item['colors']);
+    this.subscribeStore = this.ps.theme.subscribe((item: Theme) => {
+      // When data is fetched from outside Angular scope, Zone will let angular know about it
+      this.zone.run(() => {
+        this.colors = this.getColors(this.type, item.colors);
       });
     });
   }
@@ -29,10 +31,10 @@ export class ColorListComponent implements OnInit, OnDestroy {
   }
 
   getColors(type, allColors = {}) {
-    let colorArr = []
-    Object.entries(allColors).filter(([name, item]) => {
-      if(item['type'] === type) {
-       colorArr=[...colorArr, {'name':name,'hex': item['hex']}]
+    let colorArr = [];
+    Object.entries(allColors).filter(([name, item]: any[]) => {
+      if(item.type === type) {
+        colorArr = [ ...colorArr, { 'name': name, 'hex': item.hex } ];
       }
     });
     return colorArr;
