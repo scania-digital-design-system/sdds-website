@@ -32,7 +32,7 @@
             {
                 "id": 4,
                 "title": "Preview",
-                "content": "<section class='container'><div class='row'><ng-container *ngFor='let child of item.parent.items; index as i'><div *ngIf='child.content.examples' [class]='\"col-sm-3 \" + child.url'><a class='card' [routerLink]='child.url'><div class='card-body' [innerHTML]='child.content.examples[0].text | keepHtml'></div><div class='card-footer'>{{child.content.title}}</div></a></div></ng-container></div></section>"
+                "content": "<section class='container'><div class='row'><ng-container *ngFor='let child of item.parent.pages; index as i'><div *ngIf='child.content.examples' [class]='\"col-sm-3 \" + child.url'><a class='card' [routerLink]='child.url'><div class='card-body' [innerHTML]='child.content.examples[0].text | keepHtml'></div><div class='card-footer'>{{child.content.title}}</div></a></div></ng-container></div></section>"
             }
         ]
     },
