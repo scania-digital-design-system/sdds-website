@@ -44,7 +44,7 @@ export class AppRoutingModule {
     this.ps.pages.subscribe(items => {
       const routes = this.contentToRoute(items);
 
-      console.log(1, routes);
+      // console.log(1, routes);
 
       this.router.resetConfig([
         ...routes,
