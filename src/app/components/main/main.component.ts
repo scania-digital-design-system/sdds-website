@@ -53,10 +53,10 @@ export class MainComponent {
     const path = paths.shift();
     const item = items.find(sub => sub.url === path) || {};
 
-    if(item.items) {
+    if(item.pages) {
       this.parent = item;
 
-      return this.getPage(item.items, paths);
+      return this.getPage(item.pages, paths);
     }
 
     return item;

@@ -6,7 +6,7 @@ export interface Page {
   id?: Number;
   url?: String;
   content?: Content;
-  items?: Page[];
+  pages?: Page[];
   parent?: Page;
 }
 export interface Content {

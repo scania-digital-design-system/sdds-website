@@ -44,16 +44,14 @@ export class AppRoutingModule {
     this.ps.pages.subscribe(items => {
       const routes = this.contentToRoute(items);
 
-      this.ps.setRoutes(routes);
-    });
-
-    this.ps.routes.subscribe(items => {
-      // console.log(1, items);
+      // console.log(1, routes);
 
       this.router.resetConfig([
-        ...items,
+        ...routes,
         { path: '**', redirectTo: 'none' }
       ]);
+
+      this.ps.setRoutes(routes);
     });
   }
 
@@ -61,12 +59,12 @@ export class AppRoutingModule {
     return items.reduce((accumulator, item, index) => {
       let route:any = { path: item.url, data: item.content, component: PageComponent };
 
-      if(item.items) route.children = this.contentToRoute(item.items);
+      if(item.pages) route.children = this.contentToRoute(item.pages);
 
       let routes = [ route ];
 
       if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
-  
+
       return accumulator.concat(routes);
     }, []);
   }

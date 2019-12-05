@@ -7,7 +7,7 @@
       "title": "Info",
       "description": "Some info goes here."
     },
-    "items": [
+    "pages": [
       {
         "id": 1,
         "url": "corporateui",
@@ -28,7 +28,7 @@
       "title": "Elements",
       "description": "Info about elements."
     },
-    "items": [
+    "pages": [
       {
         "id": 1,
         "url": "overview",
@@ -188,7 +188,7 @@
       "title": "Component",
       "description": "Info about Bootstrap components."
     },
-    "items": [
+    "pages": [
       {
         "id": 1,
         "url": "overview",
@@ -806,7 +806,7 @@
       "title": "Utilities",
       "description": "Some info goes here."
     },
-    "items": [
+    "pages": [
       {
         "id": 1,
         "url": "overview",
