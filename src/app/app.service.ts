@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 
 import { Page, Doc } from './app.interface';
 
-import { default as content } from './data/content.json';
+import { data } from './data/content.json';
 import { components as docs } from 'corporate-ui-dev/dist/data/docs.json';
 
 @Injectable()
@@ -24,8 +24,8 @@ export class PageService {
   public readonly theme: Observable<Object> = this._theme.asObservable();
   public readonly note: Observable<Object> = this._note.asObservable();
 
-  constructor(/*private http: HttpClient*/) {
-    this.setPages(content);
+  constructor(/* private http: HttpClient */) {
+    this.setPages(data.navigation.pages);
     this.setDocs(docs);
     // TODO: This data object should be moved to some data flow.
     this.setNote({
@@ -37,9 +37,40 @@ export class PageService {
       this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
     });
 
-    // this.http.get('app/content/data.json')
-    //   .subscribe((items: Array<Item>) => {
-    //     this.setPages(items);
+    // this.http.post('http://localhost:1339/graphql', {
+    //   query: `query {
+    //     navigation(id: 2) {
+    //       name
+    //       pages {
+    //         ...PageFields
+    //         pages {
+    //           ...PageFields
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   fragment PageFields on Page {
+    //     id
+    //     url
+    //     content {
+    //       id
+    //       title
+    //       tag
+    //       description
+    //       template {
+    //         id
+    //       }
+    //       examples {
+    //         id
+    //         title
+    //         text
+    //       }
+    //     }
+    //   }
+    // `})
+    //   .subscribe((response: any) => {
+    //     this.setPages(response.data.navigation.pages);
     //   });
   }
 

@@ -35,9 +35,10 @@ export class MainComponent {
         const paths = route.urlAfterRedirects.substr(1).split('?')[0].split('/');
 
         this.item = this.getPage(this.items, paths);
+        // console.log(this.item);
         this.class = `category-${this.parent.url} page-${this.item.url}`;
 
-        this.item.content.info = (this.docs.find((item: Doc = {}) => item.tag === this.item.content.tag) || {}).props;
+        this.item.content.info = (this.docs.find((item: Doc = {}) => item.tag === 'c-' + this.item.url) || {}).props;
         // Is this a bad idea, it might lead to circular references.
         this.item.parent = this.parent;
         // console.log(this.item);

@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { PageService } from '../../app.service';
 import { Page, Template, Section } from '../../app.interface';
 
-import { default as templates } from '../../data/templates.json';
+import { data } from '../../data/templates.json';
 
 @Component({
-  template: templates.map((item: Template) => `
-    <ng-template [ngIf]='template.id === ${item.id}'>
+  template: data.templates.map((item: Template) => `
+    <ng-template [ngIf]='item.content && item.content.template && item.content.template.id == ${item.id}'>
       ${item.sections.map((sub: Section) => sub.content).join('')}
     </ng-template>
   `).join(''),
@@ -15,19 +15,13 @@ import { default as templates } from '../../data/templates.json';
 })
 export class PageComponent {
   item: Page;
-  template: Object;
+  template: Object = {};
 
   constructor(public ps: PageService) {
     this.ps.page.subscribe((item: Page) => {
       if(!item.id) return;
 
-      // console.log(item);
       this.item = item;
-      this.template = this.getTemplate(item.content.template);
     });
-  }
-
-  getTemplate(id: Number) {
-    return templates.find(item => item.id === id) || {};
   }
 }

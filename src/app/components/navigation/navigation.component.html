@@ -2,6 +2,10 @@
     <a routerLink="">Corporate UI</a>
 </header>
 
-<section item-toggler *ngFor="let item of items; index as i" text="{{item.content.title}}" [collapsed]="false">
-    <a *ngFor="let sub of item.pages; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.content.title}}</a>
-</section>
+<ng-container *ngFor="let item of items; index as i">
+    <section item-toggler *ngIf="filterEmpty(item.pages)" [text]="item.content ? item.content.title : item.url" [collapsed]="false">
+        <ng-container *ngFor="let sub of item.pages; index as i">
+            <a *ngIf="sub.content" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [innerHtml]="sub.content.title"></a>
+        </ng-container>
+    </section>
+</ng-container>

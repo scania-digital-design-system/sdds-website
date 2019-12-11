@@ -3,33 +3,32 @@
 // export * from 'corporate-ui-dev/dist/data/docs';
 
 export interface Page {
-  id?: Number;
+  id?: String;
   url?: String;
   content?: Content;
-  pages?: Page[];
+  pages?: Object[];
   parent?: Page;
 }
 export interface Content {
-  id?: Number;
+  id?: String;
   title?: String;
-  tag?: String;
   description?: String;
-  template?: Number;
+  template?: String;
   examples?: Example[];
   info?: Object[];
 }
 export interface Example {
-  id?: Number;
+  id?: String;
   title?: String;
   text?: String;
 }
 export interface Template {
-  id?: Number;
+  id?: String;
   title?: String;
   sections?: Section[];
 }
 export interface Section {
-  id?: Number;
+  id?: String;
   title?: String;
   content?: String;
 }

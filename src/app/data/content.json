@@ -1,911 +1,193 @@
-[
-  {
-    "id": 3,
-    "url": "info",
-    "content": {
-      "id": 3,
-      "title": "Info",
-      "description": "Some info goes here."
-    },
-    "pages": [
-      {
-        "id": 1,
-        "url": "corporateui",
-        "content": {
-          "id": 1,
-          "title": "Corporate Ui",
-          "description": "[![Build Status](https://travis-ci.com/scania/corporate-ui-dev.svg?branch=master)](https://travis-ci.com/scania/corporate-ui-dev)\n[![npm version](http://img.shields.io/npm/v/corporate-ui-dev.svg?style=flat&color=1081C2)](https://npmjs.org/package/corporate-ui-dev)\n[![Github release](https://img.shields.io/github/v/tag/scania/corporate-ui-dev.svg?label=release&color=1081C2)](https://github.com/scania/corporate-ui-dev/releases)\n[![Components library](https://img.shields.io/badge/Components%20library-master-f4871a.svg)](https://d1kybmg72qo0dt.cloudfront.net/build/global/branch/master/www/index.html?selectedKind=Info&selectedStory=Corporate%20UI&full=0&addons=0&stories=1&panelRight=0)\n[![Join Slack](https://img.shields.io/badge/slack-join-%23dd3072.svg)](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n![](https://img.shields.io/github/license/scania/corporate-ui-dev.svg?style=flat)\n\n# Corporate UI Development Repository\n\nIn this repository we're developing the next generation components for Corporate UI. We're improving a lot of our findings that we've done implementing the current production version of the library: https://github.com/scania/corporate-ui\n\n**Demo page**\n\n[Simple HTML ↗](https://codepen.io/corporate-ui/pen/OYmqpr) | [Angular ↗](https://github.com/scania/corporate-ui-angular) | [React ↗](https://github.com/scania/corporate-ui-react) | [Vue ↗](https://github.com/scania/corporate-ui-vue)\n\n\n## Wiki\n\n[Github wiki](https://github.com/scania/corporate-ui-dev/wiki) includes: \n- [Developing components](https://github.com/scania/corporate-ui-dev/wiki/Developing-components)\n- [Project focus and structure](https://github.com/scania/corporate-ui-dev/wiki/Project-focus-and-structure)\n- [Upgrade from version 3 to 4](https://github.com/scania/corporate-ui-dev/wiki/Upgrade-from-version-3.x-to-4.x)\n- [Components status](https://github.com/scania/corporate-ui-dev/wiki/Component-status)\n- [Browser support](https://github.com/scania/corporate-ui-dev/wiki/Browser-Support)\n- and more. \n\n\n## Quick start\n\nSeveral options to add corporate-ui in the project: \n\n1. Add via CDN, link to the script by adding the following to the `<head></head>`.\n\n   ```\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   Replace `x` with [available releases](https://github.com/scania/corporate-ui-dev/releases).\n\n2. Install corporate-ui via NPM package by running the command below.\n\n   ```\n   npm i corporate-ui-dev\n   ```\n\n   Import component as a module with `defineCustomElements` function.\n\n   ```js\n   import { defineCustomElements } from 'corporate-ui-dev';\n\n   defineCustomElements(['c-theme', 'c-footer', 'c-content']);\n\n   // to import all components pass an 'all' value\n   // defineCustomElements('all');\n   ```\n   \n   See all available components in the [components library](https://d1kybmg72qo0dt.cloudfront.net/build/global/branch/master/www/index.html).\n\n## Styling\n\nTo apply the styling, you need to add a theme package and use c-theme component. Check out [Scania theme repository](https://github.com/scania/scania-theme/) for detail documentation.\n\n1. CDN link\n\n   Make sure to include scania-theme script BEFORE the corporate-ui script.\n   ```html\n   <script src=\"https://static.scania.com/build/global/themes/scania/1.x/scania-theme.js\"></script>\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   \n2. NPM package\n   \n   Install scania-theme package by running the command below.\n   ```shell\n   npm i scania-theme\n   ```\n   \n   Import theme in the project and use it with `addTheme` function from corporate-ui.\n   ```js\n   import { defineCustomElements, addTheme } from 'corporate-ui-dev'; \n   import { theme as scania } from 'scania-theme'; \n\n   defineCustomElements('all'); \n   addTheme(scania);\n   ```\n3. Add theme to project\n\n   Initialize the theme with the `c-theme` component. Set `global` attribute to true in order to enable bootstrap styling.\n   \n   ```html\n   <c-theme name=\"scania\" global=\"true\"></c-theme>\n   ```\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/scania/corporate-ui-dev/blob/master/CONTRIBUTING.md) for the directions to create a pull request and coding standard.\n\n- [Report bug](https://github.com/scania/corporate-ui-dev/issues/new/choose)\n- [Request feature](https://github.com/scania/corporate-ui-dev/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22)\n\n## Community\n\nGet in touch with the team and the community:\n- [Join us on slack](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n- [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac)\n\n\n## License\n\nAll CSS, HTML and JS code are available under the MIT license. The Scania brand identity, logos and photographs found in this repository are copyrighted Scania CV AB and are not available on an open source basis or to be used as examples or in any other way, if not specifically ordered by Scania CV AB.",
-          "template": 3
-        }
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "url": "elements",
-    "content": {
-      "id": 1,
-      "title": "Elements",
-      "description": "Info about elements."
-    },
-    "pages": [
-      {
-        "id": 1,
-        "url": "overview",
-        "content": {
-          "id": 1,
-          "title": "Overview",
-          "description": "Select a item to see examples and get more information.",
-          "template": 2
-        }
-      },
-      {
-        "id": 1,
-        "url": "content",
-        "content": {
-          "id": 1,
-          "title": "Content",
-          "tag": "c-content",
-          "description": "The content component styles the page to push the footer down. It is important to wrap your content inside this component to ensure the footer never slides up the page if the content is not long enough. Check out the full page example in the templates section.",
-          "examples": [
+{
+  "data": {
+    "navigation": {
+      "name": "main",
+      "pages": [
+        {
+          "id": "1",
+          "url": "info",
+          "content": {
+            "id": "1",
+            "title": "Info",
+            "description": "Some info goes here.",
+            "template": null,
+            "examples": []
+          },
+          "pages": [
             {
-              "id": 1,
-              "title": "Content with section",
-              "text": "<c-content>\n  <section>\n    <h3>A Title of the page</h3>\n    <!-- ... -->\n    <!-- Your application content goes here -->\n  </section>\n</c-content>"
+              "id": "2",
+              "url": "corporateui",
+              "content": {
+                "id": "2",
+                "title": "Corporate Ui",
+                "description": "[![Build Status](https://travis-ci.com/scania/corporate-ui.svg?branch=master)](https://travis-ci.com/scania/corporate-ui)\n[![npm version](http://img.shields.io/npm/v/corporate-ui.svg?style=flat&color=1081C2)](https://npmjs.org/package/corporate-ui)\n[![Github release](https://img.shields.io/github/v/tag/scania/corporate-ui.svg?label=release&color=1081C2)](https://github.com/scania/corporate-ui/releases)\n[![Components library](https://img.shields.io/badge/Components%20library-master-f4871a.svg)](https://scania.github.io/corporate-ui-site/)\n[![Join Slack](https://img.shields.io/badge/slack-join-%23dd3072.svg)](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n![](https://img.shields.io/github/license/scania/corporate-ui.svg?style=flat)\n\n# Corporate UI\n\n**Demo page**\n\n[Simple HTML ↗](https://codepen.io/corporate-ui/pen/OYmqpr) | [Angular ↗](https://github.com/scania/corporate-ui-angular) | [React ↗](https://github.com/scania/corporate-ui-react) | [Vue ↗](https://github.com/scania/corporate-ui-vue)\n\n\n**Technical documentation**\n\nCheck out [components library](https://scania.github.io/corporate-ui-site/) for **migration guidelines**, **component status**, and technical documentation.\n\n\n## Quick start\n\nSeveral options to add corporate-ui in the project: \n<details open>\n<summary><strong>NPM</strong></summary>\n   <br/>\n\n   Install corporate-ui via NPM package by running the command below.\n\n   ```\n   npm i corporate-ui\n   ```\n\n   Import component as a module with `defineCustomElements` function.\n\n   ```js\n   import { defineCustomElements } from 'corporate-ui';\n\n   defineCustomElements();\n   ```\n</details>\n\n<details>\n<summary><strong>CDN</strong></summary>\n   <br/>\n\n   Add link to the script by adding the following to the head\n\n   ```\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   Replace `x` with [available releases](https://github.com/scania/corporate-ui/releases).\n</details>\n\nSee all available components in the [components library](https://scania.github.io/corporate-ui-site/).\n\n\n## Styling\n\nTo apply Scania styles, you need to add a theme package and use `c-theme` component. Check out [Scania theme repository](https://github.com/scania/scania-theme/) for detail documentation.\n\n\n## Browser support\n\n- Chrome (and all Chromium based browsers)\n- Firefox\n- IE 11+\n- Edge\n- Safari\n\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md) for the directions to **develop components**, **create a pull request** and **coding standard**.\n\n- [Report bug](https://github.com/scania/corporate-ui/issues/new/choose)\n- [Request feature](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22)\n\n\n## Community\n\nGet in touch with the team and the community:\n- [Join us on slack](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n- [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac)\n\n\n## License\n\nAll CSS, HTML and JS code are available under the MIT license. The Scania brand identity, logos and photographs found in this repository are copyrighted Scania CV AB and are not available on an open source basis or to be used as examples or in any other way, if not specifically ordered by Scania CV AB.\n",
+                "template": {
+                  "id": "3"
+                },
+                "examples": []
+              }
             }
-          ],
-          "template": 1
-        }
-      },
-      {
-        "id": 1,
-        "url": "dealer-header",
-        "content": {
-          "id": 1,
-          "title": "Dealer header",
-          "tag": "c-dealer-header",
-          "description": "",
-          "examples": [
+          ]
+        },
+        {
+          "id": "3",
+          "url": "elements",
+          "content": {
+            "id": "3",
+            "title": "Elements",
+            "description": "Info about elements.",
+            "template": null,
+            "examples": []
+          },
+          "pages": [
             {
-              "id": 1,
-              "title": "Basic use",
-              "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
+              "id": "7",
+              "url": "footer",
+              "content": null
             },
             {
-              "id": 1,
-              "title": "With dealer logo",
-              "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/' logo='https://scania.github.io/corporate-ui-docs/images/bilmetro-logo.png'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
+              "id": "8",
+              "url": "header",
+              "content": null
+            },
+            {
+              "id": "9",
+              "url": "navigation",
+              "content": null
+            },
+            {
+              "id": "10",
+              "url": "theme",
+              "content": null
             }
-          ],
-          "template": 1
-        }
-      },
-      {
-        "id": 2,
-        "url": "footer",
-        "content": {
-          "id": 2,
-          "title": "Footer",
-          "tag": "c-footer",
-          "description": "By default, the footer element renders with a copyright text and a wordmark. You can add several few item links and social media icons to the footer. There are two ways to generate links and social media icons. Either by using the attributes or slot. To have your links as the footer links, set the slot attribute to ```slot=\"items\"```. And for social media, set the slot attribute to ```slot=\"social-media-items\"```. See examples and properties below for more information.",
-          "examples": [
+          ]
+        },
+        {
+          "id": "11",
+          "url": "components",
+          "content": {
+            "id": "8",
+            "title": "Components",
+            "description": "Info about Bootstrap components.",
+            "template": null,
+            "examples": []
+          },
+          "pages": [
             {
-              "id": 6,
-              "title": "Custom text",
-              "text": "<c-footer text='Some copyright related text can be set here.'></c-footer>"
+              "id": "5",
+              "url": "content",
+              "content": {
+                "id": "5",
+                "title": "Content",
+                "description": "The content component styles the page to push the footer down. It is important to wrap your content inside this component to ensure the footer never slides up the page if the content is not long enough. Check out the full page example in the templates section.",
+                "template": {
+                  "id": "1"
+                },
+                "examples": [
+                  {
+                    "id": "1",
+                    "title": "Content with section",
+                    "text": "<c-content>\n  <section>\n    <h3>A Title of the page</h3>\n    <!-- ... -->\n    <!-- Your application content goes here -->\n  </section>\n</c-content>"
+                  }
+                ]
+              }
             },
             {
-              "id": 7,
-              "title": "Basic use",
-              "text": "<c-footer>\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' slot='items'>Contact us</a>\n</c-footer>"
+              "id": "6",
+              "url": "dealer-header",
+              "content": {
+                "id": "6",
+                "title": "Dealer header",
+                "description": "Some description goes here.",
+                "template": {
+                  "id": "1"
+                },
+                "examples": [
+                  {
+                    "id": "2",
+                    "title": "Basic use",
+                    "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
+                  },
+                  {
+                    "id": "3",
+                    "title": "With dealer logo",
+                    "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/' logo='https://scania.github.io/corporate-ui-docs/images/bilmetro-logo.png'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
+                  }
+                ]
+              }
             },
             {
-              "id": 8,
-              "title": "With social items",
-              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'>\n  </c-icon></a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'>\n  </c-icon></a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'>\n  </c-icon></a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
-            }
-          ],
-          "template": 1
-        }
-      },
-      {
-        "id": 1,
-        "url": "header",
-        "content": {
-          "id": 1,
-          "title": "Header",
-          "tag": "c-header",
-          "description": "A header display a logotype, site name, short-name, item links, and a symbol. The site name will be displayed on the right hand side of the logotype on desktop mode. Short name will be placed at the top centered in mobile mode. You can add one or several link items to the header that will be displayed at the right side of the header. This location is also used for language selectors and user menus.\n\nThere are two ways to populate link items, by adding JSON objects to item attribute, or by having it in ```slot=\"items\"```. See examples below to understand different ways of displaying header component.\n\nTo include navigation component in the header as a main navigation, you need to define the slot name such as ```slot=\"navigation\"```. The navigation is a responsive component. If you make your browser window narrower you will see how the navigation changes its appearance on mobile view.",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic use",
-              "text": "<c-header site-name=\"App 1\">\n  <a href=\"global\" slot=\"items\">global</a>\n</c-header>\n"
-            }
-          ],
-          "template": 1
-        }
-      },
-      {
-        "id": 2,
-        "url": "navigation",
-        "content": {
-          "id": 2,
-          "title": "Navigation",
-          "tag": "c-navigation",
-          "description": "The navigation has a desktop mode and a mobile mode where the break point is at 992px viewport width. The navigation is highly customizable as it can host both primary and secondary items.\n\nYou can populate navigation links in two ways: JSON objects or providing it in a slot. See examples below to see how it works with different ways of populating navigation links.",
-          "examples": [
-            {
-              "id": 5,
-              "title": "Basic use",
-              "text": "<c-navigation>\n  <a href=\"/\" slot=\"primary-items\" active>home</a>\n  <a href=\"/info\" slot=\"primary-items\">info</a>\n  <a href=\"/user\" slot=\"secondary-items\">user</a>\n</c-navigation>"
+              "id": "12",
+              "url": "alerts",
+              "content": {
+                "id": "9",
+                "title": "Alert",
+                "description": "Alerts available in different interaction states.",
+                "template": {
+                  "id": "1"
+                },
+                "examples": [
+                  {
+                    "id": "7",
+                    "title": "Alert",
+                    "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
+                  }
+                ]
+              }
             },
             {
-              "id": 6,
-              "title": "Width dropdown",
-              "text": "<c-navigation>\n  <a href='/' slot='primary-items' active=''>home</a>\n\n  <div class='dropdown' slot='secondary-items'>\n    <a href='' class='dropdown-toggle nav-item' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>user</a>\n\n    <div class='dropdown-menu'>\n      <a class='dropdown-item' href='#'>Action</a>\n      <a class='dropdown-item' href='#'>Another action</a>\n      <a class='dropdown-item' href='#'>Something else here</a>\n    </div>\n  </div>\n</c-navigation>"
+              "id": "13",
+              "url": "badges",
+              "content": null
             },
             {
-              "id": 7,
-              "title": "With subnavigation",
-              "text": "<c-navigation>\n  <a href='/home' slot='primary-items'>home</a>\n  <a href='/about' class='parent' slot='primary-items' active=''>about</a>\n  <a href='/profile' class='parent' slot='primary-items'>profile</a>\n  <a href='/abc' class='parent' slot='primary-items'>abc</a>\n  <a href='/xyz' class='parent' slot='primary-items'>xyz</a>\n  <a href='/more' slot='secondary-items'>more</a>\n\n  <c-navigation slot='sub' caption='About' target='/about' active=''>\n    <a href='/about' slot='primary-items' active=''>About 1</a>\n    <a href='/about2' slot='primary-items'>About 2</a>\n    <a href='/about3' slot='secondary-items'>About 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/profile'>\n    <a href='/profile' slot='primary-items'>Profile 1</a>\n    <a href='/profile2' slot='primary-items'>Profile 2</a>\n    <a href='/profile3' slot='secondary-items'>Profile 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/abc'>\n    <a href='/abc' slot='primary-items'>abc 1</a>\n    <a href='/abc2' slot='primary-items'>abc 2</a>\n    <a href='/abc3' slot='secondary-items'>abc 3</a>\n  </c-navigation>\n\n  <c-navigation slot='sub' target='/xyz'>\n    <a href='/xyz' slot='primary-items'>xyz 1</a>\n    <a href='/xyz2' slot='primary-items'>xyz 2</a>\n    <a href='/xyz3' slot='secondary-items'>xyz 3</a>\n  </c-navigation>\n</c-navigation>"
-            }
-          ],
-          "template": 1
-        }
-      },
-      {
-        "id": 2,
-        "url": "theme",
-        "content": {
-          "id": 2,
-          "title": "Theme",
-          "tag": "c-theme",
-          "description": "Theme component will set the theme styling for all other components by default. You can set the theme name attribute to set a theme. Put the theme component anywhere in your page inside the body tag. We use Redux to store the theme value in a global store. The other components then subscribed to the store and will be updated for any changes.",
-          "examples": [
-            {
-              "id": 5,
-              "title": "Basic use",
-              "text": "<c-theme name='scania' global='true'></c-theme>"
+              "id": "14",
+              "url": "breadcrumbs",
+              "content": null
             },
             {
-              "id": 6,
-              "title": "Bootstrap custom events",
-              "description": "All custom events for Bootstrap plugins are available globally in the CorporateUi.$ object. For example, this is how to trigger Bootstrap modal event",
-              "text": "CorporateUi.$('#exampleModal').modal();"
-            }
-          ],
-          "template": 7
-        }
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "url": "components",
-    "content": {
-      "id": 1,
-      "title": "Component",
-      "description": "Info about Bootstrap components."
-    },
-    "pages": [
-      {
-        "id": 1,
-        "url": "overview",
-        "content": {
-          "id": 1,
-          "title": "Overview",
-          "description": "Bootstrap Components",
-          "template": 2
-        }
-      },
-      {
-        "id": 2,
-        "url": "alerts",
-        "content": {
-          "id": 1,
-          "title": "Alert",
-          "tag": "Alert",
-          "description": "Alerts available in different interaction states.",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic ",
-              "text": "  <div class='alert alert-success' role='alert'>\n    A simple success alert—check it out!\n  </div>\n  <div class='alert alert-danger' role='alert'>\n    A simple danger alert—check it out!\n  </div>\n  <div class='alert alert-warning' role='alert'>\n    A simple warning alert—check it out!\n  </div>\n  <div class='alert alert-info' role='alert'>\n    A simple info alert—check it out!\n  </div>"
+              "id": "15",
+              "url": "buttons",
+              "content": null
             },
             {
-              "id": 2,
-              "title": "Alert with Heading",
-              "text": "<div class='alert alert-success' role='alert'>\n  <h4 class='alert-heading'>Well done!</h4>\n  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>\n  <hr>\n  <p class='mb-0'>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>\n  <p>When you want to have a link if would look link <a href='#'>this</a></p>\n</div>"
+              "id": "16",
+              "url": "button-groups",
+              "content": null
             },
             {
-              "id": 3,
-              "title": "Alert dismissable",
-              "text": "<div class='alert alert-warning alert-dismissible fade show' role='alert'>\n  <strong>Holy guacamole!</strong> You should check in on some of those fields below.\n  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>\n    <span aria-hidden='true'>×</span>\n  </button>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 3,
-        "url": "badges",
-        "content": {
-          "id": 1,
-          "title": "Badge",
-          "tag": "Badges",
-          "description": "Badges",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic badge",
-              "text": "<span class='badge badge-pill badge-primary'>Primary</span>\n<span class='badge badge-pill badge-success'>Success</span>\n<span class='badge badge-pill badge-danger'>Danger</span>\n<span class='badge badge-pill badge-warning'>Warning</span>\n<span class='badge badge-pill badge-info'>Info</span>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 4,
-        "url": "breadcrumbs",
-        "content": {
-          "id": 1,
-          "title": "Breadcrumb",
-          "tag": "Breadcrumb",
-          "description": "Breadcrumb",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Breadcrumb",
-              "text": "<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item active' aria-current='page'>Home</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Library</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item'><a href='#'>Library</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Data</li>\n  </ol>\n</nav>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 5,
-        "url": "buttons",
-        "content": {
-          "id": 1,
-          "title": "Button",
-          "tag": "Button",
-          "description": "Buttons",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic button",
-              "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>\n"
+              "id": "17",
+              "url": "cards",
+              "content": null
             },
             {
-              "id": 2,
-              "title": "Button tags",
-              "text": "<a class='btn btn-primary' href='#' role='button'>Link</a>\n<button class='btn btn-primary' type='submit'>Button</button>\n<input class='btn btn-primary' type='button' value='Input'>\n<input class='btn btn-primary' type='submit' value='Submit'>\n<input class='btn btn-primary' type='reset' value='Reset'>"
+              "id": "18",
+              "url": "dropdowns",
+              "content": null
             },
             {
-              "id": 3,
-              "title": "Sizes",
-              "text": "<button type='button' class='btn btn-primary btn-lg'>Large button</button>\n<button type='button' class='btn btn-secondary btn-lg'>Large button</button>\n<button type='button' class='btn btn-primary btn-sm'>Small button</button>\n<button type='button' class='btn btn-secondary btn-sm'>Small button</button>"
+              "id": "19",
+              "url": "forms",
+              "content": null
             },
             {
-              "id": 4,
-              "title": "Block",
-              "text": "<button type='button' class='btn btn-primary btn-lg btn-block'>Block level button</button>\n<button type='button' class='btn btn-secondary btn-lg btn-block'>Block level button</button>"
+              "id": "20",
+              "url": "input-groups",
+              "content": null
             },
             {
-              "id": 5,
-              "title": "Active state",
-              "text": "<a href='#' class='btn btn-primary btn-lg active' role='button' aria-pressed='true'>Primary link</a>\n<a href='#' class='btn btn-secondary btn-lg active' role='button' aria-pressed='true'>Link</a>"
+              "id": "21",
+              "url": "list-group",
+              "content": null
             },
             {
-              "id": 6,
-              "title": "Disabled state",
-              "text": "<button type='button' class='btn btn-lg btn-primary' disabled=''>Primary button</button>\n<button type='button' class='btn btn-secondary btn-lg' disabled=''>Button</button>\n<a href='#' class='btn btn-primary btn-lg disabled' tabindex='-1' role='button' aria-disabled='true'>Primary link</a>\n<a href='#' class='btn btn-secondary btn-lg disabled' tabindex='-1' role='button' aria-disabled='true'>Link</a>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 6,
-        "url": "button-groups",
-        "content": {
-          "id": 1,
-          "title": "Button Group",
-          "tag": "Button Group",
-          "description": "Button Group",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic",
-              "text": "<div class='btn-group' role='group' aria-label='Basic example'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>"
-            },
-            {
-              "id": 2,
-              "title": "Button toolbar",
-              "text": "<div class='btn-toolbar' role='toolbar' aria-label='Toolbar with button groups'>\n  <div class='btn-group mr-2' role='group' aria-label='First group'>\n    <button type='button' class='btn btn-secondary'>1</button>\n    <button type='button' class='btn btn-secondary'>2</button>\n    <button type='button' class='btn btn-secondary'>3</button>\n    <button type='button' class='btn btn-secondary'>4</button>\n  </div>\n  <div class='btn-group mr-2' role='group' aria-label='Second group'>\n    <button type='button' class='btn btn-secondary'>5</button>\n    <button type='button' class='btn btn-secondary'>6</button>\n    <button type='button' class='btn btn-secondary'>7</button>\n  </div>\n  <div class='btn-group' role='group' aria-label='Third group'>\n    <button type='button' class='btn btn-secondary'>8</button>\n  </div>\n</div>"
-            },
-            {
-              "id": 3,
-              "title": "Sizing",
-              "text": "<div class='btn-group btn-group-lg' role='group' aria-label='Large'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>\n<div class='btn-group' role='group' aria-label='...'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>\n<div class='btn-group btn-group-sm' role='group' aria-label='...'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>"
-            },
-            {
-              "id": 4,
-              "title": "Nesting",
-              "text": "<div class='btn-group' role='group' aria-label='Button group with nested dropdown'>\n  <button type='button' class='btn btn-secondary'>1</button>\n  <button type='button' class='btn btn-secondary'>2</button>\n\n  <div class='btn-group' role='group'>\n    <button id='btnGroupDrop1' type='button' class='btn btn-secondary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n      Dropdown\n    </button>\n    <div class='dropdown-menu' aria-labelledby='btnGroupDrop1'>\n      <a class='dropdown-item' href='#'>Dropdown link</a>\n      <a class='dropdown-item' href='#'>Dropdown link</a>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 5,
-              "title": "Vertical variation",
-              "text": "<div class='btn-group-vertical' role='group' aria-label='Vertical button group'>\n  <button type='button' class='btn btn-secondary'>Button</button>\n  <button type='button' class='btn btn-secondary'>Button</button>\n  <button type='button' class='btn btn-secondary'>Button</button>\n  <button type='button' class='btn btn-secondary'>Button</button>\n  <button type='button' class='btn btn-secondary'>Button</button>\n  <button type='button' class='btn btn-secondary'>Button</button>\n</div>\n"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 7,
-        "url": "Cards",
-        "content": {
-          "id": 1,
-          "title": "Cards",
-          "tag": "Cards",
-          "description": "Cards",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic Card",
-              "text": "<div class='card' style='width: 30rem;'>\n  <svg class='card-img-top'>\n    <rect width='100%' height='150px' fill='#868e96'></rect>\n  </svg>\n  <div class='card-body'>\n    <h5 class='card-title'>Card title</h5>\n    <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n    <a href='#' class='btn btn-primary'>Go somewhere</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 2,
-              "title": "Card body",
-              "text": "<div class='card'>\n  <div class='card-body'>\n    This is some text within a card body.\n  </div>\n</div>"
-            },
-            {
-              "id": 3,
-              "title": "Title, text and links",
-              "text": "<div class='card' style='width: 30rem;'>\n  <div class='card-body'>\n    <h5 class='card-title'>Card title</h5>\n    <h6 class='card-subtitle mb-2 text-muted'>Card subtitle</h6>\n    <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n    <a href='#' class='card-link'>Card link</a>\n    <a href='#' class='card-link'>Another link</a>\n  </div>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 8,
-        "url": "dropdowns",
-        "content": {
-          "id": 1,
-          "title": "Dropdown",
-          "tag": "Dropdowns",
-          "description": "Dropdowns",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic badge",
-              "text": "<div class='dropdown'>\n  <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Dropdown button\n  </button>\n  <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 2,
-              "title": "Contextual variations",
-              "text": "<!-- Example single primary button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<!-- Example single secondary button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-secondary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<!-- Example single success button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-success dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<!-- Example single info button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-info dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<!-- Example single warning button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-warning dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<!-- Example single danger button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-danger dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n"
-            },
-            {
-              "id": 3,
-              "title": "Split button",
-              "text": " <!-- Example split primary button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-primary'>Action</button>\n  <button type='button' class='btn btn-primary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    <span class='sr-only'>Toggle Dropdown</span>\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 4,
-              "title": "Sizing",
-              "text": "<!-- Large button groups (default and split) -->\n<div class='btn-group'>\n  <button class='btn btn-secondary btn-lg dropdown-toggle' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Large button\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<div class='btn-group'>\n  <button class='btn btn-secondary btn-lg' type='button'>\n    Large split button\n  </button>\n  <button type='button' class='btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    <span class='sr-only'>Toggle Dropdown</span>\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n\n<!-- Small button groups (default and split) -->\n<div class='btn-group'>\n  <button class='btn btn-secondary btn-sm dropdown-toggle' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Small button\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n<div class='btn-group'>\n  <button class='btn btn-secondary btn-sm' type='button'>\n    Small split button\n  </button>\n  <button type='button' class='btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    <span class='sr-only'>Toggle Dropdown</span>\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 5,
-              "title": "Direction dropup",
-              "text": "<!-- Default dropup button -->\n<div class='btn-group dropup'>\n  <button type='button' class='btn btn-secondary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Dropup\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n\n<!-- Split dropup button -->\n<div class='btn-group dropup'>\n  <button type='button' class='btn btn-secondary'>\n    Split dropup\n  </button>\n  <button type='button' class='btn btn-secondary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    <span class='sr-only'>Toggle Dropdown</span>\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 6,
-              "title": "Direction dropright",
-              "text": "<!-- Default dropright button -->\n<div class='btn-group dropright'>\n  <button type='button' class='btn btn-secondary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Dropright\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n\n<!-- Split dropright button -->\n<div class='btn-group dropright'>\n  <button type='button' class='btn btn-secondary'>\n    Split dropright\n  </button>\n  <button type='button' class='btn btn-secondary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    <span class='sr-only'>Toggle Dropright</span>\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
-            },
-            {
-              "id": 7,
-              "title": "Direction dropleft",
-              "text": "<!-- Default dropleft button -->\n<div class='btn-group dropleft'>\n  <button type='button' class='btn btn-secondary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Dropleft\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n\n<!-- Split dropleft button -->\n<div class='btn-group'>\n  <div class='btn-group dropleft' role='group'>\n    <button type='button' class='btn btn-secondary dropdown-toggle dropdown-toggle-split' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n      <span class='sr-only'>Toggle Dropleft</span>\n    </button>\n    <div class='dropdown-menu'>\n      <a class='dropdown-item' href='#'>Action</a>\n      <a class='dropdown-item' href='#'>Another action</a>\n      <a class='dropdown-item' href='#'>Something else here</a>\n      <div class='dropdown-divider'></div>\n      <a class='dropdown-item' href='#'>Separated link</a>\n    </div>\n  </div>\n  <button type='button' class='btn btn-secondary'>\n    Split dropleft\n  </button>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 9,
-        "url": "forms",
-        "content": {
-          "id": 1,
-          "title": "Forms",
-          "tag": "Form",
-          "description": "Forms",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic form",
-              "text": "<form>\n  <div class='form-group'>\n    <label for='exampleInputEmail1'>Email address</label>\n    <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Enter email'>\n    <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>\n  </div>\n  <div class='form-group'>\n    <label for='exampleInputPassword1'>Password</label>\n    <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>\n  </div>\n  <button type='submit' class='btn btn-primary'>Submit</button>\n</form>"
-            },
-            {
-              "id": 2,
-              "title": "Form controls",
-              "text": "<form>\n  <div class='form-group'>\n    <label for='exampleFormControlInput1'>Email address</label>\n    <input type='email' class='form-control' id='exampleFormControlInput1' placeholder='name@example.com'>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlSelect1'>Example select</label>\n    <select class='form-control' id='exampleFormControlSelect1'>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlSelect2'>Example multiple select</label>\n    <select multiple='' class='form-control' id='exampleFormControlSelect2'>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlTextarea1'>Example textarea</label>\n    <textarea class='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>\n  </div>\n</form>"
-            },
-            {
-              "id": 3,
-              "title": "Input Sizing",
-              "text": "<input class='form-control form-control-lg' type='text' placeholder='.form-control-lg'>\n<input class='form-control' type='text' placeholder='Default input'>\n<input class='form-control form-control-sm' type='text' placeholder='.form-control-sm'>"
-            },
-            {
-              "id": 4,
-              "title": "Select sizing",
-              "text": "<select class='form-control form-control-lg'>\n  <option>Large select</option>\n</select>\n<select class='form-control'>\n  <option>Default select</option>\n</select>\n<select class='form-control form-control-sm'>\n  <option>Small select</option>\n</select>"
-            },
-            {
-              "id": 5,
-              "title": "Readonly",
-              "text": "\n<input class='form-control' type='text' placeholder='Readonly input here...' value='Readonly input goes here' readonly=''>"
-            },
-            {
-              "id": 6,
-              "title": "Form groups",
-              "text": "<form>\n  <div class='form-group'>\n    <label for='formGroupExampleInput'>Example label</label>\n    <input type='text' class='form-control' id='formGroupExampleInput' placeholder='Example input'>\n  </div>\n  <div class='form-group'>\n    <label for='formGroupExampleInput2'>Another label</label>\n    <input type='text' class='form-control' id='formGroupExampleInput2' placeholder='Another input'>\n  </div>\n</form>"
-            },
-            {
-              "id": 7,
-              "title": "Disabled forms",
-              "text": "<form>\n  <fieldset disabled=''>\n    <div class='form-group'>\n      <label for='disabledTextInput'>Disabled input</label>\n      <input type='text' id='disabledTextInput' class='form-control' placeholder='Disabled input'>\n    </div>\n    <div class='form-group'>\n      <label for='disabledSelect'>Disabled select menu</label>\n      <select id='disabledSelect' class='form-control'>\n        <option>Disabled select</option>\n      </select>\n    </div>\n    <div class='form-group'>\n      <div class='form-check'>\n        <input class='form-check-input' type='checkbox' id='disabledFieldsetCheck' disabled=''>\n        <label class='form-check-label' for='disabledFieldsetCheck'>\n          Can't check this\n        </label>\n      </div>\n    </div>\n    <button type='submit' class='btn btn-primary'>Submit</button>\n  </fieldset>\n</form>"
-            },
-            {
-              "id": 8,
-              "title": "Custom checkbox",
-              "text": "<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheck1'>\n  <label class='custom-control-label' for='customCheck1'>Check this custom checkbox</label>\n</div>\n<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheck2' checked=''>\n  <label class='custom-control-label' for='customCheck2'>Checked custom checkbox</label>\n</div>"
-            },
-            {
-              "id": 9,
-              "title": "Custom radio buttons",
-              "text": "<div class='custom-control custom-radio'>\n  <input type='radio' id='sbRadio-1' name='sbRadio01' class='custom-control-input' value='option1'>\n  <label class='custom-control-label' for='sbRadio-1'>Toggle this custom radio</label>\n</div>\n<div class='custom-control custom-radio'>\n  <input type='radio' id='sbRadio-2' name='sbRadio01' class='custom-control-input' value='option2'>\n  <label class='custom-control-label' for='sbRadio-2'>Or toggle this other custom radio</label>\n</div>"
-            },
-            {
-              "id": 10,
-              "title": "Disabled custom checkbox and radio buttons",
-              "text": "<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheckDisabled1' disabled=''>\n  <label class='custom-control-label' for='customCheckDisabled1'>Check this custom checkbox</label>\n</div>\n\n<div class='custom-control custom-radio'>\n  <input type='radio' name='radioDisabled' id='customRadioDisabled2' class='custom-control-input' disabled=''>\n  <label class='custom-control-label' for='customRadioDisabled2'>Toggle this custom radio</label>\n</div>\n\n<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheckDisabled3' checked='' disabled=''>\n  <label class='custom-control-label' for='customCheckDisabled3'>Checked disabled checkbox</label>\n</div>"
-            },
-            {
-              "id": 11,
-              "title": "Validation visual cues",
-              "text": "<form>\n  <div class='form-row'>\n    <div class='col-md-6 mb-5'>\n      <label for='validationServer01'>First name</label>\n      <input type='text' class='form-control is-valid' id='validationServer01' placeholder='First name' value='Mark' required=''>\n      <div class='valid-feedback'>\n        Looks good!\n      </div>\n    </div>\n    <div class='col-md-6 mb-5'>\n      <label for='validationServer02'>Last name</label>\n      <input type='text' class='form-control is-valid' id='validationServer02' placeholder='Last name' value='Otto' required=''>\n      <div class='valid-feedback'>\n        Looks good!\n      </div>\n    </div>\n  </div>\n  <div class='form-row'>\n    <div class='col-md-6 mb-3'>\n      <label for='validationServer03'>City</label>\n      <input type='text' class='form-control is-invalid' id='validationServer03' placeholder='City' required=''>\n      <div class='invalid-feedback'>\n        Please provide a valid city.\n      </div>\n    </div>\n    <div class='col-md-3 mb-3'>\n      <label for='validationServer04'>State</label>\n      <input type='text' class='form-control is-invalid' id='validationServer04' placeholder='State' required=''>\n      <div class='invalid-feedback'>\n        Please provide a valid state.\n      </div>\n    </div>\n    <div class='col-md-3 mb-3'>\n      <label for='validationServer05'>Zip</label>\n      <input type='text' class='form-control is-invalid' id='validationServer05' placeholder='Zip' required=''>\n      <div class='invalid-feedback'>\n        Please provide a valid zip.\n      </div>\n    </div>\n  </div>\n  <button class='btn btn-primary' type='submit'>Submit form</button>\n</form>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 10,
-        "url": "input-groups",
-        "content": {
-          "id": 1,
-          "title": "Input groups",
-          "tag": "Input groups",
-          "description": "Input groups",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic input group",
-              "text": "<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text' id='basic-addon1'>@</span>\n  </div>\n  <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1'>\n</div>\n\n<div class='input-group mb-3'>\n  <input type='text' class='form-control' placeholder='Recipient's username' aria-label='Recipient's username' aria-describedby='basic-addon2'>\n  <div class='input-group-append'>\n    <span class='input-group-text' id='basic-addon2'>@example.com</span>\n  </div>\n</div>\n\n<label for='basic-url'>Your vanity URL</label>\n<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text' id='basic-addon3'>https://example.com/users/</span>\n  </div>\n  <input type='text' class='form-control' id='basic-url' aria-describedby='basic-addon3'>\n</div>\n\n<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text'>$</span>\n  </div>\n  <input type='text' class='form-control' aria-label='Amount (to the nearest dollar)'>\n  <div class='input-group-append'>\n    <span class='input-group-text'>.00</span>\n  </div>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 11,
-        "url": "list-group",
-        "content": {
-          "id": 1,
-          "title": "List group",
-          "tag": "List group",
-          "description": "List group",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic list group",
-              "text": "<ul class='list-group'>\n  <li class='list-group-item'>Cras justo odio</li>\n  <li class='list-group-item'>Dapibus ac facilisis in</li>\n  <li class='list-group-item'>Morbi leo risus</li>\n  <li class='list-group-item'>Porta ac consectetur ac</li>\n  <li class='list-group-item'>Vestibulum at eros</li>\n</ul>"
-            },
-            {
-              "id": 2,
-              "title": "Active items",
-              "text": "<ul class='list-group'>\n  <li class='list-group-item active'>Cras justo odio</li>\n  <li class='list-group-item'>Dapibus ac facilisis in</li>\n  <li class='list-group-item'>Morbi leo risus</li>\n  <li class='list-group-item'>Porta ac consectetur ac</li>\n  <li class='list-group-item'>Vestibulum at eros</li>\n</ul>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-        "id" : 18,
-        "url": "loading",
-        "content": {
-          "id": 1,
-          "title": "Loading",
-          "template": 4,
-          "examples": [
-            {
-              "title": "Loading class on button",
-              "text": "<button type='button' class='btn btn-primary loading'>Primary</button>\n<button type='button' class='btn btn-secondary loading'>Secondary</button>\n<a href='/' class='btn btn-success loading'>Success</a>"
-            },
-            {
-              "title": "Loading class on table",
-              "text": "<table class='table loading'>\n  <thead>\n    <tr>\n      <th>Id</th>\n      <th>Name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>1</th>\n      <td>Mark</td>\n      <td>Lorem ipsum dolor sit amet</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>June</td>\n      <td>Consectetur adipiscing elit</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Augusta</td>\n      <td>Sed do eiusmod tempor incididunt</td>\n    </tr>\n  </tbody>\n</table>"
+              "id": "22",
+              "url": "loading",
+              "content": null
             }
           ]
         }
-      },
-      {
-      "id": 12,
-        "url": "media-objects",
-        "content": {
-          "id": 1,
-          "title": "Media Objects",
-          "tag": "Media Objects",
-          "description": "Media Objects",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic media object",
-              "text": "<div class='media'>\n  <svg class='mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Media heading</h5>\n    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n  </div>\n</div>"
-            },
-            {
-              "id": 2,
-              "title": "Basic media object",
-              "text": "\n<div class='media'>\n  <svg class='mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Media heading</h5>\n    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n\n    <div class='media mt-3'>\n      <a class='pr-3' href='#'>\n        <svg class='mr-3' width='64' height='64'>\n          <rect width='100%' height='100%' fill='#868e96'></rect>\n        </svg>\n      </a>\n      <div class='media-body'>\n        <h5 class='mt-0'>Media heading</h5>\n        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 3,
-              "title": "Basic media object",
-              "text": "<div class='media'>\n  <svg class='align-self-start mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Top-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>\n    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\n  </div>\n</div>"
-            },
-            {
-              "id": 4,
-              "title": "Basic media object",
-              "text":"<div class='media'>\n  <svg class='align-self-center mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Center-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>\n    <p class='mb-0'>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\n  </div>\n</div>"
-            },
-            {
-              "id": 5,
-              "title": "Basic media object",
-              "text": "<div class='media'>\n  <svg class='align-self-end mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Bottom-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>\n    <p class='mb-0'>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\n  </div>\n</div>"
-            },
-            {
-              "id": 6,
-              "title": "Basic media object",
-              "text": "<div class='media'>\n  <div class='media-body'>\n    <h5 class='mt-0'>Order-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>\n    <p class='mb-0'>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\n  </div>\n  <svg class='align-self-end mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n</div>"
-            },
-            {
-              "id": 7,
-              "title": "Basic media object",
-              "text": "<ul class='list-unstyled'>\n  <li class='media'>\n    <svg class='mr-3' width='64' height='64'>\n      <rect width='100%' height='100%' fill='#868e96'></rect>\n    </svg>\n    <div class='media-body'>\n      <h5 class='mt-0 mb-1'>List-based media object</h5>\n      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n    </div>\n  </li>\n  <li class='media my-4'>\n    <svg class='mr-3' width='64' height='64'>\n      <rect width='100%' height='100%' fill='#868e96'></rect>\n    </svg>\n    <div class='media-body'>\n      <h5 class='mt-0 mb-1'>List-based media object</h5>\n      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n    </div>\n  </li>\n  <li class='media'>\n    <svg class='mr-3' width='64' height='64'>\n      <rect width='100%' height='100%' fill='#868e96'></rect>\n    </svg>\n    <div class='media-body'>\n      <h5 class='mt-0 mb-1'>List-based media object</h5>\n      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.\n    </div>\n  </li>\n</ul>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-      "id": 13,
-        "url": "modals",
-        "content": {
-          "id": 1,
-          "title": "Modals",
-          "tag": "Modals",
-          "description": "Modals",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic Modals",
-              "text": "<div id=\"modalExample\" class=\"modal\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\">Modal title</h5>\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">×</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <p>Modal body text goes here.</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>\n        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 2,
-              "title": "Live demo",
-              "text": "<!-- Button trigger modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>\n  Launch demo modal\n</button>\n\n<!-- Modal -->\n<div class='modal fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>\n  <div class='modal-dialog' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Modal body text goes here.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 3,
-              "title": "Scrolling Long content",
-              "text": "<!-- Button trigger modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModalLong'>\n  Launch demo modal\n</button>\n\n<!-- Modal -->\n<div class='modal fade' id='exampleModalLong' tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true'>\n  <div class='modal-dialog' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='exampleModalLongTitle'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 4,
-              "title": "Scrolling inside",
-              "text": "<!-- Button trigger modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModalScrollable'>\n  Launch demo modal\n</button>\n\n<!-- Modal -->\n<div class='modal fade' id='exampleModalScrollable' tabindex='-1' role='dialog' aria-labelledby='exampleModalScrollableTitle' aria-hidden='true'>\n  <div class='modal-dialog modal-dialog-scrollable' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='exampleModalScrollableTitle'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 5,
-              "title": "Vertically centered",
-              "text": "<!-- Button trigger modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModalCenter'>\n  Launch demo modal\n</button>\n\n<!-- Modal -->\n<div class='modal fade' id='exampleModalCenter' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>\n  <div class='modal-dialog modal-dialog-centered' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='exampleModalCenterTitle'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 6,
-              "title": "Using grid",
-              "text": "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#gridSystemModal'>\n  Launch demo modal\n</button>\n\n<div id='gridSystemModal' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='gridModalLabel' aria-hidden='true'>\n  <div class='modal-dialog' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='gridModalLabel'>Grids in modals</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>×</span></button>\n      </div>\n      <div class='modal-body'>\n        <div class='container-fluid bd-example-row'>\n          <div class='row'>\n            <div class='col-md-4'>.col-md-4</div>\n            <div class='col-md-4 ml-auto'>.col-md-4 .ml-auto</div>\n          </div>\n          <div class='row'>\n            <div class='col-md-3 ml-auto'>.col-md-3 .ml-auto</div>\n            <div class='col-md-2 ml-auto'>.col-md-2 .ml-auto</div>\n          </div>\n          <div class='row'>\n            <div class='col-md-6 ml-auto'>.col-md-6 .ml-auto</div>\n          </div>\n          <div class='row'>\n            <div class='col-sm-9'>\n              Level 1: .col-sm-9\n              <div class='row'>\n                <div class='col-8 col-sm-6'>\n                  Level 2: .col-8 .col-sm-6\n                </div>\n                <div class='col-4 col-sm-6'>\n                  Level 2: .col-4 .col-sm-6\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
-            },
-            {
-              "id": 7,
-              "title": "Sizing",
-              "text": "<!-- Extra large modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.bd-example-modal-xl'>Extra large modal</button>\n\n<div class='modal fade bd-example-modal-xl' tabindex='-1' role='dialog' aria-labelledby='myExtraLargeModalLabel' aria-hidden='true'>\n  <div class='modal-dialog modal-xl'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='myExtraLargeModalLabel'>Extra large modal</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        ...\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Large modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.bd-example-modal-lg'>Large modal</button>\n\n<div class='modal fade bd-example-modal-lg' tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true'>\n  <div class='modal-dialog modal-lg'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='myLargeModalLabel'>Large modal</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        ...\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Small modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.bd-example-modal-sm'>Small modal</button>\n\n<div class='modal fade bd-example-modal-sm' tabindex='-1' role='dialog' aria-labelledby='mySmallModalLabel' aria-hidden='true'>\n  <div class='modal-dialog modal-sm'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='mySmallModalLabel'>Small modal</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        ...\n      </div>\n    </div>\n  </div>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-        "id": 14,
-        "url": "navs",
-        "content": {
-          "id": 1,
-          "title": "Navs",
-          "tag": "Navs",
-          "description": "Navs",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Navs with ul element",
-              "text": "<ul class='nav'>\n  <li class='nav-item'>\n    <a class='nav-link active' href='#'>Active</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link disabled' href='#'>Disabled</a>\n  </li>\n</ul>"
-            },
-            {
-              "id": 2,
-              "title": "Navs with nav element",
-              "text": "<nav class='nav'>\n  <a class='nav-link active' href='#'>Active</a>\n  <a class='nav-link' href='#'>Link</a>\n  <a class='nav-link' href='#'>Link</a>\n  <a class='nav-link disabled' href='#'>Disabled</a>\n</nav>\n"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-        "id": 15,
-        "url": "pagination",
-        "content": {
-          "id": 1,
-          "title": "Pagination",
-          "tag": "Pagination",
-          "description": "Pagination",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic Pagination",
-              "text": "<nav aria-label='Page navigation example'>\n  <ul class='pagination'>\n    <li class='page-item'><a class='page-link' href='#'>Previous</a></li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'><a class='page-link' href='#'>Next</a></li>\n  </ul>\n</nav>"
-            },
-            {
-              "id": 2,
-              "title": "With icons",
-              "text": "<nav aria-label='Page navigation example'>\n  <ul class='pagination'>\n    <li class='page-item'>\n      <a class='page-link' href='#' aria-label='Previous'>\n        <span aria-hidden='true'>«</span>\n      </a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#' aria-label='Next'>\n        <span aria-hidden='true'>»</span>\n      </a>\n    </li>\n  </ul>\n</nav>"
-            },
-            {
-              "id": 3,
-              "title": "Disabled and active states",
-              "text": "<nav aria-label='...'>\n  <ul class='pagination'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item active' aria-current='page'>\n      <a class='page-link' href='#'>2 <span class='sr-only'>(current)</span></a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>"
-            },
-            {
-              "id": 4,
-              "title": "Center alignments",
-              "text": "<!-- Center alignment -->\n<nav aria-label='Page navigation example'>\n  <ul class='pagination justify-content-center'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>"
-            },
-            {
-              "id": 5,
-              "title": "Right alignments",
-              "text": "<!-- Right alignment -->\n<nav aria-label='Page navigation example'>\n  <ul class='pagination justify-content-end'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-        "id": 16,
-        "url": "progress",
-        "content": {
-          "id": 1,
-          "title": "Progress",
-          "tag": "Progress",
-          "description": "Progress",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic progres",
-              "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n"
-            },
-            {
-              "id": 2,
-              "title": "Labels",
-              "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>\n</div>"
-            },
-            {
-              "id": 3,
-              "title": "Height",
-              "text": "<div class='progress' style='height: 1px;'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress' style='height: 20px;'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
-            },
-            {
-              "id": 4,
-              "title": "Backgrounds",
-              "text": "<div class='progress'>\n  <div class='progress-bar bg-success' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar bg-info' role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar bg-warning' role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n<div class='progress'>\n  <div class='progress-bar bg-danger' role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
-            },
-            {
-              "id": 5,
-              "title": "Multiple",
-              "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 15%' aria-valuenow='15' aria-valuemin='0' aria-valuemax='100'></div>\n  <div class='progress-bar bg-success' role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100'></div>\n  <div class='progress-bar bg-info' role='progressbar' style='width: 20%' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n"
-            }
-          ],
-          "template": 4
-        }
-      },
-      {
-        "id": 17,
-        "url": "tables",
-        "content": {
-          "id": 1,
-          "title": "Tables",
-          "tag": "Tables",
-          "description": "Tables",
-          "examples": [
-            {
-              "id": 1,
-              "title": "Basic table",
-              "text": "<table class='table'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 2,
-              "title": "Striped",
-              "text": "<table class='table table-striped'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 3,
-              "title": "Bordered table",
-              "text": "<table class='table table-bordered'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 4,
-              "title": "Borderless table",
-              "text": "<table class='table table-borderless'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 5,
-              "title": "Table hover",
-              "text": "<table class='table table-hover'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 6,
-              "title": "Small table",
-              "text": "<table class='table table-sm'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 7,
-              "title": "Contextual colors ",
-              "text": "<table class='table'>\n  <thead>\n    <tr>\n      <th scope='col'>Class</th>\n      <th scope='col'>Heading</th>\n      <th scope='col'>Heading</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr class='table-active'>\n      <th scope='row'>Active</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-primary'>\n      <th scope='row'>Primary</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-secondary'>\n      <th scope='row'>Secondary</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-success'>\n      <th scope='row'>Success</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-danger'>\n      <th scope='row'>Danger</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-warning'>\n      <th scope='row'>Warning</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-info'>\n      <th scope='row'>Info</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n  </tbody>\n</table>"
-            },
-            {
-              "id": 8,
-              "title": "Contextual colors ",
-              "text": "\n<div class='table-responsive'>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th scope='col'>#</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <th scope='row'>1</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n      <tr>\n        <th scope='row'>2</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n      <tr>\n        <th scope='row'>3</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
-            }
-          ],
-          "template": 4
-        }
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "url": "utilities",
-    "content": {
-      "id": 1,
-      "title": "Utilities",
-      "description": "Some info goes here."
-    },
-    "pages": [
-      {
-        "id": 1,
-        "url": "overview",
-        "content": {
-          "title": "Overview",
-          "description": "Select a page to see examples and get more information.",
-          "template": 2
-        }
-      },
-      {
-        "id": 2,
-        "url": "typography",
-        "content": {
-          "id": 1,
-          "title": "Typography",
-          "template": 4,
-          "examples" : [
-            {
-              "id": 1,
-              "title":"Headings",
-              "text": "<h1>h1. Bootstrap heading</h1>\n<h2>h2. Bootstrap heading</h2>\n<h3>h3. Bootstrap heading</h3>\n<h4>h4. Bootstrap heading</h4>\n<h5>h5. Bootstrap heading</h5>\n<h6>h6. Bootstrap heading</h6>"
-            },
-            {
-              "id": 2,
-              "title":"Lead",
-              "text": "<p class='lead'>\n  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.\n</p>"
-            },
-            {
-              "id": 3,
-              "title":"Inline text elements",
-              "text": "<p>You can use the mark tag to <mark>highlight</mark> text.</p>\n<p><del>This line of text is meant to be treated as deleted text.</del></p>\n<p><s>This line of text is meant to be treated as no longer accurate.</s></p>\n<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>\n<p><u>This line of text will render as underlined</u></p>\n<p><small>This line of text is meant to be treated as fine print.</small></p>\n<p><strong>This line rendered as bold text.</strong></p>\n<p><em>This line rendered as italicized text.</em></p>"
-            },
-            {
-              "id": 4,
-              "title": "List unstyled",
-              "text": "<ul class='list-unstyled'>\n  <li>Lorem ipsum dolor sit amet</li>\n  <li>Consectetur adipiscing elit</li>\n  <li>Integer molestie lorem at massa</li>\n  <li>Facilisis in pretium nisl aliquet</li>\n  <li>Nulla volutpat aliquam velit\n    <ul>\n      <li>Phasellus iaculis neque</li>\n      <li>Purus sodales ultricies</li>\n      <li>Vestibulum laoreet porttitor sem</li>\n      <li>Ac tristique libero volutpat at</li>\n    </ul>\n  </li>\n  <li>Faucibus porta lacus fringilla vel</li>\n  <li>Aenean sit amet erat nunc</li>\n  <li>Eget porttitor lorem</li>\n</ul>"
-            },
-            {
-              "id": 5,
-              "title": "List inline",
-              "text": "<ul class='list-inline'>\n  <li class='list-inline-item'>Lorem ipsum</li>\n  <li class='list-inline-item'>Phasellus iaculis</li>\n  <li class='list-inline-item'>Nulla volutpat</li>\n</ul>"
-            },
-            {
-              "id": 6,
-              "title": "List inline",
-              "text": "<dl class='row'>\n  <dt class='col-sm-3'>Description lists</dt>\n  <dd class='col-sm-9'>A description list is perfect for defining terms.</dd>\n\n  <dt class='col-sm-3'>Euismod</dt>\n  <dd class='col-sm-9'>\n    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>\n    <p>Donec id elit non mi porta gravida at eget metus.</p>\n  </dd>\n\n  <dt class='col-sm-3'>Malesuada porta</dt>\n  <dd class='col-sm-9'>Etiam porta sem malesuada magna mollis euismod.</dd>\n\n  <dt class='col-sm-3 text-truncate'>Truncated term is truncated</dt>\n  <dd class='col-sm-9'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>\n\n  <dt class='col-sm-3'>Nesting</dt>\n  <dd class='col-sm-9'>\n    <dl class='row'>\n      <dt class='col-sm-4'>Nested definition list</dt>\n      <dd class='col-sm-8'>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>\n    </dl>\n  </dd>\n</dl>"
-            }
-          ]
-        }
-      },
-      {
-        "id" : 4,
-        "url": "colors",
-        "content": {
-          "id": 1,
-          "title": "Colors",
-          "template": 5,
-          "examples": [
-            {
-              "title": "Global colors",
-              "type": "global"
-            },
-            {
-              "title": "Interaction colors",
-              "type": "interaction"
-            },
-            {
-              "title": "Extra colors",
-              "type": "extra"
-            }
-          ]
-        }
-      },
-      {
-        "id" : 5,
-        "url": "icons",
-        "content": {
-          "id": 1,
-          "title": "Icons",
-          "template": 6,
-          "examples": [
-            {
-              "title": "Icon list",
-              "description": "The following icons are provided as part of the icon component and can be used like in the example but with chosen icon name.",
-              "text": "<c-icon name='truck'></c-icon>"
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "url": "none",
-    "content": {
-      "id": 3,
-      "title": "Not found",
-      "description": "This page could not be found.",
-      "template": 3
+      ]
     }
   }
-]
+}

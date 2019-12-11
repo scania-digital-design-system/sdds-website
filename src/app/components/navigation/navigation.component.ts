@@ -13,12 +13,12 @@ export class NavigationComponent {
 
   constructor(private ps: PageService) {
     this.ps.pages.subscribe((items: Array<Page>) => {
-      this.items = this.filterEmptyRoutes(items);
+      this.items = items;
       // console.log(this.items)
     });
   }
 
-  filterEmptyRoutes(items: Array<Page>) {
-    return items.filter(item => item.url !== 'none');
-  };
+  filterEmpty(items) {
+    return !!items.filter(item => item.content).length;
+  }
 }
