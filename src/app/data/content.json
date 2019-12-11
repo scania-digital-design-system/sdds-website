@@ -26,6 +26,32 @@
                 },
                 "examples": []
               }
+            },
+            {
+              "id": "23",
+              "url": "migration",
+              "content": {
+                "id": "10",
+                "title": "Migrate to v4",
+                "description": "# Corporate UI Migration Guide v3 to v4\n\n## Before update\n\n\n<input type='checkbox' id='1' name='1'> <label for='1'>Install or add script for scania-theme together with corporate-ui latest version.</label>\n<br/>  [Installation guide](https://github.com/scania/corporate-ui/tree/master#styling)\n\n<input type='checkbox' id='2' name='2'> <label for='2'>Bootstrap has been upgraded to the latest version of Bootstrap 4. Check your project if you use any Bootstrap 3 features. </label>\n<br/>  Check out [Bootstrap migration guide](https://getbootstrap.com/docs/4.0/migration/) for the things you need to apply to your project.\n\n<input type='checkbox' id='3' name='3'> <label for='3'>We have moved from Polyfill to Stencil to create custom elements. Remove any dependencies to polyfill if there's any.</label>\n\n\n## Migration guide checklist\n\n\n<input type='checkbox' id='4' name='4'> <label for='4'>Add c-theme component in HTML body `<c-theme name=\\\"scania\\\" global=\\\"true\\\"></c-theme>`</label>\n\n<input type='checkbox' id='5' name='5'> <label for='5'>Update custom element name</label>\n<br/>\n  - c-corporate-header >> c-header\n  - c-main-navigation >> c-navigation\n  - c-main-content >> c-content\n  - c-corporate-footer>> c-footer\n  - c-social-media is deprecated, use c-icon instead to generate social media icons'\n\n<input type='checkbox' id='6' name='6'> <label for='6'>Check out all components guideline in corporate-ui 4.0 [here](https://scania.github.io/corporate-ui-site/elements/overview)</label>\n\n<input type='checkbox' id='7' name='7'> <label for='7'>`nav-item` is deprecated. We use slot instead of nav-item inside c-header and c-navigation. You can put an `a` element to replace `nav-item`</label>. Example:\n\n  ```html\n  <c-header site-name='App'>\n    <a href='global' slot='items'>global</a>\n  </c-header>\n  ```\n\n<input type='checkbox' id='8' name='8'> <label for='8'>`primary-items` and `secondary-items` in main navigation is now used as a slot name.</label> Example:\n  ```html\n  <c-navigation>\n    <a href='/' slot='primary-items' active=''>home</a>\n    <a href='/user' slot='secondary-items'>user</a>\n  </c-navigation>\n  ```\n\n<input type='checkbox' id='9' name='9'> <label for='9'>Dealer header component</label>\n<br/>  In corporate-ui v3, dealer header component was used as a variation in the `c-corporate-header`. It is now a separated component. Use `c-dealer-header` instead. [Read more](https://scania.github.io/corporate-ui-site/elements/dealer-header)\n\n<input type='checkbox' id='10' name='10'> <label for='10'>FontAwesome icons</label>\n<br/>  FontAwesome is no longer provided in corporate-ui. Replace FontAwesome with your own FontAwesome license or replace with our new icon set. [See all available Scania icons](https://scania.github.io/corporate-ui-site/utilities/icons)\n",
+                "template": {
+                  "id": "3"
+                },
+                "examples": []
+              }
+            },
+            {
+              "id": "24",
+              "url": "component_status",
+              "content": {
+                "id": "11",
+                "title": "Component Status",
+                "description": "## Corporate UI components\n\n\n- _List do not include Bootstrap 4 components_\n\n<table class=\\\"table table-striped table-bordered\\\">\n<thead>\n<tr>\n<th>Tag</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>✔️</td>\n<td>ready</td>\n</tr>\n<tr>\n<td>⚠️</td>\n<td>under review / experimental</td>\n</tr>\n<tr>\n<td>⛔️</td>\n<td>deprecated</td>\n</tr>\n<tr>\n<td>❓</td>\n<td>considering</td>\n</tr>\n</tbody>\n</table>\n<table class=\\\"table table-striped table-bordered\\\">\n<thead>\n<tr>\n<th>Component</th>\n<th>3.5.3</th>\n<th>4.0.0</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>header</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>dealer-header</td>\n<td>-</td>\n<td>✔️</td>\n<td>Previously part of c-corporate-header in version 3</td>\n</tr>\n<tr>\n<td>footer</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>social-media</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td>Refactored as c-icon component</td>\n</tr>\n<tr>\n<td>navigation</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>content</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>theme</td>\n<td>-</td>\n<td>✔️</td>\n<td>New component for applying theme</td>\n</tr>\n<tr>\n<td>alert</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>contact-us</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>cookie-message</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>file-upload</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>find-a-dealer</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>fullscreen</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>list-group</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>login</td>\n<td>✔️</td>\n<td>❓</td>\n<td>Will be refactored as a template</td>\n</tr>\n<tr>\n<td>main-hero</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>map-card</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>map</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>modal</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>progress-bar</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>rich-media</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>select</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>teaser</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>text-and-image</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>tiled-display</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>code-sample</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>hello-world</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>icon</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n</tbody>\n</table>",
+                "template": {
+                  "id": "3"
+                },
+                "examples": []
+              }
             }
           ]
         },
