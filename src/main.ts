@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { defineCustomElements, addTheme } from 'corporate-ui-dev';
+import { defineCustomElements, addTheme } from 'corporate-ui';
 import { theme as scania } from 'scania-theme';
 
 import { AppModule } from './app/app.module';

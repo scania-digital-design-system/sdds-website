@@ -12,7 +12,7 @@ npm start
 ## Locally setup
 Create npm links of **Corporate Ui** and **Scania theme**
 ```
-cd ../corporate-ui-dev
+cd ../corporate-ui
 npm link
 cd ../scania-theme
 npm link
@@ -21,7 +21,7 @@ npm link
 Add links to **Corporate Ui** and **Scania theme**
 ```
 cd corporate-ui-site
-npm link corporate-ui-dev
+npm link corporate-ui
 npm link scania-theme
 ```
 
