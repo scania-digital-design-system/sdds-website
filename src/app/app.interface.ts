@@ -1,6 +1,6 @@
 
 // TODO: When StencilJS needs to change there setting for readme or we need to always render readme´s
-// export * from 'corporate-ui-dev/dist/data/docs';
+// export * from 'corporate-ui/dist/data/docs';
 
 export interface Page {
   id?: Number;
