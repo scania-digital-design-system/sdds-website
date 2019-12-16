@@ -11,7 +11,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+                "content": "<section class='container'><div *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples'></div></section>"
             },
             {
                 "id": 3,
@@ -59,7 +59,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+                "content": "<section class='container' *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples'></section>"
             }
         ]
     },

@@ -17,6 +17,7 @@
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */
+import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js'
 import 'core-js/features/array';
 import 'core-js/features/reflect';
 import 'core-js/es/object';

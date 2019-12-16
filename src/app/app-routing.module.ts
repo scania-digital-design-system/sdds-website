@@ -11,6 +11,7 @@ import { PageComponent } from './components/page/page.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
+import { CodeExampleComponent } from './components/code-example/code-example.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IconListComponent } from './components/icon-list/icon-list.component';
     PageComponent,
     TogglerComponent,
     ColorListComponent,
-    IconListComponent
+    IconListComponent,
+    CodeExampleComponent
   ],
   entryComponents: [PageComponent],
   imports: [
