@@ -59,7 +59,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container' *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples'></section>"
+                "content": "<section class='container' *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples' toggleCode='true'></section>"
             }
         ]
     },
