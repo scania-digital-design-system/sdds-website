@@ -28,9 +28,9 @@ export class PageService {
     this.setPages(content);
     this.setDocs(docs);
     // TODO: This data object should be moved to some data flow.
-    this.setNote({
-      description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
-    });
+    // this.setNote({
+    //   description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
+    // });
 
     window['CorporateUi'].store.subscribe(() => {
       const current = window['CorporateUi'].store.getState().theme.current;
