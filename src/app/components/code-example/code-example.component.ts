@@ -8,10 +8,16 @@ import { default as allExamples } from '../../data/examples.json';
     <ng-container *ngFor='let example of examples'>
       <div *ngIf='example === ${item.id}'>
         <strong>${item.title}</strong>
-        <figure>${item.text}</figure>
-        <div item-toggler text='Toggle code example'>
+        <div *ngIf="toggleCode; then toggleOn else toggleOff"></div>
+        <ng-template #toggleOn>
+          <figure *ngIf="toggleCode">${item.text}</figure>
+          <div item-toggler text='Toggle code example'>
+            <c-code-sample>${item.text}</c-code-sample>
+          </div>
+        </ng-template>
+        <ng-template #toggleOff>
           <c-code-sample>${item.text}</c-code-sample>
-        </div>
+        </ng-template>
       </div>
     </ng-container>
   `).join(''),
@@ -26,4 +32,5 @@ import { default as allExamples } from '../../data/examples.json';
 
 export class CodeExampleComponent {
   @Input() examples: Array<Number>;
+  @Input() toggleCode: Boolean;
 }
