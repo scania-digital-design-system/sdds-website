@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Page, Doc } from './app.interface';
 
 import { default as content } from './data/content.json';
-import { components as docs } from 'corporate-ui-dev/dist/data/docs.json';
+import { components as docs } from 'corporate-ui/dist/data/docs.json';
 
 @Injectable()
 export class PageService {
