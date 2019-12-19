@@ -122,7 +122,7 @@
             {
               "id": 8,
               "title": "With social items",
-              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'>\n  </c-icon></a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'>\n  </c-icon></a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'>\n  </c-icon></a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
+              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'></c-icon>\n  </a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'></c-icon>\n  </a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'></c-icon>\n  </a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
             }
           ],
           "template": 1
