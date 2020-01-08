@@ -1,25 +1,36 @@
 /* autoprefixer grid: autoplace */
 
 :host {
+    display: -ms-grid;
     display: grid;
     grid-template-areas:
-        "note note"
         "nav main";
-    grid-template-rows: auto 1fr;
     grid-template-columns: 250px 1fr;
     overflow: hidden;
 
-    ::ng-deep > nav a {
-        background-color: transparent;
-        color: #fff;
+    ::ng-deep > nav {
 
-        &:hover {
+        button {
             background-color: transparent;
-            color: #bfbfbf;
+            border: transparent;
+        }
+        a {
+            background-color: transparent;
+            color: #fff;
+
+            &:hover {
+                background-color: transparent;
+                color: #bfbfbf;
+            }
         }
     }
 }
 
+nav,
+main {
+    height: 100vh;
+    overflow-y: auto;
+}
 nav {
     grid-area: nav;
     background-color: #494949;
@@ -28,15 +39,10 @@ nav {
     --link-color: #fff;
     --link-color-hover: #bfbfbf;
     --link-color-active: #fff;
-    overflow-y: auto;
-}
-a {
-    color: #fff;
 }
 main {
     grid-area: main;
-    overflow-y: auto;
 }
-note-component {
-    grid-area: note;
+a {
+    color: #fff;
 }

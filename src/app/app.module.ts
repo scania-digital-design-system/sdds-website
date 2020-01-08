@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainComponent } from './components/main/main.component';
-import { NoteComponent } from './components/note/note.component';
 
 import { name } from '../../package.json';
 
@@ -18,8 +17,7 @@ import { name } from '../../package.json';
     AppComponent,
     HeaderComponent,
     NavigationComponent,
-    MainComponent,
-    NoteComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
