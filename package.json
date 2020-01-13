@@ -35,7 +35,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "corporate-ui": "4.0.1-0",
+    "corporate-ui": "4.0.1",
     "gh-pages": "2.1.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -46,7 +46,7 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "marked": "^0.7.0",
     "protractor": "~5.4.0",
-    "scania-theme": "1.0.1-0",
+    "scania-theme": "1.0.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
