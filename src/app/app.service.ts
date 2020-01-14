@@ -32,10 +32,12 @@ export class PageService {
     //   description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
     // });
 
-    window['CorporateUi'].store.subscribe(() => {
-      const current = window['CorporateUi'].store.getState().theme.current;
-      this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
-    });
+    if(window['CorporateUi']) {
+      window['CorporateUi'].store.subscribe(() => {
+        const current = window['CorporateUi'].store.getState().theme.current;
+        this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
+      });
+    }
 
     // this.http.get('app/content/data.json')
     //   .subscribe((items: Array<Item>) => {
