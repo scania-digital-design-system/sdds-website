@@ -11,7 +11,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container'><div *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples' toggleCode='true'></div></section>"
+                "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [exampleId]='example' toggleCode='true'></section></div>"
             },
             {
                 "id": 3,
@@ -59,7 +59,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container' *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples' toggleCode='true'></section>"
+                "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [exampleId]='example' toggleCode='true'></section></div>"
             }
         ]
     },
@@ -97,7 +97,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container'><div *ngIf='item.content.examples.length > 0' code-example [examples]='item.content.examples'></div></section>"
+                "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [exampleId]='example'></section></div>"
             },
             {
                 "id": 3,

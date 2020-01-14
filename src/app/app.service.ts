@@ -27,10 +27,6 @@ export class PageService {
   constructor(/*private http: HttpClient*/) {
     this.setPages(content);
     this.setDocs(docs);
-    // TODO: This data object should be moved to some data flow.
-    // this.setNote({
-    //   description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
-    // });
 
     if(window['CorporateUi']) {
       window['CorporateUi'].store.subscribe(() => {

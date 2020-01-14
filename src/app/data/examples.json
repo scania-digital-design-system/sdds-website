@@ -468,5 +468,10 @@
       "id": 94,
       "title": "List inline",
       "text": "<dl class='row'>\n  <dt class='col-sm-3'>Description lists</dt>\n  <dd class='col-sm-9'>A description list is perfect for defining terms.</dd>\n\n  <dt class='col-sm-3'>Euismod</dt>\n  <dd class='col-sm-9'>\n    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>\n    <p>Donec id elit non mi porta gravida at eget metus.</p>\n  </dd>\n\n  <dt class='col-sm-3'>Malesuada porta</dt>\n  <dd class='col-sm-9'>Etiam porta sem malesuada magna mollis euismod.</dd>\n\n  <dt class='col-sm-3 text-truncate'>Truncated term is truncated</dt>\n  <dd class='col-sm-9'>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>\n\n  <dt class='col-sm-3'>Nesting</dt>\n  <dd class='col-sm-9'>\n    <dl class='row'>\n      <dt class='col-sm-4'>Nested definition list</dt>\n      <dd class='col-sm-8'>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>\n    </dl>\n  </dd>\n</dl>"
+  },
+  {
+    "id": 95,
+    "title":"Link element",
+    "text": "<a href=\"#\"> A link <\/a>\r\n<p>This <a href=\"#\">link<\/a> is used in a paragraph<\/p>\r\n"
   }
 ]
