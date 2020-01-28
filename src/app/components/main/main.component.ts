@@ -22,8 +22,8 @@ export class MainComponent {
   // docs: ArrayObject = {};
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
-    this.ps.pages.subscribe((items: Array<Page>) => {
-      this.items = items;
+    this.ps.pages.subscribe((items:Page) => {
+      this.items = items.pages;
     });
 
     this.ps.docs.subscribe((docs: Array<Doc>) => {

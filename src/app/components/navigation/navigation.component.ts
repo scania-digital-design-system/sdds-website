@@ -12,9 +12,8 @@ export class NavigationComponent {
   items: Array<Page> = [];
 
   constructor(private ps: PageService) {
-    this.ps.pages.subscribe((items: Array<Page>) => {
-      this.items = this.filterEmptyRoutes(items);
-      // console.log(this.items)
+    this.ps.pages.subscribe((items: Page) => {
+      this.items = this.filterEmptyRoutes(items.pages);
     });
   }
 

@@ -12,24 +12,58 @@ const writeFile = async(data, target) => {
   }); 
 }
 
-const examples = `
+const templates = `
 query {
-  examples {
+  templates {
     id
     title
-    text
+    sections {
+      title
+      id
+      content
+    }
   }
-}`;
+}
+`;
 
-const contents = `
+const content = `
 query {
-  contents {
-    title,
-    id,
-    examples{id},
-    template{id}
+  content:navigation(id:3) {
+    id
+    name
+    pages {
+      ...PageFields
+      pages {
+        ...PageFields
+      }
+    }
   }
-}`;
+}
+
+fragment PageFields on Page {
+  id
+  url
+  content {
+    title
+    description
+    examples {
+      id
+      title
+      text
+    }
+    template {
+      title
+      id
+      sections {
+        id
+        content
+      }
+    }
+  }
+}
+
+`;
+
 
 const getData = async(targetName, target) => {
   request(url, target).then(result => {
@@ -38,6 +72,6 @@ const getData = async(targetName, target) => {
   });
 }
 
-getData('examples', examples);
-getData('contents', contents);
+getData('templates', templates);
+getData('content', content);
 
