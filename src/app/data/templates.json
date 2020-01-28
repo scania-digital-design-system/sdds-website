@@ -12,7 +12,7 @@
         {
           "title": "Examples",
           "id": "2",
-          "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+          "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
         },
         {
           "title": "Technical documentation",
