@@ -16,7 +16,7 @@ export interface Content {
   tag?: String;
   description?: String;
   template?: Number;
-  examples?: Number[];
+  examples?: Example[];
   info?: Object[];
 }
 export interface Example {
