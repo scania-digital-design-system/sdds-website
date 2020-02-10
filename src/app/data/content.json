@@ -60,6 +60,24 @@
         }
       },
       {
+        "id": 2,
+        "url": "Cookie",
+        "content": {
+          "id": 2,
+          "title": "Cookie",
+          "tag": "c-cookie",
+          "description": "",
+          "examples": [
+            {
+              "id": 5,
+              "title": "Basic use",
+              "text": "<c-cookie inline='true'>\n  <p slot=\"main\">\n    Scania använder cookies (\"kakor\") för att behandla information om ditt besök i syfte att förbättra prestanda, underlätta funktioner i social media samt erbjuda anpassade annonser. Genom att fortsätta använda hemsidan godkänner du användningen av cookies. För mer information läs Scania's <a href=\"\">integritets- och cookiepolicy</a>.\n  </p>\n\n  <div text='Your integrity' intro='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.' toggable='false' slot=\"config\">\n    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n  </div>\n  <div text='Necessary cookies' mandatory='true' checked='true' type='nc' slot=\"config\">\n    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n  </div>\n  <div text='Performance cookies' type='pc' slot=\"config\">\n    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n  </div>\n  <div text='Functional cookies' checked='false' type='fc' slot=\"config\">\n    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\n  </div>\n\n  <a href='#' target='_blank' slot='link'>Full integrity and cookie policy</a>\n</c-cookie>\n\n<button class='btn btn-primary' onclick='(function(){CorporateUi.Cookie.remove(\"ConfidentialityAgreement\")})()'>Remove cookie</button>\n<button class='btn btn-secondary' onclick='(function(){document.querySelector(\"c-cookie\").open=true})()'>Reconfigure cookie</button>"
+            }
+          ],
+          "template": 1
+        }
+      },
+      {
         "id": 1,
         "url": "content",
         "content": {
