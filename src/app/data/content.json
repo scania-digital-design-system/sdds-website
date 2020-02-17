@@ -122,7 +122,7 @@
             {
               "id": 8,
               "title": "With social items",
-              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'></c-icon>\n  </a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'></c-icon>\n  </a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'></c-icon>\n  </a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
+              "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='scania-youtube'></c-icon>\n  </a>\n  <a href='/' slot='social-items'>\n    <c-icon name='scania-twitter'></c-icon>\n  </a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='scania-linkedin'></c-icon>\n  </a>\n\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
             }
           ],
           "template": 1
@@ -915,7 +915,7 @@
           "examples": [
             {
               "title": "Icon list",
-              "description": "The following icons are provided as part of the icon component and can be used like in the example but with chosen icon name.\nWe have moved away from font-awesome and are now using scania icons instead.\n\nMore scania icons will be added soon!",
+              "description": "The following icons are provided as part of the icon component and can be used like in the example but with chosen icon name.\nWe have moved away from font-awesome and are now using scania icons instead. Set the size of the icon with font-size.\n\nMore scania icons will be added soon!",
               "text": "<c-icon name='truck'></c-icon>"
             }
           ]
