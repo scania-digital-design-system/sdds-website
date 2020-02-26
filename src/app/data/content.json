@@ -1,299 +1,154 @@
 {
-  "content": {
-    "id": "3",
-    "name": "left-menu",
-    "pages": [
-      {
-        "id": "1",
-        "url": "info",
-        "content": {
-          "title": "Info",
-          "description": "Some info goes here.",
-          "examples": [],
+  "menus": [
+    {
+      "id": "1",
+      "url": "alert",
+      "title": "Alert",
+      "text": [
+        {
+          "content": {
+            "id": "8",
+            "title": "Alert usages",
+            "text": "Alert is alert"
+          },
           "template": {
-            "title": "Overview page",
-            "id": "2",
-            "sections": [
-              {
-                "id": "1",
-                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-              },
-              {
-                "id": "4",
-                "content": "<section class='container'><div class='row'><ng-container *ngFor='let child of item.parent.pages; index as i'><div *ngIf='child.content.examples' [class]='\"col-sm-3 \" + child.url'><a class='card' [routerLink]='child.url'><div class='card-body' [innerHTML]='child.content.examples[0].text | keepHtml'></div><div class='card-footer'>{{child.content.title}}</div></a></div></ng-container></div></section>"
-              }
-            ]
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
           }
         },
-        "pages": [
-          {
+        {
+          "content": {
+            "id": "9",
+            "title": "Alert examples",
+            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
+          },
+          "template": {
             "id": "2",
-            "url": "corporateui",
-            "content": {
-              "title": "Corporate Ui",
-              "description": "[![Build Status](https://travis-ci.com/scania/corporate-ui.svg?branch=master)](https://travis-ci.com/scania/corporate-ui)\n[![npm version](http://img.shields.io/npm/v/corporate-ui.svg?style=flat&color=1081C2)](https://npmjs.org/package/corporate-ui)\n[![Github release](https://img.shields.io/github/v/tag/scania/corporate-ui.svg?label=release&color=1081C2)](https://github.com/scania/corporate-ui/releases)\n[![Components library](https://img.shields.io/badge/Components%20library-master-f4871a.svg)](https://scania.github.io/corporate-ui-site/)\n[![Join Slack](https://img.shields.io/badge/slack-join-%23dd3072.svg)](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)\n![](https://img.shields.io/github/license/scania/corporate-ui.svg?style=flat)\n\n# Corporate UI\n\n**Demo page**\n\n[Simple HTML ↗](https://codepen.io/corporate-ui/pen/OYmqpr) | [Angular ↗](https://github.com/scania/corporate-ui-angular) | [React ↗](https://github.com/scania/corporate-ui-react) | [Vue ↗](https://github.com/scania/corporate-ui-vue)\n\n\n**Technical documentation**\n\nCheck out [components library](https://scania.github.io/corporate-ui-site/) for **migration guidelines**, **component status**, and technical documentation.\n\n\n## Quick start\n\nSeveral options to add corporate-ui in the project: \n<details open>\n<summary><strong>NPM</strong></summary>\n   <br/>\n\n   Install corporate-ui via NPM package by running the command below.\n\n   ```\n   npm i corporate-ui\n   ```\n\n   Import component as a module with `defineCustomElements` function.\n\n   ```js\n   import { defineCustomElements } from 'corporate-ui';\n\n   defineCustomElements();\n   ```\n</details>\n\n<details>\n<summary><strong>CDN</strong></summary>\n   <br/>\n\n   Add link to the script by adding the following to the head\n\n   ```\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   Replace `x` with [available releases](https://github.com/scania/corporate-ui/releases).\n</details>\n\nSee all available components in the [components library](https://scania.github.io/corporate-ui-site/).\n\n\n## Styling\n\nTo apply Scania styles, you need to add a theme package and use `c-theme` component. Check out [Scania theme repository](https://github.com/scania/scania-theme/) for detail documentation.\n\n\n## Browser support\n\n- Chrome (and all Chromium based browsers)\n- Firefox\n- IE 11+\n- Edge\n- Safari\n\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md) for the directions to **develop components**, **create a pull request** and **coding standard**.\n\n- [Report bug](https://github.com/scania/corporate-ui/issues/new/choose)\n- [Request feature](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22)\n\n\n## Community\n\nGet in touch with the team and the community:\n- [Join us on slack](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n- [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac)\n\n\n## License\n\nAll CSS, HTML and JS code are available under the MIT license. The Scania brand identity, logos and photographs found in this repository are copyrighted Scania CV AB and are not available on an open source basis or to be used as examples or in any other way, if not specifically ordered by Scania CV AB.\n",
-              "examples": [],
-              "template": {
-                "title": "Markdown",
-                "id": "3",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  }
-                ]
-              }
-            }
-          },
-          {
-            "id": "23",
-            "url": "migration",
-            "content": {
-              "title": "Migrate to version 4",
-              "description": "# Corporate UI Migration Guide v3 to v4\n\n## Before update\n\n\n<input type='checkbox' id='1' name='1'> <label for='1'>Install or add script for scania-theme together with corporate-ui latest version.</label>\n<br/>  [Installation guide](https://github.com/scania/corporate-ui/tree/master#styling)\n\n<input type='checkbox' id='2' name='2'> <label for='2'>Bootstrap has been upgraded to the latest version of Bootstrap 4. Check your project if you use any Bootstrap 3 features. </label>\n<br/>  Check out [Bootstrap migration guide](https://getbootstrap.com/docs/4.0/migration/) for the things you need to apply to your project.\n\n<input type='checkbox' id='3' name='3'> <label for='3'>We have moved from Polyfill to Stencil to create custom elements. Remove any dependencies to polyfill if there's any.</label>\n\n\n## Migration guide checklist\n\n\n<input type='checkbox' id='4' name='4'> <label for='4'>Add c-theme component in HTML body `<c-theme name=\\\"scania\\\" global=\\\"true\\\"></c-theme>`</label>\n\n<input type='checkbox' id='5' name='5'> <label for='5'>Update custom element name</label>\n<br/>\n  - c-corporate-header >> c-header\n  - c-main-navigation >> c-navigation\n  - c-main-content >> c-content\n  - c-corporate-footer>> c-footer\n  - c-social-media is deprecated, use c-icon instead to generate social media icons'\n\n<input type='checkbox' id='6' name='6'> <label for='6'>Check out all components guideline in corporate-ui 4.0 [here](https://scania.github.io/corporate-ui-site/elements/overview)</label>\n\n<input type='checkbox' id='7' name='7'> <label for='7'>`nav-item` is deprecated. We use slot instead of nav-item inside c-header and c-navigation. You can put an `a` element to replace `nav-item`</label>. Example:\n\n  ```html\n  <c-header site-name='App'>\n    <a href='global' slot='items'>global</a>\n  </c-header>\n  ```\n\n<input type='checkbox' id='8' name='8'> <label for='8'>`primary-items` and `secondary-items` in main navigation is now used as a slot name.</label> Example:\n  ```html\n  <c-navigation>\n    <a href='/' slot='primary-items' active=''>home</a>\n    <a href='/user' slot='secondary-items'>user</a>\n  </c-navigation>\n  ```\n\n<input type='checkbox' id='9' name='9'> <label for='9'>Dealer header component</label>\n<br/>  In corporate-ui v3, dealer header component was used as a variation in the `c-corporate-header`. It is now a separated component. Use `c-dealer-header` instead. [Read more](https://scania.github.io/corporate-ui-site/elements/dealer-header)\n\n<input type='checkbox' id='10' name='10'> <label for='10'>FontAwesome icons</label>\n<br/>  FontAwesome is no longer provided in corporate-ui. Replace FontAwesome with your own FontAwesome license or replace with our new icon set. [See all available Scania icons](https://scania.github.io/corporate-ui-site/utilities/icons)\n",
-              "examples": [],
-              "template": {
-                "title": "Markdown",
-                "id": "3",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  }
-                ]
-              }
-            }
-          },
-          {
-            "id": "24",
-            "url": "component_status",
-            "content": {
-              "title": "Component Status",
-              "description": "## Corporate UI components\n\n\n- _List do not include Bootstrap 4 components_\n\n<table class=\\\"table table-striped table-bordered\\\">\n<thead>\n<tr>\n<th>Tag</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>✔️</td>\n<td>ready</td>\n</tr>\n<tr>\n<td>⚠️</td>\n<td>under review / experimental</td>\n</tr>\n<tr>\n<td>⛔️</td>\n<td>deprecated</td>\n</tr>\n<tr>\n<td>❓</td>\n<td>considering</td>\n</tr>\n</tbody>\n</table>\n<table class=\\\"table table-striped table-bordered\\\">\n<thead>\n<tr>\n<th>Component</th>\n<th>3.5.3</th>\n<th>4.0.0</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>header</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>dealer-header</td>\n<td>-</td>\n<td>✔️</td>\n<td>Previously part of c-corporate-header in version 3</td>\n</tr>\n<tr>\n<td>footer</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>social-media</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td>Refactored as c-icon component</td>\n</tr>\n<tr>\n<td>navigation</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>content</td>\n<td>✔️</td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>theme</td>\n<td>-</td>\n<td>✔️</td>\n<td>New component for applying theme</td>\n</tr>\n<tr>\n<td>alert</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>contact-us</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>cookie-message</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>file-upload</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>find-a-dealer</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>fullscreen</td>\n<td>✔️</td>\n<td>❓</td>\n<td></td>\n</tr>\n<tr>\n<td>list-group</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>login</td>\n<td>✔️</td>\n<td>❓</td>\n<td>Will be refactored as a template</td>\n</tr>\n<tr>\n<td>main-hero</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>map-card</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>map</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>modal</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>progress-bar</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>rich-media</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>select</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>teaser</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>text-and-image</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>tiled-display</td>\n<td>✔️</td>\n<td>⛔️</td>\n<td></td>\n</tr>\n<tr>\n<td>code-sample</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>hello-world</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n<tr>\n<td>icon</td>\n<td></td>\n<td>✔️</td>\n<td></td>\n</tr>\n</tbody>\n</table>",
-              "examples": [],
-              "template": {
-                "title": "Markdown",
-                "id": "3",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  }
-                ]
-              }
-            }
+            "title": "Code example",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
-        ]
-      },
-      {
-        "id": "3",
-        "url": "elements",
-        "content": {
-          "title": "Elements",
-          "description": "Info about elements.",
-          "examples": [],
-          "template": null
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "url": "button",
+      "title": "Buttons",
+      "text": [
+        {
+          "content": {
+            "id": "1",
+            "title": "Button usage",
+            "text": "Button description"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+          }
         },
-        "pages": [
-          {
+        {
+          "content": {
+            "id": "2",
+            "title": "Button basic example",
+            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "2",
+            "title": "Button basic example",
+            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "url": "components",
+      "title": "Components overview",
+      "text": [
+        {
+          "content": {
+            "id": "7",
+            "title": "Components overview",
+            "text": "Components are important"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "url": "foundation",
+      "title": "Foundation",
+      "text": [
+        {
+          "content": {
+            "id": "4",
+            "title": "Foundation",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "url": "competencies",
+      "title": "Competencies",
+      "text": [
+        {
+          "content": {
             "id": "5",
-            "url": "content",
-            "content": {
-              "title": "c-content",
-              "description": "The content component styles the page to push the footer down. It is important to wrap your content inside this component to ensure the footer never slides up the page if the content is not long enough. Check out the full page example in the templates section.",
-              "examples": [
-                {
-                  "id": "1",
-                  "title": "Content with section",
-                  "text": "<c-content>\n  <section>\n    <h3>A Title of the page</h3>\n    <!-- ... -->\n    <!-- Your application content goes here -->\n  </section>\n</c-content>"
-                }
-              ],
-              "template": {
-                "title": "Component page",
-                "id": "1",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  },
-                  {
-                    "id": "2",
-                    "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
-                  },
-                  {
-                    "id": "3",
-                    "content": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-                  }
-                ]
-              }
-            }
+            "title": "Competencies",
+            "text": "Vitae ultricies leo integer malesuada nunc vel. Sollicitudin nibh sit amet commodo nulla facilisi. Ut diam quam nulla porttitor massa id neque aliquam. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. \n\n\n![text](/uploads/d9772e61794342dfa05efea20c1eedbf.png)"
           },
-          {
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "url": "definitions",
+      "title": "Definitions",
+      "text": [
+        {
+          "content": {
             "id": "6",
-            "url": "dealer-header",
-            "content": {
-              "title": "c-dealer-header",
-              "description": "Dealer header",
-              "examples": [
-                {
-                  "id": "2",
-                  "title": "Dealer header basic use",
-                  "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
-                },
-                {
-                  "id": "3",
-                  "title": "Dealer header custom logo",
-                  "text": "<c-dealer-header site-name='Bilmetro' short-name='Bilmetro' site-url='/' logo='https://scania.github.io/corporate-ui-docs/images/bilmetro-logo.png'>\n  <a href='/' slot='items'>Configurator</a>\n</c-dealer-header>"
-                }
-              ],
-              "template": {
-                "title": "Component page",
-                "id": "1",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  },
-                  {
-                    "id": "2",
-                    "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
-                  },
-                  {
-                    "id": "3",
-                    "content": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-                  }
-                ]
-              }
-            }
+            "title": "Definitions",
+            "text": "Nulla aliquet porttitor lacus luctus accumsan tortor. Nunc congue nisi vitae suscipit tellus. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. In hendrerit gravida rutrum quisque non tellus. Mattis rhoncus urna neque viverra. Pellentesque diam volutpat commodo sed egestas egestas. Turpis egestas maecenas pharetra convallis posuere morbi. Massa enim nec dui nunc."
           },
-          {
-            "id": "25",
-            "url": "footer",
-            "content": {
-              "title": "c-footer",
-              "description": "By default, the footer element renders with a copyright text and a wordmark. You can add several few item links and social media icons to the footer. There are two ways to generate links and social media icons. Either by using the attributes or slot. To have your links as the footer links, set the slot attribute to ```slot=\\\"items\\\"```. And for social media, set the slot attribute to ```slot=\\\"social-media-items\\\"```. See examples and properties below for more information.",
-              "examples": [
-                {
-                  "id": "4",
-                  "title": "Footer custom text",
-                  "text": "<c-footer text='Some copyright related text can be set here.'></c-footer>"
-                },
-                {
-                  "id": "5",
-                  "title": "Footer basic use",
-                  "text": "<c-footer>\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' slot='items'>Contact us</a>\n</c-footer>"
-                },
-                {
-                  "id": "6",
-                  "title": "Footer social items",
-                  "text": "<c-footer>\n  <a href='/' slot='social-items'>\n    <c-icon name='youtube'></c-icon>\n  </a>\n  <a href='/' slot='social-items'>\n    <c-icon name='twitter'></c-icon>\n  </a>\n  <a href='/' target='_blank' slot='social-items'>\n    <c-icon name='linkedin'></c-icon>\n  </a>\n  <a href='/cookies' slot='items'>Cookies</a>\n  <a href='/contact-us' target='_blank' slot='items'>Contact us</a>\n</c-footer>"
-                }
-              ],
-              "template": {
-                "title": "Component page",
-                "id": "1",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  },
-                  {
-                    "id": "2",
-                    "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
-                  },
-                  {
-                    "id": "3",
-                    "content": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-                  }
-                ]
-              }
-            }
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
           }
-        ]
-      },
-      {
-        "id": "11",
-        "url": "components",
-        "content": {
-          "title": "Components",
-          "description": "Info about Bootstrap components.",
-          "examples": [],
-          "template": null
-        },
-        "pages": [
-          {
-            "id": "12",
-            "url": "alerts",
-            "content": {
-              "title": "Alert",
-              "description": "Alerts available in different interaction states.",
-              "examples": [
-                {
-                  "id": "7",
-                  "title": "Alert",
-                  "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
-                }
-              ],
-              "template": {
-                "title": "Component page",
-                "id": "1",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  },
-                  {
-                    "id": "2",
-                    "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
-                  },
-                  {
-                    "id": "3",
-                    "content": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-                  }
-                ]
-              }
-            }
-          },
-          {
-            "id": "15",
-            "url": "buttons",
-            "content": {
-              "title": "Button",
-              "description": "Buttons is important",
-              "examples": [
-                {
-                  "id": "8",
-                  "title": "Button basic ",
-                  "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>"
-                },
-                {
-                  "id": "9",
-                  "title": "Button sizes",
-                  "text": "<button type='button' class='btn btn-primary btn-lg'>Large button</button>\n<button type='button' class='btn btn-secondary btn-lg'>Large button</button>\n<button type='button' class='btn btn-primary btn-sm'>Small button</button>\n<button type='button' class='btn btn-secondary btn-sm'>Small button</button>"
-                }
-              ],
-              "template": {
-                "title": "Component page",
-                "id": "1",
-                "sections": [
-                  {
-                    "id": "1",
-                    "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-                  },
-                  {
-                    "id": "2",
-                    "content": "<div *ngIf='item.content.examples.length > 0'><section class='container' *ngFor='let example of item.content.examples' code-example [example]='example' toggleCode='true'></section></div>"
-                  },
-                  {
-                    "id": "3",
-                    "content": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-                  }
-                ]
-              }
-            }
-          }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ]
 }

@@ -2,12 +2,17 @@
 // TODO: When StencilJS needs to change there setting for readme or we need to always render readme´s
 // export * from 'corporate-ui/dist/data/docs';
 
+export interface Navigation {
+  id?: String;
+  title?: String;
+  menus?: Page[];
+}
 export interface Page {
   id?: String;
-  name?: String;
+  title?: String;
   url?: String;
   content?: Content;
-  pages?: Page[];
+  submenus?: Page[];
   parent?: Page;
 }
 export interface Content {
@@ -27,12 +32,7 @@ export interface Example {
 export interface Template {
   id?: String;
   title?: String;
-  sections?: Section[];
-}
-export interface Section {
-  id?: String;
-  title?: String;
-  content?: String;
+  text?: String;
 }
 
 // TODO: Get this from Corporate UI

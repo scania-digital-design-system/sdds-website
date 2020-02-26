@@ -3,5 +3,5 @@
 </header>
 
 <section item-toggler *ngFor="let item of items; index as i" text="{{item.url}}" [collapsed]="false">
-    <a *ngFor="let sub of item.pages; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.content.title}}</a>
+    <a *ngFor="let sub of item.submenus; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.title}}</a>
 </section>

@@ -12,56 +12,58 @@ const writeFile = async(data, target) => {
   }); 
 }
 
-const templates = `
+const content = `
 query {
-  templates {
+  menus {
     id
+    url
     title
-    sections {
-      title
-      id
-      content
+    text: contents {
+      content {
+        id
+        title
+        text
+      }
+      template {
+        id
+        title
+        text
+      }
     }
   }
 }
 `;
 
-const content = `
+const navigation = `
 query {
-  content:navigation(id:3) {
+  navigation(id:1) {
     id
-    name
-    pages {
-      ...PageFields
-      pages {
-        ...PageFields
+    title
+    menus {
+      ...allMenu
+      submenus {
+        ...allMenu
       }
     }
   }
 }
 
-fragment PageFields on Page {
+fragment allMenu on Menu {
   id
   url
-  content {
-    title
-    description
-    examples {
-      id
-      title
-      text
-    }
-    template {
-      title
-      id
-      sections {
-        id
-        content
-      }
-    }
-  }
+  title
 }
 
+`;
+
+const templates = `
+query {
+  templates {
+    id
+    title
+    text
+  }
+}
 `;
 
 
@@ -72,6 +74,7 @@ const getData = async(targetName, target) => {
   });
 }
 
-getData('templates', templates);
 getData('content', content);
+getData('navigation', navigation);
+getData('templates', templates);
 

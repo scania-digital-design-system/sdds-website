@@ -3,29 +3,30 @@ import { Route } from '@angular/router';
 // import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { Page, Doc } from './app.interface';
+import { Page, Doc, Navigation } from './app.interface';
 
-import { content } from './data/content.json';
+import { navigation } from './data/navigation.json';
 import { components as docs } from 'corporate-ui/dist/data/docs.json';
 
 @Injectable()
 export class PageService {
   private _page: BehaviorSubject<Page> = new BehaviorSubject({});
-  private _pages: BehaviorSubject<Page> = new BehaviorSubject({});
+  private _pages: BehaviorSubject<Navigation> = new BehaviorSubject({});
   private _routes: BehaviorSubject<Array<Route>> = new BehaviorSubject([]);
   private _docs: BehaviorSubject<Array<Doc>> = new BehaviorSubject([]);
   private _theme: BehaviorSubject<Object> = new BehaviorSubject({});
   private _note: BehaviorSubject<Object> = new BehaviorSubject({});
 
   public readonly page: Observable<Page> = this._page.asObservable();
-  public readonly pages: Observable<Page> = this._pages.asObservable();
+  public readonly pages: Observable<Navigation> = this._pages.asObservable();
   public readonly routes: Observable<Array<Route>> = this._routes.asObservable();
   public readonly docs: Observable<Array<Doc>> = this._docs.asObservable();
   public readonly theme: Observable<Object> = this._theme.asObservable();
   public readonly note: Observable<Object> = this._note.asObservable();
 
   constructor(/*private http: HttpClient*/) {
-    this.setPages(content);
+    // this.setPages(content);
+    this.setPages(navigation);
     this.setDocs(docs);
 
     if(window['CorporateUi']) {
@@ -44,7 +45,7 @@ export class PageService {
   setPage(item: Page) {
     this._page.next(item);
   }
-  setPages(items: Page) {
+  setPages(items: Navigation) {
     this._pages.next(items);
   }
   setRoutes(items: Array<Route>) {

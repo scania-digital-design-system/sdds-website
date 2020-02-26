@@ -1,29 +1,31 @@
 import { Component } from '@angular/core';
 
 import { PageService } from '../../app.service';
-import { Page, Template, Section } from '../../app.interface';
+import { Page, Template } from '../../app.interface';
 
 import { templates } from '../../data/templates.json';
+import { menus } from '../../data/content.json';
 
 @Component({
   template: templates.map((item: Template) => `
-    <ng-template [ngIf]='template.id === "${item.id}"'>
-      ${item.sections.map((sub: Section) => sub.content).join('')}
-    </ng-template>
+    <div *ngFor='let item of content.text'>
+      <ng-template [ngIf]='"${item.id}" == item.template.id'>
+        ${item.text}
+      </ng-template>
+    </div>
   `).join(''),
   styleUrls: ['./page.component.scss']
 })
 export class PageComponent {
   item: Page;
-  template: Object;
+  content: Object;
 
   constructor(public ps: PageService) {
     this.ps.page.subscribe((item: Page) => {
       if(!item.id) return;
 
-      // console.log(item);
       this.item = item;
-      this.template= item.content.template;
+      this.content = menus.find(menu => menu.id === item.id);
     });
   }
 }

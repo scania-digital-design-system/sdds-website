@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { PageService } from '../../app.service';
-import { Page } from '../../app.interface';
+import { Page, Navigation } from '../../app.interface';
 
 @Component({
   selector: '[navigation-component]',
@@ -12,8 +12,8 @@ export class NavigationComponent {
   items: Array<Page> = [];
 
   constructor(private ps: PageService) {
-    this.ps.pages.subscribe((items: Page) => {
-      this.items = this.filterEmptyRoutes(items.pages);
+    this.ps.pages.subscribe((items: Navigation) => {
+      this.items = this.filterEmptyRoutes(items.menus);
     });
   }
 
