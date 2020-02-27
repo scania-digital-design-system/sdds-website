@@ -11,6 +11,7 @@ import { PageComponent } from './components/page/page.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
+import { CodeExampleComponent } from './components/code-example/code-example.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IconListComponent } from './components/icon-list/icon-list.component';
     PageComponent,
     TogglerComponent,
     ColorListComponent,
-    IconListComponent
+    IconListComponent,
+    CodeExampleComponent
   ],
   entryComponents: [PageComponent],
   imports: [
@@ -42,9 +44,9 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
-      const routes = this.contentToRoute(items);
+      const routes = this.contentToRoute(items.menus);
 
-      // console.log(1, routes);
+      // console.log(2, routes);
 
       this.router.resetConfig([
         ...routes,
@@ -57,9 +59,9 @@ export class AppRoutingModule {
 
   contentToRoute(items) {
     return items.reduce((accumulator, item, index) => {
-      let route:any = { path: item.url, data: item.content, component: PageComponent };
+      let route:any = { path: item.url, data: item.text, component: PageComponent };
 
-      if(item.pages) route.children = this.contentToRoute(item.pages);
+      if(item.submenus) route.children = this.contentToRoute(item.submenus);
 
       let routes = [ route ];
 
