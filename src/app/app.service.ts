@@ -45,11 +45,11 @@ export class PageService {
     //   });
   }
 
-  setPage(item: Page) {
-    this._page.next(item);
-  }
   setPages(items: Array<Page>) {
     this._pages.next(items);
+  }
+  setPage(item: Page) {
+    this._page.next(item);
   }
   setRoutes(items: Array<Route>) {
     this._routes.next(items);

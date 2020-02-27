@@ -59,7 +59,7 @@
             {
                 "id": 2,
                 "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
+                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><h4>{{example.title}}</h4><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
             }
         ]
     },
@@ -103,6 +103,22 @@
                 "id": 3,
                 "title": "Technical documentation",
                 "content": "<section class='container'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Landing page",
+        "sections": [
+            {
+                "id": 1,
+                "title": "Description",
+                "content": "<section  class='container'><h1 [innerHTML]='item.content.title | markdown | keepHtml' ></h1><article [innerHTML]='item.content.description | markdown | keepHtml'w></article></section>"
+            },
+            {
+                "id": 2,
+                "title": "News",
+                "content": "<section class='container border-top'><h1 [innerHTML]='item.content.newstitle | markdown | keepHtml' ></h1><article [innerHTML]='item.content.news | markdown | keepHtml' ></article></section>"
             }
         ]
     }

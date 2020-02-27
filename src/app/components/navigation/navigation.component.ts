@@ -8,17 +8,21 @@ import { Page } from '../../app.interface';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
+
+
 export class NavigationComponent {
-  items: Array<Page> = [];
+  pages: Array<Page> = [];
+  active: string = 'active';
 
   constructor(private ps: PageService) {
-    this.ps.pages.subscribe((items: Array<Page>) => {
-      this.items = this.filterEmptyRoutes(items);
-      // console.log(this.items)
+    this.ps.pages.subscribe((pages: Array<Page>) => {
+      this.pages = this.filterEmptyRoutes(pages);
     });
   }
 
-  filterEmptyRoutes(items: Array<Page>) {
-    return items.filter(item => item.url !== 'none');
+  filterEmptyRoutes(pages: Array<Page>) {
+    return pages.filter(page => page.url !== 'none');
   };
+
+  id: String = 'a' + Math.round( Math.random() * 10000 );
 }

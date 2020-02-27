@@ -1,3 +1,13 @@
-<section item-toggler *ngFor="let item of items; index as i" text="{{item.content.title}}" [collapsed]="true">
-    <a *ngFor="let sub of item.pages; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.content.title}}</a>
-</section>
+<div id="closeCollapse">
+  <section *ngFor="let page of pages; index as i">
+
+    <a data-toggle="collapse" class="collapsed" [attr.data-target]="'#' + id + i" routerLink="{{page.url}}" routerLinkActive="{{active}}" #rla="routerLinkActive">
+      {{page.content.title}}<c-icon name="scania-angle-down"></c-icon>
+    </a>
+
+    <div [id]="id + i" class="collapse" data-parent="#closeCollapse" >
+      <a *ngFor="let sub of page.pages; index as i;" routerLinkActive="{{active}}" #rlasub="routerLinkActive" [routerLinkActiveOptions]="{exact: true}" [routerLink]="page.url + '/' + sub.url ">{{sub.content.title}}</a>
+    </div>
+
+  </section>
+</div>
