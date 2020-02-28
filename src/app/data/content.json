@@ -536,7 +536,7 @@
           "examples": [
             {
               "title": "Icon list",
-              "description": "The following icons are provided as part of the icon component and can be used like in the example but with chosen icon name.\nWe have moved away from font-awesome and are now using scania icons instead.\n\nMore scania icons will be added soon!",
+              "description": "The following icons are provided as part of the icon component and can be used like in the example but with chosen icon name.\nWe have moved away from font-awesome and are now using scania icons instead. Set the size of the icon with font-size.\n\nMore scania icons will be added soon!",
               "text": "<c-icon name='truck'></c-icon>"
             }
           ]
