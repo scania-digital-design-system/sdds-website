@@ -2,6 +2,8 @@
 
 :host {
   overflow: hidden;
+  background-color: #fafafa;
+  background-color: var(--white);
 
   ::ng-deep > nav {
 

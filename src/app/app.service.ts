@@ -48,9 +48,6 @@ export class PageService {
   setPages(items: Navigation) {
     this._pages.next(items);
   }
-  setPage(item: Page) {
-    this._page.next(item);
-  }
   setRoutes(items: Array<Route>) {
     this._routes.next(items);
   }

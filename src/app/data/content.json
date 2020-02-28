@@ -8,25 +8,37 @@
         {
           "content": {
             "id": "8",
-            "title": "Alert usages",
-            "text": "Alert is alert"
+            "title": "Alert usage",
+            "text": "# Headline 1\n\n**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n## Headline 2\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         },
         {
           "content": {
             "id": "9",
-            "title": "Alert examples",
+            "title": "Alert example",
             "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
           },
           "template": {
             "id": "2",
             "title": "Code example",
-            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "11",
+            "title": "Alert headings",
+            "text": "<div class='alert alert-success' role='alert'>\n  <h4 class='alert-heading'>Well done!</h4>\n  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>\n  <hr>\n  <p class='mb-0'>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>\n  <p>When you want to have a link if would look link <a href='#'>this</a></p>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ]
@@ -40,12 +52,12 @@
           "content": {
             "id": "1",
             "title": "Button usage",
-            "text": "Button description"
+            "text": "Button description\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         },
         {
@@ -57,7 +69,7 @@
           "template": {
             "id": "2",
             "title": "Code example",
-            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
         },
         {
@@ -69,7 +81,7 @@
           "template": {
             "id": "2",
             "title": "Code example",
-            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ]
@@ -77,7 +89,7 @@
     {
       "id": "3",
       "url": "components",
-      "title": "Components overview",
+      "title": "Components",
       "text": [
         {
           "content": {
@@ -87,8 +99,8 @@
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -102,12 +114,12 @@
           "content": {
             "id": "4",
             "title": "Foundation",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "text": "Foundation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -125,8 +137,8 @@
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -140,12 +152,12 @@
           "content": {
             "id": "6",
             "title": "Definitions",
-            "text": "Nulla aliquet porttitor lacus luctus accumsan tortor. Nunc congue nisi vitae suscipit tellus. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. In hendrerit gravida rutrum quisque non tellus. Mattis rhoncus urna neque viverra. Pellentesque diam volutpat commodo sed egestas egestas. Turpis egestas maecenas pharetra convallis posuere morbi. Massa enim nec dui nunc."
+            "text": "## Headline 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n### Headline 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
           },
           "template": {
             "id": "1",
-            "title": "Paragraph",
-            "text": "<strong>{{item.content.title}}</strong>\n<p [innerHTML]='item.content.text | markdown'></p>"
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]

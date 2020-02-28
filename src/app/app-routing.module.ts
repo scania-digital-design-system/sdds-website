@@ -53,6 +53,7 @@ export class AppRoutingModule {
         { path: '**', redirectTo: 'none' }
       ]);
 
+      console.log(routes)
       this.ps.setRoutes(routes);
     });
   }
