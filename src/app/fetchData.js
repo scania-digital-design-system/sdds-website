@@ -1,7 +1,10 @@
-const { request } = require('graphql-request');
+const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
+const HttpsProxyAgent = require('https-proxy-agent');
 
-const url = 'http://localhost:1339/graphql';
+const url = 'https://sdds-cms.herokuapp.com/graphql';
+// Needed when fetch data locally inside scania network
+const proxy = 'http://proxyseso.scania.com:8080';
 
 const writeFile = async(data, target) => {
   fs.writeFile(`./data/${target}.json`, JSON.stringify(data, null, 2), function(err) {
@@ -66,15 +69,33 @@ query {
 }
 `;
 
+const contents = `
+query {
+  contents {
+    id
+    title
+    text
+  }
+}
+`;
+
 
 const getData = async(targetName, target) => {
-  request(url, target).then(result => {
-    console.log(`Reading data ${targetName}`);
-    writeFile(result, `${targetName}`);
-  });
+  console.log(`Reading data ${targetName}`);
+
+  const graphQLClient = new GraphQLClient(url, {
+    agent: new HttpsProxyAgent(proxy),
+  })
+
+  graphQLClient.request(target)
+  .then(data => {
+    writeFile(data,`${targetName}`)
+  })
+  .catch(err => console.log(err));
+  
 }
 
 getData('content', content);
 getData('navigation', navigation);
 getData('templates', templates);
-
+// getData('contents', contents);
