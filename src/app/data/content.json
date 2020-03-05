@@ -161,6 +161,25 @@
           }
         }
       ]
+    },
+    {
+      "id": "8",
+      "url": "home",
+      "title": "Home",
+      "text": [
+        {
+          "content": {
+            "id": "14",
+            "title": "Home",
+            "text": "# Welcome to Scania Digital Design System\n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Article Text",
+            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+          }
+        }
+      ]
     }
   ]
 }

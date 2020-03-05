@@ -7,9 +7,9 @@ import { templates } from '../../data/templates.json';
 import { menus } from '../../data/content.json';
 
 @Component({
-  template: '<h1>{{this.item.title}}</h1>' +
+  template:
     templates.map((item: Template) => `
-      <div class="{{content.title}} {{this.titleParent}}" *ngFor='let item of content.text'>
+      <div *ngFor='let item of content.text'>
         <ng-template [ngIf]='"${item.id}" == item.template.id' >
           ${item.text}
         </ng-template>
@@ -20,15 +20,18 @@ import { menus } from '../../data/content.json';
 export class PageComponent {
   item: Page;
   titleParent: String;
-  content: Object;
+  content: Object = {};
 
   constructor(public ps: PageService) {
     this.ps.page.subscribe((item: Page) => {
-      if(!item.id) return;
 
-      this.item = item;
-      this.titleParent = this.item.parent.title;
-      this.content = menus.find(menu => menu.id === item.id);
+      if(item.id){
+        this.content = menus.find(menu => menu.id === item.id);
+      } else if(item.parent) {
+        this.content = menus.find(menu => menu.id === item.parent.id);
+      } else {
+        return;
+      }
     });
   }
 }

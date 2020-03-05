@@ -43,7 +43,6 @@ export class MainComponent {
         // console.log(this.page);
 
         document.title = this.titleCase.transform(`${name.replace(/-/g, ' ')} | ${this.page.title}`);
-
         this.ps.setPage(this.page);
       }
     });
@@ -57,7 +56,6 @@ export class MainComponent {
 
       return this.getPage(page.submenus, paths);
     }
-
     return page;
   }
 }

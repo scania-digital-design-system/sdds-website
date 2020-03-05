@@ -10,9 +10,11 @@ import { Page, Navigation } from '../../app.interface';
 })
 
 
+
 export class NavigationComponent {
   pages: Array<Page> = [];
-  active: string = 'active';
+  activePage = null;
+  activeShow: String = 'show';
 
   constructor(private ps: PageService) {
     this.ps.pages.subscribe((items: Navigation) => {
@@ -25,4 +27,10 @@ export class NavigationComponent {
   };
 
   id: String = 'a' + Math.round( Math.random() * 10000 );
+
+  preventToggle(e, page) {
+    if(page === this.activePage) e.stopPropagation();
+
+    this.activePage = null;
+  }
 }

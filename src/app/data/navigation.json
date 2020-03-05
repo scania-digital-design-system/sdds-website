@@ -36,6 +36,12 @@
             "title": "Definitions"
           }
         ]
+      },
+      {
+        "id": "8",
+        "url": "home",
+        "title": "Home",
+        "submenus": []
       }
     ]
   }
