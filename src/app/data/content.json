@@ -14,7 +14,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         },
         {
@@ -40,6 +40,30 @@
             "title": "Code example",
             "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
+        },
+        {
+          "content": {
+            "id": "9",
+            "title": "Alert example",
+            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "9",
+            "title": "Alert example",
+            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
         }
       ]
     },
@@ -57,19 +81,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        },
-        {
-          "content": {
-            "id": "2",
-            "title": "Button basic example",
-            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         },
         {
@@ -100,7 +112,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -119,7 +131,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -138,7 +150,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -157,7 +169,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]
@@ -176,7 +188,7 @@
           "template": {
             "id": "1",
             "title": "Article Text",
-            "text": "<div> \n   <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
       ]

@@ -44,15 +44,12 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
-
       const routes = this.contentToRoute(items.menus);
-      // console.log('routes: ' ,routes);
 
       this.router.resetConfig([
         ...routes,
         { path: '**', redirectTo: '/home' }
       ]);
-      console.log(routes)
 
       this.ps.setRoutes(routes);
     });
@@ -60,12 +57,12 @@ export class AppRoutingModule {
 
   contentToRoute(items) {
     return items.reduce((accumulator, item, index) => {
-      // console.log(index, accumulator, item)
       let route:any = { path: item.url, component: PageComponent };
 
       if(item.submenus) route.children = this.contentToRoute(item.submenus);
 
       let routes = [ route ];
+      // Keep this comment for investigating purpose regarding route.path, this doesn't work for parent route
       // if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
 
       return accumulator.concat(routes);
