@@ -11,6 +11,13 @@ export class EscapeHtmlPipe implements PipeTransform {
   }
 }
 
+@Pipe({ name: 'split' })
+export class SplitPipe implements PipeTransform {
+  transform(str: string): string[] {
+    return str.split(/\r?\n/);
+  }
+}
+
 @Pipe({ name: 'markdown' })
 export class MarkdownPipe implements PipeTransform {
 
