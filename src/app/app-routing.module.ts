@@ -45,7 +45,7 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
-      const routes = this.contentToRoute(items.menus);
+      const routes = this.contentToRoute(items);
 
       this.router.resetConfig([
         ...routes,
@@ -54,6 +54,23 @@ export class AppRoutingModule {
 
       this.ps.setRoutes(routes);
     });
+
+    // TODO: We could also handle the data over here but I 
+    // think doing it in the service makes more sense
+
+    // this.ps.navigations.subscribe(items => {
+    //   let pages = [];
+    //   items.map(item => pages = [ ...pages, ...item.menus ]);
+
+    //   const routes = this.contentToRoute(pages);
+
+    //   this.router.resetConfig([
+    //     ...routes,
+    //     { path: '**', redirectTo: '/home' }
+    //   ]);
+
+    //   this.ps.setRoutes(routes);
+    // });
   }
 
   contentToRoute(items) {

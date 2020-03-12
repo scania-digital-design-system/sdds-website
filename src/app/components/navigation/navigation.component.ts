@@ -8,17 +8,17 @@ import { Page, Navigation } from '../../app.interface';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-
-
-
 export class NavigationComponent {
-  pages: Array<Page> = [];
+  navigations: Array<Navigation> = [];
+  // pages: Array<Page> = [];
   activePage = null;
   activeShow: String = 'show';
 
   constructor(private ps: PageService) {
-    this.ps.pages.subscribe((items: Navigation) => {
-      this.pages = this.filterEmptyRoutes(items.menus);
+    // this.ps.pages.subscribe((items: Array<Page>) => this.pages = this.filterEmptyRoutes(items));
+    this.ps.navigations.subscribe((items: Array<Navigation>) => {
+      this.navigations = items;
+      // this.navigations = items.map(item => item.menus.filter(page => this.filterEmptyRoutes(item.menus)));
     });
   }
 

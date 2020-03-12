@@ -3,8 +3,8 @@
 :host {
   padding-top: 65px;
 
-  > div {
-    margin-bottom: 200px;
+  div + div {
+    margin-top: auto;
   }
 }
 

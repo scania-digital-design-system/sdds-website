@@ -24,18 +24,18 @@
 }
 
 #maincontent {
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas:"nav main";
-  grid-template-columns: 300px 1fr;
+  display: flex;
+  overflow: hidden;
+  flex: 1;
 }
 nav,
 main {
-  height: 100vh;
   overflow-y: auto;
 }
 nav {
-  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   margin-top: 10px;
   background-color: #fff;
   box-shadow: 0px 3px 13px #c8c9c7; //FIXME: box-shadow scania-color
@@ -46,7 +46,7 @@ nav {
   --link-color-hover: #bfbfbf;
 }
 main {
-  grid-area: main;
+  flex: 1;
 }
 a {
   color: #fff;

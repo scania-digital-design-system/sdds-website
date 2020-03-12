@@ -87,8 +87,80 @@
         {
           "content": {
             "id": "2",
-            "title": "Button basic example",
-            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-warning'>Warning</button>\n<button type='button' class='btn btn-info'>Info</button>\n<button type='button' class='btn btn-link'>Link</button>"
+            "title": "Primary button",
+            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-primary' disabled>Primary</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "15",
+            "title": "Secondary button",
+            "text": "<button type='button' class='btn btn-secondary'>Secondary</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "17",
+            "title": "Danger button",
+            "text": "<button type='button' class='btn btn-danger'>Danger</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "18",
+            "title": "Warning button",
+            "text": "<button type='button' class='btn btn-warning'>Warning</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "16",
+            "title": "Success button",
+            "text": "<button type='button' class='btn btn-success'>Success</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "19",
+            "title": "Info button",
+            "text": "<button type='button' class='btn btn-info'>Info</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "20",
+            "title": "Link button",
+            "text": "<button type='button' class='btn btn-link'>Link</button>"
           },
           "template": {
             "id": "2",
@@ -184,6 +256,25 @@
             "id": "14",
             "title": "Home",
             "text": "# Welcome to Scania Digital Design System\n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Article Text",
+            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "url": "support",
+      "title": "Support",
+      "text": [
+        {
+          "content": {
+            "id": "21",
+            "title": "Support",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           },
           "template": {
             "id": "1",

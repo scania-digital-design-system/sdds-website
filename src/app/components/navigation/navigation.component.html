@@ -1,6 +1,6 @@
 <!-- Using bootstrap collapse -->
-<div id="closeCollapse">
-  <section *ngFor="let page of pages; index as i">
+<div *ngFor="let nav of navigations">
+  <section *ngFor="let page of nav.menus; index as i">
 
     <!-- Main menu -->
     <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + i"  routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">{{page.title}}
