@@ -10,8 +10,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainComponent } from './components/main/main.component';
 
-import { name } from '../../package.json';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +22,6 @@ import { name } from '../../package.json';
     AppRoutingModule
   ],
   bootstrap: [AppComponent],
-  providers: [{
-    provide: APP_BASE_HREF,
-    useValue: '/' + name
-  }],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
