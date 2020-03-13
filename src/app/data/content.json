@@ -4,7 +4,7 @@
       "id": "1",
       "url": "alert",
       "title": "Alert",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "8",
@@ -65,13 +65,14 @@
             "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
-      ]
+      ],
+      "submenus": []
     },
     {
       "id": "2",
       "url": "button",
       "title": "Buttons",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "1",
@@ -168,13 +169,14 @@
             "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
-      ]
+      ],
+      "submenus": []
     },
     {
       "id": "3",
       "url": "components",
       "title": "Components",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "7",
@@ -182,10 +184,20 @@
             "text": "Components are important"
           },
           "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "id": "5",
+            "title": "List subpages",
+            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
           }
+        }
+      ],
+      "submenus": [
+        {
+          "title": "Alert",
+          "url": "alert"
+        },
+        {
+          "title": "Buttons",
+          "url": "button"
         }
       ]
     },
@@ -193,7 +205,7 @@
       "id": "4",
       "url": "foundation",
       "title": "Foundation",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "4",
@@ -206,13 +218,23 @@
             "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
+      ],
+      "submenus": [
+        {
+          "title": "Competencies",
+          "url": "competencies"
+        },
+        {
+          "title": "Definitions",
+          "url": "definitions"
+        }
       ]
     },
     {
       "id": "5",
       "url": "competencies",
       "title": "Competencies",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "5",
@@ -225,13 +247,14 @@
             "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
-      ]
+      ],
+      "submenus": []
     },
     {
       "id": "6",
       "url": "definitions",
       "title": "Definitions",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "6",
@@ -244,13 +267,14 @@
             "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
-      ]
+      ],
+      "submenus": []
     },
     {
       "id": "8",
       "url": "home",
       "title": "Home",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "14",
@@ -263,13 +287,14 @@
             "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
-      ]
+      ],
+      "submenus": []
     },
     {
       "id": "9",
       "url": "support",
       "title": "Support",
-      "text": [
+      "contents": [
         {
           "content": {
             "id": "21",
@@ -282,7 +307,8 @@
             "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
           }
         }
-      ]
+      ],
+      "submenus": []
     }
   ]
 }

@@ -19,6 +19,11 @@
       "id": "4",
       "title": "Preview thumbnail",
       "text": ""
+    },
+    {
+      "id": "5",
+      "title": "List subpages",
+      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
     }
   ]
 }

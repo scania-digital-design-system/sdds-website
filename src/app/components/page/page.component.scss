@@ -32,7 +32,6 @@
             position: static !important;
         }
     }
-
 }
 
 :host-context(main.page-overview) {
@@ -85,6 +84,14 @@
             border-top: none;
         }
     }
+}
+
+.col-3 img {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 30%;
+    background-color: lightblue;
 }
 
 @media (min-width: 1600px) {

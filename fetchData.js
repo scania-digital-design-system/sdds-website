@@ -18,7 +18,7 @@ query {
     id
     url
     title
-    text: contents {
+    contents {
       content {
         id
         title
@@ -29,6 +29,10 @@ query {
         title
         text
       }
+    }
+    submenus {
+      title
+      url
     }
   }
 }
