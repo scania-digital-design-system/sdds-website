@@ -1,6 +1,6 @@
 <strong>{{example.title}}</strong>
 
-<div class='row mb-5' *ngFor='let type of example.text | split'>
+<div class='row mb-5' *ngFor='let type of example.text | split:"\r?\n-\r?\n"'>
   <div class='col-3' [innerHTML]='type | keepHtml'></div>
   <div class='col-9'>
     <div class='input-group mb-3'>

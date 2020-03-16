@@ -13,8 +13,9 @@ export class EscapeHtmlPipe implements PipeTransform {
 
 @Pipe({ name: 'split' })
 export class SplitPipe implements PipeTransform {
-  transform(str: string): string[] {
-    return str.split(/\r?\n/);
+  transform(text: string, divider: string = ' '): string[] {
+    const pattern = new RegExp(divider, 'g');
+    return text.split(pattern);
   }
 }
 
