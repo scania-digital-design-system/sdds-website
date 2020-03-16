@@ -278,8 +278,8 @@
         {
           "content": {
             "id": "14",
-            "title": "Home",
-            "text": "# Welcome to Scania Digital Design System\n\n"
+            "title": "Scania Digital Design System",
+            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n <h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download UI Kit</a></h2><h2><a href=''><c-icon name='scania-save'></c-icon>Download Dev Kit</a></h2>"
           },
           "template": {
             "id": "1",
