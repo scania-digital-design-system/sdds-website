@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "npm run angular",
     "build": "npm run data && ng build --base-href %npm_package_name%",
+    "link": "npm link corporate-ui && npm link scania-theme",
     "angular": "npm run data && ng serve --configuration es5 --disable-host-check --port 1337",
     "jekyll": "npm run build && cd dist && jekyll serve --baseurl /%npm_package_name% --port 1337",
     "deploy": "npm run build && gh-pages -d dist",
