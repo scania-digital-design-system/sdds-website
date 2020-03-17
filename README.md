@@ -20,6 +20,8 @@ npm link
 
 Add links to **Corporate Ui** and **Scania theme**
 ```
+npm run link
+  // or 
 cd corporate-ui-site
 npm link corporate-ui
 npm link scania-theme

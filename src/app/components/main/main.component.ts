@@ -22,13 +22,8 @@ export class MainComponent {
   // docs: ArrayObject = {};
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
-    this.ps.pages.subscribe((items:Navigation) => {
-      this.menus = items.menus;
-    });
-
-    this.ps.docs.subscribe((docs: Array<Doc>) => {
-      this.docs = docs;
-    });
+    this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);
+    this.ps.docs.subscribe((docs: Array<Doc>) => this.docs = docs);
 
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
@@ -43,7 +38,6 @@ export class MainComponent {
         // console.log(this.page);
 
         document.title = this.titleCase.transform(`${name.replace(/-/g, ' ')} | ${this.page.title}`);
-
         this.ps.setPage(this.page);
       }
     });
@@ -57,7 +51,6 @@ export class MainComponent {
 
       return this.getPage(page.submenus, paths);
     }
-
     return page;
   }
 }

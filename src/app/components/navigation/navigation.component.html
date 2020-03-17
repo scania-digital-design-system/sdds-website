@@ -1,7 +1,16 @@
-<header>
-    <a routerLink="">Corporate UI</a>
-</header>
+<!-- Using bootstrap collapse -->
+<div *ngFor="let nav of navigations" id="closeCollapse">
+  <section *ngFor="let page of nav.menus; index as i">
 
-<section item-toggler *ngFor="let item of items; index as i" text="{{item.url}}" [collapsed]="false">
-    <a *ngFor="let sub of item.submenus; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.title}}</a>
-</section>
+    <!-- Main menu -->
+    <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + i" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">{{page.title}}
+      <c-icon name="scania-angle-down" *ngIf="page.submenus.length"></c-icon>
+    </a>
+
+    <!-- Sub menu -->
+    <div #1 [id]="id + i" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
+      <a *ngFor="let sub of page.submenus; index as i;" routerLinkActive="active" [routerLink]="page.url + '/' + sub.url">{{sub.title}}</a>
+    </div>
+
+  </section>
+</div>

@@ -1,14 +1,14 @@
 <strong>{{example.title}}</strong>
-<div *ngIf="toggleCode; then toggleOn else toggleOff"></div>
 
-<ng-template #toggleOn>
-  <figure [innerHTML]='example.text | keepHtml'></figure>
-  <div item-toggler text='Toggle code example'>
-    <c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample>
+<div class='row mb-5' *ngFor='let type of example.text | split:"\r?\n-\r?\n"'>
+  <div class='col-3' [innerHTML]='type | keepHtml'></div>
+  <div class='col-9'>
+    <div class='input-group mb-3'>
+      <input type='text' class='form-control bg-dark text-light' [value]='type'>
+
+      <div class='input-group-append'>
+        <button class='btn btn-secondary' type='button'>Copy</button>
+      </div>
+    </div>
   </div>
-</ng-template>
-<ng-template #toggleOff>
-  <c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample>
-</ng-template>
-
-
+</div>

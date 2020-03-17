@@ -1,5 +1,5 @@
-<button type="button" data-toggle="collapse"  [attr.data-target]="'#' + id" class="btn btn-link dropdown-toggle" [ngClass]="{'collapsed': collapsed}">{{text}}</button>
+<button type="button" data-toggle="collapse" [attr.data-target]="'#' + id" class="btn btn-link collapsed">{{text}} <c-icon name="scania-angle-down"></c-icon></button>
 
-<div [id]="id" class="collapse" [ngClass]="{'show': !collapsed}">
-    <ng-content></ng-content>
+<div [id]="id" class="collapse">
+  <ng-content></ng-content>
 </div>

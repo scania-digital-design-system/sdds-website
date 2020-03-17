@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TogglerComponent {
   @Input() text: String;
-  @Input() collapsed: Boolean = true;
 
   id: String = 'a' + Math.round( Math.random() * 1000000000 );
 }
