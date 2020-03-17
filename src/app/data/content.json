@@ -279,7 +279,7 @@
           "content": {
             "id": "14",
             "title": "Scania Digital Design System",
-            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n <h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download UI Kit</a></h2><h2><a href=''><c-icon name='scania-save'></c-icon>Download Dev Kit</a></h2>"
+            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n <h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a></h2><h2><a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Components in Github</a></h2>"
           },
           "template": {
             "id": "1",

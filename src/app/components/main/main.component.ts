@@ -5,8 +5,6 @@ import { TitleCasePipe } from '@angular/common';
 import { PageService } from '../../app.service';
 import { Page, Doc, Navigation } from '../../app.interface';
 
-import { name } from '../../../../package.json';
-
 @Component({
   selector: '[main-component]',
   templateUrl: './main.component.html',
@@ -37,7 +35,7 @@ export class MainComponent {
         this.page.parent = this.parent;
         // console.log(this.page);
 
-        document.title = this.titleCase.transform(`${name.replace(/-/g, ' ')} | ${this.page.title}`);
+        document.title = this.titleCase.transform(`Scania Digital Design System | ${this.page.title}`);
         this.ps.setPage(this.page);
       }
     });

@@ -91,33 +91,6 @@
   background-color: lightblue;
 }
 
-:host-context(main.page-home) {
-  ::ng-deep {
-    color: #2d292d; //fallback in IE
-    color: var(--black); //Scania black
-    h1 {
-      font-family: 'Scania Sans Headline', sans-serif;
-      font-size: 4rem;
-      color: inherit;
-      margin-bottom: 6rem;
-    }
-    h2 {
-      font-family: 'Scania Sans', sans-serif;
-      c-icon {
-        margin-right: 1rem;
-      }
-      a {
-        text-decoration: none;
-      }
-    }
-    .lead {
-      font-family: 'Scania Sans', sans-serif;
-      font-size: 2.5rem;
-      margin-bottom: 10rem;
-    }
-  }
-}
-
 @media (min-width: 1600px) {
   .container {
     max-width: 1440px;
