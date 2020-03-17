@@ -69,17 +69,6 @@ query {
 }
 `;
 
-const contents = `
-query {
-  contents {
-    id
-    title
-    text
-  }
-}
-`;
-
-
 const getData = async(targetName, target) => {
   console.log(`Reading data ${targetName}`);
 
@@ -98,4 +87,3 @@ const getData = async(targetName, target) => {
 getData('content', content);
 getData('navigation', navigation);
 getData('templates', templates);
-// getData('contents', contents);
