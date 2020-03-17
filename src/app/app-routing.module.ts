@@ -5,21 +5,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from './app.service';
-import { EscapeHtmlPipe, MarkdownPipe } from './app.pipe';
+import { EscapeHtmlPipe, SplitPipe, MarkdownPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
+import { CodeExampleComponent } from './components/code-example/code-example.component';
 
 @NgModule({
   declarations: [
     EscapeHtmlPipe,
+    SplitPipe,
     MarkdownPipe,
     PageComponent,
     TogglerComponent,
     ColorListComponent,
-    IconListComponent
+    IconListComponent,
+    CodeExampleComponent
   ],
   entryComponents: [PageComponent],
   imports: [
@@ -44,26 +47,41 @@ export class AppRoutingModule {
     this.ps.pages.subscribe(items => {
       const routes = this.contentToRoute(items);
 
-      // console.log(1, routes);
-
       this.router.resetConfig([
         ...routes,
-        { path: '**', redirectTo: 'none' }
+        { path: '**', redirectTo: '/home' }
       ]);
 
       this.ps.setRoutes(routes);
     });
+
+    // TODO: We could also handle the data over here but I 
+    // think doing it in the service makes more sense
+
+    // this.ps.navigations.subscribe(items => {
+    //   let pages = [];
+    //   items.map(item => pages = [ ...pages, ...item.menus ]);
+
+    //   const routes = this.contentToRoute(pages);
+
+    //   this.router.resetConfig([
+    //     ...routes,
+    //     { path: '**', redirectTo: '/home' }
+    //   ]);
+
+    //   this.ps.setRoutes(routes);
+    // });
   }
 
   contentToRoute(items) {
     return items.reduce((accumulator, item, index) => {
-      let route:any = { path: item.url, data: item.content, component: PageComponent };
+      let route:any = { path: item.url, component: PageComponent };
 
-      if(item.pages) route.children = this.contentToRoute(item.pages);
+      if(item.submenus) route.children = this.contentToRoute(item.submenus);
 
       let routes = [ route ];
-
-      if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
+      // Keep this comment for investigating purpose regarding route.path, this doesn't work for parent route
+      // if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
 
       return accumulator.concat(routes);
     }, []);

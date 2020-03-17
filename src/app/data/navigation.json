@@ -1,0 +1,62 @@
+{
+  "navigations": [
+    {
+      "id": "1",
+      "title": "Main navigation",
+      "menus": [
+        {
+          "id": "8",
+          "url": "home",
+          "title": "Home",
+          "submenus": []
+        },
+        {
+          "id": "4",
+          "url": "foundation",
+          "title": "Foundation",
+          "submenus": [
+            {
+              "id": "6",
+              "url": "definitions",
+              "title": "Definitions"
+            },
+            {
+              "id": "5",
+              "url": "competencies",
+              "title": "Competencies"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "url": "components",
+          "title": "Components",
+          "submenus": [
+            {
+              "id": "1",
+              "url": "alert",
+              "title": "Alert"
+            },
+            {
+              "id": "2",
+              "url": "button",
+              "title": "Buttons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Extra navigation",
+      "menus": [
+        {
+          "id": "9",
+          "url": "support",
+          "title": "Support",
+          "submenus": []
+        }
+      ]
+    }
+  ]
+}

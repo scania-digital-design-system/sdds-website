@@ -11,6 +11,14 @@ export class EscapeHtmlPipe implements PipeTransform {
   }
 }
 
+@Pipe({ name: 'split' })
+export class SplitPipe implements PipeTransform {
+  transform(text: string, divider: string = ' '): string[] {
+    const pattern = new RegExp(divider, 'g');
+    return text.split(pattern);
+  }
+}
+
 @Pipe({ name: 'markdown' })
 export class MarkdownPipe implements PipeTransform {
 

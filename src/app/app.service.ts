@@ -3,13 +3,14 @@ import { Route } from '@angular/router';
 // import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { Page, Doc } from './app.interface';
+import { Page, Doc, Navigation } from './app.interface';
 
-import { default as content } from './data/content.json';
+import { navigations } from './data/navigation.json';
 import { components as docs } from 'corporate-ui/dist/data/docs.json';
 
 @Injectable()
 export class PageService {
+  private _navigations: BehaviorSubject<Array<Navigation>> = new BehaviorSubject([]);
   private _page: BehaviorSubject<Page> = new BehaviorSubject({});
   private _pages: BehaviorSubject<Array<Page>> = new BehaviorSubject([]);
   private _routes: BehaviorSubject<Array<Route>> = new BehaviorSubject([]);
@@ -17,6 +18,7 @@ export class PageService {
   private _theme: BehaviorSubject<Object> = new BehaviorSubject({});
   private _note: BehaviorSubject<Object> = new BehaviorSubject({});
 
+  public readonly navigations: Observable<Array<Navigation>> = this._navigations.asObservable();
   public readonly page: Observable<Page> = this._page.asObservable();
   public readonly pages: Observable<Array<Page>> = this._pages.asObservable();
   public readonly routes: Observable<Array<Route>> = this._routes.asObservable();
@@ -25,11 +27,15 @@ export class PageService {
   public readonly note: Observable<Object> = this._note.asObservable();
 
   constructor(/*private http: HttpClient*/) {
-    this.setPages(content);
+    // this.setPages(content);
+    this.setNavigations(navigations);
+    // this.setPages(main);
     this.setDocs(docs);
-    // TODO: This data object should be moved to some data flow.
-    this.setNote({
-      description: 'We are currently facing issues using the navigation in **IE** and **Edge**. A workaround is to focus the address field and press enter.'
+
+    this.navigations.subscribe(items => {
+      let pages = [];
+      items.map(item => pages = [ ...pages, ...item.menus ]);
+      this.setPages(pages);
     });
 
     if(window['CorporateUi']) {
@@ -45,6 +51,9 @@ export class PageService {
     //   });
   }
 
+  setNavigations(items: Array<Navigation>) {
+    this._navigations.next(items);
+  }
   setPage(item: Page) {
     this._page.next(item);
   }

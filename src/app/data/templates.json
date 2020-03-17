@@ -1,109 +1,29 @@
-[
+{
+  "templates": [
     {
-        "id": 1,
-        "title": "Component page",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Description",
-                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-            },
-            {
-                "id": 2,
-                "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
-            },
-            {
-                "id": 3,
-                "title": "Technical documentation",
-                "content": "<section class='container'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-            }
-        ]
+      "id": "1",
+      "title": "Article Text",
+      "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
     },
     {
-        "id": 2,
-        "title": "Overview page",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Description",
-                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-            },
-            {
-                "id": 4,
-                "title": "Preview",
-                "content": "<section class='container'><div class='row'><ng-container *ngFor='let child of item.parent.pages; index as i'><div *ngIf='child.content.examples' [class]='\"col-sm-3 \" + child.url'><a class='card' [routerLink]='child.url'><div class='card-body' [innerHTML]='child.content.examples[0].text | keepHtml'></div><div class='card-footer'>{{child.content.title}}</div></a></div></ng-container></div></section>"
-            }
-        ]
+      "id": "2",
+      "title": "Code example",
+      "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
     },
     {
-        "id": 3,
-        "title": "Markdown",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Description",
-                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-            }
-        ]
+      "id": "3",
+      "title": "Technical Documentation",
+      "text": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
     },
     {
-        "id": 4,
-        "title": "Bootstrap Components",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Description",
-                "content": "<section *ngIf='item.content.description' [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-            },
-            {
-                "id": 2,
-                "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><figure [innerHTML]='example.text | keepHtml'></figure><div item-toggler text='Toggle code example'><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></div></section>"
-            }
-        ]
+      "id": "4",
+      "title": "Preview thumbnail",
+      "text": ""
     },
     {
-        "id": 5,
-        "title": "Color list",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Colors",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><h4>{{example.title}}</h4><p *ngIf='example.description'>{{example.description}}</p><div color-list [type]='example.type' class='row' classes='col-sm-6 col-md-4 col-lg-2 mb-5'></div></section>"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Icon list",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><pre>{{example.text}}</pre><h5 class='mb-5 mt-5'>Icon List</h5><div icon-list class='row'></div></section>"
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "title": "",
-        "sections": [
-            {
-                "id": 1,
-                "title": "Description",
-                "content": "<section [innerHTML]='item.content.description | markdown | keepHtml' class='container'></section>"
-            },
-            {
-                "id": 2,
-                "title": "Examples",
-                "content": "<section class='container' *ngFor='let example of item.content.examples; index as i'><strong>{{example.title}}</strong><p *ngIf='example.description'>{{example.description}}</p><c-code-sample [innerHTML]='example.text | keepHtml'></c-code-sample></section>"
-            },
-            {
-                "id": 3,
-                "title": "Technical documentation",
-                "content": "<section class='container'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.name}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-            }
-        ]
+      "id": "5",
+      "title": "List subpages",
+      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
     }
-]
+  ]
+}
