@@ -3,17 +3,12 @@ const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
 const url = 'https://sdds-cms.herokuapp.com/graphql';
-// Needed when fetch data locally inside scania network
-const proxy = 'http://proxyseso.scania.com:8080';
 
-const writeFile = async(data, target) => {
-  fs.writeFile(`./data/${target}.json`, JSON.stringify(data, null, 2), function(err) {
-    if(err) {
-      return console.log(err);
-    }
-    console.log(`File ${target} saved!`);
-  }); 
-}
+const init = () => {
+  getData('content', content);
+  getData('navigation', navigation);
+  getData('templates', templates);
+};
 
 const content = `
 query {
@@ -56,7 +51,6 @@ fragment allMenu on Menu {
   url
   title
 }
-
 `;
 
 const templates = `
@@ -69,21 +63,26 @@ query {
 }
 `;
 
-const getData = async(targetName, target) => {
-  console.log(`Reading data ${targetName}`);
+const writeFile = async(data, target) => {
+  fs.writeFile(`./src/app/data/${target}.json`, JSON.stringify(data, null, 2), (err) => {
+    if(err) return console.log(err);
 
-  const graphQLClient = new GraphQLClient(url, {
-    agent: new HttpsProxyAgent(proxy),
-  })
-
-  graphQLClient.request(target)
-  .then(data => {
-    writeFile(data,`${targetName}`)
-  })
-  .catch(err => console.log(err));
-  
+    console.log(`Saving file: "${target}.json"`);
+  });
 }
 
-getData('content', content);
-getData('navigation', navigation);
-getData('templates', templates);
+const getData = async(targetName, target, options) => {
+  console.log(`Reading data: "${targetName}"${options ? ' (Using proxy)' : ''}`);
+
+  const graphQLClient = new GraphQLClient(url, options);
+
+  graphQLClient.request(target)
+    .then(data => writeFile(data, targetName))
+    .catch(err => {
+      if(options) return console.log(err);
+
+      getData(targetName, target, { agent: new HttpsProxyAgent(process.env.HTTP_PROXY) });
+    });
+}
+
+init();
