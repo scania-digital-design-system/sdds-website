@@ -24,6 +24,61 @@
               "id": "5",
               "url": "buttons",
               "title": "Buttons"
+            },
+            {
+              "id": "6",
+              "url": "cards",
+              "title": "Cards"
+            },
+            {
+              "id": "7",
+              "url": "badge",
+              "title": "Badge"
+            },
+            {
+              "id": "8",
+              "url": "breadcrumbs",
+              "title": "Breadcrumbs"
+            },
+            {
+              "id": "9",
+              "url": "pagination",
+              "title": "Pagination"
+            },
+            {
+              "id": "10",
+              "url": "button-groups",
+              "title": "Button groups"
+            },
+            {
+              "id": "11",
+              "url": "dropdown",
+              "title": "Dropdown"
+            },
+            {
+              "id": "12",
+              "url": "form",
+              "title": "Forms"
+            },
+            {
+              "id": "13",
+              "url": "input-groups",
+              "title": "Input groups"
+            },
+            {
+              "id": "14",
+              "url": "media-objects",
+              "title": "Media Objects"
+            },
+            {
+              "id": "15",
+              "url": "modals",
+              "title": "Modals"
+            },
+            {
+              "id": "16",
+              "url": "navs",
+              "title": "Navs"
             }
           ]
         }

@@ -3,7 +3,9 @@ import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from '../../app.service';
-import { Page, Doc, Navigation } from '../../app.interface';
+import { Page, Doc } from '../../app.interface';
+
+declare let gtag: Function;
 
 @Component({
   selector: '[main-component]',
@@ -37,6 +39,8 @@ export class MainComponent {
 
         document.title = this.titleCase.transform(`Scania Digital Design System | ${this.page.title}`);
         this.ps.setPage(this.page);
+
+        this.analytics(route.url);
       }
     });
   }
@@ -50,5 +54,12 @@ export class MainComponent {
       return this.getPage(page.submenus, paths);
     }
     return page;
+  }
+
+  analytics(path) {
+    if(typeof gtag === 'undefined') return;
+
+    gtag('set', 'page', path);
+    gtag('send', 'pageview');
   }
 }

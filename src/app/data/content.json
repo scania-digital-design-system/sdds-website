@@ -9,7 +9,7 @@
           "content": {
             "id": "37",
             "title": "Scania Digital Design System",
-            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p> <h2>\n  <a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download UI Kit</a>\n</h2>\n<h2>\n  <a href=''><c-icon name='scania-save'></c-icon>Download Dev Kit</a>\n</h2>"
+            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p><h2>\n<a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download UI Kit</a>\n</h2>\n<h2>\n  <a href=''><c-icon name='scania-save'></c-icon>Download Dev Kit</a>\n</h2>"
           },
           "template": {
             "id": "1",
@@ -33,6 +33,126 @@
       "submenus": []
     },
     {
+      "id": "11",
+      "url": "dropdown",
+      "title": "Dropdown",
+      "contents": [
+        {
+          "content": {
+            "id": "26",
+            "title": "Dropdown",
+            "text": "Dropdown\nA dropdown is a type of menu that presents a list of option to the user and allows them to choose one of more to take action.\ndesign guidelines\n-\tUse a button to toggle the menu. The button can be labelled with text or an icon that is easy to understand.\n-\tMenu items to be ordered by usage\n-\tmake sure that the text is short and concise. Long menus are truncated with ellipsis added\n-\tNested menus can be used when necessary – up to three levels.\n-\tdisable menu(s) if needed\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "12",
+      "url": "form",
+      "title": "Forms",
+      "contents": [
+        {
+          "content": {
+            "id": "27",
+            "title": "Forms",
+            "text": "Forms\nForms is a modality of collecting inputs from the user and submitting it to an application.\ndesign guidelines\n-\tForms are constituted of text and input elements such as, checkboxes, dropdowns, radio buttons, toggle switches etc. Forms should be clear and concise to make it easy for users to complete forms.\n-\tUse one column to organise the form. \n-\tGroup input elements that are similar. This makes it easy for users to scan them.\n-\tForms should not be longer than a page – ideally. However, if a forms need to be longer, use pagination.\n-\tForms must let users know when something is wrong with the information provided. Error message styling, content and location should make it easy for users to understand where they have made errors (exact styling to be decided).\n-\tBoth real-time as well as after post validation can be done as appropriate.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "13",
+      "url": "input-groups",
+      "title": "Input groups",
+      "contents": [
+        {
+          "content": {
+            "id": "28",
+            "title": "Input groups",
+            "text": "Input groups\nInput groups are used to extend input elements (such as radio buttons, check boxes etc.) within a form. (more details are to be added).\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "14",
+      "url": "media-objects",
+      "title": "Media Objects",
+      "contents": [
+        {
+          "content": {
+            "id": "31",
+            "title": "Media Objects",
+            "text": "Media objects\nTo be decided.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "15",
+      "url": "modals",
+      "title": "Modals",
+      "contents": [
+        {
+          "content": {
+            "id": "32",
+            "title": "Modals",
+            "text": "Modals\nModals assist users in completing a task that requires an action by the user.\ndesign guidelines\n \n-\tFocus – modals requires user’s full attention and therefore, the focus needs to shift to the modal to enable user interaction.\n-\tUsers need to take action about a modal – either to take action or to cancel/dismiss it\n-\tModels should not launch other modals\n-\tdo not use scrolling with a modal as far as possible\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "16",
+      "url": "navs",
+      "title": "Navs",
+      "contents": [
+        {
+          "content": {
+            "id": "33",
+            "title": "Navs",
+            "text": "Navs\nnavigation panel is a collection of links – organized in a horizontal or vertical manner.\ndesign guidelines\n-\tto be decided\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "5",
       "url": "buttons",
       "title": "Buttons",
@@ -48,38 +168,21 @@
             "title": "Code example",
             "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "4",
-      "url": "components",
-      "title": "Components",
-      "contents": [
+        },
         {
           "content": {
-            "id": "39",
-            "title": "Components",
-            "text": "Some text goes here"
+            "id": "23",
+            "title": "Buttons",
+            "text": "Buttons\nButtons are a mode for inputting user action for communicating user’s intention.\nButtons are not the same as links – links are not input modes but it is a mode for navigation – from one page to another page or from one view to another view.\n\nTypes of Buttons\n-\tSolid button: meant for primary action, solid filled to attract user’s attention\n-\tOutline button: meant for secondary action and to compliment primary action\n-\tFlat button: meant for tertiary action\n-\tDisabled button: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\n-\tEllipsis button: meant for indicating that several tasks are available for users to take action\ndesign guidelines\n-\tPlacement – two distinct patterns can be used to place buttons\n \n \n-\tBehaviour (‘feel’)\nButtons to simulate clicking action that is visualised by means of change in colour/shade\n-\tStyle of buttons to follow the style guide\nThe text inside of buttons to be always UPPERCASE. Descriptive language relating to the intent of the user should be used to formulate button text.\n-\tvisual style\nBorder radius - ?\nSize and proportions - ?\nColour\n\tPrimary colour – Scania Blue – to provide consistency across all applications\nAction based colour – green or red – to provide an all clear message or a warning to the user.\nDisabled button colour – grey \nIcons\nIcons – that clearly communicate the intent for action – can be used in place of text for a button\nWhen icons are accompanied with text, it follows the icon (i.e. icon first and then the text)\nTitle attribute – a tooltip to be visible when hovering a button (where necessary). The text is displayed below the button.\nIcons can be used with any kind of buttons mentioned above.\n"
           },
           "template": {
-            "id": "5",
-            "title": "List subpages",
-            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
-      "submenus": [
-        {
-          "title": "Alert",
-          "url": "alert"
-        },
-        {
-          "title": "Buttons",
-          "url": "buttons"
-        }
-      ]
+      "submenus": []
     },
     {
       "id": "1",
@@ -112,6 +215,179 @@
         }
       ],
       "submenus": []
+    },
+    {
+      "id": "6",
+      "url": "cards",
+      "title": "Cards",
+      "contents": [
+        {
+          "content": {
+            "id": "25",
+            "title": "Cards",
+            "text": "Cards\nA card presents content and actions on a single topic.\ndesign guidelines\n-\teasy to understand content about a topic\n-\tconsider cards as an entry point to more details\n-\tkeep the content simple and easy to understand\n-\tcall to action – user primary action and a single additional action (if required). The placement of call to action if located on the card footer, left aligned (supports F-pattern layout).\n\n \n-\tNot all cards are to be clickable. When a card is clickable, the resulting action should be an expected outcome – to navigate to more details.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "7",
+      "url": "badge",
+      "title": "Badge",
+      "contents": [
+        {
+          "content": {
+            "id": "21",
+            "title": "Badges",
+            "text": "Badges\n\nBadges are used to highlight count (numerical value) associated with and item/event.\n\ndesign guidelines\n\n-\tBadges to have a colourful, bold and filled style to enable them to stand out when appearing within or next to a UI element.\n-\tUser integers with badges.\n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "8",
+      "url": "breadcrumbs",
+      "title": "Breadcrumbs",
+      "contents": [
+        {
+          "content": {
+            "id": "22",
+            "title": "Breadcrumbs",
+            "text": "Breadcrumbs\nBreadcrumbs are a navigational element to support wayfinding. It makes users of their current location (with respect to the application/website) and the option for further navigation. Breadcrumbs also show hierarchy of the navigation and allows users to navigate higher or lower in the hierarchy. Breadcrumbs are essentially links for navigation.\ndesign guidelines\n-\tBreadcrumbs should not replace global navigation or location navigation (in a section) but complement it.\n-\tBreadcrumbs should display the current location of the user with respect to hierarchy of navigational structure.\n-\tBreadcrumb corresponding the current page should not be a link.\n-\tBreadcrumbs are more useful for application/websites where the hierarchy if deeper than 2 levels. That is, it is not suitable for applications/sites that are have flat hierarchy.\n-\tBreadcrumb should start with link to home page.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "9",
+      "url": "pagination",
+      "title": "Pagination",
+      "contents": [
+        {
+          "content": {
+            "id": "34",
+            "title": "Pagination",
+            "text": "Pagination\nPagination is a collection of links that allows users to navigated between pages.\ndesign guidelines\n-\tPagination must makes clear to the user the page they are on currently and the options or navigating to other pages (both before the page or after the pages) is clearly visible to them.\n-\tUser roman numerals to indicate pages.\n-\tWhen working with high number of pages, links to go forward and backward along with links for first and last page to be shown.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "10",
+      "url": "button-groups",
+      "title": "Button groups",
+      "contents": [
+        {
+          "content": {
+            "id": "24",
+            "title": "Button groups",
+            "text": "Buttons groups\nButtons groups are collection of same type of buttons.\ndesign guidelines\nButton groups follow button design guidelines.\nTypes of Button groups\n-\tSolid button group: meant for primary action, solid filled to attract user’s attention\n-\tOutline button group: meant for secondary action and to compliment primary action\n-\tFlat button group: meant for tertiary action\n-\tDisabled button group: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\nButton groups can be constituted of the following:\n-\tmixed classes\no\tmixing actions\n\n \no\tmixing styles\n\n \n\n-\tIcons – width and spacing\n\n   \n\n-\tOverflow\n\nTo be used when the button group is larger than space available or there is intention to save space. In such cases, an ellipsis button is included in the button group that shows the overflow drop down menu.\n\n \n\n \n\n \n\n \n \n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "4",
+      "url": "components",
+      "title": "Components",
+      "contents": [
+        {
+          "content": {
+            "id": "39",
+            "title": "Components",
+            "text": "Some text goes here"
+          },
+          "template": {
+            "id": "5",
+            "title": "List subpages",
+            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
+          }
+        }
+      ],
+      "submenus": [
+        {
+          "title": "Alert",
+          "url": "alert"
+        },
+        {
+          "title": "Buttons",
+          "url": "buttons"
+        },
+        {
+          "title": "Cards",
+          "url": "cards"
+        },
+        {
+          "title": "Badge",
+          "url": "badge"
+        },
+        {
+          "title": "Breadcrumbs",
+          "url": "breadcrumbs"
+        },
+        {
+          "title": "Pagination",
+          "url": "pagination"
+        },
+        {
+          "title": "Button groups",
+          "url": "button-groups"
+        },
+        {
+          "title": "Dropdown",
+          "url": "dropdown"
+        },
+        {
+          "title": "Forms",
+          "url": "form"
+        },
+        {
+          "title": "Input groups",
+          "url": "input-groups"
+        },
+        {
+          "title": "Media Objects",
+          "url": "media-objects"
+        },
+        {
+          "title": "Modals",
+          "url": "modals"
+        },
+        {
+          "title": "Navs",
+          "url": "navs"
+        }
+      ]
     }
   ]
 }

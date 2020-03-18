@@ -6,6 +6,8 @@ import { Page, Template } from '../../app.interface';
 import { templates } from '../../data/templates.json';
 import { menus } from '../../data/content.json';
 
+declare let gtag: Function;
+
 /*
 TODO: add possbility to send link direkt connected with tab - button#style
 TODO: Indexing the tab menu from the database
@@ -15,15 +17,15 @@ FIXME: Add disabled state
 @Component({
   template:
   `<ul *ngIf="content.contents.length > 1" class="nav nav-pills" id="myTab">` +
-  templates.map((page: Template, index) => `
-    <li  *ngIf="templateCheck(${page.id})" class='nav-item'>
-      <a class='nav-link' data-toggle='tab' [ngClass]="dynamicActiveState(${page.id}, active)" href='#section-${page.id}'> ${page.title} </a>
+  templates.map((page: Template) => `
+    <li *ngIf="templateCheck(${page.id})" class='nav-item'>
+      <a class='nav-link' data-toggle='tab' (click)="tabChange(content, '${page.title}')" [ngClass]="dynamicActiveState(${page.id}, active)" href='#section-${page.id}'> ${page.title} </a>
     </li>
   `).join('')
   + "</ul>" +
   "<div class='tab-content'>" +
-  templates.map((page: Template, index) => `
-    <section [ngClass]="dynamicActiveState(${page.id}, active)"  class="tab-pane ${page.id}" id='section-${page.id}'>
+  templates.map((page: Template) => `
+    <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane ${page.id}" id='section-${page.id}'>
       <div *ngFor='let item of content.contents'>
         <ng-template [ngIf]='"${page.id}" == item.template.id'>
         <h3>${page.title}</h3>
@@ -90,6 +92,22 @@ export class PageComponent {
     });
   }
 
+  ngOnInit() {
+    // TODO: Would be nice if we could use this instead. But then we
+    // need to figure out a way to let us know when this $ is available
+
+    // let $ = window.CorporateUi.$;
+    // $(() => {
+    //   $('a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
+    //     console.log(
+    //       e.target, // newly activated tab
+    //       e.relatedTarget // previous active tab
+    //     );
+    //     this.tabChange();
+    //   });
+    // });
+  }
+
   // Set active class on element
   dynamicActiveState(page, activePage) {
     if(page == activePage){
@@ -110,5 +128,14 @@ export class PageComponent {
   templateCheck(pageid) {
     let templateid = this.content.contents.find(item => item.template.id == pageid)
     return templateid;
+  }
+
+  tabChange(page, tabTitle) {
+    gtag('send', 'event', {
+      eventCategory: 'Page',
+      eventAction: 'TabChange',
+      eventLabel: page.title,
+      eventValue: tabTitle
+    });
   }
 }
