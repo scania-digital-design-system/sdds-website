@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Article Text",
-      "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+      "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown | keepHtml'></p>\n  </article>\n</div>"
     },
     {
       "id": "2",
