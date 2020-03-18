@@ -11,15 +11,13 @@
 }
 
 :host-context(.page-home) {
+  background-image: url(../../../assets/images/ipad-background.png);
+  background-position: bottom right 40%;
+  background-repeat: no-repeat;
+  background-size: 40%;
   ::ng-deep {
     color: #2d292d; //fallback in IE
     color: var(--black); //Scania black
-    #content {
-      background-image: url(../../../assets/images/ipad-background.png);
-      background-position: bottom right 40%;
-      background-repeat: no-repeat;
-      background-size: 40%;
-    }
     h1 {
       font-family: 'Scania Sans Headline', sans-serif;
       font-size: 4rem;
