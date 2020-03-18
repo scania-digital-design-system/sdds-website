@@ -1,172 +1,20 @@
 {
   "menus": [
     {
-      "id": "1",
-      "url": "alert",
-      "title": "Alert",
-      "contents": [
-        {
-          "content": {
-            "id": "8",
-            "title": "Alert usage",
-            "text": "# Headline 1\n\n**Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n## Headline 2\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
-          },
-          "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        },
-        {
-          "content": {
-            "id": "9",
-            "title": "Alert example",
-            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n-\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n-\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n-\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "11",
-            "title": "Alert headings",
-            "text": "<div class='alert alert-success' role='alert'>\n  <h4 class='alert-heading'>Well done!</h4>\n  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>\n  <hr>\n  <p class='mb-0'>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>\n  <p>When you want to have a link if would look link <a href='#'>this</a></p>\n</div>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "9",
-            "title": "Alert example",
-            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n-\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n-\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n-\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "9",
-            "title": "Alert example",
-            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n-\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n-\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n-\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "2",
-      "url": "button",
-      "title": "Buttons",
+      "url": "home",
+      "title": "Homepage",
       "contents": [
         {
           "content": {
-            "id": "1",
-            "title": "Button usage",
-            "text": "Button description\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
+            "id": "37",
+            "title": "Scania Digital Design System",
+            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p> <h2>\n  <a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download UI Kit</a>\n</h2>\n<h2>\n  <a href=''><c-icon name='scania-save'></c-icon>Download Dev Kit</a>\n</h2>"
           },
           "template": {
             "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        },
-        {
-          "content": {
-            "id": "2",
-            "title": "Primary button",
-            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n-\n<button type='button' class='btn btn-primary' disabled>Primary</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "15",
-            "title": "Secondary button",
-            "text": "<button type='button' class='btn btn-secondary'>Secondary</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "17",
-            "title": "Danger button",
-            "text": "<button type='button' class='btn btn-danger'>Danger</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "18",
-            "title": "Warning button",
-            "text": "<button type='button' class='btn btn-warning'>Warning</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "16",
-            "title": "Success button",
-            "text": "<button type='button' class='btn btn-success'>Success</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "19",
-            "title": "Info button",
-            "text": "<button type='button' class='btn btn-info'>Info</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
-          }
-        },
-        {
-          "content": {
-            "id": "20",
-            "title": "Link button",
-            "text": "<button type='button' class='btn btn-link'>Link</button>"
-          },
-          "template": {
-            "id": "2",
-            "title": "Code example",
-            "text": "<section code-example [example]='item.content' toggleCode='true'></section>"
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
@@ -174,14 +22,46 @@
     },
     {
       "id": "3",
+      "url": "support",
+      "title": "Support",
+      "contents": [
+        {
+          "content": null,
+          "template": null
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "5",
+      "url": "buttons",
+      "title": "Buttons",
+      "contents": [
+        {
+          "content": {
+            "id": "40",
+            "title": "Primary button",
+            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n-\n<button type='button' class='btn btn-primary' disabled>Primary</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code example",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "4",
       "url": "components",
       "title": "Components",
       "contents": [
         {
           "content": {
-            "id": "7",
-            "title": "Components overview",
-            "text": "Components are important"
+            "id": "39",
+            "title": "Components",
+            "text": "Some text goes here"
           },
           "template": {
             "id": "5",
@@ -197,126 +77,37 @@
         },
         {
           "title": "Buttons",
-          "url": "button"
+          "url": "buttons"
         }
       ]
     },
     {
-      "id": "4",
-      "url": "foundation",
-      "title": "Foundation",
+      "id": "1",
+      "url": "alert",
+      "title": "Alert",
       "contents": [
         {
           "content": {
-            "id": "4",
-            "title": "Foundation",
-            "text": "Foundation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "id": "20",
+            "title": "Alerts",
+            "text": "Alerts\nAlerts are banners/modals that communicate a message with a degree of urgency attached to it.\nThere are two key types of alerts: standard alerts and application level alerts\ndesign guidelines: standard alerts\n-\tAlerts are to be designed to garb user’s attention to provide critical information needed in a context of use.\n-\tStandard Alerts, in general, are four types:\n\n1.\tSuccess Alert\nThe banner/modal carries a message communicating to the user that the action taken by them have been successful. \nThe banner/modal carries a green encircled check mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n2.\tinformation Alert\nThe banner/modal carries a message communicating to the user that additional information is available about the context of use. \nThe banner/modal carries a black encircled exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n3.\twarning alert\nThe banner/modal carries a message communicating to the user that the action taken by them have resulted in a warning with respect to the context of use. \nThe banner/modal carries a yellow outlined triangle with exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n4.\terror alert\nThe banner/modal carries a message communicating to the user that the action taken by them have resulted in an error with respect to the context of use. \nThe banner/modal carries red encircled cross mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n-\tStandard alerts convey severity and urgency in the following order: error, warning, info and success.\nIn case there are multiple subtypes (of each of the types mentioned above) all of them are shown before another standard alert type is shown. For example – multiple error warnings are shown before a warning alert is shown.\n-\tsize?\n-\tPlacement of alert \n\nStandard alerts could be place in multiple contexts including inside of components. \n\n-\tApplication level alerts are of three types: error, warning and info.\n-\tApplication level alerts follow the same order as standard level alerts: error, warning and info.\n-\tsize?\n-\tplacement?\n"
           },
           "template": {
             "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "title": "Paragraph",
+            "text": "<strong>{{item.content.title}}</strong>\\n<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         },
         {
           "content": {
-            "id": "4",
-            "title": "Foundation",
-            "text": "Foundation\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "id": "41",
+            "title": "Alert examples",
+            "text": "<div class='alert alert-success' role='alert'>\n  A simple success alert—check it out!\n</div>\n-\n<div class='alert alert-danger' role='alert'>\n  A simple danger alert—check it out!\n</div>\n-\n<div class='alert alert-warning' role='alert'>\n  A simple warning alert—check it out!\n</div>\n-\n<div class='alert alert-info' role='alert'>\n  A simple info alert—check it out!\n</div>"
           },
           "template": {
-            "id": "5",
-            "title": "List subpages",
-            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
-          }
-        }
-      ],
-      "submenus": [
-        {
-          "title": "Competencies",
-          "url": "competencies"
-        },
-        {
-          "title": "Definitions",
-          "url": "definitions"
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "url": "competencies",
-      "title": "Competencies",
-      "contents": [
-        {
-          "content": {
-            "id": "5",
-            "title": "Competencies",
-            "text": "Vitae ultricies leo integer malesuada nunc vel. Sollicitudin nibh sit amet commodo nulla facilisi. Ut diam quam nulla porttitor massa id neque aliquam. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. \n\n\n![text](/uploads/d9772e61794342dfa05efea20c1eedbf.png)"
-          },
-          "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "6",
-      "url": "definitions",
-      "title": "Definitions",
-      "contents": [
-        {
-          "content": {
-            "id": "6",
-            "title": "Definitions",
-            "text": "## Headline 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n### Headline 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.1"
-          },
-          "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "8",
-      "url": "home",
-      "title": "Home",
-      "contents": [
-        {
-          "content": {
-            "id": "14",
-            "title": "Scania Digital Design System",
-            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n <h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a></h2><h2><a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Components in Github</a></h2>"
-          },
-          "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "9",
-      "url": "support",
-      "title": "Support",
-      "contents": [
-        {
-          "content": {
-            "id": "21",
-            "title": "Support",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          },
-          "template": {
-            "id": "1",
-            "title": "Article Text",
-            "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
+            "id": "2",
+            "title": "Code example",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],

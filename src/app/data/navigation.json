@@ -1,14 +1,45 @@
 {
-  "navigation": {
-    "id": "1",
-    "title": "Main navigation",
-    "menus": [
-      {
-        "id": "2",
-        "url": "home",
-        "title": "Homepage",
-        "submenus": []
-      }
-    ]
-  }
+  "navigations": [
+    {
+      "id": "1",
+      "title": "Main navigation",
+      "menus": [
+        {
+          "id": "2",
+          "url": "home",
+          "title": "Homepage",
+          "submenus": []
+        },
+        {
+          "id": "4",
+          "url": "components",
+          "title": "Components",
+          "submenus": [
+            {
+              "id": "1",
+              "url": "alert",
+              "title": "Alert"
+            },
+            {
+              "id": "5",
+              "url": "buttons",
+              "title": "Buttons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Extra navigation",
+      "menus": [
+        {
+          "id": "3",
+          "url": "support",
+          "title": "Support",
+          "submenus": []
+        }
+      ]
+    }
+  ]
 }

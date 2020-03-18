@@ -1,7 +1,6 @@
 {
   "templates": [
     {
-      "text": "<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>"
       "id": "2",
       "title": "Code example",
       "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"

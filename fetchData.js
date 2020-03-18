@@ -38,7 +38,7 @@ query {
 
 const navigation = `
 query {
-  navigations {
+  navigations(sort: "id") {
     id
     title
     menus(sort: "index") {
@@ -59,7 +59,7 @@ fragment menu on Menu {
 
 const templates = `
 query {
-  templates {
+  templates(sort: "index") {
     id
     title
     text
