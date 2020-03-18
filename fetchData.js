@@ -1,16 +1,14 @@
-const { request } = require('graphql-request');
+const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
+const HttpsProxyAgent = require('https-proxy-agent');
 
-const url = 'http://localhost:1339/graphql';
+const url = 'https://sdds-cms.herokuapp.com/graphql';
 
-const writeFile = async(data, target) => {
-  fs.writeFile(`./src/app/data/${target}.json`, JSON.stringify(data, null, 2), function(err) {
-    if(err) {
-      return console.log(err);
-    }
-    console.log(`File ${target} saved!`);
-  });
-}
+const init = () => {
+  getData('content', content);
+  getData('navigation', navigation);
+  getData('templates', templates);
+};
 
 const content = `
 query {
@@ -44,15 +42,15 @@ query {
     id
     title
     menus(sort: "index") {
-      ...menus
+      ...menu
       submenus(sort: "index") {
-        ...menus
+        ...menu
       }
     }
   }
 }
 
-fragment menus on Menu {
+fragment menu on Menu {
   id
   url
   title
@@ -69,14 +67,26 @@ query {
 }
 `;
 
+const writeFile = async(data, target) => {
+  fs.writeFile(`./src/app/data/${target}.json`, JSON.stringify(data, null, 2), (err) => {
+    if(err) return console.log(err);
 
-const getData = async(targetName, target) => {
-  request(url, target).then(result => {
-    console.log(`Reading data ${targetName}`);
-    writeFile(result, `${targetName}`);
+    console.log(`Saving file: "${target}.json"`);
   });
 }
 
-getData('content', content);
-getData('navigation', navigation);
-getData('templates', templates);
+const getData = async(targetName, target, options) => {
+  console.log(`Reading data: "${targetName}"${options ? ' (Using proxy)' : ''}`);
+
+  const graphQLClient = new GraphQLClient(url, options);
+
+  graphQLClient.request(target)
+    .then(data => writeFile(data, targetName))
+    .catch(err => {
+      if(options) return console.log(err);
+
+      getData(targetName, target, { agent: new HttpsProxyAgent(process.env.HTTP_PROXY) });
+    });
+}
+
+init();
