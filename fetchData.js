@@ -16,7 +16,7 @@ query {
     id
     url
     title
-    text: contents {
+    contents {
       content {
         id
         title
@@ -28,25 +28,29 @@ query {
         text
       }
     }
+    submenus {
+      title
+      url
+    }
   }
 }
 `;
 
 const navigation = `
 query {
-  navigation(id:1) {
+  navigations {
     id
     title
-    menus {
-      ...allMenu
-      submenus {
-        ...allMenu
+    menus(sort: "index") {
+      ...menu
+      submenus(sort: "index") {
+        ...menu
       }
     }
   }
 }
 
-fragment allMenu on Menu {
+fragment menu on Menu {
   id
   url
   title
