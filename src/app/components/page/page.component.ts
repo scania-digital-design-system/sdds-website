@@ -28,7 +28,6 @@ FIXME: Add disabled state
     <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane ${page.id}" id='section-${page.id}'>
       <div *ngFor='let item of content.contents'>
         <ng-template [ngIf]='"${page.id}" == item.template.id'>
-        <h3>${page.title}</h3>
         ${page.text}
         </ng-template>
       </div>
