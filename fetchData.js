@@ -3,6 +3,7 @@ const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
 const url = 'https://sdds-cms.herokuapp.com/graphql';
+// const url = 'http://localhost:1339/graphql';
 
 const init = () => {
   getData('content', content);
@@ -32,6 +33,10 @@ query {
       title
       url
     }
+    thumbnail {
+      id
+      url
+    }
   }
 }
 `;
@@ -54,6 +59,10 @@ fragment menu on Menu {
   id
   url
   title
+  thumbnail {
+    id
+    url
+  }
 }
 `;
 
