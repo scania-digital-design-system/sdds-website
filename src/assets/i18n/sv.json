@@ -1,0 +1,31 @@
+{
+  "COOKIES": {
+    "MAIN": "Vi använder cookies för att anpassa innehåll och annonser, för att tillhandahålla funktioner för sociala medier och för att analysera vår trafik. Vi delar också information om din användning av vår webbplats med våra sociala medier, reklam och analyspartners. Genom att klicka på \"Jag accepterar\" samtycker du till till alla cookies som används och informationen som delas. Du kan också hantera dina cookies genom att klicka på \"Cookie-inställningar\" och välja de kategorier du vill acceptera. För en mer detaljerad förklaring av hur vi använder cookies, besök vår sida om cookies, som du kan hitta genom att klicka på länken under den här texten. ",
+    "NECCESSARY": {
+      "TITLE": "Nödvändiga cookies",
+      "CONTENT": "Nödvändiga cookies behövs för att webbplatsen ska fungera och inte kan stängas av i våra system. De är vanligtvis en följd av att du begär tjänster som; ställa in dina sekretesspreferenser, logga in eller fylla i formulär. Du kan ställa in din webbläsare att blockera eller varna dig om dessa cookies, men då fungerar inte vissa delar av webbplatsen. Dessa cookies lagrar inga personuppgifter."
+    },
+    "PERFORMANCE": {
+      "TITLE": "Prestandacookies",
+      "CONTENT": "Prestandacookies tillåter oss att räkna besök och trafik, vilket är en viktig källa för förbättring av vår webbplats. De hjälper oss att veta vilka sidor som är mest och minst populära och att se hur besökare rör sig runt på webbplatsen. All information som dessa cookies samlar in är aggregerad och är därför anonym. Om du inte tillåter dessa cookies kommer ditt besök på vår webbplats inte att räknas med i vår statistik och kommer inte att bidra till resultatövervakning och förbättring av webbplatsen."
+    },
+    "FUNCTIONAL": {
+      "TITLE":"Funktionella cookies",
+      "CONTENT":"Funktionella cookies gör det möjligt för webbplatsen att ge förbättrad funktionalitet och anpassning. De kan ställas in av oss eller av tredjepartsleverantörer (se vår cookiepolicy för mer information) vars tjänster vi har lagt till på våra sidor. Om du inte tillåter dessa cookies kanske vissa eller alla av dessa tjänster inte fungerar korrekt. Tredjepartsleverantörer kan behandla din information, inklusive personuppgifter, när dessa cookies aktiveras."
+    },
+    "TARGETING": {
+      "TITLE":"Inriktade cookies",
+      "CONTENT":"Inriktade cookies kan ställas in via vår webbplats av våra annonseringspartners (se vår cookiepolicy för mer information). De kan användas av dessa företag för att skapa en profil för dina intressen och visa dig relevanta annonser på andra webbplatser. De är baserade på att identifiera din webbläsartyp och vilken typ av internetenhet du använder på ett unikt sätt. Om du inte tillåter dessa cookies kommer du att uppleva mindre riktad annonsering."
+    },
+    "SOCIALMEDIA": {
+      "TITLE":"Sociala medier",
+      "CONTENT":"Cookies för sociala medier ställs in av ett antal sociala medietjänster som vi har lagt till på webbplatsen för att du ska kunna dela vårt innehåll med dina vänner och nätverk (se vår cookiepolicy för mer information). De kan spåra din webbläsare på andra webbplatser och bygga upp en profil för dina intressen. Det kan påverka innehållet och meddelandena du ser på andra webbplatser du besöker. Om du inte tillåter dessa cookies kanske du inte kan använda eller se dessa delningsverktyg."
+    },
+    "BUTTONS":{
+      "SETTINGS":"Cookie-inställningar",
+      "ACCEPT":"Acceptera",
+      "CANCEL":"Avbryt",
+      "SAVE":"Spara inställningar"
+    }
+  }
+}
