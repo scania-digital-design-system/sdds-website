@@ -1,10 +1,16 @@
 <!-- Using bootstrap collapse -->
 <div *ngFor="let nav of navigations" id="closeCollapse">
-  <section *ngFor="let page of nav.menus; index as i">
+  <section *ngFor="let page of (nav.menus); index as i">
 
     <!-- Main menu -->
-    <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + page.id" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">{{page.title}}
+    <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + page.id" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">
+      {{page.title}}
       <c-icon name="scania-angle-down" *ngIf="page.submenus.length"></c-icon>
+    </a>
+
+    <a *ngIf="page.url.indexOf('http') === 0" href="{{page.url}}" target="_blank">
+      {{page.title}}
+      <c-icon name="scania-external_link"></c-icon>
     </a>
 
     <!-- Sub menu -->

@@ -1,10 +1,10 @@
 //FIXME: Add scania-theme variables instead of hex colors, valid for all places
 
 :host {
-  padding-top: 65px;
+  padding: 20px 0;
 
   div + div {
-    margin-top: auto;
+    margin-top: 130px;
   }
 }
 
@@ -18,19 +18,26 @@ section {
   margin-bottom: 20px;
 
   c-icon {
-    font-size: 30px;
     margin-left: auto;
     // color: white;
+
+    &[name=scania-angle-down] {
+      font-size: 30px;
+      margin-right: -10px;
+    }
   }
 
   > a {
     display: flex;
-    padding: 3px 10px 3px 20px;
+    padding: 3px 20px;
     border-left: 3px transparent solid;
 
     // Rotate for the angle-down icon
     &.collapsed > c-icon {
-      transform: rotate(0deg);
+
+      &[name=scania-angle-down] {
+        transform: rotate(0deg);
+      }
     }
 
     & > c-icon {
