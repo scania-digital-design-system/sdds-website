@@ -12,11 +12,13 @@ declare let gtag: Function;
 TODO: add possbility to send link direkt connected with tab - button#style
 TODO: Indexing the tab menu from the database
 FIXME: Add disabled state
+FIXME: title should fetch from the template not direct in the html, h1 for homepage needs to be removed now
 */
 
 @Component({
-  template:
-  `<ul *ngIf="content.contents.length > 1" class="nav nav-pills" id="myTab">` +
+  template: `
+  <h1 *ngIf="!content.title.includes('Home')">{{content.title}}</h1>
+  <ul *ngIf="content.contents.length > 1" class="nav" id="myTab">` +
   templates.map((page: Template) => `
     <li *ngIf="templateCheck(${page.id})" class='nav-item'>
       <a class='nav-link' data-toggle='tab' (click)="tabChange(content, '${page.title}')" [ngClass]="dynamicActiveState(${page.id}, active)" href='#section-${page.id}'> ${page.title} </a>
@@ -28,7 +30,6 @@ FIXME: Add disabled state
     <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane ${page.id}" id='section-${page.id}'>
       <div *ngFor='let item of content.contents'>
         <ng-template [ngIf]='"${page.id}" == item.template.id'>
-        <h3>${page.title}</h3>
         ${page.text}
         </ng-template>
       </div>
@@ -70,7 +71,6 @@ export class PageComponent {
 
       } else if(page.parent)  {
         this.content = menus.find(menu => menu.id === page.parent.id);
-
         // Works the same way as previous if statement
         var element = {};
         this.unique = [...new Set(this.content.contents.map(contentItem => {

@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: #fafafa;
   background-color: var(--white);
+  font-size: 1.6rem; // FIXME: moved to scania-theme?
 
   ::ng-deep > nav {
 

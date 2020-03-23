@@ -3,7 +3,7 @@
   <section *ngFor="let page of (nav.menus); index as i">
 
     <!-- Main menu -->
-    <a *ngIf="page.url.indexOf('http') === -1" #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + i" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">
+    <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + page.id" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">{{page.title}}
       {{page.title}}
       <c-icon name="scania-angle-down" *ngIf="page.submenus.length"></c-icon>
     </a>
@@ -14,7 +14,7 @@
     </a>
 
     <!-- Sub menu -->
-    <div #1 [id]="id + i" [ngClass]="{'collapse' : !(rla && rla.isActive)}"  data-parent="#closeCollapse" (click)="activePage = page">
+    <div #1 [id]="id + page.id" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
       <a *ngFor="let sub of page.submenus; index as i;" routerLinkActive="active" [routerLink]="page.url + '/' + sub.url">{{sub.title}}</a>
     </div>
 
