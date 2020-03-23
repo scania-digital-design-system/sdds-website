@@ -13,8 +13,24 @@
         {
           "id": "21",
           "url": "getting-started",
-          "title": "Getting Started",
-          "submenus": []
+          "title": "Getting started",
+          "submenus": [
+            {
+              "id": "36",
+              "url": "development",
+              "title": "Development"
+            },
+            {
+              "id": "37",
+              "url": "design",
+              "title": "Design"
+            },
+            {
+              "id": "38",
+              "url": "about-sdds",
+              "title": "About SDDS"
+            }
+          ]
         },
         {
           "id": "4",
@@ -90,6 +106,16 @@
               "id": "20",
               "url": "progress-indicators",
               "title": "Progress indicators"
+            },
+            {
+              "id": "26",
+              "url": "tables",
+              "title": "Tables"
+            },
+            {
+              "id": "39",
+              "url": "list-group",
+              "title": "List group"
             }
           ]
         },
@@ -100,21 +126,73 @@
           "submenus": [
             {
               "id": "18",
-              "url": "ux-design-principles",
-              "title": "UX Design principles"
+              "url": "ux-principles",
+              "title": "UX principles"
             },
             {
               "id": "19",
-              "url": "ui-design-principles",
-              "title": "UI Design principles"
+              "url": "ui-principles",
+              "title": "UI principles"
+            },
+            {
+              "id": "40",
+              "url": "colour",
+              "title": "Colour"
+            },
+            {
+              "id": "41",
+              "url": "typography",
+              "title": "Typography"
+            },
+            {
+              "id": "42",
+              "url": "accessibility",
+              "title": "Accessibility"
+            },
+            {
+              "id": "43",
+              "url": "layout",
+              "title": "Layout"
+            },
+            {
+              "id": "44",
+              "url": "logotype",
+              "title": "Logotype"
             }
           ]
         },
         {
           "id": "22",
-          "url": "Design Patterns",
+          "url": "design-patterns",
           "title": "Design Patterns",
           "submenus": []
+        },
+        {
+          "id": "35",
+          "url": "resources",
+          "title": "Resources",
+          "submenus": [
+            {
+              "id": "30",
+              "url": "way-of-working",
+              "title": "Way of working"
+            },
+            {
+              "id": "31",
+              "url": "definitions",
+              "title": "Definitions"
+            },
+            {
+              "id": "33",
+              "url": "ui-kit",
+              "title": "Ui kit(s)"
+            },
+            {
+              "id": "34",
+              "url": "development",
+              "title": "Development resource"
+            }
+          ]
         }
       ]
     },
@@ -143,7 +221,13 @@
         {
           "id": "25",
           "url": "http://www.google.com",
-          "title": "test",
+          "title": "ComOn editors",
+          "submenus": []
+        },
+        {
+          "id": "45",
+          "url": "http://www.google.com",
+          "title": "Mobile apps",
           "submenus": []
         }
       ]

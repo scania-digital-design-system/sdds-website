@@ -9,12 +9,12 @@
           "content": {
             "id": "39",
             "title": "Components",
-            "text": "Some text goes here"
+            "text": "<section>\n\nIn the Components section you can see the building blocks of the Scania Digital Design System for building user interfaces aliged with the Scania Brand. \nEach Component provides different solution to a UI problem and are presented with a visual example together with their specific usage guideline and code example.\n\n</section>"
           },
           "template": {
             "id": "5",
             "title": "List subpages",
-            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <h1>{{item.content.title}}</h1>\n  <article>\n    <p [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-3\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>"
+            "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <article>\n    <p class=\"lead\" [innerHTML]='item.content.text | markdown'></p>\n  </article>\n</div>\n\n<h1>Overview</h1>\n<section>\n<div class=\"row\">\n  <div class=\"col-3 mb-5\" *ngFor=\"let sub of content.submenus; index as i;\">\n    <a [routerLink]=\"sub.url\" class=\"card\">\n      <div class=\"card-body p-0\">\n        <img alt=\"{{sub.title}}\" src=\"{{sub.thumbnail.url}}\"*ngIf=\"sub.thumbnail\" />\n      </div>\n      <div class=\"card-footer\">{{sub.title}}</div>\n    </a>\n  </div>\n</div>\n</section>"
           }
         }
       ],
@@ -74,8 +74,132 @@
         {
           "title": "Progress indicators",
           "url": "progress-indicators"
+        },
+        {
+          "title": "Tables",
+          "url": "tables"
+        },
+        {
+          "title": "List group",
+          "url": "list-group"
         }
       ]
+    },
+    {
+      "id": "5",
+      "url": "buttons",
+      "title": "Buttons",
+      "contents": [
+        {
+          "content": {
+            "id": "40",
+            "title": "Button Primary",
+            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n-\n<button type='button' class='btn btn-primary' disabled>Primary</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "23",
+            "title": "Buttons",
+            "text": "<p class=\"lead\"> Buttons are a mode for inputting user action for communicating user’s intention.</p>\n\n<section>\n\nButtons are not the same as links – links are not input modes but it is a mode for navigation – from one page to another page or from one view to another view.\n\n</section>\n<section>\n\n**Example**\n\n<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>\n<button type='button' class='btn btn-link'>Link</button>\n\n</section>\n<section>\n\n**Types of Buttons**\n\n- **Solid button**: meant for primary action, solid filled to attract user’s attention\n- **Outline button**: meant for secondary action and to compliment primary action\n- **Flat button**: meant for tertiary action\n- **Disabled button**: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\n- **Ellipsis button**: meant for indicating that several tasks are available for users to take action\n\n</section>\n<section>\n\n**Usage Pattern**\n\nTwo distinct patterns can be used to place buttons\n\n![text](https://sdds-cms.s3.amazonaws.com/be1d256a05024ad98ce2143b6fc6486d.PNG)\n\n**Z Pattern**\n\nThe Z pattern is one of the more common trajectories followed by users when going through the content. For this reason, the core of the content is positioned at the top left side and the call for action is located on the right bottom side. This pattern holds true for languages that are read from left to right. The patterns works in the reverse manner for the languages that are read from right to left.\n\n**F pattern**\n\nThe F pattern is a variation of Z pattern where the core of the content is situated on the left top and the call for action is located on the left bottom. The pattern is reversed for languages that are read from right to left.\n\n \n **Interaction Pattern**\n\nButtons to simulate clicking action that is visualised by means of change in colour/shade\n\n**Compositional Pattern (with Style Guide)**\n\nStyle of buttons to follow the style guide in the following manner - \n\nThe text inside of buttons to be always UPPERCASE. Descriptive language relating to the intent of the user should be used to formulate button text.\n\n*Colour*\n\nPrimary colour to provide consistency across all applications - **Scania Blue**\n\nAction based colour to provide an all clear message or a warning to the user - **green or red**\n\nDisabled button colour – **grey**\n\n*Icons*\n\nIcons – that clearly communicate the intent for action – can be used in place of text for a button\nWhen icons are accompanied with text, it follows the icon (i.e. icon first and then the text)\n\nTitle attribute – a tooltip to be visible when hovering a button (where necessary). The text is displayed below the button.\n\nIcons can be used with any kind of buttons mentioned above.\n\n</section>\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "57",
+            "title": "Button Secondary",
+            "text": "<button type='button' class='btn btn-secondary'>Secondary</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "97",
+            "title": "Button success",
+            "text": "<button type='button' class='btn btn-success'>Success</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "99",
+            "title": "Button warning",
+            "text": "<button type='button' class='btn btn-warning'>Warning</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "98",
+            "title": "Button danger",
+            "text": "<button type='button' class='btn btn-danger'>Danger</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "100",
+            "title": "Button info",
+            "text": "<button type='button' class='btn btn-info'>Info</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "101",
+            "title": "Button link",
+            "text": "<button type='button' class='btn btn-link'>Link</button>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        }
+      ],
+      "submenus": []
     },
     {
       "id": "2",
@@ -86,32 +210,160 @@
           "content": {
             "id": "37",
             "title": "Scania Digital Design System",
-            "text": "<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n<h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a>\n</h2>\n<h2>\n<a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Github for Developers</a>\n</h2>"
+            "text": "<h1>Scania Digital Design System</h1>\n<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n<h2><a href='https://digitaldesign.scania.com/resources/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a>\n</h2>\n<h2>\n<a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Github for Developers</a>\n</h2>"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
       "submenus": []
     },
     {
-      "id": "21",
-      "url": "getting-started",
-      "title": "Getting Started",
+      "id": "11",
+      "url": "dropdown",
+      "title": "Dropdown",
       "contents": [
         {
           "content": {
-            "id": "43",
-            "title": "Getting Started",
-            "text": "Coming soon!"
+            "id": "26",
+            "title": "Dropdown",
+            "text": "<p class=\"lead\"> A dropdown is a type of menu that presents a list of option to the user and allows them to choose one of more to take action</p>\n\n<section>\n\n**Example**\n\n<!-- Example single primary button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tUse a button to toggle the menu. The button can be labelled with text or an icon that is easy to understand.\n-\tMenu items to be ordered by usage\n-\tmake sure that the text is short and concise. Long menus are truncated with ellipsis added\n-\tNested menus can be used when necessary – up to three levels.\n-\tdisable menu(s) if needed\n\n</section>"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "63",
+            "title": "Dropdown Primary",
+            "text": "<div class='btn-group'>\n  <button type='button' class='btn btn-primary dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "62",
+            "title": "Dropdown Secondary",
+            "text": "<div class='dropdown'>\n  <button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Dropdown button\n  </button>\n  <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "108",
+            "title": "Dropdown Info",
+            "text": "<!-- Example single info button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-info dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "109",
+            "title": "Dropdown Warning",
+            "text": "<!-- Example single warning button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-warning dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "107",
+            "title": "Dropdown Success",
+            "text": "<!-- Example single success button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-success dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "110",
+            "title": "Dropdown Danger",
+            "text": "<!-- Example single danger button -->\n<div class='btn-group'>\n  <button type='button' class='btn btn-danger dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>\n    Action\n  </button>\n  <div class='dropdown-menu'>\n    <a class='dropdown-item' href='#'>Action</a>\n    <a class='dropdown-item' href='#'>Another action</a>\n    <a class='dropdown-item' href='#'>Something else here</a>\n    <div class='dropdown-divider'></div>\n    <a class='dropdown-item' href='#'>Separated link</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "39",
+      "url": "list-group",
+      "title": "List group",
+      "contents": [
+        {
+          "content": {
+            "id": "29",
+            "title": "List groups",
+            "text": "<p class=\"lead\"> Lists or List group are continuous vertical group of links constituting of text and/or images. </p>\n\n<section>\n\n**Example**\n\n<ul class='list-group'>\n  <li class='list-group-item'>Cras justo odio</li>\n  <li class='list-group-item'>Dapibus ac facilisis in</li>\n  <li class='list-group-item'>Morbi leo risus</li>\n  <li class='list-group-item'>Porta ac consectetur ac</li>\n  <li class='list-group-item'>Vestibulum at eros</li>\n</ul>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tList groups should be organised in a logical manner that makes it easy to scan and understand, i.e. alphabetical, numerical etc. or by user/use preference.\n-\tListgroups should make it possible for users to take action.\n-\tList groups should use text and images and a consistent manner.\n-\tList groups can be expanded and collapsed as required.\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "96",
+            "title": "List groups example",
+            "text": "<ul class='list-group'>\n  <li class='list-group-item'>Cras justo odio</li>\n  <li class='list-group-item'>Dapibus ac facilisis in</li>\n  <li class='list-group-item'>Morbi leo risus</li>\n  <li class='list-group-item'>Porta ac consectetur ac</li>\n  <li class='list-group-item'>Vestibulum at eros</li>\n</ul>\n-\n<ul class='list-group'>\n  <li class='list-group-item active'>Cras justo odio</li>\n  <li class='list-group-item'>Dapibus ac facilisis in</li>\n  <li class='list-group-item'>Morbi leo risus</li>\n  <li class='list-group-item'>Porta ac consectetur ac</li>\n  <li class='list-group-item'>Vestibulum at eros</li>\n</ul>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
           }
         }
       ],
@@ -126,12 +378,12 @@
           "content": {
             "id": "46",
             "title": "Contribution",
-            "text": "Coming soon!"
+            "text": "Would you like to contribute to the contents of the Scania Digital Design System? If so, you are more than welcome to reach out to us in our [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or directly to [Marcus Åström](mailto:marcus.astrom@scania.com) .\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
@@ -151,47 +403,91 @@
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
       "submenus": []
     },
     {
-      "id": "18",
-      "url": "ux-design-principles",
-      "title": "UX Design principles",
+      "id": "36",
+      "url": "development",
+      "title": "Development",
       "contents": [
         {
           "content": {
-            "id": "18",
-            "title": "UX Design principles",
-            "text": "User/Human Centered Design\n\nUser/Human-centered design is about creating products that will bring value to the users and the business. It is the users who will interact with the proposed product/solution, and it is the job of the designer to know the potential target audience. Designers must conduct user research to get a sense of user needs, wants, and behaviours as the first step of the design process.\nAt the same time, it is vital to Keep the user in control with updated system status, direct and effective UI manipulations, instant feedbacks and expectable interactions and outcomes.\nKISS (Keep It Simple Stupid)\n\nKISS is a fundamental user interface design principle. Users will feel most comfortable if they can use the product without putting in much efforts. \n\nAutonomy\nUsers perceive that they are always in control when interacting with the product/solution.\n•\tEnable users to make their own decisions (e.g. with respect to navigation/interaction) when interacting with the product/solution\n\n•\tUse status indicators to keep users aware and informed\n\n•\tKeep status information up to date and easy to view and comprehend\n\n•\tEnsure that status information is accurate\n\nEfficiency of the User\n•\tThe efficiency in a product/solution is a result of the fundamental architecture of the system, not in the surface design of the interface\n•\tUser Error messages that help users in making sense of the status of the product/solution\nAesthetics\nUsers often perceive aesthetically pleasing design as design that’s more usable.\n•\tAesthetic design should be left to those schooled and skilled in its application: Graphic/visual designers\n•\tCosmetics should never trump usability\n•\tConduct user test the visual design as thoroughly as the behavioural design\n\nSimplicity\n•\tUse progressive revelation of the UI to flatten the learning curve\n•\tSimplification does not mean elimination of necessary capabilities\nLearnability: take advantage of user’s familiarity\n•\tJacob’s law - take advantages of user’s previous knowledge (existing mental models): Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.\nConsistency \nA. Levels of Consistency\n•\tThink of consistency at various levels. For example-\n\n1.\tTop level consistency\no\tPlatform consistency:  Consistent with guidelines and standards \no\tIn-house consistency:  Consistent with look & feel across your products/services \n2. Consistency across a suite of products, e. g., Microsoft Office\n    \tGeneral look & feel communicates across the family of a product/solution\n3. The overall look & feel of a single app, application or service–splash screens, design elements, etc.\n4. Small visible structures, such as icons, symbols, buttons, scroll bars, etc.\n5. Invisible elements\nObjects that convey information, rather than being used to generate information, should not be made invisible\nB. Induced Inconsistency\n•\tvisual consistency should be tied up with behaviour of the UI elements. i.e., be visually consistent when UI elements behave in the same manner and inconsistent when UI elements behave differently.\n\nC. Consistency with User Expectation\n\n•\tBe consistent with expectations of the users of the product/solution\n\nReduce short-term memory load (cognitive load)\n\nAs human short term memory is only capable of retaining 5 to 7 items at a given time, make sure that this is incorporated judiciously into UI design.\n\nForgiveness\n•\tMust ensure that users never lose their work – permit reversal of action\nError handling\n•\tAny errors should be communicated in a human centred manner\n"
+            "id": "54",
+            "title": "Development",
+            "text": "Coming soon!"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
       "submenus": []
     },
     {
-      "id": "19",
-      "url": "ui-design-principles",
-      "title": "UI Design principles",
+      "id": "37",
+      "url": "design",
+      "title": "Design",
       "contents": [
         {
           "content": {
-            "id": "19",
-            "title": "UI Design principles",
-            "text": "Readability\n•\tText to be read should have high contrast and adequate line spacing\n•\tChoice of fonts and font sizes should be made with consideration of readability vis a vis size of the display \n\n•\tTest all designs on your oldest expected user population\nDiscoverability\n•\tIf the user cannot find it, it does not exist\n•\tUse AD (Active Discovery) to guide people to more advanced features\n•\tUI elements necessary for the successful use of product/solution should be visibly accessible at all times\n•\tCommunicate your gestural vocabulary with visual diagrams\n•\tStrive for Balance\n•\tUser-test for discoverability\nExplorable Interfaces\n•\tGive users well-marked navigational structure\n•\tOffer users stable perceptual cues for a sense of “home”\n•\tMake Actions reversible or Always allow “Undo”\n•\tAlways allow a way out\n•\tMake it easy and attractive to stay in\nClarity\nClarity is the one of the key features of a UI. As per Ben Shneiderman for an interface to be effective and user-friendly, it must be recognizable, predictable, and have an obvious purpose.\n\nState\n•\tAs many of browser-based products/solutions exist in a stateless environment, tracking status must be designed in a suitable manner\n•\tMake clear to the user regarding the information that will stored & and that it will be protected\nFeedback\n•\tProvide timely and contextually-relevant feedback to the user.\n•\tFeedback can be visual, auditory or haptic as required.\nLatency Reduction\n•\tKeep users informed when they face delay\nAnticipation\n\n•\tMake visible to the user all UI elements needed for each step of the process\n\nUse of Metaphors\n•\tChoose metaphors that will enable users to comprehend the finest details of the conceptual model of the product/solution\n•\tMust go beyond literal interpretation of real-world counterparts\nHuman Interface Objects\n•\tHuman-interface objects are easy to perceive and act upon\n•\tHuman-interface objects have a standard way of being manipulated\n•\tHuman-interface objects have standard resulting behaviours\n\n•\tUse a new object when a new modality of interaction is introduced\n\nPurposeful page layout\n\n•\tBe judicious about the  spatial relationships between items on the page and structure the page based on importance. \n\nVisible Navigation\n•\tMake navigation visible\n•\tLimit number of navigation items by using overlays\nColour\nColour blindness\n•\tWhen colour is used to convey information in the interface, use clear, secondary cues to convey the information to those who cannot see the colours presented.\n•\tTest your site to see with colour blind users\n\nColour as a vital interface element\n\n•\tUser colour judiciously in UI \n\nFitts’s Law\n•\tThe time to acquire a target is a function of the distance to and size of the target\n•\tFitts’s Law is in effect regardless of the kind of pointing device or the nature of the target\n•\tFitts’s Law requires a stop watch test\nLaw of common region\nElements tend to be perceived into groups if they located within a clearly defined boundary.\nLaw of Proximity\nObjects that are proximate to each other tend to be grouped together.\nMiller’s Law\nThe average person can only keep 7 (plus or minus 2) items in their working memory.\nVon Restorff Effect\nThe Von Restorff effect, also known as The Isolation Effect, predicts that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered.\n\n"
+            "id": "53",
+            "title": "Design",
+            "text": "Coming soon!"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "6",
+      "url": "cards",
+      "title": "Cards",
+      "contents": [
+        {
+          "content": {
+            "id": "25",
+            "title": "Cards",
+            "text": "<p class=\"lead\"> A card presents content and actions on a single topic. </p>\n\n<section>\n\n**Example**\n\n<div class='card' style='width: 30rem;'>\n  <svg class='card-img-top'>\n    <rect width='100%' height='150px' fill='#868e96'></rect>\n  </svg>\n  <div class='card-body'>\n    <h5 class='card-title'>Card title</h5>\n    <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n    <a href='#' class='btn btn-primary'>Go somewhere</a>\n  </div>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tEasy to understand content about a topic\n-\tConsider cards as an entry point to more details\n-\tKeep the content simple and easy to understand\n-\tNot all cards are to be clickable. When a card is clickable, the resulting action should be an expected outcome – to navigate to more details for example.\n\n![text](https://sdds-cms.s3.amazonaws.com/c905d0745db748d09041fcc56998f4e7.PNG)\n\n**Do**  - Use F pattern with call for action on the left bottom side\n\n**Don’t**  - Use Z pattern with call of action on the right bottom side.\n\n</section>\n \n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "58",
+            "title": "Cards Example",
+            "text": "<div class='card'>\n  <svg class='card-img-top'>\n    <rect width='100%' height='150px' fill='#868e96'></rect>\n  </svg>\n  <div class='card-body'>\n    <h5 class='card-title'>Card title</h5>\n    <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n    <a href='#' class='btn btn-primary'>Go somewhere</a>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
@@ -206,23 +502,43 @@
           "content": {
             "id": "42",
             "title": "Foundations",
-            "text": "Coming soon"
+            "text": "# Headline 1\n\n**Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.**\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. *Phasellus luctus egestas elit et molestie.* Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. \nDuis ullamcorper auctor augue eget sagittis. \nAliquam convallis dolor ut diam dictum, vel cursus nulla lobortis.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. \n\nDuis ullamcorper auctor augue eget sagittis. \n\nAliquam convallis dolor ut diam dictum, vel cursus nulla lobortis.\n\n\n**Bulletpoint list**\n\n- Item 1\n- Lorem ipsum dolor sit amet,\n- Lorem ipsum dolor sit amet,\n- Lorem ipsum dolor sit amet,\n- Lorem ipsum dolor sit amet,\n \n**Orderlist**\n\n1. Item 1\n2.  Lorem ipsum dolor sit amet,\n3. Lorem ipsum dolor sit amet,\n4. Lorem ipsum dolor sit amet,\n\n[Link](#)\n\n\n**Codeblock**\n\n```\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item active' aria-current='page'>Home</li>\n  </ol>\n</nav>\n```\n\n**quote**\n\n> Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n## Headline 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n### Headline 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n#### Headline 4\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n##### Headline 5\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n###### Headline 6\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n\n**HTML component example**\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item active' aria-current='page'>Home</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Library</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item'><a href='#'>Library</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Data</li>\n  </ol>\n</nav>\n\n![text](https://sdds-cms.s3.amazonaws.com/f3d600f7e0384a67be630d19fcc44939.jpg)\n![text](https://sdds-cms.s3.amazonaws.com/35c3ac1e311343448dba0f59dd3bed85.jpeg)\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.![text](https://sdds-cms.s3.amazonaws.com/35c3ac1e311343448dba0f59dd3bed85.jpeg)\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. ![text](https://sdds-cms.s3.amazonaws.com/f3d600f7e0384a67be630d19fcc44939.jpg)Aliquam at sem eget arcu congue pharetra eu eu massa. Phasellus luctus egestas elit et molestie. Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.\n\n\n<strong>Adding with HTML</strong>\n\n<h1>Headline 1</h1>\n\n<p class=\"lead\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper auctor augue eget sagittis. Aliquam convallis dolor ut diam dictum, vel cursus nulla lobortis. Phasellus non ipsum quis leo ornare vulputate. Cras ac tellus vel libero commodo dignissim sed et ante. *Phasellus luctus egestas elit et molestie.* Donec maximus quam sodales, tempus nisi a, mattis lacus. Donec sem augue, laoreet ut enim ut, sagittis commodo nunc. Nunc ullamcorper orci a cursus pharetra. In elit orci, gravida in velit eget, facilisis rutrum nisi.</p>\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
       "submenus": [
         {
-          "title": "UX Design principles",
-          "url": "ux-design-principles"
+          "title": "UX principles",
+          "url": "ux-principles"
         },
         {
-          "title": "UI Design principles",
-          "url": "ui-design-principles"
+          "title": "UI principles",
+          "url": "ui-principles"
+        },
+        {
+          "title": "Colour",
+          "url": "colour"
+        },
+        {
+          "title": "Typography",
+          "url": "typography"
+        },
+        {
+          "title": "Accessibility",
+          "url": "accessibility"
+        },
+        {
+          "title": "Layout",
+          "url": "layout"
+        },
+        {
+          "title": "Logotype",
+          "url": "logotype"
         }
       ]
     },
@@ -235,59 +551,12 @@
           "content": {
             "id": "36",
             "title": "Support",
-            "text": "Need help within development or with Components?\nPlease start by visiting the Components section or visit FAQ and see if your question already has an answere.\nIf that doesn't help, reach out in Teams where others users might be able to help you or post an issue in our Development GitHub if you have experienced a bug.\n\nNeed help within the design area? \nWe can't design your application for you but we'll happily guide you through how you can use the different sections and Tools in the Scania Design System.\nPlease get in touch with us through Teams and we'll do our best to help out."
+            "text": "Do you need help within development or with Components? Please reach out in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or report a [bug](https://github.com/scania/corporate-ui/issues/new/choose) or a [Feature request](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22) in our Development GitHub.\n\nNeed help within the design area? We can't design your application for you but we'll happily guide you through how you can use the different sections and tools in the Scania Digital Design System. Please get in touch with us through [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) and we'll do our best to help out."
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "22",
-      "url": "Design Patterns",
-      "title": "Design Patterns",
-      "contents": [
-        {
-          "content": {
-            "id": "44",
-            "title": "Patterns",
-            "text": "Coming soon!"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "25",
-      "url": "http://www.google.com",
-      "title": "test",
-      "contents": [],
-      "submenus": []
-    },
-    {
-      "id": "11",
-      "url": "dropdown",
-      "title": "Dropdown",
-      "contents": [
-        {
-          "content": {
-            "id": "26",
-            "title": "Dropdown",
-            "text": "Dropdown\nA dropdown is a type of menu that presents a list of option to the user and allows them to choose one of more to take action.\ndesign guidelines\n-\tUse a button to toggle the menu. The button can be labelled with text or an icon that is easy to understand.\n-\tMenu items to be ordered by usage\n-\tmake sure that the text is short and concise. Long menus are truncated with ellipsis added\n-\tNested menus can be used when necessary – up to three levels.\n-\tdisable menu(s) if needed\n"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
@@ -302,12 +571,152 @@
           "content": {
             "id": "27",
             "title": "Forms",
-            "text": "Forms\nForms is a modality of collecting inputs from the user and submitting it to an application.\ndesign guidelines\n-\tForms are constituted of text and input elements such as, checkboxes, dropdowns, radio buttons, toggle switches etc. Forms should be clear and concise to make it easy for users to complete forms.\n-\tUse one column to organise the form. \n-\tGroup input elements that are similar. This makes it easy for users to scan them.\n-\tForms should not be longer than a page – ideally. However, if a forms need to be longer, use pagination.\n-\tForms must let users know when something is wrong with the information provided. Error message styling, content and location should make it easy for users to understand where they have made errors (exact styling to be decided).\n-\tBoth real-time as well as after post validation can be done as appropriate.\n"
+            "text": "<p class=\"lead\"> Forms is a modality of collecting inputs from the user and submitting it to an application. </p>\n\n<section>\n\n**Example**\n\n<form>\n  <div class='form-group'>\n    <label for='exampleInputEmail1'>Email address</label>\n    <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Enter email'>\n    <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>\n  </div>\n  <div class='form-group'>\n    <label for='exampleInputPassword1'>Password</label>\n    <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>\n  </div>\n  <button type='submit' class='btn btn-primary'>Submit</button>\n</form>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tForms are constituted of text and input elements such as, checkboxes, dropdowns, radio buttons, toggle switches etc. Forms should be clear and concise to make it easy for users to complete forms.\n-\tUse one column to organise the form. \n-\tGroup input elements that are similar. This makes it easy for users to scan them.\n-\tForms should not be longer than a page – ideally. However, if a forms need to be longer, use pagination.\n-\tForms must let users know when something is wrong with the information provided. Error message styling, content and location should make it easy for users to understand where they have made errors (exact styling to be decided).\n-\tBoth real-time as well as after post validation can be done as appropriate.\n\n</section>\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "64",
+            "title": "Forms Example",
+            "text": "<form>\n  <div class='form-group'>\n    <label for='exampleInputEmail1'>Email address</label>\n    <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Enter email'>\n    <small id='emailHelp' class='form-text text-muted'>We'll never share your email with anyone else.</small>\n  </div>\n  <div class='form-group'>\n    <label for='exampleInputPassword1'>Password</label>\n    <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>\n  </div>\n  <button type='submit' class='btn btn-primary'>Submit</button>\n</form>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "67",
+            "title": "Form Control",
+            "text": "<form>\n  <div class='form-group'>\n    <label for='exampleFormControlInput1'>Email address</label>\n    <input type='email' class='form-control' id='exampleFormControlInput1' placeholder='name@example.com'>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlSelect1'>Example select</label>\n    <select class='form-control' id='exampleFormControlSelect1'>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlSelect2'>Example multiple select</label>\n    <select multiple='' class='form-control' id='exampleFormControlSelect2'>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class='form-group'>\n    <label for='exampleFormControlTextarea1'>Example textarea</label>\n    <textarea class='form-control' id='exampleFormControlTextarea1' rows='3'></textarea>\n  </div>\n</form>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "68",
+            "title": "Forms Input Sizing",
+            "text": "<input class='form-control form-control-lg' type='text' placeholder='.form-control-lg'>\n-\n<input class='form-control' type='text' placeholder='Default input'>\n-\n<input class='form-control form-control-sm' type='text' placeholder='.form-control-sm'>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "69",
+            "title": "Forms Select sizing",
+            "text": "<select class='form-control form-control-lg'>\n  <option>Large select</option>\n</select>\n-\n<select class='form-control'>\n  <option>Default select</option>\n</select>\n-\n<select class='form-control form-control-sm'>\n  <option>Small select</option>\n</select>\n"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "70",
+            "title": "Forms Readonly",
+            "text": "<input class='form-control' type='text' placeholder='Readonly input here...' value='Readonly input goes here' readonly=''>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "71",
+            "title": "Forms Disabled ",
+            "text": "<form>\n  <fieldset disabled=''>\n    <div class='form-group'>\n      <label for='disabledTextInput'>Disabled input</label>\n      <input type='text' id='disabledTextInput' class='form-control' placeholder='Disabled input'>\n    </div>\n    <div class='form-group'>\n      <label for='disabledSelect'>Disabled select menu</label>\n      <select id='disabledSelect' class='form-control'>\n        <option>Disabled select</option>\n      </select>\n    </div>\n    <div class='form-group'>\n      <div class='form-check'>\n        <input class='form-check-input' type='checkbox' id='disabledFieldsetCheck' disabled=''>\n        <label class='form-check-label' for='disabledFieldsetCheck'>\n          Can't check this\n        </label>\n      </div>\n    </div>\n    <button type='submit' class='btn btn-primary'>Submit</button>\n  </fieldset>\n</form>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "72",
+            "title": "Forms Checkbox",
+            "text": "<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheck1'>\n  <label class='custom-control-label' for='customCheck1'>Check this custom checkbox</label>\n</div>\n-\n<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheck2' checked=''>\n  <label class='custom-control-label' for='customCheck2'>Checked custom checkbox</label>\n</div>\n-\n<div class='custom-control custom-checkbox'>\n  <input type='checkbox' class='custom-control-input' id='customCheckDisabled1' disabled=''>\n  <label class='custom-control-label' for='customCheckDisabled1'>Check this custom checkbox</label>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "73",
+            "title": "Forms Radio Buttons",
+            "text": "<div class='custom-control custom-radio'>\n  <input type='radio' id='sbRadio-1' name='sbRadio01' class='custom-control-input' value='option1'>\n  <label class='custom-control-label' for='sbRadio-1'>Toggle this custom radio</label>\n</div>\n-\n<div class='custom-control custom-radio'>\n  <input type='radio' name='radioDisabled' id='customRadioDisabled2' class='custom-control-input' disabled=''>\n  <label class='custom-control-label' for='customRadioDisabled2'>Toggle this custom radio</label>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "74",
+            "title": "Forms Validation",
+            "text": "<form>\n  <div class='form-group'>\n      <label for='validationServer01'>First name</label>\n      <input type='text' class='form-control is-valid' id='validationServer01' placeholder='First name' value='Mark' required=''>\n      <div class='valid-feedback'>\n        Looks good!\n      </div>\n    </div>\n  </div>\n  <div class='form-group'>\n      <label for='validationServer03'>City</label>\n      <input type='text' class='form-control is-invalid' id='validationServer03' placeholder='City' required=''>\n      <div class='invalid-feedback'>\n        Please provide a valid city.\n      </div>\n  </div>\n  <button class='btn btn-primary' type='submit'>Submit form</button>\n</form>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "22",
+      "url": "design-patterns",
+      "title": "Design Patterns",
+      "contents": [
+        {
+          "content": {
+            "id": "44",
+            "title": "Design Patterns",
+            "text": "Design patterns are __templates of recurring solutions__ that solve common design problems. Design patterns can be of two types:\n\nA.\t**Compositional design patterns**\nB.\t**Interaction design pattern**\nC.\t**Usage pattern**\n\nA.\t**Compositional design patterns**\n\nComposition here refers to coming together of, one, UI elements and Style guide elements (such as button with typography or an image) and two, combination of two or more such micro level compositions into a larger whole (i.e. from atoms to molecules to organisms). Such compositions can vary from, for example, a page on the higher side of complexity to a button on the lower side of complexity. \n\nCompositional design patterns, then, provide templates of recurring solutions to such common compositional problems.\n\nIncluded in the Scania Design System so far (first version) are compositional design patterns associated with UI elements. These design patterns are part of usage guidelines for the following UI elements (first version).\n\nAlert, Badge, Breadcrumbs, Button, Button group, Cards, Dropdown, Forms, Input groups, List groups, Loading, Media Objects, Modals, Navs, Pagination, Progress, Tables\n\nB.\t**Interaction Design patterns**\n\nInteraction refers to the interaction between the user and the user interface. Interaction is constituted of action from the user’s side and the response or feedback from the system’s side. Both, i.e. action from user’s side and the response or feedback from the system’s side are externalised by behaviour of UI elements as well as the compositional elements.\n\nInteraction design patterns, then, provide templates for recurring solutions to user/human computer interaction pertaining to behaviour of UI elements and components that solve common interaction problems.\n\nExample – \n\na.\t*Interaction design pattern for Buttons (accompanied with animation)*\n\nToggle buttons\n\na.\t*Interaction with mouse*\n\nWhen interacted with mouse, button appears to be pressed down – visually – and the interaction is accompanied by a sound (this can vary from case to case basis). The pressed down state of the button is articulated by active colour. This interaction pattern repeats itself when user interacts with the button again to toggle the button off.\n\nb.\t*Interaction with touchscreen/touchpad*\n\nWhen tapped, the button appears to be pressed down – visually – and the interaction is accompanied by a sound (this can vary from case to case basis). The pressed down state of the button is articulated by active colour. This interaction pattern repeats itself when user interacts with the button again to toggle the button off.\n\nC.\t**Usage patterns**\n\nUsage patterns refer to template of recurring solution with respect to use of a UI element or a compositional element. The usage pattern is also extended to common functional features, e.g. copy, edit, save, delete etc.\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
@@ -322,36 +731,93 @@
           "content": {
             "id": "28",
             "title": "Input groups",
-            "text": "Input groups\nInput groups are used to extend input elements (such as radio buttons, check boxes etc.) within a form. (more details are to be added).\n"
+            "text": "<p class=\"lead\"> Input groups are used to extend input elements (such as radio buttons, check boxes etc.) within a form. </p>\n\n<section>\n\n**Example**\n\n<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text' id='basic-addon1'>@</span>\n  </div>\n  <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1'>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n\nFollow usage pattern of input groups for individual input elements. Usage pattern for compositions to be added.\n\n</section>\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "65",
+            "title": "Input group example",
+            "text": "<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text' id='basic-addon1'>@</span>\n  </div>\n  <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1'>\n</div>\n-\n<div class='input-group mb-3'>\n  <input type='text' class='form-control' placeholder='Recipient' s='' username'='' aria-label='Recipient' aria-describedby='basic-addon2'>\n  <div class='input-group-append'>\n    <span class='input-group-text' id='basic-addon2'>@example.com</span>\n  </div>\n</div>\n-\n<label for='basic-url'>Your vanity URL</label>\n<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text' id='basic-addon3'>https://example.com/users/</span>\n  </div>\n  <input type='text' class='form-control' id='basic-url' aria-describedby='basic-addon3'>\n</div>\n-\n<div class='input-group mb-3'>\n  <div class='input-group-prepend'>\n    <span class='input-group-text'>$</span>\n  </div>\n  <input type='text' class='form-control' aria-label='Amount (to the nearest dollar)'>\n  <div class='input-group-append'>\n    <span class='input-group-text'>.00</span>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
       "submenus": []
     },
     {
-      "id": "14",
-      "url": "media-objects",
-      "title": "Media Objects",
+      "id": "38",
+      "url": "about-sdds",
+      "title": "About SDDS",
       "contents": [
         {
           "content": {
-            "id": "31",
-            "title": "Media Objects",
-            "text": "Media objects\nTo be decided.\n"
+            "id": "52",
+            "title": "About SDDS",
+            "text": "The Scania Digital Design System is the single source of truth to be used as a resource for conceptualization and realization of digital design and development projects/initiatives across all of Scania. It consists of information that would be valuable for managers, designers and as well developers who are involved in planning, designing and development of degital design projects/initiatives with the purpose to bring in sustained optimal velocity in implementation and consistency across all kinds of digital solutions.\n\nWe look forward to your feedback!"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
       "submenus": []
+    },
+    {
+      "id": "21",
+      "url": "getting-started",
+      "title": "Getting started",
+      "contents": [
+        {
+          "content": {
+            "id": "43",
+            "title": "Getting Started",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": [
+        {
+          "title": "Development",
+          "url": "development"
+        },
+        {
+          "title": "Design",
+          "url": "design"
+        },
+        {
+          "title": "About SDDS",
+          "url": "about-sdds"
+        }
+      ]
     },
     {
       "id": "15",
@@ -362,12 +828,36 @@
           "content": {
             "id": "32",
             "title": "Modals",
-            "text": "Modals\nModals assist users in completing a task that requires an action by the user.\ndesign guidelines\n \n-\tFocus – modals requires user’s full attention and therefore, the focus needs to shift to the modal to enable user interaction.\n-\tUsers need to take action about a modal – either to take action or to cancel/dismiss it\n-\tModels should not launch other modals\n-\tdo not use scrolling with a modal as far as possible\n"
+            "text": "<p class=\"lead\"> Modals assist users in completing a task that requires an action by the user. </p>\n\n<section>\n\n**Example**\n\n<div id='modalExample' class='modal' tabindex='-1' role='dialog'>\n  <div class='modal-dialog' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Modal body text goes here.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n \n-\tFocus – modals requires user’s full attention and therefore, the focus needs to shift to the modal to enable user interaction.\n-\tUsers need to take action about a modal – either to take action or to cancel/dismiss it\n-\tModels should not launch other modals\n-\tdo not use scrolling with a modal as far as possible\n\n\n![text](https://sdds-cms.s3.amazonaws.com/27b6085ba7de45bc863a0f398be97afc.PNG)\n\nTitle – title of the Modal to summarise its purpose\nContent – what the user should focus on? provide a clear and concise explanation\nButtons – Use Z pattern with call for action located on the bottom right side.\n\n</section>\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "79",
+            "title": "Modal live example",
+            "text": "<!-- Button trigger modal -->\n<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>\n  Launch demo modal\n</button>\n<!-- Modal -->\n<div class='modal fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>\n  <div class='modal-dialog' role='document'>\n    <div class='modal-content'>\n      <div class='modal-header'>\n        <h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>\n        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>\n          <span aria-hidden='true'>×</span>\n        </button>\n      </div>\n      <div class='modal-body'>\n        <p>Modal body text goes here.</p>\n      </div>\n      <div class='modal-footer'>\n        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>\n        <button type='button' class='btn btn-primary'>Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
@@ -382,27 +872,31 @@
           "content": {
             "id": "33",
             "title": "Navs",
-            "text": "Navs\nnavigation panel is a collection of links – organized in a horizontal or vertical manner.\ndesign guidelines\n-\tto be decided\n"
+            "text": "<p class=\"lead\">Navigation panel is a collection of links – organized in a horizontal or vertical manner.</p>\n\n<section>\n\n**Example**\n\n<ul class='nav'>\n  <li class='nav-item'>\n    <a class='nav-link active' href='#'>Active</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link disabled' href='#'>Disabled</a>\n  </li>\n</ul>\n\n</section>\n<section>\n\n**Usage Pattern**\n\nNavs or navigational links/buttons must be clearly visible at all times to the users.\n\n</section>\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "5",
-      "url": "buttons",
-      "title": "Buttons",
-      "contents": [
+        },
         {
           "content": {
-            "id": "40",
-            "title": "Primary button",
-            "text": "<button type='button' class='btn btn-primary'>Primary</button>\n-\n<button type='button' class='btn btn-primary' disabled>Primary</button>"
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "81",
+            "title": "Nav Example",
+            "text": "<nav class='nav'>\n  <a class='nav-link active' href='#'>Active</a>\n  <a class='nav-link' href='#'>Link</a>\n  <a class='nav-link' href='#'>Link</a>\n  <a class='nav-link disabled' href='#'>Disabled</a>\n</nav>"
           },
           "template": {
             "id": "2",
@@ -412,14 +906,58 @@
         },
         {
           "content": {
-            "id": "23",
-            "title": "Buttons",
-            "text": "Buttons\nButtons are a mode for inputting user action for communicating user’s intention.\nButtons are not the same as links – links are not input modes but it is a mode for navigation – from one page to another page or from one view to another view.\n\nTypes of Buttons\n-\tSolid button: meant for primary action, solid filled to attract user’s attention\n-\tOutline button: meant for secondary action and to compliment primary action\n-\tFlat button: meant for tertiary action\n-\tDisabled button: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\n-\tEllipsis button: meant for indicating that several tasks are available for users to take action\ndesign guidelines\n-\tPlacement – two distinct patterns can be used to place buttons\n \n \n-\tBehaviour (‘feel’)\nButtons to simulate clicking action that is visualised by means of change in colour/shade\n-\tStyle of buttons to follow the style guide\nThe text inside of buttons to be always UPPERCASE. Descriptive language relating to the intent of the user should be used to formulate button text.\n-\tvisual style\nBorder radius - ?\nSize and proportions - ?\nColour\n\tPrimary colour – Scania Blue – to provide consistency across all applications\nAction based colour – green or red – to provide an all clear message or a warning to the user.\nDisabled button colour – grey \nIcons\nIcons – that clearly communicate the intent for action – can be used in place of text for a button\nWhen icons are accompanied with text, it follows the icon (i.e. icon first and then the text)\nTitle attribute – a tooltip to be visible when hovering a button (where necessary). The text is displayed below the button.\nIcons can be used with any kind of buttons mentioned above.\n"
+            "id": "80",
+            "title": "Nav example ul",
+            "text": "<ul class='nav'>\n  <li class='nav-item'>\n    <a class='nav-link active' href='#'>Active</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link' href='#'>Link</a>\n  </li>\n  <li class='nav-item'>\n    <a class='nav-link disabled' href='#'>Disabled</a>\n  </li>\n</ul>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "9",
+      "url": "pagination",
+      "title": "Pagination",
+      "contents": [
+        {
+          "content": {
+            "id": "34",
+            "title": "Pagination",
+            "text": "<p class=\"lead\"> Pagination is a collection of links that allows users to navigated between pages.</p>\n\n<section>\n\n**Example**\n\n<nav aria-label='Page navigation example'>\n  <ul class='pagination'>\n    <li class='page-item'><a class='page-link' href='#'>Previous</a></li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'><a class='page-link' href='#'>Next</a></li>\n  </ul>\n</nav>\n\n</section>\n<section>\n\n\n**Usage Pattern**\n\n-\tPagination must makes clear to the user the page they are on currently and the options or navigating to other pages (both before the page or after the pages) is clearly visible to them.\n-\tUser roman numerals to indicate pages.\n-\tWhen working with high number of pages, links to go forward and backward along with links for first and last page to be shown.\n\n</section>\n\n\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "60",
+            "title": "Pagination Example",
+            "text": "<!-- Pagination with Icons -->\n<nav aria-label='Page navigation example'>\n  <ul class='pagination'>\n    <li class='page-item'>\n      <a class='page-link' href='#' aria-label='Previous'>\n        <span aria-hidden='true'>«</span>\n      </a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#' aria-label='Next'>\n        <span aria-hidden='true'>»</span>\n      </a>\n    </li>\n  </ul>\n</nav>\n-\n<nav aria-label='...'>\n  <ul class='pagination'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item active' aria-current='page'>\n      <a class='page-link' href='#'>2 <span class='sr-only'>(current)</span></a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>\n-\n<!-- Center alignment -->\n<nav aria-label='Page navigation example'>\n  <ul class='pagination justify-content-center'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>\n-\n<!-- Right alignment -->\n<nav aria-label='Page navigation example'>\n  <ul class='pagination justify-content-end'>\n    <li class='page-item disabled'>\n      <a class='page-link' href='#' tabindex='-1' aria-disabled='true'>Previous</a>\n    </li>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n    <li class='page-item'><a class='page-link' href='#'>2</a></li>\n    <li class='page-item'><a class='page-link' href='#'>3</a></li>\n    <li class='page-item'>\n      <a class='page-link' href='#'>Next</a>\n    </li>\n  </ul>\n</nav>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
@@ -434,15 +972,586 @@
           "content": {
             "id": "35",
             "title": "Progress indicators",
-            "text": "Progress Indicators\nProgress (bar or another form) is used to depict progress of a task e.g. downloading content. \ndesign guidelines\n-\tProgress element need to convey the time – the time required for the task to be finished. \n-\tProgress elements need to be animated to convey the sense of progress.\n"
+            "text": "<p class=\"lead\"> Progress (bar or another form) is used to depict progress of a task e.g. downloading content. </p> \n\n<section>\n\n**Example**\n\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tProgress element need to convey the time – the time required for the task to be finished. \n-\tProgress elements need to be animated to convey the sense of progress.\n\n</section>\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "82",
+            "title": "Progress indicators example",
+            "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "85",
+            "title": "Progress indicator labels",
+            "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "86",
+            "title": "Progress indicator height",
+            "text": "<div class='progress' style='height: 1px;'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress' style='height: 20px;'>\n  <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "92",
+            "title": "Progress indicator backgrounds",
+            "text": "<div class='progress'>\n  <div class='progress-bar bg-success' role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar bg-info' role='progressbar' style='width: 50%' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar bg-warning' role='progressbar' style='width: 75%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'></div>\n</div>\n-\n<div class='progress'>\n  <div class='progress-bar bg-danger' role='progressbar' style='width: 100%' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "94",
+            "title": "Progress indicator multiple",
+            "text": "<div class='progress'>\n  <div class='progress-bar' role='progressbar' style='width: 15%' aria-valuenow='15' aria-valuemin='0' aria-valuemax='100'></div>\n  <div class='progress-bar bg-success' role='progressbar' style='width: 30%' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100'></div>\n  <div class='progress-bar bg-info' role='progressbar' style='width: 20%' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'></div>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
+      "submenus": []
+    },
+    {
+      "id": "26",
+      "url": "tables",
+      "title": "Tables",
+      "contents": [
+        {
+          "content": {
+            "id": "12",
+            "title": "Tables",
+            "text": "<p class=\"lead\"> Tables are used to present static or dynamic data in a tabular (row and column) form. </p>\n\n<section>\n\n**Example**\n\n<table class='table'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tthe table should organize the content in a meaningful way, e.g. alphabetically for example\n-\tTables may allow users to interact with it where necessary\n-\tTable should be intuitive – easy top scan and understand\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "83",
+            "title": "Tables example",
+            "text": "<table class='table'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "84",
+            "title": "Tables striped",
+            "text": "<table class='table table-striped'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td>Larry</td>\n      <td>the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "87",
+            "title": "Tables Bordered ",
+            "text": "<table class='table table-bordered'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "88",
+            "title": "Tables Borderless",
+            "text": "<table class='table table-borderless'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "89",
+            "title": "Tables hover",
+            "text": "<table class='table table-hover'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "90",
+            "title": "Tables small",
+            "text": "<table class='table table-sm'>\n  <thead>\n    <tr>\n      <th scope='col'>#</th>\n      <th scope='col'>First</th>\n      <th scope='col'>Last</th>\n      <th scope='col'>Handle</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope='row'>1</th>\n      <td>Mark</td>\n      <td>Otto</td>\n      <td>@mdo</td>\n    </tr>\n    <tr>\n      <th scope='row'>2</th>\n      <td>Jacob</td>\n      <td>Thornton</td>\n      <td>@fat</td>\n    </tr>\n    <tr>\n      <th scope='row'>3</th>\n      <td colspan='2'>Larry the Bird</td>\n      <td>@twitter</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "91",
+            "title": "Tables context colour",
+            "text": "<table class='table'>\n  <thead>\n    <tr>\n      <th scope='col'>Class</th>\n      <th scope='col'>Heading</th>\n      <th scope='col'>Heading</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr class='table-active'>\n      <th scope='row'>Active</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-primary'>\n      <th scope='row'>Primary</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-secondary'>\n      <th scope='row'>Secondary</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-success'>\n      <th scope='row'>Success</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-danger'>\n      <th scope='row'>Danger</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-warning'>\n      <th scope='row'>Warning</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n    <tr class='table-info'>\n      <th scope='row'>Info</th>\n      <td>Cell</td>\n      <td>Cell</td>\n    </tr>\n  </tbody>\n</table>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "93",
+            "title": "Tables responsive",
+            "text": "<div class='table-responsive'>\n  <table class='table'>\n    <thead>\n      <tr>\n        <th scope='col'>#</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n        <th scope='col'>Heading</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <th scope='row'>1</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n      <tr>\n        <th scope='row'>2</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n      <tr>\n        <th scope='row'>3</th>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n        <td>Cell</td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "31",
+      "url": "definitions",
+      "title": "Definitions",
+      "contents": [
+        {
+          "content": {
+            "id": "13",
+            "title": "Definitions",
+            "text": "<section>\n\n## Design\n\nDesign involves solving a problem by proposing a solution\n</section>\n\n<section>\n\n## Solution\n\nA \"solution\" is a product or combination of products or a service that is customized for solving a problem from a user’s perspective\n\n**Product**\n\nA product is a system of physical and/or digital components that is customized for      user’s needs\n\n**Service**\n\nA service is a system of people, processes, and products that is customized for user’s needs\n\n</section>\n\n<section>\n\n## Human Centered Design (from ISO 9241:210-2019)\n\nDesign approach to systems design and development that aims to make interactive systems more usable by focusing on the use of the system and applying human factors/ergonomics and usability knowledge and techniques\n\n</section>\n\n<section>\n\n## UX design (from ISO 9241:210-2019)\n\nDesign to shape user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service\n\n</section>\n<section>\n\n## UI design (from ISO 9241:210-2019)\n\nDesign of all components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system\n\n</section>\n<section>\n\n## Service Design\n\t\nDesign of a system of people, processes, and products that is customized for user’s needs\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "33",
+      "url": "ui-kit",
+      "title": "Ui kit(s)",
+      "contents": [
+        {
+          "content": {
+            "id": "50",
+            "title": "Ui kit",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "30",
+      "url": "way-of-working",
+      "title": "Way of working",
+      "contents": [
+        {
+          "content": {
+            "id": "14",
+            "title": "Way of working",
+            "text": "\n## Two levels of way of working\n\n<section>\n\n### 1. Way of working between the UX design team and the Agile development team\n\n\n![Uploading image.png]()\n \n\t UX (informed by Design Thinking)\t Agile development\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n</section>\n<section>\n\n### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n![text](https://sdds-cms.s3.amazonaws.com/291242193267461c879afe8a5dd45277.png)\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "35",
+      "url": "resources",
+      "title": "Resources",
+      "contents": [
+        {
+          "content": {
+            "id": "49",
+            "title": "Resources",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": [
+        {
+          "title": "Way of working",
+          "url": "way-of-working"
+        },
+        {
+          "title": "Definitions",
+          "url": "definitions"
+        },
+        {
+          "title": "Ui kit(s)",
+          "url": "ui-kit"
+        },
+        {
+          "title": "Development resource",
+          "url": "development"
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "url": "development",
+      "title": "Development resource",
+      "contents": [
+        {
+          "content": {
+            "id": "51",
+            "title": "Development code",
+            "text": "## Github Repos\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Components repo\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/scania-theme\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Scania theme\n</a>\n</p>\n\n\n### Example page\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui-angular\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Angular\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-react\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in React\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-vue\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Vue\n</a>\n</p>\n<p>\n<a href=\"https://codepen.io/corporate-ui/pen/OYmqpr\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in simple HTML page\n</a>\n</p>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "40",
+      "url": "colour",
+      "title": "Colour",
+      "contents": [
+        {
+          "content": {
+            "id": "102",
+            "title": "Colour",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "41",
+      "url": "typography",
+      "title": "Typography",
+      "contents": [
+        {
+          "content": {
+            "id": "103",
+            "title": "Typograhpy",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "42",
+      "url": "accessibility",
+      "title": "Accessibility",
+      "contents": [
+        {
+          "content": {
+            "id": "105",
+            "title": "Accessibility",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "14",
+      "url": "media-objects",
+      "title": "Media Objects",
+      "contents": [
+        {
+          "content": {
+            "id": "31",
+            "title": "Media Objects",
+            "text": "<p class=\"lead\">Media objects are essentially Modals with media embedded on it. The embedded media can vary from tweets to text and from images to videos</p>\n\n<section>\n\n**Example**\n\n<div class='media'>\n  <svg class='mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Media heading</h5>\n    Cras sit amet nibh libero, in gravida nulla.\n  </div>\n</div>\n\n</section>\n<section>\n\n**Usage Pattern**\n\nFollow usage pattern of Modals for media objects.\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "66",
+            "title": "Media Object Example",
+            "text": "<div class='media'>\n  <svg class='mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Media heading</h5>\n    Cras sit amet nibh libero, in gravida nulla.\n  </div>\n</div>\n-\n<div class='media'>\n  <svg class='mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Media heading</h5>\n    Cras sit amet nibh libero, in gravida nulla.\n\n    <div class='media mt-3'>\n      <a class='pr-3' href='#'>\n        <svg class='mr-3' width='64' height='64'>\n          <rect width='100%' height='100%' fill='#868e96'></rect>\n        </svg>\n      </a>\n      <div class='media-body'>\n        <h5 class='mt-0'>Media heading</h5>\n        Cras sit amet nibh libero, in gravida nulla. \n      </div>\n    </div>\n  </div>\n</div>\n-"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "75",
+            "title": "Media Object Aligned",
+            "text": "<div class='media'>\n  <svg class='align-self-start mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Top-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla</p>\n    <p>Donec sed odio dui.</p>\n  </div>\n</div>\n-\n<div class='media'>\n  <svg class='align-self-center mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Center-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla.</p>\n    <p class='mb-0'>Donec sed odio dui.</p>\n  </div>\n</div>\n-\n<div class='media'>\n  <svg class='align-self-end mr-3' width='64' height='64'>\n    <rect width='100%' height='100%' fill='#868e96'></rect>\n  </svg>\n  <div class='media-body'>\n    <h5 class='mt-0'>Bottom-aligned media</h5>\n    <p>Cras sit amet nibh libero, in gravida nulla.</p>\n    <p class='mb-0'>Donec sed odio dui.</p>\n  </div>\n</div>\n"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "43",
+      "url": "layout",
+      "title": "Layout",
+      "contents": [
+        {
+          "content": {
+            "id": "104",
+            "title": "Layout",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "44",
+      "url": "logotype",
+      "title": "Logotype",
+      "contents": [
+        {
+          "content": {
+            "id": "106",
+            "title": "Logotype",
+            "text": "Coming soon!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "19",
+      "url": "ui-principles",
+      "title": "UI principles",
+      "contents": [
+        {
+          "content": {
+            "id": "19",
+            "title": "UI principles",
+            "text": "**Readability**\n\n- Text to be read should have high contrast and adequate line spacing\n- Choice of fonts and font sizes should be made with consideration of readability vis a vis size of the display \n- Test all designs on your oldest expected user population\n\n**Discoverability**\n\n- If the user cannot find it, it does not exist\n- Use AD (Active Discovery) to guide people to more advanced features\n- UI elements necessary for the successful use of product/solution should be visibly accessible at all times\n- Communicate your gestural vocabulary with visual diagrams\n- Strive for Balance\n- User-test for discoverability\n\n**Explorable Interfaces**\n\n- Give users well-marked navigational structure\n- Offer users stable perceptual cues for a sense of “home”\n- Make Actions reversible or Always allow “Undo”\n- Always allow a way out\n- Make it easy and attractive to stay in\n\n**Clarity**\n\nClarity is the one of the key features of a UI. As per Ben Shneiderman for an interface to be effective and user-friendly, it must be recognizable, predictable, and have an obvious purpose.\n\n**State**\n\n- As many of browser-based products/solutions exist in a stateless environment, tracking status must be designed in a suitable manner \n- Make clear to the user regarding the information that will stored & and that it will be protected\n\n**Feedback**\n\n- Provide timely and contextually-relevant feedback to the user.\n- Feedback can be visual, auditory or haptic as required.\n\n**Latency Reduction**\n\nKeep users informed when they face delay\n\n**Anticipation**\n\n- Make visible to the user all UI elements needed for each step of the process\n\n**Use of Metaphors**\n\n- Choose metaphors that will enable users to comprehend the finest details of the conceptual model of the product/solution\n- Must go beyond literal interpretation of real-world counterparts\n\n**Human Interface Objects**\n\n- Human-interface objects are easy to perceive and act upon\n- Human-interface objects have a standard way of being manipulated\n- Human-interface objects have standard resulting behaviours\n- Use a new object when a new modality of interaction is introduced\n\n**Purposeful page layout**\n\n- Be judicious about the  spatial relationships between items on the page and structure the page based on importance. \n\n**Visible Navigation**\n\n- Make navigation visible\n- Limit number of navigation items by using overlays\n\n**Colour**\n\n*Colour blindness*\n\n- When colour is used to convey information in the interface, use clear, secondary cues to convey the information to those who cannot see the colours presented.\n- Test your site to see with colour blind users\n\n*Colour as a vital interface element*\n\n- User colour judiciously in UI \n\n**Fitts’s Law**\n\n- The time to acquire a target is a function of the distance to and size of the target\n- Fitts’s Law is in effect regardless of the kind of pointing device or the nature of the target\n- Fitts’s Law requires a stop watch test\n\n**Law of common region**\n\nElements tend to be perceived into groups if they located within a clearly defined boundary.\n\n**Law of Proximity**\n\nObjects that are proximate to each other tend to be grouped together.\n\n**Miller’s Law**\nThe average person can only keep 7 (plus or minus 2) items in their working memory.\n\n\nThe Von Restorff effect, also known as The Isolation Effect, predicts that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered.\n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "18",
+      "url": "ux-principles",
+      "title": "UX principles",
+      "contents": [
+        {
+          "content": {
+            "id": "18",
+            "title": "UX principles",
+            "text": "**User/Human Centered Design**\n\nUser/Human-centered design is about creating products that will bring value to the users and the business. It is the users who will interact with the proposed product/solution, and it is the job of the designer to know the potential target audience. Designers must conduct user research to get a sense of user needs, wants, and behaviours as the first step of the design process.\nAt the same time, it is vital to Keep the user in control with updated system status, direct and effective UI manipulations, instant feedbacks and expectable interactions and outcomes.\n\n**KISS (Keep It Simple Stupid)**\n\nKISS is a fundamental user interface design principle. Users will feel most comfortable if they can use the product without putting in much efforts. \n\n**Autonomy**\n\nUsers perceive that they are always in control when interacting with the product/solution.\n\n- Enable users to make their own decisions (e.g. with respect to navigation/interaction) when interacting with the product/solution\n- Use status indicators to keep users aware and informed\n- Keep status information up to date and easy to view and comprehend\n- Ensure that status information is accurate\n\n**Efficiency of the User**\n\n- The efficiency in a product/solution is a result of the fundamental architecture of the system, not in the surface design of the interface\n- User Error messages that help users in making sense of the status of the product/solution\n\n**Aesthetics**\n\nUsers often perceive aesthetically pleasing design as design that’s more usable.\n\n- Aesthetic design should be left to those schooled and skilled in its application: Graphic/visual designers\n- Cosmetics should never trump usability\n- Conduct user test the visual design as thoroughly as the behavioural design\n\n**Simplicity**\n\n- Use progressive revelation of the UI to flatten the learning curve\n- Simplification does not mean elimination of necessary capabilities\n\n**Learnability: take advantage of user’s familiarity**\n\n- Jacob’s law - take advantages of user’s previous knowledge (existing mental models): Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.\n\n**Consistency**\n \n*A. Levels of Consistency*\n\nThink of consistency at various levels. For example\n\n1. Top level consistency\n  - Platform consistency:  Consistent with guidelines and standards \n  - In-house consistency:  Consistent with look & feel across your products/services \n2. Consistency across a suite of products, e. g., Microsoft Office. General look & feel communicates across the family of a product/solution\n3. The overall look & feel of a single app, application or service–splash screens, design elements, etc.\n4. Small visible structures, such as icons, symbols, buttons, scroll bars, etc.\n5. Invisible elements\n\nObjects that convey information, rather than being used to generate information, should not be made invisible\n\n*B. Induced Inconsistency*\n\n- visual consistency should be tied up with behaviour of the UI elements. i.e., be visually consistent when UI elements behave in the same manner and inconsistent when UI elements behave differently.\n\n*C. Consistency with User Expectation*\n\n- Be consistent with expectations of the users of the product/solution\n\n**Reduce short-term memory load (cognitive load)**\n\nAs human short term memory is only capable of retaining 5 to 7 items at a given time, make sure that this is incorporated judiciously into UI design.\n\n**Forgiveness**\n\n- Must ensure that users never lose their work – permit reversal of action\nError handling\n- Any errors should be communicated in a human centred manner"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "29",
+      "url": "way-of-working",
+      "title": "Way of working",
+      "contents": [
+        {
+          "content": {
+            "id": "13",
+            "title": "Definitions",
+            "text": "<section>\n\n## Design\n\nDesign involves solving a problem by proposing a solution\n</section>\n\n<section>\n\n## Solution\n\nA \"solution\" is a product or combination of products or a service that is customized for solving a problem from a user’s perspective\n\n**Product**\n\nA product is a system of physical and/or digital components that is customized for      user’s needs\n\n**Service**\n\nA service is a system of people, processes, and products that is customized for user’s needs\n\n</section>\n\n<section>\n\n## Human Centered Design (from ISO 9241:210-2019)\n\nDesign approach to systems design and development that aims to make interactive systems more usable by focusing on the use of the system and applying human factors/ergonomics and usability knowledge and techniques\n\n</section>\n\n<section>\n\n## UX design (from ISO 9241:210-2019)\n\nDesign to shape user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service\n\n</section>\n<section>\n\n## UI design (from ISO 9241:210-2019)\n\nDesign of all components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system\n\n</section>\n<section>\n\n## Service Design\n\t\nDesign of a system of people, processes, and products that is customized for user’s needs\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "16",
+            "title": "Governance",
+            "text": "How do we make sure that the project carried out not only meets the objective of the project but the outcome of the project adheres to a standard ? - To be decided!"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "14",
+            "title": "Way of working",
+            "text": "\n## Two levels of way of working\n\n<section>\n\n### 1. Way of working between the UX design team and the Agile development team\n\n\n![Uploading image.png]()\n \n\t UX (informed by Design Thinking)\t Agile development\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n</section>\n<section>\n\n### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n![text](https://sdds-cms.s3.amazonaws.com/291242193267461c879afe8a5dd45277.png)\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "25",
+      "url": "http://www.google.com",
+      "title": "ComOn editors",
+      "contents": [],
+      "submenus": []
+    },
+    {
+      "id": "45",
+      "url": "http://www.google.com",
+      "title": "Mobile apps",
+      "contents": [],
       "submenus": []
     },
     {
@@ -454,12 +1563,12 @@
           "content": {
             "id": "20",
             "title": "Alerts",
-            "text": "Alerts\nAlerts are banners/modals that communicate a message with a degree of urgency attached to it.\nThere are two key types of alerts: standard alerts and application level alerts\ndesign guidelines: standard alerts\n-\tAlerts are to be designed to garb user’s attention to provide critical information needed in a context of use.\n-\tStandard Alerts, in general, are four types:\n\n1.\tSuccess Alert\nThe banner/modal carries a message communicating to the user that the action taken by them have been successful. \nThe banner/modal carries a green encircled check mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n2.\tinformation Alert\nThe banner/modal carries a message communicating to the user that additional information is available about the context of use. \nThe banner/modal carries a black encircled exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n3.\twarning alert\nThe banner/modal carries a message communicating to the user that the action taken by them have resulted in a warning with respect to the context of use. \nThe banner/modal carries a yellow outlined triangle with exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n4.\terror alert\nThe banner/modal carries a message communicating to the user that the action taken by them have resulted in an error with respect to the context of use. \nThe banner/modal carries red encircled cross mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n-\tStandard alerts convey severity and urgency in the following order: error, warning, info and success.\nIn case there are multiple subtypes (of each of the types mentioned above) all of them are shown before another standard alert type is shown. For example – multiple error warnings are shown before a warning alert is shown.\n-\tsize?\n-\tPlacement of alert \n\nStandard alerts could be place in multiple contexts including inside of components. \n\n-\tApplication level alerts are of three types: error, warning and info.\n-\tApplication level alerts follow the same order as standard level alerts: error, warning and info.\n-\tsize?\n-\tplacement?\n"
+            "text": "<p class=\"lead\">Alerts are banners/modals that communicate a message with a degree of urgency attached to it.</p>\n\n<section>\n\nThere are two key types of alerts: *standard alerts* and *application level alerts*\n\nStandard alerts are to be designed to garb user’s attention to provide critical information needed in a context of use.\n\n</section>\n\n**Standard Alerts**\n\nStandard alerts are of four types: *Success, Information, Warning and Error*\n\n**Usage Pattern: standard alerts**\n\n<section>\n\n __Success Alert__\n\n- A banner/modal carries a message communicating to the user that the action taken by them have been successful. \n- The banner/modal carries a green encircled check mark to visually accentuate the success message. \n- The banner/modal itself should have a neutral colour (grey/white).\n\n<div class='alert alert-success' role='alert'>\n    A simple success alert—check it out!\n </div>\n\n</section>\n<section>\n\n__Information Alert__\n\n- The banner/modal carries a message communicating to the user that additional information is available about the context of use. \n- The banner/modal carries a black encircled exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n\n<div class='alert alert-info' role='alert'>\n    A simple info alert—check it out!\n  </div>\n\n</section>\n<section>\n\n__Warning alert__\n\n- The banner/modal carries a message communicating to the user that the action taken by them have resulted in a warning with respect to the context of use. \n- The banner/modal carries a yellow outlined triangle with exclamation mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n\n<div class='alert alert-warning' role='alert'>\n    A simple warning alert—check it out!\n  </div>\n\n</section>\n<section>\n\n__Error alert__\n\nThe banner/modal carries a message communicating to the user that the action taken by them have resulted in an error with respect to the context of use. \n\n<div class='alert alert-danger' role='alert'>\n    A simple danger alert—check it out!\n  </div>\n\n</section>\n\nThe banner/modal carries red encircled cross mark to visually accentuate the success message. The banner/modal itself should have a neutral colour (grey/white).\n\nStandard alerts convey severity and urgency in the following order: error, warning, info and success.\n\nIn case there are multiple subtypes (of each of the types mentioned above) all of them are shown before another standard alert type is shown. For example – multiple error warnings are shown before a warning alert is shown.\n\nStandard alerts could be place in multiple contexts including inside of components. \n\n**Application level alerts**\n\nApplication level alerts are of three types: *Error, Warning and Information*\n\n**Usage Pattern: application level alerts**\n\nApplication level alerts follow the same order as standard level alerts: Error, Warning and Information.\n\n\n\n\n\n\n\n\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         },
         {
@@ -490,26 +1599,6 @@
       "submenus": []
     },
     {
-      "id": "6",
-      "url": "cards",
-      "title": "Cards",
-      "contents": [
-        {
-          "content": {
-            "id": "25",
-            "title": "Cards",
-            "text": "Cards\nA card presents content and actions on a single topic.\ndesign guidelines\n-\teasy to understand content about a topic\n-\tconsider cards as an entry point to more details\n-\tkeep the content simple and easy to understand\n-\tcall to action – user primary action and a single additional action (if required). The placement of call to action if located on the card footer, left aligned (supports F-pattern layout).\n\n \n-\tNot all cards are to be clickable. When a card is clickable, the resulting action should be an expected outcome – to navigate to more details.\n"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "7",
       "url": "badge",
       "title": "Badge",
@@ -518,12 +1607,36 @@
           "content": {
             "id": "21",
             "title": "Badges",
-            "text": "Badges\n\nBadges are used to highlight count (numerical value) associated with and item/event.\n\ndesign guidelines\n\n-\tBadges to have a colourful, bold and filled style to enable them to stand out when appearing within or next to a UI element.\n-\tUser integers with badges.\n\n"
+            "text": "<p class=\"lead\"> Badges are used to highlight count (numerical value) associated with and item/event. </p>\n\n<section> \n\n**Example**\n\n<span class='badge badge-pill badge-primary'>2</span>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tBadges to have a colourful, bold and filled style to enable them to stand out when appearing within or next to a UI element.\n-\tUse integers with badges.\n\n</section>"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "59",
+            "title": "Badge Example",
+            "text": "<span class='badge badge-pill badge-primary'>2</span>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
@@ -538,32 +1651,36 @@
           "content": {
             "id": "22",
             "title": "Breadcrumbs",
-            "text": "Breadcrumbs\nBreadcrumbs are a navigational element to support wayfinding. It makes users of their current location (with respect to the application/website) and the option for further navigation. Breadcrumbs also show hierarchy of the navigation and allows users to navigate higher or lower in the hierarchy. Breadcrumbs are essentially links for navigation.\ndesign guidelines\n-\tBreadcrumbs should not replace global navigation or location navigation (in a section) but complement it.\n-\tBreadcrumbs should display the current location of the user with respect to hierarchy of navigational structure.\n-\tBreadcrumb corresponding the current page should not be a link.\n-\tBreadcrumbs are more useful for application/websites where the hierarchy if deeper than 2 levels. That is, it is not suitable for applications/sites that are have flat hierarchy.\n-\tBreadcrumb should start with link to home page.\n"
+            "text": "<p class=\"lead\">Breadcrumbs are a navigational element to support wayfinding. It makes users of their current location (with respect to the application/website) and the option for further navigation. Breadcrumbs also show hierarchy of the navigation and allows users to navigate higher or lower in the hierarchy.</p>\n\n<section>\n\n**Example**\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item active' aria-current='page'>Home</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Library</li>\n  </ol>\n</nav>\n\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item'><a href='#'>Library</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Data</li>\n  </ol>\n</nav>\n\n</section>\n<section>\n\n**Usage Pattern**\n\n-\tBreadcrumbs should not replace global navigation or location navigation (in a section) but complement it.\n-\tBreadcrumbs should display the current location of the user with respect to hierarchy of navigational structure.\n-\tBreadcrumb corresponding the current page should not be a link.\n-\tBreadcrumbs are more useful for application/websites where the hierarchy if deeper than 2 levels. That is, it is not suitable for applications/sites that are have flat hierarchy.\n-\tBreadcrumb should start with link to home page.\n\n</section>\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "9",
-      "url": "pagination",
-      "title": "Pagination",
-      "contents": [
+        },
         {
           "content": {
-            "id": "34",
-            "title": "Pagination",
-            "text": "Pagination\nPagination is a collection of links that allows users to navigated between pages.\ndesign guidelines\n-\tPagination must makes clear to the user the page they are on currently and the options or navigating to other pages (both before the page or after the pages) is clearly visible to them.\n-\tUser roman numerals to indicate pages.\n-\tWhen working with high number of pages, links to go forward and backward along with links for first and last page to be shown.\n"
+            "id": "55",
+            "title": "Breadcrumbs Example",
+            "text": "<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item active' aria-current='page'>Home</li>\n  </ol>\n</nav>\n-\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Library</li>\n  </ol>\n</nav>\n-\n<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item'><a href='#'>Library</a></li>\n    <li class='breadcrumb-item active' aria-current='page'>Data</li>\n  </ol>\n</nav>"
           },
           "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
           }
         }
       ],
@@ -578,12 +1695,36 @@
           "content": {
             "id": "24",
             "title": "Button groups",
-            "text": "Buttons groups\nButtons groups are collection of same type of buttons.\ndesign guidelines\nButton groups follow button design guidelines.\nTypes of Button groups\n-\tSolid button group: meant for primary action, solid filled to attract user’s attention\n-\tOutline button group: meant for secondary action and to compliment primary action\n-\tFlat button group: meant for tertiary action\n-\tDisabled button group: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\nButton groups can be constituted of the following:\n-\tmixed classes\no\tmixing actions\n\n \no\tmixing styles\n\n \n\n-\tIcons – width and spacing\n\n   \n\n-\tOverflow\n\nTo be used when the button group is larger than space available or there is intention to save space. In such cases, an ellipsis button is included in the button group that shows the overflow drop down menu.\n\n \n\n \n\n \n\n \n \n\n"
+            "text": "<p class=\"lead\"> Buttons groups are collection of same type of buttons. </p>\n\n<section>\n\n**Example**\n\n<div class='btn-group' role='group' aria-label='Basic example'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>\n\nTypes of Button groups\n\n-\tSolid button group: meant for primary action, solid filled to attract user’s attention\n-\tOutline button group: meant for secondary action and to compliment primary action\n-\tFlat button group: meant for tertiary action\n-\tDisabled button group: meant to prevent users from sending inputs accidently, also meant to prevent input till conditions for the input are met.\n\n</section>\n<section>\n\n**Usage Pattern**\n\nButton groups follow button design guidelines. Button groups can be constituted of the following:\n\n<section> \n\n**Mixed classes**\n\n![text](https://sdds-cms.s3.amazonaws.com/a2cccee7a5614a3eb1bbc18d18452483.PNG)\n\nMixing actions\n\n**Do** – Locate primary action on the left, followed by secondary and warning action.\n\n **Don’t** – Located warning action on the left.\n\n</section>\n<secion>\n\n![text](https://sdds-cms.s3.amazonaws.com/6818a75bf625462eb823f003161177d2.PNG)\n\nMixing styles\n\n**Do**– group buttons that are styled in a similar manner – such as, primary and tertiary types\n\n**Don’t**– group button that are styles in a different manner – such as primary and secondary types\n\n</section>\n<section>\n\n**Icons – width and spacing**\n\n![text](https://sdds-cms.s3.amazonaws.com/24c96ddfa99d423281bf2a04341d8747.PNG)\n\n</p> Icons - Types and sizes </p>\n\n**Do**– Icons can be used with all types of buttons. However, make sure that the buttons are large size (36px)\n\n**Don’t** – use small size buttons with icons\n\n</section>\n<section>\n\n**With text & icons**\n\n![text](https://sdds-cms.s3.amazonaws.com/aa70aa1bae5542798493a3b4e83eb402.PNG)\n\n**Do**– text is useful with icons as they helps users. When used, icons should be followed by text\n\n**Don’t** – follow text by icons\n\n</section>\n<secion>\n\n**Overflow**\n\nTo be used when the button group is larger than space available or there is intention to save space. In such cases, an ellipsis button is included in the button group that shows the overflow drop down menu.\n\nInteraction\n\nClicking on ellipsis button will bring up a dropdown menu\n\n![text](https://sdds-cms.s3.amazonaws.com/1ca911fc81dc452fa8ba4ec7b4aabb30.PNG)\n\n</section>\n<secion>\n\n**Icons and Text**\n\nFollow the pattern of use of icons and text for buttons in this case.\n\n![text](https://sdds-cms.s3.amazonaws.com/0183ac6194cb4cd6b558f26bd1e49086.PNG)\n\n</section>\n<section>\n\n**Multiple groups**\n\n![text](https://sdds-cms.s3.amazonaws.com/5997dc1f699a41ecbbd5f5a65668959e.PNG)\n\n**Do** – primary actions are followed by secondary action\n\n**Don’t** – secondary actions followed by primary action\n\n</section>\n<section>\n\n**Checkbox**\n\n![text](https://sdds-cms.s3.amazonaws.com/c8704217c8c94c64817ef15c2d7e43ff.PNG)\n\n**Do** – use short labels ( 1 to 3 words)\n\n**Don’t** – use labels that are longer than 3 words.\n\n</section>\n<section>\n\n**Radio**\n\n![text](https://sdds-cms.s3.amazonaws.com/61d3a3994ad5447ba954238302e58a9d.PNG)\n\n**Do** – use short labels ( 1 to 3 words)\n\n**Don’t** – use labels that are longer than 3 words.\n\n</section>\n\n\n\n\n"
           },
           "template": {
             "id": "1",
             "title": "Usage",
-            "text": "<h1>{{item.content.title}}</h1><p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        },
+        {
+          "content": {
+            "id": "45",
+            "title": "Styling",
+            "text": "Styling section coming soon!"
+          },
+          "template": {
+            "id": "6",
+            "title": "Style",
+            "text": "Coming soon!"
+          }
+        },
+        {
+          "content": {
+            "id": "61",
+            "title": "Button Group Example",
+            "text": "<div class='btn-group' role='group' aria-label='Basic example'>\n  <button type='button' class='btn btn-secondary'>Left</button>\n  <button type='button' class='btn btn-secondary'>Middle</button>\n  <button type='button' class='btn btn-secondary'>Right</button>\n</div>"
+          },
+          "template": {
+            "id": "2",
+            "title": "Code",
+            "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
           }
         }
       ],
