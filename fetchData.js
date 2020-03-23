@@ -3,6 +3,7 @@ const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
 const url = 'https://sdds-cms.herokuapp.com/graphql';
+// const url = 'http://localhost:1339/graphql';
 
 const init = () => {
   getData('content', content);
@@ -13,9 +14,7 @@ const init = () => {
 const content = `
 query {
   menus {
-    id
-    url
-    title
+    ...menu
     contents {
       content {
         id
@@ -29,9 +28,18 @@ query {
       }
     }
     submenus {
-      title
-      url
+      ...menu
     }
+  }
+}
+
+fragment menu on Menu {
+  id
+  url
+  title
+  thumbnail {
+    id
+    url
   }
 }
 `;
@@ -54,6 +62,10 @@ fragment menu on Menu {
   id
   url
   title
+  thumbnail {
+    id
+    url
+  }
 }
 `;
 
@@ -83,7 +95,9 @@ const getData = async(targetName, target, options) => {
   graphQLClient.request(target)
     .then(data => writeFile(data, targetName))
     .catch(err => {
-      if(options) return console.log(err);
+      console.log(err);
+
+      if(options) return;
 
       getData(targetName, target, { agent: new HttpsProxyAgent(process.env.HTTP_PROXY) });
     });

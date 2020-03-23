@@ -46,61 +46,21 @@
   }
 }
 
-:host-context(main.page-overview) {
-  ::ng-deep {
-    .card-body {
-      > * {
-        flex: 1;
-        align-self: center;
-      }
-    }
-  }
+// TODO: Change class to be specific for the page listing "template" and not a "page"
+:host-context(main.category-components) {
 
-  .overview {
-    display: none;
-  }
   .card {
-    transition: opacity 200ms linear;
-    opacity: 0.7;
-    border: 0;
-    border-radius: 0;
-    min-height: 200px;
-    margin-bottom: 20px;
-    text-decoration: none;
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-    }
-    &:hover {
-      opacity: 1;
-    }
+    &-body {
+        height: 300px;
+        text-align: center;
+        overflow: hidden;
 
-    .card-body {
-      background-color: #ddd;
-      display: flex;
-      zoom: 40%;
-      position: relative;
-      z-index: 0;
-    }
-    .card-footer {
-      background-color: transparent;
-      border-top: none;
+        img {
+            height: 100%;
+        }
     }
   }
-}
-
-.col-3 img {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  padding: 30%;
-  background-color: lightblue;
 }
 
 @media (min-width: 1600px) {

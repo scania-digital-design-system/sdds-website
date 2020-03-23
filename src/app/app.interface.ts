@@ -13,6 +13,7 @@ export interface Page {
   url?: String;
   content?: Content;
   submenus?: Page[];
+  thumbnail?: File;
   parent?: Page;
 }
 export interface Content {
@@ -33,6 +34,10 @@ export interface Template {
   id?: String;
   title?: String;
   text?: String;
+}
+export interface File {
+  id?: String;
+  url?: String;
 }
 
 // TODO: Get this from Corporate UI
