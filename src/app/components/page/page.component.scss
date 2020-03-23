@@ -50,14 +50,14 @@
 :host-context(main.category-components) {
 
   .card {
+    flex: 1;
 
     &-body {
-        height: 300px;
         text-align: center;
         overflow: hidden;
 
         img {
-            height: 100%;
+            width: 100%;
         }
     }
   }
