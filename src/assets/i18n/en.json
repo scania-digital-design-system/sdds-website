@@ -1,0 +1,31 @@
+{
+  "COOKIES": {
+    "MAIN": "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners. By clicking “I Accept” , you are agreeing to give your consent to all cookies being used and the information being shared. You can also manage your cookies by clicking the “Cookie settings” and selecting the categories you’d like to accept. For a more detailed explanation of how we use cookies, please visit our cookies section, which you can find by clicking the link below this text.",
+    "NECCESSARY": {
+      "TITLE":"Necessary cookies",
+      "CONTENT":"Necessary cookies are needed for the website to function and cannot be switched off in our systems. They are usually a consequence of you requesting services such as; setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but then some parts of the site will not work. These cookies do not store any personal data."
+    },
+    "PERFORMANCE": {
+      "TITLE":"Performance cookies",
+      "CONTENT":"Performance cookies allow us to count visits and traffic, which is an important source of improvement of our site. They help us to know which pages are the most and least popular and to see how visitors move around the site. All the information that these cookies collect is aggregated and is therefore anonymous. If you do not allow these cookies your visit to our site will not be counted in our statistics and will not contribute to performance monitoring and improvement of the website."
+    },
+    "FUNCTIONAL": {
+      "TITLE":"Functional cookies",
+      "CONTENT":"Functional cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third-party providers (see our Cookie Policy for further information ) whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly. Third-party providers may process your information, including personal data, when these cookies are activated."
+    },
+    "TARGETING": {
+      "TITLE":"Targeting cookies",
+      "CONTENT":"Targeting cookies may be set through our site by our advertising partners (see our Cookie Policy for further information). They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They are based on uniquely identifying your browser type and the type of internet device you use. If you do not allow these cookies, you will experience less targeted advertising."
+    },
+    "SOCIALMEDIA": {
+      "TITLE":"Social media cookies",
+      "CONTENT":"Social media cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks (see our Cookie Policy for further information). They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools."
+    },
+    "BUTTONS":{
+      "SETTINGS":"Cookie settings",
+      "ACCEPT":"Accept",
+      "CANCEL":"Cancel",
+      "SAVE":"Save settings"
+    }
+  }
+}
