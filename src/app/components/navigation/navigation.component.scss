@@ -15,6 +15,19 @@
 
 section {
   margin-bottom: 20px;
+  overflow: hidden;
+
+  &.external {
+    margin: 0;
+
+    a {
+      margin-bottom: 20px;
+
+      &:first-child {
+        margin-top: 30px;
+      }
+    }
+  }
 
   c-icon {
     margin-left: auto;
@@ -40,7 +53,10 @@ section {
     }
 
     & > c-icon {
-      transform: rotate(180deg);
+
+      &[name=scania-angle-down] {
+        transform: rotate(180deg);
+      }
     }
 
     &.active {
@@ -53,6 +69,7 @@ section {
     }
   }
   div {
+
     a {
       display:block;
       padding: 7.5px 0px 7.5px 60px;
