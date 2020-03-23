@@ -27,11 +27,9 @@ FIXME: title should fetch from the template not direct in the html, h1 for homep
   + "</ul>" +
   "<div class='tab-content'>" +
   templates.map((page: Template) => `
-    <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane ${page.id}" id='section-${page.id}'>
+    <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane tab-${page.id}" id='section-${page.id}'>
       <div *ngFor='let item of content.contents'>
-        <ng-template [ngIf]='"${page.id}" == item.template.id'>
-        ${page.text}
-        </ng-template>
+        <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
       </div>
     </section>
   `).join('')
