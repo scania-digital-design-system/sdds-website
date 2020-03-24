@@ -26,3 +26,11 @@ export class MarkdownPipe implements PipeTransform {
     return marked(content.replace('\\n', '<br>'));
   }
 }
+
+@Pipe({ name: 'sortASC' })
+export class SortASCPipe implements PipeTransform {
+
+  transform(list: Array<Object>): Array<Object> {
+    return list.sort((a,b) => a['title'] > b['title'] ? 1 : -1)
+  }
+}

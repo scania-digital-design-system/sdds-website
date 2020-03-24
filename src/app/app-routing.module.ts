@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from './app.service';
-import { EscapeHtmlPipe, SplitPipe, MarkdownPipe } from './app.pipe';
+import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
@@ -17,6 +17,7 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
   declarations: [
     EscapeHtmlPipe,
     SplitPipe,
+    SortASCPipe,
     MarkdownPipe,
     PageComponent,
     TogglerComponent,
@@ -33,6 +34,7 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
   exports: [
     RouterModule,
     MarkdownPipe,
+    SortASCPipe,
     TogglerComponent
   ],
   providers: [
