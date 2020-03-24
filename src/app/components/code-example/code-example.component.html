@@ -1,14 +1,10 @@
-<strong>{{example.title}}</strong>
+<h4 class="mb-5">{{example.title}}</h4>
 
 <div class='row mb-5' *ngFor='let type of example.text | split:"\r?\n-\r?\n"'>
-  <div class='col-3' [innerHTML]='type | keepHtml'></div>
-  <div class='col-9'>
-    <div class='input-group mb-3'>
+  <div class='col-12 mb-5' [innerHTML]='type | keepHtml'></div>
+  <div class='col-12'>
+    <div class='input-group'>
       <input type='text' class='form-control bg-dark text-light' [value]='type'>
-
-      <div class='input-group-append'>
-        <button class='btn btn-secondary' type='button'>Copy</button>
-      </div>
     </div>
   </div>
 </div>
