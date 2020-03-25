@@ -44,6 +44,7 @@ export class PageComponent {
   unique: any;
   unique2: any;
   active: any;
+
   constructor(public ps: PageService) {
     this.ps.page.subscribe((page: Page) => {
 
