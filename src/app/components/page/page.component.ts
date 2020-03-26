@@ -130,6 +130,8 @@ export class PageComponent {
   }
 
   tabChange(page, tabTitle) {
+    if(typeof gtag === 'undefined') return;
+
     gtag('send', 'event', {
       eventCategory: 'Page',
       eventAction: 'TabChange',

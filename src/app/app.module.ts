@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TranslocoRootModule } from './transloco-root.module';
+import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 
@@ -28,6 +29,7 @@ import { CookiesMessage } from './components/cookies-message/cookies-message.com
     HttpClientModule,
     TranslocoRootModule
   ],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
