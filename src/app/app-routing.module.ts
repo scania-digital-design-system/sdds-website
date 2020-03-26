@@ -8,6 +8,7 @@ import { PageService } from './app.service';
 import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
+import { ModalComponent } from './components/modal/modal.component';
 import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
@@ -20,6 +21,7 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
     SortASCPipe,
     MarkdownPipe,
     PageComponent,
+    ModalComponent,
     TogglerComponent,
     ColorListComponent,
     IconListComponent,
