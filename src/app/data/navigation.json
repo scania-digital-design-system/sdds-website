@@ -1,0 +1,236 @@
+{
+  "navigations": [
+    {
+      "id": "1",
+      "title": "Main navigation",
+      "menus": [
+        {
+          "id": "2",
+          "url": "home",
+          "title": "Home",
+          "submenus": []
+        },
+        {
+          "id": "21",
+          "url": "getting-started",
+          "title": "Getting started",
+          "submenus": [
+            {
+              "id": "36",
+              "url": "development",
+              "title": "Development"
+            },
+            {
+              "id": "37",
+              "url": "design",
+              "title": "Design"
+            },
+            {
+              "id": "38",
+              "url": "about-sdds",
+              "title": "About SDDS"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "url": "components",
+          "title": "Components",
+          "submenus": [
+            {
+              "id": "1",
+              "url": "alert",
+              "title": "Alert"
+            },
+            {
+              "id": "5",
+              "url": "buttons",
+              "title": "Buttons"
+            },
+            {
+              "id": "6",
+              "url": "cards",
+              "title": "Cards"
+            },
+            {
+              "id": "7",
+              "url": "badge",
+              "title": "Badge"
+            },
+            {
+              "id": "8",
+              "url": "breadcrumbs",
+              "title": "Breadcrumbs"
+            },
+            {
+              "id": "9",
+              "url": "pagination",
+              "title": "Pagination"
+            },
+            {
+              "id": "10",
+              "url": "button-groups",
+              "title": "Button groups"
+            },
+            {
+              "id": "11",
+              "url": "dropdown",
+              "title": "Dropdown"
+            },
+            {
+              "id": "12",
+              "url": "form",
+              "title": "Forms"
+            },
+            {
+              "id": "13",
+              "url": "input-groups",
+              "title": "Input groups"
+            },
+            {
+              "id": "14",
+              "url": "media-objects",
+              "title": "Media Objects"
+            },
+            {
+              "id": "15",
+              "url": "modals",
+              "title": "Modals"
+            },
+            {
+              "id": "16",
+              "url": "navs",
+              "title": "Navs"
+            },
+            {
+              "id": "20",
+              "url": "progress-indicators",
+              "title": "Progress indicators"
+            },
+            {
+              "id": "26",
+              "url": "tables",
+              "title": "Tables"
+            },
+            {
+              "id": "39",
+              "url": "list-group",
+              "title": "List group"
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "url": "foundation",
+          "title": "Foundations",
+          "submenus": [
+            {
+              "id": "18",
+              "url": "ux-principles",
+              "title": "UX principles"
+            },
+            {
+              "id": "19",
+              "url": "ui-principles",
+              "title": "UI principles"
+            },
+            {
+              "id": "40",
+              "url": "colour",
+              "title": "Colour"
+            },
+            {
+              "id": "41",
+              "url": "typography",
+              "title": "Typography"
+            },
+            {
+              "id": "42",
+              "url": "accessibility",
+              "title": "Accessibility"
+            },
+            {
+              "id": "43",
+              "url": "layout",
+              "title": "Layout"
+            },
+            {
+              "id": "44",
+              "url": "logotype",
+              "title": "Logotype"
+            }
+          ]
+        },
+        {
+          "id": "22",
+          "url": "design-patterns",
+          "title": "Design Patterns",
+          "submenus": []
+        },
+        {
+          "id": "35",
+          "url": "resources",
+          "title": "Resources",
+          "submenus": [
+            {
+              "id": "30",
+              "url": "way-of-working",
+              "title": "Way of working"
+            },
+            {
+              "id": "31",
+              "url": "definitions",
+              "title": "Definitions"
+            },
+            {
+              "id": "33",
+              "url": "ui-kit",
+              "title": "Ui kit(s)"
+            },
+            {
+              "id": "34",
+              "url": "development",
+              "title": "Development resource"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Extra navigation",
+      "menus": [
+        {
+          "id": "3",
+          "url": "support",
+          "title": "Support",
+          "submenus": []
+        },
+        {
+          "id": "23",
+          "url": "contribution",
+          "title": "Contribution",
+          "submenus": []
+        },
+        {
+          "id": "24",
+          "url": "new",
+          "title": "What's new",
+          "submenus": []
+        },
+        {
+          "id": "25",
+          "url": "http://www.google.com",
+          "title": "ComOn editors",
+          "submenus": []
+        },
+        {
+          "id": "45",
+          "url": "http://www.google.com",
+          "title": "Mobile apps",
+          "submenus": []
+        }
+      ]
+    }
+  ]
+}

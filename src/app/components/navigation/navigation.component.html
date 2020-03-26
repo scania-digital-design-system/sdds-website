@@ -1,7 +1,29 @@
-<header>
-    <a routerLink="">Corporate UI</a>
-</header>
+<!-- Using bootstrap collapse -->
+<div *ngFor="let nav of navigations" id="closeCollapse">
+  <ng-container *ngFor="let page of nav.menus">
+    <section *ngIf="page.url.indexOf('http') !== 0">
 
-<section item-toggler *ngFor="let item of items; index as i" text="{{item.content.title}}" [collapsed]="false">
-    <a *ngFor="let sub of item.pages; index as i" [routerLink]="item.url + '/' + sub.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{sub.content.title}}</a>
-</section>
+      <!-- Main menu -->
+      <a #2 [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + page.id" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">
+        {{page.title}}
+        <c-icon name="scania-angle-down" *ngIf="page.submenus.length"></c-icon>
+      </a>
+
+      <!-- Sub menu -->
+      <div #1 [id]="id + page.id" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
+        <a *ngFor="let sub of page.submenus; index as i;" routerLinkActive="active" [routerLink]="page.url + '/' + sub.url">{{sub.title}}</a>
+      </div>
+
+    </section>
+  </ng-container>
+
+  <!-- This setup for external link should really be improved later on... -->
+  <section class="external">
+    <ng-container *ngFor="let page of nav.menus">
+      <a *ngIf="page.url.indexOf('http') === 0" href="{{page.url}}" target="_blank">
+        {{page.title}}
+        <c-icon name="scania-external_link"></c-icon>
+      </a>
+    </ng-container>
+  </section>
+</div>

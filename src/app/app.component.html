@@ -1,3 +1,8 @@
 <c-theme name="scania" global="true"></c-theme>
-<nav navigation-component></nav>
-<main main-component></main>
+<c-header site-name="Scania Digital Design System" short-name="SDDS"></c-header>
+<div id="maincontent" (cookieSaved)="setCookie($event.detail.cookie)">
+  <nav navigation-component></nav>
+  <main main-component></main>
+  <div statistics-component *ngIf="cookie"></div>
+  <div cookies-message></div>
+</div>

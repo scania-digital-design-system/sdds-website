@@ -1,48 +1,52 @@
 /* autoprefixer grid: autoplace */
 
 :host {
-    display: -ms-grid;
-    display: grid;
-    grid-template-areas:
-        "nav main";
-    grid-template-columns: 250px 1fr;
-    overflow: hidden;
+  overflow: hidden;
+  background-color: #fafafa;
+  background-color: var(--white);
+  font-size: 1.6rem; // FIXME: moved to scania-theme?
 
-    ::ng-deep > nav {
+  ::ng-deep > nav {
 
-        button {
-            background-color: transparent;
-            border: transparent;
-        }
-        a {
-            background-color: transparent;
-            color: #fff;
-
-            &:hover {
-                background-color: transparent;
-                color: #bfbfbf;
-            }
-        }
+    button {
+      background-color: transparent;
+      border: transparent;
     }
+    a {
+      background-color: transparent;
+      color: #fff;
+
+      &:hover {
+        background-color: transparent;
+        color: #bfbfbf;
+      }
+    }
+  }
 }
 
+#maincontent {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  background-color: #fff;
+}
 nav,
 main {
-    height: 100vh;
-    overflow-y: auto;
+  overflow-y: auto;
 }
 nav {
-    grid-area: nav;
-    background-color: #494949;
-    color: #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 13px #c8c9c7; //FIXME: box-shadow scania-color
+  box-shadow: 0px 3px 13px Var(--light);
 
-    --link-color: #fff;
-    --link-color-hover: #bfbfbf;
-    --link-color-active: #fff;
+  // FIXME: color variable default in doesn't work in IE/Edge
+  --link-color: Var(--dark-02);
+  --link-color-hover: #bfbfbf;
 }
 main {
-    grid-area: main;
-}
-a {
-    color: #fff;
+  flex: 1;
 }

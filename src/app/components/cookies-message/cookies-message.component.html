@@ -1,0 +1,31 @@
+<c-cookie
+  [modalButtonPrimary]='"COOKIES.BUTTONS.SAVE" | transloco'
+  [modalButtonSecondary]='"COOKIES.BUTTONS.CANCEL" | transloco'
+  [mainButtonPrimary]='"COOKIES.BUTTONS.ACCEPT" | transloco'
+  [mainButtonSecondary]='"COOKIES.BUTTONS.SETTINGS" | transloco'
+>
+  <p slot="main">
+    {{ 'COOKIES.MAIN' | transloco }}<a
+      href="https://www.scania.com/content/scanianoe/global/en/home/misc/privacy-statement/cookies.html"
+      target="_blank">
+      <c-icon name="scania-external_link"></c-icon>
+    </a>.
+  </p>
+  <div [attr.text]='"COOKIES.NECCESSARY.TITLE" | transloco' mandatory='true' checked='true' type='nc' slot="config">
+    <p>{{ 'COOKIES.NECCESSARY.CONTENT' | transloco }}</p>
+  </div>
+  <div [attr.text]='"COOKIES.PERFORMANCE.TITLE" | transloco' type='pc' slot="config">
+    <p>{{ 'COOKIES.PERFORMANCE.CONTENT' | transloco }}</p>
+  </div>
+  <div [attr.text]='"COOKIES.FUNCTIONAL.TITLE" | transloco' checked='false' type='fc' slot="config">
+    <p>{{ 'COOKIES.FUNCTIONAL.CONTENT' | transloco }}</p>
+  </div>
+  <div [attr.text]='"COOKIES.TARGETING.TITLE" | transloco' checked='false' type='tgc' slot="config">
+    <p>{{ 'COOKIES.TARGETING.CONTENT' | transloco }}</p>
+  </div>
+  <div [attr.text]='"COOKIES.SOCIALMEDIA.TITLE" | transloco' checked='false' type='smc' slot="config">
+    <p>{{ 'COOKIES.SOCIALMEDIA.CONTENT' | transloco }}</p>
+  </div>
+  <a href='https://www.scania.com/content/scanianoe/global/en/home/misc/privacy-statement/cookies.html' target='_blank'
+    slot='link'>Cookie Policy Link <c-icon name='scania-external_link'></c-icon></a>
+</c-cookie>
