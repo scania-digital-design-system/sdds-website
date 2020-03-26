@@ -1,0 +1,10 @@
+c-code-sample {
+  margin: 0px 15px;
+}
+
+:host {
+ > .row + div {
+   //FIXME: Depending how we will list component that are related we might wanna look more into this, button.disabled
+    margin-top: 60px;
+  }
+}
