@@ -10,8 +10,7 @@ export class ColorListComponent implements OnInit {
   @Input() content: any;
 
   ngOnInit() {
-    const regex = /---(.*?)---/gs;
-    this.cleanContent = this.content.replace(regex, this.renderColor);
+    this.cleanContent = this.content.replace(/\-\-\-([\S\s]*?)\-\-\-/gm, this.renderColor);
   }
 
   renderColor(match, target, string){
