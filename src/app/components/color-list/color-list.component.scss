@@ -9,6 +9,23 @@ div {
     font-size: 1.2rem;
     li {
       padding: 10px 15px;
+      .value {
+        float: right;
+      }
+      &.light {
+        color: #fff;
+      }
+      &.dark {
+        color: #000;
+      }
+      &.both {
+        span.name {
+          color: #000;
+        }
+        span.value {
+          color: #fff;
+        }
+      }
     }
     li:first-child {
       padding-bottom: 20px;

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ɵConsole } from '@angular/core';
 
 @Component({
   selector: '[color-list]',
@@ -18,8 +18,18 @@ export class ColorListComponent implements OnInit {
     const allColors = target.trim().split('\n');
     let list = [];
     allColors.forEach(color => {
-      const [name,value] = color.split(':');
-      const newContent = '<li style="background-color:' + value.trim() +'">'+ name.trim() + ':' + value.trim() +'</li>';
+      const [colorValue, text] = color.split(',');
+      const [name,value] = colorValue.split(':');
+      const [label, textColor] = text.split(':');
+      let newContent = `
+        <li
+          class='${textColor.trim()}'
+          style='background-color:${value.trim()};'>
+          <span class='name'>${name.trim()}</span>
+          <span class='value'>${value.trim()}</span>
+        </li>
+      `;
+      newContent = newContent.trim();
       list.push(newContent);
     });
     return '<ul class="color-list">' + list.join('') + '</ul>';
