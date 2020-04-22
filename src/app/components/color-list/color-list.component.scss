@@ -1,21 +1,36 @@
-.color {
-  height: 80px;
-  text-align: right;
-  span {
-    background-color: #fff;
-    padding: 5px 10px;
+div {
+  ::ng-deep > .color-list {
+    list-style-type: none;
     display: inline-block;
-    font-size: 12px;
-    text-transform: capitalize;
-  }
+    width: 300px;
+    padding-inline-start: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    li {
+      padding: 10px 15px;
+      .value {
+        float: right;
+      }
+      &.light {
+        color: #fff;
+      }
+      &.dark {
+        color: #000;
+      }
+      &.both {
+        span.name {
+          color: #000;
+        }
+        span.value {
+          color: #fff;
+        }
+      }
+    }
+    li:first-child {
+      padding-bottom: 20px;
+    }
+   }
 }
-.color[class*="secondary"] {
-  border: 1px solid #c3c3c3;
-  span {
-    margin-top: -2px;
-    margin-right: -2px;
-    border-style: inherit;
-    border-color: inherit;
-    border-width: 0 0 1px 1px;
-  }
-}
+
+  
