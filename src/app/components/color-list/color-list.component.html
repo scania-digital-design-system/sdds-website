@@ -1,9 +1,1 @@
-<div *ngFor="let color of colors" [ngClass]="classes">
-  <div [ngClass]="['color', color.name]" [title]="color.hex" [ngStyle]="{'background-color': renderColor(color.name, color.hex)}">
-      <span>{{color.name}}</span>
-  </div>
-
-  <ng-template [ngIf]="!classes.includes('subColors')">
-    <div color-list [type]="color.name" classes="subColors mt-5"></div>
-  </ng-template>
-</div>
+<div [innerHTML]='cleanContent | markdown | keepHtml'></div>
