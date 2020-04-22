@@ -310,6 +310,12 @@
               "url": "development",
               "title": "Development resources",
               "thumbnail": null
+            },
+            {
+              "id": "53",
+              "url": "identity-manual",
+              "title": "Identity manual",
+              "thumbnail": null
             }
           ]
         }

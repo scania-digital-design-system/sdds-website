@@ -1758,27 +1758,6 @@
       ]
     },
     {
-      "id": "31",
-      "url": "definitions",
-      "title": "Definitions",
-      "thumbnail": null,
-      "contents": [
-        {
-          "content": {
-            "id": "13",
-            "title": "Definitions",
-            "text": "<section>\n\n## Design\n\nDesign involves solving a problem by proposing a solution\n</section>\n\n<section>\n\n## Solution\n\nA \"solution\" is a product or combination of products or a service that is customized for solving a problem from a user’s perspective\n\n**Product**\n\nA product is a system of physical and/or digital components that is customized for user’s needs\n\n**Service**\n\nA service is a system of people, processes, and products that is customized for user’s needs\n\n</section>\n\n<section>\n\n## Human Centered Design\n\nDesign approach to systems design and development that aims to make interactive systems more usable by focusing on the use of the system and applying human factors/ergonomics and usability knowledge and techniques\n\n*from ISO 9241:210-2019*\n\n</section>\n\n<section>\n\n## UX design\n\nDesign to shape user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service\n\n*from ISO 9241:210-2019*\n\n</section>\n<section>\n\n## UI design\n\nDesign of all components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system\n\n*from ISO 9241:210-2019*\n\n</section>\n<section>\n\n## Service Design\n\t\nDesign of a system of people, processes, and products that is customized for user’s needs\n\n</section>"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "40",
       "url": "colour",
       "title": "Colour",
@@ -1798,73 +1777,6 @@
         }
       ],
       "submenus": []
-    },
-    {
-      "id": "30",
-      "url": "way-of-working",
-      "title": "Way of working",
-      "thumbnail": null,
-      "contents": [
-        {
-          "content": {
-            "id": "14",
-            "title": "Way of working",
-            "text": "\n## Two levels of way of working\n\n<section>\n\n### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n</section>\n<section>\n\n### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->\n\n</section>"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "35",
-      "url": "resources",
-      "title": "Resources",
-      "thumbnail": null,
-      "contents": [
-        {
-          "content": {
-            "id": "49",
-            "title": "Resources",
-            "text": "This section offers a number of resources for designers, developers and other who might be interested in the process of design and development of digital design solutions at Scania. It offers high level resources such as, defnitions and way of working for deign and development teams, as well as downloadable resources such as UI design kit and various resources for development."
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": [
-        {
-          "id": "30",
-          "url": "way-of-working",
-          "title": "Way of working",
-          "thumbnail": null
-        },
-        {
-          "id": "31",
-          "url": "definitions",
-          "title": "Definitions",
-          "thumbnail": null
-        },
-        {
-          "id": "33",
-          "url": "ui-kits",
-          "title": "UI kit(s)",
-          "thumbnail": null
-        },
-        {
-          "id": "34",
-          "url": "development",
-          "title": "Development resources",
-          "thumbnail": null
-        }
-      ]
     },
     {
       "id": "16",
@@ -1927,6 +1839,27 @@
       "submenus": []
     },
     {
+      "id": "31",
+      "url": "definitions",
+      "title": "Definitions",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "13",
+            "title": "Definitions",
+            "text": "<section>\n\n## Design\n\nDesign involves solving a problem by proposing a solution\n</section>\n\n<section>\n\n## Solution\n\nA \"solution\" is a product or combination of products or a service that is customized for solving a problem from a user’s perspective\n\n**Product**\n\nA product is a system of physical and/or digital components that is customized for user’s needs\n\n**Service**\n\nA service is a system of people, processes, and products that is customized for user’s needs\n\n</section>\n\n<section>\n\n## Human Centered Design\n\nDesign approach to systems design and development that aims to make interactive systems more usable by focusing on the use of the system and applying human factors/ergonomics and usability knowledge and techniques\n\n*from ISO 9241:210-2019*\n\n</section>\n\n<section>\n\n## UX design\n\nDesign to shape user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service\n\n*from ISO 9241:210-2019*\n\n</section>\n<section>\n\n## UI design\n\nDesign of all components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system\n\n*from ISO 9241:210-2019*\n\n</section>\n<section>\n\n## Service Design\n\t\nDesign of a system of people, processes, and products that is customized for user’s needs\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "22",
       "url": "design-patterns",
       "title": "Design Patterns",
@@ -1937,6 +1870,27 @@
             "id": "44",
             "title": "Design Patterns",
             "text": "<p class=\"lead\">Design patterns are <strong>templates of recurring solutions</strong> that solve common design problems. </p>\n\n<section>\n\nDesign patterns can be divided into three types:\n\n- **Compositional design patterns**\n- **Interaction design patterns**\n- **Compositional design patterns**\n\n</section>\n\n<section>\n\n## Compositional design patterns\n\nComposition here refers to coming together of, one, UI elements and Style guide elements (such as button with typography or an image) and two, combination of two or more such micro level compositions into a larger whole (i.e. from atoms to molecules to organisms). Such compositions can vary from, for example, a page on the higher side of complexity to a button on the lower side of complexity. \n\nCompositional design patterns, then, provide templates of recurring solutions to such common compositional problems.\n\nIncluded in the Scania Design System so far (first version) are compositional design patterns associated with UI elements. \n\nThese design patterns are part of usage guidelines for the following UI elements (first version).\n\nAlert, Badge, Breadcrumbs, Button, Button group, Cards, Dropdown, Forms, Input groups, List groups, Loading, Media Objects, Modals, Navs, Pagination, Progress, Tables\n\n</section>\n\n<section>\n\n## Interaction Design patterns\n\nInteraction refers to the interaction between the user and the user interface. Interaction is constituted of action from the user’s side and the response or feedback from the system’s side. Both, i.e. action from user’s side and the response or feedback from the system’s side are externalised by behaviour of UI elements as well as the compositional elements.\n\nInteraction design patterns, then, provide templates for recurring solutions to user/human computer interaction pertaining to behaviour of UI elements and components that solve common interaction problems.\n\n**Example**\n\n*Interaction design pattern for Buttons (accompanied with animation)*\n\nToggle buttons\n\n*Interaction with mouse*\n\nWhen interacted with mouse, button appears to be pressed down – visually – and the interaction is accompanied by a sound (this can vary from case to case basis). The pressed down state of the button is articulated by active colour. This interaction pattern repeats itself when user interacts with the button again to toggle the button off.\n\n*Interaction with touchscreen/touchpad*\n\nWhen tapped, the button appears to be pressed down – visually – and the interaction is accompanied by a sound (this can vary from case to case basis). The pressed down state of the button is articulated by active colour. This interaction pattern repeats itself when user interacts with the button again to toggle the button off.\n\n</section>\n\n<section>\n\n## Usage patterns\n\nUsage patterns refer to template of recurring solution with respect to use of a UI element or a compositional element. The usage pattern is also extended to common functional features, e.g. copy, edit, save, delete etc.\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "30",
+      "url": "way-of-working",
+      "title": "Way of working",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "14",
+            "title": "Way of working",
+            "text": "\n## Two levels of way of working\n\n<section>\n\n### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n</section>\n<section>\n\n### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->\n\n</section>"
           },
           "template": {
             "id": "1",
@@ -1990,6 +1944,27 @@
       "submenus": []
     },
     {
+      "id": "53",
+      "url": "identity-manual",
+      "title": "Identity manual",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "133",
+            "title": "Identity Manual",
+            "text": "In this section, different identity manual documents can be downloaded.\n\n[Scania Identity Manual](http://digitaldesign.scania.com/resources/design/Scania_Identity_Manual-Edition_2017-05.pdf)\n\n[Mobile Application Style Guide](https://digitaldesign.scania.com/resources/design/Identity_manual-Mobile_apps_DRAFT_March_2020.pdf)"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "44",
       "url": "logotype",
       "title": "Logotype",
@@ -2021,6 +1996,27 @@
             "id": "19",
             "title": "UI principles",
             "text": "<p class=\"lead\"> \nUI design is concerned with design of all components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. This involves a variety of tasks that are carried out at different stages, before and during the design process. Informing such tasks are the following key principles. \n</p>\n\n<section>\n\n### Readability\n\n- Text to be read should have high contrast and adequate line spacing\n- Choice of fonts and font sizes should be made with consideration of readability vis a vis size of the display \n- Test all designs on your oldest expected user population\n\n</section>\n<section>\n\n### Discoverability\n\n- If the user cannot find it, it does not exist\n- Use AD (Active Discovery) to guide people to more advanced features\n- UI elements necessary for the successful use of product/solution should be visibly accessible at all times\n- Communicate your gestural vocabulary with visual diagrams\n- Strive for Balance\n- User-test for discoverability\n\n</section>\n<section>\n\n### Explorable Interfaces\n\n- Give users well-marked navigational structure\n- Offer users stable perceptual cues for a sense of “home”\n- Make Actions reversible or Always allow “Undo”\n- Always allow a way out\n- Make it easy and attractive to stay in\n\n</section>\n<section>\n\n### Clarity\n\nClarity is the one of the key features of a UI. As per Ben Shneiderman for an interface to be effective and user-friendly, it must be recognizable, predictable, and have an obvious purpose.\n\n</section>\n<section>\n\n### State\n\n- As many of browser-based products/solutions exist in a stateless environment, tracking status must be designed in a suitable manner \n- Make clear to the user regarding the information that will stored & and that it will be protected\n\n</section>\n<section>\n\n### Feedback\n\n- Provide timely and contextually-relevant feedback to the user.\n- Feedback can be visual, auditory or haptic as required.\n\n</section>\n<section>\n\n### Latency Reduction\n\nKeep users informed when they face delay\n\n</section>\n<section>\n\n### Anticipation\n\n- Make visible to the user all UI elements needed for each step of the process\n\n</section>\n<section>\n\n### Use of Metaphors\n\n- Choose metaphors that will enable users to comprehend the finest details of the conceptual model of the product/solution\n- Must go beyond literal interpretation of real-world counterparts\n\n</section>\n<section>\n\n### Human Interface Objects\n\n- Human-interface objects are easy to perceive and act upon\n- Human-interface objects have a standard way of being manipulated\n- Human-interface objects have standard resulting behaviours\n- Use a new object when a new modality of interaction is introduced\n\n</section>\n<section>\n\n### Purposeful page layout\n\n- Be judicious about the  spatial relationships between items on the page and structure the page based on importance. \n\n</section>\n<section>\n\n### Visible Navigation\n\n- Make navigation visible\n- Limit number of navigation items by using overlays\n\n</section>\n<section>\n\n### Colour\n\n*Colour blindness*\n\n- When colour is used to convey information in the interface, use clear, secondary cues to convey the information to those who cannot see the colours presented.\n- Test your site to see with colour blind users\n\n*Colour as a vital interface element*\n\n- User colour judiciously in UI \n\n</section>\n<section>\n\n### Fitts’s Law\n\n- The time to acquire a target is a function of the distance to and size of the target\n- Fitts’s Law is in effect regardless of the kind of pointing device or the nature of the target\n- Fitts’s Law requires a stop watch test\n\n</section>\n<section>\n\n### Law of common region \n\nElements tend to be perceived into groups if they located within a clearly defined boundary.\n\n</section>\n<section>\n\n### Law of Proximity\n\nObjects that are proximate to each other tend to be grouped together.\n\n</section>\n<section>\n\n### Miller’s Law\nThe average person can only keep 7 (plus or minus 2) items in their working memory.\n\n\nThe Von Restorff effect, also known as The Isolation Effect, predicts that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered.\n\n</section>"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "34",
+      "url": "development",
+      "title": "Development resources",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "51",
+            "title": "Development resources",
+            "text": "## Github Repos\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Components repo\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/scania-theme\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Scania theme\n</a>\n</p>\n\n\n### Example page\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui-angular\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Angular\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-react\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in React\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-vue\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Vue\n</a>\n</p>\n<p>\n<a href=\"https://codepen.io/corporate-ui/pen/OYmqpr\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in simple HTML page\n</a>\n</p>\n"
           },
           "template": {
             "id": "1",
@@ -2150,6 +2146,79 @@
       "submenus": []
     },
     {
+      "id": "33",
+      "url": "ui-kits",
+      "title": "UI kit(s)",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "50",
+            "title": "UI kit",
+            "text": "<p class=\"lead\">In this section different kits can be downloaded to use in tools like Adobe XD, Figma and more.<p>\n\n[Adobe XD UI kit - First draft](https://digitaldesign.scania.com/resources/design/UIkit.xd)\n\n"
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "35",
+      "url": "resources",
+      "title": "Resources",
+      "thumbnail": null,
+      "contents": [
+        {
+          "content": {
+            "id": "49",
+            "title": "Resources",
+            "text": "This section offers a number of resources for designers, developers and other who might be interested in the process of design and development of digital design solutions at Scania. It offers high level resources such as, defnitions and way of working for deign and development teams, as well as downloadable resources such as UI design kit and various resources for development."
+          },
+          "template": {
+            "id": "1",
+            "title": "Usage",
+            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+          }
+        }
+      ],
+      "submenus": [
+        {
+          "id": "30",
+          "url": "way-of-working",
+          "title": "Way of working",
+          "thumbnail": null
+        },
+        {
+          "id": "31",
+          "url": "definitions",
+          "title": "Definitions",
+          "thumbnail": null
+        },
+        {
+          "id": "33",
+          "url": "ui-kits",
+          "title": "UI kit(s)",
+          "thumbnail": null
+        },
+        {
+          "id": "34",
+          "url": "development",
+          "title": "Development resources",
+          "thumbnail": null
+        },
+        {
+          "id": "53",
+          "url": "identity-manual",
+          "title": "Identity manual",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
       "id": "29",
       "url": "way-of-working",
       "title": "Way of working",
@@ -2210,27 +2279,6 @@
             "id": "7",
             "title": "Icon list",
             "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <article>\n    <p class=\"lead\" [innerHTML]='item.content.text | markdown | keepHtml'></p>\n  </article>\n</div>\n\n<section>\n  <div class=\"row\" icon-list></div>\n</section>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "34",
-      "url": "development",
-      "title": "Development resources",
-      "thumbnail": null,
-      "contents": [
-        {
-          "content": {
-            "id": "51",
-            "title": "Development resources",
-            "text": "## Github Repos\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Components repo\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/scania-theme\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Scania theme\n</a>\n</p>\n\n\n### Example page\n\n<p>\n<a href=\"https://github.com/scania/corporate-ui-angular\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Angular\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-react\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in React\n</a>\n</p>\n<p>\n<a href=\"https://github.com/scania/corporate-ui-vue\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in Vue\n</a>\n</p>\n<p>\n<a href=\"https://codepen.io/corporate-ui/pen/OYmqpr\" target=\"_blank\">\n    <c-icon name=\"scania-external_link\"></c-icon>\n    Example usage in simple HTML page\n</a>\n</p>\n"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
-            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
       ],
@@ -2303,27 +2351,6 @@
           "template": {
             "id": "10",
             "title": "Migration Guide",
-            "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
-          }
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "33",
-      "url": "ui-kits",
-      "title": "UI kit(s)",
-      "thumbnail": null,
-      "contents": [
-        {
-          "content": {
-            "id": "50",
-            "title": "UI kit",
-            "text": "<p class=\"lead\">In this section different kits can be downloaded to use in tools like Adobe XD, Figma and more.<p>\n\n[Adobe XD UI kit - First draft](https://digitaldesign.scania.com/resources/design/UIkit.xd)\n\n"
-          },
-          "template": {
-            "id": "1",
-            "title": "Usage",
             "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
           }
         }
