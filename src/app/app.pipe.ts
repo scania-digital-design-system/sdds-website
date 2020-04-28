@@ -46,6 +46,6 @@ export class DatePipe implements PipeTransform {
     const YYY = fullTime.getFullYear();
     const hh = fullTime.getHours();
     const mins = fullTime.getMinutes();
-    return  dd + ' ' + MMM + ' ' + YYY+ ' ' + hh + ':' + mins;
+    return  dd + ' ' + MMM + ' ' + YYY+ ' ' + hh + ':' + (mins<10 ? ('0' + mins) : mins);
   }
 }
