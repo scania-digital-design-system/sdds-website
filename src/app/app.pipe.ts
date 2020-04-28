@@ -35,7 +35,7 @@ export class SortASCPipe implements PipeTransform {
   }
 }
 
-@Pipe({ name: 'dateUTCString' })
+@Pipe({ name: 'dateFormat' })
 export class DatePipe implements PipeTransform {
 
   transform(event:Date): string {
