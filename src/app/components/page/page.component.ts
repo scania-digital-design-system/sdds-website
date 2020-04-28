@@ -55,18 +55,13 @@ export class PageComponent {
         // For sovling the unique id and title for every template
         const unique = [];
         for(let [key, value] of Object.entries(this.content.contents)) {
-          console.log(key, ':', value['template'].id , value['template'].title);
-          console.log(unique.includes(value['template'].title));
           if(!unique.includes(unique.includes(value['template'].title))) {
             unique.push(value['template'].title);
           }
         }
-        console.log('unique:',unique);
 
         const unique2 = [];
         for(let [key, value] of Object.entries(this.content.contents)) {
-          console.log(key, ':', value['template'].id , value['template'].id);
-          console.log(unique2.includes(value['template'].id));
           if(!unique2.includes(unique2.includes(value['template'].id))) {
             unique2.push(value['template'].id);
           }
@@ -81,16 +76,12 @@ export class PageComponent {
         // Works the same way as previous if statement
         const unique = [];
         for(let [key, value] of Object.entries(this.content.contents)) {
-          console.log(key, ':', value['template'].id , value['template'].title);
-          console.log(unique.includes(value['template'].title));
           if(!unique.includes(unique.includes(value['template'].title))) {
             unique.push(value['template'].title);
           }
         }
         const unique2 = [];
         for(let [key, value] of Object.entries(this.content.contents)) {
-          console.log(key, ':', value['template'].id , value['template'].id);
-          console.log(unique2.includes(value['template'].id));
           if(!unique2.includes(unique2.includes(value['template'].id))) {
             unique2.push(value['template'].id);
           }
