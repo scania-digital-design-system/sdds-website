@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from './app.service';
-import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe } from './app.pipe';
+import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
 import { ModalComponent } from './components/modal/modal.component';
@@ -16,6 +16,7 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
 
 @NgModule({
   declarations: [
+    DatePipe,
     EscapeHtmlPipe,
     SplitPipe,
     SortASCPipe,
@@ -35,6 +36,7 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
   ],
   exports: [
     RouterModule,
+    DatePipe,
     MarkdownPipe,
     SortASCPipe,
     TogglerComponent
