@@ -101,6 +101,9 @@
         summary {
           border-bottom: 1px solid #94999d;
           padding-bottom: 2.8rem;
+          &:before {
+            content: '-';
+          }
         }
       }
     }
