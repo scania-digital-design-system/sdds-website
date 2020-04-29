@@ -318,6 +318,26 @@
               "thumbnail": null
             }
           ]
+        },
+        {
+          "id": "54",
+          "url": "faqs",
+          "title": "FAQs",
+          "thumbnail": null,
+          "submenus": [
+            {
+              "id": "55",
+              "url": "faq-design",
+              "title": "Design",
+              "thumbnail": null
+            },
+            {
+              "id": "56",
+              "url": "faq-development",
+              "title": "Development",
+              "thumbnail": null
+            }
+          ]
         }
       ]
     },
