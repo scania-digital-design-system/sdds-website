@@ -53,37 +53,42 @@ export class PageComponent {
         this.content = menus.find(menu => menu.id === page.id);
 
         // For sovling the unique id and title for every template
-        var element = {};
-        this.unique = [...new Set(this.content.contents.map(contentItem => {
-          element = contentItem.template.title;
-          return element;
-        }))]
-        var element2 = {};
-        this.unique2 = [...new Set(this.content.contents.map(contentItem => {
-          element2 = contentItem.template.id;
-          return element2;
-        }))]
+        const unique = [];
+        for(let [key, value] of Object.entries(this.content.contents)) {
+          if(!unique.includes(unique.includes(value['template'].title))) {
+            unique.push(value['template'].title);
+          }
+        }
+
+        const unique2 = [];
+        for(let [key, value] of Object.entries(this.content.contents)) {
+          if(!unique2.includes(unique2.includes(value['template'].id))) {
+            unique2.push(value['template'].id);
+          }
+        }
         // The id needs to be sorted since the database is unsorted right now
-        this.unique2.sort()
+        unique2.sort()
         // Set active for the first available template
-        this.active = this.unique2[0];
+        this.active = unique2[0];
 
       } else if(page.parent)  {
         this.content = menus.find(menu => menu.id === page.parent.id);
         // Works the same way as previous if statement
-        var element = {};
-        this.unique = [...new Set(this.content.contents.map(contentItem => {
-          element = contentItem.template.title;
-          return element;
-        }))]
-        this.unique2 = [...new Set(this.content.contents.map(contentItem => {
-          element2 = contentItem.template.id;
-          return element2;
-        }))]
+        const unique = [];
+        for(let [key, value] of Object.entries(this.content.contents)) {
+          if(!unique.includes(unique.includes(value['template'].title))) {
+            unique.push(value['template'].title);
+          }
+        }
+        const unique2 = [];
+        for(let [key, value] of Object.entries(this.content.contents)) {
+          if(!unique2.includes(unique2.includes(value['template'].id))) {
+            unique2.push(value['template'].id);
+          }
+        }
 
-        this.unique;
-        this.unique2.sort();
-        this.active = this.unique2[0]
+        unique2.sort();
+        this.active = unique2[0]
 
       } else {
         return;
@@ -118,9 +123,6 @@ export class PageComponent {
         active: false
       }
     }
-
-    if(page == activePage) return true
-
   }
 
   // Checking to find unique id for template
