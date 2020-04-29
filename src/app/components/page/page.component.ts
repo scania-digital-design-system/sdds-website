@@ -17,7 +17,7 @@ FIXME: title should fetch from the template not direct in the html, h1 for homep
 
 @Component({
   template: `
-  <h1 *ngIf="!content.title.includes('home')">{{content.title}}</h1>
+  <h1 *ngIf="!content.title.includes('Home')">{{content.title}}</h1>
   <ul *ngIf="content.contents.length > 1" class="nav" id="myTab">` +
   templates.map((page: Template) => `
     <li *ngIf="templateCheckId(${page.id})" class='nav-item'>
@@ -42,21 +42,22 @@ export class PageComponent {
   templates: any = {};
   active: any;
 
-
   constructor(public ps: PageService) {
 
     ps.page.subscribe((page: Page) => {
 
-      if(Object.keys(page).length == 0){
+      if(Object.keys(page).length == 0) {
         return;
       } else {
+
         if(page.hasOwnProperty('id')){
           this.content = menus.find(menu => menu.id === page.id);
           // For sovling the unique id and title for every template
           this.objFilter();
-        } else if(page.hasOwnProperty('parent') && page.parent)  {
+
+        } else if(page.hasOwnProperty('parent') && page.parent) {
+
           this.content = menus.find(menu => menu.id === page.parent.id);
-          // Works the same way as previous if statement
           this.objFilter();
 
         } else {
@@ -66,17 +67,27 @@ export class PageComponent {
     });
   }
 
+  // Filter obj for unique title and ids
   objFilter() {
     const templateTitleArr = [];
     const templateIdArr = [];
 
-    for(let [key, contentItem] of Object.entries(this.content.contents)) {
-      if(!templateTitleArr.includes(templateTitleArr.includes(contentItem['template'].title))) {
+    for(let contentItem of this.content.contents) {
+      console.log(contentItem['template'].id, contentItem['template'].title);
+      if(!templateTitleArr.includes(contentItem['template'].title)) {
         templateTitleArr.push(contentItem['template'].title);
         templateIdArr.push(contentItem['template'].id);
       }
+
     }
-    this.sortContent(templateIdArr);
+    this.activeTab(templateIdArr);
+  }
+
+  activeTab(arr) {
+    //Sort the template IDs
+    arr.sort();
+    // Set active for first element
+    this.active = arr[0];
   }
 
   // Checking to find unique id for template
@@ -85,33 +96,9 @@ export class PageComponent {
     return templateid;
   }
 
-  sortContent(arr) {
-    //Sort the template ids for the picked content
-    arr.sort();
-    // Set active for the first available template
-    this.active = arr[0];
-  }
-
-/*  ngOnInit() {
-   // TODO: Would be nice if we could use this instead. But then we
-   // need to figure out a way to let us know when this $ is available
-
-    let $ = window.CorporateUi.$;
-    $(() => {
-      $('a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
-        console.log(
-          e.target, // newly activated tab
-          e.relatedTarget // previous active tab
-        );
-        this.tabChange();
-      });
-    });
-  } */
-
-
   // Set active class on element
   dynamicActiveState(page, activePage) {
-    if(page == activePage){
+    if(page == activePage) {
       return {
         active: true
       }
@@ -132,4 +119,21 @@ export class PageComponent {
       eventValue: tabTitle
     });
   }
+
+/*  ngOnInit() {
+   // TODO: Would be nice if we could use this instead. But then we
+   // need to figure out a way to let us know when this $ is available
+
+    let $ = window.CorporateUi.$;
+    $(() => {
+      $('a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
+        console.log(
+          e.target, // newly activated tab
+          e.relatedTarget // previous active tab
+        );
+        this.tabChange();
+      });
+    });
+  } */
+
 }
