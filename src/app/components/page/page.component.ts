@@ -73,7 +73,6 @@ export class PageComponent {
     const templateIdArr = [];
 
     for(let contentItem of this.content.contents) {
-      console.log(contentItem['template'].id, contentItem['template'].title);
       if(!templateTitleArr.includes(contentItem['template'].title)) {
         templateTitleArr.push(contentItem['template'].title);
         templateIdArr.push(contentItem['template'].id);
