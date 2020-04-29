@@ -34,3 +34,18 @@ export class SortASCPipe implements PipeTransform {
     return list.sort((a,b) => a['title'] > b['title'] ? 1 : -1)
   }
 }
+
+@Pipe({ name: 'dateFormat' })
+export class DatePipe implements PipeTransform {
+
+  transform(event:Date): string {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const fullTime = new Date(event);
+    const dd = fullTime.getDate();
+    const MMM = months[fullTime.getMonth()];
+    const YYY = fullTime.getFullYear();
+    const hh = fullTime.getHours();
+    const mins = fullTime.getMinutes();
+    return  dd + ' ' + MMM + ' ' + YYY+ ' ' + hh + ':' + (mins<10 ? ('0' + mins) : mins);
+  }
+}

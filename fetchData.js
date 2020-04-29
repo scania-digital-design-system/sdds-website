@@ -20,6 +20,7 @@ query {
         id
         title
         text
+        updated_at
       }
       template {
         id
