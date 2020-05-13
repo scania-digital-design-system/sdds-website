@@ -9,38 +9,44 @@ import { menus } from '../../data/content.json';
 declare let gtag: Function;
 
 /*
-TODO: add possbility to send link direkt connected with tab - button#style
-TODO: Indexing the tab menu from the database
-FIXME: Add disabled state
+TODO: add possbility to send link direkt connected with tab - button#style (URL anchor on tab)
 FIXME: title should fetch from the template not direct in the html, h1 for homepage needs to be removed now
 */
 
 @Component({
   template: `
-  <h1 *ngIf="!content.title.includes('Home')">{{content.title}}</h1>
-  <ul *ngIf="content.contents.length > 1" class="nav" id="myTab">` +
-  templates.map((page: Template) => `
-    <li *ngIf="templateCheckId(${page.id})" class='nav-item'>
-      <a class='nav-link' data-toggle='tab' (click)="tabChange(content, '${page.title}')" [ngClass]="dynamicActiveState(${page.id}, active)" href='#section-${page.id}'> ${page.title} </a>
+  <h1 *ngIf='!content.title.includes("Home")'>{{content.title}}</h1>
+  <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
+    <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
+      <a 
+      [ngClass]='("nav-link " + (index===0 ? "active" : "") + (pagePart.active ? "" : "disabled"))'
+      data-toggle='tab' [href]='"#tab" + pagePart.id'
+      >{{pagePart.title}}</a>
     </li>
-  `).join('')
-  + "</ul>" +
-  "<div class='tab-content'>" +
-  templates.map((page: Template) => `
-    <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane tab-${page.id}" id='section-${page.id}'>
-      <div *ngFor='let item of content.contents'>
-        <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
+  </ul>
+  <div class='tab-content'>
+    <div [id]='"tab" + pagePart.id'
+      *ngFor='let pagePart of content.pageStructure; let index = index'
+      [ngClass]='("tab-pane " + (index===0 ? "active" : ""))'
+      role='tabpanel'>
+      `
+      +
+      templates.map((page: Template) => `
+      <div *ngFor='let item of pagePart.pageContent'>
+      <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
       </div>
-    </section>
-  `).join('')
-  + '</div>',
+      `).join('')
+      +
+      `
+      <p class='last-updated'>Last modified {{pagePart.last_updated | dateFormat}}</p>
+    </div>
+  </div>
+  `,
   styleUrls: ['./page.component.scss']
 })
 
 export class PageComponent {
   content: any = {};
-  templates: any = {};
-  active: any;
 
   constructor(public ps: PageService) {
 
@@ -52,60 +58,24 @@ export class PageComponent {
 
         if(page.hasOwnProperty('id')){
           this.content = menus.find(menu => menu.id === page.id);
-          // For sovling the unique id and title for every template
-          this.objFilter();
-
         } else if(page.hasOwnProperty('parent') && page.parent) {
-
           this.content = menus.find(menu => menu.id === page.parent.id);
-          this.objFilter();
-
         } else {
           return;
         }
       }
+      this.renderLastUpdated();
     });
   }
 
-  // Filter obj for unique title and ids
-  objFilter() {
-    const templateTitleArr = [];
-    const templateIdArr = [];
-
-    for(let contentItem of this.content.contents) {
-      if(!templateTitleArr.includes(contentItem['template'].title)) {
-        templateTitleArr.push(contentItem['template'].title);
-        templateIdArr.push(contentItem['template'].id);
-      }
-
-    }
-    this.activeTab(templateIdArr);
-  }
-
-  activeTab(arr) {
-    //Sort the template IDs
-    arr.sort();
-    // Set active for first element
-    this.active = arr[0];
-  }
-
-  // Checking to find unique id for template
-  templateCheckId(pageId) {
-    let templateid = this.content.contents.find(item => item.template.id == pageId)
-    return templateid;
-  }
-
-  // Set active class on element
-  dynamicActiveState(page, activePage) {
-    if(page == activePage) {
-      return {
-        active: true
-      }
-    } else {
-      return {
-        active: false
-      }
-    }
+  renderLastUpdated(){
+    this.content.pageStructure.forEach(part => {
+      let newTime = new Date(Math.max.apply(null, part.pageContent.map(function(e) {
+        console.log(e.content.title, e.content.updated_at)
+        return new Date(e.content.updated_at);
+      })));
+      part.last_updated = newTime;
+    });
   }
 
   tabChange(page, tabTitle) {
@@ -119,20 +89,22 @@ export class PageComponent {
     });
   }
 
-/*  ngOnInit() {
-   // TODO: Would be nice if we could use this instead. But then we
-   // need to figure out a way to let us know when this $ is available
+  // ngOnInit() {
+  //  // TODO: Would be nice if we could use this instead. But then we
+  //  // need to figure out a way to let us know when this $ is available
+  //  document.addEventListener('bsReady', function(event) {      
+  //   let $ = window['CorporateUi'].$;    
+  //   $(() => {
+  //     $('a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
+  //       console.log(
+  //         e.target, // newly activated tab
+  //         e.relatedTarget // previous active tab
+  //       );
+  //       this.tabChange()
+  //     });
+  //   });
+  // });
 
-    let $ = window.CorporateUi.$;
-    $(() => {
-      $('a[data-toggle="tab"]').on('shown.bs.tab', (e) => {
-        console.log(
-          e.target, // newly activated tab
-          e.relatedTarget // previous active tab
-        );
-        this.tabChange();
-      });
-    });
-  } */
+  // } 
 
 }
