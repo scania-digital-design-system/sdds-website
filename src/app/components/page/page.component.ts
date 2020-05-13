@@ -31,9 +31,9 @@ TODO: add possbility to send link direkt connected with tab - button#style (URL 
       `
       +
       templates.map((page: Template) => `
-      <div *ngFor='let item of pagePart.pageContent'>
-      <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
-      </div>
+      <ng-container *ngFor='let item of pagePart.pageContent'>
+        <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
+      </ng-container>
       `).join('')
       +
       `
