@@ -20,8 +20,8 @@ query {
         id
         title
         sections {
+          sectionTitle
           describe
-          sectionId
           hidden
         }
         updated_at
