@@ -10,12 +10,11 @@ declare let gtag: Function;
 
 /*
 TODO: add possbility to send link direkt connected with tab - button#style (URL anchor on tab)
-FIXME: title should fetch from the template not direct in the html, h1 for homepage needs to be removed now
 */
 
 @Component({
   template: `
-  <h1 *ngIf='!content.title.includes("Home")'>{{content.title}}</h1>
+  <h1 class='page-title'>{{content.title}}</h1>
   <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
     <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
       <a 
@@ -70,9 +69,8 @@ export class PageComponent {
 
   renderLastUpdated(){
     this.content.pageStructure.forEach(part => {
-      let newTime = new Date(Math.max.apply(null, part.pageContent.map(function(e) {
-        console.log(e.content.title, e.content.updated_at)
-        return new Date(e.content.updated_at);
+      let newTime = new Date(Math.max.apply(null, part.pageContent.map(function(data) {
+        return new Date(data.content.updated_at);
       })));
       part.last_updated = newTime;
     });
