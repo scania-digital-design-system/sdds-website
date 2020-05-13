@@ -1,9 +1,9 @@
-<div class='row' *ngFor='let type of example.text | split:"\r?\n-\r?\n"'>
+<div class='row' *ngFor='let type of example.describe | split:"\r?\n-\r?\n"'>
   <div class="col-12">
 
     <!-- Title -->
     <div class="row">
-      <h4 class="mb-5">{{example.title}}</h4>
+      <h4 class="mb-5">{{example.sectionId}}</h4>
     </div>
 
     <!-- Example -->

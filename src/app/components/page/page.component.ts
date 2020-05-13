@@ -17,7 +17,7 @@ FIXME: title should fetch from the template not direct in the html, h1 for homep
 
 @Component({
   template: `
-  <h1 *ngIf="!content.title.includes('Home')">{{content.title}}</h1>
+  <h1 *ngIf="!content.title.includes('home')">{{content.title}}</h1>
   <ul *ngIf="content.contents.length > 1" class="nav" id="myTab">` +
   templates.map((page: Template) => `
     <li *ngIf="templateCheckId(${page.id})" class='nav-item'>
@@ -29,7 +29,9 @@ FIXME: title should fetch from the template not direct in the html, h1 for homep
   templates.map((page: Template) => `
     <section [ngClass]="dynamicActiveState(${page.id}, active)" class="tab-pane tab-${page.id}" id='section-${page.id}'>
       <div *ngFor='let item of content.contents'>
-        <ng-template [ngIf]='"${page.id}" == item.template.id'>${page.text}</ng-template>
+        <ng-template [ngIf]='"${page.id}" == item.template.id'>
+          <section *ngFor="let section of item.content.sections">${page.text}</section>
+        </ng-template>
       </div>
     </section>
   `).join('')

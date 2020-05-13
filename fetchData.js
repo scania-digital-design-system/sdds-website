@@ -19,7 +19,11 @@ query {
       content {
         id
         title
-        text
+        sections {
+          describe
+          sectionId
+          hidden
+        }
         updated_at
       }
       template {
