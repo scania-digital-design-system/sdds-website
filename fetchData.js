@@ -62,7 +62,11 @@ fragment menu on Menu {
 fragment detail on Content {
   id
   title
-  text
+  sections {
+    sectionTitle
+    describe
+    hidden
+  }
   updated_at
 }
 
