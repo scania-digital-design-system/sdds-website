@@ -15,21 +15,32 @@ const content = `
 query {
   menus {
     ...menu
-    contents {
-      content {
+    showTabs
+    pageStructure {
+      __typename
+      ... on ComponentPagePluginTab {
         id
-        title
-        sections {
-          sectionTitle
-          describe
-          hidden
+        title : tabTitle
+        active : enableTab
+        pageContent: tabContent {
+          content {
+            ...detail
+          }
+          template {
+            ...template
+          }
         }
-        updated_at
       }
-      template {
+      ... on ComponentPagePluginArticle {
         id
-        title
-        text
+        pageContent {
+          content {
+            ...detail
+          }
+          template {
+            ...template
+          }
+        }
       }
     }
     submenus {
@@ -46,6 +57,23 @@ fragment menu on Menu {
     id
     url
   }
+}
+
+fragment detail on Content {
+  id
+  title
+  sections {
+    sectionTitle
+    describe
+    hidden
+  }
+  updated_at
+}
+
+fragment template on Template {
+  id
+  title
+  text
 }
 `;
 
