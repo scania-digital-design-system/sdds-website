@@ -64,7 +64,7 @@ fragment detail on Content {
   title
   sections {
     sectionTitle
-    describe
+    description
     hidden
   }
   updated_at
