@@ -3,12 +3,12 @@
     {
       "id": "1",
       "title": "Usage",
-      "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p><p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
+      "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
     },
     {
       "id": "2",
       "title": "Code",
-      "text": "<section class='container' code-example [example]='item.content' toggleCode='true'></section>"
+      "text": "<section class='container' code-example [example]='section' toggleCode='true'></section>"
     },
     {
       "id": "6",
@@ -16,49 +16,24 @@
       "text": "Coming soon!"
     },
     {
-      "id": "9",
-      "title": "Install Corporate-UI",
-      "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p><p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
-    },
-    {
-      "id": "8",
-      "title": "Install Scania-Theme",
-      "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p><p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
+      "id": "12",
+      "title": "Homepage",
+      "text": "<p [innerHTML]='section.description | markdown | keepHtml'></p>"
     },
     {
       "id": "7",
       "title": "Icon list",
-      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <article>\n    <p class=\"lead\" [innerHTML]='item.content.text | markdown | keepHtml'></p>\n  </article>\n</div>\n\n<section>\n  <div class=\"row\" icon-list></div>\n</section>\n\n<p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
-    },
-    {
-      "id": "3",
-      "title": "Technical documentation",
-      "text": "<section class='container' *ngIf='item.content.info'><strong>Technical documentation</strong><table class='table'><thead><tr><th>Name</th><th>Description</th><th>Type</th><th>Value</th></tr></thead><tbody><tr *ngFor='let info of item.content.info; index as i'><td>{{info.title}}</td><td>{{info.docs}}</td><td>{{info.type}}</td><td>{{info.default}}</td></tr></tbody></table></section>"
-    },
-    {
-      "id": "10",
-      "title": "Migration Guide",
-      "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p><p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
-    },
-    {
-      "id": "4",
-      "title": "Preview thumbnail",
-      "text": "Thumbnail"
+      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n  <article>\n    <p class=\"lead\" [innerHTML]='section.description | markdown | keepHtml'></p>\n  </article>\n</div>\n\n<section>\n  <div class=\"row\" icon-list></div>\n</section>"
     },
     {
       "id": "5",
       "title": "List subpages",
-      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n    <p class=\"lead\" [innerHTML]='item.content.text | markdown | keepHtml'></p>\n</div>\n\n<section style=\"margin-top: 12.5rem;\">\n<h1 style=\"margin-bottom: 8rem;\">Overview</h1>\n  <div class=\"row\">\n    <div class=\"col-lg-4 col-md-6 col-xl-3 col-sm-12 col-xs-12 mb-5 d-flex\" *ngFor=\"let sub of content.submenus | sortASC; index as i;\">\n      <a [routerLink]=\"sub.url\" class=\"card\">\n        <div class=\"card-body\">\n          <img alt=\"{{sub.title}}\" src=\"{{sub.thumbnail.url}}\" *ngIf=\"sub.thumbnail\" />\n          <h4>{{sub.title}}</h4>\n        </div>\n      </a>\n    </div>\n  </div>\n</section>"
-    },
-    {
-      "id": "12",
-      "title": "Homepage",
-      "text": "<p [innerHTML]='item.content.text | markdown | keepHtml'></p>"
+      "text": "<!-- Temporarly we put this div containing \"Article text template\" \nin here. We will remove this later, when we rewrite tab setup -->\n<div> \n    <p class=\"lead\" [innerHTML]='section.description | markdown | keepHtml'></p>\n</div>\n\n<section style=\"margin-top: 12.5rem;\">\n<h1 style=\"margin-bottom: 8rem;\">Overview</h1>\n  <div class=\"row\">\n    <div class=\"col-lg-4 col-md-6 col-xl-3 col-sm-12 col-xs-12 mb-5 d-flex\" *ngFor=\"let sub of content.submenus | sortASC; index as i;\">\n      <a [routerLink]=\"sub.url\" class=\"card\">\n        <div class=\"card-body\">\n          <img alt=\"{{sub.title}}\" src=\"{{sub.thumbnail.url}}\" *ngIf=\"sub.thumbnail\" />\n          <h4>{{sub.title}}</h4>\n        </div>\n      </a>\n    </div>\n  </div>\n</section>"
     },
     {
       "id": "11",
       "title": "Colour",
-      "text": "<section color-list [content]='item.content.text'></section><p class='last-updated'>Last modified <span [innerHTML]='item.content.updated_at | dateFormat'></span></p>"
+      "text": "<section color-list [content]='section.description'></section>"
     }
   ]
 }
