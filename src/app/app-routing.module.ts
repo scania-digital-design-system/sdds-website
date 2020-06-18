@@ -13,6 +13,8 @@ import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
 import { CodeExampleComponent } from './components/code-example/code-example.component';
+import { TabComponent } from './components/page/tab/tab.component';
+import { TabContentComponent } from './components/page/tab-content/tab-content.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,16 @@ import { CodeExampleComponent } from './components/code-example/code-example.com
     PageComponent,
     ModalComponent,
     TogglerComponent,
+    TabComponent,
+    TabContentComponent,
     ColorListComponent,
     IconListComponent,
     CodeExampleComponent
   ],
-  entryComponents: [PageComponent],
+  entryComponents: [
+    PageComponent,
+    TabComponent,
+    TabContentComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -51,7 +58,10 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
+      console.log(items)
       const routes = this.contentToRoute(items);
+
+      console.log(routes);
 
       this.router.resetConfig([
         ...routes,
@@ -81,10 +91,22 @@ export class AppRoutingModule {
 
   contentToRoute(items) {
     return items.reduce((accumulator, item, index) => {
-      let route:any = { path: item.url, component: PageComponent };
+      let route:any;
 
-      if(item.submenus) route.children = this.contentToRoute(item.submenus);
-
+      if(!item.submenus) {
+        route = { path: item.url }
+        route.children = [
+          { path: '', component: TabContentComponent },
+          { path: ':id', component: TabContentComponent }
+        ];
+      } else {
+        route = { path: item.url, component: PageComponent };
+      }
+      
+      if(item.submenus) {
+        route.children = this.contentToRoute(item.submenus);
+      }
+      
       let routes = [ route ];
       // Keep this comment for investigating purpose regarding route.path, this doesn't work for parent route
       // if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });

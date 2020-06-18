@@ -13,17 +13,20 @@ TODO: add possbility to send link direkt connected with tab - button#style (URL 
 */
 
 @Component({
-  template: `
+  templateUrl:`
   <h1 class='page-title'>{{content.title}}</h1>
   <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
-    <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
+  <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
       <a 
       [ngClass]='("nav-link " + (index===0 ? "active" : "") + (pagePart.active ? "" : "disabled"))'
-      data-toggle='tab' [href]='"#tab" + pagePart.id'
+      data-toggle='tab'
+      [routerLink]="generateUrl(content.title, pagePart.title)"
       >{{pagePart.title}}</a>
-    </li>
+  </li>
   </ul>
+
   <div class='tab-content'>
+  <router-outlet></router-outlet>
     <div [id]='"tab" + pagePart.id'
       *ngFor='let pagePart of content.pageStructure; let index = index'
       [ngClass]='("tab-pane " + (index===0 ? "active" : ""))'
@@ -53,6 +56,9 @@ export class PageComponent {
 
     ps.page.subscribe((page: Page) => {
 
+      console.log('menus', menus)
+      console.log(page)
+
       if(Object.keys(page).length == 0) {
         return;
       } else {
@@ -65,8 +71,15 @@ export class PageComponent {
           return;
         }
       }
+      console.log('content', this.content)
       this.renderLastUpdated();
     });
+  }
+
+  generateUrl(parent, child) {
+    parent = parent.toLowerCase();
+    child = child.toLowerCase().replace(/\s/g,'-') 
+    return parent + '/' + child;
   }
 
   renderLastUpdated(){

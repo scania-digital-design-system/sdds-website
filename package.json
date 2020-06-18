@@ -6,7 +6,7 @@
     "start": "npm run angular",
     "build": "npm run data && ng build",
     "link": "npm link corporate-ui && npm link scania-theme",
-    "angular": "npm run data && ng serve --configuration es5 --disable-host-check --port 1337",
+    "angular": "ng serve --configuration es5 --disable-host-check --port 1337",
     "jekyll": "npm run build && cd dist && jekyll serve --port 1337",
     "deploy": "npm run build && gh-pages -d dist",
     "data": "node ./fetchData.js",
