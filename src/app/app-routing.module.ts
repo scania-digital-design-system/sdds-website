@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
 
 import { PageService } from './app.service';
-import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe } from './app.pipe';
+import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe, GenerateTabURLPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
 import { ModalComponent } from './components/modal/modal.component';
@@ -13,7 +13,6 @@ import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
 import { CodeExampleComponent } from './components/code-example/code-example.component';
-import { TabComponent } from './components/page/tab/tab.component';
 import { TabContentComponent } from './components/page/tab-content/tab-content.component';
 
 @NgModule({
@@ -23,10 +22,10 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
     SplitPipe,
     SortASCPipe,
     MarkdownPipe,
+    GenerateTabURLPipe,
     PageComponent,
     ModalComponent,
     TogglerComponent,
-    TabComponent,
     TabContentComponent,
     ColorListComponent,
     IconListComponent,
@@ -34,8 +33,8 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
   ],
   entryComponents: [
     PageComponent,
-    TabComponent,
-    TabContentComponent],
+    TabContentComponent
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -58,10 +57,8 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
-      console.log(items)
-      const routes = this.contentToRoute(items);
 
-      console.log(routes);
+      const routes = this.contentToRoute(items);
 
       this.router.resetConfig([
         ...routes,

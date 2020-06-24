@@ -49,3 +49,11 @@ export class DatePipe implements PipeTransform {
     return  dd + ' ' + MMM + ' ' + YYY+ ' ' + hh + ':' + (mins<10 ? ('0' + mins) : mins);
   }
 }
+
+@Pipe({ name: 'generateTabUrl' })
+export class GenerateTabURLPipe implements PipeTransform {
+
+  transform(url: String) {
+    return url.toLowerCase().replace(/\s/g,'-');
+  }
+}
