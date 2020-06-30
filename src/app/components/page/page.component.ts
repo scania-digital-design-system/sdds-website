@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { PageService } from '../../app.service';
 import { Page, Template } from '../../app.interface';
@@ -8,39 +9,36 @@ import { menus } from '../../data/content.json';
 
 declare let gtag: Function;
 
-/*
-TODO: add possbility to send link direkt connected with tab - button#style (URL anchor on tab)
-*/
-
 @Component({
-  template: `
+  template:`
   <h1 class='page-title'>{{content.title}}</h1>
   <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
-    <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
+  <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
       <a 
-      [ngClass]='("nav-link " + (index===0 ? "active" : "") + (pagePart.active ? "" : "disabled"))'
-      data-toggle='tab' [href]='"#tab" + pagePart.id'
+      [ngClass]='("nav-link " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
+      data-toggle='tab'
+      routerLinkActive="active"
+      [routerLink]="content.url + '/' + (pagePart.title | generateTabUrl)"
       >{{pagePart.title}}</a>
-    </li>
+  </li>
   </ul>
+
   <div class='tab-content'>
-    <div [id]='"tab" + pagePart.id'
-      *ngFor='let pagePart of content.pageStructure; let index = index'
-      [ngClass]='("tab-pane " + (index===0 ? "active" : ""))'
-      role='tabpanel'>
-      `
-      +
-      templates.map((page: Template) => `
-      <ng-container *ngFor='let item of pagePart.pageContent'>
-        <ng-template [ngIf]='"${page.id}" == item.template.id'>
-	        <section *ngFor="let section of item.content.sections">${page.text}</section>
-	      </ng-template>
-      </ng-container>
-      `).join('')
-      +
-      `
-      <p class='last-updated'>Last modified {{pagePart.last_updated | dateFormat}}</p>
+    <router-outlet></router-outlet>
+    <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
+    `
+    +
+    templates.map((page: Template) => `
+    <ng-container *ngFor='let item of tabContent.pageContent'>
+      <ng-template [ngIf]='"${page.id}" == item.template.id'>
+        <section *ngFor="let section of item.content.sections">${page.text}</section>
+      </ng-template>
+    </ng-container>
+    `).join('')
+    +
+    `
     </div>
+    <p class='last-updated'>Last modified {{lastUpdate | dateFormat}}</p>
   </div>
   `,
   styleUrls: ['./page.component.scss']
@@ -48,10 +46,15 @@ TODO: add possbility to send link direkt connected with tab - button#style (URL 
 
 export class PageComponent {
   content: any = {};
+  tabContent: any = {};
+  lastUpdate;
+  tabActive;
 
-  constructor(public ps: PageService) {
+  constructor(public ps: PageService, private route: Router) {
 
     ps.page.subscribe((page: Page) => {
+      // If URL is default page then show first tab as active (for example components/badge/)
+      this.tabActive = this.route.url.split('/').length === 3 ? true : false;
 
       if(Object.keys(page).length == 0) {
         return;
@@ -59,22 +62,32 @@ export class PageComponent {
 
         if(page.hasOwnProperty('id')){
           this.content = menus.find(menu => menu.id === page.id);
+          // If page is not a parent and tabs not exist then show content (for example Home, Support, Contribution)
+          this.tabContent = page.parent.id===undefined && !this.content.showTabs ? this.content.pageStructure[0] : [];
+
         } else if(page.hasOwnProperty('parent') && page.parent) {
           this.content = menus.find(menu => menu.id === page.parent.id);
+          // If page nested inside parent then show content (for example Definitions, Typography, etc.)
+          this.tabContent = this.content.pageStructure[0];
         } else {
           return;
         }
       }
       this.renderLastUpdated();
     });
+    
   }
 
   renderLastUpdated(){
+    let newTime;
     this.content.pageStructure.forEach(part => {
-      let newTime = new Date(Math.max.apply(null, part.pageContent.map(function(data) {
-        return new Date(data.content.updated_at);
-      })));
-      part.last_updated = newTime;
+      if(part.pageContent.length > 0) {
+         newTime = new Date(Math.max.apply(null, part.pageContent.map(function(data) {
+          return new Date(data.content.updated_at);
+        })));
+      }
+      
+      this.lastUpdate = newTime;
     });
   }
 

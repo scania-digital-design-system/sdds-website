@@ -1,0 +1,12 @@
+<h1 class='page-title'>{{content.title}}</h1>
+<ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
+<li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
+    <a 
+    [ngClass]='("nav-link " + (index===0 ? "active" : "") + (pagePart.active ? "" : "disabled"))'
+    data-toggle='tab'
+    [routerLink]="generateUrl(content.title, pagePart.title)"
+    >{{pagePart.title}}</a>
+</li>
+</ul>
+
+<router-outlet></router-outlet>
