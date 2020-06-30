@@ -27,6 +27,7 @@ export class MainComponent {
 
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
+        this.parent = {};
         const paths = route.urlAfterRedirects.substr(1).split('?')[0].split('/');
 
         this.page = this.getPage(this.menus, paths);
