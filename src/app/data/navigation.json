@@ -277,7 +277,10 @@
               "id": "52",
               "url": "cookie",
               "title": "Cookie",
-              "thumbnail": null
+              "thumbnail": {
+                "id": "84",
+                "url": "https://sdds-cms.s3.amazonaws.com/89e8391f1d08414bae6e3c77e09b140b.png"
+              }
             }
           ]
         },
