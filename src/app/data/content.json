@@ -67,91 +67,6 @@
       ]
     },
     {
-      "id": "52",
-      "url": "cookie",
-      "title": "Cookie",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "41",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "131",
-                "title": "Cookie",
-                "sections": [
-                  {
-                    "sectionTitle": null,
-                    "description": "Coming soon!",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-04-21T10:16:45.059Z"
-              },
-              "template": {
-                "id": "1",
-                "title": "Usage",
-                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "42",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "132",
-                "title": "Cookie Example",
-                "sections": [
-                  {
-                    "sectionTitle": "Cookie Example",
-                    "description": "<c-cookie headline=\"Cookie Confidentiality Agreement\" inline=\"true\" main-button-primary=\"Accept\" main-button-secondary=\"cookie-settings\" modal-button-primary=\"Save Preferences\" modal-button-secondary=\"Cancel\">\n\n      <p slot=\"main\">När du visar den här webbplatsen eller någon annan webbplats som länkas från den här webbplatsen kan vi spara lite information på din dator i form av en ”cookie”. \n        Scania använder bland annat cookies för att registrera besökarstatistik och för att låta användaren välja språk när han eller hon söker efter ett begagnat fordon på vår webbplats.\n\n        Du kan ställa in datorn på att blockera cookies. Det innebär dock att vi inte kan garantera att alla delar av webbplatsen fungerar som de ska. Hur du blockerar cookies beror på vilken webbläsare du använder. Välj ”Hjälp” eller en motsvarande meny i webbläsaren om du behöver anvisningar.\n\n        Kontakt\n        Om du har några frågor, tveka inte att kontakta oss på <a href=\"mailto:kontakt@scania.com\">kontakt@scania.com</a>\n      </p>\n      <div text=\"Necessary Cookies\" mandatory=\"true\" checked=\"true\" type=\"necessary\" slot=\"config\">\n        <p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <a class=\"btn-link\" href=\"#.html\" target=\"_blank\" slot=\"link\">Full integrity and cookie policy <i class=\"fa fa-external-link scania-icomoon-icon scania-icomoon-icon-external-link\"></i></a>\n    </c-cookie>\n\n<!-- Possibility to remove cookie, remove this line if copied -->\n<button class='btn btn-primary mt-5 ' onclick='(function(){CorporateUi.Cookie.remove(\"ConfidentialityAgreement\")})()'>Remove Cookie</button>\n<button class='btn btn-secondary mt-5' onclick='(function(){document.querySelector(\"c-cookie\").open=true})()'>Open Modal</button>",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-04-22T07:14:46.737Z"
-              },
-              "template": {
-                "id": "2",
-                "title": "Code",
-                "text": "<section class='container' code-example [example]='section' toggleCode='true'></section>"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "43",
-          "title": "Style",
-          "active": false,
-          "pageContent": [
-            {
-              "content": {
-                "id": "45",
-                "title": "Styling",
-                "sections": [],
-                "updated_at": "2020-03-19T08:07:06.151Z"
-              },
-              "template": {
-                "id": "6",
-                "title": "Style",
-                "text": "Coming soon!"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "37",
       "url": "design",
       "title": "Design",
@@ -1908,124 +1823,6 @@
       "submenus": []
     },
     {
-      "id": "36",
-      "url": "development",
-      "title": "Development",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "5",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "54",
-                "title": "Development",
-                "sections": [
-                  {
-                    "sectionTitle": null,
-                    "description": "Scania Digital Design System is designed to assist developers in providing sustained optimal velocity in their work. To get this advantage, please have a look at the [component section](components) where you can find code blocks for most of the UI components (if not all) being used in digital solutions across Scania.\n\nAdditionally, Scania Digital Design System also continues to offer access and support to Corporate UI with ongoing responsibility of its maintenance.\n\nAs you can imagine, such resources are in constant need of upgradation and therefore the Scania Design System encourages [contribution](contribution) from Scania development community. \n",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-06-04T10:31:50.026Z"
-              },
-              "template": {
-                "id": "1",
-                "title": "Usage",
-                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "7",
-          "title": "Install Corporate-UI",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "128",
-                "title": "Install Corporate-UI",
-                "sections": [
-                  {
-                    "sectionTitle": null,
-                    "description": "# Corporate UI\n\n<p class=\"lead\"> Corporate-UI is a UI toolbox to make it possible to create and use web-components. </p>\n\n<section>\n\n## Demo pages\n\n[Simple HTML ↗](https://codepen.io/corporate-ui/pen/OYmqpr) | [Angular ↗](https://github.com/scania/corporate-ui-angular) | [React ↗](https://github.com/scania/corporate-ui-react) | [Vue ↗](https://github.com/scania/corporate-ui-vue)\n\n</section>\n<section>\n\n## Quick start\n\nSeveral options to add corporate-ui in the project: \n<details open>\n<summary><strong>NPM</strong></summary>\n   <br/>\n\n   Install corporate-ui via NPM package by running the command below.\n\n   ```\n   npm i corporate-ui\n   ```\n\n   Import component as a module with `defineCustomElements` function.\n\n   ```js\n   import { defineCustomElements } from 'corporate-ui';\n\n   defineCustomElements();\n   ```\n</details>\n\n<details>\n<summary><strong>CDN</strong></summary>\n   <br/>\n\n   Add link to the script by adding the following to the head\n\n   ```\n   <script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n   ```\n   Replace `x` with [available releases](https://github.com/scania/corporate-ui/releases).\n</details>\n\nSee all available components in the [Scania Digital Design System](https://digitaldesign.scania.com/components) component section.\n\n</section>\n<section>\n\n## Styling\n\nTo apply Scania styles, you need to add a theme package and use `c-theme` component. Check out [Scania theme repository](https://github.com/scania/scania-theme/) for detail documentation.\n\n</section>\n<section>\n\n## Browser support\n\n- Chrome (and all Chromium based browsers)\n- Firefox\n- IE 11+\n- Edge\n- Safari\n\n</section>\n<section>\n\n## Contributing\n\nPlease read through our [contributing guidelines](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md) for the directions to **develop components**, **create a pull request** and **coding standard**.\n\n- [Report bug](https://github.com/scania/corporate-ui/issues/new/choose)\n- [Request feature](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22)\n\n</section>\n<section>\n\n## Community\n\nGet in touch with the team and the community:\n- [Join us on slack](https://join.slack.com/t/corporate-ui/shared_invite/enQtNTI4NzMzOTQ3NTg4LTI1OGNhZGE2OTY0NzUwYzExMTJmMTQ2NjcxOTdkMjc0NDhlM2JlYTEyODY2ODJjYzUxNmYxNzhhMTQ5MDhmOWQ)\n- [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac)\n\n</section>\n<section>\n\n## License\n\nAll CSS, HTML and JS code are available under the MIT license. The Scania brand identity, logos and photographs found in this repository are copyrighted Scania CV AB and are not available on an open source basis or to be used as examples or in any other way, if not specifically ordered by Scania CV AB.\n\n</section>",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-06-04T11:14:40.799Z"
-              },
-              "template": {
-                "id": "1",
-                "title": "Usage",
-                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "6",
-          "title": "Install Scania Theme",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "129",
-                "title": "Install Scania-Theme",
-                "sections": [
-                  {
-                    "sectionTitle": null,
-                    "description": "\n\n# Scania Theme\n\n<p class=\"lead\"> Scania theme is a package to style Scania looks and feel in the Corporate-UI </p>\n\n<section>\n\n## Installation\n\n<details open>\n <summary><strong>NPM package</strong></summary>\n<br/>\n \nInstall scania-theme package by running the command below.\n \n```shell\nnpm i scania-theme\n```\n\nImport theme in the project and use it with addTheme function from corporate-ui.\n\n```js\nimport { defineCustomElements, addTheme } from 'corporate-ui'; \nimport { theme as scania } from 'scania-theme'; \n \ndefineCustomElements(); \naddTheme(scania);\n```\n\n</details>\n\n<details>\n<summary><strong>CDN link</strong></summary>\n<br/>\n \nAdd link to the script by adding the following to the head element. Make sure to include scania-theme script BEFORE the corporate-ui script.\n \n```html\n<script src=\"https://static.scania.com/build/global/themes/scania/1.x/scania-theme.js\"></script>\n<script src=\"https://static.scania.com/build/global/4.x/corporate-ui.js\"></script>\n```\n\nReplace `x` with [available releases](https://www.npmjs.com/package/scania-theme).\n\n</details>\n\n</section>\n<section>\n\n## Setup in project\n\nInitialize the theme with the `c-theme` component. Set `global` attribute to true in order to enable bootstrap styling.\n\n```html\n<c-theme name=\"scania\" global=\"true\"></c-theme>\n```\n</section>\n<section>\n\n## Setup local development\n\n1. Clone scania-theme repository\n\n```shell\ngit clone https://github.com/scania/scania-theme.git\n```\n\n2. Download and install node.js: https://nodejs.org/en/\n3. If you're behind a firewall, CONFIGURE THE PROXY\n4. From the scania-theme folder, run `npm i` to install package dependencies\n5. Start the local setup by running `npm start`\n6. Scania theme scripts will be served on http://localhost:1338/scania-theme.js\n\n</section>\n<section>\n\n## License\n\nThe Scania brand identity and the interaction patterns found in this repository are not available on an open source basis. Although we have great freedom to make improvements and new components, some changes to interaction patterns and use of colours etc may not be approved.\n\n</section>",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-06-04T11:15:46.867Z"
-              },
-              "template": {
-                "id": "1",
-                "title": "Usage",
-                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "8",
-          "title": "Migration guide from V3 to V4 ",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "130",
-                "title": "Corporate UI Migration Guide v3 to v4",
-                "sections": [
-                  {
-                    "sectionTitle": null,
-                    "description": "# Corporate UI Migration Guide v3 to v4\n\n<section>\n\n## Before update\n\n<input type='checkbox' id='1' name='1' /> <label for='1'>Install or add script for scania-theme together with corporate-ui latest version. </label>\n[Installation guide](https://digitaldesign.scania.com/getting-started/development)\n\n<input type='checkbox' id='2' name='2' /> <label for='2'>Bootstrap has been upgraded to v4. Check your project if you use any Bootstrap 3 features. </label>\nCheck out [Bootstrap migration guide](https://getbootstrap.com/docs/4.0/migration/) for the things you need to apply to your project.\n\n<input type='checkbox' id='3' name='3' /> <label for='3'>We are now using Bootstrap 4 JS instead of Bootstrap Native library for all JS components that Bootstrap includes. </label>\nYou can find out more about Bootstrap 4 JS [here](https://getbootstrap.com/docs/4.0/getting-started/javascript/)\n\n<input type='checkbox' id='4' name='4' /> <label for='4'>We have moved from Polymer to Stencil to create custom elements. Remove any dependencies to Polymer if there's any. </label>\n\n</section>\n\n<section>\n\n## Migration guide checklist\n\n<input type='checkbox' id='5' name='5' /> <label for='5'>Add c-theme component in HTML body</label>\n`<c-theme name=\"scania\" global=\"true\"></c-theme>`\n\n<input type='checkbox' id='6' name='6' /> <label for='6'>Update custom element name </label>\n-   c-corporate-header >> c-header\n-   c-main-navigation >> c-navigation\n-   c-main-content >> c-content\n-   c-corporate-footer>> c-footer\n-   c-social-media is deprecated, use c-icon instead to generate social media icons'\n\nCheck out all components guideline in corporate-ui 4.0 [See all available components](https://digitaldesign.scania.com/components)\n\n<input type='checkbox' id='7' name='7' /> <label for='7'>`nav-item` is deprecated. We use slot instead of nav-item inside c-header and c-navigation. You can put an `a` element to replace `nav-item`. </label> Example:\n```html\n<c-header site-name='App'>\n  <a href='global' slot='items'>global</a>\n</c-header>\n```\n\n<input type='checkbox' id='8' name='8' /> <label for='8'>`primary-items` and `secondary-items` in main navigation is now used as a slot name.  </label> Example:\n```html\n<c-navigation>\n  <a href='/' slot='primary-items' active=''>home</a>\n  <a href='/user' slot='secondary-items'>user</a>\n</c-navigation>\n```\n\n<input type='checkbox' id='9' name='9' /> <label for='9'>Dealer header component </label>\n\nIn corporate-ui v3, dealer header component was used as a variation in the c-corporate-header. It is now a separated component. Use `c-dealer-header` instead. [Read more documentation here](https://digitaldesign.scania.com/components/header)\n   \n<input type='checkbox' id='10' name='10' /> <label for='10'>FontAwesome icons </label>\n\nFontAwesome is no longer provided in corporate-ui. Replace FontAwesome with your own FontAwesome license or replace with our new icon set. [See all available Scania icons](https://digitaldesign.scania.com/foundation/icons)\n\n</section>",
-                    "hidden": null
-                  }
-                ],
-                "updated_at": "2020-06-04T11:16:10.019Z"
-              },
-              "template": {
-                "id": "1",
-                "title": "Usage",
-                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "2",
       "url": "home",
       "title": "Home",
@@ -2113,7 +1910,32 @@
                 "sections": [
                   {
                     "sectionTitle": "",
-                    "description": "Coming soon!",
+                    "description": "<p class=\"lead\"> Logotype is a graphic representation of a company name or initials that is designed conscuiusly to reflect values and attributes associated with the company. Logotype is not the same as logomark which is a graphic representation, in form of a symbolic image or icon, of the company.</p>",
+                    "hidden": null
+                  },
+                  {
+                    "sectionTitle": "Scania Wordmark",
+                    "description": "<img width=\"200\" src=\"https://static.scania.com/resources/logotype/scania/scania-wordmark.svg\" alt=\"Scania Wordmark \">",
+                    "hidden": null
+                  },
+                  {
+                    "sectionTitle": "Scania Wordmark Negative",
+                    "description": "<img width=\"200\" margin=\"40\" style='background-color: #2D2926' src=\"https://static.scania.com/resources/logotype/scania/scania-wordmark-white.svg\" alt=\"Scania Wordmark Negative\">",
+                    "hidden": null
+                  },
+                  {
+                    "sectionTitle": "Scania Symbol",
+                    "description": "<img width=\"100\" height='200' src=\"https://static.scania.com/resources/logotype/scania/scania-symbol.svg\" alt=\"Scania Symbol\">",
+                    "hidden": null
+                  },
+                  {
+                    "sectionTitle": "Resources",
+                    "description": "For usage, first download Scania Symbol or Scania Wordmark or both (as the case may be)\n\n- Scania Wordmark [Download](https://static.scania.com/resources/logotype/scania/scania-wordmark.svg)\n- Scania Wordmark Negative [Download](https://static.scania.com/resources/logotype/scania/scania-wordmark-white.svg) \n- Scania Symbol [Download](https://static.scania.com/resources/logotype/scania/scania-symbol.svg) ",
+                    "hidden": null
+                  },
+                  {
+                    "sectionTitle": "Example",
+                    "description": "<c-header site-name='App 1'>\n  <a href='global' slot='items'>global</a>\n</c-header>\n\n\n- For placement, size, paddings and margins of Scania Symbol as well as Scania Wordmark, please refer to [Header](https://digitaldesign.scania.com/components/header/code)",
                     "hidden": null
                   }
                 ],
@@ -2953,6 +2775,94 @@
       "submenus": []
     },
     {
+      "id": "52",
+      "url": "cookie",
+      "title": "Cookie",
+      "thumbnail": {
+        "id": "84",
+        "url": "https://sdds-cms.s3.amazonaws.com/89e8391f1d08414bae6e3c77e09b140b.png"
+      },
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "41",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "131",
+                "title": "Cookie",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "Coming soon!",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-04-21T10:16:45.059Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "42",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "132",
+                "title": "Cookie Example",
+                "sections": [
+                  {
+                    "sectionTitle": "Cookie Example",
+                    "description": "<c-cookie headline=\"Cookie Confidentiality Agreement\" inline=\"true\" main-button-primary=\"Accept\" main-button-secondary=\"cookie-settings\" modal-button-primary=\"Save Preferences\" modal-button-secondary=\"Cancel\">\n\n      <p slot=\"main\">När du visar den här webbplatsen eller någon annan webbplats som länkas från den här webbplatsen kan vi spara lite information på din dator i form av en ”cookie”. \n        Scania använder bland annat cookies för att registrera besökarstatistik och för att låta användaren välja språk när han eller hon söker efter ett begagnat fordon på vår webbplats.\n\n        Du kan ställa in datorn på att blockera cookies. Det innebär dock att vi inte kan garantera att alla delar av webbplatsen fungerar som de ska. Hur du blockerar cookies beror på vilken webbläsare du använder. Välj ”Hjälp” eller en motsvarande meny i webbläsaren om du behöver anvisningar.\n\n        Kontakt\n        Om du har några frågor, tveka inte att kontakta oss på <a href=\"mailto:kontakt@scania.com\">kontakt@scania.com</a>\n      </p>\n      <div text=\"Necessary Cookies\" mandatory=\"true\" checked=\"true\" type=\"necessary\" slot=\"config\">\n        <p>These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <div text=\"Functional Cookies\" checked=\"false\" type=\"functional\" slot=\"config\">\n        <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.</p>\n      </div>\n      <a class=\"btn-link\" href=\"#.html\" target=\"_blank\" slot=\"link\">Full integrity and cookie policy <i class=\"fa fa-external-link scania-icomoon-icon scania-icomoon-icon-external-link\"></i></a>\n    </c-cookie>\n\n<!-- Possibility to remove cookie, remove this line if copied -->\n<button class='btn btn-primary mt-5 ' onclick='(function(){CorporateUi.Cookie.remove(\"ConfidentialityAgreement\")})()'>Remove Cookie</button>\n<button class='btn btn-secondary mt-5' onclick='(function(){document.querySelector(\"c-cookie\").open=true})()'>Open Modal</button>",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-04-22T07:14:46.737Z"
+              },
+              "template": {
+                "id": "2",
+                "title": "Code",
+                "text": "<section class='container' code-example [example]='section' toggleCode='true'></section>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "43",
+          "title": "Style",
+          "active": false,
+          "pageContent": [
+            {
+              "content": {
+                "id": "45",
+                "title": "Styling",
+                "sections": [],
+                "updated_at": "2020-03-19T08:07:06.151Z"
+              },
+              "template": {
+                "id": "6",
+                "title": "Style",
+                "text": "Coming soon!"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "25",
       "url": "https://www.scania.com/ux-library/en/home.html",
       "title": "ComOn editors",
@@ -3218,6 +3128,151 @@
       "submenus": []
     },
     {
+      "id": "36",
+      "url": "development",
+      "title": "Development",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "5",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "54",
+                "title": "Development",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "Scania Digital Design System is designed to assist developers in providing sustained optimal velocity in their work. To get this advantage, please have a look at the [component section](components) where you can find code blocks for most of the UI components (if not all) being used in digital solutions across Scania.\n\nAdditionally, Scania Digital Design System also continues to offer access and support to Corporate UI with ongoing responsibility of its maintenance.\n\nAs you can imagine, such resources are in constant need of upgradation and therefore the Scania Design System encourages [contribution](contribution) from Scania development community. \n",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-06-04T10:31:50.026Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "7",
+          "title": "Get started",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "128",
+                "title": "Get started",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "# Setup for Corporate-UI and Scania-Theme\n\n  This is a tutorial how to setup a project with Corporate-UI components with Scania-theme styling.\n\n  Corporate UI is a toolbox with **UI components** that makes it easier to use reusable and modular components for your application. For examples, header, footer, buttons, and dropdowns.\n\n  Scania-theme is a package that contains Scania specific styling for everyone of those components in Corporate UI toolbox. Every component has a unique styling with Scania look and feel.\n\n\n## Components\n\n Header,footer or a button are all components in our Design System, the difference between them is how they technically made.\n\n `<c-header></c-header>` is a web component, while a `<button> Click Me </button>` is a regular HTML element that already exist in the HTML Standard. One easy thing to differentiate between those is by looking at the dash in the element name, for example \"c-header\", that indicates it is a web-component.\n\n A web component can be used in the same way as a regular element in the HTML standard. Difference is what is under the hood. You can read more about it here https://developer.mozilla.org/en-US/docs/Web/Web_Components\n\n All web-components in Scania digital design system have namespace with  `<c-nameOfComponent>`\n\n## Audience\n\nThis is for developers working with web application and have knowledge about web development. Components are available for **react**,**angular** and **vue**\n\nWe have setup a few example repositories for react, angular and vue\n - [React]()\n - [Angular]()\n - [Vue]()\n\n\n ## Stencil\n\n To be able to create a component in Corporate-Ui you need to understand what tool we are using to make it happened. We are using a **Web Component compiler** called [StencilJS](https://stenciljs.com/docs/introduction). This is the core for our components and how we build them. You can read more in Stencil documentation.\n\n StencilJS contains features like:\n\n  - Virtual DOM\n  - TypeScript\n  - JSX\n\n  Example component:\n\n  ```javascript\n\n    import { Component, Prop, h } from '@stencil/core';\n\n    @Component({\n    tag: 'my-component',\n    })\n    export class MyComponent {\n\n      // Indicate that name should be a public property on the component\n      @Prop() name: string;\n\n      render() {\n        return (\n          <p>\n            My name is {this.name}\n          </p>\n        );\n      }\n    }\n\n  ```\n\n## Prerequisties\n\n  - Node.js 8 and up(Latest stable)\n  - Node packages manager(NPM) for our packages handling\n  - Git installed\n  - [Github]() account access\n  - If you are behind firewall, configure proxy\n\n  How to install Node you can find in their [documentation]() and same regarding [Npm](https://docs.npmjs.com/) and [Git](). If you are unfamiliar with npm and node, we recommend that you read more about it in their documentation.After Node.js,npm and git is installad, you can continue!\n\n  Commands to help you see if you have installed these tools:\n  ```bash\n  > node -v\n    v12.18.0\n  ```\n  ```bash\n  > npm -v\n    6.4.1\n  ```\n  ```bash\n  > git --version\n    git version 2.17.0.windows.1\n  ```\n\n  If you come across any problems during this installation guide or feel something needs to be more clear, please contact us our report a issue in our [github]()\n\n## How to use Corporate-ui and Scania-theme\n\nDo the following steps:\n\n  Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.\n   ```bash\n  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme\n  ```\n\nYou need to import ` { addTheme, defineCustomElements } ` from Corporate-Ui package and ` { theme } ` from Scania-theme package after you haver installed them (See section Installing npm packages).\n\n\n### React\n\n  1. In React you can go to src/index.js and import the packages Corporate-Ui and Scania-theme.\n\n ```Javascript\n\n  import { addTheme, defineCustomElements } from 'corporate-ui'\n  import { theme } from 'scania-theme'\n\n ```\n\n2. You need to call `defineCustomElements()`\n\n ```Javascript\n  defineCustomElements();\n ```\n\n3. After that you need to call `addTheme()` , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n\n ```Javascript\n  addTheme(theme)\n ```\n\n\n### Angular\n\n1.  In Angular, go to **main-ts**(or some other appropriate place), and import the packages Corporate-Ui and Scania-theme.\n\n  ```Javascript\n    import { AppModule } from './app/app.module';\n    import { environment } from './environments/environment';\n    //Import for Corporate-Ui and Scania-theme\n    import { defineCustomElements, addTheme } from 'corporate-ui'\n    import { theme } from 'scania-theme'\n  ```\n\n2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add `CUSTOM_ELEMENTS_SCHEMA` inside app.module.ts\n\n  ```Javascript\n    import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n\n    @NgModule({\n      declarations: [\n        AppComponent,\n      ],\n      imports: [\n        BrowserModule\n      ],\n      providers: [],\n      bootstrap: [AppComponent],\n      schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n    })\n\n  ```\n\n3. Inside **main.ts**, You need to call `defineCustomElements()`\n\n  ```Javascript\n    defineCustomElements();\n  ```\n\n4. After that you need to call `addTheme()` , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n\n  ```Javascript\n    addTheme(theme)\n  ```\n\n\n### Vue\n\n1. In Vue, go to **main.js** and import the packages Corporate-Ui and Scania-theme\n\n  ```Javascript\n    import Vue from 'vue'\n    import App from './App.vue'\n    //Import Corporate-Ui and Scania-theme\n    import { addTheme, defineCustomElements } from 'corporate-ui'\n    import { theme } from 'scania-theme'\n\n  ```\n\n2. In the **main.js** you also need to tell the application to ignore custom-element tags such as `<c-header>` by adding this line. Otherwise a warning will be thrown in the console.\n\n  ```Javascript\n  //Ignore all components custom-elements named c-*\n  Vue.config.ignoredElements = [/c-\\w*/];\n  ```\n\n3. You need to call `defineCustomElements()`\n\n  ```Javascript\n    defineCustomElements();\n  ```\n\n4. After that you need to call `addTheme()` , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n\n  ```Javascript\n    addTheme(theme)\n  ```\n\n## Add theming\n\n  When former step (How to use Corporate-Ui and Scania-Theme) is done, you can start adding theme to get the styling. Try and add `<c-theme>` component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.\n\n ```Javascript\n  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }\n\n  ```\n\n\n## Add header,content and footer\n\nAfter theme is added(Add theming) is done, you can add components `<c-header>`,`<c-content>` and `<c-footer>` in that order. After that you should see the header and footer. Content component will push down the footer below the content.\n\n  ```Javascript\n    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }\n\n  `\n",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-09-02T12:46:44.089Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "6",
+          "title": "Creating a component",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "129",
+                "title": "Creating a component",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "# Creating a component\n\n**Please read this section before you start (link to how to use it).**\n\n## Fork\n\nTo clone you need to have access to [Github]()\n\nTo contribute with a improvement or new component you need to [fork]() our project and make a pull-request from that repository. Reason for that security, so unauthorized people can't push code directly to our repository. To be able to for you need a github account.\n\n1. To fork can use the easiest way by just clicking the image on the top right corner called fork [image](). You can also do it with cli to achieve this.\n2. You can go your your own profile on github and find your fork there\n3. After the fork is done you can start cloning the project locally to you computer\n\n## Clone\n\nAfter you have forked you can start cloning. Go to your cli enviorment and do the following:\n\n  Clone both repositories from you fork\n\n##### Corporate-ui\n\n   ```bash\n    > git clone https://github.com/<username>/corporate-ui.git\n    > cd corporate-ui\n  ```\n\n##### Scania-theme\n\n  ```bash\n    > git clone https://github.com/<username>/scania-theme.git\n    > cd scania-theme\n  ```\n\n## Installing npm packages\n\nAfter the cloning is done, it is time to install all the npm packages. This packages are modules that we are using for different reasons, for example bootstrap, redux and other packages. You can find all our packages in our **package.json** file.\n\nTo install our packages you need to be in your project folder, where your package.json file is run `npm install` or `npm i`:\n\n##### Corporate-ui:\n\n  ```bash\n    > cd corporate-ui\n    > npm install\n  ```\n\n##### Scania-theme:\n\n  ```bash\n    > cd scania-theme\n    > npm install\n  ```\n\n**Warnings(warn) might apprear, often it isn't anything causing problems*\n\n## Building Corporate-UI and Scania-Theme\n\nWhen you are done with install all the npm packages, it is time to build Corporate-ui and Scania-theme. You will do this by running the command `npm run build`. You can find all our commands in package.json file inside `\"scripts\": { }`.\n\n##### Corporate-ui\n\n  ```bash\n    > npm run build\n  ```\n\n  This will build the components with their functionality without any scania styling. For example the header,footer and so on.\n\n##### Scania-theme\n\n  ```bash\n    > npm run build\n  ```\n\n  This will build the styling for every component with scania styling.\n\n**Warnings(warn) might apprear, often it isn't anything causing problems*\n\n## Npm link for Corporate-UI and Scania-Theme\n\n  When you have built Corporate-UI and Scania-Theme it is time to make is possible to use it locally in your own application. These step might look a bit confusing, but you will need to do this. This will create a symlink with your corporate-ui and scania-theme folders instead of using the npm version that you will install. This will make it possible to work locally with corporate-ui and scania-theme\n\n  This [linking](https://docs.npmjs.com/cli/link) will create a symlink with your local corporate-ui and scania-theme packages which makes it possible to use those packages.\n\n  Do the following steps:\n\n  1.  Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.\n   ```bash\n    > cd <You project folder>\n    > npm i corporate-ui\n    > npm i scania-theme\n  ```\n\n  SCREENSHOT of packages file\n\n  2. Go to your corporate-ui folder and create a symlink of corporate-ui\n  ```bash\n    > cd corporate-ui\n    > npm link\n  ```\n\n  3. Go to your scania-theme folder and create a symlink of corporate-ui\n  ```bash\n    > cd scania-theme\n    > npm link\n  ```\n\n  4. Go back to your project directory which has corporate-ui and scania-theme installed. This time we will use the `npm link <repo name>` command again, but this will create the actual symlink for Corporate-ui and Scania-theme packages in your project.\n\n   ```bash\n    > cd <Your project folder>\n    > npm link corporate-ui\n    > npm link scania-theme\n  ```\n\n  After this is done, you will be able to run your local Corporate-Ui and Scania-theme.\n\n## Creating a new component\n\n\n### Component (Corporate UI)\n\n  Before you start develop a component, don't forget to link Corporate-Ui and Scania, follow the steps in Npm link section\n\n  1. To create a new component you need to go your forked **Corporate-Ui** folder and go to `/src/components/`. Don't forget to create a npm link with both Corporate-Ui and Scania-theme. Create a new folder inside `/src/components/` with the name of the component.\n\n  2. Create a new file called the same as your component, make it a **.tsx** file\n\n  3. Go to the your components .tsx file and import the core function for component called `Components` and `h` \n\n  ```Javascript\n    import { Component, h } from '@stencil/core';\n  ```\n\n  4. Now it is time to name your component, add the following line below the import. The `tag` property is where you need the component you are creating. We have rule when naming, you need to use a \"c-\" before the component name.\n\n  ```Javascript\n  @Component({\n    tag:'c-new-component' // Name of the component <c-new-component>\n  })\n  ```\n  5. Next step is to add the class for the component. Create a class and export it.\n\n  ```Javascript\n    export class NewComponent {\n        //Component\n    }\n  ```\n\n  6. Inside the class add the `render()` function, this is where you return your elements HTML structure. Inside the `render()` you return a tree structure of your component. You **need** to have the html nested inside a parent element on highest level, and you can't have two on the highest level.\n\n   ```Javascript\n    export class NewComponent {\n      // Add Render()\n      render() {\n        return(\n          // Add your HTML inside the return\n          <div>\n              Cool Component!\n          </div>\n        )\n      }\n    }\n  ```\n\n  7. Add your Component in your application\n\n  ```HTML\n    <section>\n      <h3>A Title of the page React</h3>\n      <!--  Add your new component here-->\n      <c-new-component></c-new-component>\n      <!-- Your application content goes here -->\n    </section>\n  ```\n\n\n  8. For the default (non-scania) styling you need to add a another file called `new-component.scss`. This file will contain all non related styling that might come with the component. This styling will follow the component even if you don't use the scania-theme. Keep this file in the same folder as your component `src/components/\"new-component\"/`. For example a component that should have a dropdown function might be able to use bootstraps global dropdown css. That should be in this file then.\n\n  ```Javascript\n    @Component({\n      tag:'c-new-component',\n      styleUrl: 'new-component.scss'\n      })\n  ```\n\n  9. Inside the `@Component` decorator you need to add another property called `shadow: true`. This will make the component isolated and not effected by the reset of the global styling.\n\n  ```Javascript\n    @Component({\n      tag:'c-new-component',\n      styleUrl: 'new-component.scss',\n      shadow: true\n    })\n  ```\n\n  10. How to add properties,states or watches you can look at the stencil documentation. Here is an example of a hello world component.\n\n  ```Javascript\n    // Example component\n    import { Component, h, Prop } from '@stencil/core';\n\n    @Component({\n      tag: 'c-new-component',\n      styleUrl: 'new-component.scss',\n      shadow: true,\n    })\n    export class NewComponent {\n      @Prop() text: string = 'Hello World';\n\n      render() {\n        return (\n          <div>\n            <h2>{this.text} component</h2>\n          </div>\n        );\n      }\n    }\n  ```\n\n  If you have done everything correctly you should see the component in Action without any specific styling, otherwise check of errors or see if everything is imported and linked correctly. You can see the \"Problems that might appear\" section\n\n\n### Styling a component\n\n  To be able to use the Scania UI styling(Colors,fonts...) you need to use Scania-theme and add styling from there.\n\n#### How it works\n\nA components get styling from 2 sources. Default styling and scania-theme styling. The default styling set the basic rules and styled in the corporate-ui. Scania-theme is available for the component through the corporate-ui stores. A component need to subscribe to theme store in order to get scania-theme styles. Stencil use adoptedStylesheet to compile a component that has a `shadow:True` property. We create a helper called themeStyle to add scania-theme as an adoptedStylesheet. Read more about [adoptedStylesheet](https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets) \n\n\n#### Style components\n\n1. Default style in corporate-ui. Go to `components/new-component/new-component.scss` inside corporate-ui. You can add any default styling that this component should contain. When you have added styling you just rebuild corporate-ui that you have linked and it should give you the new styling.\n\n  ```SCSS\n   // Example\n    :host {\n      color: red;\n    }\n  ```\n\n\n2.  Getting styles from scania-theme. Before you can use your styling from scania-theme, you need to add some Stencil decorators. Go to your components tsx file, `new-component.tsx`. These decorators are created to handle how we add the styling for the component, so it doesn't leak out to other parts of the application.  And also to access styling from scania-theme that is available in corporate-ui store.\n\n ```Javascript\n  //Example\n\n  export class NewComponent {\n    // Add this before the render method\n    @Prop({ context: 'store' }) ContextStore: any;\n\n    @Prop({ mutable: true }) theme: string;\n\n    @State() store: any;\n\n    @State() tagName: string;\n\n    @State() currentTheme = { components: [] };\n\n    @State() style: Array<CSSStyleSheet>;\n\n    @Element() el;\n\n ```\n\n3. When you have add the correct decorators, you can add a watcher for the theme property.\n \n ```Javascript\n   @Watch('theme')\n      setTheme(name = undefined) {\n      this.theme = name || this.store.getState().theme.current;\n      this.currentTheme = this.store.getState().theme.items[this.theme];\n    }\n  ```\n\n4.  You need to import a helper function called `themeStyle`. This function is used to integrate styling from store to be an adoptedStylesheet in the component. Read more about [adoptedStylesheet](https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets).\n```Javascript\n    import { themeStyle } from '../../helpers/themeStyle';\n```\n\n5. Before the render function you need to add method `componentWillLoad()` and `componentDidLoad() `. This will set the theme for your component.\n```Javascript\n  componentWillLoad() {\n    this.store = this.ContextStore || (window as any).CorporateUi.store;\n\n    this.setTheme(this.theme);\n\n    this.store.subscribe(() => {\n      this.setTheme();\n\n      themeStyle(this.currentTheme, this.tagName, this.style, this.el);\n    });\n\n    if (!(this.el && this.el.nodeName)) return;\n\n    this.tagName = this.el.nodeName.toLowerCase();\n  }\n\n  componentDidLoad() {\n\n    this.style = this.el.shadowRoot.adoptedStyleSheets || [];\n\n    themeStyle(this.currentTheme, this.tagName, this.style, this.el);\n\n  }\n```\n\n6. Edit styling in scania-theme. Go to `src/styles/elements/c-new-component.scss` in scania-theme. Inside this file you will add everything Scania related, like colors, fonts ,buttons or any other elements that you might use in your component. Look at the `styles/variables.scss` to see which colors, font-size and other styling that exist.\n\n  ```SCSS\n    //Example\n    @import '../variables'; // Scania variables\n    @import '../components/button'; //Scania button\n    @import '../utilities/typography'; //Scania font styling\n\n    :host {\n      // You need to add both css variables and scss variables to support IE( https://caniuse.com/#feat=css-variables )\n      font-family: $font-family-base;\n      font-size: $font-size-base;\n\n      color: $primary; // You need to add both for IE suport\n      color: Var(--primary);\n\n      margin: 2rem;\n      padding: 3rem;\n    }\n  ```\n\n7. If you want to use boostrap styling you need to add the basic foundation, like bootstrap variables. Some of these are required. You can also import styling from other elements for example button and so on.\n\n  ```SCSS\n    // Required\n    @import 'node_modules/bootstrap/scss/functions';\n    @import 'node_modules/bootstrap/scss/variables';\n    @import 'node_modules/bootstrap/scss/mixins';\n    @import 'node_modules/bootstrap/scss/transitions';\n\n    // Optional (example)\n    @import 'node_modules/bootstrap/scss/reboot';\n    @import 'node_modules/bootstrap/scss/buttons';\n\n    @import '../../components.scss'; //Setting box-model\n\n    :host {\n      color: red;\n    }\n  ```\n\n8. For example, if you have a button inside your component, you cannnot get the styling from the global css because it is inside a shadowDom. Then, you can import the css as mentioned in step 5. Below is the example of a button inside a component and it will still get Scania styling.\n\n  ```JSX\n   return[\n      <div>\n        <h1>Cool Headline</h1>\n        <button class=\"btn btn-primary\">Click Me!</button>\n        <p>Awesome text</p>\n      </div>\n    ]\n  ```\n\n  9. Application example in angular, you should see two primary buttons, one inside the component and one outside using the same styling from scania-theme.\n\n   ```HTML\n      <c-theme name='scania' global='true'></c-theme>\n      <c-header></c-header>\n      <c-content>\n        <section>\n          <button class=\"btn btn-primary\">Accept</button>\n          <c-new-component></c-new-component>\n          <!-- Your application content goes here -->\n        </section>\n      </c-content>\n      <c-footer></c-footer>\n   ```\n\n  Screenshot added\n\nIf you have added everything above, you should see a button with the scania primary color from scania-theme.\n\n",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-09-02T13:27:58.359Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "8",
+          "title": "Migration guide from V3 to V4 ",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "130",
+                "title": "Corporate UI Migration Guide v3 to v4",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "# Corporate UI Migration Guide v3 to v4\n\n<section>\n\n## Before update\n\n<input type='checkbox' id='1' name='1' /> <label for='1'>Install or add script for scania-theme together with corporate-ui latest version. </label>\n[Installation guide](https://digitaldesign.scania.com/getting-started/development)\n\n<input type='checkbox' id='2' name='2' /> <label for='2'>Bootstrap has been upgraded to v4. Check your project if you use any Bootstrap 3 features. </label>\nCheck out [Bootstrap migration guide](https://getbootstrap.com/docs/4.0/migration/) for the things you need to apply to your project.\n\n<input type='checkbox' id='3' name='3' /> <label for='3'>We are now using Bootstrap 4 JS instead of Bootstrap Native library for all JS components that Bootstrap includes. </label>\nYou can find out more about Bootstrap 4 JS [here](https://getbootstrap.com/docs/4.0/getting-started/javascript/)\n\n<input type='checkbox' id='4' name='4' /> <label for='4'>We have moved from Polymer to Stencil to create custom elements. Remove any dependencies to Polymer if there's any. </label>\n\n</section>\n\n<section>\n\n## Migration guide checklist\n\n<input type='checkbox' id='5' name='5' /> <label for='5'>Add c-theme component in HTML body</label>\n`<c-theme name=\"scania\" global=\"true\"></c-theme>`\n\n<input type='checkbox' id='6' name='6' /> <label for='6'>Update custom element name </label>\n-   c-corporate-header >> c-header\n-   c-main-navigation >> c-navigation\n-   c-main-content >> c-content\n-   c-corporate-footer>> c-footer\n-   c-social-media is deprecated, use c-icon instead to generate social media icons'\n\nCheck out all components guideline in corporate-ui 4.0 [See all available components](https://digitaldesign.scania.com/components)\n\n<input type='checkbox' id='7' name='7' /> <label for='7'>`nav-item` is deprecated. We use slot instead of nav-item inside c-header and c-navigation. You can put an `a` element to replace `nav-item`. </label> Example:\n```html\n<c-header site-name='App'>\n  <a href='global' slot='items'>global</a>\n</c-header>\n```\n\n<input type='checkbox' id='8' name='8' /> <label for='8'>`primary-items` and `secondary-items` in main navigation is now used as a slot name.  </label> Example:\n```html\n<c-navigation>\n  <a href='/' slot='primary-items' active=''>home</a>\n  <a href='/user' slot='secondary-items'>user</a>\n</c-navigation>\n```\n\n<input type='checkbox' id='9' name='9' /> <label for='9'>Dealer header component </label>\n\nIn corporate-ui v3, dealer header component was used as a variation in the c-corporate-header. It is now a separated component. Use `c-dealer-header` instead. [Read more documentation here](https://digitaldesign.scania.com/components/header)\n   \n<input type='checkbox' id='10' name='10' /> <label for='10'>FontAwesome icons </label>\n\nFontAwesome is no longer provided in corporate-ui. Replace FontAwesome with your own FontAwesome license or replace with our new icon set. [See all available Scania icons](https://digitaldesign.scania.com/foundation/icons)\n\n</section>",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-06-04T11:16:10.019Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "99",
+          "title": "Troubleshooting",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "137",
+                "title": "Troubleshooting",
+                "sections": [
+                  {
+                    "sectionTitle": null,
+                    "description": "## Troubleshooting\n\n**If you can't clone (Timeout, access for example)**\n\n    - Check so the URL is correct\n    - Are you behind a firewall, configure proxy (4xx error, unable to access)\n\n**Errors install packages with** `npm install`\n\n    - Using recommended Node version. `node -v`\n    - Using recommended NPM version. `npm -v`\n    - Are you behind a firewall, configure proxy (4xx error, unable to access)\n    - Check which version of those packages you are trying to download, if it exist on npm\n\n**Error in creating a link locally with** `npm link`\n\n    - Correct packages name on the npm link\n    - Have you cloned Corporate Ui and/or Scania-Theme\n\n**Missing component or styling**\n\n    - Do you have **Scania-theme installed**\n    - Are you using `<c-theme></c-theme>` component\n    - Check so styling isn't overriden by anything\n    - You created npm link with scania-theme and corporate-ui\n    - Call `defineCustomElements()` and `addTheme()` from Corporate-Ui package\n    - Some version of corporate-ui and scania-theme isn't compatible together\n    - Have you set global attribute to true on `<c-theme global=true>`\n    - Have you set the name attribute to scania(or if you have your own theme) `<c-theme name='scania'>`\n    - Is everything you are using in the component compatible with the browser, you can check [caniuse.com](caniuse.com)\n    - Are you using correct version of Corporate-Ui or Scania-theme, some versions might not contain what you are looking for",
+                    "hidden": null
+                  }
+                ],
+                "updated_at": "2020-09-02T13:30:22.744Z"
+              },
+              "template": {
+                "id": "1",
+                "title": "Usage",
+                "text": "<h4 *ngIf='section.sectionTitle' [innerHTML]='section.sectionTitle | markdown | keepHtml'></h4>\n<p [innerHTML]='section.description | markdown | keepHtml'></p>"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "15",
       "url": "modals",
       "title": "Modals",
@@ -3390,6 +3445,15 @@
           }
         },
         {
+          "id": "52",
+          "url": "cookie",
+          "title": "Cookie",
+          "thumbnail": {
+            "id": "84",
+            "url": "https://sdds-cms.s3.amazonaws.com/89e8391f1d08414bae6e3c77e09b140b.png"
+          }
+        },
+        {
           "id": "39",
           "url": "list-group",
           "title": "List group",
@@ -3406,12 +3470,6 @@
             "id": "71",
             "url": "https://sdds-cms.s3.amazonaws.com/432aad2be9e44732978aee3fcb85984e.png"
           }
-        },
-        {
-          "id": "52",
-          "url": "cookie",
-          "title": "Cookie",
-          "thumbnail": null
         },
         {
           "id": "8",
