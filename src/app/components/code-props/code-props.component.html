@@ -1,0 +1,19 @@
+<div *ngIf='getComponent()'>
+  <h4>tag-name: {{tagName}}</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Props</th>
+        <th>Attr</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let prop of props'>
+        <td>{{prop.name}}</td>
+        <td>{{prop.attr}}</td>
+        <td>{{prop.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
