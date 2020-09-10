@@ -1,17 +1,20 @@
-<div *ngIf='getComponent()'>
-  <h4>tag-name: {{tagName}}</h4>
+<div>
+  <h4>Tag-name: {{tagName}}</h4>
   <table class="table">
     <thead>
       <tr>
-        <th>Props</th>
-        <th>Attr</th>
+        <th>Properties</th>
+        <th>Attribute</th>
+        <th>Description</th>
         <th>Type</th>
       </tr>
     </thead>
     <tbody>
+      <!-- TODO: Look into more in detail what needs to been shown -->
       <tr *ngFor='let prop of props'>
         <td>{{prop.name}}</td>
         <td>{{prop.attr}}</td>
+        <td>{{prop.docs}}</td>
         <td>{{prop.type}}</td>
       </tr>
     </tbody>

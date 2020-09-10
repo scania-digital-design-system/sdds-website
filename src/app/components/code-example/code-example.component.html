@@ -21,4 +21,5 @@
 </div>
 
 <!-- If code-properties is empty don't show -->
-<div code-properties></div>
+<div code-properties (change)='showProps($event)' [hidden]='emptyParent'></div>
+

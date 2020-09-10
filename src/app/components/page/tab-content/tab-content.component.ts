@@ -16,7 +16,7 @@ import { menus } from '../../../data/content.json';
       templates.map((page: Template) => `
       <ng-container *ngFor='let item of tabContent.pageContent'>
         <ng-template [ngIf]='"${page.id}" == item.template.id'>
-	        <section *ngFor="let section of item.content.sections">${page.text}</section>
+          <section *ngFor="let section of item.content.sections">${page.text}</section>
 	      </ng-template>
       </ng-container>
       `).join('')
@@ -28,11 +28,9 @@ import { menus } from '../../../data/content.json';
 })
 
 export class TabContentComponent {
-
   title;
   content: any = {};
   tabContent: any = [];
-  
 
   constructor(
     private route: ActivatedRoute,
@@ -40,7 +38,6 @@ export class TabContentComponent {
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
-    
     ps.page.subscribe((page: Page) => {
 
       if(Object.keys(page).length == 0) {
@@ -56,16 +53,14 @@ export class TabContentComponent {
         const generateUrlPipe = new GenerateTabURLPipe();
 
         if(this.content.showTabs) {
-          
+
           this.tabContent = this.content.pageStructure.find(sub => generateUrlPipe.transform(sub.title) === this.title);
-          
+
           if(this.tabContent === undefined) this.tabContent = this.content.pageStructure[0];
         } else {
           this.tabContent = this.content.pageStructure[0];
         }
       }
-      
-
     });
 
   }
