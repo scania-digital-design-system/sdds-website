@@ -22,7 +22,7 @@ export class CodePropsComponent {
     this.currentCodeSample = elref.nativeElement.parentElement.children;
     this.getComponent();
   }
-  
+
   getComponent() {
     //Retriving the component data from Corporate-Ui
     /* TODO: Look into a better way of compare if the web-component exist,
