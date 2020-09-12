@@ -51,7 +51,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "marked": "^0.7.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "protractor": "~5.4.0",
     "scania-theme": "1.1.2",
     "ts-node": "~7.0.0",
