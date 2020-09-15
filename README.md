@@ -1,48 +1,58 @@
-# Corporate UI Site
-*To run this project locally you will need **NodeJS** locally and for some actions **Ruby**.*
+# Scania Digital Design System
+
+Visit our Design System at [Digital.design.scania.com](https://digitaldesign.scania.com/)
+
+
+## Corporate UI Site
+To run this project locally you will need **NodeJS** locally
 
 Clone this repo, install all dependencies and start the application:
-```
-git clone https://github.com/scania/corporate-ui-site.git
-cd corporate-ui-site
-npm i
-npm start
+```bash
+> git clone https://github.com/scania/corporate-ui-site.git
+> cd corporate-ui-site
+> npm i
+> npm start
 ```
 
 ## Locally setup
+
+Run locally with **Angular**
+```bash
+> cd corporate-ui-site
+> npm i
+> npm start
+```
+
+Visit http://localhost:1337/
+
+## Fetch latest data from Corporate-Ui-CMS
+
+To have access to latest data from our headless cms you need to fetch it with follow command:
+
+```bash
+> cd corporate-ui-site
+> npm run data
+```
+
+## Developing with Corporate-Ui and Scania-Theme
+
 Create npm links of **Corporate Ui** and **Scania theme**
-```
-cd ../corporate-ui
-npm link
-cd ../scania-theme
-npm link
+
+Clone Corporate-UI and Scania-Theme
+```bash
+> cd ../corporate-ui
+> npm link
+> cd ../scania-theme
+> npm link
 ```
 
-Add links to **Corporate Ui** and **Scania theme**
-```
-npm run link
-  // or 
-cd corporate-ui-site
-npm link corporate-ui
-npm link scania-theme
-```
-
-Run locally with either **Angular** or **Jekyll** default is angular
-```
-npm run angular
-```
-You need to have **Ruby** installed then install **Jekyll**
-```
-gem install jekyll bundler
-npm run jekyll
-```
-
-Visit http://localhost:1337/corporate-ui-site/
-
-## Publish updates
-Deploy the package
-```
-npm run deploy
+Add links to **Corporate Ui** and **Scania theme** in Corporate-Ui-site
+```bash
+> npm run link
+  // or
+> cd corporate-ui-site
+> npm link corporate-ui
+> npm link scania-theme
 ```
 
 ## Technical notes

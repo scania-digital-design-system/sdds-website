@@ -8,8 +8,6 @@ import { PageService } from './app.service';
 import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe, GenerateTabURLPipe } from './app.pipe';
 
 import { PageComponent } from './components/page/page.component';
-import { ModalComponent } from './components/modal/modal.component';
-import { TogglerComponent } from './components/toggler/toggler.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
 import { CodeExampleComponent } from './components/code-example/code-example.component';
@@ -24,8 +22,6 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
     MarkdownPipe,
     GenerateTabURLPipe,
     PageComponent,
-    ModalComponent,
-    TogglerComponent,
     TabContentComponent,
     ColorListComponent,
     IconListComponent,
@@ -44,8 +40,7 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
     RouterModule,
     DatePipe,
     MarkdownPipe,
-    SortASCPipe,
-    TogglerComponent
+    SortASCPipe
   ],
   providers: [
     PageService,
