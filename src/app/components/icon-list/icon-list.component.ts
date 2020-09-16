@@ -19,6 +19,7 @@ export class IconListComponent implements OnInit, OnDestroy {
     this.subscribeStore = this.ps.theme.subscribe((item: Theme) => {
       // When data is fetched from outside Angular scope, Zone will let angular know about it
       this.zone.run(() => {
+        if(!item) return;
         this.icons = item.icons;
       });
     });
