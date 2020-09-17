@@ -1,4 +1,4 @@
-import { Component, NgZone, OnInit, OnDestroy } from '@angular/core';
+import { Component, NgZone, OnInit, OnDestroy, Input } from '@angular/core';
 
 import { PageService } from '../../app.service';
 import { Theme } from '../../app.interface';
@@ -10,22 +10,21 @@ import { Theme } from '../../app.interface';
 })
 
 export class IconListComponent implements OnInit, OnDestroy {
-  icons: Object;
+  icons: Array<String> = [];
+  @Input() content: String;
+  category: String;
   subscribeStore;
 
   constructor(private ps: PageService, private zone: NgZone) { }
 
   ngOnInit() {
-    this.subscribeStore = this.ps.theme.subscribe((item: Theme) => {
-      // When data is fetched from outside Angular scope, Zone will let angular know about it
-      this.zone.run(() => {
-        if(!item) return;
-        this.icons = item.icons;
-      });
-    });
-  }
+    // remove whitespaces
+    this.content=this.content.trim();
 
-  ngOnDestroy() {
-    this.subscribeStore.unsubscribe();
+    // assign icons into array
+    this.icons = this.content.split('\n');
+    // icons[0]: "category=xyz" - remove category from array
+    this.icons.shift();
+    
   }
 }
