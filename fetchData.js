@@ -66,6 +66,7 @@ fragment detail on Content {
     sectionTitle
     description
     hidden
+    ContentJSON
   }
   updated_at
 }
