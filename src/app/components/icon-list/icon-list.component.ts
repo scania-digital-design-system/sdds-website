@@ -9,7 +9,7 @@ import { Theme } from '../../app.interface';
   styleUrls: ['./icon-list.component.scss']
 })
 
-export class IconListComponent implements OnInit, OnDestroy {
+export class IconListComponent implements OnInit {
   icons: Array<String> = [];
   @Input() content: String;
   category: String;

@@ -8,7 +8,6 @@ const url = 'http://localhost:1339/graphql';
 const init = () => {
   getData('content', content);
   getData('navigation', navigation);
-  getData('templates', templates);
 };
 
 const content = `
@@ -26,9 +25,6 @@ query {
           content {
             ...detail
           }
-          template {
-            ...template
-          }
         }
       }
       ... on ComponentPagePluginArticle {
@@ -36,9 +32,6 @@ query {
         pageContent {
           content {
             ...detail
-          }
-          template {
-            ...template
           }
         }
       }
@@ -67,13 +60,39 @@ fragment detail on Content {
     description
     hidden
   }
+  section { 
+    __typename
+    ... on ComponentContentPluginIconPreview { 
+      id
+      Icon
+      Description
+    }
+    ... on ComponentContentPluginIconList { 
+      id
+      category
+      iconList
+    }
+    ... on ComponentContentPluginCodeExample { 
+      id
+      title
+      code
+      componentTag
+    }
+    ... on ComponentContentPluginOneColumn {
+      id
+      Title
+      Text
+    }
+    ... on ComponentContentPluginColourList {
+      id
+      colour
+    }
+    ... on ComponentContentPluginOverviewList {
+      id
+      description
+    }
+  }
   updated_at
-}
-
-fragment template on Template {
-  id
-  title
-  text
 }
 `;
 
@@ -102,15 +121,6 @@ fragment menu on Menu {
 }
 `;
 
-const templates = `
-query {
-  templates(sort: "index") {
-    id
-    title
-    text
-  }
-}
-`;
 
 const writeFile = async(data, target) => {
   fs.writeFile(`./src/app/data/${target}.json`, JSON.stringify(data, null, 2), (err) => {
