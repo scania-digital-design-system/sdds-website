@@ -26,7 +26,7 @@ export class CodePropsComponent {
   ngOnInit(){
    //Retriving the component data from Corporate-Ui
     this.component = this.componentDocs._value.find(component => {
-      if(this.currentComponent.ContentJSON && component.tag == this.currentComponent.ContentJSON.componentTag.toLowerCase()) {
+      if(this.currentComponent.componentTag && component.tag == this.currentComponent.componentTag.toLowerCase()) {
         return component;
       }
     })
