@@ -10,8 +10,9 @@ import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe, Generat
 import { PageComponent } from './components/page/page.component';
 import { ColorListComponent } from './components/color-list/color-list.component';
 import { IconListComponent } from './components/icon-list/icon-list.component';
-import { CodeExampleComponent } from './components/code-example/code-example.component';
 import { TabContentComponent } from './components/page/tab-content/tab-content.component';
+import { CodeExampleComponent } from './components/code-example/code-example.component';
+import { CodePropsComponent } from './components/code-props/code-props.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
     TabContentComponent,
     ColorListComponent,
     IconListComponent,
-    CodeExampleComponent
+    CodeExampleComponent,
+    CodePropsComponent
   ],
   entryComponents: [
     PageComponent,

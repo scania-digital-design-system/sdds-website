@@ -55,11 +55,6 @@ fragment menu on Menu {
 fragment detail on Content {
   id
   title
-  sections {
-    sectionTitle
-    description
-    hidden
-  }
   section { 
     __typename
     ... on ComponentContentPluginIconPreview { 

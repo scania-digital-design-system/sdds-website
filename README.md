@@ -1,10 +1,14 @@
 # Scania Digital Design System
 
-Visit our Design System at [Digital.design.scania.com](https://digitaldesign.scania.com/)
+Visit our Design System at [Digitaldesign.scania.com](https://digitaldesign.scania.com/)
 
+
+## How to get started with Corporate-Ui and Scania-theme
+
+For more information how to contribute [Digitaldesign.scania.com/getting-started/](https://digitaldesign.scania.com/getting-started/development)
 
 ## Corporate UI Site
-To run this project locally you will need **NodeJS** locally
+To run this project locally you will need **NodeJS** and **Npm** installed
 
 Clone this repo, install all dependencies and start the application:
 ```bash
