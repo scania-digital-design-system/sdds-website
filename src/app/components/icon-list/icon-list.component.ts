@@ -10,21 +10,26 @@ import { Theme } from '../../app.interface';
 })
 
 export class IconListComponent implements OnInit {
-  icons: Array<String> = [];
-  @Input() content: String;
+  allIcons: Array<String> = [];
+  // @Input() icons: String;
+  @Input() icons: Array<Object>;
   category: String;
-  subscribeStore;
+  currentIcon: Object = {};
 
   constructor(private ps: PageService, private zone: NgZone) { }
 
   ngOnInit() {
+    // list all icons solution
     // remove whitespaces
-    this.content=this.content.trim();
+    // this.icons=this.icons.trim();
+    // assign allIcons into array
+    // this.allIcons = this.icons.split('\n');
+    // allIcons[0]: "category=xyz" - remove category from array
+    // this.allIcons.shift();
+  }
 
-    // assign icons into array
-    this.icons = this.content.split('\n');
-    // icons[0]: "category=xyz" - remove category from array
-    this.icons.shift();
-    
+  openModal(icon) {
+    this.currentIcon = icon;
+    this.currentIcon['code'] = `<c-code-sample><c-icon name="${icon.name}"></c-icon></c-code-sample>`;
   }
 }

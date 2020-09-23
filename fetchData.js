@@ -66,6 +66,9 @@ fragment detail on Content {
       id
       category
       iconList
+      Icons {
+        ...icons
+      }
     }
     ... on ComponentContentPluginCodeExample { 
       id
@@ -88,6 +91,14 @@ fragment detail on Content {
     }
   }
   updated_at
+}
+
+fragment icons on ComponentNestedIcon {
+  id
+  name
+  description
+  usage
+  restriction
 }
 `;
 

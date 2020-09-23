@@ -1,8 +1,26 @@
 .icon {
   text-align: center;
+  
+  &:hover{
+    background-color: #efefef;
+    background-color: var(--light-02);
+    cursor: pointer;
+  }
+
+  c-icon {
+    font-size: 13rem;
+    color: #041e42;
+    width: 100%;
+  }
 }
-c-icon {
-  font-size: 13rem;
-  color: #041e42;
-  width: 100%;
+
+.icon-modal-buttons {
+  .btn {
+    margin-right: 10px;
+  }
+  span {
+    font-size: 1.6rem;
+    margin-right: 5px;
+  }
 }
+
