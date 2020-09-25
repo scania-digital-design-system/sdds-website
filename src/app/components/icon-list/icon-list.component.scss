@@ -24,3 +24,13 @@
   }
 }
 
+.modal {
+  .icon-preview {
+    margin-top: 0;
+  }
+  .last-update {
+    color: #94999d;
+    color: var(--dark-01);
+    font-size: 1.4rem;
+  }
+}

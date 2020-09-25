@@ -96,6 +96,7 @@ fragment detail on Content {
 fragment icons on ComponentNestedIcon {
   id
   name
+  title
   description
   usage
   restriction
