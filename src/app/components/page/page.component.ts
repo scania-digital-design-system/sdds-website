@@ -2,45 +2,14 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { PageService } from '../../app.service';
-import { Page, Template } from '../../app.interface';
+import { Page } from '../../app.interface';
 
-import { templates } from '../../data/templates.json';
 import { menus } from '../../data/content.json';
 
 declare let gtag: Function;
 
 @Component({
-  template:`
-  <h1 class='page-title'>{{content.title}}</h1>
-  <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
-  <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
-      <a 
-      [ngClass]='("nav-link " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
-      data-toggle='tab'
-      routerLinkActive="active"
-      [routerLink]="content.url + '/' + (pagePart.title | generateTabUrl)"
-      >{{pagePart.title}}</a>
-  </li>
-  </ul>
-
-  <div class='tab-content'>
-    <router-outlet></router-outlet>
-    <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
-    `
-    +
-    templates.map((page: Template) => `
-    <ng-container *ngFor='let item of tabContent.pageContent'>
-      <ng-template [ngIf]='"${page.id}" == item.template.id'>
-        <section *ngFor="let section of item.content.sections">${page.text}</section>
-      </ng-template>
-    </ng-container>
-    `).join('')
-    +
-    `
-    </div>
-    <p class='last-updated'>Last modified {{lastUpdate | dateFormat}}</p>
-  </div>
-  `,
+  templateUrl: './page.component.html',
   styleUrls: ['./page.component.scss']
 })
 

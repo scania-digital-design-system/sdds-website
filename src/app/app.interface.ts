@@ -21,17 +21,11 @@ export interface Content {
   title?: String;
   tag?: String;
   description?: String;
-  template?: Number;
   examples?: Example[];
   info?: Object[];
 }
 export interface Example {
   id?: Number;
-  title?: String;
-  text?: String;
-}
-export interface Template {
-  id?: String;
   title?: String;
   text?: String;
 }

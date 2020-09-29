@@ -166,6 +166,19 @@
   }
 }
 
+:host-context(.page-icons) {
+
+  ::ng-deep {
+
+    .icon-preview {
+      font-size: 13rem;
+      margin-top: -4.5rem;
+      text-align: center;
+    }
+  }
+}
+
+
 @media (min-width: 1600px) {
 
   .container {
