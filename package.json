@@ -39,6 +39,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
     "corporate-ui": "next",
+    "file-saver": "^2.0.2",
     "graphql-request": "^1.8.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",

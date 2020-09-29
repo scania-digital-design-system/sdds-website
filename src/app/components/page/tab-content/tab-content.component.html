@@ -18,7 +18,8 @@
       </ng-template>
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconList'">
-        <div class='row' icon-list [content]='section.iconList'></div>
+        <!-- [icons]='section.iconList' -->
+        <div class='row icon-list' icon-list [icons]='section.Icons' [lastUpdate]='item.content.updated_at'></div>
       </ng-template>
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
