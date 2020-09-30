@@ -2,6 +2,7 @@
 
 :host {
   overflow: hidden;
+  height: 100%; // Edge fix for overflow set on main and nav
   background-color: #fafafa;
   background-color: var(--white);
   font-size: 1.6rem; // FIXME: moved to scania-theme?
