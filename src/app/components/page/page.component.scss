@@ -24,9 +24,9 @@
       padding-top: 3rem;
       padding-bottom: 3rem;
 
-    //TODO: temp until link color is decided
-      p > a {
-        color: #53565a;
+      p > a,
+      ul > li > a {
+        color: #53565a; //FIXME: temp until link color is decided
       }
     }
     img {
