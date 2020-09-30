@@ -2,8 +2,8 @@ const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
-const url = 'https://sdds-cms.herokuapp.com/graphql';
-// const url = 'http://localhost:1339/graphql';
+// const url = 'https://sdds-cms.herokuapp.com/graphql';
+const url = 'http://localhost:1339/graphql';
 
 const init = () => {
   getData('content', content);
@@ -55,14 +55,14 @@ fragment menu on Menu {
 fragment detail on Content {
   id
   title
-  section { 
+  section {
     __typename
-    ... on ComponentContentPluginIconPreview { 
+    ... on ComponentContentPluginIconPreview {
       id
       Icon
       Description
     }
-    ... on ComponentContentPluginIconList { 
+    ... on ComponentContentPluginIconList {
       id
       category
       iconList
@@ -70,7 +70,7 @@ fragment detail on Content {
         ...icons
       }
     }
-    ... on ComponentContentPluginCodeExample { 
+    ... on ComponentContentPluginCodeExample {
       id
       title
       code
@@ -88,6 +88,29 @@ fragment detail on Content {
     ... on ComponentContentPluginOverviewList {
       id
       description
+    }
+    ... on ComponentContentPluginLeftImage {
+      id
+      title
+      text
+      image {
+        name
+        url
+      }
+    }
+    ... on ComponentContentPluginRightImage {
+      id
+      title
+      text
+      Images{
+        label
+        image {
+          url
+        }
+        negative
+        alternate
+        caption
+      }
     }
   }
   updated_at

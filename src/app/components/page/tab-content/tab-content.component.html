@@ -26,13 +26,29 @@
         <section class='container' code-example [example]='section' toggleCode='true'></section>
       </ng-template>
 
-      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
+      <!-- <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
         <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h4>
         <p [innerHTML]='section.Text | markdown | keepHtml'></p>
-      </ng-template>
+      </ng-template> -->
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginColourList'">
         <section color-list [content]='section.colour'></section>
+      </ng-template>
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginRightImage'">
+        <div class="row">
+        <div class='col-md-6'>
+          <h3 *ngIf='section.title' [innerHTML]='section.title | markdown | keepHtml'></h3>
+          <p *ngIf='section.text' [innerHTML]='section.text | markdown | keepHtml'></p>
+        </div>
+        <div class='col-md-6'>
+          <div class="mt-5" *ngFor="let image of section.Images">
+            <label *ngIf='image.label'>{{image.label}}</label>
+            <img hidden='image.transparent' alt='{{image.alternate}}' [src]="'http://localhost:1339'+image.image[0].url"/>
+            <caption>{{image.caption}}</caption>
+          </div >
+        </div>
+      </div>
       </ng-template>
 
     </section>
