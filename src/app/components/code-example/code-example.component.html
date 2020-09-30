@@ -1,9 +1,8 @@
-<div class='row' *ngFor='let type of example.description | split:"\r?\n-\r?\n"'>
+<div class='row' *ngFor='let type of example.code | split:"\r?\n-\r?\n"'>
   <div class="col-12">
-
     <!-- Title -->
     <div class="row">
-      <h4 class="mb-5">{{example.sectionTitle}}</h4>
+      <h4 class="mb-5">{{example.title}}</h4>
     </div>
 
     <!-- Example -->
@@ -19,5 +18,9 @@
       <c-code-sample [innerHTML]='type | keepHtml'></c-code-sample>
     </div>
   </div>
-
 </div>
+
+<!-- If code-properties is empty don't show -->
+
+<div code-properties  [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div>
+

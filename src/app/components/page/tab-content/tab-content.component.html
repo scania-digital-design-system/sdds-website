@@ -1,0 +1,42 @@
+<div class="tab-pane">
+
+  <div *ngFor='let item of tabContent.pageContent'>
+    
+    <section *ngFor="let section of item.content.section">
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconPreview'">
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="icon-preview" [innerHTML]='section.Icon | keepHtml'></div>
+          </div>
+          <div class="col-md-9">
+            {{section.Description}}
+          </div>
+        </div>
+
+      </ng-template>
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconList'">
+        <!-- [icons]='section.iconList' -->
+        <div class='row icon-list' icon-list [icons]='section.Icons' [lastUpdate]='item.content.updated_at'></div>
+      </ng-template>
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
+        <section class='container' code-example [example]='section' toggleCode='true'></section>
+      </ng-template>
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
+        <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h4>
+        <p [innerHTML]='section.Text | markdown | keepHtml'></p>
+      </ng-template>
+
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginColourList'">
+        <section color-list [content]='section.colour'></section>
+      </ng-template>
+
+    </section>
+
+  </div>
+
+</div>

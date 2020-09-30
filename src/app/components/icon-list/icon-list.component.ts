@@ -1,7 +1,7 @@
-import { Component, NgZone, OnInit, OnDestroy } from '@angular/core';
+import { Component, NgZone, Input } from '@angular/core';
+import { saveAs } from 'file-saver'
 
 import { PageService } from '../../app.service';
-import { Theme } from '../../app.interface';
 
 @Component({
   selector: '[icon-list]',
@@ -9,23 +9,34 @@ import { Theme } from '../../app.interface';
   styleUrls: ['./icon-list.component.scss']
 })
 
-export class IconListComponent implements OnInit, OnDestroy {
-  icons: Object;
-  subscribeStore;
+export class IconListComponent {
+  @Input() icons: Array<Object>;
+  @Input() lastUpdate: Date;
+  currentIcon: Object = {};
 
   constructor(private ps: PageService, private zone: NgZone) { }
 
-  ngOnInit() {
-    this.subscribeStore = this.ps.theme.subscribe((item: Theme) => {
-      // When data is fetched from outside Angular scope, Zone will let angular know about it
-      this.zone.run(() => {
-        if(!item) return;
-        this.icons = item.icons;
-      });
-    });
+  openModal(icon) {
+    this.currentIcon = icon;
+    // Because of innerHTML, need to have the code-sample here, cannot be rendered from html
+    this.currentIcon['code'] = `<c-code-sample><c-icon name="${icon.name}"></c-icon></c-code-sample>`;
   }
 
-  ngOnDestroy() {
-    this.subscribeStore.unsubscribe();
+  download(event) {
+    // Avoid click bubbling to child element (span and save-icon)
+    event.stopPropagation();
+
+    const fileName = event.currentTarget.id;
+    const url = `https://raw.githubusercontent.com/scania/scania-theme/master/src/icons/${fileName}.svg`;
+
+    saveAs(url, fileName + '.svg');
   }
+
+  getModalLayout(currentIcon){
+    // If description, usage, and restriction is not provided
+    // Then modal size = default, icon column = col-md-12
+    return currentIcon.description || currentIcon.usage || currentIcon.restriction;
+  }
+
+  
 }

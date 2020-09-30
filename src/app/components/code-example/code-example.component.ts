@@ -8,4 +8,14 @@ import { Component, Input } from '@angular/core';
 
 export class CodeExampleComponent {
   @Input() example: Object;
+  emptyParent: boolean = false;
+
+  showProps(event) {
+    // Event for detecting change in the data for the table
+    if(event) {
+      this.emptyParent = event
+    } else {
+      this.emptyParent = event;
+    }
+  }
 }
