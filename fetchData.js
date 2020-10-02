@@ -81,6 +81,18 @@ fragment detail on Content {
       Title
       Text
     }
+    ... on ComponentContentPluginTwoColumns {
+      id
+      Title
+      LeftColumn{
+        lead
+        textfield
+      }
+      RightColumn {
+        lead
+        textfield
+      }
+    }
     ... on ComponentContentPluginColourList {
       id
       colour
