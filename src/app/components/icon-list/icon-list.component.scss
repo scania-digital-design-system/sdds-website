@@ -36,6 +36,59 @@
   }
 }
 
+.download-selected {
+  position: fixed;
+  bottom: 3rem;
+  right: 6rem;
+  background-color: var(--light-02);
+  padding: 1.5rem;
+}
+
+#downloadIcon {
+  .list-header span,
+  ul li span{
+    display: inline-block;
+    &:nth-child(1) {
+      width: 50px;
+    }
+    &:nth-child(2) {
+      width: 250px;
+    }
+    &:nth-child(3) {
+      width: 150px;
+    }
+  }
+  .list-header {
+    font-weight: bold;
+    color: var(--dark-01);
+    margin-top: 2rem;
+  }
+  ul {
+    margin-left: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    li {
+      list-style: none;
+      position: relative;
+      &:nth-child(even) {
+        background-color: var(--light-02);
+      }
+      span {
+        &:nth-child(1) {
+          font-size: 3rem;
+          color: var(--blue);
+        }
+        &.delete-from-list {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
 .icon-modal-buttons {
   .btn {
     margin-right: 10px;
