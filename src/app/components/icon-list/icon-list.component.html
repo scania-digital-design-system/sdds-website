@@ -1,5 +1,5 @@
 <div class="col-md-12 icon-widgets">
-  <div class='custom-control custom-checkbox'>
+  <div class='offset-md-8 col-md-4 custom-control custom-checkbox text-right'>
     <input type='checkbox'
     id='selectAllEl'
     class='custom-control-input'
@@ -10,15 +10,19 @@
 </div>
 
 <div *ngFor="let icon of icons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
+
+  <div [ngClass]="{'custom-control custom-checkbox select-icon':true, 'cbActive' : icon.isSelected}">
     <input type='checkbox'
-      [id]="icon.name"  
-      class='select-icon' 
-      value="icon.name"
-      [(ngModel)]='icon.isSelected'
-      (click)='clickIconCheckbox($event)'
-      (change)='selectIconCheckbox()'>
-    <c-icon [name]="icon.name"></c-icon>
-    <span>{{icon.title}}</span>
+    [id]="icon.name"  
+    class='custom-control-input' 
+    value="icon.name"
+    (click)='clickIconCheckbox($event)'
+    [(ngModel)]='icon.isSelected'
+    (change)='selectIconCheckbox()'>
+    <label [for]="icon.name" class="custom-control-label" (click)='clickIconCheckbox($event)'></label>
+  </div>
+  <c-icon [name]="icon.name"></c-icon>
+  <span>{{icon.title}}</span>
   
 </div>
 
@@ -61,7 +65,10 @@
             <p>Icons: {{checkedIcons.length}}</p>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-primary" (click)='downloadZip()'>DOWNLOAD SVG</button>
+            <button class="btn btn-primary" (click)='downloadZip()'>
+              <span *ngIf='downloading'>DOWNLOADING...</span>
+              <span *ngIf='!downloading'>DOWNLOAD SVG</span>
+            </button>
           </div>
         </div>
       </div>

@@ -22,6 +22,7 @@ export class IconListComponent implements OnInit {
   isSelectedAll: Boolean = false;
 
   checkedIcons: Array<String> = [];
+  downloading: Boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -109,6 +110,7 @@ export class IconListComponent implements OnInit {
     const zip = new JSZip.default();
     let url;
     let waiting = this.checkedIcons.length;
+    this.downloading = true;
 
     this.checkedIcons.forEach(async (icon) => {
 
@@ -135,10 +137,12 @@ export class IconListComponent implements OnInit {
   }
 
   saveZip(zip) {
+    const self = this;
     zip.generateAsync({ type: "blob" })
       .then(function (content) {
-        saveAs(content, "Icons.zip");
-      });
+        self.downloading = false;
+        saveAs(content, "scania-icons.zip");
+      })
   }
 
 }

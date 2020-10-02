@@ -3,6 +3,11 @@
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #707070;
   margin-bottom: 3rem;
+
+  .custom-control-label {
+    color: #041e42;
+    color: var(--blue);
+  }
 }
 
 .icon {
@@ -11,10 +16,10 @@
 
   .select-icon {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 0;
+    top: 5px;
     display: none;
-    &:checked {
+    &.cbActive {
       display: block;
     }
   }
@@ -32,6 +37,7 @@
   c-icon {
     font-size: 13rem;
     color: #041e42;
+    color: var(--blue);
     width: 100%;
   }
 }
@@ -40,6 +46,7 @@
   position: fixed;
   bottom: 3rem;
   right: 6rem;
+  background-color: #efefef;
   background-color: var(--light-02);
   padding: 1.5rem;
 }
@@ -60,6 +67,7 @@
   }
   .list-header {
     font-weight: bold;
+    color: #94999d;
     color: var(--dark-01);
     margin-top: 2rem;
   }
@@ -72,11 +80,13 @@
       list-style: none;
       position: relative;
       &:nth-child(even) {
+        background-color: #efefef;
         background-color: var(--light-02);
       }
       span {
         &:nth-child(1) {
           font-size: 3rem;
+          color: #041e42;
           color: var(--blue);
         }
         &.delete-from-list {
