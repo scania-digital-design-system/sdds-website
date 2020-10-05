@@ -1,4 +1,4 @@
-import { Component, NgZone, Input } from '@angular/core';
+import { Component, NgZone, Input, OnInit } from '@angular/core';
 import { saveAs } from 'file-saver'
 
 import { PageService } from '../../app.service';
@@ -9,12 +9,19 @@ import { PageService } from '../../app.service';
   styleUrls: ['./icon-list.component.scss']
 })
 
-export class IconListComponent {
+export class IconListComponent implements OnInit{
   @Input() icons: Array<Object>;
   @Input() lastUpdate: Date;
+
+  filteredIcons: Array<Object>;
+
   currentIcon: Object = {};
 
   constructor(private ps: PageService, private zone: NgZone) { }
+
+  ngOnInit() {
+    this.filteredIcons = this.icons;
+  }
 
   openModal(icon) {
     this.currentIcon = icon;
@@ -36,6 +43,26 @@ export class IconListComponent {
     // If description, usage, and restriction is not provided
     // Then modal size = default, icon column = col-md-12
     return currentIcon.description || currentIcon.usage || currentIcon.restriction;
+  }
+
+  searchIcons(event) {
+    let currentData:any = [...this.icons];
+    let newData = [];
+    
+    if(event.target.value !== '') {
+      newData = currentData.filter(item => {
+        if(item.title) {
+          const listItem = item.title.toLowerCase();
+          const filter = event.target.value.toLowerCase();
+          return listItem.includes(filter);
+        }
+      })
+    } else {
+      newData = [...currentData];
+    }
+    
+    this.filteredIcons = [...newData];
+
   }
 
   
