@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { PageService } from './app.service';
 import { EscapeHtmlPipe, SplitPipe, MarkdownPipe, SortASCPipe, DatePipe, GenerateTabURLPipe } from './app.pipe';
@@ -35,6 +36,7 @@ import { CodePropsComponent } from './components/code-props/code-props.component
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot([])
   ],
