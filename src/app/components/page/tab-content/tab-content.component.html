@@ -1,7 +1,7 @@
 <div class="tab-pane">
 
   <div *ngFor='let item of tabContent.pageContent'>
-    
+
     <section *ngFor="let section of item.content.section">
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconPreview'">
@@ -38,11 +38,11 @@
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumns'">
         <h1 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h1>
         <div class="row">
-          <div *ngIf="section.LeftColumn" [ngClass]="{'lead' : section.LeftColumn.lead }" class="col-md-6">
-            <div [innerHTML]='section.LeftColumn.textfield | markdown | keepHtml'></div>
+          <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Ingress }" class="col-md-6">
+            <div [innerHTML]='section.ParagraphLeft.textfield | markdown | keepHtml'></div>
           </div>
-          <div *ngIf="section.RightColumn" [ngClass]="{'lead' : section.RightColumn.lead }" class="col-md-6">
-            <div [innerHTML]='section.RightColumn.textfield | markdown | keepHtml'></div>
+          <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Ingress }" class="col-md-6">
+            <div [innerHTML]='section.ParagraphRight.textfield | markdown | keepHtml'></div>
           </div>
         </div>
       </ng-template>
@@ -55,16 +55,28 @@
       <!-- Right images -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginRightImage'">
         <div class="row RightImage">
+
           <div class='col-md-6'>
             <h2 *ngIf='section.title' [innerHTML]='section.title | markdown | keepHtml'></h2>
-            <div *ngIf='section.text' [innerHTML]='section.text | markdown | keepHtml'></div>
+            <div class="row">
+              <div *ngFor="let paragraph of section.Paragraphs" [ngClass]="{'col-md-12': paragraph.Columns == 'One', 'col-md-6': paragraph.Columns == 'Two', 'col-md-3': paragraph.Columns == 'Three'}">
+                <div *ngIf='paragraph.textfield' [innerHTML]='paragraph.textfield | markdown | keepHtml'></div>
+              </div>
+            </div>
           </div>
+
           <div class='col-md-6'>
-            <div class="mt-5" *ngFor="let image of section.Images">
-              <label *ngIf='image.label'>{{image.label}}</label>
-              <!-- FIXME: Remove localhost:1339 in src -->
-              <img [ngClass]="{'negative' : image.negative }" [src]="'http://localhost:1339'+image.image[0].url" alt='{{image.alternate}}'/>
-              <caption *ngIf='image.caption'>{{image.caption}}</caption>
+            <div *ngFor="let image of section.Images">
+              <figure>
+                <figcaption class="label" *ngIf='image.label'>
+                  <strong>{{image.label}}</strong>
+                </figcaption>
+                <!-- FIXME: Remove localhost:1339 in src -->
+                <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="'http://localhost:1339'+image.image[0].url" alt='{{image.alternate}}'/>
+                <figcaption *ngIf='image.caption'>
+                  <em>{{image.caption}}</em>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

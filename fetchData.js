@@ -84,12 +84,12 @@ fragment detail on Content {
     ... on ComponentContentPluginTwoColumns {
       id
       Title
-      LeftColumn{
-        lead
+      ParagraphLeft {
+        Ingress
         textfield
       }
-      RightColumn {
-        lead
+      ParagraphRight {
+        Ingress
         textfield
       }
     }
@@ -113,7 +113,10 @@ fragment detail on Content {
     ... on ComponentContentPluginRightImage {
       id
       title
-      text
+      Paragraphs {
+        textfield
+        Columns
+     }
       Images{
         label
         image {
