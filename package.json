@@ -38,7 +38,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "corporate-ui": "next",
+    "corporate-ui": "4.1.2",
     "file-saver": "^2.0.2",
     "graphql-request": "^1.8.2",
     "jasmine-core": "~3.4.0",
@@ -52,7 +52,7 @@
     "marked": "^0.7.0",
     "node-fetch": "^2.6.0",
     "protractor": "~5.4.0",
-    "scania-theme": "next",
+    "scania-theme": "1.1.3",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
