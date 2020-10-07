@@ -3755,7 +3755,7 @@
                   {
                     "__typename": "ComponentContentPluginIconList",
                     "id": "2",
-                    "category": "System icons",
+                    "category": "System",
                     "iconList": "scania-24h_service\nscania-accident_repair\nscania-adr_vehicle_service\nscania-alternative_fuels\nscania-angle-down\nscania-arrow\nscania-battery\nscania-bio-natural_gas\nscania-biodiesel\nscania-bioethanol\nscania-boat\nscania-book\nscania-bus\nscania-bus-sale\nscania-bus_application\nscania-bus_connected\nscania-bus_service\nscania-business_operator",
                     "Icons": [
                       {
