@@ -1,4 +1,14 @@
 <div class="col-md-12 icon-widgets">
+  <div class="col-md-3 input-group">
+    <input type="text"
+    id="searchIcons"
+    class="form-control"
+    placeholder="Icon name"
+    (input)="searchIcons($event);">
+    <div class='input-group-append'>
+    <button class="btn btn-primary" type="button"><c-icon name='scania-search'></c-icon></button>
+    </div>
+  </div>
   <div class='offset-md-8 col-md-4 custom-control custom-checkbox text-right'>
     <input type='checkbox'
     id='selectAllEl'
@@ -9,7 +19,7 @@
   </div>
 </div>
 
-<div *ngFor="let icon of icons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
+<div *ngFor="let icon of filteredIcons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
 
   <div [ngClass]="{'custom-control custom-checkbox select-icon':true, 'cbActive' : icon.isSelected}">
     <input type='checkbox'

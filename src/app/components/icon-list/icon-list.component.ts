@@ -14,6 +14,8 @@ export class IconListComponent implements OnInit {
   @Input() lastUpdate: Date;
   @Input() category: String;
 
+  filteredIcons: Array<Object>;
+
   // current icon opened in modal
   currentIcon: Object = {};
 
@@ -31,6 +33,7 @@ export class IconListComponent implements OnInit {
     this.icons.map((item) => {
       return item['isSelected'] = false;
     })
+    this.filteredIcons = this.icons;
   }
   
   openModal(icon) {
@@ -143,6 +146,26 @@ export class IconListComponent implements OnInit {
         self.downloading = false;
         saveAs(content, "scania-icons.zip");
       })
+  }
+
+  searchIcons(event) {
+    let currentData:any = [...this.icons];
+    let newData = [];
+    
+    if(event.target.value !== '') {
+      newData = currentData.filter(item => {
+        if(item.title) {
+          const listItem = item.title.toLowerCase();
+          const filter = event.target.value.toLowerCase();
+          return listItem.includes(filter);
+        }
+      })
+    } else {
+      newData = [...currentData];
+    }
+    
+    this.filteredIcons = [...newData];
+
   }
 
 }
