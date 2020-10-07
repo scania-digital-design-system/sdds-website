@@ -1,9 +1,82 @@
-<div *ngFor="let icon of icons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5"
-(click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
-  <c-icon [name]="icon.name"></c-icon>
-  <span>{{icon.title}}</span>
+<div class="col-md-12 icon-widgets">
+  <div class='offset-md-8 col-md-4 custom-control custom-checkbox text-right'>
+    <input type='checkbox'
+    id='selectAllEl'
+    class='custom-control-input'
+    [(ngModel)]='isSelectedAll'
+    (change)='selectAll();'>
+    <label class='custom-control-label' for='selectAllEl'>Select all</label>
+  </div>
 </div>
 
+<div *ngFor="let icon of icons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
+
+  <div [ngClass]="{'custom-control custom-checkbox select-icon':true, 'cbActive' : icon.isSelected}">
+    <input type='checkbox'
+    [id]="icon.name"  
+    class='custom-control-input' 
+    value="icon.name"
+    (click)='clickIconCheckbox($event)'
+    [(ngModel)]='icon.isSelected'
+    (change)='selectIconCheckbox()'>
+    <label [for]="icon.name" class="custom-control-label" (click)='clickIconCheckbox($event)'></label>
+  </div>
+  <c-icon [name]="icon.name"></c-icon>
+  <span>{{icon.title}}</span>
+  
+</div>
+
+<!-- Select popup -->
+<div class="download-selected" *ngIf="checkedIcons.length > 0">
+  <p><strong>{{checkedIcons.length}} icons selected</strong></p>
+  <button class="btn btn-primary" data-toggle='modal' data-target='#downloadIcon'>DOWNLOAD SELECTED</button>
+</div>
+
+<!-- Select and download modal -->
+<div class='modal fade' id='downloadIcon' tabindex='-1' role='dialog' aria-labelledby='downloadIconLabel' aria-hidden='true'>
+  <div class='modal-dialog' role='document'>
+    <div class='modal-content'>
+      <div class='modal-body'>
+        <div class="row">
+          <div class="col-md-10">
+            <h1 class='modal-title'>Download</h1>
+          </div>
+          <div class="col-md-2">
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+              <span aria-hidden='true'>×</span>
+            </button>
+          </div>
+          <div class="col-md-12 download-icon-list">
+            <div class="list-header">
+              <span>Icon</span>
+              <span>Name</span>
+              <span>Category</span>
+            </div>
+            <ul>
+              <li *ngFor='let selectedIcon of checkedIcons'>
+                <span><c-icon [name]='selectedIcon'></c-icon></span>
+                <span>{{selectedIcon}}</span>
+                <span>{{category}}</span>
+                <span class="delete-from-list" (click)='removeIcon(selectedIcon);'><c-icon name='scania-cross'></c-icon></span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p>Icons: {{checkedIcons.length}}</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <button class="btn btn-primary" (click)='downloadZip()'>
+              <span *ngIf='downloading'>DOWNLOADING...</span>
+              <span *ngIf='!downloading'>DOWNLOAD SVG</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Icon detail modal -->
 <div class='modal fade' id='iconModal' tabindex='-1' role='dialog' aria-labelledby='iconModalLabel' aria-hidden='true'>
   <div [ngClass]='{"modal-dialog" : true, "modal-lg" : getModalLayout(currentIcon)}' role='document'>
     <div class='modal-content'>
