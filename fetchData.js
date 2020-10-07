@@ -55,14 +55,14 @@ fragment menu on Menu {
 fragment detail on Content {
   id
   title
-  section { 
+  section {
     __typename
-    ... on ComponentContentPluginIconPreview { 
+    ... on ComponentContentPluginIconPreview {
       id
       Icon
       Description
     }
-    ... on ComponentContentPluginIconList { 
+    ... on ComponentContentPluginIconList {
       id
       category
       iconList
@@ -70,7 +70,7 @@ fragment detail on Content {
         ...icons
       }
     }
-    ... on ComponentContentPluginCodeExample { 
+    ... on ComponentContentPluginCodeExample {
       id
       title
       code
@@ -81,6 +81,18 @@ fragment detail on Content {
       Title
       Text
     }
+    ... on ComponentContentPluginTwoColumns {
+      id
+      Title
+      ParagraphLeft {
+        Introduction
+        textfield
+      }
+      ParagraphRight {
+        Introduction
+        textfield
+      }
+    }
     ... on ComponentContentPluginColourList {
       id
       colour
@@ -88,6 +100,32 @@ fragment detail on Content {
     ... on ComponentContentPluginOverviewList {
       id
       description
+    }
+    ... on ComponentContentPluginLeftImage {
+      id
+      title
+      text
+      image {
+        name
+        url
+      }
+    }
+    ... on ComponentContentPluginRightImage {
+      id
+      title
+      Paragraphs {
+        textfield
+        Columns
+     }
+      Images{
+        label
+        image {
+          url
+        }
+        negative
+        alternate
+        caption
+      }
     }
   }
   updated_at

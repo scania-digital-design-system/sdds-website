@@ -410,7 +410,10 @@
           "id": "37",
           "url": "design",
           "title": "Design",
-          "thumbnail": null
+          "thumbnail": {
+            "id": "91",
+            "url": "/uploads/faa296c559734de1b31da6297221b8fb.svg"
+          }
         },
         {
           "id": "38",

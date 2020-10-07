@@ -11,7 +11,7 @@
     .tab-pane > div,
     .tab-pane > div > section {
       width: 100%;
-    }    
+    }
 
     //TODO:Temporary for the code section in getting started
     pre {
@@ -29,19 +29,12 @@
         color: #53565a; //FIXME: temp until link color is decided
       }
     }
+
     img {
       width: 100%;
       max-width: 700px;
     }
-    figure {
-      margin: 1px 1px 21px;
-      border: 40px solid #fff;
-      outline: 1px solid #e8e8e8;
 
-      .progress {
-        margin-top: 5px;
-      }
-    }
     .last-updated {
       font-size: 1.5rem;
       padding-top: 3rem;
@@ -108,7 +101,7 @@
         }
       }
 
-      summary { 
+      summary {
         list-style-type: none; /* Firefox */
         outline:none;
       }
@@ -163,6 +156,20 @@
           margin-top: 100%;
         }
       }
+    }
+  }
+}
+
+:host-context(.page-logotype) {
+
+  ::ng-deep {
+
+    img {
+      padding: 5px;
+    }
+
+    .negative {
+      background-color: #2D2926;
     }
   }
 }

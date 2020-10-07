@@ -1,7 +1,7 @@
 <div class="tab-pane">
 
   <div *ngFor='let item of tabContent.pageContent'>
-    
+
     <section *ngFor="let section of item.content.section">
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconPreview'">
@@ -17,22 +17,68 @@
 
       </ng-template>
 
+      <!-- Icon List -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconList'">
         <!-- [icons]='section.iconList' -->
         <div class='row icon-list' icon-list [icons]='section.Icons' [lastUpdate]='item.content.updated_at'></div>
       </ng-template>
 
+      <!-- Code Example -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
         <section class='container' code-example [example]='section' toggleCode='true'></section>
       </ng-template>
 
+      <!-- One column -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
         <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h4>
         <p [innerHTML]='section.Text | markdown | keepHtml'></p>
       </ng-template>
 
+      <!-- Two column -->
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumns'">
+        <h1 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h1>
+        <div class="row">
+          <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Introduction }" class="col-md-6">
+            <div [innerHTML]='section.ParagraphLeft.textfield | markdown | keepHtml'></div>
+          </div>
+          <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Introduction }" class="col-md-6">
+            <div [innerHTML]='section.ParagraphRight.textfield | markdown | keepHtml'></div>
+          </div>
+        </div>
+      </ng-template>
+
+      <!-- Color list -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginColourList'">
         <section color-list [content]='section.colour'></section>
+      </ng-template>
+
+      <!-- Right images -->
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginRightImage'">
+        <div class="row RightImage">
+
+          <div class='col-md-6'>
+            <h2 *ngIf='section.title' [innerHTML]='section.title | markdown | keepHtml'></h2>
+            <div class="row">
+              <div *ngFor="let paragraph of section.Paragraphs" [ngClass]="{'col-md-12': paragraph.Columns == 'One', 'col-md-6': paragraph.Columns == 'Two', 'col-md-3': paragraph.Columns == 'Three'}">
+                <div *ngIf='paragraph.textfield' [innerHTML]='paragraph.textfield | markdown | keepHtml'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-md-6'>
+            <div *ngFor="let image of section.Images">
+              <figure>
+                <figcaption class="label" *ngIf='image.label'>
+                  <strong>{{image.label}}</strong>
+                </figcaption>
+                <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
+                <figcaption *ngIf='image.caption'>
+                  <em>{{image.caption}}</em>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </ng-template>
 
     </section>
