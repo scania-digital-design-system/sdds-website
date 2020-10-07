@@ -71,8 +71,7 @@
                 <figcaption class="label" *ngIf='image.label'>
                   <strong>{{image.label}}</strong>
                 </figcaption>
-                <!-- FIXME: Remove localhost:1339 in src -->
-                <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="'http://localhost:1339'+image.image[0].url" alt='{{image.alternate}}'/>
+                <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                 <figcaption *ngIf='image.caption'>
                   <em>{{image.caption}}</em>
                 </figcaption>
