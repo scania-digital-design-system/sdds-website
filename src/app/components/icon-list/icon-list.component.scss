@@ -1,16 +1,101 @@
+.icon-widgets {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 3rem;
+
+  .custom-control-label {
+    color: #041e42;
+    color: var(--blue);
+  }
+}
+
 .icon {
   text-align: center;
+  position: relative;
+
+  .select-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: none;
+    &.cbActive {
+      display: block;
+    }
+  }
   
   &:hover{
     background-color: #efefef;
     background-color: var(--light-02);
     cursor: pointer;
+
+    .select-icon {
+      display: block;
+    }
   }
 
   c-icon {
     font-size: 13rem;
     color: #041e42;
+    color: var(--blue);
     width: 100%;
+  }
+}
+
+.download-selected {
+  position: fixed;
+  bottom: 3rem;
+  right: 6rem;
+  background-color: #efefef;
+  background-color: var(--light-02);
+  padding: 1.5rem;
+}
+
+#downloadIcon {
+  .list-header span,
+  ul li span{
+    display: inline-block;
+    &:nth-child(1) {
+      width: 50px;
+    }
+    &:nth-child(2) {
+      width: 250px;
+    }
+    &:nth-child(3) {
+      width: 150px;
+    }
+  }
+  .list-header {
+    font-weight: bold;
+    color: #94999d;
+    color: var(--dark-01);
+    margin-top: 2rem;
+  }
+  ul {
+    margin-left: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: scroll;
+    li {
+      list-style: none;
+      position: relative;
+      &:nth-child(even) {
+        background-color: #efefef;
+        background-color: var(--light-02);
+      }
+      span {
+        &:nth-child(1) {
+          font-size: 3rem;
+          color: #041e42;
+          color: var(--blue);
+        }
+        &.delete-from-list {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+      }
+    }
   }
 }
 
