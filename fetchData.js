@@ -85,11 +85,11 @@ fragment detail on Content {
       id
       Title
       ParagraphLeft {
-        Ingress
+        Introduction
         textfield
       }
       ParagraphRight {
-        Ingress
+        Introduction
         textfield
       }
     }

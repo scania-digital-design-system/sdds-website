@@ -38,10 +38,10 @@
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumns'">
         <h1 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h1>
         <div class="row">
-          <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Ingress }" class="col-md-6">
+          <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Introduction }" class="col-md-6">
             <div [innerHTML]='section.ParagraphLeft.textfield | markdown | keepHtml'></div>
           </div>
-          <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Ingress }" class="col-md-6">
+          <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Introduction }" class="col-md-6">
             <div [innerHTML]='section.ParagraphRight.textfield | markdown | keepHtml'></div>
           </div>
         </div>
