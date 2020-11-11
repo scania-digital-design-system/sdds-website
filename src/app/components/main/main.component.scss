@@ -20,14 +20,17 @@
     color: var(--black); //Scania black
     h1 {
       font-family: 'Scania Sans Headline', sans-serif;
-      font-size: 4rem;
+      //FIXME: Add correct rem
+      font-size: 10rem;
       color: inherit;
-      margin-bottom: 6rem;
+      //FIXME: Add correct rem
+      margin-bottom: 15rem;
     }
     h2 {
       font-family: 'Scania Sans', sans-serif;
       c-icon {
-        margin-right: 1rem;
+        //FIXME: Add correct rem
+        margin-right: 2.5rem;
       }
       a {
         text-decoration: none;
@@ -37,8 +40,9 @@
     }
     .lead {
       font-family: 'Scania Sans', sans-serif;
-      font-size: 2.5rem;
-      margin-bottom: 10rem;
+      //FIXME: Add correct rem
+      font-size: 6.25rem;
+      margin-bottom: 25rem;
     }
     .page-title,
     .last-updated { display: none;}

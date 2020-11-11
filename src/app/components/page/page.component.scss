@@ -21,8 +21,9 @@
     }
 
     section {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+      //FIXME: Add correct rem
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
 
       p > a,
       ul > li > a {
@@ -36,19 +37,22 @@
     }
 
     .last-updated {
-      font-size: 1.5rem;
-      padding-top: 3rem;
+      //FIXME: Add correct rem
+      font-size: 3.75rem;
+      padding-top: 7.5rem;
       font-style: italic;
     }
 
     // Specific for tabs in site
     #myTab {
-      margin-bottom: 2.4rem;
-      margin-top: 2.0rem;
+      //FIXME: Add correct rem
+      margin-bottom: 6rem;
+      margin-top: 5rem;
 
       .nav-link {
-        margin-right: 3.8rem; //FIXME:Might wanna add this for scania-theme
-        font-size: 1.6rem; //Scania-theme?
+        //FIXME: Add correct rem
+        margin-right: 9.5rem; //FIXME:Might wanna add this for scania-theme
+        font-size: 4rem; //Scania-theme?
       }
     }
 
@@ -82,18 +86,21 @@
     }
 
     details {
-      padding-top: 2.8rem;
-      padding-bottom: 2.8rem;
+      //FIXME: Add correct rem
+      padding-top: 7rem;
+      padding-bottom: 7rem;
       border-bottom: 1px solid #94999d;
       display: block;  // for IE
 
       + h2 {
-        margin-top: 6rem;
+        //FIXME: Add correct rem
+        margin-top: 15rem;
       }
 
       > section {
-        padding: 2.4rem 1.5rem;
-        margin: 0.4rem 0 0.4rem;
+        //FIXME: Add correct rem
+        padding: 6rem 3.75rem;
+        margin: 1rem 0 1rem;
         background: #f8f9fa;
         // hide unintended new line created from the markdown
         + p {
@@ -118,7 +125,8 @@
         padding-bottom: 0;
         summary {
           border-bottom: 1px solid #94999d;
-          padding-bottom: 2.8rem;
+          //FIXME: Add correct rem
+          padding-bottom: 7rem;
           &:before {
             content: '-';
           }
@@ -145,7 +153,8 @@
       }
 
       h4 {
-        padding: 2rem;
+        //FIXME: Add correct rem
+        padding: 5rem;
         text-align: left;
         color: #2D2926; //FIXME: Scania-color
         text-decoration: none;
@@ -191,8 +200,9 @@
   ::ng-deep {
 
     .icon-preview {
-      font-size: 13rem;
-      margin-top: -4.5rem;
+      //FIXME: Add correct rem
+      font-size: 32.5rem;
+      margin-top: -11.25rem;
       text-align: center;
       color: #041e42;
       color: var(--blue);

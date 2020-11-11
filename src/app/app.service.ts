@@ -38,12 +38,12 @@ export class PageService {
       this.setPages(pages);
     });
 
-    if(window['CorporateUi']) {
-      window['CorporateUi'].store.subscribe(() => {
-        const current = window['CorporateUi'].store.getState().theme.current;
-        this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
-      });
-    }
+    // if(window['CorporateUi']) {
+    //   window['CorporateUi'].store.subscribe(() => {
+    //     const current = window['CorporateUi'].store.getState().theme.current;
+    //     this.setTheme(window['CorporateUi'].store.getState().theme.items[current]);
+    //   });
+    // }
 
     // this.http.get('app/content/data.json')
     //   .subscribe((items: Array<Item>) => {
