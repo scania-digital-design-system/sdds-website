@@ -1,8 +1,10 @@
 .icon-widgets {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  //FIXME: Add correct rem
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
   border-bottom: 1px solid #707070;
-  margin-bottom: 3rem;
+  //FIXME: Add correct rem
+  margin-bottom: 7.5rem;
 
   .custom-control-label {
     color: #041e42;
@@ -23,7 +25,7 @@
       display: block;
     }
   }
-  
+
   &:hover{
     background-color: #efefef;
     background-color: var(--light-02);
@@ -35,7 +37,8 @@
   }
 
   c-icon {
-    font-size: 13rem;
+    //FIXME: Add correct rem
+    font-size: 32.5rem;
     color: #041e42;
     color: var(--blue);
     width: 100%;
@@ -44,11 +47,13 @@
 
 .download-selected {
   position: fixed;
-  bottom: 3rem;
-  right: 6rem;
+  //FIXME: Add correct rem
+  bottom: 7.5rem;
+  right: 15rem;
   background-color: #efefef;
   background-color: var(--light-02);
-  padding: 1.5rem;
+  //FIXME: Add correct rem
+  padding: 3.75rem;
 }
 
 #downloadIcon {
@@ -69,7 +74,8 @@
     font-weight: bold;
     color: #94999d;
     color: var(--dark-01);
-    margin-top: 2rem;
+    //FIXME: Add correct rem
+    margin-top: 5rem;
   }
   ul {
     margin-left: 0;
@@ -85,7 +91,8 @@
       }
       span {
         &:nth-child(1) {
-          font-size: 3rem;
+          //FIXME: Add correct rem
+          font-size: 7.5rem;
           color: #041e42;
           color: var(--blue);
         }
@@ -104,7 +111,8 @@
     margin-right: 10px;
   }
   span {
-    font-size: 1.6rem;
+    //FIXME: Add correct rem
+    font-size: 4rem;
     margin-right: 5px;
   }
 }
@@ -116,10 +124,12 @@
   .last-update {
     color: #94999d;
     color: var(--dark-01);
-    font-size: 1.4rem;
+    //FIXME: Add correct rem
+    font-size: 3.5rem;
   }
   .close {
-    font-size: 3rem;
+    //FIXME: Add correct rem
+    font-size: 7.5rem;
     font-weight: normal;
   }
 }
