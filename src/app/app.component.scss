@@ -27,28 +27,26 @@
 }
 
 #maincontent {
-  display: flex;
   overflow: hidden;
   flex: 1;
   background-color: #fff;
 }
+
 nav,
 main {
   overflow-y: auto;
 }
-nav {
+
+.sdds-nav {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin-top: 10px;
-  background-color: #fff;
-  box-shadow: 0px 3px 13px #c8c9c7; //FIXME: box-shadow scania-color
-  box-shadow: 0px 3px 13px Var(--light);
-
-  // FIXME: color variable default in doesn't work in IE/Edge
-  --link-color: Var(--dark-02);
-  --link-color-hover: #bfbfbf;
+  flex-basis: 64rem;
+  // width: 64rem;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
 }
+
 main {
   flex: 1;
 }

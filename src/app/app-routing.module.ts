@@ -13,7 +13,8 @@ import { ColorListComponent } from './components/color-list/color-list.component
 import { IconListComponent } from './components/icon-list/icon-list.component';
 import { TabContentComponent } from './components/page/tab-content/tab-content.component';
 import { CodeExampleComponent } from './components/code-example/code-example.component';
-import { CodePropsComponent } from './components/code-props/code-props.component'
+import { CodePropsComponent } from './components/code-props/code-props.component';
+import { ContentHeader } from './components/content-header/content-header.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CodePropsComponent } from './components/code-props/code-props.component
     ColorListComponent,
     IconListComponent,
     CodeExampleComponent,
-    CodePropsComponent
+    CodePropsComponent,
+    ContentHeader
   ],
   entryComponents: [
     PageComponent,

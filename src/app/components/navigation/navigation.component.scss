@@ -1,8 +1,8 @@
 //FIXME: Add scania-theme variables instead of hex colors, valid for all places
 
 :host {
-  padding: 20px 0;
-
+  background: #171719;
+  // Extra navigation
   div + div {
     margin-top: 130px;
   }
@@ -14,14 +14,12 @@
 }
 
 section {
-  margin-bottom: 20px;
   overflow: hidden;
 
   &.external {
     margin: 0;
 
     a {
-      margin-bottom: 20px;
 
       &:first-child {
         margin-top: 30px;
@@ -41,8 +39,7 @@ section {
 
   > a {
     display: flex;
-    padding: 3px 20px;
-    border-left: 3px transparent solid;
+    color: white;
 
     // Rotate for the angle-down icon
     &.collapsed > c-icon {
@@ -60,31 +57,52 @@ section {
     }
 
     &.active {
-      font-weight: bold;
-      color: #033a6a;
-      color: Var(--primary);
-      border-left: 3px solid;
-      border-color: #D6001C;
-      border-color: Var(--red);
+      color: white;
     }
   }
   div {
 
     a {
-      display:block;
-      padding: 7.5px 0px 7.5px 60px;
-      margin: 5px 0px;
+      
+      color: white;
 
       &.active {
-        font-weight: bold;
-        color: #033a6a;
-        color: Var(--primary);
+        color: white;
       }
     }
   }
 }
 
+//TODO: Move this?
 a {
   text-decoration: none;
   align-items: center;
+}
+
+//New styling
+
+.sdds-nav-link-style {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.sdds-nav-section {
+  border-bottom: 1px solid #2B2C2F;
+}
+
+.sdds-nav-section-link {
+  padding: 6rem;
+}
+
+.sdds-nav-section-sub-link {
+  a {
+    margin: 4rem;
+    padding: 3rem 4rem;
+    display: block;
+
+    &.active {
+      background-color: #2B2C2F;
+    }
+  }
+
 }
