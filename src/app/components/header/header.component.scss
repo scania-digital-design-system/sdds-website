@@ -32,12 +32,72 @@
 
 //TODO:Search icon and scania symbol
 .sdds-header {
-  > span,
-  > c-icon {
-
-    padding: 6rem;
+  .site-search {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right:  1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: baseline;
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: 24px 24px;
+      display: inline-block;
+      color: #fff;
+      c-icon {
+        vertical-align: unset;
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &.close-search {
+        display: none;
+      }
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      flex-grow: 1;
+      width: 0px;
+      transition: width 1s ease-in;
+      &:focus {
+        border: none;
+        outline:none;
+      }
+    }
+
+    &.open {
+      flex-grow: 1;
+
+      button.close-search,
+      input {
+        display: inline-block;
+      }
+      input {
+        width: auto;
+      }
+    }
+  }
+
+  .scania-symbol{
+    padding: 16px 39px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    background: var(--background-image-scania-symbol-svg);
+    background: var(--background-image-scania-symbol-png);
+    background-size: 30px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-color: var(--blue-800);
+    }
   }
 }
 
