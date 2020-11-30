@@ -1,11 +1,7 @@
 //FIXME: Add scania-theme variables instead of hex colors, valid for all places
 
 :host {
-  background: #171719;
-  // Extra navigation
-  div + div {
-    margin-top: 130px;
-  }
+  background-color: #171719;
 }
 
 //TODO: Look into transtion from bootstrap regarding animation for collapse
@@ -13,23 +9,21 @@
   transition-duration: 0.1s;
 }
 
-section {
-  overflow: hidden;
+//Main style for all links (sub links, support links, external links)
+.sdds-nav-link-style {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-decoration: none;
+  align-items: center;
+}
 
-  &.external {
-    margin: 0;
+.sdds-nav-section {
+  border-bottom: 1px solid #2B2C2F;
 
-    a {
-
-      &:first-child {
-        margin-top: 30px;
-      }
-    }
-  }
-
+  // Collapse/expand icon
   c-icon {
     margin-left: auto;
-    // color: white;
 
     &[name=scania-angle-down] {
       font-size: 30px;
@@ -39,55 +33,19 @@ section {
 
   > a {
     display: flex;
-    color: white;
 
     // Rotate for the angle-down icon
     &.collapsed > c-icon {
-
       &[name=scania-angle-down] {
         transform: rotate(0deg);
       }
     }
-
     & > c-icon {
-
       &[name=scania-angle-down] {
         transform: rotate(180deg);
       }
     }
-
-    &.active {
-      color: white;
-    }
   }
-  div {
-
-    a {
-      
-      color: white;
-
-      &.active {
-        color: white;
-      }
-    }
-  }
-}
-
-//TODO: Move this?
-a {
-  text-decoration: none;
-  align-items: center;
-}
-
-//New styling
-
-.sdds-nav-link-style {
-  font-size: 3.5rem;
-  line-height: 4rem;
-}
-
-.sdds-nav-section {
-  border-bottom: 1px solid #2B2C2F;
 }
 
 .sdds-nav-section-link {
@@ -96,13 +54,20 @@ a {
 
 .sdds-nav-section-sub-link {
   a {
+    display: block;
     margin: 4rem;
     padding: 3rem 4rem;
-    display: block;
 
     &.active {
       background-color: #2B2C2F;
     }
   }
+
+}
+
+.sdds-external-links {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
 
 }

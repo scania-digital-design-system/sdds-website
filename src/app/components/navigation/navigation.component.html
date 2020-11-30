@@ -10,7 +10,7 @@
       </a>
 
       <!-- Sub menu -->
-      <div #1 [id]="id + page.id" class="sdds-nav-section-sub-link collapse" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
+      <div #1 class="sdds-nav-section-sub-link collapse" [id]="id + page.id" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
         <a class="sdds-nav-link-style" *ngFor="let sub of page.submenus; index as i;" routerLinkActive="active" [routerLink]="page.url + '/' + sub.url">{{sub.title}}</a>
       </div>
 
@@ -18,12 +18,13 @@
   </ng-container>
 
   <!-- This setup for external link should really be improved later on... -->
-  <section class="external">
+  <section class="sdds-external-links">
     <ng-container *ngFor="let page of nav.menus">
-      <a *ngIf="page.url.indexOf('http') === 0" href="{{page.url}}" target="_blank">
+      <a class="sdds-external-link sdds-nav-link-style" *ngIf="page.url.indexOf('http') === 0" href="{{page.url}}" target="_blank">
         {{page.title}}
         <c-icon name="scania-external_link"></c-icon>
       </a>
     </ng-container>
   </section>
+
 </div>

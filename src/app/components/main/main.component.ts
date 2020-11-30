@@ -31,7 +31,7 @@ export class MainComponent {
         const paths = route.urlAfterRedirects.substr(1).split('?')[0].split('/');
 
         this.page = this.getPage(this.menus, paths);
-        this.class = `category-${this.parent.url} page-${this.page.url}`;
+        this.class = `sdds-content-push category-${this.parent.url} page-${this.page.url}`;
 
         // this.page.content.info = (this.docs.find((item: Doc = {}) => item.tag === this.page.content.tag) || {}).props;
         // Is this a bad idea, it might lead to circular references.

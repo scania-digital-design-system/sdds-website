@@ -3,10 +3,6 @@
 :host {
   overflow: hidden;
   height: 100%; // Edge fix for overflow set on main and nav
-  background-color: #fafafa;
-  background-color: var(--white);
-  //FIXME: Add correct rem
-  font-size: 4rem;
 
   ::ng-deep > nav {
 
@@ -35,18 +31,4 @@
 nav,
 main {
   overflow-y: auto;
-}
-
-.sdds-nav {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 64rem;
-  // width: 64rem;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-}
-
-main {
-  flex: 1;
 }

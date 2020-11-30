@@ -1,8 +1,3 @@
-
-:host {
-  flex-basis:100%;
-}
-
 .sdds-header {
   background-color: #041E42;
   height: 16rem;
@@ -13,8 +8,10 @@
   color: white;
 
   //Fixed header
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
+  // z-index: 1;
+
+  //Add breakpoints var instead
   @media (min-width: 320px) {
     width: 100%
   }
@@ -31,11 +28,9 @@
     width: calc(100% - 256px);
   }
 
- 
 }
 
-
-
+//TODO:Search icon and scania symbol
 .sdds-header {
   > span,
   > c-icon {
