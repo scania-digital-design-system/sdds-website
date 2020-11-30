@@ -8,6 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 
+import { Header } from './components/header/header.component'
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MainComponent } from './components/main/main.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
@@ -19,7 +20,8 @@ import { CookiesMessage } from './components/cookies-message/cookies-message.com
     CookiesMessage,
     NavigationComponent,
     MainComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    Header
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,7 @@
 //FIXME: Add scania-theme variables instead of hex colors, valid for all places
 
 :host {
-  padding: 20px 0;
-
-  div + div {
-    margin-top: 130px;
-  }
+  background-color: #171719;
 }
 
 //TODO: Look into transtion from bootstrap regarding animation for collapse
@@ -13,25 +9,21 @@
   transition-duration: 0.1s;
 }
 
-section {
-  margin-bottom: 20px;
-  overflow: hidden;
+//Main style for all links (sub links, support links, external links)
+.sdds-nav-link-style {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-decoration: none;
+  align-items: center;
+}
 
-  &.external {
-    margin: 0;
+.sdds-nav-section {
+  border-bottom: 1px solid #2B2C2F;
 
-    a {
-      margin-bottom: 20px;
-
-      &:first-child {
-        margin-top: 30px;
-      }
-    }
-  }
-
+  // Collapse/expand icon
   c-icon {
     margin-left: auto;
-    // color: white;
 
     &[name=scania-angle-down] {
       font-size: 30px;
@@ -41,50 +33,41 @@ section {
 
   > a {
     display: flex;
-    padding: 3px 20px;
-    border-left: 3px transparent solid;
 
     // Rotate for the angle-down icon
     &.collapsed > c-icon {
-
       &[name=scania-angle-down] {
         transform: rotate(0deg);
       }
     }
-
     & > c-icon {
-
       &[name=scania-angle-down] {
         transform: rotate(180deg);
-      }
-    }
-
-    &.active {
-      font-weight: bold;
-      color: #033a6a;
-      color: Var(--primary);
-      border-left: 3px solid;
-      border-color: #D6001C;
-      border-color: Var(--red);
-    }
-  }
-  div {
-
-    a {
-      display:block;
-      padding: 7.5px 0px 7.5px 60px;
-      margin: 5px 0px;
-
-      &.active {
-        font-weight: bold;
-        color: #033a6a;
-        color: Var(--primary);
       }
     }
   }
 }
 
-a {
-  text-decoration: none;
-  align-items: center;
+.sdds-nav-section-link {
+  padding: 6rem;
+}
+
+.sdds-nav-section-sub-link {
+  a {
+    display: block;
+    margin: 4rem;
+    padding: 3rem 4rem;
+
+    &.active {
+      background-color: #2B2C2F;
+    }
+  }
+
+}
+
+.sdds-external-links {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
 }

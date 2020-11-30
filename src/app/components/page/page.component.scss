@@ -6,12 +6,12 @@
   ::ng-deep {
     // Fix for IE11 Flex problem
     width: 100%;
-    .tab-content,
-    .tab-pane,
-    .tab-pane > div,
-    .tab-pane > div > section {
-      width: 100%;
-    }
+    // .tab-content,
+    // .tab-pane,
+    // .tab-pane > div,
+    // .tab-pane > div > section {
+    //   width: 100%;
+    // }
 
     //TODO:Temporary for the code section in getting started
     pre {

@@ -1,0 +1,43 @@
+.sdds-header {
+  background-color: #041E42;
+  height: 16rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 4rem;
+  color: white;
+
+  //Fixed header
+  position: fixed;
+  // z-index: 1;
+
+  //Add breakpoints var instead
+  @media (min-width: 320px) {
+    width: 100%
+  }
+  @media (min-width: 672px) {
+    width: calc(100% - 240px);
+  }
+  @media (min-width: 1054px) {
+    width: calc(100% - 256px);
+  }
+  @media (min-width: 1312px) {
+    width: calc(100% - 256px);
+  }
+  @media (min-width: 1584px) {
+    width: calc(100% - 256px);
+  }
+
+}
+
+//TODO:Search icon and scania symbol
+.sdds-header {
+  > span,
+  > c-icon {
+
+    padding: 6rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right:  1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+

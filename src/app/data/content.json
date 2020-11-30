@@ -462,21 +462,9 @@
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "72",
+                    "id": "202",
                     "Title": null,
-                    "Text": "<p class=\"lead\">The grid fundamental to our design system. It provides structure and guidance for all creative decision-making. And for the end user. </p>"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "73",
-                    "Title": null,
-                    "Text": "## 4 px baseline grid\n\n![text](https://sdds-cms.s3.amazonaws.com/d09a7858b21d4717b1e1e0e365bb196f.svg)\n\n</section>\n\n<section>\n\n## The basic unit\n\n<p>The grid is based on a 4 px baseline grid. All type aligns to this grid. All line-heights of the fonts used are divisible by 4. <p>\n\n![text](https://sdds-cms.s3.amazonaws.com/a03f6614c1c8479f8357dc7539fa01ca.svg)\n"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "74",
-                    "Title": null,
-                    "Text": "\n## The pixel grid\n\n<p>The basic unit forms a 4 px (1 REM) square grid. Every UI element should align with the pixel grid. </p>\n\n![text](https://sdds-cms.s3.amazonaws.com/57a416c37925449186fb76cbcedbc496.svg)\n\n</section>\n\n<section>\n\n## Spacing\n\n<p>Multiples of the basic unit form a spacing scale. It contains small increments of space needed to create appropriate spatial relationships for detail-level designs. Use the spacing scale when building individual components and deciding spaces between them. Every part of a UI should be intentional, including the space between elements. The amount of space between items creates relationships and hierarchy. </p>\n\n![text](https://sdds-cms.s3.amazonaws.com/d9790147d47643948d66dc2159e28257.svg)"
+                    "Text": "Coming soon!"
                   }
                 ],
                 "updated_at": "2020-03-24T14:05:43.746Z"
@@ -1741,9 +1729,10 @@
                 "title": "Colour",
                 "section": [
                   {
-                    "__typename": "ComponentContentPluginColourList",
-                    "id": "1",
-                    "colour": "[Work in progress]\n\nPlease note that the gradients of the base colours are in BETA mode. Before using them, get in touch with us.\n\n## Primary\n\n---\nScania Black : #2D2926, text: light\nScania Black 90 : #404040, text: light\nScania Black 80 : #53565A, text: light\nScania Black 70 : #6A6D70, text: light\nScania Black 60 : #828486, text: light\nScania Black 50 : #97999B, text: both\nScania Black 40 : #ABACAB, text: dark\nScania Black 30 : #BBBBBB, text: dark\nScania Black 20 : #CDCDCD, text: dark\nScania Black 10 : #E2E2E2, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n---\nScania Blue : #041E42, text: light\nScania Blue 90 : #1F3656, text: light\nScania Blue 80 : #3B4F6B, text: light\nScania Blue 70 : #56677F, text: light\nScania Blue 60 : #718094, text: light\nScania Blue 50 : #8D98A8, text: both\nScania Blue 40 : #A8B1BD, text: dark\nScania Blue 30 : #BFC5CE, text: dark\nScania Blue 20 : #CFD5DC, text: dark\nScania Blue 10 : #E6E9EC, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n## Interaction\n\n---\nScania Interaction Green : #3C763D, text: light\nScania Interaction Green 80 : #4EAD53, text: both\nScania Interaction Green 60 : #65C367, text: dark\nScania Interaction Green 40 : #83DA85, text: dark\nScania Interaction Green 20 : #C4E5C2, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n---\nScania Interaction Red : #D6001C, text: light\nScania Interaction Red 80 : #E8301B, text: light\nScania Interaction Red 60 : #FF5B40, text: both\nScania Interaction Red 40 : #FF8673, text: dark\nScania Interaction Red 20 : #FDC8BE, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n---\nScania Interaction Yellow : #E1A93E, text: both\nScania Interaction Yellow 80: #EEB251, text: dark\nScania Interaction Yellow 60: #EFBC70, text: dark\nScania Interaction Yellow 40: #F5CC8F, text: dark\nScania Interaction Yellow 20: #F9E5CB, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n## Secondary\n\n---\nScania Beige : #CDB888, text: both\nScania Beige 75 : #DAC8A4, text: dark\nScania Beige 50 : #E5D8C0, text: dark\nScania Beige 25 : #F0E9DD, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n---\nScania Green: #2C5234, text: light\nScania Green 75 : #5C7961, text: light\nScania Green 50 : #8EA291, text: both\nScania Green 25 : #C3CDC4, text: dark\nScania White : #FAFAFA, text: dark\n---\n\n---\nScania Orange : #E3560B, text: light\nScania Orange 75: #F67032, text: both\nScania Orange 50: #FF8F5B, text: dark\nScania Orange 25: #FCC5AC, text: dark\nScania White: #FAFAFA, text: dark\n---\n\n---\nScania Pale Green : #94A596, text: both\nScania Pale Green 75 : #ADBAAE, text: dark\nScania Pale Green 50 : #C6CFC7, text: dark\nScania Pale Green 25 : #E0E4E0, text: dark\nScania White : #FAFAFA, text: dark\n---"
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "201",
+                    "Title": "",
+                    "Text": "Coming soon !"
                   }
                 ],
                 "updated_at": "2020-06-04T12:21:49.351Z"

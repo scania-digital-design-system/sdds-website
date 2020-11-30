@@ -1,4 +1,5 @@
-<h1 class='page-title'>{{content.title}}</h1>
+<Content-Header categoryTitle='Category' pageTitle='{{content.title}}'></Content-Header>
+<!-- <h1 class='page-title'>{{content.title}}</h1> -->
 <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
   <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
     <a [ngClass]='("nav-link " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
@@ -7,7 +8,7 @@
   </li>
 </ul>
 
-<div class='tab-content'>
+<div class='tab-content sdds-container-push-fluid'>
   <router-outlet></router-outlet>
   <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
     <ng-container *ngFor='let item of tabContent.pageContent'>
