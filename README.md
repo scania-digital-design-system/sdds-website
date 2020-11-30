@@ -2,6 +2,7 @@
 
 Visit our Design System at [Digitaldesign.scania.com](https://digitaldesign.scania.com/)
 
+The application uses **SDDS** and the base structure is **Angular 8**.
 
 ## How to get started with Corporate-Ui and Scania-theme
 
@@ -40,13 +41,13 @@ To have access to latest data from our headless cms you need to fetch it with fo
 
 ## Developing with Corporate-Ui and Scania-Theme
 
-Create npm links of **Corporate Ui** and **Scania theme**
+Create npm links of **SDDS**
 
-Clone Corporate-UI and Scania-Theme
+Clone sdds
 ```bash
-> cd ../corporate-ui
+> cd sdds/components
 > npm link
-> cd ../scania-theme
+> cd sdds/theme/light
 > npm link
 ```
 
@@ -55,12 +56,11 @@ Add links to **Corporate Ui** and **Scania theme** in Corporate-Ui-site
 > npm run link
   // or
 > cd corporate-ui-site
-> npm link corporate-ui
-> npm link scania-theme
+> npm link @scania/components
+> npm link @scania/theme-light
 ```
 
 ## Technical notes
-The application uses **Corporate Ui** together with **Scania theme** and the base structure is **Angular 8**.
 
 It is rendered as follow:
 - Content: **src/app/data/content.json** served by **app service**
