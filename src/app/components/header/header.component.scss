@@ -1,4 +1,5 @@
 .sdds-header {
+  // TODO: Use CSS VARS from scania-theme
   background-color: #041E42;
   height: 16rem;
   display: flex;
@@ -11,80 +12,30 @@
   position: fixed;
   // z-index: 1;
 
-  //Add breakpoints var instead
-  @media (min-width: 320px) {
-    width: 100%
-  }
-  @media (min-width: 672px) {
-    width: calc(100% - 240px);
-  }
-  @media (min-width: 1054px) {
-    width: calc(100% - 256px);
-  }
-  @media (min-width: 1312px) {
-    width: calc(100% - 256px);
-  }
-  @media (min-width: 1584px) {
-    width: calc(100% - 256px);
-  }
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 24px 24px;
+    display: inline-block;
+    color: #fff;
+    c-icon {
+      vertical-align: unset;
+    }
 
-}
-
-//TODO:Search icon and scania symbol
-.sdds-header {
-  .site-search {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.2s ease-in-out;
-    display: flex;
-    align-items: baseline;
-
-    button {
+    &:focus {
       border: none;
-      background-color: transparent;
-      padding: 24px 24px;
-      display: inline-block;
-      color: #fff;
-      c-icon {
-        vertical-align: unset;
-      }
-
-      &:focus {
-        border: none;
-        outline: none;
-      }
-
-      &.close-search {
-        display: none;
-      }
+      outline: none;
     }
 
-    input {
-      background-color: transparent;
-      border: none;
-      color: #fff;
-      flex-grow: 1;
-      width: 0px;
-      transition: width 1s ease-in;
-      &:focus {
-        border: none;
-        outline:none;
-      }
+    &.close-search {
+      display: none;
     }
-
-    &.open {
-      flex-grow: 1;
-
-      button.close-search,
-      input {
-        display: inline-block;
-      }
-      input {
-        width: auto;
-      }
-    }
+    
   }
 
   .scania-symbol{
+    order: 1;
+    flex-grow: 1;
     padding: 16px 39px;
     display: block;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,5 +50,85 @@
       background-color: var(--blue-800);
     }
   }
+
+  .site-search {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: baseline;
+    order: 2;
+
+    input {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      flex-grow: 1;
+      width: 0px;
+      transition: width 1s ease-in;
+      &:focus {
+        border: none;
+        outline:none;
+      }
+    }
+  }
+
+  // Open state
+  &.open {
+    
+    .site-search {
+      flex-grow: 1;
+    }
+
+    .scania-symbol,
+    .menu-mobile {
+      display: none;
+    }
+
+    button.close-search,
+    input {
+      display: inline-block;
+    }
+
+    input {
+      width: auto;
+    }
+  }
+
+  // TODO: Add breakpoints var instead
+  @media (min-width: 320px) {
+    width: 100%
+  }
+  @media (min-width: 672px) {
+    width: calc(100% - 240px);
+
+    .site-search {
+      order: 1;
+    }
+
+    .scania-symbol {
+      order: 2;
+      flex-grow: unset;
+    }
+
+    .menu-mobile {
+      display: none;
+    }
+
+    &.open {
+      .scania-symbol {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 1054px) {
+    width: calc(100% - 256px);
+  }
+  @media (min-width: 1312px) {
+    width: calc(100% - 256px);
+  }
+  @media (min-width: 1584px) {
+    width: calc(100% - 256px);
+  }
+
 }
 

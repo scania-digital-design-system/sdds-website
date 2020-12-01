@@ -1,6 +1,7 @@
-<header class="sdds-header">
-  <div [ngClass]="{'site-search':true, 'open' : searchOpen}">
-    <button (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>
+<header [ngClass]="{'sdds-header':true, 'open' : searchOpen}">
+  <button class="menu-mobile"><c-icon name='scania-menu-mobile'></c-icon></button>
+  <div class="site-search">
+    <button class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>
     <input class="sdds-detail-02" type="text" placeholder="Search" name="sdds-header-search">
     <button class="close-search" (click)="toggleSearch()"><c-icon name="scania-cross"></c-icon></button>
   </div>
