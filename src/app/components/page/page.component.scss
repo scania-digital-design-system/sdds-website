@@ -13,6 +13,12 @@
     //   width: 100%;
     // }
 
+    .tab-content {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      position: relative;
+    }
+
     //TODO:Temporary for the code section in getting started
     pre {
       color: var(--white);
@@ -45,13 +51,14 @@
 
     // Specific for tabs in site
     #myTab {
-      //FIXME: Add correct rem
-      margin-bottom: 6rem;
-      margin-top: 5rem;
+      padding: 6rem 10rem;
+      border-bottom: 1px solid #e2e2e4; // grey-100
 
       .nav-link {
         //FIXME: Add correct rem
         margin-right: 9.5rem; //FIXME:Might wanna add this for scania-theme
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 4rem; //Scania-theme?
       }
     }
@@ -133,6 +140,53 @@
         }
       }
     }
+    
+    .anchor-menus {
+      position: absolute;
+      right: 0;
+      top: 6rem;
+      text-align: right;
+
+      li {
+        list-style-type: none;
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-right: 6rem;
+        a {
+          display: block;
+          position: relative;
+          padding-right: 4rem;
+
+          > p { margin:0; }
+
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            right: -2px;
+            width: 1px;
+            height: 100%;
+            border-right: 2px solid var(--sdds-blue-200);
+          }
+
+          &:before {
+            top: -2rem;
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+          }
+    
+          &:hover,
+          &:active,
+          &.active {
+            color: var(--sdds-blue-900);
+            &:after {border-color: var(--sdds-blue-900);}
+          }
+        }
+
+        &:first-child { a:before {padding-top:0; top:0;}}
+        &:last-child { a:before {padding-bottom:0;}}
+      }
+    }
   }
 }
 
@@ -189,7 +243,8 @@
 
     img {
       width: 300px;
-      margin-bottom: 15px;
+      margin-bottom
+      : 15px;
       margin-right: 15px;
     }
   }

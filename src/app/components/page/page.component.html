@@ -1,4 +1,4 @@
-<Content-Header categoryTitle='Category' pageTitle='{{content.title}}'></Content-Header>
+<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}'></Content-Header>
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
 <ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
   <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
@@ -8,41 +8,53 @@
   </li>
 </ul>
 
-<div class='tab-content sdds-container-push-fluid'>
-  <router-outlet></router-outlet>
-  <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
-    <ng-container *ngFor='let item of tabContent.pageContent'>
-      
-      <section *ngFor="let section of item.content.section">
-        
-        <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
-          <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h4>
-          <p [innerHTML]='section.Text | markdown | keepHtml'></p>
-        </ng-template>
+<div class="tab-content sdds-container-push-fluid">
+  <div class="sdds-row">
 
-        <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOverviewList'">
-          <div> 
-            <p class="lead" [innerHTML]='section.description | markdown | keepHtml'></p>
-          </div>
-          
-          <section style="margin-top: 12.5rem;">
-          <h1 style="margin-bottom: 8rem;">Overview</h1>
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-xl-3 col-sm-12 col-xs-12 mb-5 d-flex" *ngFor="let sub of content.submenus | sortASC; index as i;">
-                <a [routerLink]="sub.url" class="card">
-                  <div class="card-body">
-                    <img alt="{{sub.title}}" src="{{sub.thumbnail.url}}" *ngIf="sub.thumbnail" />
-                    <h4>{{sub.title}}</h4>
-                  </div>
-                </a>
-              </div>
+    <router-outlet></router-outlet>
+
+    <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
+      <ng-container *ngFor='let item of tabContent.pageContent'>
+
+        <ng-container *ngFor="let section of item.content.section">
+
+          <!-- Template for one column article on parent level -->
+          <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
+            <div class="sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-4">
+              <h5 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h5>
+              <p [innerHTML]='section.Text | markdown | keepHtml'></p>
             </div>
-          </section>
-        </ng-template>
+          </ng-template>
 
-      </section>
-      
-    </ng-container>
+          <!-- Template for Overview page -->
+          <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOverviewList'">
+            <div class="sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-4"> 
+              <p class="lead" [innerHTML]='section.description | markdown | keepHtml'></p>
+            </div>
+            <section style="margin-top: 12.5rem;" class="sdds-col-xlg-16">
+              <h1 style="margin-bottom: 8rem;">Overview</h1>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-xl-3 col-sm-12 col-xs-12 mb-5 d-flex" *ngFor="let sub of content.submenus | sortASC; index as i;">
+                    <a [routerLink]="sub.url" class="card">
+                      <div class="card-body">
+                        <img alt="{{sub.title}}" src="{{sub.thumbnail.url}}" *ngIf="sub.thumbnail" />
+                        <h4>{{sub.title}}</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            
+          </ng-template>
+
+        </ng-container>
+
+      </ng-container>
+
+      <p class='last-updated sdds-col-xlg-16'>Last modified {{lastUpdate | dateFormat}}</p>
+
+    </div>
+
   </div>
-  <p class='last-updated'>Last modified {{lastUpdate | dateFormat}}</p>
+
 </div>

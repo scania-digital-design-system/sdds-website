@@ -18,6 +18,7 @@ export class PageComponent {
   tabContent: any = {};
   lastUpdate;
   tabActive;
+  parent;
 
   constructor(public ps: PageService, private route: Router) {
 
@@ -28,20 +29,22 @@ export class PageComponent {
       if(Object.keys(page).length == 0) {
         return;
       } else {
-
+        console.log(1,page);
         if(page.hasOwnProperty('id')){
           this.content = menus.find(menu => menu.id === page.id);
           // If page is not a parent and tabs not exist then show content (for example Home, Support, Contribution)
           this.tabContent = page.parent.id===undefined && !this.content.showTabs ? this.content.pageStructure[0] : [];
-
+          this.parent = page.parent.title;
         } else if(page.hasOwnProperty('parent') && page.parent) {
           this.content = menus.find(menu => menu.id === page.parent.id);
           // If page nested inside parent then show content (for example Definitions, Typography, etc.)
           this.tabContent = this.content.pageStructure[0];
+          this.parent = page.title;
         } else {
           return;
         }
       }
+
       this.renderLastUpdated();
     });
     

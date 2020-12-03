@@ -58,7 +58,6 @@ export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
     this.ps.pages.subscribe(items => {
-
       const routes = this.contentToRoute(items);
 
       this.router.resetConfig([

@@ -9,7 +9,7 @@
 
   //Fixed header
   position: fixed;
-  // z-index: 1;
+  z-index: 1000;
 
   //Add breakpoints var instead
   @media (min-width: 320px) {

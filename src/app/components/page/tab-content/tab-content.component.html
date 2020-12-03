@@ -1,19 +1,28 @@
-<div class="tab-pane sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4">
 
-  <div *ngFor='let item of tabContent.pageContent'>
+<div class="tab-pane">
 
-    <section *ngFor="let section of item.content.section">
+  <ng-container *ngFor='let item of tabContent.pageContent'>
+
+    <div class="anchor-menus">
+      <ul>
+        <ng-container *ngFor="let section of item.content.section">
+          <li *ngIf='section.Title'>
+            <a [href]="'#' + section.Title | generateTabUrl" class="sdds-detail-06 sdds-text-grey-400">{{section.Title}}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+
+    <ng-container *ngFor="let section of item.content.section">
 
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconPreview'">
 
-        <div class="row">
-          <div class="col-md-3">
+          <div class="sdds-col-xxlg-3 sdds-col-md-3">
             <div class="icon-preview" [innerHTML]='section.Icon | keepHtml'></div>
           </div>
-          <div class="col-md-9">
+          <div class="sdds-col-xxlg-9">
             {{section.Description}}
           </div>
-        </div>
 
       </ng-template>
 
@@ -25,13 +34,23 @@
 
       <!-- Code Example -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
-        <section class='container' code-example [example]='section' toggleCode='true'></section>
+        <section class='sdds-col-xlg-16' code-example [example]='section' toggleCode='true'></section>
       </ng-template>
 
       <!-- One column -->
       <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
-        <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h4>
-        <p [innerHTML]='section.Text | markdown | keepHtml'></p>
+        <div class="sdds-col-xlg-9 sdds-col-md-8 sdds-col-sm-4">
+          <div *ngIf='section.LeadText' class="sdds-paragraph-01">{{section.LeadText.textfield}}</div>
+          <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'> <a [name]='section.Title | generateTabUrl'></a></h4>
+          <p [innerHTML]='section.Text | markdown | keepHtml'></p>
+        </div>
+      </ng-template>
+
+      <!-- Full width Image -->
+      <ng-template [ngIf]="section.__typename === 'ComponentContentPluginFullWidthImage'">
+        <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
+          <img [src]="section.Image.image[0].url" alt=""/>
+        </div>
       </ng-template>
 
       <!-- Two column -->
@@ -81,8 +100,8 @@
         </div>
       </ng-template>
 
-    </section>
+    </ng-container>
 
-  </div>
+  </ng-container>
 
 </div>
