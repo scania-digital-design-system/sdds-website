@@ -29,18 +29,17 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@scania/theme-light": "file:scania-theme-light-1.2.0.tgz",
-    "@scania/components": "file:scania-components-4.2.0.tgz",
     "@angular-devkit/build-angular": "~0.803.9",
     "@angular/cli": "~8.3.9",
     "@angular/compiler-cli": "~8.2.9",
     "@angular/language-service": "~8.2.9",
     "@ngneat/transloco": "^2.14.0",
+    "@scania/components": "file:scania-components-4.2.0.tgz",
+    "@scania/theme-light": "file:scania-theme-light-1.2.0.tgz",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "corporate-ui": "4.2.0-1",
     "file-saver": "^2.0.2",
     "graphql-request": "^1.8.2",
     "jasmine-core": "~3.4.0",
@@ -54,7 +53,6 @@
     "marked": "^0.7.0",
     "node-fetch": "^2.6.0",
     "protractor": "~5.4.0",
-    "scania-theme": "1.2.0-1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"

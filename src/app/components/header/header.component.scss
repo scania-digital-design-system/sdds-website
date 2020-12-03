@@ -1,12 +1,12 @@
 .sdds-header {
   // TODO: Use CSS VARS from scania-theme
-  background-color: #041E42;
+  background-color: var(--sdds-blue-900);
   height: 16rem;
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 4rem;
-  color: white;
+  color:var(--sdds-white);
 
   //Fixed header
   position: fixed;
@@ -15,9 +15,9 @@
   button {
     border: none;
     background-color: transparent;
-    padding: 24px 24px;
+    padding: var(--sdds-spacing-element-24);
     display: inline-block;
-    color: #fff;
+    color: var(--sdds-white);
     c-icon {
       vertical-align: unset;
     }
@@ -36,23 +36,19 @@
   .scania-symbol{
     order: 1;
     flex-grow: 1;
-    padding: 16px 39px;
+    padding: 16px 40px;
     display: block;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    background: var(--background-image-scania-symbol-svg);
-    background: var(--background-image-scania-symbol-png);
+    background: var(--sdds-background-image-scania-symbol-svg);
+    background: var(--sdds-background-image-scania-symbol-png);
     background-size: 30px auto;
     background-position: center;
     background-repeat: no-repeat;
-
-    &:hover {
-      background-color: var(--blue-800);
-    }
   }
 
   .site-search {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid var(--sdds-blue-800);
+    border-right: 1px solid var(--sdds-blue-800);
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: baseline;
@@ -61,7 +57,7 @@
     input {
       background-color: transparent;
       border: none;
-      color: #fff;
+      color: rgba(205, 210, 217, 1); // cannot find colour in scale
       flex-grow: 1;
       width: 0px;
       transition: width 1s ease-in;
@@ -72,11 +68,21 @@
     }
   }
 
+  .scania-symbol,
+  .site-search {
+    &:hover {
+      background-color: var(--sdds-blue-800);
+    }
+  }
+
   // Open state
   &.open {
     
     .site-search {
       flex-grow: 1;
+      &:hover{
+        background-color: transparent;
+      }
     }
 
     .scania-symbol,
