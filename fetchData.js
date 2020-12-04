@@ -90,16 +90,21 @@ fragment detail on Content {
       title
       caption
       Image { 
-        label
-        caption
-        negative
-        alternate
-        image { 
-          url
-        }
-        id
+        ...image
       }
       id
+    }
+    ...on ComponentContentPluginTwoColumnsImages { 
+      id
+      Title
+      Images { 
+         ...image
+      }
+      texts: Text { 
+        textfield
+        Introduction
+        id
+      }
     }
     ... on ComponentContentPluginTwoColumns {
       id
@@ -138,13 +143,7 @@ fragment detail on Content {
         Columns
      }
       Images{
-        label
-        image {
-          url
-        }
-        negative
-        alternate
-        caption
+        ...image
       }
     }
   }
@@ -158,6 +157,17 @@ fragment icons on ComponentNestedIcon {
   description
   usage
   restriction
+}
+
+fragment image on ComponentNestedImages {
+  label
+  caption
+  negative
+  alternate
+  image { 
+  	url
+  }
+  id
 }
 `;
 

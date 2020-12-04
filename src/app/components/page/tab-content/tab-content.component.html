@@ -43,30 +43,56 @@
           <!-- One column -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
             <div class="no-padding sdds-col-xlg-9 sdds-col-md-8 sdds-col-sm-4">
-              <div *ngIf='section.LeadText' class="sdds-paragraph-01">{{section.LeadText.textfield}}</div>
-              <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'> <a [name]='section.Title | generateTabUrl'></a></h4>
-              <p [innerHTML]='section.Text | markdown | keepHtml'></p>
+              <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl' class="section-title"></h4>
+              <div *ngIf='section.LeadText' class="lead-text sdds-paragraph-01">{{section.LeadText.textfield}}</div>
+              <p *ngIf='section.Text' [innerHTML]='section.Text | markdown | keepHtml'></p>
             </div>
           </ng-template>
 
           <!-- Full width Image -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginFullWidthImage'">
-            <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
+            <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4 ful-width-image">
               <img [src]="section.Image.image[0].url" alt=""/>
             </div>
           </ng-template>
 
           <!-- Two column -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumns'">
-            <h1 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h1>
-            <div class="row">
-              <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Introduction }" class="col-md-6">
+            <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
+              <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
+            </div>
+            
+            <div class="sdds-col-xlg-8 sdds-col-md-4 sdds-col-sm-4">
+              <div *ngIf="section.ParagraphLeft" [ngClass]="{'lead' : section.ParagraphLeft.Introduction }">
                 <div [innerHTML]='section.ParagraphLeft.textfield | markdown | keepHtml'></div>
               </div>
-              <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Introduction }" class="col-md-6">
+            </div>
+            <div class="sdds-col-xlg-8 sdds-col-md-4 sdds-col-sm-4">
+              <div *ngIf="section.ParagraphRight" [ngClass]="{'lead' : section.ParagraphRight.Introduction }">
                 <div [innerHTML]='section.ParagraphRight.textfield | markdown | keepHtml'></div>
               </div>
             </div>
+          </ng-template>
+
+          <!-- Multiple columns, now only afford 2-->
+          <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumnsImages'">
+            <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
+              <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
+            </div>
+            <ng-container [ngIf]="section.Images">
+              <div *ngFor="let image of section.Images" class="sdds-col-xlg-8 sdds-col-md-4 sdds-col-sm-4">
+                <figure>
+                  <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
+                  <figcaption *ngIf='image.label' class="sdds-detail-02" >
+                    <strong>{{image.label}}</strong>
+                  </figcaption>
+                  <figcaption *ngIf='image.caption' class="sdds-detail-02">
+                    <span>{{image.caption}}</span>
+                  </figcaption>
+                </figure>
+              </div>  
+            </ng-container>
+
           </ng-template>
 
           <!-- Color list -->
