@@ -29,7 +29,6 @@ export class PageComponent {
       if(Object.keys(page).length == 0) {
         return;
       } else {
-        console.log(1,page);
         if(page.hasOwnProperty('id')){
           this.content = menus.find(menu => menu.id === page.id);
           // If page is not a parent and tabs not exist then show content (for example Home, Support, Contribution)

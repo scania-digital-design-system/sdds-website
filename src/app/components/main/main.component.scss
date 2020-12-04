@@ -12,6 +12,7 @@
 #content {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 :host-context(.page-home) {

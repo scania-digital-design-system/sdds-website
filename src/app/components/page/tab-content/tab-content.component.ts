@@ -9,7 +9,8 @@ import { menus } from '../../../data/content.json';
 
 @Component({
   templateUrl: './tab-content.component.html',
-  styleUrls: ['../page.component.scss']
+  styleUrls: ['../page.component.scss'],
+  host: { class: 'tab-component-container' }
 })
 
 export class TabContentComponent {

@@ -1,17 +1,21 @@
 <Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}'></Content-Header>
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
-<ul id='myTab' class='nav' role='tablist' *ngIf='content.showTabs'>
-  <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
-    <a [ngClass]='("nav-link " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
-      data-toggle='tab' routerLinkActive="active"
-      [routerLink]="content.url + '/' + (pagePart.title | generateTabUrl)">{{pagePart.title}}</a>
-  </li>
-</ul>
+<div class="nav sdds-container-push-fluid">
+  <div class="sdds-row">
+    <ul id='page-tabs' class='no-padding sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4' role='tablist' *ngIf='content.showTabs'>
+      <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
+        <a [ngClass]='("nav-link sdds-headline-06 " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
+          data-toggle='tab' routerLinkActive="active"
+          [routerLink]="content.url + '/' + (pagePart.title | generateTabUrl)">{{pagePart.title}}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
 
 <div class="tab-content sdds-container-push">
   <div class="sdds-row">
-
-    <router-outlet></router-outlet>
 
     <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
       <ng-container *ngFor='let item of tabContent.pageContent'>
@@ -20,7 +24,7 @@
 
           <!-- Template for one column article on parent level -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
-            <div class="sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-4">
+            <div class="no-padding sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-4">
               <h5 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml'></h5>
               <p [innerHTML]='section.Text | markdown | keepHtml'></p>
             </div>
@@ -50,8 +54,6 @@
         </ng-container>
 
       </ng-container>
-
-      <p class='last-updated sdds-col-xlg-16'>Last modified {{lastUpdate | dateFormat}}</p>
 
     </div>
 
