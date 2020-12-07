@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, Scroll } from '@angular/router';
 
 import { PageService } from 'src/app/app.service';
 import { Page } from 'src/app/app.interface';
@@ -17,13 +17,16 @@ export class TabContentComponent {
   title;
   content: any = {};
   tabContent: any = [];
+  defaultTab = '.';
 
   constructor(
     private route: ActivatedRoute,
-    public ps: PageService
+    public ps: PageService,
+    private router: Router
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
+    
     ps.page.subscribe((page: Page) => {
 
       if(Object.keys(page).length == 0) {
@@ -40,14 +43,33 @@ export class TabContentComponent {
 
         if(this.content.showTabs) {
 
-          this.tabContent = this.content.pageStructure.find(sub => generateUrlPipe.transform(sub.title) === this.title);
+          this.tabContent = this.content.pageStructure.find(sub => this.generateUrl(sub.title) === this.title);
 
           if(this.tabContent === undefined) this.tabContent = this.content.pageStructure[0];
         } else {
           this.tabContent = this.content.pageStructure[0];
         }
       }
+
+      if(this.title === undefined) {
+        this.defaultTab = this.generateUrl(this.content.pageStructure[0].title);
+      }
     });
 
+  }
+
+  generateUrl(url){
+    const generateUrlPipe = new GenerateTabURLPipe();
+    return generateUrlPipe.transform(url)
+  }
+
+  anchorMenu(id){
+    id = this.generateUrl(id);
+    const elem = document.getElementById(id);
+    const wrapper = document.querySelector('main');
+
+    const offset = 144; // sticky nav height + padding
+    
+    wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - offset), left: 0, behavior: 'smooth' });
   }
 }
