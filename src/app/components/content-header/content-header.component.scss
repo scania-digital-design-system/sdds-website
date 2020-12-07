@@ -1,11 +1,12 @@
+@import '../../app-vars.scss';
+
 .sdds-content-header {
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
   background-color: #041E42;
-  height: 48rem;
-  height: 64rem;
-  padding: 40px;
+  padding-top: $site-content-header-height-mobile;
+  padding-bottom: 6rem; 
 }
 
 .sdds-content-title-font {
@@ -20,4 +21,11 @@
 .sdds-page-title {
   color: white;
   margin: 0;
+}
+
+@media (min-width: 1056px) {
+  .sdds-content-header{
+    padding-bottom: 10rem;
+    padding-top: $site-content-header-height;
+  }
 }

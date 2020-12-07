@@ -1,26 +1,19 @@
-<div class='row' *ngFor='let type of example.code | split:"\r?\n-\r?\n"'>
+<div *ngFor='let type of example.code | split:"\r?\n-\r?\n"'>
   <div class="col-12">
     <!-- Title -->
-    <div class="row">
-      <h4 class="mb-5">{{example.title}}</h4>
-    </div>
+    <h4 class="mb-5">{{example.title}}</h4>
 
     <!-- Example -->
     <!-- FIXME: set width of every component ?  -->
-    <div class="row">
-      <div class='w-100 mb-5' [innerHTML]='type | keepHtml'></div>
-    </div>
-  </div>
+
+    <div class='w-100 mb-5' [innerHTML]='type | keepHtml'></div>
 
   <!-- Code  -->
-  <div class="row">
-    <div>
-      <c-code-sample [innerHTML]='type | keepHtml'></c-code-sample>
-    </div>
-  </div>
+  <c-code-sample [innerHTML]='type | keepHtml'></c-code-sample>
+    
 </div>
 
 <!-- If code-properties is empty don't show -->
 
-<div code-properties  [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div>
+<div code-properties [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div>
 

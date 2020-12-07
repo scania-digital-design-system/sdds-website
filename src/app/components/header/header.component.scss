@@ -1,7 +1,9 @@
+@import '../../app-vars.scss';
+
 .sdds-header {
   // TODO: Use CSS VARS from scania-theme
   background-color: var(--sdds-blue-900);
-  height: 16rem;
+  height: $site-header-height;
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -10,7 +12,7 @@
 
   //Fixed header
   position: fixed;
-  // z-index: 1;
+  z-index: 1000;
 
   button {
     border: none;
@@ -57,7 +59,7 @@
     input {
       background-color: transparent;
       border: none;
-      color: rgba(205, 210, 217, 1); // cannot find colour in scale
+      color: var(sdds-blue-200);
       flex-grow: 1;
       width: 0px;
       transition: width 1s ease-in;

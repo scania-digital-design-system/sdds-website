@@ -80,6 +80,26 @@ fragment detail on Content {
       id
       Title
       Text
+      LeadText {
+        textfield
+        Introduction
+        id
+      }
+    }
+    ...on ComponentContentPluginFullWidthImage {
+      title
+      caption
+      Image { 
+        label
+        caption
+        negative
+        alternate
+        image { 
+          url
+        }
+        id
+      }
+      id
     }
     ... on ComponentContentPluginTwoColumns {
       id
