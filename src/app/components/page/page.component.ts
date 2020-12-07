@@ -46,7 +46,6 @@ export class PageComponent {
 
       this.renderLastUpdated();
     });
-    
   }
 
   renderLastUpdated(){
@@ -57,7 +56,6 @@ export class PageComponent {
           return new Date(data.content.updated_at);
         })));
       }
-      
       this.lastUpdate = newTime;
     });
   }

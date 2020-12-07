@@ -1,7 +1,7 @@
-//FIXME: Add scania-theme variables instead of hex colors, valid for all places
+//TODO Remove bootstrap implementation
 
 :host {
-  background-color: #171719;
+  background-color: var(--sdds-grey-900);
 }
 
 //TODO: Look into transtion from bootstrap regarding animation for collapse
@@ -11,63 +11,82 @@
 
 //Main style for all links (sub links, support links, external links)
 .sdds-nav-link-style {
-  color: white;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  color: var(--sdds-white);
   text-decoration: none;
   align-items: center;
+  cursor: pointer;
+}
+
+.sdds-navigation {
+  margin-bottom: 32rem;
+
+  @media(min-width: 672px) {
+    position: fixed;
+  }
 }
 
 .sdds-nav-section {
-  border-bottom: 1px solid #2B2C2F;
+  border-bottom: 1px solid var(--sdds-grey-800);
+}
+
+// First level menu links
+.sdds-nav-section-link {
+  padding: var(--sdds-spacing-element-24);
+  display: flex;
 
   // Collapse/expand icon
   c-icon {
     margin-left: auto;
+  }
 
-    &[name=scania-angle-down] {
-      font-size: 30px;
-      margin-right: -10px;
+  &:hover {
+    background-color: var(--sdds-grey-800)
+  }
+
+}
+
+//Second level menu links
+.sdds-nav-section-sub-links {
+  //  display: none;
+  margin-bottom: var(--sdds-spacing-element-12);
+
+  a {
+    display: block;
+    margin: 0 6rem;
+
+  span {
+    display: inline-flex;
+    padding: 10px 16px;
+    border-radius: 1rem;
+  }
+
+  &.active {
+
+    span {
+      // padding: 12px 16px;
+      background-color: var(--sdds-grey-500);
+      }
     }
   }
+
+}
+
+//External link styling
+.sdds-external-links {
+  margin-top: auto;
+}
+
+.sdds-external-link {
+  padding: 24px;
+  border-bottom: 1px solid var(--sdds-grey-800);
 
   > a {
     display: flex;
-
-    // Rotate for the angle-down icon
-    &.collapsed > c-icon {
-      &[name=scania-angle-down] {
-        transform: rotate(0deg);
-      }
-    }
-    & > c-icon {
-      &[name=scania-angle-down] {
-        transform: rotate(180deg);
-      }
-    }
-  }
-}
-
-.sdds-nav-section-link {
-  padding: 6rem;
-}
-
-.sdds-nav-section-sub-link {
-  a {
-    display: block;
-    margin: 4rem;
-    padding: 3rem 4rem;
-
-    &.active {
-      background-color: #2B2C2F;
+    c-icon {
+      margin-left: auto;
     }
   }
 
 }
 
-.sdds-external-links {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
 
-}
