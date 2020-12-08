@@ -5,8 +5,9 @@
   flex-flow: column;
   justify-content: flex-end;
   background-color: #041E42;
-  padding-top: $site-content-header-height-mobile;
+  height: $site-content-header-height-mobile;
   padding-bottom: 6rem; 
+  margin-top: $site-header-height;
 }
 
 .sdds-content-title-font {
@@ -26,6 +27,6 @@
 @media (min-width: 1056px) {
   .sdds-content-header{
     padding-bottom: 10rem;
-    padding-top: $site-content-header-height;
+    height: $site-content-header-height;
   }
 }

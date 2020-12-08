@@ -15,32 +15,25 @@
     // .tab-pane > div > section {
     //   width: 100%;
     // }
-    &.tab-component-container {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-    }
 
     .tab-content {
       padding-top: 6rem;
       padding-bottom: 6rem;
       position: relative;
-      order: 2;
     }
 
     // position: header height + tab height 
-    $anchor-position: $site-header-height + (64/4);
+    
     .anchor-menus {
       position: static;
       right: 0;
-      top: $anchor-position;
       text-align: left;
       padding-top: var(--sdds-spacing-element-24);
       flex-grow: 1;
-      order: 1;
+      min-width: 149px;
       ul {
-        margin: 0;
-        padding-left: 4rem;
+        margin-bottom: var(--sdds-spacing-element-40);
+        padding-left: 0;
       }
 
       li {
@@ -236,29 +229,30 @@
     
 
     @media (min-width: 1056px) {
-      .tab-component-container {
-        flex-direction: row;
-      }
       .anchor-menus {
         position: sticky;
-        order: 2;
         text-align: right;
+        top: $anchor-position-no-tabs;
+        &.show-tabs {
+          top: $anchor-position;
+        }
+        ul {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
         li{
-          margin-right: 6rem;
           a {
             padding-right: 4rem;
             &:before,
             &:after {
               left: unset;
-              right: -2px;
+              right: -1px;
               border-right: 1px solid var(--sdds-blue-200);
             }
           }
           
         }
-      }
-      .tab-content {
-        order: 1;
       }
     }
   // end of :ng-deep

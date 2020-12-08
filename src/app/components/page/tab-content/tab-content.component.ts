@@ -18,6 +18,7 @@ export class TabContentComponent {
   content: any = {};
   tabContent: any = [];
   defaultTab = '.';
+  tabExist: Boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -42,18 +43,21 @@ export class TabContentComponent {
         const generateUrlPipe = new GenerateTabURLPipe();
 
         if(this.content.showTabs) {
-
+          this.tabExist = true;
           this.tabContent = this.content.pageStructure.find(sub => this.generateUrl(sub.title) === this.title);
 
           if(this.tabContent === undefined) this.tabContent = this.content.pageStructure[0];
         } else {
+          this.tabExist = false;
           this.tabContent = this.content.pageStructure[0];
         }
       }
 
+      // This is for anchor link to work, the root routerLink should be the first tab, or current URL if page has no tabs
       if(this.title === undefined) {
-        this.defaultTab = this.generateUrl(this.content.pageStructure[0].title);
+        this.defaultTab = this.content.showTabs ? this.generateUrl(this.content.pageStructure[0].title) : '.';
       }
+      
     });
 
   }
