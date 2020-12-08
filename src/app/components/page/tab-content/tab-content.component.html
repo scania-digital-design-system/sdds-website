@@ -1,6 +1,5 @@
 <div class="tab-content sdds-container-push-fluid">
   <div class="sdds-row">
-    <div class="tab-pane">
 
       <ng-container *ngFor='let item of tabContent.pageContent'>
         <div [ngClass]='("anchor-menus no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-8 " + (tabExist ? "show-tabs" : ""))'>
@@ -74,13 +73,13 @@
             </div>
           </ng-template>
 
-          <!-- Multiple columns, now only afford 2-->
+          <!-- Multiple columns-->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumnsImages'">
             <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
               <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
             </div>
-            <ng-container [ngIf]="section.Images">
-              <div *ngFor="let image of section.Images" class="sdds-col-xlg-8 sdds-col-md-4 sdds-col-sm-4">
+            <ng-container *ngIf="section.Images">
+              <div *ngFor="let image of section.Images" class="sdds-col-xlg-7 sdds-col-md-4 sdds-col-sm-4">
                 <figure>
                   <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                   <figcaption *ngIf='image.label' class="sdds-detail-02" >
@@ -133,6 +132,6 @@
 
       </ng-container>
 
-    </div>
+  <!-- Endof .sdds-row -->
   </div>
 </div>
