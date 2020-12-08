@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Page, Doc, Navigation } from './app.interface';
 
 import { navigations } from './data/navigation.json';
-import { components as docs } from '@scania/components/dist/collection/custom-elements.json';
+import { components as docs } from '@scania-sdds/components/dist/collection/custom-elements.json';
 
 @Injectable()
 export class PageService {

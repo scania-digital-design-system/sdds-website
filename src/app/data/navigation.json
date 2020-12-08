@@ -1,13 +1,13 @@
 {
   "navigations": [
     {
-      "id": "1",
-      "title": "Main navigation",
+      "id": "3",
+      "title": "SDDS navigation",
       "menus": [
         {
           "id": "2",
           "url": "home",
-          "title": "Home",
+          "title": "Scania Digital Design System",
           "thumbnail": null,
           "submenus": []
         },
@@ -18,21 +18,21 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "36",
-              "url": "development",
-              "title": "Development",
+              "id": "38",
+              "url": "overview",
+              "title": "Getting started Overview",
               "thumbnail": null
             },
             {
               "id": "37",
               "url": "design",
-              "title": "Design",
+              "title": "Getting started Design",
               "thumbnail": null
             },
             {
-              "id": "38",
-              "url": "about-sdds",
-              "title": "About SDDS",
+              "id": "36",
+              "url": "development",
+              "title": "Getting started Development",
               "thumbnail": null
             }
           ]
@@ -40,27 +40,9 @@
         {
           "id": "17",
           "url": "foundation",
-          "title": "Foundations",
+          "title": "Foundation",
           "thumbnail": null,
           "submenus": [
-            {
-              "id": "18",
-              "url": "ux-principles",
-              "title": "UX principles",
-              "thumbnail": null
-            },
-            {
-              "id": "19",
-              "url": "ui-principles",
-              "title": "UI principles",
-              "thumbnail": null
-            },
-            {
-              "id": "22",
-              "url": "design-patterns",
-              "title": "Design Patterns",
-              "thumbnail": null
-            },
             {
               "id": "40",
               "url": "colour",
@@ -68,33 +50,39 @@
               "thumbnail": null
             },
             {
-              "id": "41",
-              "url": "typography",
-              "title": "Typography",
-              "thumbnail": null
-            },
-            {
               "id": "42",
               "url": "accessibility",
-              "title": "Accessibility",
-              "thumbnail": null
-            },
-            {
-              "id": "43",
-              "url": "grid-and-spacing",
-              "title": "Grid and spacing",
-              "thumbnail": null
-            },
-            {
-              "id": "44",
-              "url": "logotype",
-              "title": "Logotype",
+              "title": "Foundation Accessibility",
               "thumbnail": null
             },
             {
               "id": "46",
               "url": "icons",
-              "title": "Icons",
+              "title": "Foundation Icons",
+              "thumbnail": null
+            },
+            {
+              "id": "59",
+              "url": "spacing",
+              "title": "Foundation Spacing",
+              "thumbnail": null
+            },
+            {
+              "id": "64",
+              "url": "unit-grid-system",
+              "title": "Unit & Grid System",
+              "thumbnail": null
+            },
+            {
+              "id": "65",
+              "url": "foundation-typography",
+              "title": "Foundation Typography",
+              "thumbnail": null
+            },
+            {
+              "id": "67",
+              "url": "foundation-colours",
+              "title": "Foundation Colours",
               "thumbnail": null
             }
           ]
@@ -106,40 +94,10 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "1",
-              "url": "alert",
-              "title": "Alert",
-              "thumbnail": {
-                "id": "42",
-                "url": "https://sdds-cms.s3.amazonaws.com/59cd33e1b99c418bba59013c2a1933eb.png"
-              }
-            },
-            {
-              "id": "7",
-              "url": "badge",
-              "title": "Badge",
-              "thumbnail": {
-                "id": "43",
-                "url": "https://sdds-cms.s3.amazonaws.com/e1c9ffc44a6d4e7fa395cd81986329af.png"
-              }
-            },
-            {
-              "id": "8",
-              "url": "breadcrumbs",
-              "title": "Breadcrumbs",
-              "thumbnail": {
-                "id": "44",
-                "url": "https://sdds-cms.s3.amazonaws.com/978c234012d24a918c87ddd12a1b9d92.png"
-              }
-            },
-            {
-              "id": "10",
-              "url": "button-groups",
-              "title": "Button groups",
-              "thumbnail": {
-                "id": "45",
-                "url": "https://sdds-cms.s3.amazonaws.com/6a21a28eadd74b6f88fe13227b2a8490.png"
-              }
+              "id": "58",
+              "url": "divider",
+              "title": "Divider",
+              "thumbnail": null
             },
             {
               "id": "5",
@@ -148,138 +106,6 @@
               "thumbnail": {
                 "id": "46",
                 "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
-              }
-            },
-            {
-              "id": "6",
-              "url": "cards",
-              "title": "Cards",
-              "thumbnail": {
-                "id": "48",
-                "url": "https://sdds-cms.s3.amazonaws.com/f183e9db9d8d4e39af3e4ceee88a3dfe.png"
-              }
-            },
-            {
-              "id": "51",
-              "url": "content-component",
-              "title": "Content",
-              "thumbnail": null
-            },
-            {
-              "id": "11",
-              "url": "dropdown",
-              "title": "Dropdown",
-              "thumbnail": {
-                "id": "47",
-                "url": "https://sdds-cms.s3.amazonaws.com/b9a7da196c6849a8b70bbf46e8b76856.png"
-              }
-            },
-            {
-              "id": "49",
-              "url": "footer",
-              "title": "Footer",
-              "thumbnail": {
-                "id": "74",
-                "url": "https://sdds-cms.s3.amazonaws.com/e944816ae4f64c24b32b1b23057a4f80.png"
-              }
-            },
-            {
-              "id": "12",
-              "url": "form",
-              "title": "Forms",
-              "thumbnail": {
-                "id": "49",
-                "url": "https://sdds-cms.s3.amazonaws.com/e40cbc8fa9a742dc8ebbbb1abd2559fe.png"
-              }
-            },
-            {
-              "id": "47",
-              "url": "header",
-              "title": "Header",
-              "thumbnail": {
-                "id": "75",
-                "url": "https://sdds-cms.s3.amazonaws.com/cdcb07260f46485792c706aebd27b40f.png"
-              }
-            },
-            {
-              "id": "13",
-              "url": "input-groups",
-              "title": "Input groups",
-              "thumbnail": {
-                "id": "50",
-                "url": "https://sdds-cms.s3.amazonaws.com/65942e341036439ca6af079609330717.png"
-              }
-            },
-            {
-              "id": "39",
-              "url": "list-group",
-              "title": "List group",
-              "thumbnail": {
-                "id": "69",
-                "url": "https://sdds-cms.s3.amazonaws.com/a2ebb3dee06e4d86be4156bbf4285f98.png"
-              }
-            },
-            {
-              "id": "14",
-              "url": "media-objects",
-              "title": "Media Objects",
-              "thumbnail": {
-                "id": "71",
-                "url": "https://sdds-cms.s3.amazonaws.com/432aad2be9e44732978aee3fcb85984e.png"
-              }
-            },
-            {
-              "id": "15",
-              "url": "modals",
-              "title": "Modals",
-              "thumbnail": {
-                "id": "51",
-                "url": "https://sdds-cms.s3.amazonaws.com/8c6c92710c194c019ce93b5da0bd5d73.png"
-              }
-            },
-            {
-              "id": "48",
-              "url": "navigation",
-              "title": "Navigation",
-              "thumbnail": {
-                "id": "73",
-                "url": "https://sdds-cms.s3.amazonaws.com/b7759e8d410b458f9e6b8ae357b17660.png"
-              }
-            },
-            {
-              "id": "9",
-              "url": "pagination",
-              "title": "Pagination",
-              "thumbnail": {
-                "id": "53",
-                "url": "https://sdds-cms.s3.amazonaws.com/b0c740a6af14404ca1076678d5c6162d.png"
-              }
-            },
-            {
-              "id": "20",
-              "url": "progress-indicators",
-              "title": "Progress indicators",
-              "thumbnail": {
-                "id": "54",
-                "url": "https://sdds-cms.s3.amazonaws.com/453f1ba6ad4b46cf8795d0033f9230d3.png"
-              }
-            },
-            {
-              "id": "26",
-              "url": "tables",
-              "title": "Tables",
-              "thumbnail": {
-                "id": "70",
-                "url": "https://sdds-cms.s3.amazonaws.com/119246b66d5c498c87bfe425c9acaaf8.png"
-              }
-            },
-            {
-              "id": "52",
-              "url": "cookie",
-              "title": "Cookie",
-              "thumbnail": {
-                "id": "84",
-                "url": "https://sdds-cms.s3.amazonaws.com/89e8391f1d08414bae6e3c77e09b140b.png"
               }
             }
           ]
@@ -291,69 +117,50 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "30",
-              "url": "way-of-working",
-              "title": "Way of working",
+              "id": "60",
+              "url": "overview",
+              "title": "Resources Overview",
               "thumbnail": null
             },
             {
-              "id": "31",
-              "url": "definitions",
-              "title": "Definitions",
-              "thumbnail": null
-            },
-            {
-              "id": "33",
-              "url": "ui-kits",
-              "title": "UI kit(s)",
+              "id": "61",
+              "url": "brand",
+              "title": "Resources Brand",
               "thumbnail": null
             },
             {
               "id": "34",
               "url": "development",
-              "title": "Development resources",
+              "title": "Resources Development",
               "thumbnail": null
             },
             {
-              "id": "53",
-              "url": "identity-manual",
-              "title": "Identity manual",
+              "id": "63",
+              "url": "design",
+              "title": "Resources Design",
               "thumbnail": null
             }
           ]
         },
         {
-          "id": "54",
-          "url": "faqs",
-          "title": "FAQs",
-          "thumbnail": null,
-          "submenus": [
-            {
-              "id": "55",
-              "url": "faq-design",
-              "title": "Design",
-              "thumbnail": null
-            },
-            {
-              "id": "56",
-              "url": "faq-development",
-              "title": "Development",
-              "thumbnail": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "title": "Extra navigation",
-      "menus": [
-        {
           "id": "3",
           "url": "support",
           "title": "Support",
           "thumbnail": null,
-          "submenus": []
+          "submenus": [
+            {
+              "id": "54",
+              "url": "faqs",
+              "title": "Support FAQs",
+              "thumbnail": null
+            },
+            {
+              "id": "66",
+              "url": "contact",
+              "title": "Support Contact",
+              "thumbnail": null
+            }
+          ]
         },
         {
           "id": "23",
@@ -361,14 +168,13 @@
           "title": "Contribution",
           "thumbnail": null,
           "submenus": []
-        },
-        {
-          "id": "24",
-          "url": "news",
-          "title": "What's new",
-          "thumbnail": null,
-          "submenus": []
-        },
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "SDDS external",
+      "menus": [
         {
           "id": "25",
           "url": "https://www.scania.com/ux-library/en/home.html",
