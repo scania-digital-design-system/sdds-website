@@ -4,6 +4,7 @@
   // TODO: Use CSS VARS from scania-theme
   background-color: var(--sdds-blue-900);
   height: $site-header-height;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -15,11 +16,13 @@
   z-index: 1000;
 
   button {
-    border: none;
+    border: 0;
     background-color: transparent;
-    padding: var(--sdds-spacing-element-24);
+    padding: 0 var(--sdds-spacing-element-16);
+    line-height: 0;
     display: inline-block;
     color: var(--sdds-white);
+    font-size: 6rem;
     c-icon {
       vertical-align: unset;
     }
@@ -31,6 +34,10 @@
 
     &.close-search {
       display: none;
+    }
+
+    &.menu-mobile {
+      border-right: 1px solid var(--sdds-blue-800);
     }
     
   }
@@ -53,7 +60,7 @@
     border-right: 1px solid var(--sdds-blue-800);
     transition: all 0.2s ease-in-out;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     order: 2;
 
     input {
@@ -61,12 +68,23 @@
       border: none;
       color: var(--sdds-blue-200);
       flex-grow: 1;
+      display: none;
       width: 0px;
       transition: width 1s ease-in;
       &:focus {
         border: none;
         outline:none;
       }
+    }
+
+    ::placeholder {
+      color: var(--sdds-blue-200);
+      // TODO: Change to @include type-style(detail-02)
+      font-family: var(--sdds-font-family-sans-serif);
+      font-size: 3.5rem;
+      line-height: 4rem;
+      opacity: 1;
+      letter-spacing: -0.01em;
     }
   }
 
@@ -78,12 +96,25 @@
   }
 
   // Open state
-  &.open {
+  &.open-search {
     
     .site-search {
       flex-grow: 1;
       &:hover{
         background-color: transparent;
+      }
+      .search-symbol {
+        padding-left: var(--sdds-spacing-element-16);
+        padding-right: var(--sdds-spacing-element-16);
+      }
+      button.close-search,
+      input {
+        display: block;
+      }
+
+      input {
+        width: auto;
+        padding-top: 4px;
       }
     }
 
@@ -92,23 +123,15 @@
       display: none;
     }
 
-    button.close-search,
-    input {
-      display: inline-block;
-    }
-
-    input {
-      width: auto;
-    }
+    
   }
 
-  // TODO: Add breakpoints var instead
-  @media (min-width: 320px) {
-    width: 100%
-  }
-  @media (min-width: 672px) {
-    width: calc(100% - 240px);
+  @media (min-width: 1054px) {
+    width: calc(100% - 256px);
 
+    button {
+      padding: 0 var(--sdds-spacing-element-20);
+    }
     .site-search {
       order: 1;
     }
@@ -122,20 +145,11 @@
       display: none;
     }
 
-    &.open {
+    &.open-search {
       .scania-symbol {
         display: block;
       }
     }
-  }
-  @media (min-width: 1054px) {
-    width: calc(100% - 256px);
-  }
-  @media (min-width: 1312px) {
-    width: calc(100% - 256px);
-  }
-  @media (min-width: 1584px) {
-    width: calc(100% - 256px);
   }
 
 }
