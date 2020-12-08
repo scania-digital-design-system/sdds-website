@@ -2,8 +2,8 @@ const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
-const url = 'https://sdds-cms.herokuapp.com/graphql';
-// const url = 'http://localhost:1339/graphql';
+// const url = 'https://sdds-cms.herokuapp.com/graphql';
+const url = 'http://localhost:1339/graphql';
 
 const init = () => {
   getData('content', content);
@@ -160,14 +160,15 @@ fragment icons on ComponentNestedIcon {
 }
 
 fragment image on ComponentNestedImages {
+  id
   label
   caption
+  size: Size
   negative
   alternate
   image { 
   	url
   }
-  id
 }
 `;
 

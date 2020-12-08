@@ -20,11 +20,7 @@
             {
               "id": "38",
               "url": "overview",
-<<<<<<< HEAD
-              "title": "Overview",
-=======
               "title": "Getting started Overview",
->>>>>>> add_official_sdds_package
               "thumbnail": null
             },
             {
@@ -36,11 +32,7 @@
             {
               "id": "36",
               "url": "development",
-<<<<<<< HEAD
-              "title": "Development",
-=======
               "title": "Getting started Development",
->>>>>>> add_official_sdds_package
               "thumbnail": null
             }
           ]
@@ -82,11 +74,6 @@
               "thumbnail": null
             },
             {
-<<<<<<< HEAD
-              "id": "46",
-              "url": "icons",
-              "title": "Icons",
-=======
               "id": "65",
               "url": "foundation-typography",
               "title": "Foundation Typography",
@@ -96,7 +83,6 @@
               "id": "67",
               "url": "foundation-colours",
               "title": "Foundation Colours",
->>>>>>> add_official_sdds_package
               "thumbnail": null
             }
           ]
@@ -108,15 +94,12 @@
           "thumbnail": null,
           "submenus": [
             {
-<<<<<<< HEAD
-=======
               "id": "58",
               "url": "divider",
               "title": "Divider",
               "thumbnail": null
             },
             {
->>>>>>> add_official_sdds_package
               "id": "5",
               "url": "buttons",
               "title": "Buttons",
@@ -134,8 +117,6 @@
           "thumbnail": null,
           "submenus": [
             {
-<<<<<<< HEAD
-=======
               "id": "60",
               "url": "overview",
               "title": "Resources Overview",
@@ -148,20 +129,16 @@
               "thumbnail": null
             },
             {
->>>>>>> add_official_sdds_package
               "id": "34",
               "url": "development",
               "title": "Resources Development",
               "thumbnail": null
-<<<<<<< HEAD
-=======
             },
             {
               "id": "63",
               "url": "design",
               "title": "Resources Design",
               "thumbnail": null
->>>>>>> add_official_sdds_package
             }
           ]
         },
@@ -174,9 +151,6 @@
             {
               "id": "54",
               "url": "faqs",
-<<<<<<< HEAD
-              "title": "FAQs",
-=======
               "title": "Support FAQs",
               "thumbnail": null
             },
@@ -184,7 +158,6 @@
               "id": "66",
               "url": "contact",
               "title": "Support Contact",
->>>>>>> add_official_sdds_package
               "thumbnail": null
             }
           ]

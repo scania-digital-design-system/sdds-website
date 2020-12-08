@@ -22,6 +22,10 @@
       position: relative;
     }
 
+    .line-break{
+      width: 100%;
+    }
+
     // position: header height + tab height 
     
     .anchor-menus {
@@ -83,6 +87,10 @@
       color: var(--white);
       background-color: var(--black);
       padding: 5px 10px;
+    }
+
+    figure {
+      margin-bottom: 10rem;
     }
 
     section {
