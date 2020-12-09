@@ -27,13 +27,15 @@
 
 // First level menu links
 .sdds-nav-section-link {
-  padding: var(--sdds-spacing-element-24);
+  padding: 0 var(--sdds-spacing-element-24);
+  line-height: 64px;
   display: flex;
 
   // Collapse/expand icon
   c-icon {
     margin-left: auto;
-    font-size: 4rem;
+    // FIXME:Will change when new icons is added
+    font-size: 7rem;
   }
 
   &:hover {
