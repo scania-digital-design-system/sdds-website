@@ -20,19 +20,19 @@
             {
               "id": "38",
               "url": "overview",
-              "title": "Overview",
+              "title": "Getting started Overview",
               "thumbnail": null
             },
             {
               "id": "37",
               "url": "design",
-              "title": "Design",
+              "title": "Getting started Design",
               "thumbnail": null
             },
             {
               "id": "36",
               "url": "development",
-              "title": "Development",
+              "title": "Getting started Development",
               "thumbnail": null
             }
           ]
@@ -44,33 +44,39 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "40",
-              "url": "colour",
-              "title": "Colour",
-              "thumbnail": null
-            },
-            {
-              "id": "41",
-              "url": "typography",
-              "title": "Typography",
-              "thumbnail": null
-            },
-            {
               "id": "42",
               "url": "accessibility",
-              "title": "Accessibility",
-              "thumbnail": null
-            },
-            {
-              "id": "43",
-              "url": "grid-and-spacing",
-              "title": "Grid and spacing",
+              "title": "Foundation Accessibility",
               "thumbnail": null
             },
             {
               "id": "46",
               "url": "icons",
-              "title": "Icons",
+              "title": "Foundation Icons",
+              "thumbnail": null
+            },
+            {
+              "id": "59",
+              "url": "spacing",
+              "title": "Foundation Spacing",
+              "thumbnail": null
+            },
+            {
+              "id": "64",
+              "url": "unit-grid-system",
+              "title": "Foundation Unit & Grid System",
+              "thumbnail": null
+            },
+            {
+              "id": "65",
+              "url": "foundation-typography",
+              "title": "Foundation Typography",
+              "thumbnail": null
+            },
+            {
+              "id": "67",
+              "url": "foundation-colours",
+              "title": "Foundation Colours",
               "thumbnail": null
             }
           ]
@@ -81,6 +87,12 @@
           "title": "Components",
           "thumbnail": null,
           "submenus": [
+            {
+              "id": "58",
+              "url": "divider",
+              "title": "Divider",
+              "thumbnail": null
+            },
             {
               "id": "5",
               "url": "buttons",
@@ -99,9 +111,27 @@
           "thumbnail": null,
           "submenus": [
             {
+              "id": "60",
+              "url": "overview",
+              "title": "Resources Overview",
+              "thumbnail": null
+            },
+            {
+              "id": "61",
+              "url": "brand",
+              "title": "Resources Brand",
+              "thumbnail": null
+            },
+            {
               "id": "34",
               "url": "development",
-              "title": "Development resources",
+              "title": "Resources Development",
+              "thumbnail": null
+            },
+            {
+              "id": "63",
+              "url": "design",
+              "title": "Resources Design",
               "thumbnail": null
             }
           ]
@@ -115,7 +145,13 @@
             {
               "id": "54",
               "url": "faqs",
-              "title": "FAQs",
+              "title": "Support FAQs",
+              "thumbnail": null
+            },
+            {
+              "id": "66",
+              "url": "contact",
+              "title": "Support Contact",
               "thumbnail": null
             }
           ]
