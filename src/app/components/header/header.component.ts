@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 
 export class Header {
 
+  searchOpen = false;
+
+  toggleSearch() {
+    this.searchOpen = !this.searchOpen;
+  }
+
 }
