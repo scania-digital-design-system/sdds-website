@@ -19,10 +19,6 @@
 
 .sdds-navigation {
   margin-bottom: 32rem;
-
-  @media(min-width: 672px) {
-    position: fixed;
-  }
 }
 
 .sdds-nav-section {
@@ -37,6 +33,7 @@
   // Collapse/expand icon
   c-icon {
     margin-left: auto;
+    font-size: 4rem;
   }
 
   &:hover {
@@ -44,6 +41,19 @@
   }
 
 }
+
+.sdds-open {
+  c-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.sdds-close {
+  ~ .sdds-nav-section-sub-links {
+    display:none;
+  }
+}
+
 
 //Second level menu links
 .sdds-nav-section-sub-links {

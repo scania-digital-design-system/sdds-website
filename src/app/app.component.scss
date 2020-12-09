@@ -30,7 +30,27 @@
 
 nav,
 main {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   overflow-y: auto;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  max-height: calc(100% - 64px);
+  top: 64px;
+  left: 0;
+  z-index: 1000000;
+
+  &.sdds-nav-open {
+    display: flex;
+  }
+
+  @media(min-width: 1056px) {
+    display: flex;
+    position: static;
+    max-height: 100%;
+  }
 }

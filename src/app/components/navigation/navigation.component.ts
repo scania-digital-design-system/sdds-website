@@ -1,45 +1,58 @@
 import { Component } from '@angular/core';
+import { NavigationStart, Router} from '@angular/router';
 
 import { PageService } from '../../app.service';
-import { Page, Navigation } from '../../app.interface';
+import { Navigation } from '../../app.interface';
 
 @Component({
   selector: '[navigation-component]',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
+
 export class NavigationComponent {
-  // navigations: Array<Navigation> = [];
   firstLevelNav: Navigation;
   externalNav: Navigation;
-  // pages: Array<Page> = [];
-  activePage = null;
-  activeShow: String = 'show';
+  id = 'a' + Math.round( Math.random() * 10000 );
+  toggle: boolean[] = [];
+  currentUrl: string;
+  routerState: any;
 
-  constructor(private ps: PageService) {
-    // this.ps.pages.subscribe((items: Array<Page>) => this.pages = this.filterEmptyRoutes(items));
+  constructor(private ps: PageService, private router: Router) {
+    //Get the whole navigation
     this.ps.navigations.subscribe((navigationMenus: Array<Navigation>) => {
-      // this.navigations = navigationMenus;
       this.firstLevelNav = navigationMenus[0];
       this.externalNav = navigationMenus[1];
-
-      console.log(this.firstLevelNav);
-      console.log(this.externalNav);
-      // this.navigations = items.map(item => item.menus.filter(page => this.filterEmptyRoutes(item.menus)));
     });
+
+    // Get current route
+    this.routerState = this.router.events.subscribe((routeEvent: NavigationStart) => {
+      if(routeEvent instanceof NavigationStart) {
+        this.currentUrl = routeEvent.url
+      }
+      this.setToggle();
+    })
   }
 
-  filterEmptyRoutes(pages: Array<Page>) {
-    return pages.filter(page => page.url !== 'none');
-  };
+  //Intial value for all toggles states
+  setToggle() {
+    this.firstLevelNav.menus.forEach(menu => {
+      //default toggle is closed/false
+      this.toggle[this.id + menu.id] = false;
 
-  id: String = 'a' + Math.round( Math.random() * 10000 );
+      //If route is active set toggle as open(true)
+      if(menu.url == this.currentUrl.split('/')[1]) {
+        this.toggle[this.id + menu.id] = true;
+      }
+    });
 
-  preventToggle(e, page) {
-    // console.log(page)
-    if(page === this.activePage) e.stopPropagation();
+    //To keep of toggle open(true) when switching route
+    this.routerState.unsubscribe();
+  }
 
-    this.activePage = null;
+  useToggle(menu, clickId) {
+    // Switch toggle state on click
+    this.toggle[clickId + menu.id] = !this.toggle[clickId + menu.id];
   }
 
 }

@@ -73,27 +73,14 @@ export class AppRoutingModule {
     return menus.reduce((accumulator, menu) => {
       let route:any;
 
-      // if(menu.submenus && menu.submenus.length >= 1) {
-      //   let firstSubMenu = `${menu.url}/${menu.submenus[0].url}`
-      //  console.log('menu with submenu - ', firstSubMenu);
-      // //  route = { path: firstSub }
-      // } else if(menu.submenus) {
-        
-      //   console.log('menu without sub - ', menu.url)
-      // } else {
-      //   console.log('submenu - ', menu.url)
-      // }
-
       if(!menu.submenus) {
         route = { path: menu.url }
-        console.log('submenu',route)
         route.children = [
           { path: '', component: TabContentComponent },
           { path: ':id', component: TabContentComponent }
         ];
       } else {
         route = { path: menu.url, component: PageComponent };
-        console.log('main manu',route)
       }
 
       if(menu.submenus) {
