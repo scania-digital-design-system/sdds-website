@@ -1,0 +1,28 @@
+.nav {
+    border-bottom: 1px solid var(--sdds-grey-100);
+    background-color: var(--sdds-white);
+    position: sticky;      
+    top: 64px;
+    z-index: 999;
+
+    #page-tabs {
+      margin:0;
+      .nav-item {
+        display: inline-block;
+        list-style-type: none;
+      }
+
+      .nav-link {
+        padding: var(--sdds-spacing-element-24);
+        padding-left: 0;
+        margin: 0;
+        color: var(--sdds-grey-300);
+        &.active,
+        &:active,
+        &:hover {
+          border-bottom: none;
+          color: var(--sdds-blue-900);
+        }
+      }
+    }
+  }

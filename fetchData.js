@@ -105,6 +105,15 @@ fragment detail on Content {
         Introduction
         id
       }
+      linkCards {
+        id
+        title
+        description
+        info
+        detail
+        type
+        url
+      }
     }
     ... on ComponentContentPluginTwoColumns {
       id
