@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector:'header-component',
@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['header.component.scss']
 })
 
-export class Header {
+export class Header implements OnChanges {
 
   searchOpen = false;
   menuToggle = false;
@@ -18,6 +18,17 @@ export class Header {
   // toggleSearch() {
   //   this.searchOpen = !this.searchOpen;
   // }
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('changes ', changes)
+    if(changes.menuHidden.currentValue == true){
+      this.menuToggle = false;
+    }
+  }
+
+  handleEvent(event){
+    console.log('header ', event)
+  }
 
   toggleMenu() {
     this.menuToggle = !this.menuToggle;

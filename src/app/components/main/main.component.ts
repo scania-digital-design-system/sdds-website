@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -12,7 +12,7 @@ declare let gtag: Function;
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent {
+export class MainComponent implements OnChanges{
   @HostBinding('class') class;
 
   page: Page = { content: {} };
@@ -22,6 +22,7 @@ export class MainComponent {
   @Input() menuHidden;
   menuToggleOption: any;
 
+  @Output() eventFromHeader = new EventEmitter<boolean>();
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);
@@ -29,6 +30,7 @@ export class MainComponent {
 
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
+        console.log(route)
         this.parent = {};
         const paths = route.urlAfterRedirects.substr(1).split('?')[0].split('/');
 
@@ -48,8 +50,13 @@ export class MainComponent {
     });
   }
 
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('changes main ', changes)
+  }
+  
   getToggleMenuHiddenOption($event) {
-    this.menuToggleOption = $event
+    this.menuToggleOption = $event;
+    this.eventFromHeader.emit($event);
     // console.log('true if menu is visble',this.menuToggleOption)
   }
 

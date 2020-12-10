@@ -17,14 +17,15 @@ export class NavigationComponent {
   toggle: boolean[] = [];
   currentUrl: string;
   routerState: any;
+  navigationID = document.getElementById('sdds-sidenavigation');
 
-  // Testing
-  menuHidden: boolean = true;
   @Output() hideMenuEvent = new EventEmitter<boolean>();
 
   hideMenu() {
-    console.log('Hiding Menu',this.menuHidden)
-    this.hideMenuEvent.emit(this.menuHidden = !this.menuHidden);
+    // console.log('Hiding Menu',this.menuHidden)
+    this.hideMenuEvent.emit(false);
+    this.hideMenuEvent.emit(true);
+    this.navigationID.classList.remove('sdds-nav-open');
   }
 
   constructor(private ps: PageService, private router: Router) {

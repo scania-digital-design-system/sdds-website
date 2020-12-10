@@ -8,7 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent {
   private cookie;
-  menuHidden: boolean = true;
+  menuHidden: boolean; // hide menu from the beginning
 
   constructor(private cs: CookieService) { }
 
@@ -22,7 +22,14 @@ export class AppComponent {
   }
 
   getMenuHidden($event) {
-    this.menuHidden = $event
+    console.log('app: ', $event);
+    this.menuHidden = $event;
   }
+
+  handleToggleHeader($event) {
+    console.log('event toggle from header ', $event);
+    this.menuHidden = false;
+  }
+
 
 }
