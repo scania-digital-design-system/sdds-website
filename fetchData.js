@@ -160,14 +160,15 @@ fragment icons on ComponentNestedIcon {
 }
 
 fragment image on ComponentNestedImages {
+  id
   label
   caption
+  size: Size
   negative
   alternate
   image { 
   	url
   }
-  id
 }
 `;
 
