@@ -59,6 +59,9 @@
 }
 
 .sdds-open {
+  span {
+    border-bottom: 1px solid transparent;
+  }
   c-icon {
     transform: rotate(180deg);
   }
