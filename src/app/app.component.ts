@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { PageService } from './app.service';
 
 @Component({
   selector: '#app-root',
@@ -8,9 +9,10 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent {
   private cookie;
-  menuHidden: boolean = true;
+  menuToggleOption: any;
+  menuHidden: boolean;
 
-  constructor(private cs: CookieService) { }
+  constructor(private cs: CookieService) {}
 
   ngOnInit() {
     const cookie = this.cs.get('ConfidentialityAgreement');
@@ -23,6 +25,7 @@ export class AppComponent {
 
   getMenuHidden($event) {
     this.menuHidden = $event
+    console.log('app:',this.menuHidden);
   }
 
 }

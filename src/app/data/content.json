@@ -94,7 +94,7 @@
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "8",
-                    "Title": "Links",
+                    "Title": "",
                     "Images": [],
                     "texts": [
                       {
@@ -258,6 +258,253 @@
       "submenus": []
     },
     {
+      "id": "2",
+      "url": "home",
+      "title": "Scania Digital Design System",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "1",
+          "pageContent": [
+            {
+              "content": {
+                "id": "37",
+                "title": "Scania Digital Design System",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "9",
+                    "Title": "",
+                    "Text": "<h1>Scania Digital Design System</h1>\n<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n<h2><a href='https://digitaldesign.scania.com/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a>\n</h2>\n<h2>\n<a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Github for Developers</a>\n</h2>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T09:35:01.660Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "18",
+      "url": "ux-principles",
+      "title": "UX principles",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "7",
+          "pageContent": [
+            {
+              "content": {
+                "id": "18",
+                "title": "UX principles",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "26",
+                    "Title": "",
+                    "Text": "<p class=\"lead\"> \nUX design is concerned with shaping user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service. This involves a variety of tasks that are carried out at different stages, before and during the design process. Informning such tasks are the following key principles.\n</p>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "21",
+                    "Title": null,
+                    "Text": "### Simplicity\n\n- Support learning curve by step-by-step disclosure of the user interface\n- Simplification should not ignore functions required",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "22",
+                    "Title": null,
+                    "Text": "### Learnability: take advantage of user’s familiarity\n\n- Jacob’s law - take advantages of user’s previous knowledge (existing mental models). Users are already familier of other solutions and websites and the way they work. Their expectation, then, is for your solution/website the work in the same way.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "23",
+                    "Title": null,
+                    "Text": "### Consistency\n \n*A. Levels of Consistency*\n\nThink of consistency at various levels. For example\n\n1. Top level consistency\n  - Platform consistency:  Consistent with guidelines and standards \n  - Solution consistency:  Consistent with look & feel across your products/services \n2. Consistency across a family of solution, e. g., Microsoft or Apple solutions. Similarity of general look & feel conveys belonging to a family\n3. The overall look & feel of a solution and its elements\n4. Visible design elements such as icons, symbols, buttons, scroll bars, etc.\n5. Invisible elements - elements that are not visible but reveal themselves during interation\n\n*B. Induced Inconsistency*\n\n- visual consistency should be tied up with behaviour of the UI elements. i.e., be visually consistent when UI elements behave in the same manner and inconsistent when UI elements behave differently.\n\n*C. Consistency with User Expectation*\n\n- Be consistent with expectations of the users of the product/solution. “The most important consistency is consistency with user expectations” William Buxton\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "27",
+                    "Title": "",
+                    "Text": "### User/Human Centered Design\n\nUser/Human-centered design is about creating products that will bring value to the users and the business. It is the users who will interact with the proposed product/solution, and it is the job of the designer to know the potential target audience. Designers must conduct user research to get a sense of user needs, wants, and behaviours as the first step of the design process.\nAt the same time, it is vital to Keep the user in control with updated system status, direct and effective UI manipulations, instant feedbacks and expectable interactions and outcomes.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "28",
+                    "Title": "",
+                    "Text": "### KISS (Keep It Simple Stupid)\n\nKISS is a fundamental user interface design principle. Users will feel at ease if they can use a solution with least cognitive efforts. \n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "42",
+                    "Title": null,
+                    "Text": "### Reduce short-term memory load (cognitive load)\n\nAs human short term memory is only capable of retaining 5 to 7 items at a given time, make sure that this is incorporated judiciously into UI design.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "44",
+                    "Title": null,
+                    "Text": "### Forgiveness\n\n- Action taken by users should be allowed to be reversed. Make Undo possible.\nError handling\n- Communication of errors should be done in a human centred manner \n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "48",
+                    "Title": "",
+                    "Text": "### Autonomy\n\nUsers should perceive that they are always in control when using a solution\n\n- Enable users to make their own decisions with respect to navigation/interaction when interacting with a solution\n- Use status indicators to keep users always informed\n- Keep status information current, easy to view and comprehend\n- Make sure that status information provided to the user is correct",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "49",
+                    "Title": "",
+                    "Text": "### Efficiency of the User\n\n- The efficiency in a product/solution is a result of the fundamental architecture of the system, not in the surface design of the interface\n- User Error messages that help users in making sense of the status of the product/solution\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "50",
+                    "Title": "",
+                    "Text": "### Aesthetics\n\nUsers often think that aesthetically good design as design with high level of usability.\n\n- Formulation of aesthetic design should be done by skilled Graphic/visual designers\n- Aesthetics should never compromise usability of a solution, i.e. usability first and then aesthetics\n- Evaluation of visual design should be seen as part of usability evaluation",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:02:03.888Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "44",
+      "url": "logotype",
+      "title": "Logotype",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "17",
+          "pageContent": [
+            {
+              "content": {
+                "id": "106",
+                "title": "Logotype",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "123",
+                    "Title": "Scania Wordmark",
+                    "Text": "<img width=\"200\" src=\"https://digitaldesign.scania.com/logotype/scania-wordmark.svg\" alt=\"Scania Wordmark \">",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "131",
+                    "Title": "Scania Wordmark Negative",
+                    "Text": "<img width=\"200\" margin=\"40\" style='background-color: #2D2926' src=\"https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg\" alt=\"Scania Wordmark Negative\">",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "136",
+                    "Title": "Scania Symbol",
+                    "Text": "<img width=\"100\" height='200' src=\"https://digitaldesign.scania.com/logotype/scania-symbol.svg\" alt=\"Scania Symbol\">",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "149",
+                    "Title": "",
+                    "Text": "<p class=\"lead\"> Logotype is a graphic representation of a company name or initials that is designed conscuiusly to reflect values and attributes associated with the company. Logotype is not the same as logomark which is a graphic representation, in form of a symbolic image or icon, of the company.</p>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "150",
+                    "Title": "Resources",
+                    "Text": "For usage, first download Scania Symbol or Scania Wordmark or both (as the case may be)\n\n- Scania Wordmark [Download](https://digitaldesign.scania.com/logotype/scania-wordmark.svg)\n- Scania Wordmark Negative [Download](https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg) \n- Scania Symbol [Download](https://digitaldesign.scania.com/logotype/scania-symbol.svg) ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "151",
+                    "Title": "Example",
+                    "Text": "<c-header site-name='App 1'>\n  <a href='global' slot='items'>global</a>\n</c-header>\n\n\n- For placement, size, paddings and margins of Scania Symbol as well as Scania Wordmark, please refer to [Header](https://digitaldesign.scania.com/components/header/code)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:31:56.475Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "30",
+      "url": "way-of-working",
+      "title": "Way of working",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "20",
+          "pageContent": [
+            {
+              "content": {
+                "id": "14",
+                "title": "Way of working",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "53",
+                    "Title": null,
+                    "Text": "## Two levels of way of working",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "54",
+                    "Title": null,
+                    "Text": "### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "55",
+                    "Title": null,
+                    "Text": "### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-03-25T14:09:35.987Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "66",
       "url": "contact",
       "title": "Support Contact",
@@ -298,83 +545,6 @@
                   }
                 ],
                 "updated_at": "2020-12-08T12:07:54.429Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "3",
-      "url": "support",
-      "title": "Support",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "37",
-          "pageContent": [
-            {
-              "content": {
-                "id": "36",
-                "title": "Support",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "130",
-                    "Title": null,
-                    "Text": "Do you need help within development or with Components? Please reach out in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or report a [bug](https://github.com/scania/corporate-ui/issues/new/choose) or a [Feature request](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22) in our Development GitHub.\n\nNeed help within the design area? We can't design your application for you but we'll happily guide you through how you can use the different sections and tools in the Scania Digital Design System. Please get in touch with us through [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) and we'll do our best to help out.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T13:04:41.476Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": [
-        {
-          "id": "54",
-          "url": "faqs",
-          "title": "Support FAQs",
-          "thumbnail": null
-        },
-        {
-          "id": "66",
-          "url": "contact",
-          "title": "Support Contact",
-          "thumbnail": null
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "url": "home",
-      "title": "Scania Digital Design System",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "1",
-          "pageContent": [
-            {
-              "content": {
-                "id": "37",
-                "title": "Scania Digital Design System",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "9",
-                    "Title": "",
-                    "Text": "<h1>Scania Digital Design System</h1>\n<p class='lead'>Digital design standards and resources that enable designers and developers to deliver a premium brand experience.</p>\n<h2><a href='https://digitaldesign.scania.com/design/UIkit.xd'><c-icon name='scania-save'></c-icon>Download Adobe XD UI Kit</a>\n</h2>\n<h2>\n<a href='https://github.com/scania/corporate-ui' target='_blank'><c-icon name='scania-external_link'></c-icon>Github for Developers</a>\n</h2>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T09:35:01.660Z"
               }
             }
           ]
@@ -632,219 +802,55 @@
       "submenus": []
     },
     {
-      "id": "18",
-      "url": "ux-principles",
-      "title": "UX principles",
+      "id": "3",
+      "url": "support",
+      "title": "Support",
       "thumbnail": null,
       "showTabs": null,
       "pageStructure": [
         {
           "__typename": "ComponentPagePluginArticle",
-          "id": "7",
+          "id": "37",
           "pageContent": [
             {
               "content": {
-                "id": "18",
-                "title": "UX principles",
+                "id": "36",
+                "title": "Support",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "26",
-                    "Title": "",
-                    "Text": "<p class=\"lead\"> \nUX design is concerned with shaping user’s perceptions and responses that result from the use and/or anticipated use of a system, product or service. This involves a variety of tasks that are carried out at different stages, before and during the design process. Informning such tasks are the following key principles.\n</p>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "21",
+                    "id": "130",
                     "Title": null,
-                    "Text": "### Simplicity\n\n- Support learning curve by step-by-step disclosure of the user interface\n- Simplification should not ignore functions required",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "22",
-                    "Title": null,
-                    "Text": "### Learnability: take advantage of user’s familiarity\n\n- Jacob’s law - take advantages of user’s previous knowledge (existing mental models). Users are already familier of other solutions and websites and the way they work. Their expectation, then, is for your solution/website the work in the same way.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "23",
-                    "Title": null,
-                    "Text": "### Consistency\n \n*A. Levels of Consistency*\n\nThink of consistency at various levels. For example\n\n1. Top level consistency\n  - Platform consistency:  Consistent with guidelines and standards \n  - Solution consistency:  Consistent with look & feel across your products/services \n2. Consistency across a family of solution, e. g., Microsoft or Apple solutions. Similarity of general look & feel conveys belonging to a family\n3. The overall look & feel of a solution and its elements\n4. Visible design elements such as icons, symbols, buttons, scroll bars, etc.\n5. Invisible elements - elements that are not visible but reveal themselves during interation\n\n*B. Induced Inconsistency*\n\n- visual consistency should be tied up with behaviour of the UI elements. i.e., be visually consistent when UI elements behave in the same manner and inconsistent when UI elements behave differently.\n\n*C. Consistency with User Expectation*\n\n- Be consistent with expectations of the users of the product/solution. “The most important consistency is consistency with user expectations” William Buxton\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "27",
-                    "Title": "",
-                    "Text": "### User/Human Centered Design\n\nUser/Human-centered design is about creating products that will bring value to the users and the business. It is the users who will interact with the proposed product/solution, and it is the job of the designer to know the potential target audience. Designers must conduct user research to get a sense of user needs, wants, and behaviours as the first step of the design process.\nAt the same time, it is vital to Keep the user in control with updated system status, direct and effective UI manipulations, instant feedbacks and expectable interactions and outcomes.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "28",
-                    "Title": "",
-                    "Text": "### KISS (Keep It Simple Stupid)\n\nKISS is a fundamental user interface design principle. Users will feel at ease if they can use a solution with least cognitive efforts. \n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "42",
-                    "Title": null,
-                    "Text": "### Reduce short-term memory load (cognitive load)\n\nAs human short term memory is only capable of retaining 5 to 7 items at a given time, make sure that this is incorporated judiciously into UI design.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "44",
-                    "Title": null,
-                    "Text": "### Forgiveness\n\n- Action taken by users should be allowed to be reversed. Make Undo possible.\nError handling\n- Communication of errors should be done in a human centred manner \n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "48",
-                    "Title": "",
-                    "Text": "### Autonomy\n\nUsers should perceive that they are always in control when using a solution\n\n- Enable users to make their own decisions with respect to navigation/interaction when interacting with a solution\n- Use status indicators to keep users always informed\n- Keep status information current, easy to view and comprehend\n- Make sure that status information provided to the user is correct",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "49",
-                    "Title": "",
-                    "Text": "### Efficiency of the User\n\n- The efficiency in a product/solution is a result of the fundamental architecture of the system, not in the surface design of the interface\n- User Error messages that help users in making sense of the status of the product/solution\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "50",
-                    "Title": "",
-                    "Text": "### Aesthetics\n\nUsers often think that aesthetically good design as design with high level of usability.\n\n- Formulation of aesthetic design should be done by skilled Graphic/visual designers\n- Aesthetics should never compromise usability of a solution, i.e. usability first and then aesthetics\n- Evaluation of visual design should be seen as part of usability evaluation",
+                    "Text": "Do you need help within development or with Components? Please reach out in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or report a [bug](https://github.com/scania/corporate-ui/issues/new/choose) or a [Feature request](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22) in our Development GitHub.\n\nNeed help within the design area? We can't design your application for you but we'll happily guide you through how you can use the different sections and tools in the Scania Digital Design System. Please get in touch with us through [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) and we'll do our best to help out.",
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-06-04T12:02:03.888Z"
+                "updated_at": "2020-06-04T13:04:41.476Z"
               }
             }
           ]
         }
       ],
-      "submenus": []
-    },
-    {
-      "id": "44",
-      "url": "logotype",
-      "title": "Logotype",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
+      "submenus": [
         {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "17",
-          "pageContent": [
-            {
-              "content": {
-                "id": "106",
-                "title": "Logotype",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "123",
-                    "Title": "Scania Wordmark",
-                    "Text": "<img width=\"200\" src=\"https://digitaldesign.scania.com/logotype/scania-wordmark.svg\" alt=\"Scania Wordmark \">",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "131",
-                    "Title": "Scania Wordmark Negative",
-                    "Text": "<img width=\"200\" margin=\"40\" style='background-color: #2D2926' src=\"https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg\" alt=\"Scania Wordmark Negative\">",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "136",
-                    "Title": "Scania Symbol",
-                    "Text": "<img width=\"100\" height='200' src=\"https://digitaldesign.scania.com/logotype/scania-symbol.svg\" alt=\"Scania Symbol\">",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "149",
-                    "Title": "",
-                    "Text": "<p class=\"lead\"> Logotype is a graphic representation of a company name or initials that is designed conscuiusly to reflect values and attributes associated with the company. Logotype is not the same as logomark which is a graphic representation, in form of a symbolic image or icon, of the company.</p>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "150",
-                    "Title": "Resources",
-                    "Text": "For usage, first download Scania Symbol or Scania Wordmark or both (as the case may be)\n\n- Scania Wordmark [Download](https://digitaldesign.scania.com/logotype/scania-wordmark.svg)\n- Scania Wordmark Negative [Download](https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg) \n- Scania Symbol [Download](https://digitaldesign.scania.com/logotype/scania-symbol.svg) ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "151",
-                    "Title": "Example",
-                    "Text": "<c-header site-name='App 1'>\n  <a href='global' slot='items'>global</a>\n</c-header>\n\n\n- For placement, size, paddings and margins of Scania Symbol as well as Scania Wordmark, please refer to [Header](https://digitaldesign.scania.com/components/header/code)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T12:31:56.475Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "30",
-      "url": "way-of-working",
-      "title": "Way of working",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
+          "id": "54",
+          "url": "faqs",
+          "title": "Support FAQs",
+          "thumbnail": null
+        },
         {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "20",
-          "pageContent": [
-            {
-              "content": {
-                "id": "14",
-                "title": "Way of working",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "53",
-                    "Title": null,
-                    "Text": "## Two levels of way of working",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "54",
-                    "Title": null,
-                    "Text": "### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "55",
-                    "Title": null,
-                    "Text": "### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-03-25T14:09:35.987Z"
-              }
-            }
-          ]
+          "id": "66",
+          "url": "contact",
+          "title": "Support Contact",
+          "thumbnail": null
+        },
+        {
+          "id": "100",
+          "url": "page-specs",
+          "title": "Page Specs",
+          "thumbnail": null
         }
-      ],
-      "submenus": []
+      ]
     },
     {
       "id": "31",
@@ -2341,11 +2347,538 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "117",
                     "Title": null,
-                    "Text": "## About the Scania Digital Design System\n\n<details>\n    <summary>What is Scania Digital Design System?</summary>\n    <section>A design system is primarily a repository of UI elements, components and patterns informed by Scania Digital Branding Guidelines. In addition, it also includes sections on UX and UI principles, ways of working, governance etc. as well as downloadable resources such as, Scania UI toolkit, Corporate UI, etc.</section>\n</details>\n\n<details>\n    <summary>What is Scania Digital Design System used for?</summary>\n    <section>Scania Digital Design System provides code of its primary content, such as, UI elements, components and patterns that can be downloaded and used to reduce time needed for design and development of digital solutions at Scania. At the same time, use of Scania Digital Design System ensures that digital solutions designed and developed at Scania are consistent with respect to their look and feel and that they follow Scania Digital Branding guidelines.\n\nThe system can be used for a wide range of digital application. For now, the scope of the design system is limited to web based portals. In future, it will be extended to support wide variety of application in Scania.\nThe system can also be used to build awareness about UX and UI design and learn about do’s and don’ts. </section>\n</details>\n\n<details>\n    <summary>What are the benefits of the Scania Digital Design System?</summary>\n    <section>The design system offers a number of benefits. For designers, it provides the “single source of truth” and avoids potential creation of accidental design variations leading to brand inconsistencies. For developers, it reduces time to code as UI elements, components and patterns can be downloaded from the design system. For the company as a whole, it ensures consistent user experience across the breadth of digital solution at Scania and makes it easier for users to navigate and engage with.</section>\n</details>\n\n## Getting Started\n\n<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. Scania Digital Design System is accessible here http://digitaldesign.scania.com.</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>What are the contents of the Scania Digital Design System?</summary>\n    <section>Scania Digital Design System is constituted of -\n\n1.\tUI elements, components and patterns\n2.\tFoundations ( UX and UI principles and elements of Style Guide)\n3.\tResources (e.g. UI kit, Corporate UI and other goodies)\n\n    </section>\n</details>\n\n<details>\n    <summary>Who are the users of the Scania Digital Design System?</summary>\n    <section>All stakeholders of digital design solutions designed and developed in Scania are envisaged as the users of the Scania Digital Design System.\n    </section>\n</details>\n\n<details>\n    <summary>What is the difference between UI elements, components and patterns?</summary>\n    <section>The classification of UI elements, components and patterns is based on atomic design principles. That is, UI elements are seen as singular elements, UI components are seen as composite elements (consisting of one or more UI elements and elements of Style guide) and patterns are seen as organisms or modules, that provide a template. See the section on Components and patterns of the Scania Digital Design System.\n    </section>\n</details>\n\n<details>\n    <summary>How do I download code from the design system?</summary>\n    <section>Code can be copied directly from the website.\n    </section>\n</details>\n\n<details>\n    <summary>What kind of resources can be accessed from the design system?</summary>\n    <section>For now, Scania UI Kit and Corportate UI are the two key resources that can be accessed from the design system. We plan to add more resources in future.\n    </section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>How can I contribute to the Scania Digital Design System?</summary>\n    <section>Please visit this link to contribute - https://digitaldesign.scania.com/contribution\n    </section>\n</details>\n\n<details>\n    <summary>How do I report anything that is missing or suggest any improvements?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n## Foundations\n\n<details>\n    <summary>What are the contents of the foundations of the Scania Digital Design System?</summary>\n    <section>The foundation section is constituted of UX and UI principles and the guidelines on the elements of Scania Style Guide. Please visit the foundation section (https://digitaldesign.scania.com/foundation) to learn more.\n    </section>\n</details>\n\n<details>\n    <summary>How do I apply UX principles?</summary>\n    <section>UX principles are based on the best practices of design and are applied to various aspects of a solution during its conceptual development. Please get in touch with the Scania Digital Design Team for further questions.\n    </section>\n</details>\n\n<details>\n    <summary>How do I apply UI principles?</summary>\n    <section>UI principles are based on the principles of Cognitive Design and are applied to various aspects of a solution during its conceptual development. Please get in touch with the Scania Digital Design Team for further questions.\n    </section>\n</details>\n\n<details>\n    <summary>How do I contribute to UX and UI principles repository?</summary>\n    <section>Please visit this link to contribute - https://digitaldesign.scania.com/contribution\n    </section>\n</details>\n\n<details>\n    <summary>How do I work with grids and spacings?</summary>\n    <section>Please visit this link - https://digitaldesign.scania.com/foundation/grid-and-spacing\n    </section>\n</details>\n\n<details>\n    <summary>How do I download fonts and icons?</summary>\n    <section>It is not possible to download fonts and icons from the Scania Digital Design System at the moment. But the team is working on it to make this possible in near future.\n    </section>\n</details>\n\n<details>\n    <summary>Are there any guidelines for creation of icons that are not included in the design system?</summary>\n    <section>Guidelines for creation of icons have not been formulated so far. But the team is working on it to make it available in near future.\n    </section>\n</details>\n\n<details>\n    <summary>Who do I contact regarding help with style guide?</summary>\n    <section>Please reach out to us in our teams channel or contact directly Marcus Åstrom directly.\n    </section>\n</details>\n\n<details>\n    <summary>How do I report anything that is missing or suggest any improvements?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n## Components\n\n<details>\n    <summary>How do I use a UI component for my design prototype?</summary>\n    <section>Using a UI component for design requires Scania UI kit that can be downloaded from the Scania Digital Design System. Should you require further assistance, please get in touch with the team or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n<details>\n    <summary>How do I contribute to the components section?</summary>\n    <section>Please reach out to us in our teams channel or contact directly Marcus Åstrom directly.\n    </section>\n</details>\n\n<details>\n    <summary>How do I report anything that is missing or suggest any improvements?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n## Resources\n\n<details>\n    <summary>What are resources?</summary>\n    <section>Scania Digital Design System views resources as assets, tools, kits, knowledge resources etc. that help us in the process of design and development of a digital solution at Scania.\n    </section>\n</details>\n\n<details>\n    <summary>How do I use resources provided by the design system?</summary>\n    <section>The Scania Digital Design System offers two key resources at the moment. The Scania UI toolkit which can be downloaded from the design systems website and can be used for prototyping during the design phase. For development, the design system offers the Corporate UI which can be accessed at - https://github.com/scania/corporate-ui\n    </section>\n</details>\n\n<details>\n    <summary>Is there a plan to offer UI kit for mac platform in future?</summary>\n    <section>Yes.\n    </section>\n</details>\n\n<details>\n    <summary>Is there a plan to offer UI for prototyping tools such as Figma, sketch etc.?</summary>\n    <section>Yes.\n    </section>\n</details>\n\n<details>\n    <summary>How do I report anything that is missing or suggest any improvements?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n## Support\n\n<details>\n    <summary>What are the topics for which I can seek support?</summary>\n    <section>We provide support for all topics included in the Scania Digital Design System. In addition to this, we are also available for consultations in the area of UX and UI design and front-end development. Please reach out to us to learn more. \n    </section>\n</details>\n\n<details>\n    <summary>How is support provided?</summary>\n    <section>Support provided varies from case to case and from answering e-mails to in person and team consultations. \n    </section>\n</details>\n\n<details>\n    <summary>How quickly can I get a response for my query?</summary>\n    <section>In general, we will get back to you with our initial response within a day. We then follow it up with subsequent action as required on case to case basis.\n    </section>\n</details>\n\n<details>\n    <summary>What is the process to seek support?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n## Contribution\n\n<details>\n    <summary>How do I contribute to the design system?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n<details>\n    <summary>What kind of topics are open for contributions?</summary>\n    <section>All topics included in the Scania Digital Design System are open for contributions.\n    </section>\n</details>\n\n<details>\n    <summary>How does the process of contribution work?</summary>\n    <section>As the first step please visit this link to contribute - https://digitaldesign.scania.com/contribution. \n    </section>\n</details>\n\n<details>\n    <summary>How do I report anything that is missing or suggest any improvements?</summary>\n    <section>Please reach out to us in our teams channel or contact Marcus Åstrom directly.\n    </section>\n</details>\n\n\n\n\n",
+                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
                     "LeadText": null
                   }
                 ],
                 "updated_at": "2020-06-04T12:57:19.151Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "36",
+      "url": "development",
+      "title": "Getting started Development",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "5",
+          "title": "Introduction",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "146",
+                "title": "Getting Started Development Introduction",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "239",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The SDDS toolbox will help you create an application with Scania look and feel. Here you can find styles and web components that can be used across different frameworks.",
+                      "Introduction": true,
+                      "id": "27"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "240",
+                    "Title": "Scania Theme",
+                    "Text": "Scania-theme is a package that contains Scania specific styling for each of those components/patterns in the SDDS toolbox. Every component has a unique styling with Scania look and feel. Moreover, you can also expect to find fonts, icons, tokens and much more.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "241",
+                    "Title": "Components",
+                    "Text": "Header, footer or a button are all web components in our design system, the difference between them is how they are technically made. \n\n```<c-header></c-header>``` is a web component, while a ```<button> Click Me </button>``` is a regular HTML element that already exist in the HTML Standard. One easy thing to differentiate between those is by looking at the dash in the element name, for example \"c-header\", that indicates it is a webcomponent. \n\nA web component can be used in the same way as a regular element in the HTML standard. Difference is what is under the hood. You can read more about it here: developer.mozilla.org/en-US/docs/Web/Web_Components\n\nAll web-components in Scania digital design system have namespace with <c-nameOfComponent>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "242",
+                    "Title": "Stencil",
+                    "Text": "To be able to create a component in SDDS, it is essential to have a basic understanding of the tool we are using to make them come to life; a web component compiler called StencilJS. This is the core for our components and how we build them. You can read more in Stencil documentation. \n\nStencilJS contains features like:\n\n- Virtual DOM\n- TypeScript\n- JSX\n\nThe following is an example component:",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "162",
+                    "title": null,
+                    "code": "import { Component, Prop, h } from '@stencil/core';\n\n@Component({\ntag: 'my-component',\n})\nexport class MyComponent {\n\n  // Indicate that name should be a public property on the component\n  @Prop() name: string;\n\n  render() {\n    return (\n      <p>\n        My name is {this.name}\n      </p>\n    );\n  }\n}",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "243",
+                    "Title": null,
+                    "Text": "<br/>**Loading** <br/>\nAnother very important part with Stencil is how the components are loaded, Stencil is built with self-lazy loading. Only the components that are used (imported) will be loaded into the application and only take that specific space in the memory. You just have to add one import for every component, instead of importing every individual component. \n\nThe package size of both Scania-theme and Corporate-Ui is something we are always trying to improve.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "244",
+                    "Title": "Contribute",
+                    "Text": "If you come across any problems during this installation guide or feel something needs to be more clear, please contact us our report an issue in our [github](https://github.com/scania-digital-design-system/sdds).\n\nThe package size of both Scania-theme and Corporate-Ui is something we are always trying to improve.\n\n[Contribute/Report a bug](link) [Contribute/Request a feature](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "664",
+                    "Title": null,
+                    "Text": "```\n\nimport { Component, Prop, h } from '@stencil/core';\n\n@Component({\ntag: 'my-component',\n})\nexport class MyComponent {\n\n  // Indicate that name should be a public property on the component\n  @Prop() name: string;\n\n  render() {\n    return (\n      <p>\n        My name is {this.name}\n      </p>\n    );\n  }\n}\n\n```",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-07T09:17:10.992Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "7",
+          "title": "Prerequisites",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "148",
+                "title": "Getting Started Development Prerequisites",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "248",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "There are certain things that need to be in place before a developer can start working with SDDS. A short checklist is presented below.",
+                      "Introduction": true,
+                      "id": "31"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "249",
+                    "Title": null,
+                    "Text": "- Node.js 8 and up (Latest stable)\n\n- Node packages manager (NPM) for our packages handling\n\n- If you are behind firewall, configure proxy\n\nHow to install Node you can find in their [documentation](https://nodejs.org/en/download/) and same regarding [NPM](https://www.npmjs.com/get-npm)and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). If you are unfamiliar with NPM and Node, we recommend that you read more about it in their documentation. When Node.js, NPM and Git are installed, you can continue! \n\nCommands to help you see if you have installed these tools:",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "163",
+                    "title": null,
+                    "code": "> node -v\nv12.18.0",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "164",
+                    "title": null,
+                    "code": "> npm -v\n6.4.1",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "165",
+                    "title": null,
+                    "code": "> git --version\ngit version 2.17.0.windows.1",
+                    "componentTag": null
+                  }
+                ],
+                "updated_at": "2020-12-07T09:25:08.257Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "6",
+          "title": "Installation",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "200",
+                "title": "Getting Started Development Installation",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "599",
+                    "Title": "Angular",
+                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "166",
+                    "title": null,
+                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "600",
+                    "Title": null,
+                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "601",
+                    "Title": null,
+                    "Text": "1. In Angular, go to main-ts (or some other appropriate place), and import the packages Corporate-UI and Scania-theme.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "167",
+                    "title": null,
+                    "code": "import { AppModule } from './app/app.module';\nimport { environment } from './environments/environment';\n//Import for Corporate-Ui and Scania-theme\nimport { defineCustomElements, addTheme } from 'corporate-ui'\nimport { theme } from 'scania-theme'",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "602",
+                    "Title": null,
+                    "Text": "2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "168",
+                    "title": null,
+                    "code": " import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n\n @NgModule({\n   declarations: [\n     AppComponent,\n   ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n })",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "603",
+                    "Title": null,
+                    "Text": "3. Inside main.ts, You need to call defineCustomElements()\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "169",
+                    "title": null,
+                    "code": " defineCustomElements();",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "604",
+                    "Title": null,
+                    "Text": "4. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "170",
+                    "title": null,
+                    "code": " addTheme(theme)",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "605",
+                    "Title": null,
+                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "171",
+                    "title": null,
+                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "606",
+                    "Title": null,
+                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "172",
+                    "title": null,
+                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "612",
+                    "Title": "React",
+                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "173",
+                    "title": null,
+                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "613",
+                    "Title": null,
+                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "614",
+                    "Title": null,
+                    "Text": "1. In React you can go to src/index.js and import the packages Corporate-Ui and Scania-theme.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "174",
+                    "title": null,
+                    "code": "import { addTheme, defineCustomElements } from 'corporate-ui'\nimport { theme } from 'scania-theme'",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "615",
+                    "Title": null,
+                    "Text": "2. You need to call defineCustomElements()",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "175",
+                    "title": null,
+                    "code": "defineCustomElements();",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "616",
+                    "Title": null,
+                    "Text": "3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "176",
+                    "title": null,
+                    "code": "addTheme(theme)",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "617",
+                    "Title": null,
+                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "177",
+                    "title": null,
+                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "618",
+                    "Title": null,
+                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "178",
+                    "title": null,
+                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "619",
+                    "Title": "Vue",
+                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "179",
+                    "title": null,
+                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "620",
+                    "Title": null,
+                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "621",
+                    "Title": null,
+                    "Text": "1. In Vue, go to main.js and import the packages Corporate-Ui and Scania-theme",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "180",
+                    "title": null,
+                    "code": " import Vue from 'vue'\n import App from './App.vue'\n //Import Corporate-Ui and Scania-theme\n import { addTheme, defineCustomElements } from 'corporate-ui'\n import { theme } from 'scania-theme'",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "622",
+                    "Title": null,
+                    "Text": "2. In the main.js you also need to tell the application to ignore custom-element tags such as <c-header> by adding this line. Otherwise a warning will be thrown in the console.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "181",
+                    "title": null,
+                    "code": "//Ignore all components custom-elements named c-*\nVue.config.ignoredElements = [/c-\\w*/];",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "623",
+                    "Title": null,
+                    "Text": "You need to call defineCustomElements()",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "182",
+                    "title": null,
+                    "code": " defineCustomElements();",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "624",
+                    "Title": null,
+                    "Text": "After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "183",
+                    "title": null,
+                    "code": " addTheme(theme)",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "625",
+                    "Title": null,
+                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "184",
+                    "title": null,
+                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "626",
+                    "Title": null,
+                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "185",
+                    "title": null,
+                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
+                    "componentTag": null
+                  }
+                ],
+                "updated_at": "2020-12-09T10:55:51.425Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "8",
+          "title": "Create a component",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "129",
+                "title": "Creating a component",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "8",
+                    "Title": "Prerequisites",
+                    "Text": "Prerequisites to create a component\n\n- Git installed\n- Github account access\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "658",
+                    "Title": "Pre-work",
+                    "Text": "**Clone**\n\nAfter you have forked you can start cloning. Go to your cli enviorment and do the following:\n\nClone both repositories from your fork.\n \n\n\n##### Corporate-ui\n\n   ```bash\n    > git clone https://github.com/<username>/corporate-ui.git\n    > cd corporate-ui\n  ```\n\n##### Scania-theme\n\n  ```bash\n    > git clone https://github.com/<username>/scania-theme.git\n    > cd scania-theme\n  ```\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "659",
+                    "Title": null,
+                    "Text": "**Installing npm packages**\n\nAfter the cloning is done, it is time to install all the npm packages. This packages are modules that we are using for different reasons, for example bootstrap, redux and other packages. You can find all our packages in our package.json file.\n\nTo install our packages you need to be in your project folder, where your package.json file is run *npm install* or *npm i*:\n\n##### Corporate-ui:\n\n  ```bash\n    > cd corporate-ui\n    > npm install\n  ```\n##### Scania-theme:\n\n  ```bash\n    > cd scania-theme\n    > npm install\n  ```\n**Warnings(warn) might apprear; often, it isn't ,anything causing problems*\n\n\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "660",
+                    "Title": null,
+                    "Text": "**Building Corporate-UI and Scania-Theme**\n\nWhen you are done with install all the npm packages, it is time to build Corporate-ui and Scania-theme. You will do this by running the command *npm run build*. You can find all our commands in package.json file inside *\"scripts\": { }.*\n\n##### Corporate-ui\n\n  ```bash\n    > npm run build\n  ```\nThis will build the components with their functionality without any scania styling. For example the header,footer and so on.\n\n##### Scania-theme\n\n  ```bash\n    > npm run build\n  ```\n\n  This will build the styling for every component with scania styling.\n\n**Warnings(warn) might apprear, often it isn't anything causing problems*\n\n\n\n\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "661",
+                    "Title": null,
+                    "Text": "**Npm link for Corporate-UI and Scania-Theme**\n\nWhen you have built Corporate-UI and Scania-Theme it is time to make is possible to use it locally on your own application. These step might look a bit confusing, but you will need to do this. This will create a symlink with your Corporate-UI and Scania-theme folders instead of using the npm version that you will install. This will make it possible to work locally with corporate-ui and scania-theme.\n\nThis __linking__ will create a symlink with your local corporate-ui and scania-theme packages which makes it possible to use those packages.\n\nDo the following steps:\n\n1. Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.\n   ```bash\n    > cd <You project folder>\n    > npm i corporate-ui\n    > npm i scania-theme\n  ```\n<img style='height:80px; width:249px;' src='https://sdds-cms.s3.amazonaws.com/f62241f4b223484380f3b456922e156c.png' >\n\n2. Go to your corporate-ui folder and create a symlink of corporate-ui\n  ```bash\n    > cd corporate-ui\n    > npm link\n  ```\n\n3. Go to your scania-theme folder and create a symlink of corporate-ui\n  ```bash\n    > cd scania-theme\n    > npm link\n  ```\n\n4. Go back to your project directory which has corporate-ui and scania-theme installed. This time we will use the `npm link <repo name>` command again, but this will create the actual symlink for Corporate-ui and Scania-theme packages in your project.\n\n   ```bash\n    > cd <Your project folder>\n    > npm link corporate-ui\n    > npm link scania-theme\n  ```\n\n  After this is done, you will be able to run your local Corporate-Ui and Scania-theme.\n\n\n\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "662",
+                    "Title": "Component creation",
+                    "Text": "**Component in Corporate UI**\n\n  Before you start develop a component, don't forget to link Corporate-Ui and Scania, follow the steps in Npm link section\n\n  1. To create a new component you need to go your forked **Corporate-Ui** folder and go to `/src/components/`. Don't forget to create a npm link with both Corporate-Ui and Scania-theme. Create a new folder inside `/src/components/` with the name of the component.\n\n  2. Create a new file called the same as your component, make it a **.tsx** file\n\n  3. Go to the your components .tsx file and import the core function for component called `Components` and `h` \n\n  ```Javascript\n    import { Component, h } from '@stencil/core';\n  ```\n\n  4. Now it is time to name your component, add the following line below the import. The `tag` property is where you need the component you are creating. We have rule when naming, you need to use a \"c-\" before the component name.\n\n  ```Javascript\n  @Component({\n    tag:'c-new-component' // Name of the component <c-new-component>\n  })\n  ```\n  5. Next step is to add the class for the component. Create a class and export it.\n\n  ```Javascript\n    export class NewComponent {\n        //Component\n    }\n  ```\n\n  6. Inside the class add the `render()` function, this is where you return your elements HTML structure. Inside the `render()` you return a tree structure of your component. You **need** to have the html nested inside a parent element on highest level, and you can't have two on the highest level.\n\n   ```Javascript\n    export class NewComponent {\n      // Add Render()\n      render() {\n        return(\n          // Add your HTML inside the return\n          <div>\n              Cool Component!\n          </div>\n        )\n      }\n    }\n  ```\n\n  7. Add your Component in your application\n\n  ```HTML\n    <section>\n      <h3>A Title of the page React</h3>\n      <!--  Add your new component here-->\n      <c-new-component></c-new-component>\n      <!-- Your application content goes here -->\n    </section>\n  ```\n\n\n  8. For the default (non-scania) styling you need to add a another file called `new-component.scss`. This file will contain all non related styling that might come with the component. This styling will follow the component even if you don't use the scania-theme. Keep this file in the same folder as your component `src/components/\"new-component\"/`. For example a component that should have a dropdown function might be able to use bootstraps global dropdown css. That should be in this file then.\n\n  ```Javascript\n    @Component({\n      tag:'c-new-component',\n      styleUrl: 'new-component.scss'\n      })\n  ```\n\n  9. Inside the `@Component` decorator you need to add another property called `shadow: true`. This will make the component isolated and not effected by the reset of the global styling.\n\n  ```Javascript\n    @Component({\n      tag:'c-new-component',\n      styleUrl: 'new-component.scss',\n      shadow: true\n    })\n  ```\n\n  10. How to add properties,states or watches you can look at the stencil documentation. Here is an example of a hello world component.\n\n  ```Javascript\n    // Example component\n    import { Component, h, Prop } from '@stencil/core';\n\n    @Component({\n      tag: 'c-new-component',\n      styleUrl: 'new-component.scss',\n      shadow: true,\n    })\n    export class NewComponent {\n      @Prop() text: string = 'Hello World';\n\n      render() {\n        return (\n          <div>\n            <h2>{this.text} component</h2>\n          </div>\n        );\n      }\n    }\n  ```\n\n  If you have done everything correctly you should see the component in Action without any specific styling, otherwise check of errors or see if everything is imported and linked correctly. You can see the \"Problems that might appear\" section",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "663",
+                    "Title": "Styling a Component",
+                    "Text": "To be able to use the Scania UI styling(Colors,fonts...) you need to use Scania-theme and add styling from there.\n\n**How it works**\n\nTo be able to use the Scania UI styling(Colors,fonts...) you need to use Scania-theme and add styling from there.\n\nA components get styling from 2 sources. Default styling and scania-theme styling. The default styling set the basic rules and styled in the corporate-ui. Scania-theme is available for the component through the corporate-ui stores. A component need to subscribe to theme store in order to get scania-theme styles. Stencil use adoptedStylesheet to compile a component that has a shadow:True property. We create a helper called themeStyle to add scania-theme as an adoptedStylesheet. Read more about adoptedStylesheet\n\n**Style components**\n\n1. Default style in corporate-ui. Go to `components/new-component/new-component.scss` inside corporate-ui. You can add any default styling that this component should contain. When you have added styling you just rebuild corporate-ui that you have linked and it should give you the new styling.\n\n  ```SCSS\n   // Example\n    :host {\n      color: red;\n    }\n  ```\n\n\n2.  Getting styles from scania-theme. Before you can use your styling from scania-theme, you need to add some Stencil decorators. Go to your components tsx file, `new-component.tsx`. These decorators are created to handle how we add the styling for the component, so it doesn't leak out to other parts of the application.  And also to access styling from scania-theme that is available in corporate-ui store.\n\n ```Javascript\n  //Example\n\n  export class NewComponent {\n    // Add this before the render method\n    @Prop({ context: 'store' }) ContextStore: any;\n\n    @Prop({ mutable: true }) theme: string;\n\n    @State() store: any;\n\n    @State() tagName: string;\n\n    @State() currentTheme = { components: [] };\n\n    @State() style: Array<CSSStyleSheet>;\n\n    @Element() el;\n\n ```\n\n3. When you have add the correct decorators, you can add a watcher for the theme property.\n \n ```Javascript\n   @Watch('theme')\n      setTheme(name = undefined) {\n      this.theme = name || this.store.getState().theme.current;\n      this.currentTheme = this.store.getState().theme.items[this.theme];\n    }\n  ```\n\n4.  You need to import a helper function called `themeStyle`. This function is used to integrate styling from store to be an adoptedStylesheet in the component. Read more about [adoptedStylesheet](https://wicg.github.io/construct-stylesheets/#using-constructed-stylesheets).\n```Javascript\n    import { themeStyle } from '../../helpers/themeStyle';\n```\n\n5. Before the render function you need to add method `componentWillLoad()` and `componentDidLoad() `. This will set the theme for your component.\n```Javascript\n  componentWillLoad() {\n    this.store = this.ContextStore || (window as any).CorporateUi.store;\n\n    this.setTheme(this.theme);\n\n    this.store.subscribe(() => {\n      this.setTheme();\n\n      themeStyle(this.currentTheme, this.tagName, this.style, this.el);\n    });\n\n    if (!(this.el && this.el.nodeName)) return;\n\n    this.tagName = this.el.nodeName.toLowerCase();\n  }\n\n  componentDidLoad() {\n\n    this.style = this.el.shadowRoot.adoptedStyleSheets || [];\n\n    themeStyle(this.currentTheme, this.tagName, this.style, this.el);\n\n  }\n```\n\n6. Edit styling in scania-theme. Go to `src/styles/elements/c-new-component.scss` in scania-theme. Inside this file you will add everything Scania related, like colors, fonts ,buttons or any other elements that you might use in your component. Look at the `styles/variables.scss` to see which colors, font-size and other styling that exist.\n\n  ```SCSS\n    //Example\n    @import '../variables'; // Scania variables\n    @import '../components/button'; //Scania button\n    @import '../utilities/typography'; //Scania font styling\n\n    :host {\n      // You need to add both css variables and scss variables to support IE( https://caniuse.com/#feat=css-variables )\n      font-family: $font-family-base;\n      font-size: $font-size-base;\n\n      color: $primary; // You need to add both for IE suport\n      color: Var(--primary);\n\n      margin: 2rem;\n      padding: 3rem;\n    }\n  ```\n\n7. If you want to use boostrap styling you need to add the basic foundation, like bootstrap variables. Some of these are required. You can also import styling from other elements for example button and so on.\n\n  ```SCSS\n    // Required\n    @import 'node_modules/bootstrap/scss/functions';\n    @import 'node_modules/bootstrap/scss/variables';\n    @import 'node_modules/bootstrap/scss/mixins';\n    @import 'node_modules/bootstrap/scss/transitions';\n\n    // Optional (example)\n    @import 'node_modules/bootstrap/scss/reboot';\n    @import 'node_modules/bootstrap/scss/buttons';\n\n    @import '../../components.scss'; //Setting box-model\n\n    :host {\n      color: red;\n    }\n  ```\n\n8. For example, if you have a button inside your component, you cannnot get the styling from the global css because it is inside a shadowDom. Then, you can import the css as mentioned in step 5. Below is the example of a button inside a component and it will still get Scania styling.\n\n  ```JSX\n   return[\n      <div>\n        <h1>Cool Headline</h1>\n        <button class=\"btn btn-primary\">Click Me!</button>\n        <p>Awesome text</p>\n      </div>\n    ]\n  ```\n\n  9. Application example in angular, you should see two primary buttons, one inside the component and one outside using the same styling from scania-theme.\n\n   ```HTML\n      <c-theme name='scania' global='true'></c-theme>\n      <c-header></c-header>\n      <c-content>\n        <section>\n          <button class=\"btn btn-primary\">Accept</button>\n          <c-new-component></c-new-component>\n          <!-- Your application content goes here -->\n        </section>\n      </c-content>\n      <c-footer></c-footer>\n   ```\n\n10. If you have added everything above, you should see a button with the scania primary color from scania-theme. If you face any problems, please visit the [troubleshooting section](https://digitaldesign.scania.com/getting-started/development/troubleshooting), [FAQ](https://digitaldesign.scania.com/faqs) or ask a question in our community in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac).\n\n \n<img alt='new component' style='margin-top: 15px; border: 1px solid; height: 273px; width: 633px;' src='https://sdds-cms.s3.amazonaws.com/2b0ce74dbd694156bdf10110e6cadcef.png' /> \n\n\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-09-02T13:27:58.359Z"
               }
             }
           ]
@@ -2389,6 +2922,152 @@
           "id": "63",
           "url": "design",
           "title": "Resources Design",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "url": "faq-development",
+      "title": "Development",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "33",
+          "pageContent": [
+            {
+              "content": {
+                "id": "135",
+                "title": "FAQ Development",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "6",
+                    "Title": "General",
+                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n\n\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n\n\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "145",
+                    "Title": "What is supported",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "146",
+                    "Title": "Migration",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "147",
+                    "Title": "Contribution",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "148",
+                    "Title": "Debug",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:56:11.661Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "54",
+      "url": "faqs",
+      "title": "Support FAQs",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "31",
+          "pageContent": []
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "127",
+          "title": "General",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "144",
+                "title": "Support FAQ General",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "231",
+                    "Title": null,
+                    "Text": "##### Introduction\n\nBelow is our most frequently asked questions and their answers about the Scania Digital Design System in general. FAQs address both [design](link) and [development](link) related questions (and answers) which are organised in separate sections. \n\nThe FAQ section is updated on an ongoing basis, so please reach out to us if you have questions that you think should be included here.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-04T16:26:56.502Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "132",
+          "title": "Design",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "134",
+                "title": "FAQ Design",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "117",
+                    "Title": null,
+                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:57:19.151Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "133",
+          "title": "Development",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "162",
+                "title": "Support FAQ Development",
+                "section": [],
+                "updated_at": "2020-12-08T12:46:20.765Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": [
+        {
+          "id": "56",
+          "url": "faq-development",
+          "title": "Development",
           "thumbnail": null
         }
       ]
@@ -3999,66 +4678,6 @@
       "submenus": []
     },
     {
-      "id": "56",
-      "url": "faq-development",
-      "title": "Development",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "33",
-          "pageContent": [
-            {
-              "content": {
-                "id": "135",
-                "title": "FAQ Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "6",
-                    "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n\n\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n\n\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "145",
-                    "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "146",
-                    "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "147",
-                    "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "148",
-                    "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T12:56:11.661Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "43",
       "url": "grid-and-spacing",
       "title": "Grid and spacing",
@@ -4126,84 +4745,6 @@
         }
       ],
       "submenus": []
-    },
-    {
-      "id": "54",
-      "url": "faqs",
-      "title": "Support FAQs",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "31",
-          "pageContent": []
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "127",
-          "title": "General",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "144",
-                "title": "Support FAQ General",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "231",
-                    "Title": null,
-                    "Text": "##### Introduction\n\nBelow is our most frequently asked questions and their answers about the Scania Digital Design System in general. FAQs address both [design](link) and [development](link) related questions (and answers) which are organised in separate sections. \n\nThe FAQ section is updated on an ongoing basis, so please reach out to us if you have questions that you think should be included here.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-04T16:26:56.502Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "132",
-          "title": "Design",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "161",
-                "title": "Support FAQ Design",
-                "section": [],
-                "updated_at": "2020-12-08T12:46:06.451Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "133",
-          "title": "Development",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "162",
-                "title": "Support FAQ Development",
-                "section": [],
-                "updated_at": "2020-12-08T12:46:20.765Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": [
-        {
-          "id": "56",
-          "url": "faq-development",
-          "title": "Development",
-          "thumbnail": null
-        }
-      ]
     },
     {
       "id": "42",
@@ -4598,467 +5139,6 @@
               }
             }
           ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "36",
-      "url": "development",
-      "title": "Getting started Development",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "5",
-          "title": "Introduction",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "146",
-                "title": "Getting Started Development Introduction",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "239",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The SDDS toolbox will help you create an application with Scania look and feel. Here you can find styles and web components that can be used across different frameworks.",
-                      "Introduction": true,
-                      "id": "27"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "240",
-                    "Title": "Scania Theme",
-                    "Text": "Scania-theme is a package that contains Scania specific styling for each of those components/patterns in the SDDS toolbox. Every component has a unique styling with Scania look and feel. Moreover, you can also expect to find fonts, icons, tokens and much more.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "241",
-                    "Title": "Components",
-                    "Text": "Header, footer or a button are all web components in our design system, the difference between them is how they are technically made. \n\n```<c-header></c-header>``` is a web component, while a ```<button> Click Me </button>``` is a regular HTML element that already exist in the HTML Standard. One easy thing to differentiate between those is by looking at the dash in the element name, for example \"c-header\", that indicates it is a webcomponent. \n\nA web component can be used in the same way as a regular element in the HTML standard. Difference is what is under the hood. You can read more about it here: developer.mozilla.org/en-US/docs/Web/Web_Components\n\nAll web-components in Scania digital design system have namespace with <c-nameOfComponent>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "242",
-                    "Title": "Stencil",
-                    "Text": "To be able to create a component in SDDS, it is essential to have a basic understanding of the tool we are using to make them come to life; a web component compiler called StencilJS. This is the core for our components and how we build them. You can read more in Stencil documentation. \n\nStencilJS contains features like:\n\n- Virtual DOM\n- TypeScript\n- JSX\n\nThe following is an example component:",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "162",
-                    "title": null,
-                    "code": "import { Component, Prop, h } from '@stencil/core';\n\n@Component({\ntag: 'my-component',\n})\nexport class MyComponent {\n\n  // Indicate that name should be a public property on the component\n  @Prop() name: string;\n\n  render() {\n    return (\n      <p>\n        My name is {this.name}\n      </p>\n    );\n  }\n}",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "243",
-                    "Title": null,
-                    "Text": "<br/>**Loading** <br/>\nAnother very important part with Stencil is how the components are loaded, Stencil is built with self-lazy loading. Only the components that are used (imported) will be loaded into the application and only take that specific space in the memory. You just have to add one import for every component, instead of importing every individual component. \n\nThe package size of both Scania-theme and Corporate-Ui is something we are always trying to improve.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "244",
-                    "Title": "Contribute",
-                    "Text": "If you come across any problems during this installation guide or feel something needs to be more clear, please contact us our report an issue in our [github](https://github.com/scania-digital-design-system/sdds).\n\nThe package size of both Scania-theme and Corporate-Ui is something we are always trying to improve.\n\n[Contribute/Report a bug](link) [Contribute/Request a feature](link)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-07T09:17:10.992Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "7",
-          "title": "Prerequisites",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "148",
-                "title": "Getting Started Development Prerequisites",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "248",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "There are certain things that need to be in place before a developer can start working with SDDS. A short checklist is presented below.",
-                      "Introduction": true,
-                      "id": "31"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "249",
-                    "Title": null,
-                    "Text": "- Node.js 8 and up (Latest stable)\n\n- Node packages manager (NPM) for our packages handling\n\n- If you are behind firewall, configure proxy\n\nHow to install Node you can find in their [documentation](https://nodejs.org/en/download/) and same regarding [NPM](https://www.npmjs.com/get-npm)and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). If you are unfamiliar with NPM and Node, we recommend that you read more about it in their documentation. When Node.js, NPM and Git are installed, you can continue! \n\nCommands to help you see if you have installed these tools:",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "163",
-                    "title": null,
-                    "code": "> node -v\nv12.18.0",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "164",
-                    "title": null,
-                    "code": "> npm -v\n6.4.1",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "165",
-                    "title": null,
-                    "code": "> git --version\ngit version 2.17.0.windows.1",
-                    "componentTag": null
-                  }
-                ],
-                "updated_at": "2020-12-07T09:25:08.257Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "6",
-          "title": "Installation",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "200",
-                "title": "Getting Started Development Installation",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "599",
-                    "Title": "Angular",
-                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "166",
-                    "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "600",
-                    "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "601",
-                    "Title": null,
-                    "Text": "1. In Angular, go to main-ts (or some other appropriate place), and import the packages Corporate-UI and Scania-theme.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "167",
-                    "title": null,
-                    "code": "import { AppModule } from './app/app.module';\nimport { environment } from './environments/environment';\n//Import for Corporate-Ui and Scania-theme\nimport { defineCustomElements, addTheme } from 'corporate-ui'\nimport { theme } from 'scania-theme'",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "602",
-                    "Title": null,
-                    "Text": "2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "168",
-                    "title": null,
-                    "code": " import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n\n @NgModule({\n   declarations: [\n     AppComponent,\n   ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n })",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "603",
-                    "Title": null,
-                    "Text": "3. Inside main.ts, You need to call defineCustomElements()\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "169",
-                    "title": null,
-                    "code": " defineCustomElements();",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "604",
-                    "Title": null,
-                    "Text": "4. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "170",
-                    "title": null,
-                    "code": " addTheme(theme)",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "605",
-                    "Title": null,
-                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "171",
-                    "title": null,
-                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "606",
-                    "Title": null,
-                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "172",
-                    "title": null,
-                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "612",
-                    "Title": "React",
-                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "173",
-                    "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "613",
-                    "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "614",
-                    "Title": null,
-                    "Text": "1. In React you can go to src/index.js and import the packages Corporate-Ui and Scania-theme.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "174",
-                    "title": null,
-                    "code": "import { addTheme, defineCustomElements } from 'corporate-ui'\nimport { theme } from 'scania-theme'",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "615",
-                    "Title": null,
-                    "Text": "2. You need to call defineCustomElements()",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "175",
-                    "title": null,
-                    "code": "defineCustomElements();",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "616",
-                    "Title": null,
-                    "Text": "3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "176",
-                    "title": null,
-                    "code": "addTheme(theme)",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "617",
-                    "Title": null,
-                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "177",
-                    "title": null,
-                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "618",
-                    "Title": null,
-                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "178",
-                    "title": null,
-                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "619",
-                    "Title": "Vue",
-                    "Text": "Install Corporate-UI and Scania-theme in your project, this will install the latest version that is published on npm.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "179",
-                    "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i corporate-ui\n  > npm i scania-theme",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "620",
-                    "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from Corporate-Ui package and { theme } from Scania-theme package after you haver installed them (See section Installing npm packages).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "621",
-                    "Title": null,
-                    "Text": "1. In Vue, go to main.js and import the packages Corporate-Ui and Scania-theme",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "180",
-                    "title": null,
-                    "code": " import Vue from 'vue'\n import App from './App.vue'\n //Import Corporate-Ui and Scania-theme\n import { addTheme, defineCustomElements } from 'corporate-ui'\n import { theme } from 'scania-theme'",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "622",
-                    "Title": null,
-                    "Text": "2. In the main.js you also need to tell the application to ignore custom-element tags such as <c-header> by adding this line. Otherwise a warning will be thrown in the console.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "181",
-                    "title": null,
-                    "code": "//Ignore all components custom-elements named c-*\nVue.config.ignoredElements = [/c-\\w*/];",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "623",
-                    "Title": null,
-                    "Text": "You need to call defineCustomElements()",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "182",
-                    "title": null,
-                    "code": " defineCustomElements();",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "624",
-                    "Title": null,
-                    "Text": "After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "183",
-                    "title": null,
-                    "code": " addTheme(theme)",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "625",
-                    "Title": null,
-                    "Text": "**Add theming** <br/>\nWhen the previous step is done, you can start adding theme to get the styling. Try and add <c-theme> component high up in the hierarchy of your application. for example app.js in react. If it works you should see fonts and so on change.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "184",
-                    "title": null,
-                    "code": "  // React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "626",
-                    "Title": null,
-                    "Text": "**Add header,content and footer** <br/>\nAfter theme is added(Add theming) is done, you can add components <c-header>,<c-content> and <c-footer> in that order. After that you should see the header and footer. Content component will push down the footer below the content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginCodeExample",
-                    "id": "185",
-                    "title": null,
-                    "code": "    // React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
-                    "componentTag": null
-                  }
-                ],
-                "updated_at": "2020-12-09T10:55:51.425Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "8",
-          "title": "Create a component",
-          "active": true,
-          "pageContent": []
         }
       ],
       "submenus": []
@@ -6060,7 +6140,7 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "584",
-                    "Title": "test",
+                    "Title": "",
                     "Text": "**Information**\n\nBecause Scania design system provides everything from the abstract patterns of a design system to the nitty-gritty implementation of accessibility for components, contributions to Scania design system can take many forms, and each of them will correspond to part of the full process.",
                     "LeadText": null
                   },
@@ -6841,24 +6921,11 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "247",
-                    "Title": null,
-                    "Text": "#### Resources",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "2",
-                    "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "GitHub\n[Type Elements Package](link)"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "Typeface\n[Scania Sans](link)"
-                    }
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "123",
+                    "Title": "Resources",
+                    "Images": [],
+                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-07T09:17:49.937Z"
@@ -7128,24 +7195,11 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "247",
-                    "Title": null,
-                    "Text": "#### Resources",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "2",
-                    "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "GitHub\n[Type Elements Package](link)"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "Typeface\n[Scania Sans](link)"
-                    }
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "123",
+                    "Title": "Resources",
+                    "Images": [],
+                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-07T09:17:49.937Z"
@@ -7966,7 +8020,7 @@
                       "id": "4",
                       "label": null,
                       "caption": null,
-                      "size": "Xlarge",
+                      "size": "Large",
                       "negative": null,
                       "alternate": null,
                       "image": [
@@ -8053,7 +8107,7 @@
                       {
                         "id": "30",
                         "label": null,
-                        "caption": "Indent divider Vertical example",
+                        "caption": "",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,

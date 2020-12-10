@@ -51,6 +51,10 @@ nav {
     display: flex;
   }
 
+  &.sdds-nav-close {
+    display: none;
+  }
+
   @media(min-width: 1056px) {
     display: flex;
     position: static;

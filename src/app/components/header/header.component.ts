@@ -12,27 +12,28 @@ export class Header {
   menuToggle = false;
   navigationID = document.getElementById('sdds-sidenavigation');
   @Input() menuHidden;
-  @Output() menuTogglingEvent = new EventEmitter<boolean>();
+  @Input() menuHiddenPage;
+
 
   //FIXME: disabled search
   // toggleSearch() {
   //   this.searchOpen = !this.searchOpen;
   // }
 
+  getMenuHidden($event) {
+    console.log('header:',this.menuHidden);
+    this.menuHidden = $event
+  }
+
+  //Toggle
   toggleMenu() {
     this.menuToggle = !this.menuToggle;
 
-    // console.log(this.menuHidden == true && this.menuToggle == true);
-    // console.log(this.menuHidden, this.menuToggle)
-
+    // console.log( this.menuToggle)
     if(this.menuToggle == true) {
-
-      this.menuTogglingEvent.emit(this.menuToggle);
-
       //add open menu class
       this.navigationID.classList.add('sdds-nav-open');
-    } else {
-      this.menuTogglingEvent.emit(this.menuToggle)
+    } else if(this.menuToggle == false){
 
       //Remove open menu class
       this.navigationID.classList.remove('sdds-nav-open');

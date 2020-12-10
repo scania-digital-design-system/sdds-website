@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { NavigationStart, Router} from '@angular/router';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router} from '@angular/router';
 
 import { PageService } from '../../app.service';
 import { Navigation } from '../../app.interface';
@@ -17,14 +17,18 @@ export class NavigationComponent {
   toggle: boolean[] = [];
   currentUrl: string;
   routerState: any;
+  @Input() menuToggleOptionadded: boolean;
+  navigationID = document.getElementById('sdds-sidenavigation');
 
   // Testing
-  menuHidden: boolean = true;
-  @Output() hideMenuEvent = new EventEmitter<boolean>();
+  menuHidden: boolean = false;
+  @Output() hideMenuNavEvent = new EventEmitter<boolean>();
+  RemoveSideNavClose: boolean = true;
 
   hideMenu() {
+    this.menuHidden = true
     console.log('Hiding Menu',this.menuHidden)
-    this.hideMenuEvent.emit(this.menuHidden = !this.menuHidden);
+    this.hideMenuNavEvent.emit(this.menuHidden);
   }
 
   constructor(private ps: PageService, private router: Router) {
@@ -40,6 +44,17 @@ export class NavigationComponent {
         this.currentUrl = routeEvent.url
       }
       this.setToggle();
+    })
+
+    this.router.events.subscribe((routeEvent: NavigationEnd) => {
+      console.log('RemoveSideNav',this.RemoveSideNavClose)
+        if(this.RemoveSideNavClose == false) {
+          //add open menu class
+          this.navigationID.classList.add('sdds-nav-close');
+        } else if(this.RemoveSideNavClose == true){
+          //Remove open menu class
+          this.navigationID.classList.remove('sdds-nav-close');
+        }
     })
   }
 

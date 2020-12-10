@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -20,7 +20,9 @@ export class MainComponent {
   docs: Array<Doc>;
   parent: Page = {};
   @Input() menuHidden;
-  menuToggleOption: any;
+  @Output() hideMenuPageEvent = new EventEmitter<boolean>();
+  menuHiddenPage: boolean;
+
 
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
@@ -44,13 +46,12 @@ export class MainComponent {
         this.ps.setPage(this.page);
 
         this.analytics(route.url);
+
+        this.menuHiddenPage = false;
+        console.log('page', this.menuHiddenPage )
+        this.hideMenuPageEvent.emit( this.menuHiddenPage );
       }
     });
-  }
-
-  getToggleMenuHiddenOption($event) {
-    this.menuToggleOption = $event
-    // console.log('true if menu is visble',this.menuToggleOption)
   }
 
   getPage(menus: Array<Page>, paths: Array<String>) {

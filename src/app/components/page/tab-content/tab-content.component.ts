@@ -27,7 +27,7 @@ export class TabContentComponent {
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
-    
+
     ps.page.subscribe((page: Page) => {
 
       if(Object.keys(page).length == 0) {
@@ -59,7 +59,7 @@ export class TabContentComponent {
       if(this.title === undefined) {
         this.defaultTab = this.content.showTabs ? this.generateUrl(this.content.pageStructure[0].title) : '.';
       }
-      
+
     });
 
   }
