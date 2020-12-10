@@ -150,6 +150,12 @@
           "thumbnail": null,
           "submenus": [
             {
+              "id": "100",
+              "url": "page-specs",
+              "title": "Page Specs",
+              "thumbnail": null
+            },
+            {
               "id": "54",
               "url": "faqs",
               "title": "Support FAQs",

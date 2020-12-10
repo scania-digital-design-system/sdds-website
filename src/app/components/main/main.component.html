@@ -1,4 +1,4 @@
 <div id="content" class="">
-    <header-component (menuTogglingEvent)="getToggleMenuHiddenOption($event)" [menuHidden]="menuHidden"></header-component>
+    <header-component [menuHidden]="menuHidden" (menuTogglingEvent)="getToggleMenuHiddenOption($event)"></header-component>
     <router-outlet></router-outlet>
 </div>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostBinding, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -12,7 +12,7 @@ declare let gtag: Function;
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnChanges{
+export class MainComponent{
   @HostBinding('class') class;
 
   page: Page = { content: {} };
@@ -20,9 +20,9 @@ export class MainComponent implements OnChanges{
   docs: Array<Doc>;
   parent: Page = {};
   @Input() menuHidden;
-  menuToggleOption: any;
 
   @Output() eventFromHeader = new EventEmitter<boolean>();
+
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);
@@ -49,15 +49,9 @@ export class MainComponent implements OnChanges{
       }
     });
   }
-
-  ngOnChanges(changes: SimpleChanges) {
-    console.log('changes main ', changes)
-  }
   
   getToggleMenuHiddenOption($event) {
-    this.menuToggleOption = $event;
     this.eventFromHeader.emit($event);
-    // console.log('true if menu is visble',this.menuToggleOption)
   }
 
   getPage(menus: Array<Page>, paths: Array<String>) {

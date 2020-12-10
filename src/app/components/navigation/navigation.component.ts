@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { NavigationStart, Router} from '@angular/router';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router} from '@angular/router';
 
 import { PageService } from '../../app.service';
 import { Navigation } from '../../app.interface';
@@ -22,8 +22,6 @@ export class NavigationComponent {
   @Output() hideMenuEvent = new EventEmitter<boolean>();
 
   hideMenu() {
-    // console.log('Hiding Menu',this.menuHidden)
-    this.hideMenuEvent.emit(false);
     this.hideMenuEvent.emit(true);
     this.navigationID.classList.remove('sdds-nav-open');
   }
