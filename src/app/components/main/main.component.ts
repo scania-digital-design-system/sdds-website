@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -20,6 +20,7 @@ export class MainComponent {
   docs: Array<Doc>;
   parent: Page = {};
   // docs: ArrayObject = {};
+  @Input() sentmessage;
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);

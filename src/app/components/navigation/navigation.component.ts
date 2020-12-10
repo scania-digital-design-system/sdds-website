@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { NavigationStart, Router} from '@angular/router';
 
 import { PageService } from '../../app.service';
@@ -17,6 +17,15 @@ export class NavigationComponent {
   toggle: boolean[] = [];
   currentUrl: string;
   routerState: any;
+
+  // Testing
+  menuHidden: boolean = true;
+  @Output() hideMenuEvent = new EventEmitter<boolean>();
+
+  hideMenu() {
+    console.log('Hiding Menu',this.menuHidden)
+    this.hideMenuEvent.emit(this.menuHidden = !this.menuHidden);
+  }
 
   constructor(private ps: PageService, private router: Router) {
     //Get the whole navigation

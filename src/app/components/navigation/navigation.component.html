@@ -1,4 +1,4 @@
-<section class="sdds-navigation">
+<section class="sdds-navigation" style="color: white" >
   <div class="sdds-nav-section" *ngFor="let menu of firstLevelNav.menus;">
 
     <!-- Template for handling menu layers-->
@@ -17,7 +17,7 @@
          <!-- second layer menu, collapse -->
         <div class="sdds-nav-section-sub-links">
           <div *ngFor="let submenu of menu.submenus; index as i;">
-            <a [routerLink]="menu.url + '/' + submenu.url" class="sdds-body-02 sdds-nav-link-style" routerLinkActive="active">
+            <a [routerLink]="menu.url + '/' + submenu.url" class="sdds-body-02 sdds-nav-link-style" routerLinkActive="active" (click)="hideMenu();">
               <span>{{submenu.title}}</span>
             </a>
           </div>
@@ -28,7 +28,7 @@
 
     <!-- menu without a second layer -->
     <ng-template #noSubMenu>
-      <a class="sdds-headline-06 sdds-nav-section-link sdds-nav-link-style" routerLink="{{menu.url}}" #rla="routerLinkActive" routerLinkActive="sdds-collapse">{{menu.title}}</a>
+      <a class="sdds-headline-06 sdds-nav-section-link sdds-nav-link-style" routerLink="{{menu.url}}" #rla="routerLinkActive" routerLinkActive="sdds-collapse" (click)="hideMenu();">{{menu.title}}</a>
     </ng-template>
 
   </div>

@@ -1,14 +1,7 @@
 <c-theme name="scania" global="true"></c-theme>
-<!-- <div id="maincontent" (cookieSaved)="setCookie($event.detail.cookie)">
-  <nav navigation-component></nav>
-  <main main-component></main>
-  <div statistics-component *ngIf="cookie"></div>
-  <div cookies-message></div>
- </div> -->
-
-<div id="maincontent" class="sdds-push">
-  <nav navigation-component class="sdds-sidebar"></nav>
-  <main main-component></main>
+<div id="maincontent" class="sdds-push" >
+  <nav navigation-component (hideMenuEvent)="getMessage($event)" class="sdds-sidebar" [ngClass]="[menuHidden == true ? '' : 'sdds-nav-open']" id="sdds-sidenavigation"></nav>
+  <main main-component [sentmessage]="menuHidden"></main>
   <!-- <div statistics-component *ngIf="cookie"></div>
   <div cookies-message></div> -->
 </div>

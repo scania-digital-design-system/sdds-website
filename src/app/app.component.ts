@@ -8,6 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent {
   private cookie;
+  menuHidden: boolean = true;
 
   constructor(private cs: CookieService) { }
 
@@ -18,5 +19,9 @@ export class AppComponent {
 
   setCookie(cookie) {
     this.cookie = cookie;
+  }
+
+  getMessage($event) {
+    this.menuHidden = $event
   }
 }

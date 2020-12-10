@@ -97,7 +97,7 @@
 
   // Open state
   &.open-search {
-    
+
     .site-search {
       flex-grow: 1;
       &:hover{
@@ -122,11 +122,9 @@
     .menu-mobile {
       display: none;
     }
-
-    
   }
 
-  @media (min-width: 1054px) {
+  @media (min-width: 1056px) {
     width: calc(100% - 256px);
 
     button {
@@ -139,6 +137,8 @@
     .scania-symbol {
       order: 2;
       flex-grow: unset;
+      // FIXME: until search is added
+      border-left: 1px solid var(--sdds-blue-800)
     }
 
     .menu-mobile {
