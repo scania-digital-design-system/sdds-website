@@ -16,11 +16,15 @@
   align-items: center;
   cursor: pointer;
 
+  
 
 }
 
 .sdds-navigation {
   margin-bottom: 32rem;
+  @media(min-width: 1056px) {
+    margin-bottom: 16rem;
+  }
 }
 
 .sdds-nav-section {
@@ -78,14 +82,19 @@
 
     @media (min-width: 1056px) {
       margin: 0 var(--sdds-spacing-element-24);
+
+    &:hover,
+    &.active:hover {
+      span {
+        background-color: var(--sdds-grey-700);
+      }
     }
+  }
 
   span {
     display: inline-flex;
     padding: var(--sdds-spacing-element-12) var(--sdds-spacing-element-16);
     border-radius: 1rem;
-
-    
   }
 
   &.active {
@@ -96,7 +105,6 @@
       }
     }
   }
-
 }
 
 //External link styling
@@ -105,7 +113,7 @@
 }
 
 .sdds-external-link {
-  padding: 24px;
+  padding: var(--sdds-spacing-element-24);
   border-bottom: 1px solid var(--sdds-grey-800);
 
   > a {

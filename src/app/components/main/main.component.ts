@@ -30,7 +30,6 @@ export class MainComponent{
 
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
-        console.log(route)
         this.parent = {};
         const paths = route.urlAfterRedirects.substr(1).split('?')[0].split('/');
 

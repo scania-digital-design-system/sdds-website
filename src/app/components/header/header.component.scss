@@ -92,7 +92,10 @@
   .scania-symbol,
   .site-search {
     &:hover {
-      background-color: var(--sdds-blue-800);
+      outline:none;
+     @media (min-width: 1056px) {
+       background-color: var(--sdds-blue-800);
+     }
     }
   }
 
