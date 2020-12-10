@@ -1,3 +1,5 @@
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 @import '../../app-vars.scss';
 
 .sdds-content-header {
@@ -5,13 +7,10 @@
   flex-flow: column;
   justify-content: flex-end;
   background-color: #041E42;
-  padding-top: $site-content-header-height-mobile;
+  height: $site-content-header-height-mobile;
   padding-bottom: 6rem; 
-}
-
-.sdds-content-title-font {
-  font-size: 8rem;
-  line-height: 8rem;
+  margin-top: $site-header-height;
+  @include type-style('headline-03');
 }
 
 .sdds-category-title {
@@ -25,7 +24,8 @@
 
 @media (min-width: 1056px) {
   .sdds-content-header{
+    @include type-style('headline-02');
     padding-bottom: 10rem;
-    padding-top: $site-content-header-height;
+    height: $site-content-header-height;
   }
 }

@@ -15,44 +15,42 @@
     // .tab-pane > div > section {
     //   width: 100%;
     // }
-    &.tab-component-container {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-    }
 
     .tab-content {
       padding-top: 6rem;
       padding-bottom: 6rem;
       position: relative;
-      order: 2;
+    }
+
+    .line-break{
+      width: 100%;
     }
 
     // position: header height + tab height 
-    $anchor-position: $site-header-height + (64/4);
+    
     .anchor-menus {
       position: static;
       right: 0;
-      top: $anchor-position;
       text-align: left;
       padding-top: var(--sdds-spacing-element-24);
       flex-grow: 1;
-      order: 1;
+      min-width: 160px;
       ul {
-        margin: 0;
-        padding-left: 4rem;
+        margin-bottom: var(--sdds-spacing-element-40);
+        padding-left: 0;
       }
 
       li {
         list-style-type: none;
         display: block;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         margin-left: 4rem;
         a {
           display: block;
           position: relative;
           padding-left: 0;
+          cursor: pointer;
 
           > p { margin:0; }
 
@@ -91,6 +89,10 @@
       padding: 5px 10px;
     }
 
+    figure {
+      margin-bottom: 10rem;
+    }
+
     section {
       //FIXME: Add correct rem
       padding-top: 7.5rem;
@@ -102,8 +104,20 @@
       }
     }
 
+    .lead-text {
+      margin-bottom: 10rem;
+    }
+
+    .section-title {
+      p { margin: 0; }
+      margin-top: var(--sdds-spacing-element-48);
+      margin-bottom: var(--sdds-spacing-element-16);
+    }
+
     img {
       max-width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
     .last-updated {
@@ -143,7 +157,6 @@
       }
     }
     
-
     #modalExample {
       display: block !important;
       position: static !important;
@@ -224,29 +237,30 @@
     
 
     @media (min-width: 1056px) {
-      .tab-component-container {
-        flex-direction: row;
-      }
       .anchor-menus {
         position: sticky;
-        order: 2;
         text-align: right;
+        top: $anchor-position-no-tabs;
+        &.show-tabs {
+          top: $anchor-position;
+        }
+        ul {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
         li{
-          margin-right: 6rem;
           a {
             padding-right: 4rem;
             &:before,
             &:after {
               left: unset;
-              right: -2px;
+              right: -1px;
               border-right: 1px solid var(--sdds-blue-200);
             }
           }
           
         }
-      }
-      .tab-content {
-        order: 1;
       }
     }
   // end of :ng-deep
@@ -307,8 +321,7 @@
 
     img {
       width: 300px;
-      margin-bottom
-      : 15px;
+      margin-bottom: 15px;
       margin-right: 15px;
     }
   }
