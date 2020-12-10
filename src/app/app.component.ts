@@ -21,7 +21,8 @@ export class AppComponent {
     this.cookie = cookie;
   }
 
-  getMessage($event) {
+  getMenuHidden($event) {
     this.menuHidden = $event
   }
+
 }

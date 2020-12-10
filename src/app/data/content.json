@@ -283,13 +283,6 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "4",
-                    "Title": null,
-                    "Images": [],
-                    "texts": []
-                  },
-                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "223",
                     "Title": null,
@@ -297,25 +290,11 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "5",
-                    "Title": null,
-                    "Images": [],
-                    "texts": []
-                  },
-                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "224",
                     "Title": null,
                     "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
                     "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "119",
-                    "Title": null,
-                    "Images": [],
-                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-08T12:07:54.429Z"
@@ -396,6 +375,255 @@
                   }
                 ],
                 "updated_at": "2020-06-04T09:35:01.660Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "100",
+      "url": "page-specs",
+      "title": "Page Specs",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "168",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "201",
+                "title": "Page Specs",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "635",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
+                      "Introduction": true,
+                      "id": "134"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image Without Caption",
+                    "caption": null,
+                    "Image": {
+                      "id": "403",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
+                        }
+                      ]
+                    },
+                    "id": "76"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image with Caption",
+                    "caption": "",
+                    "Image": {
+                      "id": "404",
+                      "label": "This is an image caption",
+                      "caption": "It should look like this",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
+                        }
+                      ]
+                    },
+                    "id": "77"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "636",
+                    "Title": "Introduction",
+                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "637",
+                    "Title": "Functional and Expressive",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\n\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\n\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n[Functional type](link)\n[Expressive type](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "405",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
+                        }
+                      ]
+                    },
+                    "id": "78"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "638",
+                    "Title": "Cards",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "120",
+                    "Title": null,
+                    "Images": [],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "121",
+                    "Title": "Do's and Dont's",
+                    "Images": [],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "639",
+                    "Title": "Images",
+                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\n\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "122",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "406",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "407",
+                        "label": "Image Subheading",
+                        "caption": "Some caption should be here",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "408",
+                        "label": "Some label",
+                        "caption": "Image caption should be short and precise",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "409",
+                        "label": "Hello image",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "410",
+                        "label": "Image is this",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "411",
+                        "label": "A happy nice image",
+                        "caption": "Some description follows",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "412",
+                        "label": null,
+                        "caption": null,
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/732760c3d31a4596abd7e4465623666f.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "413",
+                        "label": null,
+                        "caption": null,
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f9a27e37fd4c41b79a3822b58dfb13f4.jpg"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": []
+                  }
+                ],
+                "updated_at": "2020-12-10T10:00:47.498Z"
               }
             }
           ]
@@ -5821,31 +6049,31 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "583",
-                    "Title": null,
-                    "Text": null,
+                    "Title": "",
+                    "Text": "",
                     "LeadText": {
                       "textfield": "The Scania design system welcomes contributions from the  whole organisation. Together, we can grow Scania design system and make it a better framework.",
-                      "Introduction": null,
+                      "Introduction": true,
                       "id": "133"
                     }
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "584",
-                    "Title": null,
+                    "Title": "test",
                     "Text": "**Information**\n\nBecause Scania design system provides everything from the abstract patterns of a design system to the nitty-gritty implementation of accessibility for components, contributions to Scania design system can take many forms, and each of them will correspond to part of the full process.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "118",
-                    "Title": null,
+                    "Title": "cards",
                     "Images": [
                       {
                         "id": "400",
                         "label": null,
                         "caption": null,
-                        "size": null,
+                        "size": "Medium",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -5858,7 +6086,7 @@
                         "id": "401",
                         "label": null,
                         "caption": null,
-                        "size": null,
+                        "size": "Medium",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -5871,7 +6099,7 @@
                         "id": "402",
                         "label": null,
                         "caption": null,
-                        "size": null,
+                        "size": "Medium",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -5888,13 +6116,6 @@
               }
             }
           ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "103",
-          "title": null,
-          "active": true,
-          "pageContent": []
         }
       ],
       "submenus": []
@@ -6803,338 +7024,13 @@
                     "id": "7",
                     "Title": null,
                     "Images": [],
-                    "texts": [
-                      {
-                        "textfield": "\nResoures\n[Design](link)\nUI Kit & Grid Systems in downloadable files.",
-                        "Introduction": null,
-                        "id": "22"
-                      },
-                      {
-                        "textfield": "Resoures\n[Brand](link)\nBrand resources such as manuals, typeface, pictograms and imagery.",
-                        "Introduction": null,
-                        "id": "23"
-                      },
-                      {
-                        "textfield": "Resources\n[Development](link)\nDevelopment resources such as repositories and example pages in various types of frameworks.",
-                        "Introduction": null,
-                        "id": "24"
-                      }
-                    ]
+                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-07T09:05:03.289Z"
               }
             }
           ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "67",
-      "url": "foundation-colours",
-      "title": "Foundation Colours",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "134",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "163",
-                "title": "Foundation Colour Information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "364",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Without using words, colours tell the story of a brand. Colours convey an immediate and lasting impression, which is why the brand colour palette is of crucial importance.",
-                      "Introduction": true,
-                      "id": "61"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "365",
-                    "Title": "Colour",
-                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "166",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/8470699ab7dc4d60b077b2a1cb70249c.png"
-                        }
-                      ]
-                    },
-                    "id": "38"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "366",
-                    "Title": null,
-                    "Text": "**Primary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n**Secondary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "167",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/7375c12c63764230b7ab69473a6ac4c7.png"
-                        }
-                      ]
-                    },
-                    "id": "39"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "367",
-                    "Title": null,
-                    "Text": "**Semantic colors**\n\nThe purpose of our semantic colours is to quickly and efficiently signal a specific CTA or information to the user. The colours are used to create clear communication hierarchies within our applications and should be used with care and purpose. Never use these colours as decoration or as a background colour on large surfaces.\n\nWhen using these colours, they need to be paired with text, an icon or both to fulfil their purpose in the best way possible.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "168",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/7fbe61dad73b4d51a61e6b9ad11044e8.png"
-                        }
-                      ]
-                    },
-                    "id": "40"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "368",
-                    "Title": null,
-                    "Text": "**Scales**\n\nAs supporting colours to our primary, secondary and semantic colours, we have several steps for each colour, creating a scale. Instead of creating new colours, we can use these steps to drive brand recognition and create strong associations to the brand. These scales enables us to create strong and clear colour hierarchies within our\napplications.Some of the steps are used as background colours, others on text, icons, CTAs or dividers. The most prominent ones are the Grey and Blue colour scales, while the others are used more sparingly. The scales do not only have to be applied within our applications - they could also be used in visualisations and illustrations to ensure a unified overall brand presence.\n\nAll scales are available at [Specifications](link)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "169",
-                      "label": null,
-                      "caption": "",
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/943e213d37994b04aefdf5af963d774d.png"
-                        }
-                      ]
-                    },
-                    "id": "41"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "369",
-                    "Title": "Themes",
-                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n**Light theme**\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n**Dark theme**\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "170",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/0dedc89337be467ebf9c57734c788ddf.png"
-                        }
-                      ]
-                    },
-                    "id": "42"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "370",
-                    "Title": null,
-                    "Text": "**Light vs Dark Mode**\nExample Mockups (not yet created)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "371",
-                    "Title": "Legibility",
-                    "Text": "At Scania we value accessibility and consider it as an important element of an overall user experience within our applications. Our texts and links should be legible and meet [The Web Content Accessibility Guidelines (WCAG 2.0) level AA](link), which requires a contrast ratio of at least 4.5:1 for normal text, and 3:1 to large text.\n\nOur colours have a scale which consists of 10 values (black and white excluded). On backgrounds using darker values, white text is accessible and on backgrounds using lighter values, dark text is accessible.\n\nLearn more about our thoughts on [Accessibility design](link).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "172",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/b879399529984b13b168c900f39a7e7c.png"
-                        }
-                      ]
-                    },
-                    "id": "44"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "377",
-                    "Title": "Colour tokens",
-                    "Text": "In our Unit System, we are using tokens to manage our variables, and this is to be able to go away from having hard coded values to ensure consistency in our UIs. It also makes it more efficient to implement, maintain and update.\n\nWe are using the same approach for our colour palettes. For instance, instead of coding all instances when using our blue colour with #041E42, we can instead apply a token like $blue-900.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "378",
-                    "Title": "Resources",
-                    "Text": "[Github / Colours element package](link)\n[RGB/ ASE Colour palette](link)\n[Figma/ UI Kit](link)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T13:15:47.336Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "135",
-          "title": "Specification",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "165",
-                "title": "Foundation Colour Specification",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "379",
-                    "Title": null,
-                    "Text": "**Colour specification**\nBelow you find detailed lists of all of Scanias colours. Note, these are also available at [Github](link), as [ASE](link) and within our [UI Kit](link).\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "568",
-                    "Title": "Primary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,36,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4a38fd5b6e5e491ab1d019a935498ac5.png\"></td>\n    <td>Red</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "569",
-                    "Title": "Secondary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2c164d61b082459fa455fe22fbbcdb8b.png\"></td>\n    <td>Orange</td>\n    <td>#E35205</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-900</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "570",
-                    "Title": "Semantic colors",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b3d6ebb136c843afa949ed0a4fa4b07e.png\"></td>\n    <td>CTA</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/dd4f1a4a61a748b69df9daf1b2dd0778.png\"></td>\n    <td>Negative</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4558bdb903ae4bf091981688ab10932e.png\"></td>\n    <td>Warning</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/72124c6a6b4947b1bc8cb58c645b1d96.png\"></td>\n    <td>Positive</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/25f6f37ee31e427eb437cb6b5bac22bc.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "571",
-                    "Title": "Scales",
-                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 600</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "572",
-                    "Title": null,
-                    "Text": "**Blue scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/961a9b35627542ccab43bb175ed61e40.png\"></td>\n    <td>Blue 900</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4e331bb3b5c243a2bfc97d4ef99cd85a.png\"></td>\n    <td>Blue 800</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4c8e4e67f12641c2b22c3c3bc322fe62.png\"></td>\n    <td>Blue 600</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e55301bc735941c3ac388023d45fa99a.png\"></td>\n    <td>Blue 600</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/cbdb86ff8780443685a885180548034d.png\"></td>\n    <td>Blue 500</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/9e3f18eb908e4c85be6cc8a6094eeb9c.png\"></td>\n    <td>Blue 400</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/365a3ce9207b4c58be87535ec8fd0538.png\"></td>\n    <td>Blue 300</td>\n    <td>#9CA5C2</td>\n    <td>(156,165,194,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f71be4d191f4894ada43e38c9f7effb.png\"></td>\n    <td>Blue 200</td>\n    <td>#C1C6D8</td>\n    <td>(193,198,216,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8f32b721ba234b4bac4bc90cb2105529.png\"></td>\n    <td>Blue 100</td>\n    <td>#E0E2EB</td>\n    <td>(224,226,235,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3eda052338354b2aaaf7a93ca77657be.png\"></td>\n    <td>Blue 50</td>\n    <td>#F6F6F9</td>\n    <td>(246,246,249,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "573",
-                    "Title": null,
-                    "Text": "**Red scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "574",
-                    "Title": null,
-                    "Text": "**Green scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6a660876624444eca48c3eda58ff2c79.png\"></td>\n    <td>Green 900</td>\n    <td>#112616</td>\n    <td>(17,38,22,1)</td>\n    <td>$green-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0d1c4d952a342ddb102c3430ff35051.png\"></td>\n    <td>Green 800</td>\n    <td>#1C3822</td>\n    <td>(28,56,34,1)</td>\n    <td>$green-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/61948dbe34eb44a5a2ae84ce274d0247.png\"></td>\n    <td>Green 700</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/89b9222956bf49ab9cccf45b0f9e7f03.png\"></td>\n    <td>Green 600</td>\n    <td>#386E44</td>\n    <td>(56,110,68,1)</td>\n    <td>$green-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/82a081df758347d0b23fd771d1de1555.png\"></td>\n    <td>Green 500</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bef85d637a734b4099fefe5e762f54db.png\"></td>\n    <td>Green 400</td>\n    <td>#539E63</td>\n    <td>(83,158,99,1)</td>\n    <td>$green-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/977452b1757f4eaf8a4c88d1a28bd399.png\"></td>\n    <td>Green 300</td>\n    <td>#89B691</td>\n    <td>(137,182,145,1)</td>\n    <td>$green-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee40e7fe84b646a98ad94387a982f9d2.png\"></td>\n    <td>Green 200</td>\n    <td>#A6D1AD</td>\n    <td>(166,209,173,1)</td>\n    <td>$green-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/f24acf045b9f4146ad137ffa6f7aeb16.png\"></td>\n    <td>Green 100</td>\n    <td>#CAEBD0</td>\n    <td>(202,235,208,1)</td>\n    <td>$green-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3b385b2c131a4ec686c506723d2d8292.png\"></td>\n    <td>Green 50</td>\n    <td>#F1F8F2</td>\n    <td>(241,248,242,1)</td>\n    <td>$green-50</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "575",
-                    "Title": null,
-                    "Text": "**Orange scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/0b68903a702847edb546245290638df6.png\"></td>\n    <td>Orange 900</td>\n    <td>#112616</td>\n    <td>(51,17,3,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2a4ee842cf654d19a6935eecffa5ec40.png\"></td>\n    <td>Orange 800</td>\n    <td>#893B15</td>\n    <td>(137,59,21,1)</td>\n    <td>$orange-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3a36ec35a9844a1cac694271c01df91c.png\"></td>\n    <td>Orange 700</td>\n    <td>#C65416</td>\n    <td>(198,84,22,1)</td>\n    <td>$orange-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ded62d3a338546a6942063b739d4fa1c.png\"></td>\n    <td>Orange 600</td>\n    <td>#EB6200</td>\n    <td>(235,98,0,1)</td>\n    <td>$orange-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee8edb5d47514961980034f5d5a2a7be.png\"></td>\n    <td>Orange 500</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/28090f448a90449ebdb4fe7edb25e65b.png\"></td>\n    <td>Orange 400</td>\n    <td>#F98A67</td>\n    <td>(249,138,103,1)</td>\n    <td>$orange-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bc42b24388964792aa9fa29e6f636ddb.png\"></td>\n    <td>Orange 300</td>\n    <td>#F9A38D</td>\n    <td>(249,163,141,1)</td>\n    <td>$orange-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5d7f20edd4854c17a87c6da2f42b9f1c.png\"></td>\n    <td>Orange 200</td>\n    <td>#F9CAC0</td>\n    <td>(249,202,192,1)</td>\n    <td>$orange-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b22bfc5022bb4d1ab91816b53db8d3be.png\"></td>\n    <td>Orange 100</td>\n    <td>#FBE3DF</td>\n    <td>(251,227,223,1)</td>\n    <td>$orange-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f965ef8ce8e4567afa74f2d272b1427.png\"></td>\n    <td>Orange 50</td>\n    <td>#FDF5F3</td>\n    <td>(253,245,243,1)</td>\n    <td>$orange-50</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T13:49:59.410Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "136",
-          "title": "Style",
-          "active": true,
-          "pageContent": []
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "137",
-          "title": "Code",
-          "active": true,
-          "pageContent": []
         }
       ],
       "submenus": []
@@ -7572,6 +7468,315 @@
               }
             }
           ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "67",
+      "url": "foundation-colours",
+      "title": "Foundation Colours",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "134",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "163",
+                "title": "Foundation Colour Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "364",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Without using words, colours tell the story of a brand. Colours convey an immediate and lasting impression, which is why the brand colour palette is of crucial importance.",
+                      "Introduction": true,
+                      "id": "61"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "365",
+                    "Title": "Colour",
+                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "166",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/8470699ab7dc4d60b077b2a1cb70249c.png"
+                        }
+                      ]
+                    },
+                    "id": "38"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "366",
+                    "Title": null,
+                    "Text": "**Primary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n**Secondary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "167",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/7375c12c63764230b7ab69473a6ac4c7.png"
+                        }
+                      ]
+                    },
+                    "id": "39"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "367",
+                    "Title": null,
+                    "Text": "**Semantic colors**\n\nThe purpose of our semantic colours is to quickly and efficiently signal a specific CTA or information to the user. The colours are used to create clear communication hierarchies within our applications and should be used with care and purpose. Never use these colours as decoration or as a background colour on large surfaces.\n\nWhen using these colours, they need to be paired with text, an icon or both to fulfil their purpose in the best way possible.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "168",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/7fbe61dad73b4d51a61e6b9ad11044e8.png"
+                        }
+                      ]
+                    },
+                    "id": "40"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "368",
+                    "Title": null,
+                    "Text": "**Scales**\n\nAs supporting colours to our primary, secondary and semantic colours, we have several steps for each colour, creating a scale. Instead of creating new colours, we can use these steps to drive brand recognition and create strong associations to the brand. These scales enables us to create strong and clear colour hierarchies within our\napplications.Some of the steps are used as background colours, others on text, icons, CTAs or dividers. The most prominent ones are the Grey and Blue colour scales, while the others are used more sparingly. The scales do not only have to be applied within our applications - they could also be used in visualisations and illustrations to ensure a unified overall brand presence.\n\nAll scales are available at [Specifications](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "169",
+                      "label": null,
+                      "caption": "",
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/943e213d37994b04aefdf5af963d774d.png"
+                        }
+                      ]
+                    },
+                    "id": "41"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "369",
+                    "Title": "Themes",
+                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n**Light theme**\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n**Dark theme**\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "170",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/0dedc89337be467ebf9c57734c788ddf.png"
+                        }
+                      ]
+                    },
+                    "id": "42"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "370",
+                    "Title": null,
+                    "Text": "**Light vs Dark Mode**\nExample Mockups (not yet created)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "371",
+                    "Title": "Legibility",
+                    "Text": "At Scania we value accessibility and consider it as an important element of an overall user experience within our applications. Our texts and links should be legible and meet [The Web Content Accessibility Guidelines (WCAG 2.0) level AA](link), which requires a contrast ratio of at least 4.5:1 for normal text, and 3:1 to large text.\n\nOur colours have a scale which consists of 10 values (black and white excluded). On backgrounds using darker values, white text is accessible and on backgrounds using lighter values, dark text is accessible.\n\nLearn more about our thoughts on [Accessibility design](link).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "172",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/b879399529984b13b168c900f39a7e7c.png"
+                        }
+                      ]
+                    },
+                    "id": "44"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "377",
+                    "Title": "Colour tokens",
+                    "Text": "In our Unit System, we are using tokens to manage our variables, and this is to be able to go away from having hard coded values to ensure consistency in our UIs. It also makes it more efficient to implement, maintain and update.\n\nWe are using the same approach for our colour palettes. For instance, instead of coding all instances when using our blue colour with #041E42, we can instead apply a token like $blue-900.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "378",
+                    "Title": "Resources",
+                    "Text": "[Github / Colours element package](link)\n[RGB/ ASE Colour palette](link)\n[Figma/ UI Kit](link)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T13:15:47.336Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "135",
+          "title": "Specification",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "165",
+                "title": "Foundation Colour Specification",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "379",
+                    "Title": null,
+                    "Text": "**Colour specification**\nBelow you find detailed lists of all of Scanias colours. Note, these are also available at [Github](link), as [ASE](link) and within our [UI Kit](link).\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "568",
+                    "Title": "Primary palette",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,36,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4a38fd5b6e5e491ab1d019a935498ac5.png\"></td>\n    <td>Red</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "569",
+                    "Title": "Secondary palette",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2c164d61b082459fa455fe22fbbcdb8b.png\"></td>\n    <td>Orange</td>\n    <td>#E35205</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-900</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "570",
+                    "Title": "Semantic colors",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b3d6ebb136c843afa949ed0a4fa4b07e.png\"></td>\n    <td>CTA</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/dd4f1a4a61a748b69df9daf1b2dd0778.png\"></td>\n    <td>Negative</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4558bdb903ae4bf091981688ab10932e.png\"></td>\n    <td>Warning</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/72124c6a6b4947b1bc8cb58c645b1d96.png\"></td>\n    <td>Positive</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/25f6f37ee31e427eb437cb6b5bac22bc.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "571",
+                    "Title": "Scales",
+                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 600</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "572",
+                    "Title": null,
+                    "Text": "**Blue scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/961a9b35627542ccab43bb175ed61e40.png\"></td>\n    <td>Blue 900</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4e331bb3b5c243a2bfc97d4ef99cd85a.png\"></td>\n    <td>Blue 800</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4c8e4e67f12641c2b22c3c3bc322fe62.png\"></td>\n    <td>Blue 600</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e55301bc735941c3ac388023d45fa99a.png\"></td>\n    <td>Blue 600</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/cbdb86ff8780443685a885180548034d.png\"></td>\n    <td>Blue 500</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/9e3f18eb908e4c85be6cc8a6094eeb9c.png\"></td>\n    <td>Blue 400</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/365a3ce9207b4c58be87535ec8fd0538.png\"></td>\n    <td>Blue 300</td>\n    <td>#9CA5C2</td>\n    <td>(156,165,194,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f71be4d191f4894ada43e38c9f7effb.png\"></td>\n    <td>Blue 200</td>\n    <td>#C1C6D8</td>\n    <td>(193,198,216,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8f32b721ba234b4bac4bc90cb2105529.png\"></td>\n    <td>Blue 100</td>\n    <td>#E0E2EB</td>\n    <td>(224,226,235,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3eda052338354b2aaaf7a93ca77657be.png\"></td>\n    <td>Blue 50</td>\n    <td>#F6F6F9</td>\n    <td>(246,246,249,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "573",
+                    "Title": null,
+                    "Text": "**Red scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "574",
+                    "Title": null,
+                    "Text": "**Green scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6a660876624444eca48c3eda58ff2c79.png\"></td>\n    <td>Green 900</td>\n    <td>#112616</td>\n    <td>(17,38,22,1)</td>\n    <td>$green-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0d1c4d952a342ddb102c3430ff35051.png\"></td>\n    <td>Green 800</td>\n    <td>#1C3822</td>\n    <td>(28,56,34,1)</td>\n    <td>$green-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/61948dbe34eb44a5a2ae84ce274d0247.png\"></td>\n    <td>Green 700</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/89b9222956bf49ab9cccf45b0f9e7f03.png\"></td>\n    <td>Green 600</td>\n    <td>#386E44</td>\n    <td>(56,110,68,1)</td>\n    <td>$green-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/82a081df758347d0b23fd771d1de1555.png\"></td>\n    <td>Green 500</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bef85d637a734b4099fefe5e762f54db.png\"></td>\n    <td>Green 400</td>\n    <td>#539E63</td>\n    <td>(83,158,99,1)</td>\n    <td>$green-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/977452b1757f4eaf8a4c88d1a28bd399.png\"></td>\n    <td>Green 300</td>\n    <td>#89B691</td>\n    <td>(137,182,145,1)</td>\n    <td>$green-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee40e7fe84b646a98ad94387a982f9d2.png\"></td>\n    <td>Green 200</td>\n    <td>#A6D1AD</td>\n    <td>(166,209,173,1)</td>\n    <td>$green-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/f24acf045b9f4146ad137ffa6f7aeb16.png\"></td>\n    <td>Green 100</td>\n    <td>#CAEBD0</td>\n    <td>(202,235,208,1)</td>\n    <td>$green-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3b385b2c131a4ec686c506723d2d8292.png\"></td>\n    <td>Green 50</td>\n    <td>#F1F8F2</td>\n    <td>(241,248,242,1)</td>\n    <td>$green-50</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "575",
+                    "Title": null,
+                    "Text": "**Orange scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/0b68903a702847edb546245290638df6.png\"></td>\n    <td>Orange 900</td>\n    <td>#112616</td>\n    <td>(51,17,3,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2a4ee842cf654d19a6935eecffa5ec40.png\"></td>\n    <td>Orange 800</td>\n    <td>#893B15</td>\n    <td>(137,59,21,1)</td>\n    <td>$orange-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3a36ec35a9844a1cac694271c01df91c.png\"></td>\n    <td>Orange 700</td>\n    <td>#C65416</td>\n    <td>(198,84,22,1)</td>\n    <td>$orange-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ded62d3a338546a6942063b739d4fa1c.png\"></td>\n    <td>Orange 600</td>\n    <td>#EB6200</td>\n    <td>(235,98,0,1)</td>\n    <td>$orange-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee8edb5d47514961980034f5d5a2a7be.png\"></td>\n    <td>Orange 500</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/28090f448a90449ebdb4fe7edb25e65b.png\"></td>\n    <td>Orange 400</td>\n    <td>#F98A67</td>\n    <td>(249,138,103,1)</td>\n    <td>$orange-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bc42b24388964792aa9fa29e6f636ddb.png\"></td>\n    <td>Orange 300</td>\n    <td>#F9A38D</td>\n    <td>(249,163,141,1)</td>\n    <td>$orange-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5d7f20edd4854c17a87c6da2f42b9f1c.png\"></td>\n    <td>Orange 200</td>\n    <td>#F9CAC0</td>\n    <td>(249,202,192,1)</td>\n    <td>$orange-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b22bfc5022bb4d1ab91816b53db8d3be.png\"></td>\n    <td>Orange 100</td>\n    <td>#FBE3DF</td>\n    <td>(251,227,223,1)</td>\n    <td>$orange-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f965ef8ce8e4567afa74f2d272b1427.png\"></td>\n    <td>Orange 50</td>\n    <td>#FDF5F3</td>\n    <td>(253,245,243,1)</td>\n    <td>$orange-50</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T13:49:59.410Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "136",
+          "title": "Style",
+          "active": false,
+          "pageContent": []
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "137",
+          "title": "Code",
+          "active": false,
+          "pageContent": []
         }
       ],
       "submenus": []

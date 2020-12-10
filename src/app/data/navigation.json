@@ -12,6 +12,13 @@
           "submenus": []
         },
         {
+          "id": "100",
+          "url": "page-specs",
+          "title": "Page Specs",
+          "thumbnail": null,
+          "submenus": []
+        },
+        {
           "id": "21",
           "url": "getting-started",
           "title": "Getting started",

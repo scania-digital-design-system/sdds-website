@@ -11,8 +11,8 @@ export class Header {
   searchOpen = false;
   menuToggle = false;
   navigationID = document.getElementById('sdds-sidenavigation');
-  @Input() sentmessage2;
-  @Output() menuToggling = new EventEmitter<boolean>();
+  @Input() menuHidden;
+  @Output() menuTogglingEvent = new EventEmitter<boolean>();
 
   //FIXME: disabled search
   // toggleSearch() {
@@ -22,12 +22,20 @@ export class Header {
   toggleMenu() {
     this.menuToggle = !this.menuToggle;
 
+    // console.log(this.menuHidden == true && this.menuToggle == true);
+    // console.log(this.menuHidden, this.menuToggle)
+
     if(this.menuToggle == true) {
+
+      this.menuTogglingEvent.emit(this.menuToggle);
+
+      //add open menu class
       this.navigationID.classList.add('sdds-nav-open');
-      this.sentmessage2 = false;
     } else {
+      this.menuTogglingEvent.emit(this.menuToggle)
+
+      //Remove open menu class
       this.navigationID.classList.remove('sdds-nav-open');
-      this.sentmessage2 = true;
     }
   }
 

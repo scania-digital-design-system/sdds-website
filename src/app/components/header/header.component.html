@@ -1,9 +1,9 @@
 <header [ngClass]="{'sdds-header':true, 'open-search' : searchOpen}" >
   <button class="menu-mobile" (click)="toggleMenu();" >
     
-    <c-icon [attr.name]="menuToggle == true && sentmessage2 == false ? 'scania-cross' : 'scania-menu-mobile'"></c-icon>
+    <c-icon [attr.name]="menuToggle == true && menuHidden == false ? 'scania-cross' : 'scania-menu-mobile'"></c-icon>
   </button>
-  menu hidden: {{sentmessage2}}
+  menu hidden: {{menuHidden}}
   menu toggle: {{menuToggle}}
   <!-- <div class="site-search">
     <button class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>

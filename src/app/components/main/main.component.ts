@@ -19,8 +19,9 @@ export class MainComponent {
   menus: Array<Page>;
   docs: Array<Doc>;
   parent: Page = {};
-  // docs: ArrayObject = {};
-  @Input() sentmessage;
+  @Input() menuHidden;
+  menuToggleOption: any;
+
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);
@@ -45,6 +46,11 @@ export class MainComponent {
         this.analytics(route.url);
       }
     });
+  }
+
+  getToggleMenuHiddenOption($event) {
+    this.menuToggleOption = $event
+    // console.log('true if menu is visble',this.menuToggleOption)
   }
 
   getPage(menus: Array<Page>, paths: Array<String>) {

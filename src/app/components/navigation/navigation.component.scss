@@ -36,6 +36,9 @@
     margin-left: auto;
     // FIXME:Will change when new icons is added
     font-size: 7rem;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out;
   }
 
   &:hover {
