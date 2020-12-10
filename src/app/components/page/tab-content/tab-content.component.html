@@ -128,6 +128,19 @@
               </div>
 
             </ng-container>
+            <div class="line-break"></div>
+            <!-- If Dos and Donts -->
+            <ng-container *ngIf="section.dosAndDonts">
+              <div *ngFor="let item of section.dosAndDonts" class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-4 sdds-col-xlg-4">
+                <div [ngClass]="('do-dont '+(item.type))">
+                  <img [src]="item.image.url"/>
+                  <span class="check-mark"></span>
+                </div>
+                <p *ngIf="item.type == 'Do'" class="sdds-headline-07 sdds-text-green-500">Do</p>
+                <p *ngIf="item.type == 'Dont'" class="sdds-headline-07 sdds-text-red-500">Don't</p>
+                <p class="sdds-detail-02">{{item.description}}</p>
+              </div>
+            </ng-container>
 
           </ng-template>
 

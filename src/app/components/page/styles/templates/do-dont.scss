@@ -1,0 +1,31 @@
+.do-dont{
+  background-color: var(--sdds-white);
+  border-bottom: 4px solid;
+  margin-bottom: var(--sdds-spacing-element-8);
+  position: relative;
+  &.Do{
+    border-color: var(--sdds-green-500);
+    .check-mark {
+      background-image: url('/assets/images/icon-do.svg');
+    }
+  }
+  &.Dont{
+    border-color: var(--sdds-red-500);
+    .check-mark{
+      background-image: url('/assets/images/icon-dont.svg');
+    }
+  }
+  .check-mark {
+    display: block;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: var(--sdds-spacing-element-8);
+    left: var(--sdds-spacing-element-8);
+  }
+  
+  + p {
+    margin-bottom: var(--sdds-spacing-element-4);
+  }
+}
