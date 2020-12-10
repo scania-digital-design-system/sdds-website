@@ -92,7 +92,32 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "8",
+                    "Title": "Links",
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "Github\n[Angular](link)\nDesign system components used in Angular application",
+                        "Introduction": null,
+                        "id": "38"
+                      },
+                      {
+                        "textfield": "Github\n[React](link)\nDesign system components used in React application",
+                        "Introduction": null,
+                        "id": "39"
+                      },
+                      {
+                        "textfield": "Github\n[Vue](link)\nDesign system components used in Vue application",
+                        "Introduction": null,
+                        "id": "40"
+                      },
+                      {
+                        "textfield": "Github\n[HTML](link)\nSimple HTML setup using design system components",
+                        "Introduction": null,
+                        "id": "41"
+                      }
+                    ]
                   }
                 ],
                 "updated_at": "2020-12-07T10:28:45.351Z"
@@ -258,7 +283,27 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "4",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "[Development FAQ](link)",
+                        "Introduction": null,
+                        "id": "13"
+                      },
+                      {
+                        "textfield": "[text](Github repositories)",
+                        "Introduction": null,
+                        "id": "14"
+                      },
+                      {
+                        "textfield": "[text](Development in teams)",
+                        "Introduction": null,
+                        "id": "15"
+                      }
+                    ]
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -268,7 +313,22 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "5",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "[Design FAQ](link)",
+                        "Introduction": null,
+                        "id": "16"
+                      },
+                      {
+                        "textfield": "[Design in Teams](link)",
+                        "Introduction": null,
+                        "id": "17"
+                      }
+                    ]
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -2263,343 +2323,6 @@
       ]
     },
     {
-      "id": "64",
-      "url": "unit-grid-system",
-      "title": "Unit & Grid System",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "117",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "158",
-                "title": "Foundation Unit & Grid System Information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "303",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
-                      "Introduction": true,
-                      "id": "56"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a07e34d6108e46188fd39664bf0d27f4.png"
-                        }
-                      ],
-                      "id": "41"
-                    },
-                    "id": "8"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "304",
-                    "Title": "Unit System",
-                    "Text": "Our base unit is a 4-pixel square. We use multiples of the base unit to create the dimensions of our columns, components and patterns along with their margins and padding to ensure coherency and consistency. Example: 8, 16, 24, 32, 40 px etc.\n\nWe do allow the base unit to be divided in 2 when needed, for instance in our spacing scale for elements, due to the size of the elements which demands smaller values.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/5cd87438d5c54b6d9e21a0fc4a45b3c6.png"
-                        }
-                      ],
-                      "id": "42"
-                    },
-                    "id": "9"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "305",
-                    "Title": "Sizing",
-                    "Text": "To make sure that we create new layouts that are consistent and balanced, we should use our Unit System when sizing content, icons, components and such. See an example of how we use multiples of our base unit when sizing. Note, we have not defined any maximum size.\n\nAlso, make sure to learn about how we are using our Unit System for Spacing in our elements and layouts.\n\n<table>\n<thead>\n  <tr>\n    <th>Pixel</th>\n    <th>Rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>8</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>10</td>\n  </tr>\n  <tr>\n    <td>48</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>56</td>\n    <td>14</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>72</td>\n    <td>18</td>\n  </tr>\n  <tr>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f68671cb7a564ee799fb1a788f1be9c3.png"
-                        }
-                      ],
-                      "id": "61"
-                    },
-                    "id": "28"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "326",
-                    "Title": "Grid System",
-                    "Text": "A grid system is a structure containing a series of horizontal and vertical lines, used to arrange and present content such as text, imagery and graphics in a structured and well-balanced way. It provides consistency and uniformity of our brand presence and all our page layouts. \n\n**Columns**<br/>\nColumns are the foundation of the grid system. The content is placed inside our columns. They are usually too small to contain content by themselves, but when grouped together they create harmonized, coherent and well-crafted design layouts.\n \nOur grid system consists of 16 columns for larger screens, 8 for medium and 4 for small screens.  \n \nWhen a browser is in between two breakpoints, the columns scale proportionally (%).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/df86d68d5b4e478da036fad425d15eee.png"
-                        },
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/7f444c38567d473882835e8a78622456.png"
-                        }
-                      ],
-                      "id": "62"
-                    },
-                    "id": "29"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "327",
-                    "Title": null,
-                    "Text": "**Margins**<br/>\nOur margins on each side (left and right) of the grid system are always in a fixed size within the breakpoint. It’s either 24, 16 or 0 px depending on the breakpoint.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f87f928066204d0bb439e39bd54e8098.png"
-                        }
-                      ],
-                      "id": "63"
-                    },
-                    "id": "30"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "328",
-                    "Title": null,
-                    "Text": "**Padding**<br/>\nPadding is the space inside our columns which we can use to get more space between our content and components. It is possible to select if you want to use the grid system with or without paddings. Grids with gutters rarely need paddings.\n\nOur padding is a defined size of 16 or 8 px depending on breakpoint. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/892a8a0e9b7e4450b32e7f166e09411b.png"
-                        }
-                      ],
-                      "id": "64"
-                    },
-                    "id": "31"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "329",
-                    "Title": null,
-                    "Text": "**Gutters**<br/>\nGutter is the space between our columns and it aims to help separating content. Our gutter width is a fixed value of 32 px. \n\nSometimes a gutterless grid could be a better option when designing for specific applications. When working with a gutterless grid, we automatically get bigger columns within our grid system.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/4ee2e06531534cb28b794a03068c67b5.png"
-                        }
-                      ],
-                      "id": "65"
-                    },
-                    "id": "32"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "330",
-                    "Title": null,
-                    "Text": "**Breakpoints**<br/>\nBelow you will find a defined set of breakpoints, which is available as a grid package at [GitHub](link) and templates in [Figma](link) and [Adobe XD](link).\n\n<table>\n<thead>\n  <tr>\n    <th>Pixel</th>\n    <th>Rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>8</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>10</td>\n  </tr>\n  <tr>\n    <td>48</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>56</td>\n    <td>14</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>72</td>\n    <td>18</td>\n  </tr>\n  <tr>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "331",
-                    "Title": "Fluid grid",
-                    "Text": "A fluid grid allows the page layout to be adaptive, which means that the content will scale and adapt to the breakpoint size. What’s really happening is that the column size is responsive and continuously growing along with the breakpoint width — even after reaching the max. breakpoint.\n \nThis approach is mainly used for dashboards or specific editorial content, where it's more important to size up the content rather than slimming the amount of information down.\n\nIt is possible to have a fluid grid, both for the default grid system, with and without gutters, and also for the grid push system, which you can find out more about in the next section.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/082273c4589f4fd69a52942d1e6e5c18.png"
-                        }
-                      ],
-                      "id": "66"
-                    },
-                    "id": "33"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "332",
-                    "Title": "Patterns",
-                    "Text": "Within a user interface there are specific sections of the layout where the user expects to find specific information or navigation elements like a header, navigation menu or a cookie bar. This is Patterns, which is a group of components, that should be consistent across devices and breakpoints. They serve a global purpose — to make it easier for users to perform common user objectives and tasks. We have gathered all our [Patterns here](link).\n\nSome of these Patterns  don’t follow the grid system. We have divided these into: floating and fixed patterns. Learn more about the different types below.\n\n**Floating Pattern: Header**<br/>\nThe header is a horizontal element and behaves like a fluid element, which means it should fill the entire browser window width. It doesn’t follow the grid system’s columns and responsiveness — instead it’s placed above the grid system.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/6c64c17a99aa4c07ba6259be1c4119d2.png"
-                        }
-                      ],
-                      "id": "67"
-                    },
-                    "id": "34"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "333",
-                    "Title": null,
-                    "Text": "**Fixed Pattern: Left navigation**<br/>\nThe left navigation is a vertical element and should fill the entire browser window height. It doesn’t follow the grid systems columns and responsiveness — instead the left navigation acts like a grid push and pushes the grid system to the right and aligns to web browsers left side.\n\nWhen a left navigation is used, it affects the grid system’s container size, columns, gutters and padding.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "label": null,
-                      "caption": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/bb0ef6d3c3864ecf96597aa0cc922af1.png"
-                        }
-                      ],
-                      "id": "68"
-                    },
-                    "id": "35"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "334",
-                    "Title": "Resources",
-                    "Text": "[Github / Grid elements package](link)\n[Figma/ Grid template](link)\n[Adobe XD/ Grid template](link)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T07:46:25.626Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "118",
-          "title": "Code",
-          "active": true,
-          "pageContent": []
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "40",
-      "url": "colour",
-      "title": "Colour",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "12",
-          "pageContent": [
-            {
-              "content": {
-                "id": "102",
-                "title": "Colour",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "201",
-                    "Title": "",
-                    "Text": "Coming soon !",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T12:21:49.351Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "17",
       "url": "foundation",
       "title": "Foundation",
@@ -2631,12 +2354,6 @@
       ],
       "submenus": [
         {
-          "id": "40",
-          "url": "colour",
-          "title": "Colour",
-          "thumbnail": null
-        },
-        {
           "id": "42",
           "url": "accessibility",
           "title": "Foundation Accessibility",
@@ -2657,7 +2374,7 @@
         {
           "id": "64",
           "url": "unit-grid-system",
-          "title": "Unit & Grid System",
+          "title": "Foundation Unit & Grid System",
           "thumbnail": null
         },
         {
@@ -4229,45 +3946,291 @@
             {
               "content": {
                 "id": "23",
-                "title": "Buttons",
+                "title": "Button usage",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "90",
+                    "id": "538",
                     "Title": null,
-                    "Text": "<p class=\"lead\"> Buttons are a mode for inputting user action for communicating user’s intention.</p>",
-                    "LeadText": null
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Buttons are clickable elements that trigger events or actions. They communicate actions to the users and allow them to interact with pages in a variety of ways. ",
+                      "Introduction": null,
+                      "id": "119"
+                    }
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "91",
+                    "id": "539",
                     "Title": null,
-                    "Text": "Buttons and links should not be seen as the same – buttons are used to provide input to the system whereas links are used for navigation  from one page to another page or from one view to another view.\n",
+                    "Text": "![text](https://sdds-cms.s3.amazonaws.com/f86f826a5f824d1785280f51541dad70.png)",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "92",
-                    "Title": "Example",
-                    "Text": "<button type='button' class='btn btn-primary'>Primary</button>\n<button type='button' class='btn btn-secondary'>Secondary</button>\n<button type='button' class='btn btn-success'>Success</button>\n<button type='button' class='btn btn-danger'>Danger</button>",
+                    "id": "540",
+                    "Title": "Usage",
+                    "Text": "Buttons inform the users of possible actions they can take within an application. They can be used throughout different places in your layout, for example: dialogs, modals, forms, cards and toolbars.\n\nThe text label is used to inform the user which action that will occur when the user interacts with it.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "93",
-                    "Title": "Types of Buttons",
-                    "Text": "- **Solid button**: primary action, solid filled to attract user’s attention\n- **Outline button**: secondary action and to be used with primary action if needed\n- **Flat button**: tertiary action",
+                    "id": "541",
+                    "Title": "Types",
+                    "Text": "There are four types of buttons with different purpose and hierarchy in order to help the user to distinguish the level of importance of the task they represent. These types are primary, secondary, ghost and danger. \n\n![text](https://sdds-cms.s3.amazonaws.com/8774dec470d14e17a4fa11e6f0b6e780.png)\n\n![text](https://sdds-cms.s3.amazonaws.com/d61951435c3049e7ad611f3ffab85208.png)",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "94",
-                    "Title": "Usage Pattern",
-                    "Text": "Two distinct patterns can be used to place buttons\n\n![text](https://sdds-cms.s3.amazonaws.com/be1d256a05024ad98ce2143b6fc6486d.PNG)\n\n**Z Pattern**\n\nThe Z pattern is one of the more common trajectories followed by users when going through the content. For this reason, the core of the content is positioned at the top left side and the call for action is located on the right bottom side. This pattern holds true for languages that are read from left to right. The patterns works in the reverse manner for the languages that are read from right to left.\n\n**F pattern**\n\nThe F pattern is a variation of Z pattern where the core of the content is situated on the left top and the call for action is located on the left bottom. The pattern is reversed for languages that are read from right to left.\n\n \n **Interaction Pattern**\n\nButtons to simulate clicking action that is visualised by means of change in colour/shade\n\n**Compositional Pattern (with Style Guide)**\n\nStyle of buttons to follow the style guide in the following manner - \n\nThe text inside of buttons to be always UPPERCASE. Descriptive language relating to the intent of the user should be used to formulate button text.\n\n*Colour*\n\nPrimary colour to provide consistency across all applications - **Scania Blue**\n\nAction based colour to provide an all clear message or a warning to the user - **green or red**\n\nDisabled button colour – **grey**\n\n*Icons*\n\nIcons – that clearly communicate the intent for action – can be used in place of text for a button\nWhen icons are accompanied with text, it follows the icon (i.e. icon first and then the text)\n\nTitle attribute – a tooltip to be visible when hovering a button (where necessary). The text is displayed below the button.\n\nIcons can be used with any kind of buttons mentioned above.",
+                    "id": "542",
+                    "Title": "States",
+                    "Text": "Buttons have different states to communicate the buttons different status for our users.",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "112",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": "Default",
+                        "caption": "Interactive element",
+                        "negative": null,
+                        "alternate": "Default Interactive element",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/79768272e1e84c1885b2c618a07119f6.png"
+                          }
+                        ],
+                        "id": "379"
+                      },
+                      {
+                        "label": "Hover",
+                        "caption": "Mouse over",
+                        "negative": null,
+                        "alternate": "Hover Mouse over",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/94bf8c0c4d7d48fa8c27b24e5fd248b9.png"
+                          }
+                        ],
+                        "id": "380"
+                      },
+                      {
+                        "label": "Focused ",
+                        "caption": "Highlighted by keyboard or voice",
+                        "negative": null,
+                        "alternate": "Focused Highlighted by keyboard or voice",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/925536d930fe467a9aeff46c71dd301b.png"
+                          }
+                        ],
+                        "id": "381"
+                      },
+                      {
+                        "label": "Pressed ",
+                        "caption": "User tap / click",
+                        "negative": null,
+                        "alternate": "Pressed User tap / click",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/62c77248dba4452d9b4acf0300254254.png"
+                          }
+                        ],
+                        "id": "382"
+                      },
+                      {
+                        "label": "Disabled ",
+                        "caption": "Non-interactive",
+                        "negative": null,
+                        "alternate": "Disabled Non-interactive",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/efc28a2cfc174ecaab66f4c40cfc141b.png"
+                          }
+                        ],
+                        "id": "383"
+                      }
+                    ],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "543",
+                    "Title": "Sizes",
+                    "Text": "There are four different button sizes: default, medium, small and full bleed where default is our primary button size.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "113",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Deafult Use as primary button size",
+                        "negative": null,
+                        "alternate": "Deafult Use as primary button size",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8abd814abe0c4f15a86ecc0acee2ec62.png"
+                          }
+                        ],
+                        "id": "384"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Medium Use for narrowed spaces",
+                        "negative": null,
+                        "alternate": "Medium Use for narrowed spaces",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/de0b97c9b47846f6b2a35a6fc341c682.png"
+                          }
+                        ],
+                        "id": "385"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Small Use for very narrowed spaces",
+                        "negative": null,
+                        "alternate": "Small Use for very narrowed spaces",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3275e0560b1342d79a992a819ba286de.png"
+                          }
+                        ],
+                        "id": "386"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Full bleed Fluid width in certain components",
+                        "negative": null,
+                        "alternate": "Medium Use for narrow spaces",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d2c998e03d5740c883a994a33d11fd16.png"
+                          }
+                        ],
+                        "id": "387"
+                      }
+                    ],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "544",
+                    "Title": "Anatomy",
+                    "Text": "A button contains at least two elements; a text label, an icon or both in combination with a container. The text label and icon can be used in combination to improve the clarity of the buttons action.\n\nThe icon button should only be used for simple and well known actions like download, remove, expand, collapse.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "114",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/67fd5025649f42e489047c8872b57ff1.png"
+                          }
+                        ],
+                        "id": "388"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/833718113a904a6292fe3edf245114aa.png"
+                          }
+                        ],
+                        "id": "389"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/22962cb083de4b84b9081582b558ba5f.png"
+                          }
+                        ],
+                        "id": "390"
+                      }
+                    ],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "545",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for buttons. \n\n**Short text labels**\n\nText labels should be short and direct, since it needs to be easy to read what action the button will perform when the user interacts with it.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "10",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/7d84c8c6eef2478585b7bbcbebe33a4d.png)"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/e8bb7abc44b14d1db958f19692e3cc20.png)"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "546",
+                    "Title": null,
+                    "Text": "**One line text labels**\n\nTo secure good legibility, a text label should be placed on one line and not be wrapped on multiple lines. If you have narrowed width space to place your button, move it below the associated content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "11",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/a849cf5933ec4214b94ae5f14ea70d08.png)"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/427740771c064d549eafa6b644a6c707.png)"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "547",
+                    "Title": null,
+                    "Text": "**One primary button** \n\nWe need to help the user to understand which action is more important by only having one primary button present at the time on the section.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "12",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/0f6d5598122c4102bdcbd72c7e9863ed.png)"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/361da0ece1c24206ad8c819b4d987864.png)"
+                    }
                   }
                 ],
-                "updated_at": "2020-03-24T13:58:31.620Z"
+                "updated_at": "2020-12-08T15:42:46.392Z"
               }
             }
           ]
@@ -4350,7 +4313,72 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "41",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Default",
+                        "negative": null,
+                        "alternate": "Default",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a35ae0e90b81455ba08aa2637bf884fd.png"
+                          }
+                        ],
+                        "id": "146"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Hover",
+                        "negative": null,
+                        "alternate": "Hover",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2b6775b03f3444f5b578bb107766becb.png"
+                          }
+                        ],
+                        "id": "147"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Focused",
+                        "negative": null,
+                        "alternate": "Focused",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fbcd5fbaefa542b18e0635f1f3d39ec9.png"
+                          }
+                        ],
+                        "id": "148"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Clicked",
+                        "negative": null,
+                        "alternate": "Clicked",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6abfc1ec82f246869e415e360f9b4ed8.png"
+                          }
+                        ],
+                        "id": "149"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Disabled",
+                        "negative": null,
+                        "alternate": "Disabled",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8a0fa3dd41f54c55809098061fc132ed.png"
+                          }
+                        ],
+                        "id": "150"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4360,7 +4388,72 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "42",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Default",
+                        "negative": null,
+                        "alternate": "Default",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e47315bf2006427fa572c5aee05461a4.png"
+                          }
+                        ],
+                        "id": "151"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Hover",
+                        "negative": null,
+                        "alternate": "Hover",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2ff5826be7d3408fbf132c6e8aae0e77.png"
+                          }
+                        ],
+                        "id": "152"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Focused",
+                        "negative": null,
+                        "alternate": "Focused",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b8a5e2b1c50d4a9cbf140038c66d9669.png"
+                          }
+                        ],
+                        "id": "153"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Clicked",
+                        "negative": null,
+                        "alternate": "Clicked",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/91e00a8748d048d8b9ebb56606f56bbe.png"
+                          }
+                        ],
+                        "id": "154"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Disabled",
+                        "negative": null,
+                        "alternate": "Disabled",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d5e285779a0a43b88cc41272e08c892d.png"
+                          }
+                        ],
+                        "id": "155"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4370,7 +4463,72 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "43",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Default",
+                        "negative": null,
+                        "alternate": "Default",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e9cf4e5f2a0d4756a8ae28826ec65d0b.png"
+                          }
+                        ],
+                        "id": "156"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Hover",
+                        "negative": null,
+                        "alternate": "Hover",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0815c0cf84b94ab88c7f15d5293e17a4.png"
+                          }
+                        ],
+                        "id": "157"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Focused",
+                        "negative": null,
+                        "alternate": "Focused",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8249dc49695049fdbf9808e7bcf53171.png"
+                          }
+                        ],
+                        "id": "158"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Clicked",
+                        "negative": null,
+                        "alternate": "Clicked",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/10b61808c8a645a2bcf1e0038bb7f0ad.png"
+                          }
+                        ],
+                        "id": "159"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Disabled",
+                        "negative": null,
+                        "alternate": "Disabled",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/10fffb21816049328c988a91f8538eab.png"
+                          }
+                        ],
+                        "id": "160"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4380,7 +4538,72 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "44",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Deafule",
+                        "negative": null,
+                        "alternate": "Default",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/81b792aabc934b42aba4b1a06b74cc1c.png"
+                          }
+                        ],
+                        "id": "161"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Hover",
+                        "negative": null,
+                        "alternate": "Hover",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/707671a7d44444d2a23a80d08e8914df.png"
+                          }
+                        ],
+                        "id": "162"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Focused",
+                        "negative": null,
+                        "alternate": "Focused",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e64b76dc17ba4e37be708fd2350734fb.png"
+                          }
+                        ],
+                        "id": "163"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Clicked",
+                        "negative": null,
+                        "alternate": "Clicked",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/85e7e60f42e84524ba38f325dec8208f.png"
+                          }
+                        ],
+                        "id": "164"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Disabled",
+                        "negative": null,
+                        "alternate": "Disabled",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/430e2bb46ec54dd4bc4550b671d06987.png"
+                          }
+                        ],
+                        "id": "165"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4390,27 +4613,227 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "89",
+                    "Title": "Default",
+                    "Images": [
+                      {
+                        "label": "",
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a83314150d774ad09197b5c703d95c10.png"
+                          }
+                        ],
+                        "id": "283"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/32cad151aa0e45989736f8cf2361c080.png"
+                          }
+                        ],
+                        "id": "284"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a2ec4f62f47249ff9a96281f0f53e142.png"
+                          }
+                        ],
+                        "id": "285"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ad67144f3e6d408f9896131b6bcd3ab7.png"
+                          }
+                        ],
+                        "id": "286"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "90",
+                    "Title": "Medium",
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a9a14ac0a6304791b47ae7bb50546370.png"
+                          }
+                        ],
+                        "id": "287"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/85aa5f3a220040d38136720d76351681.png"
+                          }
+                        ],
+                        "id": "288"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/966953d55ba64264a127f7a84c7b9525.png"
+                          }
+                        ],
+                        "id": "289"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6d5c2df54c7844fb9b7e471b2196267a.png"
+                          }
+                        ],
+                        "id": "290"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "91",
+                    "Title": "Small",
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b52e326453f6498a8e14c936b63092bd.png"
+                          }
+                        ],
+                        "id": "291"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b087b4a3750a459abc137ca538b31542.png"
+                          }
+                        ],
+                        "id": "292"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e2e28f20ecb7469eb4279eb54fd0f16b.png"
+                          }
+                        ],
+                        "id": "293"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bcab6812ede64ca288f093343aa2eb35.png"
+                          }
+                        ],
+                        "id": "294"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "92",
+                    "Title": "Full bleed",
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f885c895b20a4baa924483ffa511f617.png"
+                          }
+                        ],
+                        "id": "295"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c63c90a4da6d4d878286126655dbf49b.png"
+                          }
+                        ],
+                        "id": "296"
+                      },
+                      {
+                        "label": null,
+                        "caption": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c1046296f15b47d2a56e51b140eeb15d.png"
+                          }
+                        ],
+                        "id": "297"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "390",
+                    "id": "446",
                     "Title": "Typography",
                     "Text": "The text label inside a button should start with the first letter set in upper case, and the remaining letters in lower case. For all of our button types and sizes, we are usign the same typography. \n\n![text](https://sdds-cms.s3.amazonaws.com/1734903178724709b644ecf157af30b2.png)",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "391",
+                    "id": "447",
                     "Title": "Corner radius",
                     "Text": "Our button containers have rounded corners with a 4px / 1em corner radius. \n\n![text](https://sdds-cms.s3.amazonaws.com/ed641ca271014c5cbbfc808200c25086.png)\n\n![text](https://sdds-cms.s3.amazonaws.com/6627093fa0584cfdb61d318ae95d4e6b.png)\n\n",
                     "LeadText": null
@@ -4673,6 +5096,343 @@
                   }
                 ],
                 "updated_at": "2020-12-08T13:24:44.066Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "64",
+      "url": "unit-grid-system",
+      "title": "Foundation Unit & Grid System",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "117",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "158",
+                "title": "Foundation Unit & Grid System Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "303",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
+                      "Introduction": true,
+                      "id": "56"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a07e34d6108e46188fd39664bf0d27f4.png"
+                        }
+                      ],
+                      "id": "41"
+                    },
+                    "id": "8"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "304",
+                    "Title": "Unit System",
+                    "Text": "Our base unit is a 4-pixel square. We use multiples of the base unit to create the dimensions of our columns, components and patterns along with their margins and padding to ensure coherency and consistency. Example: 8, 16, 24, 32, 40 px etc.\n\nWe do allow the base unit to be divided in 2 when needed, for instance in our spacing scale for elements, due to the size of the elements which demands smaller values.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/5cd87438d5c54b6d9e21a0fc4a45b3c6.png"
+                        }
+                      ],
+                      "id": "42"
+                    },
+                    "id": "9"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "305",
+                    "Title": "Sizing",
+                    "Text": "To make sure that we create new layouts that are consistent and balanced, we should use our Unit System when sizing content, icons, components and such. See an example of how we use multiples of our base unit when sizing. Note, we have not defined any maximum size.\n\nAlso, make sure to learn about how we are using our Unit System for Spacing in our elements and layouts.\n\n<table>\n<thead>\n  <tr>\n    <th>Pixel</th>\n    <th>Rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>8</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>10</td>\n  </tr>\n  <tr>\n    <td>48</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>56</td>\n    <td>14</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>72</td>\n    <td>18</td>\n  </tr>\n  <tr>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f68671cb7a564ee799fb1a788f1be9c3.png"
+                        }
+                      ],
+                      "id": "61"
+                    },
+                    "id": "28"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "326",
+                    "Title": "Grid System",
+                    "Text": "A grid system is a structure containing a series of horizontal and vertical lines, used to arrange and present content such as text, imagery and graphics in a structured and well-balanced way. It provides consistency and uniformity of our brand presence and all our page layouts. \n\n**Columns**<br/>\nColumns are the foundation of the grid system. The content is placed inside our columns. They are usually too small to contain content by themselves, but when grouped together they create harmonized, coherent and well-crafted design layouts.\n \nOur grid system consists of 16 columns for larger screens, 8 for medium and 4 for small screens.  \n \nWhen a browser is in between two breakpoints, the columns scale proportionally (%).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/df86d68d5b4e478da036fad425d15eee.png"
+                        },
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/7f444c38567d473882835e8a78622456.png"
+                        }
+                      ],
+                      "id": "62"
+                    },
+                    "id": "29"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "327",
+                    "Title": null,
+                    "Text": "**Margins**<br/>\nOur margins on each side (left and right) of the grid system are always in a fixed size within the breakpoint. It’s either 24, 16 or 0 px depending on the breakpoint.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f87f928066204d0bb439e39bd54e8098.png"
+                        }
+                      ],
+                      "id": "63"
+                    },
+                    "id": "30"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "328",
+                    "Title": null,
+                    "Text": "**Padding**<br/>\nPadding is the space inside our columns which we can use to get more space between our content and components. It is possible to select if you want to use the grid system with or without paddings. Grids with gutters rarely need paddings.\n\nOur padding is a defined size of 16 or 8 px depending on breakpoint. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/892a8a0e9b7e4450b32e7f166e09411b.png"
+                        }
+                      ],
+                      "id": "64"
+                    },
+                    "id": "31"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "329",
+                    "Title": null,
+                    "Text": "**Gutters**<br/>\nGutter is the space between our columns and it aims to help separating content. Our gutter width is a fixed value of 32 px. \n\nSometimes a gutterless grid could be a better option when designing for specific applications. When working with a gutterless grid, we automatically get bigger columns within our grid system.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/4ee2e06531534cb28b794a03068c67b5.png"
+                        }
+                      ],
+                      "id": "65"
+                    },
+                    "id": "32"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "330",
+                    "Title": null,
+                    "Text": "**Breakpoints**<br/>\nBelow you will find a defined set of breakpoints, which is available as a grid package at [GitHub](link) and templates in [Figma](link) and [Adobe XD](link).\n\n<table>\n<thead>\n  <tr>\n    <th>Pixel</th>\n    <th>Rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>8</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>10</td>\n  </tr>\n  <tr>\n    <td>48</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>56</td>\n    <td>14</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>72</td>\n    <td>18</td>\n  </tr>\n  <tr>\n    <td>80</td>\n    <td>20</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "331",
+                    "Title": "Fluid grid",
+                    "Text": "A fluid grid allows the page layout to be adaptive, which means that the content will scale and adapt to the breakpoint size. What’s really happening is that the column size is responsive and continuously growing along with the breakpoint width — even after reaching the max. breakpoint.\n \nThis approach is mainly used for dashboards or specific editorial content, where it's more important to size up the content rather than slimming the amount of information down.\n\nIt is possible to have a fluid grid, both for the default grid system, with and without gutters, and also for the grid push system, which you can find out more about in the next section.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/082273c4589f4fd69a52942d1e6e5c18.png"
+                        }
+                      ],
+                      "id": "66"
+                    },
+                    "id": "33"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "332",
+                    "Title": "Patterns",
+                    "Text": "Within a user interface there are specific sections of the layout where the user expects to find specific information or navigation elements like a header, navigation menu or a cookie bar. This is Patterns, which is a group of components, that should be consistent across devices and breakpoints. They serve a global purpose — to make it easier for users to perform common user objectives and tasks. We have gathered all our [Patterns here](link).\n\nSome of these Patterns  don’t follow the grid system. We have divided these into: floating and fixed patterns. Learn more about the different types below.\n\n**Floating Pattern: Header**<br/>\nThe header is a horizontal element and behaves like a fluid element, which means it should fill the entire browser window width. It doesn’t follow the grid system’s columns and responsiveness — instead it’s placed above the grid system.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/6c64c17a99aa4c07ba6259be1c4119d2.png"
+                        }
+                      ],
+                      "id": "67"
+                    },
+                    "id": "34"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "333",
+                    "Title": null,
+                    "Text": "**Fixed Pattern: Left navigation**<br/>\nThe left navigation is a vertical element and should fill the entire browser window height. It doesn’t follow the grid systems columns and responsiveness — instead the left navigation acts like a grid push and pushes the grid system to the right and aligns to web browsers left side.\n\nWhen a left navigation is used, it affects the grid system’s container size, columns, gutters and padding.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "label": null,
+                      "caption": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/bb0ef6d3c3864ecf96597aa0cc922af1.png"
+                        }
+                      ],
+                      "id": "68"
+                    },
+                    "id": "35"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "334",
+                    "Title": "Resources",
+                    "Text": "[Github / Grid elements package](link)\n[Figma/ Grid template](link)\n[Adobe XD/ Grid template](link)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T07:46:25.626Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "118",
+          "title": "Code",
+          "active": true,
+          "pageContent": []
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "40",
+      "url": "colour",
+      "title": "Foundation Colour",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "12",
+          "pageContent": [
+            {
+              "content": {
+                "id": "102",
+                "title": "Colour",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "201",
+                    "Title": "",
+                    "Text": "Coming soon !",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:21:49.351Z"
               }
             }
           ]
@@ -5555,7 +6315,22 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "25",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "Pictograms\n[Library](link)",
+                        "Introduction": null,
+                        "id": "58"
+                      },
+                      {
+                        "textfield": "Pictograms\n[Scania Icon PDF Template](link)",
+                        "Introduction": null,
+                        "id": "59"
+                      }
+                    ]
                   }
                 ],
                 "updated_at": "2020-12-08T09:34:52.492Z"
@@ -5741,7 +6516,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Without using words, colours tell the story of a brand. Colours convey an immediate and lasting impression, which is why the brand colour palette is of crucial importance. ",
+                      "textfield": "Without using words, colours tell the story of a brand. Colours convey an immediate and lasting impression, which is why the brand colour palette is of crucial importance.",
                       "Introduction": true,
                       "id": "61"
                     }
@@ -5775,7 +6550,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "366",
                     "Title": null,
-                    "Text": "**Primary palette**<br/>\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n**Secondary palette**<br/>\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.",
+                    "Text": "**Primary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n**Secondary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.",
                     "LeadText": null
                   },
                   {
@@ -5800,7 +6575,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "367",
                     "Title": null,
-                    "Text": "**Semantic colors**<br/>\nThe purpose of our semantic colours is to quickly and efficiently signal a specific CTA or information to the user. The colours are used to create clear communication hierarchies within our applications and should be used with care and purpose. Never use these colours as decoration or as a background colour on large surfaces.When using these colours, they need to be paired with text, an icon or both to fulfil their purpose in the best way possible.",
+                    "Text": "**Semantic colors**\n\nThe purpose of our semantic colours is to quickly and efficiently signal a specific CTA or information to the user. The colours are used to create clear communication hierarchies within our applications and should be used with care and purpose. Never use these colours as decoration or as a background colour on large surfaces.\n\nWhen using these colours, they need to be paired with text, an icon or both to fulfil their purpose in the best way possible.",
                     "LeadText": null
                   },
                   {
@@ -5825,7 +6600,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "368",
                     "Title": null,
-                    "Text": "**Scales**<br/>\nAs supporting colours to our primary, secondary and semantic colours, we have several steps for each colour, creating a scale. Instead of creating new colours, we can use these steps to drive brand recognition and create strong associations to the brand. These scales enables us to create strong and clear colour hierarchies within our applications. Some of the steps are used as background colours, others on text, icons, CTAs or dividers. The most prominent ones are the Grey and Blue colour scales, while the others are used more sparingly. The scales do not only have to be applied within our applications - they could also be used in visualisations and illustrations to ensure a unified overall brand presence.\n\nAll scales are available at [Specifications](link)",
+                    "Text": "**Scales**\n\nAs supporting colours to our primary, secondary and semantic colours, we have several steps for each colour, creating a scale. Instead of creating new colours, we can use these steps to drive brand recognition and create strong associations to the brand. These scales enables us to create strong and clear colour hierarchies within our\napplications.Some of the steps are used as background colours, others on text, icons, CTAs or dividers. The most prominent ones are the Grey and Blue colour scales, while the others are used more sparingly. The scales do not only have to be applied within our applications - they could also be used in visualisations and illustrations to ensure a unified overall brand presence.\n\nAll scales are available at [Specifications](link)",
                     "LeadText": null
                   },
                   {
@@ -5850,7 +6625,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "369",
                     "Title": "Themes",
-                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n**Light theme**<br/>\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n**Dark theme**<br/>\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
+                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n**Light theme**\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n**Dark theme**\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
                     "LeadText": null
                   },
                   {
@@ -5984,7 +6759,27 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "7",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "\nResoures\n[Design](link)\nUI Kit & Grid Systems in downloadable files.",
+                        "Introduction": null,
+                        "id": "22"
+                      },
+                      {
+                        "textfield": "Resoures\n[Brand](link)\nBrand resources such as manuals, typeface, pictograms and imagery.",
+                        "Introduction": null,
+                        "id": "23"
+                      },
+                      {
+                        "textfield": "Resources\n[Development](link)\nDevelopment resources such as repositories and example pages in various types of frameworks.",
+                        "Introduction": null,
+                        "id": "24"
+                      }
+                    ]
                   }
                 ],
                 "updated_at": "2020-12-07T09:05:03.289Z"
@@ -6398,7 +7193,39 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "19",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Full-bleed divider Horizontal usage within search results",
+                        "negative": null,
+                        "alternate": "",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ed2401c87fc44c4789742933d4ad3d78.png"
+                          }
+                        ],
+                        "id": "25"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Full-bleed divider  Vertical & horizontal within a pattern",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6f7c496184104eee8b88660a7943261d.png"
+                          },
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/359e66d2c0b44402a0317da8a035f47a.png"
+                          }
+                        ],
+                        "id": "26"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -6408,7 +7235,36 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "21",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Indent divider Horizontal example",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/61d034e202be43bdb84ced394e20657c.png"
+                          }
+                        ],
+                        "id": "29"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Indent divider Vertical example",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2dffc5b60fd642858a2dba43207e8c5c.png"
+                          }
+                        ],
+                        "id": "30"
+                      }
+                    ],
+                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-07T15:45:55.561Z"
@@ -6435,7 +7291,48 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages"
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "24",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "label": null,
+                        "caption": "Divider Light version",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d2c07c2bbaeb40819aff989d1356ff83.png"
+                          }
+                        ],
+                        "id": "37"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Divider Dark version",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/36fed86807ee4d79a65a19ee398f432a.png"
+                          }
+                        ],
+                        "id": "38"
+                      },
+                      {
+                        "label": null,
+                        "caption": "Divider Coloured version",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/918f3ae9b7a242a1903a2018d86cafa3.png"
+                          }
+                        ],
+                        "id": "39"
+                      }
+                    ],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",

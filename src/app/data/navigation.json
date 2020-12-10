@@ -44,12 +44,6 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "40",
-              "url": "colour",
-              "title": "Colour",
-              "thumbnail": null
-            },
-            {
               "id": "42",
               "url": "accessibility",
               "title": "Foundation Accessibility",
@@ -70,7 +64,7 @@
             {
               "id": "64",
               "url": "unit-grid-system",
-              "title": "Unit & Grid System",
+              "title": "Foundation Unit & Grid System",
               "thumbnail": null
             },
             {

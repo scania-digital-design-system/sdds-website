@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
+import { RouterModule, Router, ExtraOptions, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { TitleCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +15,14 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
 import { CodeExampleComponent } from './components/code-example/code-example.component';
 import { CodePropsComponent } from './components/code-props/code-props.component';
 import { ContentHeader } from './components/content-header/content-header.component';
+
+let allRoutes: Routes = [];
+const routerOptions: ExtraOptions = {
+  useHash: false,
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 144],
+};
 
 @NgModule({
   declarations: [
@@ -40,7 +48,7 @@ import { ContentHeader } from './components/content-header/content-header.compon
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot(allRoutes, routerOptions)
   ],
   exports: [
     RouterModule,
@@ -65,6 +73,7 @@ export class AppRoutingModule {
         { path: '**', redirectTo: '/home' }
       ]);
 
+      allRoutes = this.router.config;
       this.ps.setRoutes(routes);
     });
 
