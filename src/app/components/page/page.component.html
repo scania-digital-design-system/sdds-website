@@ -17,7 +17,7 @@
 <div class="tab-content sdds-container-push-fluid">
   <div class="sdds-row">
 
-    <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined">
+    <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined ">
       <ng-container *ngFor='let item of tabContent.pageContent'>
 
         <ng-container *ngFor="let section of item.content.section">
@@ -48,7 +48,7 @@
                   </div>
                 </div>
               </section>
-            
+
           </ng-template>
 
         </ng-container>

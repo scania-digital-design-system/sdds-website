@@ -10,6 +10,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 4rem;
   color:var(--sdds-white);
+  box-sizing: content-box;
 
   //Fixed header
   position: fixed;
@@ -39,7 +40,7 @@
     &.menu-mobile {
       border-right: 1px solid var(--sdds-blue-800);
     }
-    
+
   }
 
   .scania-symbol{
@@ -91,13 +92,16 @@
   .scania-symbol,
   .site-search {
     &:hover {
-      background-color: var(--sdds-blue-800);
+      outline:none;
+     @media (min-width: 1056px) {
+       background-color: var(--sdds-blue-800);
+     }
     }
   }
 
   // Open state
   &.open-search {
-    
+
     .site-search {
       flex-grow: 1;
       &:hover{
@@ -122,11 +126,9 @@
     .menu-mobile {
       display: none;
     }
-
-    
   }
 
-  @media (min-width: 1054px) {
+  @media (min-width: 1056px) {
     width: calc(100% - 256px);
 
     button {
@@ -139,6 +141,8 @@
     .scania-symbol {
       order: 2;
       flex-grow: unset;
+      // FIXME: until search is added
+      border-left: 1px solid var(--sdds-blue-800)
     }
 
     .menu-mobile {

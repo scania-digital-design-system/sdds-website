@@ -26,6 +26,7 @@ export class PageService {
   public readonly theme: Observable<Object> = this._theme.asObservable();
   public readonly note: Observable<Object> = this._note.asObservable();
 
+
   constructor(/*private http: HttpClient*/) {
     // this.setPages(content);
     this.setNavigations(navigations);
@@ -39,7 +40,7 @@ export class PageService {
     });
 
     if(window['CorporateUi']) {
-      
+
       window['CorporateUi'].store.use({set: (function(){
         const current = window['CorporateUi'].store.get('theme').current;
         this.setTheme(window['CorporateUi'].store.get('theme').current);

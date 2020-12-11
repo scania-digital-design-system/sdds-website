@@ -36,7 +36,13 @@
 
           <!-- Code Example -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
-            <section class='sdds-col-xlg-16' code-example [example]='section' toggleCode='true'></section>
+            <section class='dds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4' >
+              <pre>
+                <code>
+                  {{section.code}}
+                </code>
+              </pre>
+            </section>
           </ng-template>
 
           <!-- One column -->
