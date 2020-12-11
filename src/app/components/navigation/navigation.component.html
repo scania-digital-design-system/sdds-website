@@ -1,30 +1,45 @@
-<!-- Using bootstrap collapse -->
-<div *ngFor="let nav of navigations" id="closeCollapse">
-  <ng-container *ngFor="let page of nav.menus">
-    <section class="sdds-nav-section" *ngIf="page.url.indexOf('http') !== 0">
+<section class="sdds-navigation" style="color: white" >
+  <div class="sdds-nav-section" *ngFor="let menu of firstLevelNav.menus;">
 
-      <!-- Main menu -->
-      <a #2 class="sdds-nav-section-link sdds-nav-link-style" [ngClass]="{'collapsed' : !rla.isActive}" data-toggle="collapse" [attr.data-target]="'#' + id + page.id" routerLink="{{page.url}}"  routerLinkActive="active" #rla="routerLinkActive" (click)="preventToggle($event, page)">
-        {{page.title}}
-        <c-icon name="scania-angle-down" *ngIf="page.submenus.length"></c-icon>
-      </a>
+    <!-- Template for handling menu layers-->
+    <ng-template [ngIf]="menu.submenus && menu.submenus.length >= 1" [ngIfElse]="noSubMenu">
 
-      <!-- Sub menu -->
-      <div #1 class="sdds-nav-section-sub-link collapse" [id]="id + page.id" [ngClass]="{'collapse' : !rla.isActive}"  data-parent="#closeCollapse" (click)="activePage = page">
-        <a class="sdds-nav-link-style" *ngFor="let sub of page.submenus; index as i;" routerLinkActive="active" [routerLink]="page.url + '/' + sub.url">{{sub.title}}</a>
+      <div #rla="routerLinkActive" routerLinkActive="active">
+
+        <!-- First level without links -->
+        <span class="sdds-headline-06 sdds-nav-section-link sdds-nav-link-style" (click)="useToggle(menu, id);" [ngClass]="[toggle[id + menu.id] == true ? 'sdds-open' : 'sdds-close']">
+          <span> 
+            {{menu.title}}
+          </span>
+          <c-icon name="scania-angle-down"></c-icon>
+        </span>
+
+         <!-- second layer menu, collapse -->
+        <div class="sdds-nav-section-sub-links">
+          <div *ngFor="let submenu of menu.submenus; index as i;">
+            <a [routerLink]="menu.url + '/' + submenu.url" class="sdds-body-02 sdds-nav-link-style" routerLinkActive="active" (click)="hideMenu();">
+              <span>{{submenu.title}}</span>
+            </a>
+          </div>
+        </div>
+
       </div>
+    </ng-template>
 
-    </section>
-  </ng-container>
+    <!-- menu without a second layer -->
+    <ng-template #noSubMenu>
+      <a class="sdds-headline-06 sdds-nav-section-link sdds-nav-link-style" routerLink="{{menu.url}}" #rla="routerLinkActive" routerLinkActive="sdds-collapse" (click)="hideMenu();">{{menu.title}}</a>
+    </ng-template>
 
-  <!-- This setup for external link should really be improved later on... -->
-  <section class="sdds-external-links">
-    <ng-container *ngFor="let page of nav.menus">
-      <a class="sdds-external-link sdds-nav-link-style" *ngIf="page.url.indexOf('http') === 0" href="{{page.url}}" target="_blank">
-        {{page.title}}
-        <c-icon name="scania-external_link"></c-icon>
-      </a>
-    </ng-container>
-  </section>
+  </div>
+</section>
 
-</div>
+<!-- External links in bottom of the page -->
+<section class="sdds-external-links">
+  <div class="sdds-external-link" *ngFor="let menu of externalNav.menus">
+    <a href="{{menu.url}}"  class="sdds-body-02 sdds-nav-link-style" target="_blank">
+      {{menu.title}}
+      <c-icon name="scania-external_link"></c-icon>
+    </a>
+  </div>
+</section>

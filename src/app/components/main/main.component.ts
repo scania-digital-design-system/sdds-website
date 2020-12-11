@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -12,14 +12,17 @@ declare let gtag: Function;
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent {
+export class MainComponent{
   @HostBinding('class') class;
 
   page: Page = { content: {} };
   menus: Array<Page>;
   docs: Array<Doc>;
   parent: Page = {};
-  // docs: ArrayObject = {};
+  @Input() menuHidden;
+
+  @Output() eventFromHeader = new EventEmitter<boolean>();
+
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
     this.ps.pages.subscribe((items: Array<Page>) => this.menus = items);
@@ -44,6 +47,10 @@ export class MainComponent {
         this.analytics(route.url);
       }
     });
+  }
+  
+  getToggleMenuHiddenOption($event) {
+    this.eventFromHeader.emit($event);
   }
 
   getPage(menus: Array<Page>, paths: Array<String>) {
