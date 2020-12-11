@@ -12,13 +12,6 @@
           "submenus": []
         },
         {
-          "id": "100",
-          "url": "page-specs",
-          "title": "Page Specs",
-          "thumbnail": null,
-          "submenus": []
-        },
-        {
           "id": "21",
           "url": "getting-started",
           "title": "Getting started",
@@ -150,9 +143,9 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "100",
-              "url": "page-specs",
-              "title": "Page Specs",
+              "id": "101",
+              "url": "page-spec",
+              "title": "Page-spec",
               "thumbnail": null
             },
             {

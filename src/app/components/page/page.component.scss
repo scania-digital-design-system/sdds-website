@@ -1,4 +1,7 @@
 @import '../../app-vars.scss';
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+
 
 :host {
   // margin-top: 100px;
@@ -85,8 +88,13 @@
     //TODO:Temporary for the code section in getting started
     pre {
       color: var(--sdds-white);
-      background-color: var(--sdds-black);
-      padding: 5px 10px;
+      background-color: var(--sdds-grey-900);
+      padding: var(--sdds-spacing-element-16);
+      border-radius: 1rem;
+      code {
+
+        @include type-style('detail-01');
+      }
     }
 
     figure {
