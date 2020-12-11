@@ -12,6 +12,13 @@
           "submenus": []
         },
         {
+          "id": "100",
+          "url": "page-specs",
+          "title": "Page Specs",
+          "thumbnail": null,
+          "submenus": []
+        },
+        {
           "id": "21",
           "url": "getting-started",
           "title": "Getting started",
@@ -44,12 +51,6 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "40",
-              "url": "colour",
-              "title": "Colour",
-              "thumbnail": null
-            },
-            {
               "id": "42",
               "url": "accessibility",
               "title": "Foundation Accessibility",
@@ -70,7 +71,7 @@
             {
               "id": "64",
               "url": "unit-grid-system",
-              "title": "Unit & Grid System",
+              "title": "Foundation Unit & Grid System",
               "thumbnail": null
             },
             {
@@ -148,6 +149,12 @@
           "title": "Support",
           "thumbnail": null,
           "submenus": [
+            {
+              "id": "100",
+              "url": "page-specs",
+              "title": "Page Specs",
+              "thumbnail": null
+            },
             {
               "id": "54",
               "url": "faqs",

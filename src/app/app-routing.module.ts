@@ -65,8 +65,8 @@ const routerOptions: ExtraOptions = {
 export class AppRoutingModule {
 
   constructor(private router: Router, private ps: PageService) {
-    this.ps.pages.subscribe(items => {
-      const routes = this.contentToRoute(items);
+    this.ps.pages.subscribe(menus => {
+      const routes = this.contentToRoute(menus);
 
       this.router.resetConfig([
         ...routes,
@@ -76,46 +76,27 @@ export class AppRoutingModule {
       allRoutes = this.router.config;
       this.ps.setRoutes(routes);
     });
-
-    // TODO: We could also handle the data over here but I 
-    // think doing it in the service makes more sense
-
-    // this.ps.navigations.subscribe(items => {
-    //   let pages = [];
-    //   items.map(item => pages = [ ...pages, ...item.menus ]);
-
-    //   const routes = this.contentToRoute(pages);
-
-    //   this.router.resetConfig([
-    //     ...routes,
-    //     { path: '**', redirectTo: '/home' }
-    //   ]);
-
-    //   this.ps.setRoutes(routes);
-    // });
   }
 
-  contentToRoute(items) {
-    return items.reduce((accumulator, item, index) => {
+  contentToRoute(menus) {
+    return menus.reduce((accumulator, menu) => {
       let route:any;
 
-      if(!item.submenus) {
-        route = { path: item.url }
+      if(!menu.submenus) {
+        route = { path: menu.url }
         route.children = [
           { path: '', component: TabContentComponent },
           { path: ':id', component: TabContentComponent }
         ];
       } else {
-        route = { path: item.url, component: PageComponent };
+        route = { path: menu.url, component: PageComponent };
       }
-      
-      if(item.submenus) {
-        route.children = this.contentToRoute(item.submenus);
+
+      if(menu.submenus) {
+        route.children = this.contentToRoute(menu.submenus);
       }
-      
+
       let routes = [ route ];
-      // Keep this comment for investigating purpose regarding route.path, this doesn't work for parent route
-      // if(!index) routes.unshift({ path: '', redirectTo: route.path, pathMatch: 'full' });
 
       return accumulator.concat(routes);
     }, []);

@@ -1,7 +1,7 @@
-//FIXME: Add scania-theme variables instead of hex colors, valid for all places
+//TODO Remove bootstrap implementation
 
 :host {
-  background-color: #171719;
+  background-color: var(--sdds-grey-900);
 }
 
 //TODO: Look into transtion from bootstrap regarding animation for collapse
@@ -11,63 +11,121 @@
 
 //Main style for all links (sub links, support links, external links)
 .sdds-nav-link-style {
-  color: white;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  color: var(--sdds-white);
   text-decoration: none;
   align-items: center;
+  cursor: pointer;
+
+  
+
+}
+
+.sdds-navigation {
+  margin-bottom: 32rem;
+  @media(min-width: 1056px) {
+    margin-bottom: 16rem;
+  }
 }
 
 .sdds-nav-section {
-  border-bottom: 1px solid #2B2C2F;
+  border-bottom: 1px solid var(--sdds-grey-800);
+}
+
+// First level menu links
+.sdds-nav-section-link {
+  padding: 0 var(--sdds-spacing-element-16);
+  line-height: 64px;
+  display: flex;
+
+ 
+  @media (min-width: 1056px) {
+    padding: 0 var(--sdds-spacing-element-24);
+  }
 
   // Collapse/expand icon
   c-icon {
     margin-left: auto;
+    // FIXME:Will change when new icons is added
+    font-size: 7rem;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -ms-transition: -ms-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out;
+  }
 
-    &[name=scania-angle-down] {
-      font-size: 30px;
-      margin-right: -10px;
+  &:hover {
+    background-color: var(--sdds-grey-800)
+  }
+
+}
+
+.sdds-open {
+  span {
+    border-bottom: 1px solid transparent;
+  }
+  c-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.sdds-close {
+  ~ .sdds-nav-section-sub-links {
+    display:none;
+  }
+}
+
+
+//Second level menu links
+.sdds-nav-section-sub-links {
+  //  display: none;
+  margin-bottom: var(--sdds-spacing-element-12);
+
+  a {
+    display: block;
+    margin: 0 var(--sdds-spacing-element-16);
+
+    @media (min-width: 1056px) {
+      margin: 0 var(--sdds-spacing-element-24);
+
+    &:hover,
+    &.active:hover {
+      span {
+        background-color: var(--sdds-grey-700);
+      }
     }
   }
+
+  span {
+    display: inline-flex;
+    padding: var(--sdds-spacing-element-12) var(--sdds-spacing-element-16);
+    border-radius: 1rem;
+  }
+
+  &.active {
+
+    span {
+      // padding: 12px 16px;
+      background-color: var(--sdds-grey-800);
+      }
+    }
+  }
+}
+
+//External link styling
+.sdds-external-links {
+  margin-top: auto;
+}
+
+.sdds-external-link {
+  padding: var(--sdds-spacing-element-24);
+  border-bottom: 1px solid var(--sdds-grey-800);
 
   > a {
     display: flex;
-
-    // Rotate for the angle-down icon
-    &.collapsed > c-icon {
-      &[name=scania-angle-down] {
-        transform: rotate(0deg);
-      }
-    }
-    & > c-icon {
-      &[name=scania-angle-down] {
-        transform: rotate(180deg);
-      }
-    }
-  }
-}
-
-.sdds-nav-section-link {
-  padding: 6rem;
-}
-
-.sdds-nav-section-sub-link {
-  a {
-    display: block;
-    margin: 4rem;
-    padding: 3rem 4rem;
-
-    &.active {
-      background-color: #2B2C2F;
+    c-icon {
+      margin-left: auto;
     }
   }
 
 }
 
-.sdds-external-links {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
 
-}
