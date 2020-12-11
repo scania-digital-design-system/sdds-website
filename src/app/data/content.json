@@ -1,96 +1,6 @@
 {
   "menus": [
     {
-      "id": "23",
-      "url": "contribution",
-      "title": "Contribution",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "40",
-          "pageContent": [
-            {
-              "content": {
-                "id": "46",
-                "title": "Contribute information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "583",
-                    "Title": "",
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "The Scania design system welcomes contributions from the  whole organisation. Together, we can grow Scania design system and make it a better framework.",
-                      "Introduction": true,
-                      "id": "133"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "584",
-                    "Title": "",
-                    "Text": "**Information**\n\nBecause Scania design system provides everything from the abstract patterns of a design system to the nitty-gritty implementation of accessibility for components, contributions to Scania design system can take many forms, and each of them will correspond to part of the full process.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "118",
-                    "Title": "cards",
-                    "Images": [
-                      {
-                        "id": "400",
-                        "label": null,
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/eb23ddb6197041269c7cff7348c9bbf8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "401",
-                        "label": null,
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/935422fe8f7847e09497d61f31958d70.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "402",
-                        "label": null,
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/61f1ddecc90547198bdc8517bab29f0c.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": []
-                  }
-                ],
-                "updated_at": "2020-12-09T09:50:49.286Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "50",
       "url": "dealer-header",
       "title": "Dealer header",
@@ -317,6 +227,96 @@
       "submenus": []
     },
     {
+      "id": "23",
+      "url": "contribution",
+      "title": "Contribution",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "40",
+          "pageContent": [
+            {
+              "content": {
+                "id": "46",
+                "title": "Contribute information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "583",
+                    "Title": "",
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "The Scania design system welcomes contributions from the  whole organisation. Together, we can grow Scania design system and make it a better framework.",
+                      "Introduction": true,
+                      "id": "133"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "584",
+                    "Title": "",
+                    "Text": "**Information**\n\nBecause Scania design system provides everything from the abstract patterns of a design system to the nitty-gritty implementation of accessibility for components, contributions to Scania design system can take many forms, and each of them will correspond to part of the full process.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "118",
+                    "Title": "cards",
+                    "Images": [
+                      {
+                        "id": "400",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/eb23ddb6197041269c7cff7348c9bbf8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "401",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/935422fe8f7847e09497d61f31958d70.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "402",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/61f1ddecc90547198bdc8517bab29f0c.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": []
+                  }
+                ],
+                "updated_at": "2020-12-09T09:50:49.286Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "57",
       "url": "team-members",
       "title": "Team members",
@@ -350,6 +350,269 @@
                   }
                 ],
                 "updated_at": "2020-06-04T09:35:01.660Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "101",
+      "url": "page-spec",
+      "title": "Page-spec",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "169",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "201",
+                "title": "A Page Specs",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "635",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
+                      "Introduction": true,
+                      "id": "134"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image Without Caption",
+                    "caption": "",
+                    "Image": {
+                      "id": "403",
+                      "label": "Label",
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
+                        }
+                      ]
+                    },
+                    "id": "76"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image with Caption",
+                    "caption": "",
+                    "Image": {
+                      "id": "404",
+                      "label": "This is an image caption",
+                      "caption": "It should look like this",
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
+                        }
+                      ]
+                    },
+                    "id": "77"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "636",
+                    "Title": "Introduction",
+                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "637",
+                    "Title": "Functional and Expressive",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\n\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\n\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n[Functional type](link)\n[Expressive type](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Full width image xlarge",
+                    "caption": "Full width image caption xlarge",
+                    "Image": {
+                      "id": "405",
+                      "label": "Full width image label",
+                      "caption": "Caption of the image",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "If image breaks ",
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
+                        }
+                      ]
+                    },
+                    "id": "78"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "638",
+                    "Title": "Cards",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "120",
+                    "Title": null,
+                    "Images": [],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "121",
+                    "Title": "Do's and Dont's",
+                    "Images": [],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "639",
+                    "Title": "Images",
+                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\n\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "122",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "406",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "407",
+                        "label": "Image Subheading",
+                        "caption": "Some caption should be here",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "408",
+                        "label": "Some label",
+                        "caption": "Image caption should be short and precise",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "409",
+                        "label": "Hello image",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "410",
+                        "label": "Image is this",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "411",
+                        "label": "A happy nice image",
+                        "caption": "Some description follows",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "412",
+                        "label": null,
+                        "caption": null,
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/732760c3d31a4596abd7e4465623666f.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "413",
+                        "label": null,
+                        "caption": null,
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f9a27e37fd4c41b79a3822b58dfb13f4.jpg"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "669",
+                    "Title": "Code block ",
+                    "Text": "```\ncd <Your project folder>\nnpm i corporate-ui\nnpm i scania-theme\n```\n\n```\n<c-theme name='scania' global='true'></c-theme>\n<c-header></c-header>\n<c-content>\n    <section>\n        <button class=\"btn btn-primary\">Accept</button>\n        <c-new-component></c-new-component>\n        <!-- Your application content goes here -->\n     </section>\n</c-content>\n<c-footer></c-footer>\n```\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "670",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-11T09:45:27.061Z"
               }
             }
           ]
@@ -527,52 +790,6 @@
       "submenus": []
     },
     {
-      "id": "30",
-      "url": "way-of-working",
-      "title": "Way of working",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "20",
-          "pageContent": [
-            {
-              "content": {
-                "id": "14",
-                "title": "Way of working",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "53",
-                    "Title": null,
-                    "Text": "## Two levels of way of working",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "54",
-                    "Title": null,
-                    "Text": "### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "55",
-                    "Title": null,
-                    "Text": "### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-03-25T14:09:35.987Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "66",
       "url": "contact",
       "title": "Support Contact",
@@ -642,247 +859,44 @@
       "submenus": []
     },
     {
-      "id": "100",
-      "url": "page-specs",
-      "title": "Page Specs",
+      "id": "30",
+      "url": "way-of-working",
+      "title": "Way of working",
       "thumbnail": null,
-      "showTabs": true,
+      "showTabs": null,
       "pageStructure": [
         {
-          "__typename": "ComponentPagePluginTab",
-          "id": "168",
-          "title": "Information",
-          "active": true,
+          "__typename": "ComponentPagePluginArticle",
+          "id": "20",
           "pageContent": [
             {
               "content": {
-                "id": "201",
-                "title": "Page Specs",
+                "id": "14",
+                "title": "Way of working",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "635",
+                    "id": "53",
                     "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
-                      "Introduction": true,
-                      "id": "134"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example Full Width Image Without Caption",
-                    "caption": null,
-                    "Image": {
-                      "id": "403",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
-                        }
-                      ]
-                    },
-                    "id": "76"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example Full Width Image with Caption",
-                    "caption": "",
-                    "Image": {
-                      "id": "404",
-                      "label": "This is an image caption",
-                      "caption": "It should look like this",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
-                        }
-                      ]
-                    },
-                    "id": "77"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "636",
-                    "Title": "Introduction",
-                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "Text": "## Two levels of way of working",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "637",
-                    "Title": "Functional and Expressive",
-                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\n\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\n\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n[Functional type](link)\n[Expressive type](link)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "405",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
-                        }
-                      ]
-                    },
-                    "id": "78"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "638",
-                    "Title": "Cards",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "120",
+                    "id": "54",
                     "Title": null,
-                    "Images": [],
-                    "texts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "121",
-                    "Title": "Do's and Dont's",
-                    "Images": [],
-                    "texts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "639",
-                    "Title": "Images",
-                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\n\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
+                    "Text": "### 1. Way of working between the UX design team and the Agile development team\n\n\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. The development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.",
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "122",
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "55",
                     "Title": null,
-                    "Images": [
-                      {
-                        "id": "406",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "407",
-                        "label": "Image Subheading",
-                        "caption": "Some caption should be here",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "408",
-                        "label": "Some label",
-                        "caption": "Image caption should be short and precise",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "409",
-                        "label": "Hello image",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "410",
-                        "label": "Image is this",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "411",
-                        "label": "A happy nice image",
-                        "caption": "Some description follows",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "412",
-                        "label": null,
-                        "caption": null,
-                        "size": null,
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/732760c3d31a4596abd7e4465623666f.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "413",
-                        "label": null,
-                        "caption": null,
-                        "size": null,
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f9a27e37fd4c41b79a3822b58dfb13f4.jpg"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": []
+                    "Text": "### 2.The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n\n<a href=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" data-toggle=\"modal\" data-target=\"#fullscreen\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n</a>\n\n<div class=\"modal fade\" id=\"fullscreen\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-full\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n        <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\"  />\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- We should try and use the component later on\n<modal-component id=\"exampleModal\" size=\"full\">\n  <img src=\"https://sdds-cms.s3.amazonaws.com/7ccdd534b7254ee4a34a83402c7562d0.png\" body />\n</modal-component> -->",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-10T10:00:47.498Z"
+                "updated_at": "2020-03-25T14:09:35.987Z"
               }
             }
           ]
@@ -891,30 +905,72 @@
       "submenus": []
     },
     {
-      "id": "3",
-      "url": "support",
-      "title": "Support",
+      "id": "54",
+      "url": "faqs",
+      "title": "Support FAQs",
       "thumbnail": null,
-      "showTabs": null,
+      "showTabs": true,
       "pageStructure": [
         {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "37",
+          "__typename": "ComponentPagePluginTab",
+          "id": "127",
+          "title": "General",
+          "active": true,
           "pageContent": [
             {
               "content": {
-                "id": "36",
-                "title": "Support",
+                "id": "136",
+                "title": "FAQs",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "130",
+                    "id": "113",
                     "Title": null,
-                    "Text": "Do you need help within development or with Components? Please reach out in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or report a [bug](https://github.com/scania/corporate-ui/issues/new/choose) or a [Feature request](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22) in our Development GitHub.\n\nNeed help within the design area? We can't design your application for you but we'll happily guide you through how you can use the different sections and tools in the Scania Digital Design System. Please get in touch with us through [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) and we'll do our best to help out.",
+                    "Text": "Included here are some of the most frequently asked questions and their answers about the Scania Digital Design System and its contents. FAQs address both design and development related questions (and answers) which are organised in seperate sections. The FAQ section is upgraded on an ongoing basis so please reach out to us if you have questions that you think should be included here.",
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-06-04T13:04:41.476Z"
+                "updated_at": "2020-06-04T12:54:45.958Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "132",
+          "title": "Design",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "134",
+                "title": "FAQ Design",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "117",
+                    "Title": null,
+                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T12:57:19.151Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "133",
+          "title": "Development",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "162",
+                "title": "Support FAQ Development",
+                "section": [],
+                "updated_at": "2020-12-08T12:46:20.765Z"
               }
             }
           ]
@@ -922,21 +978,9 @@
       ],
       "submenus": [
         {
-          "id": "54",
-          "url": "faqs",
-          "title": "Support FAQs",
-          "thumbnail": null
-        },
-        {
-          "id": "66",
-          "url": "contact",
-          "title": "Support Contact",
-          "thumbnail": null
-        },
-        {
-          "id": "100",
-          "url": "page-specs",
-          "title": "Page Specs",
+          "id": "56",
+          "url": "faq-development",
+          "title": "Development",
           "thumbnail": null
         }
       ]
@@ -2415,6 +2459,57 @@
         }
       ],
       "submenus": []
+    },
+    {
+      "id": "3",
+      "url": "support",
+      "title": "Support",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "37",
+          "pageContent": [
+            {
+              "content": {
+                "id": "36",
+                "title": "Support",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "130",
+                    "Title": null,
+                    "Text": "Do you need help within development or with Components? Please reach out in [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) or report a [bug](https://github.com/scania/corporate-ui/issues/new/choose) or a [Feature request](https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22) in our Development GitHub.\n\nNeed help within the design area? We can't design your application for you but we'll happily guide you through how you can use the different sections and tools in the Scania Digital Design System. Please get in touch with us through [Teams](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) and we'll do our best to help out.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-06-04T13:04:41.476Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": [
+        {
+          "id": "54",
+          "url": "faqs",
+          "title": "Support FAQs",
+          "thumbnail": null
+        },
+        {
+          "id": "66",
+          "url": "contact",
+          "title": "Support Contact",
+          "thumbnail": null
+        },
+        {
+          "id": "101",
+          "url": "page-spec",
+          "title": "Page-spec",
+          "thumbnail": null
+        }
+      ]
     },
     {
       "id": "55",
@@ -5115,87 +5210,6 @@
       "submenus": []
     },
     {
-      "id": "54",
-      "url": "faqs",
-      "title": "Support FAQs",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "127",
-          "title": "General",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "136",
-                "title": "FAQs",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "113",
-                    "Title": null,
-                    "Text": "Included here are some of the most frequently asked questions and their answers about the Scania Digital Design System and its contents. FAQs address both design and development related questions (and answers) which are organised in seperate sections. The FAQ section is upgraded on an ongoing basis so please reach out to us if you have questions that you think should be included here.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T12:54:45.958Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "132",
-          "title": "Design",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "134",
-                "title": "FAQ Design",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "117",
-                    "Title": null,
-                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-06-04T12:57:19.151Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "133",
-          "title": "Development",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "162",
-                "title": "Support FAQ Development",
-                "section": [],
-                "updated_at": "2020-12-08T12:46:20.765Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": [
-        {
-          "id": "56",
-          "url": "faq-development",
-          "title": "Development",
-          "thumbnail": null
-        }
-      ]
-    },
-    {
       "id": "40",
       "url": "colour",
       "title": "Foundation Colour",
@@ -5486,60 +5500,46 @@
                     "id": "545",
                     "Title": "Do’s and Dont’s",
                     "Text": "Below you will find some best practice solutions for buttons. \n\n**Short text labels**\n\nText labels should be short and direct, since it needs to be easy to read what action the button will perform when the user interacts with it.\n",
-                    "LeadText": null
+                    "LeadText": {
+                      "textfield": null,
+                      "Introduction": null,
+                      "id": "143"
+                    }
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "10",
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "143",
                     "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/7d84c8c6eef2478585b7bbcbebe33a4d.png)"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/e8bb7abc44b14d1db958f19692e3cc20.png)"
-                    }
+                    "Images": [],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "546",
+                    "id": "674",
                     "Title": null,
-                    "Text": "**One line text labels**\n\nTo secure good legibility, a text label should be placed on one line and not be wrapped on multiple lines. If you have narrowed width space to place your button, move it below the associated content.",
+                    "Text": "**One line text labels**\n\nTo secure good legibility, a text label should be placed on one line and not be wrapped on multiple lines. If you have narrowed width space to place your button, move it below the associated content.\n\n",
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "11",
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "144",
                     "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/a849cf5933ec4214b94ae5f14ea70d08.png)"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/427740771c064d549eafa6b644a6c707.png)"
-                    }
+                    "Images": [],
+                    "texts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "547",
+                    "id": "675",
                     "Title": null,
-                    "Text": "**One primary button** \n\nWe need to help the user to understand which action is more important by only having one primary button present at the time on the section.",
+                    "Text": "**One primary button**\n\nWe need to help the user to understand which action is more important by only having one primary button present at the time on the section.",
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "12",
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "145",
                     "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/0f6d5598122c4102bdcbd72c7e9863ed.png)"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "\n![text](https://sdds-cms.s3.amazonaws.com/361da0ece1c24206ad8c819b4d987864.png)"
-                    }
+                    "Images": [],
+                    "texts": []
                   }
                 ],
                 "updated_at": "2020-12-08T15:42:46.392Z"
@@ -6236,15 +6236,34 @@
             {
               "content": {
                 "id": "39",
-                "title": "Components",
+                "title": "Components Overview",
                 "section": [
                   {
-                    "__typename": "ComponentContentPluginOverviewList",
-                    "id": "1",
-                    "description": "In the Components section you can see the building blocks of the Scania Digital Design System for building user interfaces aliged with the Scania Brand. \nEach Component provides a solution to a specific UI problem and such components are presented with a visual example together with their specific usage guideline and code example."
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "671",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "All of our user interfaces consists of components. These are our interactive building blocks, which we use to create new interfaces and applications to make sure to unpack complex technology, make information and functions immediately apparent for our users.",
+                      "Introduction": true,
+                      "id": "139"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "138",
+                    "Title": "Introduction",
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "We have utilized a collection of reusable components which are aligned with our brand identity and expression. These components can be assembled together to build consistent and harmoniozed Scania applications. \n\nIf you have a suggestion for a new component, [please let us know](link).",
+                        "Introduction": null,
+                        "id": "140"
+                      }
+                    ]
                   }
                 ],
-                "updated_at": "2020-06-04T09:34:38.104Z"
+                "updated_at": "2020-12-11T09:54:43.032Z"
               }
             }
           ]
@@ -7194,249 +7213,6 @@
       "submenus": []
     },
     {
-      "id": "65",
-      "url": "foundation-typography",
-      "title": "Foundation Typography",
-      "thumbnail": null,
-      "showTabs": false,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "121",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "160",
-                "title": "Foundation Typography Information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "344",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
-                      "Introduction": true,
-                      "id": "60"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "124",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a2bad02f010646b88b28ea3b25d1ee5e.png"
-                        }
-                      ]
-                    },
-                    "id": "36"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "345",
-                    "Title": "Introduction",
-                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "346",
-                    "Title": "Functional & Expressive",
-                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**<br/>\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**<br/>\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n[Functional type](link)\n[Expressive type](link)\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "347",
-                    "Title": "Typeface",
-                    "Text": "The Scania Sans typeface family has several fonts and weights, making it ideal for every context and every occasion, from bold and inspiring headlines to informative footnotes..\n\nThe typeface family has four fonts:\n— Scania Sans Headline\n— Scania Sans\n— Scania Sans Semi Condensed\n— Scania Sans Condensed",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "125",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/e9f5c3d3c0684d99aa780e42b7fb343f.png"
-                        }
-                      ]
-                    },
-                    "id": "37"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "348",
-                    "Title": "Type settings",
-                    "Text": "We use four type settings when applying typography within our user interfaces. These type settings have several text styles that could be found at [Functional type](link) and [Expressive type](link).\n\n**Headline**<br/>\nUsed to create clear typographic hierarchies.\n\n**Paragraph**<br/>\nUse for introduction texts.\n\n**Body**<br/>\nUsed primarily for longer body texts, intro texts and specific components. \n\n**Detail**<br/>\nUsed for captions, detailed text, table, component and code related typography.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "352",
-                    "Title": "Type scale",
-                    "Text": "When designing and creating new layouts and applications, you should use any of our defined type sets Functional or Expressive, depending on what you’re designing for. This scale will help you create consistent layouts with a balanced rhythm.\n\nIn some specific scenarios, you might end up needing a size that is not specified within those type sets. When adding a new text style, you should select a size from our type scale below to get a cohesive typographic experience.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Example</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2.5</td>\n    <td>10</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>3.5</td>\n    <td>14</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>28</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>14</td>\n    <td>56</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>18</td>\n    <td>72</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>20</td>\n    <td>80</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "353",
-                    "Title": "Tokens",
-                    "Text": "For managing our typography, we use tokens that have defined all our typographic settings such as font size, font weight, letter height and letter spacing. These tokens should be used when designing a new page layout or application.\n\nVisit [Functional type](link) and [Expressive type](link) to get a full overview of which tokens that are available within each type set.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "354",
-                    "Title": "Fallback",
-                    "Text": "When Scania Sans fail to load due to technical issues or when technical restrictions or special glyphs for languages limits the use of Scania Sans typeface, the following replacement fonts – or similar - are recommended:\n\n**Mac computers**<br/>\nHelvetica Neue\n\n**PC computers**<br/>\nArial",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "355",
-                    "Title": "Resources",
-                    "Text": "[Github / Types element package](link)\n[Typeface/ Scania Sans](link)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T11:03:45.663Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "122",
-          "title": "Functional type",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "199",
-                "title": "Foundation Typography Functional type",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "607",
-                    "Title": "Functional type",
-                    "Text": "The Functional type set should be used for non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\nThe text styles are available below. If you need more sizes, please select a size from our type scale when defining a new text style for your project.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "608",
-                    "Title": "Headline",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.04em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-01.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Semi Condensed Bold</td>\n    <td>A sub headline, which is most commonly paired with detail-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "609",
-                    "Title": "Paragraph",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>paragraph-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our large paragraph, which should only be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>paragraph-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our smaller paragraph, mainly present on mobile breakpoints, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "610",
-                    "Title": "Body",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>body-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our larger text style used for body text. We usually use it for paragraphs exceeding 3 lines. The size works well on both larger and smaller breakpoints for reading.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>body-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our smaller text style used for body text. We usually use it for paragraphs with less than 3 lines. The size works well on both larger and smaller breakpoints for reading. It could also be used within certain components. <br></td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "611",
-                    "Title": "Detail",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>detail-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for longer detailed text exceeding 3 lines within Functional applications.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for Labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for our form components and notifications messages.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style should only be used for very small instances, for instance as a label inside a text field.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>8px / 2rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-09T09:10:04.285Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "123",
-          "title": "Expressive type",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "198",
-                "title": "Foundation Typography Expressive type",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "456",
-                    "Title": "Expressive type",
-                    "Text": "Expressive type should be used for more branded communication and public websites, for instance Scania.com. These types of applications need a much more dynamic expression for the typography, especially when it comes to headlines.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](link) when defining a new text style for your project.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "548",
-                    "Title": "Headline",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>expressive-headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>80px / 20rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>80px / 20rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$expressive-headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>expressive-headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>56px / 14rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>56px / 14rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$expressive-headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n\n<table>\n<thead>\n  <tr>\n    <th>headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.04em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-01.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-02</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed Bold</td>\n    <td>A sub headline, which is most commonly paired with detail-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "549",
-                    "Title": "Paragraph",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>paragraph-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our large paragraph, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>paragraph-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our smaller paragraph, mainly present on mobile breakpoints, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "550",
-                    "Title": "Body",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>body-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our larger text style used for body text. We usually use it for paragraphs exceeding 3 lines. The size works well on both larger and smaller breakpoints for reading.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>body-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our smaller text style used for body text. We usually use it for paragraphs with less than 3 lines. The size works well on both larger and smaller breakpoints for reading. It could also be used within certain components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "551",
-                    "Title": "Detail",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>detail-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for longer detailed text exceeding 3 lines within Functional applications.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for our form components and notification messages.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style should only be used for very small instances, for instance as a label inside a text field.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 8px / 2rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T15:20:22.588Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "124",
-          "title": "Code",
-          "active": true,
-          "pageContent": []
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "59",
       "url": "spacing",
       "title": "Foundation Spacing",
@@ -7813,6 +7589,249 @@
           "id": "137",
           "title": "Code",
           "active": false,
+          "pageContent": []
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "65",
+      "url": "foundation-typography",
+      "title": "Foundation Typography",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "121",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "160",
+                "title": "Foundation Typography Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "344",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
+                      "Introduction": true,
+                      "id": "60"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "124",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a2bad02f010646b88b28ea3b25d1ee5e.png"
+                        }
+                      ]
+                    },
+                    "id": "36"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "345",
+                    "Title": "Introduction",
+                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "346",
+                    "Title": "Functional & Expressive",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**<br/>\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**<br/>\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n[Functional type](link)\n[Expressive type](link)\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "347",
+                    "Title": "Typeface",
+                    "Text": "The Scania Sans typeface family has several fonts and weights, making it ideal for every context and every occasion, from bold and inspiring headlines to informative footnotes..\n\nThe typeface family has four fonts:\n— Scania Sans Headline\n— Scania Sans\n— Scania Sans Semi Condensed\n— Scania Sans Condensed",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "125",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/e9f5c3d3c0684d99aa780e42b7fb343f.png"
+                        }
+                      ]
+                    },
+                    "id": "37"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "348",
+                    "Title": "Type settings",
+                    "Text": "We use four type settings when applying typography within our user interfaces. These type settings have several text styles that could be found at [Functional type](link) and [Expressive type](link).\n\n**Headline**<br/>\nUsed to create clear typographic hierarchies.\n\n**Paragraph**<br/>\nUse for introduction texts.\n\n**Body**<br/>\nUsed primarily for longer body texts, intro texts and specific components. \n\n**Detail**<br/>\nUsed for captions, detailed text, table, component and code related typography.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "352",
+                    "Title": "Type scale",
+                    "Text": "When designing and creating new layouts and applications, you should use any of our defined type sets Functional or Expressive, depending on what you’re designing for. This scale will help you create consistent layouts with a balanced rhythm.\n\nIn some specific scenarios, you might end up needing a size that is not specified within those type sets. When adding a new text style, you should select a size from our type scale below to get a cohesive typographic experience.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Example</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2.5</td>\n    <td>10</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>3.5</td>\n    <td>14</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>28</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>14</td>\n    <td>56</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>18</td>\n    <td>72</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n  <tr>\n    <td>20</td>\n    <td>80</td>\n    <td>Scania Sans Regular</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "353",
+                    "Title": "Tokens",
+                    "Text": "For managing our typography, we use tokens that have defined all our typographic settings such as font size, font weight, letter height and letter spacing. These tokens should be used when designing a new page layout or application.\n\nVisit [Functional type](link) and [Expressive type](link) to get a full overview of which tokens that are available within each type set.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "354",
+                    "Title": "Fallback",
+                    "Text": "When Scania Sans fail to load due to technical issues or when technical restrictions or special glyphs for languages limits the use of Scania Sans typeface, the following replacement fonts – or similar - are recommended:\n\n**Mac computers**<br/>\nHelvetica Neue\n\n**PC computers**<br/>\nArial",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "355",
+                    "Title": "Resources",
+                    "Text": "[Github / Types element package](link)\n[Typeface/ Scania Sans](link)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T11:03:45.663Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "122",
+          "title": "Functional type",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "199",
+                "title": "Foundation Typography Functional type",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "607",
+                    "Title": "Functional type",
+                    "Text": "The Functional type set should be used for non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\nThe text styles are available below. If you need more sizes, please select a size from our type scale when defining a new text style for your project.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "608",
+                    "Title": "Headline",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.04em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-01.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Semi Condensed Bold</td>\n    <td>A sub headline, which is most commonly paired with detail-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "609",
+                    "Title": "Paragraph",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>paragraph-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our large paragraph, which should only be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>paragraph-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our smaller paragraph, mainly present on mobile breakpoints, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "610",
+                    "Title": "Body",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>body-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our larger text style used for body text. We usually use it for paragraphs exceeding 3 lines. The size works well on both larger and smaller breakpoints for reading.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>body-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td> Scania Sans Regular</td>\n    <td>Our smaller text style used for body text. We usually use it for paragraphs with less than 3 lines. The size works well on both larger and smaller breakpoints for reading. It could also be used within certain components. <br></td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "611",
+                    "Title": "Detail",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>detail-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for longer detailed text exceeding 3 lines within Functional applications.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for Labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for our form components and notifications messages.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style should only be used for very small instances, for instance as a label inside a text field.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>8px / 2rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-09T09:10:04.285Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "123",
+          "title": "Expressive type",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "198",
+                "title": "Foundation Typography Expressive type",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "456",
+                    "Title": "Expressive type",
+                    "Text": "Expressive type should be used for more branded communication and public websites, for instance Scania.com. These types of applications need a much more dynamic expression for the typography, especially when it comes to headlines.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](link) when defining a new text style for your project.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "548",
+                    "Title": "Headline",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>expressive-headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>80px / 20rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>80px / 20rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$expressive-headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>expressive-headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>56px / 14rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>56px / 14rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$expressive-headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Headline Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>40px / 10rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n\n<table>\n<thead>\n  <tr>\n    <th>headline-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>Headline</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.04em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A headline for page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-01.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>A sub headline, which is most commonly paired with body-02</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>headline-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed Bold</td>\n    <td>A sub headline, which is most commonly paired with detail-02.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$headline-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "549",
+                    "Title": "Paragraph",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>paragraph-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our large paragraph, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>32px / 8rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.03em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>paragraph-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our smaller paragraph, mainly present on mobile breakpoints, which should be used for introduction texts on page layouts.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$paragraph-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "550",
+                    "Title": "Body",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>body-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our larger text style used for body text. We usually use it for paragraphs exceeding 3 lines. The size works well on both larger and smaller breakpoints for reading.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.02em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>body-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Regular</td>\n    <td>Our smaller text style used for body text. We usually use it for paragraphs with less than 3 lines. The size works well on both larger and smaller breakpoints for reading. It could also be used within certain components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td>20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$body-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "551",
+                    "Title": "Detail",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>detail-01</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 24px / 6rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-01</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-02</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used in components, such as data tables and buttons.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-02</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-03</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for longer detailed text exceeding 3 lines within Functional applications.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>14px / 3.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 20px / 5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>-0.01em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-03</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-04</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-04</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-05</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style is used for our form components and notification messages.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>12px / 3rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-05</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-06</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Bold</td>\n    <td>This text style is used for labels and potentially components.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 16px / 4rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0.08em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-06</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>\n\n<table>\n<thead>\n  <tr>\n    <th>detail-07</th>\n    <th></th>\n    <th></th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Font-family</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>This text style should only be used for very small instances, for instance as a label inside a text field.</td>\n  </tr>\n  <tr>\n    <td>Font-size</td>\n    <td>10px / 2.5rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Line-height</td>\n    <td> 8px / 2rem</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Letter-spacing</td>\n    <td>0em</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Token</td>\n    <td>$detail-07</td>\n    <td></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T15:20:22.588Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "124",
+          "title": "Code",
+          "active": true,
           "pageContent": []
         }
       ],
