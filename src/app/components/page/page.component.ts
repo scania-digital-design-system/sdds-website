@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { PageService } from '../../app.service';
@@ -13,7 +13,7 @@ declare let gtag: Function;
   styleUrls: ['./page.component.scss']
 })
 
-export class PageComponent {
+export class PageComponent implements OnInit{
   content: any = {};
   tabContent: any = {};
   lastUpdate;
@@ -46,7 +46,10 @@ export class PageComponent {
 
       this.renderLastUpdated();
     });
-    
+  }
+
+  ngOnInit() {
+
   }
 
   renderLastUpdated(){
@@ -57,7 +60,6 @@ export class PageComponent {
           return new Date(data.content.updated_at);
         })));
       }
-      
       this.lastUpdate = newTime;
     });
   }

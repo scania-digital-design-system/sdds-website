@@ -1,9 +1,12 @@
 @import '../../app-vars.scss';
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 @import './styles/anchor-menu.scss';
 @import './styles/code-tab.scss';
 @import './styles/page-templates.scss';
 @import './styles/tab-content.scss';
 @import './styles/tab-nav.scss';
+
 
 :host {
   // margin-top: 100px;
