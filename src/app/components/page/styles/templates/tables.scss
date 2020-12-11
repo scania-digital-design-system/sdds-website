@@ -8,16 +8,20 @@
     thead{
       background-color: var(--sdds-blue-100);
       th{
-        padding: 16px;
+        padding: var(--sdds-spacing-element-16);
         @include type-style('headline-07');
       }
     }
     tbody{
       td{
         background-color: var(--sdds-white);
-        padding: 16px;
+        padding: var(--sdds-spacing-element-16);
         @include type-style('detail-02');
         border-bottom: 1px solid rgba(#000, 0.05);
+        vertical-align: top;
+        img{
+          margin:0;
+        }
       }
     }
   }
