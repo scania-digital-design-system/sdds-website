@@ -3,10 +3,6 @@
   border-bottom: 4px solid;
   margin-bottom: var(--sdds-spacing-element-8);
   position: relative;
-  text-align: center;
-  img{
-    display: inline-block;
-  }
   &.Do{
     border-color: var(--sdds-green-500);
     .check-mark {
