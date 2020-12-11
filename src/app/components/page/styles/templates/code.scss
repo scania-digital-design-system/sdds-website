@@ -4,7 +4,8 @@
 //TODO:Temporary for the code section in getting started
 :host{
   ::ng-deep {
-    pre { 
+    pre {
+      margin-bottom: var(--sdds-spacing-element-16);
       color: var(--sdds-white); 
       background-color: var(--sdds-grey-900); 
       padding: var(--sdds-spacing-element-16); 
