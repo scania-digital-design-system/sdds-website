@@ -1,0 +1,64 @@
+@import './templates/card.scss';
+@import './templates/modal.scss';
+@import './templates/images.scss';
+
+// Icon preview
+.icon-preview {
+  //FIXME: Add correct rem
+  font-size: 32.5rem;
+  margin-top: -11.25rem;
+  text-align: center;
+  color: #041e42;
+  color: var(--blue);
+}
+
+
+// OLD FAQ
+details {
+  //FIXME: Add correct rem
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  border-bottom: 1px solid #94999d;
+  display: block;  // for IE
+
+  + h2 {
+    //FIXME: Add correct rem
+    margin-top: 15rem;
+  }
+
+  > section {
+    //FIXME: Add correct rem
+    padding: 6rem 3.75rem;
+    margin: 1rem 0 1rem;
+    background: #f8f9fa;
+    // hide unintended new line created from the markdown
+    + p {
+      display: none;
+    }
+  }
+
+  summary {
+    list-style-type: none; /* Firefox */
+    outline:none;
+  }
+  summary::-webkit-details-marker { display: none; } /* Chrome */
+  summary::marker { display: none; }
+  /* Create customizable arrow */
+  summary:before {
+    content: '+';
+    display: inline-block;
+    padding: 0 5px 5px 0;
+  }
+
+  &[open] {
+    padding-bottom: 0;
+    summary {
+      border-bottom: 1px solid #94999d;
+      //FIXME: Add correct rem
+      padding-bottom: 7rem;
+      &:before {
+        content: '-';
+      }
+    }
+  }
+}

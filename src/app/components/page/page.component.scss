@@ -1,6 +1,11 @@
 @import '../../app-vars.scss';
 @import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
 @import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+@import './styles/anchor-menu.scss';
+@import './styles/code-tab.scss';
+@import './styles/page-templates.scss';
+@import './styles/tab-content.scss';
+@import './styles/tab-nav.scss';
 
 
 :host {
@@ -18,84 +23,6 @@
     // .tab-pane > div > section {
     //   width: 100%;
     // }
-
-    .tab-content {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-      position: relative;
-    }
-
-    .line-break{
-      width: 100%;
-    }
-
-    // position: header height + tab height 
-    
-    .anchor-menus {
-      position: static;
-      right: 0;
-      text-align: left;
-      padding-top: var(--sdds-spacing-element-24);
-      flex-grow: 1;
-      min-width: 160px;
-      ul {
-        margin-bottom: var(--sdds-spacing-element-40);
-        padding-left: 0;
-      }
-
-      li {
-        list-style-type: none;
-        display: block;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-left: 4rem;
-        a {
-          display: block;
-          position: relative;
-          padding-left: 0;
-          cursor: pointer;
-
-          > p { margin:0; }
-
-          &:before, &:after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            left: -4rem;
-            height: 100%;
-            border-left: 2px solid var(--sdds-blue-200);
-          }
-
-          &:before {
-            top: -2rem;
-            padding-top: 2rem;
-            padding-bottom: 6rem;
-          }
-    
-          &:hover,
-          &:active,
-          &.active {
-            color: var(--sdds-blue-900);
-            &:after {border-color: var(--sdds-blue-900);}
-          }
-        }
-
-        &:first-child { a:before {padding-top:0; top:0;}}
-        &:last-child { a:before {padding-bottom:0;}}
-      }
-    }
-
-    //TODO:Temporary for the code section in getting started
-    pre {
-      color: var(--sdds-white);
-      background-color: var(--sdds-grey-900);
-      padding: var(--sdds-spacing-element-16);
-      border-radius: 1rem;
-      code {
-
-        @include type-style('detail-01');
-      }
-    }
 
     figure {
       margin-bottom: 10rem;
@@ -134,149 +61,14 @@
       padding-top: 7.5rem;
       font-style: italic;
     }
-
-    // Specific for tabs in site
-    .nav {
-      border-bottom: 1px solid var(--sdds-grey-100);
-      background-color: var(--sdds-white);
-      position: sticky;      
-      top: 64px;
-      z-index: 999;
-
-      #page-tabs {
-        margin:0;
-        .nav-item {
-          display: inline-block;
-          list-style-type: none;
-        }
-  
-        .nav-link {
-          padding: var(--sdds-spacing-element-24);
-          padding-left: 0;
-          margin: 0;
-          color: var(--sdds-grey-300);
-          &.active,
-          &:active,
-          &:hover {
-            border-bottom: none;
-            color: var(--sdds-blue-900);
-          }
-        }
-      }
-    }
     
-    #modalExample {
-      display: block !important;
-      position: static !important;
-    }
-
-    // TODO: This might be good to add in cui later on
-    // or to the modal component
-    .modal-full {
-      max-width: none;
-      min-height: calc(100vh - 60px);
-      margin-left: 30px;
-      margin-right: 30px;
-
-      img {
-        max-width: none;
-        width: auto;
-      }
-
-      .modal {
-
-        &-content {
-          min-height: calc(100vh - 60px);
-        }
-        &-body {
-          overflow: auto;
-        }
-      }
-    }
-
-    details {
-      //FIXME: Add correct rem
-      padding-top: 7rem;
-      padding-bottom: 7rem;
-      border-bottom: 1px solid #94999d;
-      display: block;  // for IE
-
-      + h2 {
-        //FIXME: Add correct rem
-        margin-top: 15rem;
-      }
-
-      > section {
-        //FIXME: Add correct rem
-        padding: 6rem 3.75rem;
-        margin: 1rem 0 1rem;
-        background: #f8f9fa;
-        // hide unintended new line created from the markdown
-        + p {
-          display: none;
-        }
-      }
-
-      summary {
-        list-style-type: none; /* Firefox */
-        outline:none;
-      }
-      summary::-webkit-details-marker { display: none; } /* Chrome */
-      summary::marker { display: none; }
-      /* Create customizable arrow */
-      summary:before {
-        content: '+';
-        display: inline-block;
-        padding: 0 5px 5px 0;
-      }
-
-      &[open] {
-        padding-bottom: 0;
-        summary {
-          border-bottom: 1px solid #94999d;
-          //FIXME: Add correct rem
-          padding-bottom: 7rem;
-          &:before {
-            content: '-';
-          }
-        }
-      }
-    }
-    
-
-    @media (min-width: 1056px) {
-      .anchor-menus {
-        position: sticky;
-        text-align: right;
-        top: $anchor-position-no-tabs;
-        &.show-tabs {
-          top: $anchor-position;
-        }
-        ul {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-        li{
-          a {
-            padding-right: 4rem;
-            &:before,
-            &:after {
-              left: unset;
-              right: -1px;
-              border-right: 1px solid var(--sdds-blue-200);
-            }
-          }
-          
-        }
-      }
-    }
   // end of :ng-deep
   }
 // end of :host
 }
 
 // TODO: Change class to be specific for the page listing "template" and not a "page"
+// OLD Overview Component
 :host-context(main.category-components) {
 
   .card {
@@ -323,37 +115,4 @@
   }
 }
 
-:host-context(.page-colour) {
 
-  ::ng-deep {
-
-    img {
-      width: 300px;
-      margin-bottom: 15px;
-      margin-right: 15px;
-    }
-  }
-}
-
-:host-context(.page-icons) {
-
-  ::ng-deep {
-
-    .icon-preview {
-      //FIXME: Add correct rem
-      font-size: 32.5rem;
-      margin-top: -11.25rem;
-      text-align: center;
-      color: #041e42;
-      color: var(--blue);
-    }
-  }
-}
-
-
-@media (min-width: 1600px) {
-
-  .container {
-    max-width: 1440px;
-  }
-}
