@@ -1,0 +1,18 @@
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+
+//TODO:Temporary for the code section in getting started
+:host{
+  ::ng-deep {
+    pre { 
+      color: var(--sdds-white); 
+      background-color: var(--sdds-grey-900); 
+      padding: var(--sdds-spacing-element-16); 
+      border-radius: 1rem; 
+      code { 
+    
+        @include type-style('detail-01'); 
+      } 
+    }
+  }
+}

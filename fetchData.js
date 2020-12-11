@@ -113,6 +113,14 @@ fragment detail on Content {
         detail
         type
         url
+      }      
+      dosAndDonts{ 
+        type
+        image { 
+          url
+        }
+        description
+        id
       }
     }
     ... on ComponentContentPluginTwoColumns {
