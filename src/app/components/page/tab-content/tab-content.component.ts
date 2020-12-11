@@ -27,7 +27,7 @@ export class TabContentComponent {
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
-    
+
     ps.page.subscribe((page: Page) => {
 
       if(Object.keys(page).length == 0) {
@@ -53,13 +53,11 @@ export class TabContentComponent {
         }
       }
 
-      console.log(this.tabContent)
-
       // This is for anchor link to work, the root routerLink should be the first tab, or current URL if page has no tabs
       if(this.title === undefined) {
         this.defaultTab = this.content.showTabs ? this.generateUrl(this.content.pageStructure[0].title) : '.';
       }
-      
+
     });
 
   }
