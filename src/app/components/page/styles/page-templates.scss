@@ -31,6 +31,9 @@
     .resource-columns{
       margin-top: var(--sdds-spacing-element-8);
       margin-bottom: 10rem;
+      &.left-column {
+        margin-top: 120px;
+      }
     }
     
     .landing-page-ribbon{
@@ -73,6 +76,9 @@
 
       .resource-columns{
         margin-bottom: 22rem;
+        &.left-column {
+          margin-top: var(--sdds-spacing-element-8);
+        }
       }
 
     }
