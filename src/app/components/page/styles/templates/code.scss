@@ -5,15 +5,13 @@
 :host{
   ::ng-deep {
     pre {
-      margin-bottom: var(--sdds-spacing-element-16);
-      color: var(--sdds-white); 
-      background-color: var(--sdds-grey-900); 
-      padding: var(--sdds-spacing-element-16); 
-      border-radius: 1rem; 
-      code { 
-    
-        @include type-style('detail-01'); 
-      } 
+      color: var(--sdds-white);
+      background-color: var(--sdds-grey-900);
+      padding: var(--sdds-spacing-element-16);
+      border-radius: 1rem;
+      code {
+        @include type-style('detail-01');
+      }
     }
   }
 }
