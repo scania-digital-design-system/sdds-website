@@ -10,8 +10,16 @@
 :host{
   ::ng-deep{
 
+    .cover-image{
+      height: calc(100vh - 240px);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: var(--sdds-spacing-element-16);
+    }
+
     .intro-columns{
-      margin-bottom: 136px;
+      margin-top: 56px;
+      margin-bottom: 124px;
       a{
         border-bottom: 1px solid var(--sdds-grey-200);
         &::after{
@@ -23,7 +31,7 @@
 
     .resource-columns{
       margin-top: var(--sdds-spacing-element-8);
-      margin-bottom: 22rem;
+      margin-bottom: 10rem;
     }
     
     .landing-page-ribbon{
@@ -48,6 +56,23 @@
           margin-top: 0;
         }
       }
+    }
+
+    @media (min-width:1056px){
+      .cover-image{
+        height: 532px;
+        margin-bottom: var(--sdds-spacing-element-24);
+      }
+
+      .intro-columns{
+        margin-top: 0;
+        margin-bottom: 136px;
+      }
+
+      .resource-columns{
+        margin-bottom: 22rem;
+      }
+
     }
   }
 }
