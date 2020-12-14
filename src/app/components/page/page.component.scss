@@ -38,6 +38,9 @@
 
     p{
       margin-bottom: var(--sdds-spacing-element-32);
+      br{
+        display: none;
+      }
       strong{
         display: block;
       }
@@ -66,6 +69,12 @@
     .lead-text-section + div {
       .section-title, h4 {
         margin-top: 0;
+      }
+    }
+
+    .sdds-row div:first-child{
+      .section-title, h4{
+        margin-top: var(--sdds-spacing-element-8);
       }
     }
 
