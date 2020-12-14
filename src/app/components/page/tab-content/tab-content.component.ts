@@ -41,7 +41,6 @@ export class TabContentComponent {
         } else {
           return;
         }
-        const generateUrlPipe = new GenerateTabURLPipe();
 
         if(this.content.showTabs) {
           this.tabExist = true;
@@ -55,7 +54,6 @@ export class TabContentComponent {
 
         if(this.content.url === 'foundation-typography') {
           this.typographyPage=true;
-          console.log(this.tabContent)
         }
       }
 

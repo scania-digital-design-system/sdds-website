@@ -26,8 +26,19 @@
       }
     }
 
+    &.sdds-table-typography-example{
+      tbody{
+        td{
+          line-height: normal;
+          &:nth-child(3) {
+            font-family: var(--sdds-font-family-sans);
+          }
+        }
+      }
+    }
+
     &.sdds-table-font-preview{
-      margin-bottom: 100px;
+      height: 360px;
       background-color: var(--sdds-white);
       position: relative;
       tbody{
@@ -56,7 +67,12 @@
           }
         }
         tr:first-child{
-          td { padding-top: var(--sdds-spacing-element-16); }
+          td { 
+            padding-top: var(--sdds-spacing-element-16); 
+            &:nth-child(3){
+              padding-top: var(--sdds-spacing-element-32);
+            }
+          }
         }
         tr:last-child{
           td { padding-bottom: var(--sdds-spacing-element-16); }
@@ -67,9 +83,12 @@
     @media (min-width:1056px) {
       &.sdds-table-font-preview{
         margin-bottom: var(--sdds-spacing-element-16);
+        height: auto;
         tbody{
           tr{
             display: table-row;
+            flex-direction: unset;
+            width:auto;
             td{
               &:first-child{
                 width: 144px;
@@ -84,6 +103,13 @@
                 width: auto;
                 padding-top: var(--sdds-spacing-element-16);
                 padding-bottom: var(--sdds-spacing-element-16);
+              }
+            }
+            &:first-child{
+              td {  
+                &:nth-child(3){
+                  padding-top: var(--sdds-spacing-element-16);
+                }
               }
             }
           }
