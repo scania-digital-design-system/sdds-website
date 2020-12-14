@@ -1,18 +1,21 @@
-.anchor-menus {
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+
+#anchor-menu  {
   position: static;
   right: 0;
+  padding-top: var(--sdds-spacing-element-32);
   text-align: left;
-  padding-top: var(--sdds-spacing-element-24);
   flex-grow: 1;
   min-width: 149px;
   margin-right: 24px;
   z-index: 400;
+  @include type-style('detail-04');
 
 
   ul {
     margin-bottom: var(--sdds-spacing-element-40);
     padding-left: 0;
-    margin-top: 24px
   }
 
   li {
@@ -57,11 +60,35 @@
   }
 }
 
+// Mobile for matching the padding on the left
+@media(min-width: 320px) {
+  #anchor-menu {
+    padding-left: 16px;
+  }
+}
+
+@media(min-width: 672px) {
+  #anchor-menu {
+    padding-left: 24px;
+  }
+}
+
+@media(min-width: 1056px) {
+  #anchor-menu {
+    padding-left: 32px;
+  }
+}
+
+// Desktop
 @media (min-width: 1312px) {
-  .anchor-menus {
+
+  #anchor-menu {
     position: sticky;
     text-align: right;
+    padding-top: 0;
     top: $anchor-position-no-tabs;
+    @include type-style('detail-06');
+
     &.show-tabs {
       top: $anchor-position;
     }
@@ -70,6 +97,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      padding-top: var(--sdds-spacing-element-16)
       }
       li{
         a {
