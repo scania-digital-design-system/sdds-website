@@ -5,9 +5,14 @@
   padding-top: var(--sdds-spacing-element-24);
   flex-grow: 1;
   min-width: 149px;
+  margin-right: 24px;
+  z-index: 400;
+
+
   ul {
     margin-bottom: var(--sdds-spacing-element-40);
     padding-left: 0;
+    margin-top: 24px
   }
 
   li {
@@ -52,7 +57,7 @@
   }
 }
 
-@media (min-width: 1056px) {
+@media (min-width: 1312px) {
   .anchor-menus {
     position: sticky;
     text-align: right;
@@ -60,6 +65,7 @@
     &.show-tabs {
       top: $anchor-position;
     }
+
     ul {
       position: absolute;
       top: 0;
@@ -75,7 +81,6 @@
             border-right: 1px solid var(--sdds-blue-200);
           }
         }
-        
       }
     }
   }

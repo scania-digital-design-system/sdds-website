@@ -24,7 +24,13 @@
     top: var(--sdds-spacing-element-8);
     left: var(--sdds-spacing-element-8);
   }
-  
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   + p {
     margin-bottom: var(--sdds-spacing-element-4);
   }
