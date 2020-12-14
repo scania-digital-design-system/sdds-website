@@ -73,10 +73,11 @@ export class TabContentComponent {
     const wrapper = document.querySelector('main');
 
     const offset = 144; // sticky nav height + padding
-    
+
     wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - offset), left: 0, behavior: 'smooth' });
+
   }
-  
+
   clickCard(url){
     window.open(url);
   }
