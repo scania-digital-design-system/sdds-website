@@ -8,11 +8,4 @@ import { Component, Input } from '@angular/core';
 
 export class LandingPage {
   @Input() page;
-
-  constructor() {
-  }
-  
-  clickCard(url){
-    window.open(url);
-  }
 }

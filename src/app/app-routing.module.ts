@@ -13,6 +13,7 @@ import { ColorListComponent } from './components/color-list/color-list.component
 import { IconListComponent } from './components/icon-list/icon-list.component';
 import { TabContentComponent } from './components/page/tab-content/tab-content.component';
 import { CodeExampleComponent } from './components/code-example/code-example.component';
+import { CardComponent } from './components/card/card.component';
 import { CodePropsComponent } from './components/code-props/code-props.component';
 import { ContentHeader } from './components/content-header/content-header.component';
 import { LandingPage } from './components/page/landing-page/landing-page.component';
@@ -37,6 +38,7 @@ const routerOptions: ExtraOptions = {
     TabContentComponent,
     ColorListComponent,
     IconListComponent,
+    CardComponent,
     CodeExampleComponent,
     CodePropsComponent,
     ContentHeader,

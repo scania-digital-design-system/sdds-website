@@ -77,8 +77,4 @@ export class TabContentComponent {
     wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - offset), left: 0, behavior: 'smooth' });
 
   }
-
-  clickCard(url){
-    window.open(url);
-  }
 }
