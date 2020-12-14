@@ -1,5 +1,19 @@
 // Cards
-
+.card-image {
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-size: cover;
+  &.xlarge{
+    height: 632px;
+  }
+  &.large {
+    height: 456px;
+  }
+  &.small{
+    height: 232px;
+  }
+}
 .cards {
     background-color: var(--sdds-white);
     padding: 4rem;

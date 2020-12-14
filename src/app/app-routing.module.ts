@@ -15,6 +15,7 @@ import { TabContentComponent } from './components/page/tab-content/tab-content.c
 import { CodeExampleComponent } from './components/code-example/code-example.component';
 import { CodePropsComponent } from './components/code-props/code-props.component';
 import { ContentHeader } from './components/content-header/content-header.component';
+import { LandingPage } from './components/page/landing-page/landing-page.component';
 
 let allRoutes: Routes = [];
 const routerOptions: ExtraOptions = {
@@ -38,7 +39,8 @@ const routerOptions: ExtraOptions = {
     IconListComponent,
     CodeExampleComponent,
     CodePropsComponent,
-    ContentHeader
+    ContentHeader,
+    LandingPage
   ],
   entryComponents: [
     PageComponent,

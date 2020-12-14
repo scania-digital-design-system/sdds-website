@@ -1,0 +1,134 @@
+<div class="cover-image">
+  <figure>
+    <img [src]="page.section[0].Image.image[0].url" />
+  </figure>
+</div>
+
+<div class="sdds-container-push">
+  <div class="sdds-row">
+
+    <!-- Intro columns -->
+
+    <div class="no-padding sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-8">
+      <h4 class="sdds-text-blue-300">{{page.section[1].ParagraphLeft.textfield}}</h4>
+    </div>
+    <div class="no-padding intro-columns sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-8">
+      <div class="sdds-text-blue-900 sdds-paragraph-02" [innerHTML]="page.section[1].ParagraphRight.textfield | markdown | keepHtml"></div>
+    </div>
+
+    <!-- Multiple cards -->
+
+    <div *ngFor="let card of page.section[2].linkCards"
+      class="no-padding sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-8">
+      <div class="card-image large" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
+      <div class="cards" (click)="clickCard(card.url)">
+        <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+        <p class="sdds-headline-06 sdds-text-blue-900">
+          {{card.description}}
+          <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+        </p>
+        <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+          {{card.detail}}
+        </p>
+        <span class="card-link" *ngIf="card.type == 'download'">
+          <c-icon name='scania-save'></c-icon>
+        </span>
+        <span [ngClass]="('card-link ' + (card.type))"
+          *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
+          <c-icon name='scania-arrow'></c-icon>
+        </span>
+      </div>
+    </div>
+
+    <!-- Small cards -->
+    <div *ngFor="let card of page.section[3].linkCards"
+      class="no-padding sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 sdds-col-sm-8">
+      <div class="card-image small" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
+      <div class="cards" (click)="clickCard(card.url)">
+        <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+        <p class="sdds-headline-06 sdds-text-blue-900">
+          {{card.description}}
+          <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+        </p>
+        <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+          {{card.detail}}
+        </p>
+        <span class="card-link" *ngIf="card.type == 'download'">
+          <c-icon name='scania-save'></c-icon>
+        </span>
+        <span [ngClass]="('card-link ' + (card.type))"
+          *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
+          <c-icon name='scania-arrow'></c-icon>
+        </span>
+      </div>
+    </div>
+
+    <!-- Full width card -->
+    <div *ngFor="let card of page.section[4].linkCards"
+      class="no-padding sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-16 sdds-col-md-8 sdds-col-sm-8">
+      <div class="card-image xlarge" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
+      <div class="cards" (click)="clickCard(card.url)">
+        <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+        <p class="sdds-headline-06 sdds-text-blue-900">
+          {{card.description}}
+          <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+        </p>
+        <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+          {{card.detail}}
+        </p>
+        <span class="card-link" *ngIf="card.type == 'download'">
+          <c-icon name='scania-save'></c-icon>
+        </span>
+        <span [ngClass]="('card-link ' + (card.type))"
+          *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
+          <c-icon name='scania-arrow'></c-icon>
+        </span>
+      </div>
+    </div>
+
+    <!-- Resources columns -->
+
+    <div class="no-padding resource-columns sdds-col-xxlg-5 sdds-col-xlg-5 sdds-col-lg-5 sdds-col-md-8 sdds-col-sm-8">
+      <h4 class="sdds-text-blue-300">{{page.section[5].ParagraphLeft.textfield}}</h4>
+    </div>
+    <div class="no-padding  resource-columns sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-8">
+      <p class="sdds-text-blue-900 sdds-paragraph-02">{{page.section[5].ParagraphRight.textfield}}</p>
+    </div>
+
+    <!-- Cards -->
+    <div *ngFor="let card of page.section[6].linkCards" class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
+      <div class="cards" (click)="clickCard(card.url)">
+        <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+        <p class="sdds-headline-06 sdds-text-blue-900">
+          {{card.description}}
+          <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+        </p>
+        <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+          {{card.detail}}
+        </p>
+        <span class="card-link" *ngIf="card.type == 'download'"><c-icon name='scania-save'></c-icon></span>
+        <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'"><c-icon name='scania-arrow'></c-icon></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="landing-page-ribbon sdds-background-blue-900">
+  <div class="sdds-container-push-fluid">
+    <div class="sdds-row">
+
+      <div class="no-padding sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-8 sdds-col-sm-4">
+        <h5 class="sdds-text-blue-300">{{page.section[7].ParagraphLeft.textfield}}</h5>
+      </div>
+      <div class="no-padding sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4">
+        <h5 class="sdds-text-white">{{page.section[7].ParagraphRight.textfield}}</h5>
+      </div>
+      <div class="no-padding ribbon-btn-wrapper sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-8 sdds-col-sm-4">
+        <button class="sdds-button-primary">Let us know</button>
+      </div>
+
+    </div>
+  </div>
+</div>

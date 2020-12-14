@@ -2,4 +2,8 @@
   padding-top: 6rem;
   padding-bottom: 6rem;
   position: relative;
+
+  &.landing-page {
+    padding-top: 0;
+  }
 }

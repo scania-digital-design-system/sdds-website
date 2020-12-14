@@ -15,45 +15,6 @@
   position: relative;
 }
 
-:host-context(.page-home) {
-  background-image: url(../../../assets/images/ipad-background.png);
-  background-position: bottom right 50%;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  ::ng-deep {
-    color: #2d292d; //fallback in IE
-    color: var(--black); //Scania black
-    h1 {
-      font-family: 'Scania Sans Headline', sans-serif;
-      //FIXME: Add correct rem
-      font-size: 10rem;
-      color: inherit;
-      //FIXME: Add correct rem
-      margin-bottom: 15rem;
-    }
-    h2 {
-      font-family: 'Scania Sans', sans-serif;
-      c-icon {
-        //FIXME: Add correct rem
-        margin-right: 2.5rem;
-      }
-      a {
-        text-decoration: none;
-        color: Var(--blue);
-        color: #041e42;
-      }
-    }
-    .lead {
-      font-family: 'Scania Sans', sans-serif;
-      //FIXME: Add correct rem
-      font-size: 6.25rem;
-      margin-bottom: 25rem;
-    }
-    .page-title,
-    .last-updated { display: none;}
-  }
-}
-
 header {
   background-color: #000;
   color: #fff;

@@ -1,6 +1,6 @@
-<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}'></Content-Header>
+<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}' [url]='content.url'></Content-Header>
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
-<div class="nav sdds-container-push-fluid">
+<div *ngIf="content.url !== 'home'" class="nav sdds-container-push-fluid">
   <div class="sdds-row">
     <ul id='page-tabs' class='no-padding sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4' role='tablist' *ngIf='content.showTabs'>
       <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
@@ -14,7 +14,12 @@
 
 <router-outlet></router-outlet>
 
-<div class="tab-content sdds-container-push-fluid">
+<!-- Landing page -->
+<div *ngIf="content.url === 'home'" class="tab-content landing-page">
+  <Landing-Page [page]="tabContent.pageContent[0].content"></Landing-Page>
+</div>
+
+<div *ngIf="content.url !== 'home'" class="tab-content sdds-container-push">
   <div class="sdds-row">
 
     <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined ">
