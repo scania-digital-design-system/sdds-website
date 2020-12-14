@@ -4,6 +4,7 @@
 ::ng-deep {
   table{ 
     color: var(--sdds-black);
+    margin-bottom: var(--sdds-spacing-element-16);
     min-width: 100%;
     thead{
       background-color: var(--sdds-blue-100);
@@ -24,5 +25,71 @@
         }
       }
     }
+
+    &.sdds-table-font-preview{
+      margin-bottom: 100px;
+      background-color: var(--sdds-white);
+      position: relative;
+      tbody{
+        tr{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+        }
+        td{
+          border: 0;
+          padding-top: var(--sdds-spacing-element-4);
+          padding-bottom: var(--sdds-spacing-element-4);
+          &:first-child{
+            width: 50%;
+          }
+          &:nth-child(2){
+            width: 50%;
+          }
+          &:nth-child(3){
+            display: block;
+            position: absolute;
+            top: 192px;
+            width: 100%;
+            padding-top: var(--sdds-spacing-element-32);
+            padding-bottom: var(--sdds-spacing-element-24);
+          }
+        }
+        tr:first-child{
+          td { padding-top: var(--sdds-spacing-element-16); }
+        }
+        tr:last-child{
+          td { padding-bottom: var(--sdds-spacing-element-16); }
+        }
+      }
+    }
+
+    @media (min-width:1056px) {
+      &.sdds-table-font-preview{
+        margin-bottom: var(--sdds-spacing-element-16);
+        tbody{
+          tr{
+            display: table-row;
+            td{
+              &:first-child{
+                width: 144px;
+              }
+              &:nth-child(2){
+                width: 256px;
+              }
+              &:nth-child(3){
+                display: table-cell;
+                position: relative;
+                top: unset;
+                width: auto;
+                padding-top: var(--sdds-spacing-element-16);
+                padding-bottom: var(--sdds-spacing-element-16);
+              }
+            }
+          }
+        }
+      }
+    }
+
   }
 }
