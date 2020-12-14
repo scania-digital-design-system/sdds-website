@@ -1,5 +1,7 @@
 $site-header-height: 16rem;
+
 $site-content-header-height:48rem;
 $site-content-header-height-mobile:44rem;
-$anchor-position: $site-header-height + (64/4) + 6; // in REM
-$anchor-position-no-tabs: $site-header-height + 6; // in REM
+
+$anchor-position: $site-header-height + (64/4); // in REM
+$anchor-position-no-tabs: $site-header-height; // in REM
