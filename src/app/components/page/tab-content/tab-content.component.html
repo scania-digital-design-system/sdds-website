@@ -43,7 +43,7 @@
         <!-- One column -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
           <!-- If contain table and typography page, then table col size 15 -->
-          <div [ngClass]="('no-padding sdds-col-md-8 sdds-col-sm-4 ' + ( typographyPage && section.Text.indexOf('table') > 0 ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-16':'sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6'))">
+          <div [ngClass]="('no-padding sdds-col-md-8 sdds-col-sm-4 ' + ( typographyPage && section.Text && section.Text.indexOf('&lt;table') > 0 ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-16':'sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6'))">
             <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [attr.id]='section.Title | generateTabUrl' class="section-title"></h4>
             <div *ngIf='section.LeadText' class="lead-text sdds-paragraph-01">{{section.LeadText.textfield}}</div>
             <p *ngIf='section.Text' [innerHTML]='section.Text | markdown | keepHtml'></p>
