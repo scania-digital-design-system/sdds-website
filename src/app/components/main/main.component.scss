@@ -9,9 +9,14 @@
 //   }
 // }
 
+:host{
+  display: flex;
+}
+
 #content {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   position: relative;
 }
 
