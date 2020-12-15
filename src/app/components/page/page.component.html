@@ -65,8 +65,7 @@
                       <figcaption *ngIf='image.label' class="sdds-detail-02" >
                         <strong>{{image.label}}</strong>
                       </figcaption>
-                      <figcaption *ngIf='image.caption' class="sdds-detail-02">
-                        <span>{{image.caption}}</span>
+                      <figcaption *ngIf='image.caption' class="sdds-detail-02" [innerHTML]='image.caption | markdown | keepHtml'>
                       </figcaption>
                     </figure>
                   </div>

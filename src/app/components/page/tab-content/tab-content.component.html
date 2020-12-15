@@ -60,8 +60,7 @@
                   <figcaption *ngIf='section.Image.label' class="sdds-detail-02" >
                     <strong>{{section.Image.label}}</strong>
                   </figcaption>
-                  <figcaption *ngIf='section.Image.caption' class="sdds-detail-02">
-                    <span>{{section.Image.caption}}</span>
+                  <figcaption *ngIf='section.Image.caption' class="sdds-detail-02" [innerHTML]='image.caption | markdown | keepHtml'>
                   </figcaption>
                 </figure>
               </div>
@@ -111,8 +110,7 @@
                     <figcaption *ngIf='image.label' class="sdds-detail-02" >
                       <strong>{{image.label}}</strong>
                     </figcaption>
-                    <figcaption *ngIf='image.caption' class="sdds-detail-02">
-                      <span>{{image.caption}}</span>
+                    <figcaption *ngIf='image.caption' class="sdds-detail-02" [innerHTML]='image.caption | markdown | keepHtml'>
                     </figcaption>
                   </figure>
                 </div>
@@ -186,8 +184,7 @@
                     <strong>{{image.label}}</strong>
                   </figcaption>
                   <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
-                  <figcaption *ngIf='image.caption'>
-                    <em>{{image.caption}}</em>
+                  <figcaption *ngIf='image.caption' [innerHTML]='image.caption | markdown | keepHtml'>
                   </figcaption>
                 </figure>
               </div>
