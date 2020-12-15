@@ -19,6 +19,7 @@ export class TabContentComponent {
   tabContent: any = [];
   defaultTab = '.';
   tabExist: Boolean = false;
+  typographyPage:Boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -40,7 +41,6 @@ export class TabContentComponent {
         } else {
           return;
         }
-        const generateUrlPipe = new GenerateTabURLPipe();
 
         if(this.content.showTabs) {
           this.tabExist = true;
@@ -50,6 +50,10 @@ export class TabContentComponent {
         } else {
           this.tabExist = false;
           this.tabContent = this.content.pageStructure[0];
+        }
+
+        if(this.content.url === 'foundation-typography') {
+          this.typographyPage=true;
         }
       }
 
