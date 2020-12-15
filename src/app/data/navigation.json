@@ -88,6 +88,12 @@
           "thumbnail": null,
           "submenus": [
             {
+              "id": "102",
+              "url": "overview",
+              "title": "Components Overview",
+              "thumbnail": null
+            },
+            {
               "id": "58",
               "url": "divider",
               "title": "Divider",
@@ -101,6 +107,12 @@
                 "id": "46",
                 "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
               }
+            },
+            {
+              "id": "103",
+              "url": "textfields",
+              "title": "Text fields",
+              "thumbnail": null
             }
           ]
         },

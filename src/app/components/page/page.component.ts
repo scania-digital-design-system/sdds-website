@@ -44,7 +44,7 @@ export class PageComponent implements OnInit{
         }
       }
 
-      this.renderLastUpdated();
+      // this.renderLastUpdated();
     });
   }
 
@@ -52,17 +52,17 @@ export class PageComponent implements OnInit{
 
   }
 
-  renderLastUpdated(){
-    let newTime;
-    this.content.pageStructure.forEach(part => {
-      if(part.pageContent.length > 0) {
-         newTime = new Date(Math.max.apply(null, part.pageContent.map(function(data) {
-          return new Date(data.content.updated_at);
-        })));
-      }
-      this.lastUpdate = newTime;
-    });
-  }
+  // renderLastUpdated(){
+  //   let newTime;
+  //   this.content.pageStructure.forEach(part => {
+  //     if(part.pageContent.length > 0) {
+  //        newTime = new Date(Math.max.apply(null, part.pageContent.map(function(data) {
+  //         return new Date(data.content.updated_at);
+  //       })));
+  //     }
+  //     this.lastUpdate = newTime;
+  //   });
+  // }
 
   tabChange(page, tabTitle) {
     if(typeof gtag === 'undefined') return;

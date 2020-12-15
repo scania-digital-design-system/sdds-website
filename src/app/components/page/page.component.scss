@@ -16,6 +16,7 @@
   ::ng-deep {
     // Fix for IE11 Flex problem
     width: 100%;
+    background: var(--sdds-grey-50);
     // .tab-content,
     // .tab-pane,
     // .tab-pane > div,
@@ -27,16 +28,16 @@
       margin-bottom: 10rem;
     }
 
-    section {
-      //FIXME: Add correct rem
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
+  section {
+    //FIXME: Add correct rem
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
 
-      p > a,
-      ul > li > a {
-        color: #53565a; //FIXME: temp until link color is decided
-      }
+    p > a,
+    ul > li > a {
+      color: #53565a; //FIXME: temp until link color is decided
     }
+  }
 
     .lead-text {
       margin-bottom: 10rem;
@@ -58,7 +59,16 @@
       padding-top: 7.5rem;
       font-style: italic;
     }
-    
+
+    //Keeping the list 100% of the width all time when searching
+    .sdds-icon-list {
+      max-width: 100%;
+      width: 100%;
+      .sdds-select-all {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
   // end of :ng-deep
   }
 // end of :host

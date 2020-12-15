@@ -9,6 +9,7 @@
     </ul>
   </div>
 </ng-container>
+
 <div class="tab-content sdds-container-push">
   <div class="sdds-row">
 
@@ -30,12 +31,12 @@
         <!-- Icon List -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginIconList'">
           <!-- [icons]='section.iconList' -->
-          <div class='row icon-list' icon-list [icons]='section.Icons' [category]='section.category' [lastUpdate]='item.content.updated_at'></div>
+          <div class='sdds-icon-list' icon-list [icons]='section.Icons' [category]='section.category' [lastUpdate]='item.content.updated_at'></div>
         </ng-template>
 
         <!-- Code Example -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
-          <section class='dds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4' >
+          <section class='no-padding sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4' >
             <pre><code>{{section.code}}</code></pre>
           </section>
         </ng-template>
