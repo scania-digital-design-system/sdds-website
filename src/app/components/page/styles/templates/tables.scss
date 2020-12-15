@@ -36,59 +36,46 @@
         }
       }
     }
-
+    
     &.sdds-table-font-preview{
-      height: 360px;
-      background-color: var(--sdds-white);
-      position: relative;
       tbody{
         tr{
           display: flex;
-          flex-direction: row;
-          width: 100%;
-        }
-        td{
-          border: 0;
-          padding-top: var(--sdds-spacing-element-4);
-          padding-bottom: var(--sdds-spacing-element-4);
-          &:first-child{
-            width: 50%;
-          }
-          &:nth-child(2){
-            width: 50%;
-          }
-          &:nth-child(3){
-            display: block;
-            position: absolute;
-            top: 192px;
-            width: 100%;
-            padding-top: var(--sdds-spacing-element-32);
+          flex-flow: row;
+          flex-wrap: wrap;
+          td{
+            color: var(--sdds-grey-900);
+            line-height: 1.5em;
+            padding-top: var(--sdds-spacing-element-16);
+            padding-left: var(--sdds-spacing-element-16);
             padding-bottom: var(--sdds-spacing-element-24);
-          }
-        }
-        tr:first-child{
-          td { 
-            padding-top: var(--sdds-spacing-element-16); 
+            width: 50%;
+            border-bottom: 0 ;
+            &:first-child{
+              color: var(--sdds-grey-400);
+            }
             &:nth-child(3){
-              padding-top: var(--sdds-spacing-element-32);
+              width: 100%;
+              padding-top: var(--sdds-spacing-element-8);
+              padding-bottom: var(--sdds-spacing-element-16);
+            }
+            &.sdds-expressive-headline-01,
+            &.sdds-expressive-headline-02,
+            &.sdds-headline-01,
+            &.sdds-headline-02 {
+              line-height: 1em;
             }
           }
-        }
-        tr:last-child{
-          td { padding-bottom: var(--sdds-spacing-element-16); }
         }
       }
     }
 
     @media (min-width:1056px) {
       &.sdds-table-font-preview{
-        margin-bottom: var(--sdds-spacing-element-16);
-        height: auto;
         tbody{
           tr{
             display: table-row;
-            flex-direction: unset;
-            width:auto;
+            flex: none;
             td{
               &:first-child{
                 width: 144px;
@@ -97,19 +84,9 @@
                 width: 256px;
               }
               &:nth-child(3){
-                display: table-cell;
-                position: relative;
-                top: unset;
                 width: auto;
                 padding-top: var(--sdds-spacing-element-16);
-                padding-bottom: var(--sdds-spacing-element-16);
-              }
-            }
-            &:first-child{
-              td {  
-                &:nth-child(3){
-                  padding-top: var(--sdds-spacing-element-16);
-                }
+                padding-bottom: var(--sdds-spacing-element-24);
               }
             }
           }
