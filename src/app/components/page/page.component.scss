@@ -23,10 +23,6 @@
     //   width: 100%;
     // }
 
-    figure {
-      margin-bottom: 10rem;
-    }
-
     section {
       //FIXME: Add correct rem
       padding-top: 7.5rem;
@@ -38,14 +34,31 @@
       }
     }
 
-    .lead-text {
-      margin-bottom: 10rem;
+    // General spacing for all elements
+
+    p{
+      margin-bottom: var(--sdds-spacing-element-32);
+      br{
+        display: none;
+      }
+      strong{
+        display: block;
+      }
     }
 
-    .section-title {
+    .lead-text {
+      margin-bottom: var(--sdds-spacing-element-48);
+    }
+
+    .section-title, h4 {
       p { margin: 0; }
-      margin-top: var(--sdds-spacing-element-48);
+      margin-top: var(--sdds-spacing-element-40);
       margin-bottom: var(--sdds-spacing-element-16);
+    }
+
+    figure,
+    table{
+      margin-bottom: var(--sdds-spacing-element-32);
     }
 
     img {
@@ -70,6 +83,19 @@
       &:active,
       &.active{
         background-color: var(--sdds-blue-800);
+      }
+    }
+
+    .lead-text-section + .sdds-one-col-plugin,
+    .lead-text-section + div {
+      .section-title, h4 {
+        margin-top: 0;
+      }
+    }
+
+    .sdds-row div:first-child{
+      .section-title, h4{
+        margin-top: var(--sdds-spacing-element-8);
       }
     }
 

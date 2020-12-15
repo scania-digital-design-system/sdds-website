@@ -101,6 +101,12 @@
                 "id": "46",
                 "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
               }
+            },
+            {
+              "id": "102",
+              "url": "overview",
+              "title": "Components Overview",
+              "thumbnail": null
             }
           ]
         },
