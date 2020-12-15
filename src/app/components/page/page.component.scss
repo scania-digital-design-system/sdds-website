@@ -116,6 +116,10 @@
     .code-example-wrapper + .sdds-one-col-plugin {
       margin-top: 0;
     }
+    p code{
+      @include type-style('detail-01');
+      color: var(--sdds-grey-500);
+    }
 
     .sdds-row div:first-child{
       .section-title, h4{
