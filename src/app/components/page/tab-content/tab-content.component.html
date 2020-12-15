@@ -119,31 +119,19 @@
               </ng-container>
             </ng-container>
           </ng-container>
+          
+          <div class="line-break"></div>
 
-            <div class="line-break"></div>
-            <!-- If Cards -->
-            <ng-container *ngIf="section.linkCards">
-              <div *ngFor="let card of section.linkCards" class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
-                <div *ngIf="card.image" class="card-image">
-                  <img [src]="card.image.url" />
-                </div>
-                <div class="cards" (click)="clickCard(card.url)">
-                  <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
-                  <p class="sdds-headline-06 sdds-text-blue-900">
-                    {{card.description}}
-                    <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
-                  </p>
-                  <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
-                    {{card.detail}}
-                  </p>
-                  <span class="card-link" *ngIf="card.type == 'download'"><c-icon name='scania-save'></c-icon></span>
-                  <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'"><c-icon name='scania-arrow'></c-icon></span>
-                </div>
-              </div>
+          <!-- If Cards -->
+          <ng-container *ngIf="section.linkCards">
+            <sdds-card *ngFor="let card of section.linkCards"
+            [card]="card"
+            class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
+            </sdds-card>
           </ng-container>
 
           <div class="line-break"></div>
-          
+
           <!-- If Dos and Donts -->
           <ng-container *ngIf="section.dosAndDonts">
             <div *ngFor="let item of section.dosAndDonts" class="no-padding sdds-col-sm-4 sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4">
