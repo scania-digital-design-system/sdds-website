@@ -42,7 +42,7 @@
     // General spacing for all elements
 
     p{
-      margin-bottom: var(--sdds-spacing-element-32);
+      margin-bottom: var(--sdds-spacing-element-24);
       br{
         display: none;
       }
@@ -63,7 +63,8 @@
 
     figure,
     table{
-      margin-bottom: var(--sdds-spacing-element-32);
+      margin-top: var(--sdds-spacing-element-8);
+      margin-bottom: var(--sdds-spacing-element-24);
     }
 
     img {
