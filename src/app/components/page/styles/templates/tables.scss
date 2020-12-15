@@ -38,6 +38,13 @@
     }
     
     &.sdds-table-font-preview{
+      &,
+      tbody,
+      tr,
+      thead{
+        display: block;
+        width: 100%;
+      }
       tbody{
         tr{
           display: flex;
@@ -50,6 +57,8 @@
             padding-left: var(--sdds-spacing-element-16);
             padding-bottom: var(--sdds-spacing-element-24);
             width: 50%;
+            display: block;
+            overflow: hidden;
             border-bottom: 0 ;
             &:first-child{
               color: var(--sdds-grey-400);
@@ -72,11 +81,19 @@
 
     @media (min-width:1056px) {
       &.sdds-table-font-preview{
+        &,
+        tbody,
+        tr,
+        thead{
+          display: revert;
+          width: auto;
+        }
         tbody{
           tr{
             display: table-row;
             flex: none;
             td{
+              display: table-cell;
               &:first-child{
                 width: 144px;
               }
