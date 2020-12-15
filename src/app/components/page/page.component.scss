@@ -50,6 +50,9 @@
         display: block;
       }
     }
+    figcaption p{
+      margin-bottom: 0;
+    }
 
     .lead-text {
       margin-bottom: var(--sdds-spacing-element-16);
