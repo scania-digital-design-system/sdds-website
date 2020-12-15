@@ -110,6 +110,9 @@ fragment detail on Content {
         title
         description
         info
+        image {
+          url
+        }
         detail
         type
         url
