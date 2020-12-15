@@ -1,6 +1,6 @@
-<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}'></Content-Header>
+<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}' [url]='content.url'></Content-Header>
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
-<div class="nav sdds-container-push-fluid">
+<div *ngIf="content.url !== 'home'" class="nav sdds-container-push-fluid">
   <div class="sdds-row">
     <ul id='page-tabs' class='no-padding sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4' role='tablist' *ngIf='content.showTabs'>
       <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
@@ -14,7 +14,12 @@
 
 <router-outlet></router-outlet>
 
-<div class="tab-content sdds-container-push">
+<!-- Landing page -->
+<div *ngIf="content.url === 'home'" class="tab-content landing-page">
+  <Landing-Page [page]="tabContent.pageContent[0].content"></Landing-Page>
+</div>
+
+<div *ngIf="content.url !== 'home'" class="tab-content sdds-container-push">
   <div class="sdds-row">
 
     <div class="tab-pane show active" *ngIf="tabContent.length > 1 || tabContent!==undefined ">
@@ -77,26 +82,19 @@
               </ng-container>
   
               </ng-container>
+              
               <div class="line-break"></div>
+
               <!-- If Cards -->
               <ng-container *ngIf="section.linkCards">
-                <div *ngFor="let card of section.linkCards" class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
-                  <div class="cards" (click)="clickCard(card.url)">
-                    <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
-                    <p class="sdds-headline-06 sdds-text-blue-900">
-                      {{card.description}}
-                      <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
-                    </p>
-                    <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
-                      {{card.detail}}
-                    </p>
-                    <span class="card-link" *ngIf="card.type == 'download'"><c-icon name='scania-save'></c-icon></span>
-                    <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'"><c-icon name='scania-arrow'></c-icon></span>
-                  </div>
-                </div>
-  
+                <sdds-card *ngFor="let card of section.linkCards"
+                [card]="card"
+                class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
+                </sdds-card>
               </ng-container>
+
               <div class="line-break"></div>
+
               <!-- If Dos and Donts -->
               <ng-container *ngIf="section.dosAndDonts">
                 <div *ngFor="let item of section.dosAndDonts" class="no-padding sdds-col-sm-4 sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4">

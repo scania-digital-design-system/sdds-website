@@ -119,6 +119,7 @@
                         "title": "Resources ",
                         "description": "Pictograms",
                         "info": "2.5Mb",
+                        "image": null,
                         "detail": "Detail of card",
                         "type": "download",
                         "url": "https://digitaldesign.scania.com/design/UIkit.xd"
@@ -128,6 +129,7 @@
                         "title": "Resources",
                         "description": "Pictogram",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "linkInternal",
                         "url": "/home"
@@ -137,6 +139,7 @@
                         "title": "Resources",
                         "description": "Pictograms",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "linkExternal",
                         "url": "https://github.com/scania-digital-design-system/sdds"
@@ -146,6 +149,7 @@
                         "title": "Resources",
                         "description": "Pictograms",
                         "info": "2.5Mb",
+                        "image": null,
                         "detail": "This is something you can click",
                         "type": "linkExternal",
                         "url": "https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg"
@@ -298,6 +302,588 @@
       "submenus": []
     },
     {
+      "id": "66",
+      "url": "contact",
+      "title": "Support Contact",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "126",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "143",
+                "title": "Support Contact",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "222",
+                    "Title": null,
+                    "Text": "##### Do you need help within development?\nPlease start by browsing the FAQ to see if there´s already an answer to your question. If not, please reach out to us in Teams or GitHub.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "133",
+                    "Title": "",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "47",
+                        "title": "Support",
+                        "description": "Development FAQ",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "48",
+                        "title": "Support",
+                        "description": "Github repositories",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      },
+                      {
+                        "id": "49",
+                        "title": "Support",
+                        "description": "Development in Teams",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "223",
+                    "Title": null,
+                    "Text": "##### Need help within design?\nPlease browse the FAQ  to see if there’s already an answer to your question. If not please get in touch with us through Teams and we'll do our best to help out.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "135",
+                    "Title": "",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "52",
+                        "title": "Support",
+                        "description": "Design FAQ",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "53",
+                        "title": "Support",
+                        "description": "Design in Teams",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "224",
+                    "Title": null,
+                    "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "136",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "54",
+                        "title": "Support",
+                        "description": "Contribute",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-08T12:07:54.429Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "54",
+      "url": "faqs",
+      "title": "Support FAQs",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "127",
+          "title": "General",
+          "active": true,
+          "pageContent": [
+            {
+              "content": null
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "132",
+          "title": "Design",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "134",
+                "title": "Support FAQ Design",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "117",
+                    "Title": null,
+                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-14T10:32:50.537Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "133",
+          "title": "Development",
+          "active": true,
+          "pageContent": [
+            {
+              "content": null
+            }
+          ]
+        }
+      ],
+      "submenus": [
+        {
+          "id": "56",
+          "url": "faq-development",
+          "title": "Development",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "url": "https://www.scania.com/ux-library/en/home.html",
+      "title": "ComOn editors",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [],
+      "submenus": []
+    },
+    {
+      "id": "45",
+      "url": "https://scania.github.io/corporate-ui-docs/mobile-apps/",
+      "title": "Mobile apps",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [],
+      "submenus": []
+    },
+    {
+      "id": "3",
+      "url": "support",
+      "title": "Support",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "37",
+          "pageContent": []
+        }
+      ],
+      "submenus": [
+        {
+          "id": "54",
+          "url": "faqs",
+          "title": "Support FAQs",
+          "thumbnail": null
+        },
+        {
+          "id": "66",
+          "url": "contact",
+          "title": "Support Contact",
+          "thumbnail": null
+        },
+        {
+          "id": "101",
+          "url": "page-spec",
+          "title": "Page-spec",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "url": "home",
+      "title": "Scania Digital Design System",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "1",
+          "pageContent": [
+            {
+              "content": {
+                "id": "37",
+                "title": "Scania Digital Design System",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "424",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "Scania Digital Design System",
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg"
+                        }
+                      ]
+                    },
+                    "id": "84"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "26",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "Introduction"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "The design system supports the design and development of digital solutions at Scania. The purpose is to secure a coherent and premium brand and user experience across all of Scania's digital touchpoints.\n\n[Get Started](/getting-started/overview)"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "181",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "139",
+                        "title": "Foundation",
+                        "description": "Unit & Grid System",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/5f0ea16f94104601a70e1c5af346d615.png"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "140",
+                        "title": "Foundation",
+                        "description": "Colour",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/9aeaf5e909f145ca9bd165097a00fc88.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "182",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "141",
+                        "title": "Foundation",
+                        "description": "Typography",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/b0abc96a43d34e4cba87d63c3b3cbc5b.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "142",
+                        "title": "Foundation",
+                        "description": "Spacing",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/e3636061d33e4c1198a9e46903fd564a.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "143",
+                        "title": "Components",
+                        "description": "Overview",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a7eafc8c85f54196b6873496ecb7316e.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "144",
+                        "title": "Foundation",
+                        "description": "Pictograms",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/9dbe7e106ac34d76b4a6a62abdf97226.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "183",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "145",
+                        "title": "Resources",
+                        "description": "Media bank",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1e70c35fb37b46548526b7f58c1e39f4.jpg"
+                        },
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "27",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "Resources"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "Visit our resource section, where we have gathered a library of usable assets for both designing and developing functional and expressive applications."
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "184",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "146",
+                        "title": "Resources",
+                        "description": "Design",
+                        "info": null,
+                        "image": null,
+                        "detail": "UI Kit & Grid Systems in downloadable files.",
+                        "type": "linkInternal",
+                        "url": "/resources/design"
+                      },
+                      {
+                        "id": "147",
+                        "title": "Resources",
+                        "description": "Brand",
+                        "info": null,
+                        "image": null,
+                        "detail": "Brand resources such as manuals, typeface, pictograms and imagery.",
+                        "type": "linkInternal",
+                        "url": "/resources/brand"
+                      },
+                      {
+                        "id": "148",
+                        "title": "Resources",
+                        "description": "Development",
+                        "info": null,
+                        "image": null,
+                        "detail": "Development resources such as repositories and example pages in various types of frameworks.",
+                        "type": "linkInternal",
+                        "url": "/resources/development"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumns",
+                    "id": "28",
+                    "Title": null,
+                    "ParagraphLeft": {
+                      "Introduction": null,
+                      "textfield": "Contribute"
+                    },
+                    "ParagraphRight": {
+                      "Introduction": null,
+                      "textfield": "Do you think something is missing that should be in SDDS?"
+                    }
+                  }
+                ],
+                "updated_at": "2020-06-04T09:35:01.660Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "23",
+      "url": "contribution",
+      "title": "Contribution",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "40",
+          "pageContent": [
+            {
+              "content": {
+                "id": "46",
+                "title": "Contribute information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "583",
+                    "Title": "",
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "The Scania design system welcomes contributions from the  whole organisation. Together, we can grow Scania design system and make it a better framework.",
+                      "Introduction": true,
+                      "id": "133"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "584",
+                    "Title": "",
+                    "Text": "**Information**\n\nBecause Scania design system provides everything from the abstract patterns of a design system to the nitty-gritty implementation of accessibility for components, contributions to Scania design system can take many forms, and each of them will correspond to part of the full process.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "118",
+                    "Title": "cards",
+                    "Images": [
+                      {
+                        "id": "400",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/eb23ddb6197041269c7cff7348c9bbf8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "401",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/935422fe8f7847e09497d61f31958d70.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "402",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/61f1ddecc90547198bdc8517bab29f0c.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-09T09:50:49.286Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "37",
       "url": "design",
       "title": "Getting started Design",
@@ -345,6 +931,7 @@
                         "title": "Figma",
                         "description": "Grid System",
                         "info": "2.9 mb",
+                        "image": null,
                         "detail": null,
                         "type": "download",
                         "url": "https://sdds-cms.s3.amazonaws.com/09db45ff559b414486b0e3bd1e2ea551.fig"
@@ -412,6 +999,7 @@
                         "title": "Contribute",
                         "description": "Request a feature",
                         "info": null,
+                        "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
                         "type": "linkInternal",
                         "url": null
@@ -421,8 +1009,9 @@
                         "title": "Contribute",
                         "description": "Propose a new design",
                         "info": null,
+                        "image": null,
                         "detail": "A new design could be a new component, icon etc or a change to an existing asset of the design system. ",
-                        "type": "linkInternal",
+                        "type": null,
                         "url": null
                       }
                     ],
@@ -548,6 +1137,7 @@
                         "title": "Contribute",
                         "description": "Report a bug",
                         "info": "",
+                        "image": null,
                         "detail": "An error that causes something to unexpectedly quit or behave in an unintended manner.",
                         "type": "linkExternal",
                         "url": null
@@ -557,6 +1147,7 @@
                         "title": "Contribute",
                         "description": "Request a feature",
                         "info": null,
+                        "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
                         "type": "linkExternal",
                         "url": null
@@ -1014,518 +1605,15 @@
       "submenus": []
     },
     {
-      "id": "38",
-      "url": "overview",
-      "title": "Getting started Overview",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "173",
-          "title": "Introduction",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "149",
-                "title": "Getting Started Overview Introduction",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "250",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "Welcome to SDDS, Scania Digital Design System for products and digital experiences!",
-                      "Introduction": true,
-                      "id": "32"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "251",
-                    "Title": "Introduction",
-                    "Text": "The design system supports the design and development of digital solutions at Scania. The purpose is to secure a coherent and premium brand and user experience across all of Scania's digital touchpoints.\n\nThe main pillars of our Design System are the following:\n\n**Foundation**<br/>\nA resource for principles and styleguide that are considered as the foundations for conceptualization of digital design solutions. \n\n**Components**<br/>\nOur smaller, yet important, interactive building blocks of the design system. These should be used when creating a new digital solution.\n\n**Patterns**<br/>\nPatterns usually consist of multiple components that handle common user objectives and occurring problems. They could be seen as best practices and general solutions for how our users achieves a goal inside our applications.\n\n**Resources**<br/>\nA collection of knowledge assets, tools and downloadable assets to help our designers and developers when creating new digital solutions.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "252",
-                    "Title": "Contribute",
-                    "Text": "Scanias Digital Design System is an active organism, constantly evolving and adopting to meet the demands of our users. Therefore we strongly encourage and welcome contributions from the whole organisation. Together, we can update and make SDDS a better design system.\n\nFeel free to reach out to us if you want to request a feature or propose a new design.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "152",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "82",
-                        "title": "Contribute",
-                        "description": "Request a feature",
-                        "info": null,
-                        "detail": "Functionality is essentially what the website can do and how it works.",
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "83",
-                        "title": "Contribute",
-                        "description": "Propose a new design",
-                        "info": null,
-                        "detail": "A new design could be a new component, icon etc. or a change to an existing asset of the design system. ",
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T09:51:28.718Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "34",
-      "url": "development",
-      "title": "Resources Development",
+      "id": "55",
+      "url": "faq-design",
+      "title": "Design",
       "thumbnail": null,
       "showTabs": null,
       "pageStructure": [
         {
           "__typename": "ComponentPagePluginArticle",
-          "id": "27",
-          "pageContent": [
-            {
-              "content": {
-                "id": "154",
-                "title": "Resources Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "264",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Here you can find all development resources for SDDS  including Github repos and page examples in different framework.",
-                      "Introduction": true,
-                      "id": "37"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "132",
-                    "Title": "Github repository",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "46",
-                        "title": "Github",
-                        "description": "Components repo",
-                        "info": null,
-                        "detail": "This repo contains design system components, themes, and demo page. You can also find components presented in Storybook in this repo.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "8",
-                    "Title": "Example pages",
-                    "Images": [],
-                    "texts": [
-                      {
-                        "textfield": "Check out some example pages below to see how the components and themes work in different frameworks.",
-                        "Introduction": null,
-                        "id": "137"
-                      }
-                    ],
-                    "linkCards": [
-                      {
-                        "id": "30",
-                        "title": "Github",
-                        "description": "Angular",
-                        "info": "",
-                        "detail": "Design system components used in Angular application.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-angular"
-                      },
-                      {
-                        "id": "31",
-                        "title": "Github",
-                        "description": "React",
-                        "info": null,
-                        "detail": "Design system components used in React application.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-react"
-                      },
-                      {
-                        "id": "32",
-                        "title": "Github",
-                        "description": "Vue",
-                        "info": null,
-                        "detail": "Design system components used in Vue application",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-vue"
-                      },
-                      {
-                        "id": "33",
-                        "title": "Github",
-                        "description": "HTML",
-                        "info": null,
-                        "detail": "Simple HTML setup using design system components.",
-                        "type": "linkExternal",
-                        "url": "https://codepen.io/corporate-ui/pen/OYmqpr"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T10:28:45.351Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "66",
-      "url": "contact",
-      "title": "Support Contact",
-      "thumbnail": null,
-      "showTabs": false,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "126",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "143",
-                "title": "Support Contact",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "222",
-                    "Title": null,
-                    "Text": "##### Do you need help within development?\nPlease start by browsing the FAQ to see if there´s already an answer to your question. If not, please reach out to us in Teams or GitHub.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "133",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "47",
-                        "title": "Support",
-                        "description": "Development FAQ",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "48",
-                        "title": "Support",
-                        "description": "Github repositories",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      },
-                      {
-                        "id": "49",
-                        "title": "Support",
-                        "description": "Development in Teams",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "223",
-                    "Title": null,
-                    "Text": "##### Need help within design?\nPlease browse the FAQ  to see if there’s already an answer to your question. If not please get in touch with us through Teams and we'll do our best to help out.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "135",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "52",
-                        "title": "Support",
-                        "description": "Design FAQ",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "53",
-                        "title": "Support",
-                        "description": "Design in Teams",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "224",
-                    "Title": null,
-                    "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "136",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "54",
-                        "title": "Support",
-                        "description": "Contribute",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-08T12:07:54.429Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "56",
-      "url": "faq-development",
-      "title": "Development",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "33",
-          "pageContent": [
-            {
-              "content": {
-                "id": "135",
-                "title": "Support FAQ Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "6",
-                    "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n\n\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n\n\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "145",
-                    "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "146",
-                    "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "147",
-                    "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "148",
-                    "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-14T10:32:56.432Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "54",
-      "url": "faqs",
-      "title": "Support FAQs",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "127",
-          "title": "General",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "143",
-                "title": "Support Contact",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "222",
-                    "Title": null,
-                    "Text": "##### Do you need help within development?\nPlease start by browsing the FAQ to see if there´s already an answer to your question. If not, please reach out to us in Teams or GitHub.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "133",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "47",
-                        "title": "Support",
-                        "description": "Development FAQ",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "48",
-                        "title": "Support",
-                        "description": "Github repositories",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      },
-                      {
-                        "id": "49",
-                        "title": "Support",
-                        "description": "Development in Teams",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "223",
-                    "Title": null,
-                    "Text": "##### Need help within design?\nPlease browse the FAQ  to see if there’s already an answer to your question. If not please get in touch with us through Teams and we'll do our best to help out.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "135",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "52",
-                        "title": "Support",
-                        "description": "Design FAQ",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "53",
-                        "title": "Support",
-                        "description": "Design in Teams",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "224",
-                    "Title": null,
-                    "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "136",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "54",
-                        "title": "Support",
-                        "description": "Contribute",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-08T12:07:54.429Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "132",
-          "title": "Design",
-          "active": true,
+          "id": "35",
           "pageContent": [
             {
               "content": {
@@ -1748,56 +1836,24 @@
                     "Title": null,
                     "Images": [
                       {
-                        "id": "384",
-                        "label": "Deafult ",
-                        "caption": "Use as primary button size",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8abd814abe0c4f15a86ecc0acee2ec62.png"
-                          }
-                        ]
+                        "id": "82",
+                        "title": "Contribute",
+                        "description": "Request a feature",
+                        "info": null,
+                        "image": null,
+                        "detail": "Functionality is essentially what the website can do and how it works.",
+                        "type": "linkExternal",
+                        "url": null
                       },
                       {
-                        "id": "385",
-                        "label": "Medium ",
-                        "caption": "Use for narrowed spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/de0b97c9b47846f6b2a35a6fc341c682.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "386",
-                        "label": "Small ",
-                        "caption": "Use for very narrowed spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3275e0560b1342d79a992a819ba286de.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "387",
-                        "label": "Full bleed ",
-                        "caption": "Fluid width in certain components",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d2c998e03d5740c883a994a33d11fd16.png"
-                          }
-                        ]
+                        "id": "83",
+                        "title": "Contribute",
+                        "description": "Propose a new design",
+                        "info": null,
+                        "image": null,
+                        "detail": "A new design could be a new component, icon etc \nor a change to an existing asset of the design system. ",
+                        "type": null,
+                        "url": null
                       }
                     ],
                     "texts": [],
@@ -1968,632 +2024,115 @@
               }
             }
           ]
-        },
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "34",
+      "url": "development",
+      "title": "Resources Development",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
         {
-          "__typename": "ComponentPagePluginTab",
-          "id": "18",
-          "title": "Style",
-          "active": true,
+          "__typename": "ComponentPagePluginArticle",
+          "id": "27",
           "pageContent": [
             {
               "content": {
-                "id": "156",
-                "title": "Components Button Style",
+                "id": "154",
+                "title": "Resources Development",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "291",
-                    "Title": "Colour",
-                    "Text": "Our buttons come in four different types and a set of states. The types along with the states vary in colours. \n\n**Primary button**\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n    <th>Icon</th>\n    <th>Text</th>  \n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$blue-700</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue-600</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-500</td>\n    <td>$blue-700</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Clicked</td>\n    <td>$blue-800</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$gray-50</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "41",
+                    "id": "264",
                     "Title": null,
-                    "Images": [
-                      {
-                        "id": "146",
-                        "label": "Default",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a35ae0e90b81455ba08aa2637bf884fd.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "147",
-                        "label": "Hover",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2b6775b03f3444f5b578bb107766becb.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "148",
-                        "label": "Focused",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fbcd5fbaefa542b18e0635f1f3d39ec9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "149",
-                        "label": "Clicked",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6abfc1ec82f246869e415e360f9b4ed8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "150",
-                        "label": "Disabled",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8a0fa3dd41f54c55809098061fc132ed.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "360",
-                    "Title": null,
-                    "Text": "**Secondary button**\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n    <th>Icon</th>\n    <th>Text</th>  \n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n     <td>$blue-700</td>\n     <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue-600</td>\n    <td>$blue-600</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-500</td>\n    <td>$blue-700</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-800</td>\n    <td>$blue-800</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$gray-50</td>\n    <td>$blue-200</td>\n     <td>$white</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "42",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "151",
-                        "label": "Default",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e47315bf2006427fa572c5aee05461a4.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "152",
-                        "label": "Hover",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2ff5826be7d3408fbf132c6e8aae0e77.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "153",
-                        "label": "Focused",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b8a5e2b1c50d4a9cbf140038c66d9669.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "154",
-                        "label": "Clicked",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/91e00a8748d048d8b9ebb56606f56bbe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "155",
-                        "label": "Disabled",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d5e285779a0a43b88cc41272e08c892d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "361",
-                    "Title": null,
-                    "Text": "**Ghost button**\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n    <th>Icon</th>\n    <th>Text</th>  \n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>-</td>\n    <td>-</td>\n     <td>$blue-700</td>\n     <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue-100</td>\n    <td>-</td>\n     <td>$blue-700</td>\n     <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-200</td>\n    <td>$blue-300</td>\n     <td>$blue-700</td>\n     <td>$blue-700</td>\n  </tr>\n<tr>\n    <td>Clicked</td>\n    <td>$blue-300</td>\n    <td>-</td>\n     <td>$blue-700</td>\n     <td>$blue-700</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>-</td>\n    <td>-</td>\n     <td>$gray-200</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "43",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "156",
-                        "label": "Default",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e9cf4e5f2a0d4756a8ae28826ec65d0b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "157",
-                        "label": "Hover",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0815c0cf84b94ab88c7f15d5293e17a4.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "158",
-                        "label": "Focused",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8249dc49695049fdbf9808e7bcf53171.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "159",
-                        "label": "Clicked",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/10b61808c8a645a2bcf1e0038bb7f0ad.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "160",
-                        "label": "Disabled",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/10fffb21816049328c988a91f8538eab.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "362",
-                    "Title": null,
-                    "Text": "**Danger button**\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n    <th>Icon</th>\n    <th>Text</th>  \n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$red-600</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$red-400</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$red-400</td>\n    <td>$red-700</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Clicked</td>\n    <td>$red-700</td>\n    <td>-</td>\n     <td>$white</td>\n     <td>$white</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$gray-200</td>\n    <td>-</td>\n     <td>$gray-200</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "44",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "161",
-                        "label": "Default",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/81b792aabc934b42aba4b1a06b74cc1c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "162",
-                        "label": "Hover",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/707671a7d44444d2a23a80d08e8914df.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "163",
-                        "label": "Focused",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e64b76dc17ba4e37be708fd2350734fb.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "164",
-                        "label": "Clicked",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/85e7e60f42e84524ba38f325dec8208f.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "165",
-                        "label": "Disabled",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/430e2bb46ec54dd4bc4550b671d06987.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "363",
-                    "Title": "Sizing",
-                    "Text": "A button contains at least two elements; a text label, an icon or both in combination with a container. Depending on the button size, the spacing inside the button to its elements varies. \n\nWhen a button is using a text label, the width of the button varies based on text labels length. A full bleed button works differently. Instead of growing with the text labels length, it bleeds to the edges of the component or pattern its placed in.\n\n<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n    <th>Icon</th> \n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>Fluid</td>\n    <td>56/14</td>\n     <td>16X16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td>\n    <td>48/12</td>\n     <td>16X16</td>\n  </tr>\n  <tr>\n    <td>Small</td>\n    <td>Fluid</td>\n    <td>40/10</td>\n     <td>16X16</td>\n  </tr>\n<tr>\n    <td>Full bleed</td>\n    <td>Fluid</td>\n    <td>56/14, 48/12, 40/10</td>\n     <td>16X16</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "89",
-                    "Title": "Default",
-                    "Images": [
-                      {
-                        "id": "283",
-                        "label": "",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a83314150d774ad09197b5c703d95c10.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "284",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/32cad151aa0e45989736f8cf2361c080.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "285",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a2ec4f62f47249ff9a96281f0f53e142.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "286",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ad67144f3e6d408f9896131b6bcd3ab7.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "90",
-                    "Title": "Medium",
-                    "Images": [
-                      {
-                        "id": "287",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a9a14ac0a6304791b47ae7bb50546370.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "288",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/85aa5f3a220040d38136720d76351681.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "289",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/966953d55ba64264a127f7a84c7b9525.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "290",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6d5c2df54c7844fb9b7e471b2196267a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "91",
-                    "Title": "Small",
-                    "Images": [
-                      {
-                        "id": "291",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b52e326453f6498a8e14c936b63092bd.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "292",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b087b4a3750a459abc137ca538b31542.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "293",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e2e28f20ecb7469eb4279eb54fd0f16b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "294",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bcab6812ede64ca288f093343aa2eb35.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "92",
-                    "Title": "Full bleed",
-                    "Images": [
-                      {
-                        "id": "295",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f885c895b20a4baa924483ffa511f617.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "296",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c63c90a4da6d4d878286126655dbf49b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "297",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c1046296f15b47d2a56e51b140eeb15d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "446",
-                    "Title": "Typography",
-                    "Text": "The text label inside a button should start with the first letter set in upper case, and the remaining letters in lower case. For all of our button types and sizes, we are usign the same typography. \n\n<table>\n<thead>\n  <tr>\n    <th>Text style</th>\n    <th>Formatting</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$detail-02</td>\n    <td>First letter set in upper case, remaining in lower case</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "447",
-                    "Title": "Corner radius",
-                    "Text": "Our button containers have rounded corners with a 4px / 1em corner radius. \n\n<table>\n<thead>\n  <tr>\n    <th>Corner radious</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Applied on all four corners of button container</td>\n  </tr>\n</tbody>\n</table>\n\n![text](https://sdds-cms.s3.amazonaws.com/6627093fa0584cfdb61d318ae95d4e6b.png)\n\n",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-14T10:40:49.848Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "17",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q1",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
+                    "Text": null,
                     "LeadText": {
-                      "textfield": "We are still working on this page. It will be out by Q1 2021.",
+                      "textfield": "Here you can find all development resources for SDDS  including Github repos and page examples in different framework.",
                       "Introduction": true,
-                      "id": "183"
+                      "id": "37"
                     }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "132",
+                    "Title": "Github repository",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "46",
+                        "title": "Github",
+                        "description": "Components repo",
+                        "info": null,
+                        "image": null,
+                        "detail": "This repo contains design system components, themes, and demo page. You can also find components presented in Storybook in this repo.",
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "8",
+                    "Title": "Example pages",
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "Check out some example pages below to see how the components and themes work in different frameworks.",
+                        "Introduction": null,
+                        "id": "137"
+                      }
+                    ],
+                    "linkCards": [
+                      {
+                        "id": "30",
+                        "title": "Github",
+                        "description": "Angular",
+                        "info": "",
+                        "image": null,
+                        "detail": "Design system components used in Angular application.",
+                        "type": "linkExternal",
+                        "url": null
+                      },
+                      {
+                        "id": "31",
+                        "title": "Github",
+                        "description": "React",
+                        "info": null,
+                        "image": null,
+                        "detail": "Design system components used in React application.",
+                        "type": "linkExternal",
+                        "url": null
+                      },
+                      {
+                        "id": "32",
+                        "title": "Github",
+                        "description": "Vue",
+                        "info": null,
+                        "image": null,
+                        "detail": "Design system components used in Vue application",
+                        "type": "linkExternal",
+                        "url": null
+                      },
+                      {
+                        "id": "33",
+                        "title": "Github",
+                        "description": "HTML",
+                        "info": null,
+                        "image": null,
+                        "detail": "Simple HTML setup using design system components.",
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
+                "updated_at": "2020-12-07T10:28:45.351Z"
               }
             }
           ]
@@ -2602,53 +2141,47 @@
       "submenus": []
     },
     {
-      "id": "4",
-      "url": "components",
-      "title": "Components",
+      "id": "35",
+      "url": "resources",
+      "title": "Resources",
       "thumbnail": null,
       "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "2",
-          "pageContent": []
-        }
-      ],
+      "pageStructure": [],
       "submenus": [
         {
-          "id": "5",
-          "url": "buttons",
-          "title": "Buttons",
-          "thumbnail": {
-            "id": "46",
-            "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
-          }
-        },
-        {
-          "id": "58",
-          "url": "divider",
-          "title": "Divider",
+          "id": "34",
+          "url": "development",
+          "title": "Resources Development",
           "thumbnail": null
         },
         {
-          "id": "102",
+          "id": "60",
           "url": "overview",
-          "title": "Components Overview",
+          "title": "Resources Overview",
           "thumbnail": null
         },
         {
-          "id": "103",
-          "url": "textfields",
-          "title": "Text fields",
+          "id": "61",
+          "url": "brand",
+          "title": "Resources Brand",
+          "thumbnail": null
+        },
+        {
+          "id": "63",
+          "url": "design",
+          "title": "Resources Design",
           "thumbnail": null
         }
       ]
     },
     {
-      "id": "102",
-      "url": "overview",
-      "title": "Components Overview",
-      "thumbnail": null,
+      "id": "10",
+      "url": "button-groups",
+      "title": "Button groups",
+      "thumbnail": {
+        "id": "45",
+        "url": "https://sdds-cms.s3.amazonaws.com/6a21a28eadd74b6f88fe13227b2a8490.png"
+      },
       "showTabs": true,
       "pageStructure": [
         {
@@ -2726,24 +2259,6 @@
       "submenus": []
     },
     {
-      "id": "25",
-      "url": "https://www.scania.com/ux-library/en/home.html",
-      "title": "ComOn editors",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [],
-      "submenus": []
-    },
-    {
-      "id": "45",
-      "url": "https://scania.github.io/corporate-ui-docs/mobile-apps/",
-      "title": "Mobile apps",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [],
-      "submenus": []
-    },
-    {
       "id": "42",
       "url": "accessibility",
       "title": "Foundation Accessibility",
@@ -2788,219 +2303,6 @@
                   }
                 ],
                 "updated_at": "2020-12-08T13:24:44.066Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "2",
-      "url": "home",
-      "title": "Scania Digital Design System",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "1",
-          "pageContent": [
-            {
-              "content": {
-                "id": "37",
-                "title": "Scania Digital Design System",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "424",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": "Scania Digital Design System",
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg"
-                        }
-                      ]
-                    },
-                    "id": "84"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "26",
-                    "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "Introduction"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "The design system supports the design and development of digital solutions at Scania. The purpose is to secure a coherent and premium brand and user experience across all of Scania's digital touchpoints.\n\n[Get Started](/getting-started/overview)"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "181",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "139",
-                        "title": "Foundation",
-                        "description": "Unit & Grid System",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "140",
-                        "title": "Foundation",
-                        "description": "Colour",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "182",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "141",
-                        "title": "Foundation",
-                        "description": "Typography",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "142",
-                        "title": "Foundation",
-                        "description": "Spacing",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "143",
-                        "title": "Components",
-                        "description": "Overview",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "144",
-                        "title": "Foundation",
-                        "description": "Pictograms",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "183",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "145",
-                        "title": "Resources",
-                        "description": "Media bank",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "27",
-                    "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "Resources"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "Visit our resource section, where we have gathered a library of usable assets for both designing and developing functional and expressive applications."
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "184",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "146",
-                        "title": "Resources",
-                        "description": "Design",
-                        "info": null,
-                        "detail": "UI Kit & Grid Systems in downloadable files.",
-                        "type": "linkInternal",
-                        "url": "/resources/design"
-                      },
-                      {
-                        "id": "147",
-                        "title": "Resources",
-                        "description": "Brand",
-                        "info": null,
-                        "detail": "Brand resources such as manuals, typeface, pictograms and imagery.",
-                        "type": "linkInternal",
-                        "url": "/resources/brand"
-                      },
-                      {
-                        "id": "148",
-                        "title": "Resources",
-                        "description": "Development",
-                        "info": null,
-                        "detail": "Development resources such as repositories and example pages in various types of frameworks.",
-                        "type": "linkInternal",
-                        "url": "/resources/development"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumns",
-                    "id": "28",
-                    "Title": null,
-                    "ParagraphLeft": {
-                      "Introduction": null,
-                      "textfield": "Contribute"
-                    },
-                    "ParagraphRight": {
-                      "Introduction": null,
-                      "textfield": "Do you think something is missing that should be in SDDS?"
-                    }
-                  }
-                ],
-                "updated_at": "2020-06-04T09:35:01.660Z"
               }
             }
           ]
@@ -4266,7 +3568,7 @@
                       "id": "896",
                       "label": null,
                       "caption": null,
-                      "size": null,
+                      "size": "Xlarge",
                       "negative": null,
                       "alternate": null,
                       "image": [
@@ -4370,8 +3672,8 @@
                     "Image": {
                       "id": "932",
                       "label": null,
-                      "caption": "Scania Icon PDF Template",
-                      "size": "Large",
+                      "caption": null,
+                      "size": "Xlarge",
                       "negative": null,
                       "alternate": null,
                       "image": [
@@ -4668,7 +3970,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "330",
                     "Title": null,
-                    "Text": "##### Breakpoints\nBelow you will find a defined set of breakpoints, which is available as a grid package at [GitHub](link) and templates in [Figma](link) and [Adobe XD](link).\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Width px / rem</th>\n    <th>Columns</th>\n    <th>Size px / %</th>\n    <th>Margin</th>\n    <th>Padding</th>\n    <th>Gutter</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>320 / 80</td>\n    <td>4</td>\n    <td>48 / 15</td>\n    <td>0</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>672 / 168</td>\n    <td>8</td>\n    <td>48 / 7.5</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>1056 / 264</td>\n    <td>16</td>\n    <td>32 / 3.125</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>1312 / 328</td>\n    <td>16</td>\n    <td>48 / 3.75</td>\n    <td>16 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>1584 / 396</td>\n    <td>16</td>\n    <td>64 / 4.167</td>\n    <td>24 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "**Breakpoints**<br/>\nBelow you will find a defined set of breakpoints, which is available as a grid package at [GitHub](link) and templates in [Figma](link) and [Adobe XD](link).\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Width px / rem</th>\n    <th>Columns</th>\n    <th>Size px / %</th>\n    <th>Margin</th>\n    <th>Padding</th>\n    <th>Gutter</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>320 / 80</td>\n    <td>4</td>\n    <td>48 / 15</td>\n    <td>0</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>672 / 168</td>\n    <td>8</td>\n    <td>48 / 7.5</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>1056 / 264</td>\n    <td>16</td>\n    <td>32 / 3.125</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>1312 / 328</td>\n    <td>16</td>\n    <td>48 / 3.75</td>\n    <td>16 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>1584 / 396</td>\n    <td>16</td>\n    <td>64 / 4.167</td>\n    <td>24 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -4677,6 +3979,25 @@
                     "Title": "Fluid grid",
                     "Text": "A fluid grid allows the page layout to be adaptive, which means that the content will scale and adapt to the breakpoint size. What’s really happening is that the column size is responsive and continuously growing along with the breakpoint width — even after reaching the max. breakpoint.\n \nThis approach is mainly used for dashboards or specific editorial content, where it's more important to size up the content rather than slimming the amount of information down.\n\nIt is possible to have a fluid grid, both for the default grid system, with and without gutters, and also for the grid push system, which you can find out more about in the next section.",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "66",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/082273c4589f4fd69a52942d1e6e5c18.png"
+                        }
+                      ]
+                    },
+                    "id": "33"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4742,6 +4063,7 @@
                         "title": "Github",
                         "description": "Grid elements package",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "linkExternal",
                         "url": null
@@ -4751,6 +4073,7 @@
                         "title": "Figma",
                         "description": "Grid template",
                         "info": null,
+                        "image": null,
                         "detail": "",
                         "type": "download",
                         "url": null
@@ -4760,6 +4083,7 @@
                         "title": "Adobe XD",
                         "description": "Grid template",
                         "info": null,
+                        "image": null,
                         "detail": "",
                         "type": "download",
                         "url": null
@@ -4778,42 +4102,26 @@
           "id": "118",
           "title": "Code",
           "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q1",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "We are still working on this page. It will be out by Q1 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
+          "pageContent": []
         }
       ],
       "submenus": []
     },
     {
-      "id": "23",
-      "url": "contribution",
-      "title": "Contribution",
-      "thumbnail": null,
-      "showTabs": false,
+      "id": "5",
+      "url": "buttons",
+      "title": "Buttons",
+      "thumbnail": {
+        "id": "46",
+        "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
+      },
+      "showTabs": true,
       "pageStructure": [
         {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "40",
+          "__typename": "ComponentPagePluginTab",
+          "id": "16",
+          "title": "Usage",
+          "active": true,
           "pageContent": [
             {
               "content": {
@@ -4868,8 +4176,9 @@
                         "title": "Contribute",
                         "description": "Propose a new design",
                         "info": null,
-                        "detail": "A new design could be a new component, icon etc. or a change to an existing asset of the design system.",
-                        "type": "linkInternal",
+                        "image": null,
+                        "detail": null,
+                        "type": null,
                         "url": null
                       }
                     ],
@@ -4912,14 +4221,167 @@
               }
             }
           ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "17",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "Coming Q1 2021",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
         }
       ],
       "submenus": []
     },
     {
-      "id": "35",
-      "url": "resources",
-      "title": "Resources",
+      "id": "56",
+      "url": "faq-development",
+      "title": "Development",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "33",
+          "pageContent": [
+            {
+              "content": {
+                "id": "135",
+                "title": "Support FAQ Development",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "6",
+                    "Title": "General",
+                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n\n\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n\n\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "145",
+                    "Title": "What is supported",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "146",
+                    "Title": "Migration",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "147",
+                    "Title": "Contribution",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "148",
+                    "Title": "Debug",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-14T10:32:56.432Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "40",
+      "url": "colour",
+      "title": "Foundation Colour",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "12",
+          "pageContent": [
+            {
+              "content": null
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "17",
+      "url": "foundation",
+      "title": "Foundation",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [],
+      "submenus": [
+        {
+          "id": "42",
+          "url": "accessibility",
+          "title": "Foundation Accessibility",
+          "thumbnail": null
+        },
+        {
+          "id": "46",
+          "url": "pictograms",
+          "title": "Foundation Pictograms",
+          "thumbnail": null
+        },
+        {
+          "id": "59",
+          "url": "spacing",
+          "title": "Foundation Spacing",
+          "thumbnail": null
+        },
+        {
+          "id": "64",
+          "url": "unit-grid-system",
+          "title": "Foundation Unit & Grid System",
+          "thumbnail": null
+        },
+        {
+          "id": "65",
+          "url": "foundation-typography",
+          "title": "Foundation Typography",
+          "thumbnail": null
+        },
+        {
+          "id": "67",
+          "url": "foundation-colours",
+          "title": "Foundation Colours",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "url": "components",
+      "title": "Components",
       "thumbnail": null,
       "showTabs": null,
       "pageStructure": [],
@@ -4993,55 +4455,9 @@
       "submenus": []
     },
     {
-      "id": "17",
-      "url": "foundation",
-      "title": "Foundation",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [],
-      "submenus": [
-        {
-          "id": "42",
-          "url": "accessibility",
-          "title": "Foundation Accessibility",
-          "thumbnail": null
-        },
-        {
-          "id": "46",
-          "url": "pictograms",
-          "title": "Foundation Pictograms",
-          "thumbnail": null
-        },
-        {
-          "id": "59",
-          "url": "spacing",
-          "title": "Foundation Spacing",
-          "thumbnail": null
-        },
-        {
-          "id": "64",
-          "url": "unit-grid-system",
-          "title": "Foundation Unit & Grid System",
-          "thumbnail": null
-        },
-        {
-          "id": "65",
-          "url": "foundation-typography",
-          "title": "Foundation Typography",
-          "thumbnail": null
-        },
-        {
-          "id": "67",
-          "url": "foundation-colours",
-          "title": "Foundation Colours",
-          "thumbnail": null
-        }
-      ]
-    },
-    {
-      "id": "21",
-      "url": "getting-started",
-      "title": "Getting started",
+      "id": "51",
+      "url": "content-component",
+      "title": "Content",
       "thumbnail": null,
       "showTabs": null,
       "pageStructure": [],
@@ -5065,48 +4481,6 @@
           "thumbnail": null
         }
       ]
-    },
-    {
-      "id": "8",
-      "url": "breadcrumbs",
-      "title": "Breadcrumbs",
-      "thumbnail": {
-        "id": "44",
-        "url": "https://sdds-cms.s3.amazonaws.com/978c234012d24a918c87ddd12a1b9d92.png"
-      },
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "22",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": null
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "23",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": null
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "24",
-          "title": "Style",
-          "active": false,
-          "pageContent": []
-        }
-      ],
-      "submenus": []
     },
     {
       "id": "67",
@@ -5143,6 +4517,25 @@
                     "Title": "Colour",
                     "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "166",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/8470699ab7dc4d60b077b2a1cb70249c.png"
+                        }
+                      ]
+                    },
+                    "id": "38"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -5236,7 +4629,7 @@
                     "Image": {
                       "id": "172",
                       "label": null,
-                      "caption": "All scales are available at Specifications",
+                      "caption": null,
                       "size": "Xlarge",
                       "negative": null,
                       "alternate": null,
@@ -5250,9 +4643,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "377",
-                    "Title": "Themes",
-                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\nLight theme\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\nDark theme\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
+                    "id": "370",
+                    "Title": null,
+                    "Text": "**Light vs Dark Mode**<br/>\nExample Mockups (not yet created)",
                     "LeadText": null
                   },
                   {
@@ -5300,6 +4693,7 @@
                         "title": "Github",
                         "description": "Colours element package",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "linkExternal",
                         "url": null
@@ -5309,6 +4703,7 @@
                         "title": "RGB",
                         "description": "ASE Colour palette",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "download",
                         "url": null
@@ -5318,6 +4713,7 @@
                         "title": "Figma",
                         "description": "UI Kit",
                         "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "download",
                         "url": null
@@ -5839,19 +5235,21 @@
                     "texts": [],
                     "linkCards": [
                       {
-                        "id": "41",
-                        "title": "Pictograms",
-                        "description": "Library",
-                        "info": "451.6mb",
+                        "id": "89",
+                        "title": "Github",
+                        "description": "Types element package",
+                        "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "download",
                         "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/icons/0.0.3/0.0.3.zip"
                       },
                       {
-                        "id": "42",
-                        "title": "Pictograms",
-                        "description": "Scania Icon PDF Template",
-                        "info": "60kb",
+                        "id": "90",
+                        "title": "Typeface",
+                        "description": "Scania Sans",
+                        "info": null,
+                        "image": null,
                         "detail": null,
                         "type": "download",
                         "url": null
@@ -6111,6 +5509,382 @@
       "submenus": []
     },
     {
+      "id": "59",
+      "url": "spacing",
+      "title": "Foundation Spacing",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "105",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "155",
+                "title": "Foundation Spacing Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "277",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Spacing is just as important as the Unit and Grid System. It helps us to create a harmonious layout, with both vertical and horizontal rhythm.",
+                      "Introduction": true,
+                      "id": "55"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "278",
+                    "Title": "Introduction",
+                    "Text": "By having clear spacing scales, we limit the layout to make use of only a specific number of units instead of using a wide span of various spacing options which quickly escalates and creates an inconsistent experience. We also make sure that we are consistent across our entire components library.\n\nAt Scania, we use two spacing scales which both are based on our Unit System; layout scale and element scale. Both the scales are applicable on vertical and horizontal edges.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "279",
+                    "Title": "Layout scale",
+                    "Text": "The layout scale is used when we position content, components and patterns on a page layout. This scale should always be used when creating new layouts. \n\nShould an application need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale when creating a new token.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "280",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "281",
+                    "Title": "Element scale",
+                    "Text": "The element scale is used when building components where we need smaller units to work with, when defining all detailed work within a component.\n\nShould a component need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale, when creating a new token.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0.5</td>\n    <td>2</td>\n    <td>$spacing-layout-2</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/c4bca33db50d4162bf4fbbc51a6f723d.png'/></td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>4</td>\n    <td>$spacing-layout-4</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/62d5e650a0b04c2da1cb11e00cd758af.png'/></td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4063aadbd8f84bdea27670b994f2087b.png'/></td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>$spacing-layout-12</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/efa8e6e2f22946948ff53ea8cd6bddb1.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/945edcce58a243d3a037d78664ab33b5.png'/></td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>$spacing-layout-20</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/7fecff6b6fc8462496db9107c6cf1487.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0500b5b59da44c52bd3c225a68adaff4.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/81c0156d41524da493222d426864af62.png'/></td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>$spacing-layout-40</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4b5eb0a4dd3d45da823b8ae53d626ae9.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-element-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/f718f11605ad4f8d9c544ad15e8744ab.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n![text](https://sdds-cms.s3.amazonaws.com/5b302c74fbc04cd6a780bd38adce85d6.png)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "283",
+                    "Title": "Exceptions",
+                    "Text": "There are exceptions within Scania user interfaces where we don’t use our spacing element token for spacing elements.\n\n**Centre**\nThis is used when we contextually need to centre an element between two edges, for instance a text within a specific button component.\n\n\n![text](https://sdds-cms.s3.amazonaws.com/d14b02ce29634f3eadb7f97f5aaf4827.png)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-07T12:34:03.283Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "62",
+      "url": "brand",
+      "title": "Brand",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "109",
+          "title": "Manual",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "145",
+                "title": "Resources Brand Manuals",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "234",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Below you will find a comprehensive list of useful Scania Manuals and Guidelines.",
+                      "Introduction": true,
+                      "id": "26"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "235",
+                    "Title": null,
+                    "Text": "##### Scania Identity Manual\n\nThe Scania brand identity has been designed to unite and modernise the brand expression and to support the desired brand image. Our visual identity is defined in the Scania Identity Manual and needs to be used by following the defined rules within this document.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "127",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "39",
+                        "title": "Scania Identity Manual",
+                        "description": "PDF",
+                        "info": "69.5mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "666",
+                    "Title": null,
+                    "Text": "##### Mobile Application Styleguide (Appendix)\n\nTo ensure a strong unified global brand identity and experience, principles for applying the Scania brand assets in mobile applications have been developed. This appendix is part of the Scania Identity Manual.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "128",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "40",
+                        "title": "Mobile Applications Styleguide",
+                        "description": "PDF",
+                        "info": "69.5mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-07T09:02:01.780Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "175",
+          "title": "Logotype",
+          "active": true,
+          "pageContent": []
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "110",
+          "title": "Typeface",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "147",
+                "title": "Resources Brand Typeface",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "245",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice.",
+                      "Introduction": true,
+                      "id": "28"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "246",
+                    "Title": null,
+                    "Text": "#### Scania Sans\n\nTo retain and represent our unique voice in every communication channel, we have our own font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present our information content and the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "123",
+                    "Title": "Resources",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "34",
+                        "title": "Github",
+                        "description": "Type Elements Package",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      },
+                      {
+                        "id": "35",
+                        "title": "Typeface",
+                        "description": "Scania Sans",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-07T09:17:49.937Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "176",
+          "title": "Pictograms",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "159",
+                "title": "Resources Brand Pictograms",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "335",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
+                      "Introduction": true,
+                      "id": "57"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "336",
+                    "Title": null,
+                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](link). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following our [guidelines](link).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "25",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "41",
+                        "title": "Pictograms",
+                        "description": "Library",
+                        "info": "323.2mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      },
+                      {
+                        "id": "42",
+                        "title": "Pictograms",
+                        "description": "Scania Icon PDF Template",
+                        "info": "1.25mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-08T09:34:52.492Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "177",
+          "title": "Media bank",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "150",
+                "title": "Resources Brand Media bank",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "253",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Images and films are efficient tools for telling our stories at Scania, to provide useful information and to create more inspirational and rich experiences.",
+                      "Introduction": true,
+                      "id": "33"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "5",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/b03d8ae0e8cf4b4bbc1f14994cbe3508.jpg"
+                        }
+                      ]
+                    },
+                    "id": "5"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "254",
+                    "Title": null,
+                    "Text": "##### Resources\nAt Scania Media Provider, you will get access to an extensive image and film archive. Visit the website, log in with your Scania/XDS account and start browsing for the imagery that you need.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "129",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "43",
+                        "title": "Media Bank",
+                        "description": "Scania Media Provider",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-07T10:04:00.208Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "58",
       "url": "divider",
       "title": "Divider",
@@ -6361,7 +6135,7 @@
                     "Title": null,
                     "Text": "",
                     "LeadText": {
-                      "textfield": "We are still working on this page. It will be out by Q1 2021.",
+                      "textfield": "Coming Q1 2021",
                       "Introduction": true,
                       "id": "183"
                     }
@@ -6376,272 +6150,23 @@
       "submenus": []
     },
     {
-      "id": "103",
-      "url": "textfields",
-      "title": "Text fields",
+      "id": "61",
+      "url": "brand",
+      "title": "Resources Brand",
       "thumbnail": null,
       "showTabs": true,
       "pageStructure": [
         {
           "__typename": "ComponentPagePluginTab",
-          "id": "184",
-          "title": "Usage",
+          "id": "107",
+          "title": "Manuals",
           "active": true,
           "pageContent": [
             {
               "content": {
-                "id": "203",
-                "title": "Components Text fields usage",
+                "id": "145",
+                "title": "Resources Brand Manuals",
                 "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "912",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "A text field is a component that facilitates entry and editing of text. In general text fields are used to collect and post subsequently information provided by users.",
-                      "Introduction": null,
-                      "id": "213"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "913",
-                    "Title": "Usage",
-                    "Text": "Text fields are used as an integral part of a form (of various kinds) to enable users to edit and post text. Text fields should be legible so that users know where to enter the text. In addition to this, text fields should clearly show its state to convey when text can or cannot be entered.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "914",
-                    "Title": "Types",
-                    "Text": "Text fields have two different types; label inside and label outside.\n\nYou should select text field type based on which context the text field will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the type label inside works well for more narrow spaces and label outside is a good option for forms with a lot of text fields present, making it easier for the users to decode the information.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "368",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "844",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a7a3fa1f46ea42429a1fd82cbf4f6973.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "915",
-                    "Title": "Sizes",
-                    "Text": "There are two different text field sizes: default and medium where default is our primary text field size. Medium could be a good option to use for more narrow spaces. As for types, size could also be selected depending on what works best with the applications design you are working with.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "369",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "845",
-                        "label": "Default",
-                        "caption": "Use as primary text field size",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3951a46759cf489b8b9dc4dcdc18e8c6.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "846",
-                        "label": "Medium",
-                        "caption": "Use mainly for narrow spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a1a70c3b94b641c88375b3bc5c609fc3.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "916",
-                    "Title": "States",
-                    "Text": "Text fields have different states to communicate the fields’ different status for our users.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "370",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "847",
-                        "label": "Default",
-                        "caption": "Interactive element",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f82ecc76033245399dea02e98f10ee1d.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "848",
-                        "label": "Hover",
-                        "caption": "Mouse over",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/32d85ee0cca14a78a303e451ebd15782.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "849",
-                        "label": "Focused",
-                        "caption": "Highlighted by keyboard, voice or mouse",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0f64961058a44ea992197aa375f454d5.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "850",
-                        "label": "Error",
-                        "caption": "Invalid user input",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/abdabfbb523d4504938d50ffc46bcef0.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "851",
-                        "label": "Success",
-                        "caption": "Valid user input",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e6245aa409ae469788aa71b9c59599fe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "852",
-                        "label": "Disabled",
-                        "caption": "Non-interactive",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c7f97f66308b40c7b8f10b8b6ce4545a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "917",
-                    "Title": "Anatomy",
-                    "Text": "A text field contains at least 3 elements; a text label and a container plus input text, when the user have input text. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "371",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "853",
-                        "label": "Label inside",
-                        "caption": "- A. Container <br/>\n- B. Prefix icon/text (optional) <br/>\n- C. Label text <br/>\n- D. Input text <br/>\n- E. Suffix icon/text (optional) <br/>\n- F. Helper text (optional) <br/>",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/add4eec153c94dc38ac356e0ce3d9d6c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "854",
-                        "label": "Label outside",
-                        "caption": "C. Label",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bc45c614f7b0496ca8a2afa41f349bc9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "855",
-                        "label": "No label (when interacted with)",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/32bec55410ca4ffab1b4a6eb60a00f8c.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "918",
-                    "Title": "",
-                    "Text": "**Container**\n\nContainers are the base of the text field, and it is a filled container with a bottom-border. The container has top rounded corners and square bottom corners. The bottom-border varies in height and colour depending on the state to emphasize this.",
-                    "LeadText": null
-                  },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "372",
@@ -6803,43 +6328,14 @@
                     "Title": null,
                     "Images": [
                       {
-                        "id": "864",
-                        "label": "Prefix icon",
-                        "caption": "Example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c377cf0237424202a31e6eb51f05d5e7.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "865",
-                        "label": "Suffix icon",
-                        "caption": "Clear text example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8b50f88c8de64994bf710e391f3d8b11.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "866",
-                        "label": "Suffix icon",
-                        "caption": "Error message example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/12e000467b1345ca941c8d93b2b96427.png"
-                          }
-                        ]
+                        "id": "39",
+                        "title": "Scania Identity Manual",
+                        "description": "PDF",
+                        "info": "69.5mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
                       }
                     ],
                     "texts": [],
@@ -6915,43 +6411,14 @@
                     "Title": null,
                     "Images": [
                       {
-                        "id": "870",
-                        "label": "Helper text",
-                        "caption": "Additional information text",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6d3c20110f664476b01a61e609784c94.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "871",
-                        "label": "Error text",
-                        "caption": "Invalid input text",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/820e17de804b4dd3ac5eb8bde70fc5e3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "872",
-                        "label": "Character counter",
-                        "caption": "Used if there is a character limit",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7e093bbad45245b4a7f9973986ea9254.png"
-                          }
-                        ]
+                        "id": "40",
+                        "title": "Mobile Applications Styleguide",
+                        "description": "PDF",
+                        "info": "69.5mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
                       }
                     ],
                     "texts": [],
@@ -7073,20 +6540,24 @@
                     "linkCards": [],
                     "dosAndDonts": [
                       {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/72320b74365544b5884f7fe1af619210.png"
-                        },
-                        "description": "Short and direct label text",
-                        "id": "36"
+                        "id": "34",
+                        "title": "Github",
+                        "description": "Type Elements Package",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
                       },
                       {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/7c90e4a3b43f4c59834c6ab2caec5e00.png"
-                        },
-                        "description": "Long and complicated label text",
-                        "id": "37"
+                        "id": "35",
+                        "title": "Typeface",
+                        "description": "Scania Sans",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
                       }
                     ]
                   },
@@ -7301,30 +6772,14 @@
                     "Title": null,
                     "Images": [
                       {
-                        "id": "960",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f2ab737e139c488ca3763062fbd3b2c9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "961",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7b2cd0b2e108480faf6dee0fb8b246c1.png"
-                          }
-                        ]
+                        "id": "43",
+                        "title": "Media Bank",
+                        "description": "Scania Media Provider",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": null
                       }
                     ],
                     "texts": [],
@@ -7518,17 +6973,24 @@
                     "Title": null,
                     "Images": [
                       {
-                        "id": "973",
-                        "label": "Center alignment",
-                        "caption": "Text in a full bleed button",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/895b57cb1d4d469b82e3f4fd0ac26ea3.png"
-                          }
-                        ]
+                        "id": "41",
+                        "title": "Pictograms",
+                        "description": "Library",
+                        "info": "323.2mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
+                      },
+                      {
+                        "id": "42",
+                        "title": "Pictograms",
+                        "description": "Scania Icon PDF Template",
+                        "info": "1.25mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": null
                       }
                     ],
                     "texts": [],
@@ -7696,10 +7158,11 @@
                     "texts": [],
                     "linkCards": [
                       {
-                        "id": "89",
-                        "title": "Github",
-                        "description": "Types element package",
-                        "info": null,
+                        "id": "44",
+                        "title": "Figma",
+                        "description": "Grid System",
+                        "info": "5.3mb",
+                        "image": null,
                         "detail": null,
                         "type": "linkExternal",
                         "url": null
@@ -7847,305 +7310,56 @@
                       "Introduction": true,
                       "id": "183"
                     }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "233",
+                    "Title": null,
+                    "Text": "##### Resources\nIt offers high level resources, such as definitions and way of working for design and development teams, as well as downloadable resources, such as UI design kit and various resources for development.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "7",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "15",
+                        "title": "Resources",
+                        "description": "Design",
+                        "info": null,
+                        "image": null,
+                        "detail": "UI Kit & Grid Systems in downloadable files.",
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "16",
+                        "title": "Resources",
+                        "description": "Brand",
+                        "info": null,
+                        "image": null,
+                        "detail": "Brand resources such as manuals, typeface, pictograms and imagery.",
+                        "type": "linkInternal",
+                        "url": null
+                      },
+                      {
+                        "id": "17",
+                        "title": "Resources",
+                        "description": "Development",
+                        "info": null,
+                        "image": null,
+                        "detail": "Development resources such as repositories and example pages in various types of frameworks.",
+                        "type": "linkInternal",
+                        "url": null
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
                 "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "62",
-      "url": "brand",
-      "title": "Brand",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "109",
-          "title": "Manual",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "145",
-                "title": "Resources Brand Manuals",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "234",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Below you will find a comprehensive list of useful Scania Manuals and Guidelines.",
-                      "Introduction": true,
-                      "id": "26"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "235",
-                    "Title": null,
-                    "Text": "##### Scania Identity Manual\n\nThe Scania brand identity has been designed to unite and modernise the brand expression and to support the desired brand image. Our visual identity is defined in the Scania Identity Manual and needs to be used by following the defined rules within this document.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "127",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "39",
-                        "title": "Scania Identity Manual",
-                        "description": "PDF",
-                        "info": "31.2mb",
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/design/Scania_Identity_Manual-Edition_2017-05.pdf"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "666",
-                    "Title": null,
-                    "Text": "##### Mobile Application Styleguide (Appendix)\n\nTo ensure a strong unified global brand identity and experience, principles for applying the Scania brand assets in mobile applications have been developed. This appendix is part of the Scania Identity Manual.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "128",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "40",
-                        "title": "Mobile Applications Styleguide",
-                        "description": "PDF",
-                        "info": "6.9mb",
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/design/Identity_manual-Mobile_apps_DRAFT_March_2020.pdf"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T09:02:01.780Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "175",
-          "title": "Logotype",
-          "active": true,
-          "pageContent": []
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "110",
-          "title": "Typeface",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "147",
-                "title": "Resources Brand Typeface",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "245",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice.",
-                      "Introduction": true,
-                      "id": "28"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "246",
-                    "Title": null,
-                    "Text": "#### Scania Sans\n\nTo retain and represent our unique voice in every communication channel, we have our own font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present our information content and the entire user interface with clear hierarchy.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "123",
-                    "Title": "Resources",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "34",
-                        "title": "Github",
-                        "description": "Type Elements Package",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": null
-                      },
-                      {
-                        "id": "35",
-                        "title": "Typeface",
-                        "description": "Scania Sans",
-                        "info": "",
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/c0af161dabfa4070aac7c01f47c9d89d.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T09:17:49.937Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "176",
-          "title": "Pictograms",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "159",
-                "title": "Resources Brand Pictograms",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "335",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
-                      "Introduction": true,
-                      "id": "57"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "336",
-                    "Title": null,
-                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](link). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following our [guidelines](link).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "25",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "41",
-                        "title": "Pictograms",
-                        "description": "Library",
-                        "info": "451.6mb",
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/icons/0.0.3/0.0.3.zip"
-                      },
-                      {
-                        "id": "42",
-                        "title": "Pictograms",
-                        "description": "Scania Icon PDF Template",
-                        "info": "60kb",
-                        "detail": null,
-                        "type": "download",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-08T09:34:52.492Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "177",
-          "title": "Media bank",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "150",
-                "title": "Resources Brand Media bank",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "253",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Images and films are efficient tools for telling our stories at Scania, to provide useful information and to create more inspirational and rich experiences.",
-                      "Introduction": true,
-                      "id": "33"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "5",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/b03d8ae0e8cf4b4bbc1f14994cbe3508.jpg"
-                        }
-                      ]
-                    },
-                    "id": "5"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "254",
-                    "Title": null,
-                    "Text": "##### Resources\nAt Scania Media Provider, you will get access to an extensive image and film archive. Visit the website, log in with your Scania/XDS account and start browsing for the imagery that you need.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "129",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "43",
-                        "title": "Media Bank",
-                        "description": "Scania Media Provider",
-                        "info": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://media.scania.com/fotoweb/"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T10:04:00.208Z"
               }
             }
           ]
