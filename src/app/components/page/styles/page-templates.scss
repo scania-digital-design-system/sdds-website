@@ -21,6 +21,8 @@
       margin-bottom: 124px;
       a{
         border-bottom: 1px solid var(--sdds-grey-200);
+        text-decoration: none;
+        color: var(--sdds-blue-900);
         &::after{
           content: url('/assets/images/arrow-right.svg');
           margin-left:4px ;
