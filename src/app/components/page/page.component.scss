@@ -47,12 +47,12 @@
     }
 
     .lead-text {
-      margin-bottom: var(--sdds-spacing-element-48);
+      margin-bottom: var(--sdds-spacing-element-16);
     }
 
     .section-title, h4 {
       p { margin: 0; }
-      margin-top: var(--sdds-spacing-element-40);
+      margin-top: var(--sdds-spacing-element-8);
       margin-bottom: var(--sdds-spacing-element-16);
     }
 
@@ -89,6 +89,17 @@
     .lead-text-section + .sdds-one-col-plugin,
     .lead-text-section + div {
       .section-title, h4 {
+        margin-top: 0;
+      }
+    }
+    
+    .lead-text-section + .sdds-images {
+      margin-top: var(--sdds-spacing-element-32);
+    }
+
+    .sdds-one-col-plugin{
+      margin-top: var(--sdds-spacing-element-32);
+      &:first-child{
         margin-top: 0;
       }
     }
