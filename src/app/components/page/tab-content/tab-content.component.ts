@@ -40,7 +40,6 @@ export class TabContentComponent {
         } else {
           return;
         }
-        const generateUrlPipe = new GenerateTabURLPipe();
 
         if(this.content.showTabs) {
           this.tabExist = true;

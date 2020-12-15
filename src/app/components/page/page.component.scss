@@ -102,7 +102,10 @@
       }
     }
     
-    .lead-text-section + .sdds-images {
+    .lead-text-section + .sdds-images,
+    .lead-text-section + .sdds-multi-col-plugin,
+    .sdds-multi-col-plugin h4,
+    .sdds-multi-col-plugin .section-title {
       margin-top: var(--sdds-spacing-element-32);
     }
 
