@@ -19,11 +19,13 @@
 
   a{
     text-decoration: underline;
-    &:hover{
-      color: var(--sdds-grey-400);
-    }
+    &:hover,
     &:active,
     &.active{
+      color: var(--sdds-grey-400);
+    }
+    &:disabled,
+    &.disabled{
       color: var(--sdds-grey-200);
     }
   }
