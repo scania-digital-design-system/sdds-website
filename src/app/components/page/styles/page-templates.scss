@@ -27,6 +27,11 @@
           content: url('/assets/images/arrow-right.svg');
           margin-left:4px ;
         }
+        &:hover,
+        &:active,
+        &.active{
+          color: var(--sdds-grey-400);
+        }
       }
     }
 
