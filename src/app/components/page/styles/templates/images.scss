@@ -1,8 +1,7 @@
 .sdds-images {
   img{
     width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: var(--sdds-spacing-element-8);
   }
 }
 
@@ -18,5 +17,11 @@
   img {
     width: 100%;
     
+  }
+}
+
+.cover-image{
+  figure{
+    margin-bottom: var(--sdds-spacing-element-24);
   }
 }

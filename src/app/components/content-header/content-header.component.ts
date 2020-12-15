@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 
 export class ContentHeader {
   @Input() pageTitle;
+  @Input() url;
   @Input() categoryTitle;
 }
