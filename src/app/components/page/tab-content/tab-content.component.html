@@ -54,7 +54,7 @@
         <!-- Full width Image -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginFullWidthImage'">
           <ng-container *ngIf="section.Image">
-            <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (section.Image.size='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (section.Image.size=='Medium' ? 'sdds-col-xlg-15 sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-md-8':''))">
+            <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (section.Image.size=='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (section.Image.size=='Medium' ? 'sdds-col-xlg-15 sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-md-8':''))">
               <figure>
                   <img *ngIf='section.Image.image[0].url' [ngClass]="{'negative' : section.Image.negative }" [src]="section.Image.image[0].url" alt='{{section.Image.alternate}}'/>
                   <figcaption *ngIf='section.Image.label' class="sdds-detail-02" >
