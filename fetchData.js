@@ -116,6 +116,9 @@ fragment detail on Content {
         detail
         type
         url
+        image {
+          url
+        }
       }      
       dosAndDonts{ 
         type

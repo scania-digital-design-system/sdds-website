@@ -1,0 +1,19 @@
+<div class="card-wrapper" (click)="clickCard()">
+  <div *ngIf='card.image' [ngClass]="('card-image ' + type )" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
+  <div class="card">
+    <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+    <p class="sdds-headline-06 sdds-text-blue-900">
+      {{card.description}}
+      <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+    </p>
+    <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+      {{card.detail}}
+    </p>
+    <span class="card-link" *ngIf="card.type == 'download'">
+      <c-icon name='scania-save'></c-icon>
+    </span>
+    <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
+      <c-icon name='scania-arrow'></c-icon>
+    </span>
+  </div>
+</div>
