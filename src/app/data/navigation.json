@@ -8,6 +8,7 @@
           "id": "2",
           "url": "home",
           "title": "Scania Digital Design System",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": []
         },
@@ -15,24 +16,28 @@
           "id": "21",
           "url": "getting-started",
           "title": "Getting started",
+          "displayLink": "",
           "thumbnail": null,
           "submenus": [
             {
               "id": "38",
               "url": "overview",
               "title": "Getting started Overview",
+              "displayLink": "Overview",
               "thumbnail": null
             },
             {
               "id": "37",
               "url": "design",
               "title": "Getting started Design",
+              "displayLink": "Design",
               "thumbnail": null
             },
             {
               "id": "36",
               "url": "development",
               "title": "Getting started Development",
+              "displayLink": "Development",
               "thumbnail": null
             }
           ]
@@ -41,42 +46,49 @@
           "id": "17",
           "url": "foundation",
           "title": "Foundation",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": [
             {
               "id": "42",
               "url": "accessibility",
               "title": "Foundation Accessibility",
+              "displayLink": "Accessibility",
               "thumbnail": null
             },
             {
               "id": "46",
               "url": "pictograms",
               "title": "Foundation Pictograms",
+              "displayLink": "Pictograms",
               "thumbnail": null
             },
             {
               "id": "59",
               "url": "spacing",
               "title": "Foundation Spacing",
+              "displayLink": "Spacing",
               "thumbnail": null
             },
             {
               "id": "64",
               "url": "unit-grid-system",
               "title": "Foundation Unit & Grid System",
+              "displayLink": "Unit & Grid System",
               "thumbnail": null
             },
             {
               "id": "65",
               "url": "foundation-typography",
               "title": "Foundation Typography",
+              "displayLink": "Typography",
               "thumbnail": null
             },
             {
               "id": "67",
               "url": "foundation-colours",
               "title": "Foundation Colours",
+              "displayLink": "Colour",
               "thumbnail": null
             }
           ]
@@ -85,27 +97,38 @@
           "id": "4",
           "url": "components",
           "title": "Components",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": [
+            {
+              "id": "102",
+              "url": "overview",
+              "title": "Components Overview",
+              "displayLink": "Overview",
+              "thumbnail": null
+            },
             {
               "id": "58",
               "url": "divider",
               "title": "Divider",
+              "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "5",
               "url": "buttons",
               "title": "Buttons",
+              "displayLink": null,
               "thumbnail": {
                 "id": "46",
                 "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
               }
             },
             {
-              "id": "102",
-              "url": "overview",
-              "title": "Components Overview",
+              "id": "103",
+              "url": "textfields",
+              "title": "Text fields",
+              "displayLink": null,
               "thumbnail": null
             }
           ]
@@ -114,30 +137,35 @@
           "id": "35",
           "url": "resources",
           "title": "Resources",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": [
             {
               "id": "60",
               "url": "overview",
               "title": "Resources Overview",
+              "displayLink": "Overview",
               "thumbnail": null
             },
             {
               "id": "61",
               "url": "brand",
               "title": "Resources Brand",
+              "displayLink": "Brand",
               "thumbnail": null
             },
             {
               "id": "34",
               "url": "development",
               "title": "Resources Development",
+              "displayLink": "Development",
               "thumbnail": null
             },
             {
               "id": "63",
               "url": "design",
               "title": "Resources Design",
+              "displayLink": "Design",
               "thumbnail": null
             }
           ]
@@ -146,24 +174,28 @@
           "id": "3",
           "url": "support",
           "title": "Support",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": [
             {
               "id": "101",
               "url": "page-spec",
               "title": "Page-spec",
+              "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "54",
               "url": "faqs",
               "title": "Support FAQs",
+              "displayLink": "FAQ",
               "thumbnail": null
             },
             {
               "id": "66",
               "url": "contact",
               "title": "Support Contact",
+              "displayLink": "Contact",
               "thumbnail": null
             }
           ]
@@ -172,6 +204,7 @@
           "id": "23",
           "url": "contribution",
           "title": "Contribution",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": []
         }
@@ -185,6 +218,7 @@
           "id": "25",
           "url": "https://www.scania.com/ux-library/en/home.html",
           "title": "ComOn editors",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": []
         },
@@ -192,6 +226,7 @@
           "id": "45",
           "url": "https://scania.github.io/corporate-ui-docs/mobile-apps/",
           "title": "Mobile apps",
+          "displayLink": null,
           "thumbnail": null,
           "submenus": []
         }

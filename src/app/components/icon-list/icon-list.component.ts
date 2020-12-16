@@ -35,11 +35,11 @@ export class IconListComponent implements OnInit {
     })
     this.filteredIcons = this.icons;
   }
-  
+
   openModal(icon) {
     this.currentIcon = icon;
     // Because of innerHTML, need to have the code-sample here, cannot be rendered from html
-    this.currentIcon['code'] = `<c-code-sample><c-icon name="${icon.name}"></c-icon></c-code-sample>`;
+    this.currentIcon['code'] = `<c-icon name="${icon.name}"></c-icon>`;
   }
 
   getModalLayout(currentIcon) {
@@ -62,7 +62,7 @@ export class IconListComponent implements OnInit {
 
     saveAs(url, fileName + '.svg');
   }
-  
+
   clickIconCheckbox(event) {
     // on checkbox clicked, avoid interfere with open modal action
     event.stopPropagation();
@@ -120,7 +120,7 @@ export class IconListComponent implements OnInit {
       url = this.generateIconUrl(icon);
       const content = await this.loadSvgData(url);
       const blobFile: any = new Blob([content.text], { type: 'image/svg' });
-      
+
       zip.file(icon + '.svg', blobFile);
 
       // make sure all icons are downloaded, then save as zip
@@ -151,7 +151,7 @@ export class IconListComponent implements OnInit {
   searchIcons(event) {
     let currentData:any = [...this.icons];
     let newData = [];
-    
+
     if(event.target.value !== '') {
       newData = currentData.filter(item => {
         if(item.title) {
@@ -163,7 +163,7 @@ export class IconListComponent implements OnInit {
     } else {
       newData = [...currentData];
     }
-    
+
     this.filteredIcons = [...newData];
 
   }

@@ -1,45 +1,60 @@
-<div class="col-md-12 icon-widgets">
-  <div class="col-md-3 input-group">
-    <input type="text"
-    id="searchIcons"
-    class="form-control"
-    placeholder="Icon name"
-    (input)="searchIcons($event);">
-    <div class='input-group-append'>
-    <button class="btn btn-primary" type="button"><c-icon name='scania-search'></c-icon></button>
+
+<div class="sdds-row">
+
+  <div class="no-padding sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4 sdds-col-sm-4  icon-widgets">
+    <div class="input-group sdds-input-group">
+      <input type="text"
+      id="searchIcons"
+      class="form-control sdds-form-control"
+      placeholder="Search for pictogram"
+      (input)="searchIcons($event);">
     </div>
   </div>
-  <div class='offset-md-8 col-md-4 custom-control custom-checkbox text-right'>
-    <input type='checkbox'
-    id='selectAllEl'
-    class='custom-control-input'
-    [(ngModel)]='isSelectedAll'
-    (change)='selectAll();'>
-    <label class='custom-control-label' for='selectAllEl'>Select all</label>
+
+  <div class="sdds-select-all no-padding sdds-col-xxlg-2 sdds-col-xxlg-6-offset sdds-col-xlg-3 sdds-col-xlg-6-offset sdds-col-lg-2 sdds-col-lg-2-offset sdds-col-md-2 sdds-col-md-2-offset sdds-col-sm-4">
+    <div class='sdds-checkbox-container custom-control custom-checkbox'>
+      <input type='checkbox'
+      id='selectAllEl'
+      class='custom-control-input sdds-checkbox-input'
+      [(ngModel)]='isSelectedAll'
+      (change)='selectAll();'>
+      <label class='custom-control-label sdds-checkbox-label' for='selectAllEl'>Select all</label>
+    </div>
   </div>
+
+  <div class="no-padding sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4">
+    <div class="sdds-divider"></div>
+  </div>
+
 </div>
 
-<div *ngFor="let icon of filteredIcons" class="icon col-lg-4 col-xl-2 col-sm-6 col-md-6 mb-5" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
+<div class="sdds-row">
 
-  <div [ngClass]="{'custom-control custom-checkbox select-icon':true, 'cbActive' : icon.isSelected}">
-    <input type='checkbox'
-    [id]="icon.name"  
-    class='custom-control-input' 
-    value="icon.name"
-    (click)='clickIconCheckbox($event)'
-    [(ngModel)]='icon.isSelected'
-    (change)='selectIconCheckbox()'>
-    <label [for]="icon.name" class="custom-control-label" (click)='clickIconCheckbox($event)'></label>
+  <div *ngFor="let icon of filteredIcons" class="sdds-icon no-padding sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 sdds-col-sm-4" (click)='openModal(icon)' data-toggle='modal' data-target='#iconModal'>
+    <div class="sdds-icon-container">
+      <div class="sdds-icon-title sdds-detail-02">
+        <span>{{icon.title}}</span>
+        <div [ngClass]="{'custom-control custom-checkbox sdds-select-icon':true, 'cbActive' : icon.isSelected}">
+      <input type='checkbox'
+      [id]="icon.name"
+      class='custom-control-input'
+      value="icon.name"
+      (click)='clickIconCheckbox($event)'
+      [(ngModel)]='icon.isSelected'
+      (change)='selectIconCheckbox()'>
+      <label [for]="icon.name" class="custom-control-label" (click)='clickIconCheckbox($event)'></label>
+    </div>
+      </div>
+      <c-icon [name]="icon.name"></c-icon>
+    </div>
   </div>
-  <c-icon [name]="icon.name"></c-icon>
-  <span>{{icon.title}}</span>
-  
+
 </div>
 
 <!-- Select popup -->
 <div class="download-selected" *ngIf="checkedIcons.length > 0">
-  <p><strong>{{checkedIcons.length}} icons selected</strong></p>
-  <button class="btn btn-primary" data-toggle='modal' data-target='#downloadIcon'>DOWNLOAD SELECTED</button>
+  <p class="sdds-detail-06">{{checkedIcons.length}} icons selected</p>
+  <button class="sdds-btn sdds-btn-primary sdds-btn-sm" data-toggle='modal' data-target='#downloadIcon'>Download selected</button>
 </div>
 
 <!-- Select and download modal -->
@@ -88,53 +103,67 @@
 
 <!-- Icon detail modal -->
 <div class='modal fade' id='iconModal' tabindex='-1' role='dialog' aria-labelledby='iconModalLabel' aria-hidden='true'>
-  <div [ngClass]='{"modal-dialog" : true, "modal-lg" : getModalLayout(currentIcon)}' role='document'>
+  <div class="sdds-col-xxlg-6" [ngClass]='{"modal-dialog" : true, "" : getModalLayout(currentIcon)}' role='document'>
     <div class='modal-content'>
-      <div class='modal-body'>
-        <div class="row">
-          <div class="col-md-10">
-            <h1 class='modal-title' id='iconModalLabel'>{{currentIcon.title}}</h1>
-            <div class="last-update">Added {{lastUpdate | dateFormat}}</div>
-          </div>
-          <div class="col-md-2">
+      <div class='modal-body sdds-modal-body'>
+        <div>
+          <span class="">
+            <h5 class='modal-title' style="display: inline;" id='iconModalLabel'>{{currentIcon.title}}</h5>
             <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
               <span aria-hidden='true'>×</span>
             </button>
-          </div>
-          <div [ngClass]='getModalLayout(currentIcon) ? "col-md-6" : "col-md-12"'>
-            <div class="icon-preview">
+          </span>
+          <div class="sdds-modal-icon">
+            <div class="sdds-icon-preview">
               <c-icon [name]="currentIcon.name"></c-icon>
             </div>
-            <p>
-              <strong>HTML</strong>
-              <span [innerHTML]='currentIcon.code | keepHtml'></span>
-            </p>
-            <div class="icon-modal-buttons">
-              <strong>Download as</strong>
-              <br>
-              <button [id]="currentIcon.name" (click)="download($event)" class="btn btn-secondary"><span><c-icon name="scania-save"></c-icon></span>SVG</button>
-              <!-- <button [id]="currentIcon.name" (click)="download($event)" class="btn btn-secondary"><span><c-icon name="scania-save"></c-icon></span>PNG</button>
-              <button [id]="currentIcon.name" (click)="download($event)" class="btn btn-secondary"><span><c-icon name="scania-save"></c-icon></span>AI</button> -->
+            <div class="sdds-model-icon-info">
+              <div>
+                <strong class="h7">Description</strong>
+                <p *ngIf="currentIcon.description">
+                  {{currentIcon.description}}
+                </p>
+                <p *ngIf="!currentIcon.description">
+                  None available
+                </p>
+              </div>
+              <div>
+                <strong class="h7">Usage</strong>
+                <p class="sdds-detail-01"*ngIf="currentIcon.usage">
+                  {{currentIcon.usage}}
+                </p>
+                <p *ngIf="!currentIcon.usage">
+                  None available
+                </p>
+              </div>
+              <div>
+                <strong class="h7">Restrictions</strong>
+                <p *ngIf="currentIcon.restriction">
+                  {{currentIcon.restriction}}
+                </p>
+                <p *ngIf="!currentIcon.restriction">
+                  None
+                </p>
+              </div>
+            </div>
+            <div class="sdds-last-update">
+              <strong class="h7">Added </strong> 
+              <p class="sdds-detail-01">
+                {{lastUpdate | dateFormat}}
+              </p>
+            </div>
+            <div>
+              <pre><code>{{currentIcon.code}}</code></pre>
             </div>
           </div>
-          <div class="col-md-6">
-            <p *ngIf='currentIcon.description'>
-              <strong>Description</strong>
-              <br>
-              {{currentIcon.description}}
-            </p>
-            <p *ngIf='currentIcon.usage'>
-              <strong>Usage</strong>
-              <br>
-              {{currentIcon.usage}}
-            </p>
-            <p *ngIf='currentIcon.restriction'>
-              <strong>Restrictions</strong>
-              <br>
-              {{currentIcon.restriction}}
-            </p>
-          </div>
         </div>
+      </div>
+      <div class="sdds-modal-footer sdds-icon-modal-buttons">
+        <button [id]="currentIcon.name" (click)="download($event)" class="sdds-btn sdds-btn-md sdds-btn-primary">
+          Download Pictogram
+        </button>
+        <!-- <button [id]="currentIcon.name" (click)="download($event)" class="btn btn-secondary"><span><c-icon name="scania-save"></c-icon></span>PNG</button>
+        <button [id]="currentIcon.name" (click)="download($event)" class="btn btn-secondary"><span><c-icon name="scania-save"></c-icon></span>AI</button> -->
       </div>
     </div>
   </div>

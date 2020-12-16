@@ -1,28 +1,34 @@
-.icon-widgets {
-  //FIXME: Add correct rem
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
-  border-bottom: 1px solid #707070;
-  //FIXME: Add correct rem
-  margin-bottom: 7.5rem;
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 
-  .custom-control-label {
-    color: #041e42;
-    color: var(--blue);
-  }
-}
 
-.icon {
+.sdds-icon {
   text-align: center;
   position: relative;
 
-  .select-icon {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    display: none;
-    &.cbActive {
-      display: block;
+  .sdds-icon-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin: 16px 0;
+    height: 304px;
+    background-color: var(--sdds-white);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .sdds-icon-title {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+
+    .sdds-select-icon {
+      margin-left: auto;
+      right: -10px;
     }
   }
 
@@ -31,29 +37,53 @@
     background-color: var(--light-02);
     cursor: pointer;
 
-    .select-icon {
+    .sdds-select-icon {
       display: block;
     }
   }
 
   c-icon {
     //FIXME: Add correct rem
+    margin: auto;
     font-size: 32.5rem;
-    color: #041e42;
-    color: var(--blue);
+    color: var(--sdds-blue);
     width: 100%;
   }
 }
 
+.sdds-input-group {
+  margin-top: var(--sdds-spacing-element-32);
+}
+
+
+.sdds-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 24px;
+  margin-bottom: 24px
+}
+
 .download-selected {
   position: fixed;
-  //FIXME: Add correct rem
-  bottom: 7.5rem;
-  right: 15rem;
-  background-color: #efefef;
-  background-color: var(--light-02);
-  //FIXME: Add correct rem
-  padding: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--sdds-blue-100);
+  padding: var(--sdds-spacing-element-16);
+
+  @media (min-width: 1056px) {
+    padding: var(--sdds-spacing-element-16) var(--sdds-spacing-element-40);
+  }
+
+  @media (min-width: 1056px) {
+    width: calc(100% - 256px);
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 #downloadIcon {
@@ -106,7 +136,7 @@
   }
 }
 
-.icon-modal-buttons {
+.sdds-icon-modal-buttons {
   .btn {
     margin-right: 10px;
   }
@@ -118,18 +148,120 @@
 }
 
 .modal {
-  .icon-preview {
-    margin-top: 0;
+
+  .sdds-icon-preview {
+    //FIXME: set correct icon size
+    font-size: 148px;
+    display: flex;
+    justify-content: center;
+    color: var(--sdds-blue);
   }
-  .last-update {
-    color: #94999d;
-    color: var(--dark-01);
-    //FIXME: Add correct rem
-    font-size: 3.5rem;
+  .sdds-last-update {
+
+    p {
+      margin-bottom: 20px;
+      color: var(--sdds-grey-300);
+    }
   }
   .close {
+
     //FIXME: Add correct rem
     font-size: 7.5rem;
     font-weight: normal;
+  }
+}
+
+.sdds-modal-icon {
+  pre {
+    line-height: 0;
+    code {
+      @include type-style('detail-02');
+    }
+  }
+}
+
+.sdds-model-icon-info {
+  div {
+    margin-bottom: var(--sdds-spacing-element-24);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    p {
+      margin-top: var(--sdds-spacing-element-4);
+      margin-bottom: var(--sdds-spacing-element-8);
+      color: var(--sdds-grey-300);
+    }
+  }
+}
+
+//FIXME: When components are added remove this
+.sdds-modal-body {
+  padding: var(--sdds-spacing-element-16);
+}
+
+.sdds-modal-footer {
+  padding: var(--sdds-spacing-element-16);;
+  background-color: var(--sdds-blue-100);
+  background-color: #E6E8EC;
+}
+
+.sdds-btn {
+  border: none;
+  border-radius: 1rem;
+  @include type-style('detail-02');
+}
+
+.sdds-btn-sm {
+  padding: 12px;
+}
+
+
+.sdds-btn-md {
+  padding: 16px;
+}
+
+.sdds-btn-primary {
+  background-color: var(--sdds-blue-700);
+  color: white;
+
+  &:hover {
+    background-color: var(--sdds-blue-600);
+  }
+
+  &:focus {
+    background-color: var(--sdds-blue-500);
+    outline: none;
+  }
+
+}
+
+//FIXME: remove this when checkboxes are done
+.sdds-checkbox-container {
+  margin-top: var(--sdds-spacing-element-24);
+
+  .sdds-checkbox-label {
+    @include type-style('detail-02');
+    font-weight: 400;
+    color: var(--sdds-grey-900);
+  }
+
+}
+
+.sdds-form-control {
+  @include type-style('detail-02');
+  height: 56px;
+  border-radius: 1rem 1rem 0 0;
+  border: 0;
+  border-bottom: 1px solid var(--sdds-grey-200);
+
+
+  &:hover {
+    border-bottom: 1px solid var(--sdds-grey-500);
+  }
+
+  &:focus {
+    //FIXME: two px should be added on focus state
+    border-bottom: 1px solid var(--sdds-blue-500);
+    background-color: var(--sdds-white);
+    color: var(--sdds-grey-700);
   }
 }
