@@ -9,10 +9,25 @@
 //   }
 // }
 
+:host{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
 #content {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  -webkit-flex-grow:1;
   position: relative;
+  overflow-x: hidden;
+
+  @media(min-width:1056px) {
+    overflow-x: unset;
+  }
 }
 
 header {

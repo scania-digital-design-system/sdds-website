@@ -45,6 +45,13 @@ export class MainComponent{
         this.ps.setPage(this.page);
 
         this.analytics(route.url);
+        
+        const contentContainer = document.querySelector('main') || window;
+        
+        if(paths.length == 0 || (paths.length > 0 && paths[0].indexOf('#') < 0)) {
+          contentContainer.scrollTo(0, 0);
+        }
+        
       }
     });
   }

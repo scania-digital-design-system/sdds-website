@@ -1,0 +1,84 @@
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+
+:host{
+  background-color: var(--sdds-white);
+  background-image: var(--sdds-background-image-scania-wordmark-png);
+  background-image: var(--sdds-background-image-scania-wordmark-svg);
+  background-repeat: no-repeat;
+  background-position: bottom 26px center;
+  background-size: 153px 26px;
+  padding-top: var(--sdds-spacing-element-20); 
+  padding-bottom: var(--sdds-spacing-layout-160); 
+  @include type-style('body-02');
+  color: var(--sdds-grey-900);
+  display: block;
+  position: relative;
+  width: 100%;
+
+  h6{
+    margin-bottom: var(--sdds-spacing-element-8);
+  }
+
+  a{
+    text-decoration: underline;
+    &:hover,
+    &:active,
+    &.active{
+      color: var(--sdds-grey-400);
+    }
+    &:disabled,
+    &.disabled{
+      color: var(--sdds-grey-200);
+    }
+  }
+
+  .footer-menu{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    li{
+      margin: 0;
+      padding: 0;
+      a{
+        @include type-style('headline-06');
+        text-decoration: none;
+        &:hover,
+        &:active,
+        &.active{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .block-wrapper{
+    padding-top: var(--sdds-spacing-element-20);
+    border-top: 1px solid var(--sdds-grey-100);
+    padding-bottom: var(--sdds-spacing-element-40);
+    &.no-line{
+      border: 0;
+    }
+  }
+}
+
+@media (min-width:1056px){
+  :host{
+    padding-top: var(--sdds-spacing-element-40);
+    padding-bottom: var(--sdds-spacing-element-40);
+    background-size: 118px 20px;
+    background-position: bottom 40px right 40px;
+
+    .block-wrapper{
+      padding-top: 0;
+      border-top: 0;
+      padding-bottom: var(--sdds-spacing-layout-160);
+      &:last-child{
+        padding-bottom: 0;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
