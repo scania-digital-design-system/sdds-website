@@ -56,7 +56,7 @@
     padding-top: var(--sdds-spacing-element-20);
     border-top: 1px solid var(--sdds-grey-100);
     padding-bottom: var(--sdds-spacing-element-40);
-    &:first-child{
+    &.no-line{
       border: 0;
     }
   }
