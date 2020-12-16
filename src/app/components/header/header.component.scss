@@ -1,5 +1,12 @@
 @import '../../app-vars.scss';
 
+:host{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .sdds-header {
   // TODO: Use CSS VARS from scania-theme
   background-color: var(--sdds-blue-900);
@@ -11,10 +18,6 @@
   font-size: 4rem;
   color:var(--sdds-white);
   box-sizing: content-box;
-
-  //Fixed header
-  position: fixed;
-  z-index: 1000;
 
   button {
     border: 0;
@@ -128,33 +131,38 @@
     }
   }
 
-  @media (min-width: 1056px) {
-    width: calc(100% - 256px);
+}
 
+@media (min-width: 1056px) {
+  :host{
+    position: sticky;
+  }
+
+  .sdds-header{
     button {
       padding: 0 var(--sdds-spacing-element-20);
     }
     .site-search {
       order: 1;
     }
-
+  
     .scania-symbol {
       order: 2;
       flex-grow: unset;
       // FIXME: until search is added
       border-left: 1px solid var(--sdds-blue-800)
     }
-
+  
     .menu-mobile {
       display: none;
     }
-
+  
     &.open-search {
       .scania-symbol {
         display: block;
       }
     }
   }
-
+  
 }
 
