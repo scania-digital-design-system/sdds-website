@@ -8,6 +8,7 @@
       color: var(--sdds-white);
       background-color: var(--sdds-grey-900);
       padding: var(--sdds-spacing-element-16);
+      margin-bottom: var(--sdds-spacing-element-32);
       border-radius: 1rem;
       code {
         @include type-style('detail-01');
