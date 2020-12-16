@@ -24,31 +24,33 @@
     //   width: 100%;
     // }
 
-    figure {
-      margin-bottom: 10rem;
-    }
-
-  section {
-    //FIXME: Add correct rem
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-
-    p > a,
-    ul > li > a {
-      color: #53565a; //FIXME: temp until link color is decided
+    p{
+      a{
+        color: var(--sdds-blue-500);
+        text-decoration: underline;
+        &:hover,
+        &.active,
+        &:active{
+          color: var(--sdds-blue-400);
+        }
+        &:disabled,
+        &.disabled{
+          color: var(--sdds-grey-200);
+        }
+      }
     }
   }
 
     // General spacing for all elements
 
     p{
-      margin-bottom: var(--sdds-spacing-element-32);
-      br{
-        display: none;
-      }
+      margin-bottom: var(--sdds-spacing-element-24);
       strong{
         display: block;
       }
+    }
+    figcaption p{
+      margin-bottom: 0;
     }
 
     .lead-text {
@@ -63,7 +65,8 @@
 
     figure,
     table{
-      margin-bottom: var(--sdds-spacing-element-32);
+      margin-top: var(--sdds-spacing-element-8);
+      margin-bottom: var(--sdds-spacing-element-24);
     }
 
     img {
@@ -98,7 +101,10 @@
       }
     }
     
-    .lead-text-section + .sdds-images {
+    .lead-text-section + .sdds-images,
+    .lead-text-section + .sdds-multi-col-plugin,
+    .sdds-multi-col-plugin h4,
+    .sdds-multi-col-plugin .section-title {
       margin-top: var(--sdds-spacing-element-32);
     }
 
@@ -107,6 +113,14 @@
       &:first-child{
         margin-top: 0;
       }
+    }
+
+    .code-example-wrapper + .sdds-one-col-plugin {
+      margin-top: 0;
+    }
+    p code{
+      @include type-style('detail-01');
+      color: var(--sdds-grey-500);
     }
 
     .sdds-row div:first-child{

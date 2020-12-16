@@ -1,4 +1,5 @@
-<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}' [url]='content.url'></Content-Header>
+<Content-Header [categoryTitle]='parent' pageTitle='{{content.displayLink || content.title}}' [url]='content.url'></Content-Header>
+
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
 <div *ngIf="content.url !== 'home'" class="nav sdds-container-push-fluid">
   <div class="sdds-row">
@@ -65,14 +66,13 @@
   
               <ng-container *ngIf="section.Images">
                 <ng-container *ngFor="let image of section.Images; let index=index">
-                  <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Medium' ? 'sdds-col-md-4 sdds-col-xlg-6' : '') + (image.size=='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xlg-16 sdds-col-md-8':''))">
+                  <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Medium' ? 'sdds-col-xlg-15 sdds-col-xlg-12 sdds-col-md-8':'') + (image.size=='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-md-8':''))">
                     <figure>
                       <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                       <figcaption *ngIf='image.label' class="sdds-detail-02" >
                         <strong>{{image.label}}</strong>
                       </figcaption>
-                      <figcaption *ngIf='image.caption' class="sdds-detail-02">
-                        <span>{{image.caption}}</span>
+                      <figcaption *ngIf='image.caption' class="sdds-detail-02" [innerHTML]='image.caption | markdown | keepHtml'>
                       </figcaption>
                     </figure>
                   </div>
