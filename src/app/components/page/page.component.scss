@@ -23,46 +23,73 @@
     //   width: 100%;
     // }
 
-    section {
-      //FIXME: Add correct rem
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
-
-      p > a,
-      ul > li > a {
-        color: #53565a; //FIXME: temp until link color is decided
+    p{
+      a{
+        color: var(--sdds-blue-500);
+        text-decoration: underline;
+        &:hover,
+        &.active,
+        &:active{
+          color: var(--sdds-blue-400);
+        }
+        &:disabled,
+        &.disabled{
+          color: var(--sdds-grey-200);
+        }
       }
     }
 
     // General spacing for all elements
 
     p{
-      margin-bottom: var(--sdds-spacing-element-32);
-      br{
-        display: none;
-      }
+      margin-bottom: var(--sdds-spacing-element-24);
       strong{
         display: block;
       }
     }
+    figcaption p{
+      margin-bottom: 0;
+    }
 
     .lead-text {
-      margin-bottom: var(--sdds-spacing-element-48);
+      margin-bottom: var(--sdds-spacing-element-16);
     }
 
     .section-title, h4 {
       p { margin: 0; }
-      margin-top: var(--sdds-spacing-element-40);
+      margin-top: var(--sdds-spacing-element-8);
       margin-bottom: var(--sdds-spacing-element-16);
     }
 
     figure,
     table{
-      margin-bottom: var(--sdds-spacing-element-32);
+      margin-top: var(--sdds-spacing-element-8);
+      margin-bottom: var(--sdds-spacing-element-24);
     }
 
     img {
       max-width: 100%;
+    }
+
+    .sdds-button-primary{
+      padding: var(--sdds-spacing-element-20);
+      background-color: var(--sdds-blue-700);
+      color: var(--sdds-white);
+      @include type-style('detail-02');
+      border: 0;
+      border-radius: 4px;
+      outline: none;
+      &:hover{
+        background-color: var(--sdds-blue-600);
+      }
+      &:focus{
+        background-color: var(--sdds-blue-500);
+        border: 1px solid #16417F;
+      }
+      &:active,
+      &.active{
+        background-color: var(--sdds-blue-800);
+      }
     }
 
     .lead-text-section + .sdds-one-col-plugin,
@@ -70,6 +97,28 @@
       .section-title, h4 {
         margin-top: 0;
       }
+    }
+    
+    .lead-text-section + .sdds-images,
+    .lead-text-section + .sdds-multi-col-plugin,
+    .sdds-multi-col-plugin h4,
+    .sdds-multi-col-plugin .section-title {
+      margin-top: var(--sdds-spacing-element-32);
+    }
+
+    .sdds-one-col-plugin{
+      margin-top: var(--sdds-spacing-element-32);
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+
+    .code-example-wrapper + .sdds-one-col-plugin {
+      margin-top: 0;
+    }
+    p code{
+      @include type-style('detail-01');
+      color: var(--sdds-grey-500);
     }
 
     .sdds-row div:first-child{

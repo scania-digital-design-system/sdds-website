@@ -45,6 +45,7 @@ query {
 fragment menu on Menu {
   id
   url
+  displayLink
   title
   thumbnail {
     id
@@ -116,6 +117,9 @@ fragment detail on Content {
         detail
         type
         url
+        image {
+          url
+        }
       }      
       dosAndDonts{ 
         type
@@ -210,6 +214,7 @@ fragment menu on Menu {
   id
   url
   title
+  displayLink
   thumbnail {
     id
     url

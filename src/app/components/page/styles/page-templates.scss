@@ -1,9 +1,96 @@
-@import './templates/card.scss';
 @import './templates/modal.scss';
 @import './templates/images.scss';
 @import './templates/tables.scss';
 @import './templates/do-dont.scss';
 @import './templates/code.scss';
+
+
+// Landing page
+:host{
+  ::ng-deep{
+
+    .cover-image{
+      height: calc(100vh - 240px);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: var(--sdds-spacing-element-16);
+    }
+
+    .intro-columns{
+      margin-top: 56px;
+      margin-bottom: 124px;
+      a{
+        border-bottom: 1px solid var(--sdds-grey-200);
+        text-decoration: none;
+        color: var(--sdds-blue-900);
+        &::after{
+          content: url('/assets/images/arrow-right.svg');
+          margin-left:4px ;
+        }
+        &:hover,
+        &:active,
+        &.active{
+          color: var(--sdds-grey-400);
+        }
+      }
+    }
+
+    .resource-columns{
+      margin-top: var(--sdds-spacing-element-8);
+      margin-bottom: 10rem;
+      &.left-column {
+        margin-top: 120px;
+      }
+    }
+    
+    .landing-page-ribbon{
+      margin-top: 4rem;
+      padding-top: var(--sdds-spacing-element-16);
+      padding-bottom: var(--sdds-spacing-element-32);
+    
+      .sdds-row {
+        align-items: center;
+      }
+    
+      .ribbon-btn-wrapper{
+        text-align: left;
+        margin-top: var(--sdds-spacing-element-24);
+      }
+    
+      @media (min-width:1312px) {
+        padding-top: var(--sdds-spacing-element-32);
+    
+        .ribbon-btn-wrapper{
+          text-align: right;
+          margin-top: 0;
+        }
+      }
+    }
+
+    @media (min-width:1056px){
+      .landing-page-ribbon{
+        margin-top: 13rem;
+      }
+      .cover-image{
+        height: 532px;
+        margin-bottom: var(--sdds-spacing-element-24);
+      }
+
+      .intro-columns{
+        margin-top: 0;
+        margin-bottom: 136px;
+      }
+
+      .resource-columns{
+        margin-bottom: 22rem;
+        &.left-column {
+          margin-top: var(--sdds-spacing-element-8);
+        }
+      }
+
+    }
+  }
+}
 
 // Icon preview
 .icon-preview {

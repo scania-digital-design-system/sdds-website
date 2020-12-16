@@ -2,4 +2,9 @@
   padding-top: var(--sdds-spacing-element-24);
   padding-bottom: var(--sdds-spacing-element-24);
   position: relative;
+
+  &.landing-page {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
