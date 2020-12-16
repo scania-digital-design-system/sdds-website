@@ -71,7 +71,11 @@
   right: 0;
   width: 100%;
   background-color: var(--sdds-blue-100);
-  padding: var(--sdds-spacing-element-16) var(--sdds-spacing-element-40);
+  padding: var(--sdds-spacing-element-16);
+
+  @media (min-width: 1056px) {
+    padding: var(--sdds-spacing-element-16) var(--sdds-spacing-element-40);
+  }
 
   @media (min-width: 1056px) {
     width: calc(100% - 256px);
@@ -247,7 +251,7 @@
   height: 56px;
   border-radius: 1rem 1rem 0 0;
   border: 0;
-  border-bottom: 1px solid var(--sdds-grey-300);
+  border-bottom: 1px solid var(--sdds-grey-200);
 
 
   &:hover {
@@ -255,7 +259,8 @@
   }
 
   &:focus {
-    border-bottom: 2px solid var(--sdds-blue-500);
+    //FIXME: two px should be added on focus state
+    border-bottom: 1px solid var(--sdds-blue-500);
     background-color: var(--sdds-white);
     color: var(--sdds-grey-700);
   }
