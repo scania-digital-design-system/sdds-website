@@ -1,4 +1,5 @@
-<Content-Header [categoryTitle]='parent' pageTitle='{{content.title}}' [url]='content.url'></Content-Header>
+<Content-Header [categoryTitle]='parent' pageTitle='{{content.displayLink || content.title}}' [url]='content.url'></Content-Header>
+
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
 <div *ngIf="content.url !== 'home'" class="nav sdds-container-push-fluid">
   <div class="sdds-row">

@@ -45,6 +45,7 @@ query {
 fragment menu on Menu {
   id
   url
+  displayLink
   title
   thumbnail {
     id
@@ -213,6 +214,7 @@ fragment menu on Menu {
   id
   url
   title
+  displayLink
   thumbnail {
     id
     url

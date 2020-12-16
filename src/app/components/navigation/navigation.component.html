@@ -18,7 +18,7 @@
         <div class="sdds-nav-section-sub-links">
           <div *ngFor="let submenu of menu.submenus; index as i;">
             <a [routerLink]="menu.url + '/' + submenu.url" class="sdds-body-02 sdds-nav-link-style" routerLinkActive="active" (click)="hideMenu();">
-              <span>{{submenu.title}}</span>
+              <span>{{submenu.displayLink || submenu.title}}</span>
             </a>
           </div>
         </div>
