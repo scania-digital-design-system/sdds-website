@@ -13,6 +13,7 @@
   @include type-style('body-02');
   color: var(--sdds-grey-900);
   display: block;
+  position: relative;
 
   h6{
     margin-bottom: var(--sdds-spacing-element-8);

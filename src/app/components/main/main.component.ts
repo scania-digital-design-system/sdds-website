@@ -45,6 +45,9 @@ export class MainComponent{
         this.ps.setPage(this.page);
 
         this.analytics(route.url);
+
+        const contentContainer = document.querySelector('main') || window;
+        contentContainer.scrollTo(0, 0);
       }
     });
   }
