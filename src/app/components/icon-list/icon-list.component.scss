@@ -69,9 +69,13 @@
   align-items: center;
   bottom: 0;
   right: 0;
-  width: calc(100% - 256px);
+  width: 100%;
   background-color: var(--sdds-blue-100);
   padding: var(--sdds-spacing-element-16) var(--sdds-spacing-element-40);
+
+  @media (min-width: 1056px) {
+    width: calc(100% - 256px);
+  }
 
   p {
     margin: 0;
@@ -244,6 +248,7 @@
   border-radius: 1rem 1rem 0 0;
   border: 0;
   border-bottom: 1px solid var(--sdds-grey-300);
+
 
   &:hover {
     border-bottom: 1px solid var(--sdds-grey-500);
