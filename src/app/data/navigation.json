@@ -90,6 +90,13 @@
               "title": "Foundation Colours",
               "displayLink": "Colour",
               "thumbnail": null
+            },
+            {
+              "id": "104",
+              "url": "icons",
+              "title": "Foundation Icons",
+              "displayLink": "Icons",
+              "thumbnail": null
             }
           ]
         },

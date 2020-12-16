@@ -52,12 +52,13 @@
             <div *ngIf='section.LeadText' class="lead-text sdds-paragraph-01">{{section.LeadText.textfield}}</div>
             <div *ngIf='section.Text' [innerHTML]='section.Text | markdown | keepHtml'></div>
           </div>
+          <div class="line-break"></div>
         </ng-template>
 
         <!-- Full width Image -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginFullWidthImage'">
           <ng-container *ngIf="section.Image">
-            <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (section.Image.size=='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (section.Image.size=='Medium' ? 'sdds-col-xlg-15 sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (section.Image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-md-8':''))">
+            <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (section.Image.size=='Small' ? 'sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (section.Image.size=='Medium' ? 'sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'') + (section.Image.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-8':'') + (section.Image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-8 sdds-col-md-8':''))">
               <figure>
                   <img *ngIf='section.Image.image[0].url' [ngClass]="{'negative' : section.Image.negative }" [src]="section.Image.image[0].url" alt='{{section.Image.alternate}}'/>
                   <figcaption *ngIf='section.Image.label' class="sdds-detail-02" >
@@ -67,6 +68,7 @@
                   </figcaption>
                 </figure>
               </div>
+              <div class="line-break"></div>
           </ng-container>
         </ng-template>
 
@@ -103,11 +105,13 @@
                 </div>
               </ng-container>  
             </ng-container>
-            
+
+            <div class="line-break"></div>
+
             <!-- If images -->
             <ng-container *ngIf="section.Images">
               <ng-container *ngFor="let image of section.Images; let index=index">
-                <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Medium' ? 'sdds-col-xlg-15 sdds-col-xlg-12 sdds-col-md-8':'') + (image.size=='Small' ? 'sdds-col-md-4 sdds-col-lg-3 sdds-col-xlg-4':'') + (image.size=='Large' ? 'sdds-col-xlg-12 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-md-8':''))">
+                <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Small' ? 'sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (image.size=='Medium' ? 'sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'')  + (image.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-8 sdds-col-md-8':''))">
                   <figure>
                     <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                     <figcaption *ngIf='image.label' class="sdds-detail-02" >
@@ -122,7 +126,7 @@
               </ng-container>
             </ng-container>
           </ng-container>
-          
+
           <div class="line-break"></div>
 
           <!-- If Cards -->
