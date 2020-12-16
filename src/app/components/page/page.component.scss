@@ -24,6 +24,16 @@
     //   width: 100%;
     // }
 
+    ol{
+      padding-left: 0;
+      li {
+        margin-left: 4rem;
+        &:before{
+          padding-left: 4px;
+        }
+      }
+    }
+
     p{
       a{
         color: var(--sdds-blue-500);

@@ -73,7 +73,7 @@
       padding-top: 0;
       border-top: 0;
       padding-bottom: var(--sdds-spacing-layout-160);
-      &:last-child{
+      &.copyright{
         padding-bottom: 0;
         p{
           margin: 0;
