@@ -12,6 +12,7 @@
   padding-bottom: var(--sdds-spacing-layout-160); 
   @include type-style('body-02');
   color: var(--sdds-grey-900);
+  display: block;
 
   h6{
     margin-bottom: var(--sdds-spacing-element-8);

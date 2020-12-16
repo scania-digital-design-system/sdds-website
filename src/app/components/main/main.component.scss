@@ -11,6 +11,7 @@
 
 :host{
   display: flex;
+  display: -webkit-flex;
 }
 
 #content {
