@@ -25,16 +25,27 @@
   }
 }
 
+
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: var(--sdds-grey-900); 
+// }
+ 
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: #888; 
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555; 
+// }
+
 #maincontent {
   overflow: hidden;
   flex: 1;
   background-color: var(--sdds-grey-50);
-}
-
-nav {
-  // display: flex;
-  flex-direction: column;
-  overflow-y: auto;
 }
 
 nav {
@@ -45,6 +56,22 @@ nav {
   top: 64px;
   left: 0;
   z-index: 1000000;
+  flex-direction: column;
+  overflow-y: auto;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--sdds-grey-500);
+    }
+  }
 
   &.sdds-nav-open {
     display: flex;
