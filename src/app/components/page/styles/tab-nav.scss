@@ -4,6 +4,8 @@
     position: sticky;      
     top: 64px;
     z-index: 999;
+    overflow-x: auto;
+    white-space: nowrap;
 
     #page-tabs {
       margin:0;
