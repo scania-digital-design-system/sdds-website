@@ -4,10 +4,11 @@
       <div class="block-wrapper no-line">
         <h6 class="sdds-text-grey-300">More info</h6>
         <ul class="footer-menu">
-          <li><a href="">Cookies</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Legal</a></li>
+          <li *ngFor="let menu of footerNav.menus">
+            <a href="{{menu.url}}">
+              {{menu.displayLink}}
+            </a>
+          </li>
         </ul>
       </div>
     </div>
