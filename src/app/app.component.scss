@@ -57,10 +57,10 @@ nav {
   left: 0;
   z-index: 1000000;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow-y: auto;
   /* width */
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
     background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
@@ -68,9 +68,8 @@ nav {
   }
 
   &:hover {
-    overflow-y: auto;
     &::-webkit-scrollbar-thumb {
-      background-color: var(--sdds-grey-300);
+      background-color: var(--sdds-grey-500);
     }
   }
 

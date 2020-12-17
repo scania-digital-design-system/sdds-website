@@ -16,10 +16,13 @@
   flex-direction: row;
   overflow-y: auto;
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--sdds-grey-200); 
   }
   &::-webkit-scrollbar-thumb {
-    background-color: var(--sdds-grey-300);
+    background-color: var(--sdds-grey-500);
   }
 }
 
