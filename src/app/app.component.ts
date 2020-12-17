@@ -14,8 +14,8 @@ export class AppComponent {
   constructor(private cs: CookieService) {}
 
   ngOnInit() {
-    const cookie = this.cs.get('ConfidentialityAgreement');
-    this.setCookie(cookie && JSON.parse(cookie));
+    // const cookie = this.cs.get('ConfidentialityAgreement');
+    // this.setCookie(cookie && JSON.parse(cookie));
   }
 
   setCookie(cookie) {
