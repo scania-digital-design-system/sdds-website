@@ -44,23 +44,16 @@
         },
         {
           "id": "17",
-          "url": "foundation",
-          "title": "Foundation",
+          "url": "foundations",
+          "title": "Foundations",
           "displayLink": null,
           "thumbnail": null,
           "submenus": [
             {
-              "id": "42",
-              "url": "accessibility",
-              "title": "Foundation Accessibility",
-              "displayLink": "Accessibility",
-              "thumbnail": null
-            },
-            {
-              "id": "46",
-              "url": "pictograms",
-              "title": "Foundation Pictograms",
-              "displayLink": "Pictograms",
+              "id": "64",
+              "url": "unit-grid-system",
+              "title": "Foundation Unit & Grid System",
+              "displayLink": "Unit & Grid System",
               "thumbnail": null
             },
             {
@@ -71,17 +64,10 @@
               "thumbnail": null
             },
             {
-              "id": "64",
-              "url": "unit-grid-system",
-              "title": "Foundation Unit & Grid System",
-              "displayLink": "Unit & Grid System",
-              "thumbnail": null
-            },
-            {
-              "id": "65",
-              "url": "foundation-typography",
-              "title": "Foundation Typography",
-              "displayLink": "Typography",
+              "id": "42",
+              "url": "accessibility",
+              "title": "Foundation Accessibility",
+              "displayLink": "Accessibility",
               "thumbnail": null
             },
             {
@@ -92,10 +78,24 @@
               "thumbnail": null
             },
             {
+              "id": "65",
+              "url": "foundation-typography",
+              "title": "Foundation Typography",
+              "displayLink": "Typography",
+              "thumbnail": null
+            },
+            {
               "id": "104",
               "url": "icons",
               "title": "Foundation Icons",
               "displayLink": "Icons",
+              "thumbnail": null
+            },
+            {
+              "id": "46",
+              "url": "pictograms",
+              "title": "Foundation Pictograms",
+              "displayLink": "Pictograms",
               "thumbnail": null
             }
           ]
@@ -234,6 +234,28 @@
           "url": "https://scania.github.io/corporate-ui-docs/mobile-apps/",
           "title": "Mobile apps",
           "displayLink": null,
+          "thumbnail": null,
+          "submenus": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "SDDS Footer",
+      "menus": [
+        {
+          "id": "105",
+          "url": "legal",
+          "title": "Footer Legal",
+          "displayLink": "Legal",
+          "thumbnail": null,
+          "submenus": []
+        },
+        {
+          "id": "106",
+          "url": "privacy",
+          "title": "Footer Privacy",
+          "displayLink": "Privacy",
           "thumbnail": null,
           "submenus": []
         }
