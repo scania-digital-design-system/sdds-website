@@ -185,13 +185,6 @@
           "thumbnail": null,
           "submenus": [
             {
-              "id": "101",
-              "url": "page-spec",
-              "title": "Page-spec",
-              "displayLink": null,
-              "thumbnail": null
-            },
-            {
               "id": "54",
               "url": "faqs",
               "title": "Support FAQs",
