@@ -1,308 +1,6 @@
 {
   "menus": [
     {
-      "id": "101",
-      "url": "page-spec",
-      "displayLink": null,
-      "title": "Page-spec",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "169",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "201",
-                "title": "A Page Specs",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "635",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
-                      "Introduction": true,
-                      "id": "134"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example Full Width Image Without Caption",
-                    "caption": "",
-                    "Image": {
-                      "id": "403",
-                      "label": "",
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
-                        }
-                      ]
-                    },
-                    "id": "76"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example medium Image with Caption",
-                    "caption": "Cool caption",
-                    "Image": {
-                      "id": "404",
-                      "label": "This is an medium image label",
-                      "caption": "It should look like this",
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
-                        }
-                      ]
-                    },
-                    "id": "77"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "636",
-                    "Title": "Introduction",
-                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "637",
-                    "Title": "Functional and Expressive",
-                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n\n[Functional type](link)\n\n[Expressive type](link)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Full width image xlarge",
-                    "caption": "Full width image caption xlarge",
-                    "Image": {
-                      "id": "405",
-                      "label": "Full width image label",
-                      "caption": "Caption of the image",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": "If image breaks ",
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
-                        }
-                      ]
-                    },
-                    "id": "78"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "638",
-                    "Title": "Cards",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "120",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "18",
-                        "title": "Resources ",
-                        "description": "Pictograms",
-                        "info": "2.5Mb",
-                        "image": null,
-                        "detail": "Detail of card",
-                        "type": "download",
-                        "url": "https://digitaldesign.scania.com/design/UIkit.xd"
-                      },
-                      {
-                        "id": "19",
-                        "title": "Resources",
-                        "description": "Pictogram",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "/home"
-                      },
-                      {
-                        "id": "20",
-                        "title": "Resources",
-                        "description": "Pictograms",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania-digital-design-system/sdds"
-                      },
-                      {
-                        "id": "21",
-                        "title": "Resources",
-                        "description": "Pictograms",
-                        "info": "2.5Mb",
-                        "image": null,
-                        "detail": "This is something you can click",
-                        "type": "linkExternal",
-                        "url": "https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "121",
-                    "Title": "Do's and Dont's",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/57e7316a77564efe881c674b9f9714d1.jpg"
-                        },
-                        "description": "Do this on a button",
-                        "id": "1"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/00803745607a4cf8a1e808b32bf30f29.jpg"
-                        },
-                        "description": "Do not do this on a button",
-                        "id": "2"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "639",
-                    "Title": "Images",
-                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "122",
-                    "Title": "Images",
-                    "Images": [
-                      {
-                        "id": "406",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "407",
-                        "label": "Image Subheading",
-                        "caption": "Some caption should be here",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "408",
-                        "label": "Some label",
-                        "caption": "Image caption should be short and precise",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "409",
-                        "label": "Hello image",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "410",
-                        "label": "Image is this",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "411",
-                        "label": "A happy nice image",
-                        "caption": "Some description follows",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "669",
-                    "Title": "Code block ",
-                    "Text": "```\ncd <Your project folder>\nnpm i corporate-ui\nnpm i scania-theme\n```\n\n```\n<c-theme name='scania' global='true'></c-theme>\n<c-header></c-header>\n<c-content>\n    <section>\n        <button class=\"btn btn-primary\">Accept</button>\n        <c-new-component></c-new-component>\n        <!-- Your application content goes here -->\n     </section>\n</c-content>\n<c-footer></c-footer>\n```\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "670",
-                    "Title": null,
-                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-11T09:45:27.061Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "3",
       "url": "support",
       "displayLink": null,
@@ -323,13 +21,6 @@
           "url": "contact",
           "displayLink": "Contact",
           "title": "Support Contact",
-          "thumbnail": null
-        },
-        {
-          "id": "101",
-          "url": "page-spec",
-          "displayLink": null,
-          "title": "Page-spec",
           "thumbnail": null
         }
       ]
@@ -2491,11 +2182,7 @@
                     "id": "599",
                     "Title": "Angular",
                     "Text": "Install SDDS components and Scania-theme in your project, this will install the latest version that is published on npm.",
-                    "LeadText": {
-                      "textfield": "Below you can find instructions on how to install our packages in Angular, React and Vue.",
-                      "Introduction": true,
-                      "id": "222"
-                    }
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -4780,6 +4467,308 @@
                   }
                 ],
                 "updated_at": "2020-12-08T12:07:54.429Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "101",
+      "url": "page-spec",
+      "displayLink": null,
+      "title": "Page-spec",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "169",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "201",
+                "title": "A Page Specs",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "635",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
+                      "Introduction": true,
+                      "id": "134"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image Without Caption",
+                    "caption": "",
+                    "Image": {
+                      "id": "403",
+                      "label": "",
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
+                        }
+                      ]
+                    },
+                    "id": "76"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example medium Image with Caption",
+                    "caption": "Cool caption",
+                    "Image": {
+                      "id": "404",
+                      "label": "This is an medium image label",
+                      "caption": "It should look like this",
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
+                        }
+                      ]
+                    },
+                    "id": "77"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "636",
+                    "Title": "Introduction",
+                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "637",
+                    "Title": "Functional and Expressive",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n\n[Functional type](link)\n\n[Expressive type](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Full width image xlarge",
+                    "caption": "Full width image caption xlarge",
+                    "Image": {
+                      "id": "405",
+                      "label": "Full width image label",
+                      "caption": "Caption of the image",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "If image breaks ",
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
+                        }
+                      ]
+                    },
+                    "id": "78"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "638",
+                    "Title": "Cards",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "120",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "18",
+                        "title": "Resources ",
+                        "description": "Pictograms",
+                        "info": "2.5Mb",
+                        "image": null,
+                        "detail": "Detail of card",
+                        "type": "download",
+                        "url": "https://digitaldesign.scania.com/design/UIkit.xd"
+                      },
+                      {
+                        "id": "19",
+                        "title": "Resources",
+                        "description": "Pictogram",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "/home"
+                      },
+                      {
+                        "id": "20",
+                        "title": "Resources",
+                        "description": "Pictograms",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds"
+                      },
+                      {
+                        "id": "21",
+                        "title": "Resources",
+                        "description": "Pictograms",
+                        "info": "2.5Mb",
+                        "image": null,
+                        "detail": "This is something you can click",
+                        "type": "linkExternal",
+                        "url": "https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "121",
+                    "Title": "Do's and Dont's",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/57e7316a77564efe881c674b9f9714d1.jpg"
+                        },
+                        "description": "Do this on a button",
+                        "id": "1"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/00803745607a4cf8a1e808b32bf30f29.jpg"
+                        },
+                        "description": "Do not do this on a button",
+                        "id": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "639",
+                    "Title": "Images",
+                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "122",
+                    "Title": "Images",
+                    "Images": [
+                      {
+                        "id": "406",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "407",
+                        "label": "Image Subheading",
+                        "caption": "Some caption should be here",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "408",
+                        "label": "Some label",
+                        "caption": "Image caption should be short and precise",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "409",
+                        "label": "Hello image",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "410",
+                        "label": "Image is this",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "411",
+                        "label": "A happy nice image",
+                        "caption": "Some description follows",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "669",
+                    "Title": "Code block ",
+                    "Text": "```\ncd <Your project folder>\nnpm i corporate-ui\nnpm i scania-theme\n```\n\n```\n<c-theme name='scania' global='true'></c-theme>\n<c-header></c-header>\n<c-content>\n    <section>\n        <button class=\"btn btn-primary\">Accept</button>\n        <c-new-component></c-new-component>\n        <!-- Your application content goes here -->\n     </section>\n</c-content>\n<c-footer></c-footer>\n```\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "670",
+                    "Title": null,
+                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-11T09:45:27.061Z"
               }
             }
           ]
