@@ -74,7 +74,8 @@ export class AppRoutingModule {
 
       this.router.resetConfig([
         ...routes,
-        { path: '**', redirectTo: '/home' }
+        { path: '', redirectTo: '/home', pathMatch:'full'},
+        { path: '**', redirectTo: '/' }
       ]);
 
       allRoutes = this.router.config;

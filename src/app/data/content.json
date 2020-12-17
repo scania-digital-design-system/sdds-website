@@ -26,119 +26,6 @@
       ]
     },
     {
-      "id": "34",
-      "url": "development",
-      "displayLink": "Development",
-      "title": "Resources Development",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "27",
-          "pageContent": [
-            {
-              "content": {
-                "id": "154",
-                "title": "Resources Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "264",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Here you can find all development resources for SDDS  including Github repos and page examples in different framework.",
-                      "Introduction": true,
-                      "id": "37"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "132",
-                    "Title": "Github repository",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "46",
-                        "title": "Github",
-                        "description": "Components repo",
-                        "info": null,
-                        "image": null,
-                        "detail": "This repo contains design system components, themes, and demo page. You can also find components presented in Storybook in this repo.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "8",
-                    "Title": "Example pages",
-                    "Images": [],
-                    "texts": [
-                      {
-                        "textfield": "Check out some example pages below to see how the components and themes work in different frameworks.",
-                        "Introduction": null,
-                        "id": "137"
-                      }
-                    ],
-                    "linkCards": [
-                      {
-                        "id": "30",
-                        "title": "Github",
-                        "description": "Angular",
-                        "info": "",
-                        "image": null,
-                        "detail": "Design system components used in Angular application.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-angular"
-                      },
-                      {
-                        "id": "31",
-                        "title": "Github",
-                        "description": "React",
-                        "info": null,
-                        "image": null,
-                        "detail": "Design system components used in React application.",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-react"
-                      },
-                      {
-                        "id": "32",
-                        "title": "Github",
-                        "description": "Vue",
-                        "info": null,
-                        "image": null,
-                        "detail": "Design system components used in Vue application",
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-vue"
-                      },
-                      {
-                        "id": "33",
-                        "title": "Github",
-                        "description": "HTML",
-                        "info": null,
-                        "image": null,
-                        "detail": "Simple HTML setup using design system components.",
-                        "type": "linkExternal",
-                        "url": "https://codepen.io/corporate-ui/pen/OYmqpr"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-07T10:28:45.351Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "5",
       "url": "buttons",
       "displayLink": null,
@@ -1331,7 +1218,7 @@
                     "Images": [],
                     "texts": [
                       {
-                        "textfield": "We have utilised a collection of reusable components which are aligned with our brand identity and expression. These components can be assembled together to build consistent and harmonised Scania applications. \n\nIf you have a suggestion for a new component, [please let us know](link).\n\n**The list of components will be updated regularly, with all of them being available during Q1.**",
+                        "textfield": "We have utilised a collection of reusable components which are aligned with our brand identity and expression. These components can be assembled together to build consistent and harmonised Scania applications. \n\nIf you have a suggestion for a new component, [please let us know](contribution).\n\n**The list of components will be updated regularly, with all of them being available during Q1.**",
                         "Introduction": null,
                         "id": "140"
                       }
@@ -1345,7 +1232,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkInternal",
-                        "url": "https://digitaldesign.scania.com/components/buttons"
+                        "url": "components/buttons"
                       },
                       {
                         "id": "64",
@@ -1355,7 +1242,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkInternal",
-                        "url": "https://digitaldesign.scania.com/components/divider"
+                        "url": "components/divider"
                       },
                       {
                         "id": "70",
@@ -1365,7 +1252,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkInternal",
-                        "url": "https://digitaldesign.scania.com/components/textfields"
+                        "url": "components/textfields"
                       }
                     ],
                     "dosAndDonts": []
@@ -1767,98 +1654,6 @@
       "submenus": []
     },
     {
-      "id": "42",
-      "url": "accessibility",
-      "displayLink": "Accessibility",
-      "title": "Foundation Accessibility",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "174",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "164",
-                "title": "Foundation Accessibility",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "372",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The notion of accessibility is about ensuring universal access to a website/application to all its intended users regardless of their disabilities or what software and hardware they use.",
-                      "Introduction": true,
-                      "id": "62"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "373",
-                    "Title": "Overview",
-                    "Text": "Accessibility, in general, refers to the degree of usability of a website/application for users with various kinds of disabilities (e.g. visual, auditory, cognitive etc.). The notion of accessibility was proposed in pursuit of universal access to websites/applications regardless of any disability that a user might have due to their language or location or due to the software and hardware used by them. The objective of accessibility is not to exclude anyone from the use of any website/application that we develop.\n\nAccessibility design is considered as an important element of overall user experience of a website/application. W3C (World Wide Web Consortium) has formulated guidelines for accessibility design. Various countries, such as Sweden have also proposed their own accessibility guidelines. In many cases, accessibility of website/application is mandatory by law of the land (e.g. USA).\n\nThe W3C provides information on the following aspects to help us get started: \n\n<a href=\"https://www.w3.org/WAI/tips/designing/\" target=\"_blank\">1. Guidelines for UI and visual design</a><br />\n<a href=\"https://www.w3.org/WAI/tips/developing/\" target=\"_blank\">2. Guidelines for development</a>\n\n\n##### Accessibility Principles\nIn addition to this, the W3C also provides good guidance on the <a href=\"https://www.w3.org/WAI/fundamentals/accessibility-principles/\" target=\"_blank\">Principles of Accessibility</a>. It is recommended that such principles should be followed when designing for accessibility.\n\n##### How do we know a website/application is accessibility compliant? \nThe W3C also provides a guide to carry out checks for accessibility, <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\" target=\"_blank\">see here</a>.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "374",
-                    "Title": "Implementing accessibility",
-                    "Text": "The team working with the Scania Digital Design System is committed to the principles of universal accessibility of websites and applications developed at Scania. The principles of accessibility design have been applied for the design of the website of the Scania Digital Design System, which makes it accessibility compliant. \n\nMoreover, accessibility compliant design elements from the Scania Digital Design System are designed to build accessibility ground up as and when such elements are applied for design and development of Scania website/applications. \n\nPlease reach out to the team should you need any advice on accessibility design and implementation.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-08T13:24:44.066Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "104",
-      "url": "icons",
-      "displayLink": "Icons",
-      "title": "Foundation Icons",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "191",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q1",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
       "id": "37",
       "url": "design",
       "displayLink": "Design",
@@ -1978,7 +1773,7 @@
                         "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
                         "type": "linkInternal",
-                        "url": null
+                        "url": "https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22"
                       },
                       {
                         "id": "153",
@@ -1988,7 +1783,7 @@
                         "image": null,
                         "detail": "A new design could be a new component, icon etc or a change to an existing asset of the design system. ",
                         "type": "linkInternal",
-                        "url": null
+                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
                       }
                     ],
                     "dosAndDonts": []
@@ -2676,6 +2471,752 @@
       "submenus": []
     },
     {
+      "id": "56",
+      "url": "faq-development",
+      "displayLink": null,
+      "title": "Development",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "33",
+          "pageContent": [
+            {
+              "content": {
+                "id": "135",
+                "title": "Support FAQ Development",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "6",
+                    "Title": "General",
+                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "145",
+                    "Title": "What is supported",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "146",
+                    "Title": "Migration",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "147",
+                    "Title": "Contribution",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "148",
+                    "Title": "Debug",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-14T10:32:56.432Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "54",
+      "url": "faqs",
+      "displayLink": "FAQ",
+      "title": "Support FAQs",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "127",
+          "title": "General",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "144",
+                "title": "Support FAQ General",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "231",
+                    "Title": null,
+                    "Text": "##### Introduction\n\nIn this section you will find answers to the most frequently asked questions about the Scania Digital Design System. FAQs address both [design](support/faqs/design) and [development](support/faqs/development) related questions (and answers) which are organised in separate sections. \n\nThe FAQ section is updated on an ongoing basis, so please reach out to us if you have questions that you think should be included here.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-04T16:26:56.502Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "132",
+          "title": "Design",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "134",
+                "title": "Support FAQ Design",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "117",
+                    "Title": null,
+                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n<br/>\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n<br/>\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n<br/>\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-14T10:32:50.537Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "133",
+          "title": "Development",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "135",
+                "title": "Support FAQ Development",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "6",
+                    "Title": "General",
+                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "145",
+                    "Title": "What is supported",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "146",
+                    "Title": "Migration",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "147",
+                    "Title": "Contribution",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "148",
+                    "Title": "Debug",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-14T10:32:56.432Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": [
+        {
+          "id": "56",
+          "url": "faq-development",
+          "displayLink": null,
+          "title": "Development",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "105",
+      "url": "legal",
+      "displayLink": "Legal",
+      "title": "Footer Legal",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "49",
+          "pageContent": [
+            {
+              "content": {
+                "id": "210",
+                "title": "Legal",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1058",
+                    "Title": "Legal Notice",
+                    "Text": "Do not hesitate to contact us should you have any questions regarding our legal content.\n\nTerms: Scania CV AB (publ), hereinafter referred to as “Scania”, is the owner of this website and, unless otherwise indicated, of all contents contained herein.\n\nBy accessing and using this site, you agree to the terms and conditions explained in the following. Note that Scania may at any time and at its own sole discretion change the terms and conditions. Scania therefore recommends you to review them regularly. These terms and conditions were last reviewed on 2009-07-01.\n\nIf any of these terms are found to be unlawful, invalid or void, the validity and the enforceability of the remaining terms shall in no way be affected or impaired thereby.\n\n**Use**\nThe contents of this site may be used under the Creative Commons 3.0 license. This means that you may view, copy, print and distribute any document published herein by Scania, provided that it is not for purposes of commercialization of the contents as such, that reference is made to Scania in connection with distribution of documents and that all copyright and other proprietary notices contained in the contents are retained.\n\nNo content on this site may be modified, transmitted, licensed, transferred or sold without prior written consent from Scania.\n\n**Trademarks and Copyright**\nAll trademarks, brands, logos, texts, images and software that appear on this site are, unless otherwise indicated, the property of Scania or its subsidiaries, and protected under Intellectual Property Rights laws.\n\nAll use of brands, logos, texts, images and software is prohibited, unless permissible already in accordance with the foregoing.\n\nUnauthorized use or distribution of any material from this site may be subject to civil as well as criminal sanctions under the applicable laws. Scania will enforce its Intellectual Property Rights to the fullest extent.\n\n**Information Policy**\nInformation on this server is provided \"as is\" without any warranty of any kind, either expressed or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.\n\nScania does not guarantee the accuracy and completeness of the information on this site.\n\nScania makes no commitment to update the information or materials on this site. Changes may at any time without notice be made to the information and will be incorporated in new editions of this site.\n\nScania shall in no event be liable for any damages, direct or indirect, punitive, incidental, special, consequential or other damages arising out of or in any way connected with the use of or inability to use this site or its content whether based on contract, tort, strict liability or otherwise, even if advised of the possibility of any such damages.\n\n**Contact**\nIf you have any questions regarding the terms or particularly the privacy policy, please do not hesitate to [contact us](https://www.scania.com/group/en/home/contact-us.html).\n\n",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-16T13:57:00.667Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "66",
+      "url": "contact",
+      "displayLink": "Contact",
+      "title": "Support Contact",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "126",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "143",
+                "title": "Support Contact",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "222",
+                    "Title": null,
+                    "Text": "##### Do you need help within development?\nPlease start by browsing the FAQ to see if there´s already an answer to your question. If not, please reach out to us in Teams or GitHub.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "133",
+                    "Title": "",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "47",
+                        "title": "Support",
+                        "description": "Development FAQ",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "support/faqs/development"
+                      },
+                      {
+                        "id": "48",
+                        "title": "Support",
+                        "description": "Github repositories",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania/corporate-ui"
+                      },
+                      {
+                        "id": "49",
+                        "title": "Support",
+                        "description": "Development in Teams",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://teams.microsoft.com/l/channel/19%3a5e33f67fe502441f914fbcdc6e2548f5%40thread.skype/Corporate%2520UI?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "223",
+                    "Title": null,
+                    "Text": "##### Need help within design?\nPlease browse the FAQ  to see if there’s already an answer to your question. If not please get in touch with us through Teams and we'll do our best to help out.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "135",
+                    "Title": "",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "52",
+                        "title": "Support",
+                        "description": "Design FAQ",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "support/faqs/design"
+                      },
+                      {
+                        "id": "53",
+                        "title": "Support",
+                        "description": "Design in Teams",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://teams.microsoft.com/l/channel/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/General?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "224",
+                    "Title": null,
+                    "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "136",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "54",
+                        "title": "Support",
+                        "description": "Contribute",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "contribution"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-08T12:07:54.429Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "101",
+      "url": "page-spec",
+      "displayLink": null,
+      "title": "Page-spec",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "169",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "201",
+                "title": "A Page Specs",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "635",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
+                      "Introduction": true,
+                      "id": "134"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example Full Width Image Without Caption",
+                    "caption": "",
+                    "Image": {
+                      "id": "403",
+                      "label": "",
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
+                        }
+                      ]
+                    },
+                    "id": "76"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Example medium Image with Caption",
+                    "caption": "Cool caption",
+                    "Image": {
+                      "id": "404",
+                      "label": "This is an medium image label",
+                      "caption": "It should look like this",
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
+                        }
+                      ]
+                    },
+                    "id": "77"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "636",
+                    "Title": "Introduction",
+                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "637",
+                    "Title": "Functional and Expressive",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n\n[Functional type](link)\n\n[Expressive type](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "Full width image xlarge",
+                    "caption": "Full width image caption xlarge",
+                    "Image": {
+                      "id": "405",
+                      "label": "Full width image label",
+                      "caption": "Caption of the image",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "If image breaks ",
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
+                        }
+                      ]
+                    },
+                    "id": "78"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "638",
+                    "Title": "Cards",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "120",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "18",
+                        "title": "Resources ",
+                        "description": "Pictograms",
+                        "info": "2.5Mb",
+                        "image": null,
+                        "detail": "Detail of card",
+                        "type": "download",
+                        "url": "https://digitaldesign.scania.com/design/UIkit.xd"
+                      },
+                      {
+                        "id": "19",
+                        "title": "Resources",
+                        "description": "Pictogram",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "/home"
+                      },
+                      {
+                        "id": "20",
+                        "title": "Resources",
+                        "description": "Pictograms",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds"
+                      },
+                      {
+                        "id": "21",
+                        "title": "Resources",
+                        "description": "Pictograms",
+                        "info": "2.5Mb",
+                        "image": null,
+                        "detail": "This is something you can click",
+                        "type": "linkExternal",
+                        "url": "https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "121",
+                    "Title": "Do's and Dont's",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/57e7316a77564efe881c674b9f9714d1.jpg"
+                        },
+                        "description": "Do this on a button",
+                        "id": "1"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/00803745607a4cf8a1e808b32bf30f29.jpg"
+                        },
+                        "description": "Do not do this on a button",
+                        "id": "2"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "639",
+                    "Title": "Images",
+                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "122",
+                    "Title": "Images",
+                    "Images": [
+                      {
+                        "id": "406",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "407",
+                        "label": "Image Subheading",
+                        "caption": "Some caption should be here",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "408",
+                        "label": "Some label",
+                        "caption": "Image caption should be short and precise",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "409",
+                        "label": "Hello image",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "410",
+                        "label": "Image is this",
+                        "caption": "Descriptive text single line",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "411",
+                        "label": "A happy nice image",
+                        "caption": "Some description follows",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "669",
+                    "Title": "Code block ",
+                    "Text": "```\ncd <Your project folder>\nnpm i corporate-ui\nnpm i scania-theme\n```\n\n```\n<c-theme name='scania' global='true'></c-theme>\n<c-header></c-header>\n<c-content>\n    <section>\n        <button class=\"btn btn-primary\">Accept</button>\n        <c-new-component></c-new-component>\n        <!-- Your application content goes here -->\n     </section>\n</c-content>\n<c-footer></c-footer>\n```\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "670",
+                    "Title": null,
+                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-11T09:45:27.061Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "42",
+      "url": "accessibility",
+      "displayLink": "Accessibility",
+      "title": "Foundation Accessibility",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "174",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "164",
+                "title": "Foundation Accessibility",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "372",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The notion of accessibility is about ensuring universal access to a website/application to all its intended users regardless of their disabilities or what software and hardware they use.",
+                      "Introduction": true,
+                      "id": "62"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "373",
+                    "Title": "Overview",
+                    "Text": "Accessibility, in general, refers to the degree of usability of a website/application for users with various kinds of disabilities (e.g. visual, auditory, cognitive etc.). The notion of accessibility was proposed in pursuit of universal access to websites/applications regardless of any disability that a user might have due to their language or location or due to the software and hardware used by them. The objective of accessibility is not to exclude anyone from the use of any website/application that we develop.\n\nAccessibility design is considered as an important element of overall user experience of a website/application. W3C (World Wide Web Consortium) has formulated guidelines for accessibility design. Various countries, such as Sweden have also proposed their own accessibility guidelines. In many cases, accessibility of website/application is mandatory by law of the land (e.g. USA).\n\nThe W3C provides information on the following aspects to help us get started: \n\n<a href=\"https://www.w3.org/WAI/tips/designing/\" target=\"_blank\">1. Guidelines for UI and visual design</a><br />\n<a href=\"https://www.w3.org/WAI/tips/developing/\" target=\"_blank\">2. Guidelines for development</a>\n\n\n##### Accessibility Principles\nIn addition to this, the W3C also provides good guidance on the <a href=\"https://www.w3.org/WAI/fundamentals/accessibility-principles/\" target=\"_blank\">Principles of Accessibility</a>. It is recommended that such principles should be followed when designing for accessibility.\n\n##### How do we know a website/application is accessibility compliant? \nThe W3C also provides a guide to carry out checks for accessibility, <a href=\"https://www.w3.org/WAI/test-evaluate/preliminary/\" target=\"_blank\">see here</a>.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "374",
+                    "Title": "Implementing accessibility",
+                    "Text": "The team working with the Scania Digital Design System is committed to the principles of universal accessibility of websites and applications developed at Scania. The principles of accessibility design have been applied for the design of the website of the Scania Digital Design System, which makes it accessibility compliant. \n\nMoreover, accessibility compliant design elements from the Scania Digital Design System are designed to build accessibility ground up as and when such elements are applied for design and development of Scania website/applications. \n\nPlease reach out to the team should you need any advice on accessibility design and implementation.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-08T13:24:44.066Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "104",
+      "url": "icons",
+      "displayLink": "Icons",
+      "title": "Foundation Icons",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "191",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "46",
       "url": "pictograms",
       "displayLink": "Pictograms",
@@ -2775,7 +3316,7 @@
                         "id": "163",
                         "title": "Pictograms",
                         "description": "Library",
-                        "info": "323.2mb",
+                        "info": "453mb",
                         "image": null,
                         "detail": null,
                         "type": "download",
@@ -4062,7 +4603,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "967",
                     "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundation/pictograms/pictograms).",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
                     "LeadText": null
                   },
                   {
@@ -4115,660 +4656,6 @@
                   }
                 ],
                 "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "56",
-      "url": "faq-development",
-      "displayLink": null,
-      "title": "Development",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "33",
-          "pageContent": [
-            {
-              "content": {
-                "id": "135",
-                "title": "Support FAQ Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "6",
-                    "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "145",
-                    "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "146",
-                    "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "147",
-                    "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "148",
-                    "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-14T10:32:56.432Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "54",
-      "url": "faqs",
-      "displayLink": "FAQ",
-      "title": "Support FAQs",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "127",
-          "title": "General",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "144",
-                "title": "Support FAQ General",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "231",
-                    "Title": null,
-                    "Text": "##### Introduction\n\nIn this section you will find answers to the most frequently asked questions about the Scania Digital Design System. FAQs address both [design](support/faqs/design) and [development](support/faqs/development) related questions (and answers) which are organised in separate sections. \n\nThe FAQ section is updated on an ongoing basis, so please reach out to us if you have questions that you think should be included here.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-04T16:26:56.502Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "132",
-          "title": "Design",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "134",
-                "title": "Support FAQ Design",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "117",
-                    "Title": null,
-                    "Text": "<details>\n    <summary>Is Scania Digital Design System accessible outside the Scania network?</summary>\n    <section>Yes. \n</section>\n</details>\n<br/>\n<details>\n    <summary>Is Scania Digital Design System available on mobile platform?</summary>\n    <section>Not at the moment. But we are working on it and we will make it available on mobile platforms in near future.</section>\n</details>\n<br/>\n<details>\n    <summary>Who works on the Scania Digital Design System?</summary>\n    <section>The Corporate Digital Design team (IXCD) works as the owners of Scania Digital Design System. The team collaborates with various teams across Scania as and when required.\n    </section>\n</details>\n<br/>\n<details>\n    <summary>I want to modify look and feel of a UI element. Is it possible?</summary>\n    <section>Yes, it is possible but the modified UI element requires approval from the Scania Digital Design System governance team. There is a process in place for this purpose. For further information, please get in touch with Marcus Åstrom directly.\n    </section>\n</details>\n\n",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-14T10:32:50.537Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "133",
-          "title": "Development",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "135",
-                "title": "Support FAQ Development",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "6",
-                    "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "145",
-                    "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "146",
-                    "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "147",
-                    "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "148",
-                    "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-14T10:32:56.432Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": [
-        {
-          "id": "56",
-          "url": "faq-development",
-          "displayLink": null,
-          "title": "Development",
-          "thumbnail": null
-        }
-      ]
-    },
-    {
-      "id": "105",
-      "url": "legal",
-      "displayLink": "Legal",
-      "title": "Footer Legal",
-      "thumbnail": null,
-      "showTabs": false,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "49",
-          "pageContent": [
-            {
-              "content": {
-                "id": "210",
-                "title": "Legal",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1058",
-                    "Title": "Legal Notice",
-                    "Text": "Do not hesitate to contact us should you have any questions regarding our legal content.\n\nTerms: Scania CV AB (publ), hereinafter referred to as “Scania”, is the owner of this website and, unless otherwise indicated, of all contents contained herein.\n\nBy accessing and using this site, you agree to the terms and conditions explained in the following. Note that Scania may at any time and at its own sole discretion change the terms and conditions. Scania therefore recommends you to review them regularly. These terms and conditions were last reviewed on 2009-07-01.\n\nIf any of these terms are found to be unlawful, invalid or void, the validity and the enforceability of the remaining terms shall in no way be affected or impaired thereby.\n\n**Use**\nThe contents of this site may be used under the Creative Commons 3.0 license. This means that you may view, copy, print and distribute any document published herein by Scania, provided that it is not for purposes of commercialization of the contents as such, that reference is made to Scania in connection with distribution of documents and that all copyright and other proprietary notices contained in the contents are retained.\n\nNo content on this site may be modified, transmitted, licensed, transferred or sold without prior written consent from Scania.\n\n**Trademarks and Copyright**\nAll trademarks, brands, logos, texts, images and software that appear on this site are, unless otherwise indicated, the property of Scania or its subsidiaries, and protected under Intellectual Property Rights laws.\n\nAll use of brands, logos, texts, images and software is prohibited, unless permissible already in accordance with the foregoing.\n\nUnauthorized use or distribution of any material from this site may be subject to civil as well as criminal sanctions under the applicable laws. Scania will enforce its Intellectual Property Rights to the fullest extent.\n\n**Information Policy**\nInformation on this server is provided \"as is\" without any warranty of any kind, either expressed or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.\n\nScania does not guarantee the accuracy and completeness of the information on this site.\n\nScania makes no commitment to update the information or materials on this site. Changes may at any time without notice be made to the information and will be incorporated in new editions of this site.\n\nScania shall in no event be liable for any damages, direct or indirect, punitive, incidental, special, consequential or other damages arising out of or in any way connected with the use of or inability to use this site or its content whether based on contract, tort, strict liability or otherwise, even if advised of the possibility of any such damages.\n\n**Contact**\nIf you have any questions regarding the terms or particularly the privacy policy, please do not hesitate to [contact us](https://www.scania.com/group/en/home/contact-us.html).\n\n",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-16T13:57:00.667Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "66",
-      "url": "contact",
-      "displayLink": "Contact",
-      "title": "Support Contact",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "126",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "143",
-                "title": "Support Contact",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "222",
-                    "Title": null,
-                    "Text": "##### Do you need help within development?\nPlease start by browsing the FAQ to see if there´s already an answer to your question. If not, please reach out to us in Teams or GitHub.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "133",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "47",
-                        "title": "Support",
-                        "description": "Development FAQ",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "support/faqs/development"
-                      },
-                      {
-                        "id": "48",
-                        "title": "Support",
-                        "description": "Github repositories",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui"
-                      },
-                      {
-                        "id": "49",
-                        "title": "Support",
-                        "description": "Development in Teams",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://teams.microsoft.com/l/channel/19%3a5e33f67fe502441f914fbcdc6e2548f5%40thread.skype/Corporate%2520UI?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "223",
-                    "Title": null,
-                    "Text": "##### Need help within design?\nPlease browse the FAQ  to see if there’s already an answer to your question. If not please get in touch with us through Teams and we'll do our best to help out.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "135",
-                    "Title": "",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "52",
-                        "title": "Support",
-                        "description": "Design FAQ",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "support/faqs/design"
-                      },
-                      {
-                        "id": "53",
-                        "title": "Support",
-                        "description": "Design in Teams",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://teams.microsoft.com/l/channel/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/General?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "224",
-                    "Title": null,
-                    "Text": "##### Do you think something is missing that should be there?\nIf you have an idea for addtion of a design pattern, component or a feature or more that you think should be included in the design system, please tell use via the contribution section. Your contribution will then be reviewed and taken into consideration for SDDS.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "136",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "54",
-                        "title": "Support",
-                        "description": "Contribute",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "contribution"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-08T12:07:54.429Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "101",
-      "url": "page-spec",
-      "displayLink": null,
-      "title": "Page-spec",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "169",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "201",
-                "title": "A Page Specs",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "635",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Language is not just what we say, but how we say it. Scania’s tone of voice is honest, sincere, respectful and confident. Typography is the visualisation of our voice. ",
-                      "Introduction": true,
-                      "id": "134"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example Full Width Image Without Caption",
-                    "caption": "",
-                    "Image": {
-                      "id": "403",
-                      "label": "",
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a71db0d5754b430fa91d8173d7149f87.jpg"
-                        }
-                      ]
-                    },
-                    "id": "76"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Example medium Image with Caption",
-                    "caption": "Cool caption",
-                    "Image": {
-                      "id": "404",
-                      "label": "This is an medium image label",
-                      "caption": "It should look like this",
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/94e736db22bf430d97d26dc8d93fbb39.jpg"
-                        }
-                      ]
-                    },
-                    "id": "77"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "636",
-                    "Title": "Introduction",
-                    "Text": "For a strong and unified brand expression, Scania has developed a custom-made and unique font family — Scania Sans. Our typeface has a strong Scania DNA since it derives from our wordmark.\n\nWe use typography to present information and structure the entire user interface with clear hierarchy.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "637",
-                    "Title": "Functional and Expressive",
-                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:\n\n[Functional type](link)\n\n[Expressive type](link)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "Full width image xlarge",
-                    "caption": "Full width image caption xlarge",
-                    "Image": {
-                      "id": "405",
-                      "label": "Full width image label",
-                      "caption": "Caption of the image",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": "If image breaks ",
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1dd11d69a58044ddafd537339f4b506b.png"
-                        }
-                      ]
-                    },
-                    "id": "78"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "638",
-                    "Title": "Cards",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "120",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "18",
-                        "title": "Resources ",
-                        "description": "Pictograms",
-                        "info": "2.5Mb",
-                        "image": null,
-                        "detail": "Detail of card",
-                        "type": "download",
-                        "url": "https://digitaldesign.scania.com/design/UIkit.xd"
-                      },
-                      {
-                        "id": "19",
-                        "title": "Resources",
-                        "description": "Pictogram",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "/home"
-                      },
-                      {
-                        "id": "20",
-                        "title": "Resources",
-                        "description": "Pictograms",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://github.com/scania-digital-design-system/sdds"
-                      },
-                      {
-                        "id": "21",
-                        "title": "Resources",
-                        "description": "Pictograms",
-                        "info": "2.5Mb",
-                        "image": null,
-                        "detail": "This is something you can click",
-                        "type": "linkExternal",
-                        "url": "https://digitaldesign.scania.com/logotype/scania-wordmark-white.svg"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "121",
-                    "Title": "Do's and Dont's",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/57e7316a77564efe881c674b9f9714d1.jpg"
-                        },
-                        "description": "Do this on a button",
-                        "id": "1"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/00803745607a4cf8a1e808b32bf30f29.jpg"
-                        },
-                        "description": "Do not do this on a button",
-                        "id": "2"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "639",
-                    "Title": "Images",
-                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.\n\n**Sub section**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "122",
-                    "Title": "Images",
-                    "Images": [
-                      {
-                        "id": "406",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/34ccaf139b754cc4b3d6e7d6fee90df8.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "407",
-                        "label": "Image Subheading",
-                        "caption": "Some caption should be here",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b255a3473447450ba6c86db8f16f2b7d.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "408",
-                        "label": "Some label",
-                        "caption": "Image caption should be short and precise",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6cf74012f66d484cbba21bda71947241.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "409",
-                        "label": "Hello image",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9a7a195fd53f4de9978b279227c10149.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "410",
-                        "label": "Image is this",
-                        "caption": "Descriptive text single line",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/963961b035b7452186fc46865ac88e94.jpg"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "411",
-                        "label": "A happy nice image",
-                        "caption": "Some description follows",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/763483bff0d844148c35a135edfc8c75.jpg"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "669",
-                    "Title": "Code block ",
-                    "Text": "```\ncd <Your project folder>\nnpm i corporate-ui\nnpm i scania-theme\n```\n\n```\n<c-theme name='scania' global='true'></c-theme>\n<c-header></c-header>\n<c-content>\n    <section>\n        <button class=\"btn btn-primary\">Accept</button>\n        <c-new-component></c-new-component>\n        <!-- Your application content goes here -->\n     </section>\n</c-content>\n<c-footer></c-footer>\n```\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "670",
-                    "Title": null,
-                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-11T09:45:27.061Z"
               }
             }
           ]
@@ -4853,6 +4740,119 @@
                   }
                 ],
                 "updated_at": "2020-12-09T09:50:49.286Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
+      "id": "34",
+      "url": "development",
+      "displayLink": "Development",
+      "title": "Resources Development",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "27",
+          "pageContent": [
+            {
+              "content": {
+                "id": "154",
+                "title": "Resources Development",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "264",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Here you can find all development resources for SDDS  including Github repos and page examples in different framework.",
+                      "Introduction": true,
+                      "id": "37"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "132",
+                    "Title": "Github repository",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "46",
+                        "title": "Github",
+                        "description": "Components repo",
+                        "info": null,
+                        "image": null,
+                        "detail": "This repo contains design system components, themes, and demo page. You can also find components presented in Storybook in this repo.",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania/corporate-ui"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "8",
+                    "Title": "Example pages",
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "Check out some example pages below to see how the components and themes work in different frameworks.",
+                        "Introduction": null,
+                        "id": "137"
+                      }
+                    ],
+                    "linkCards": [
+                      {
+                        "id": "30",
+                        "title": "Github",
+                        "description": "Angular",
+                        "info": "",
+                        "image": null,
+                        "detail": "Design system components used in Angular application.",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania/corporate-ui-angular"
+                      },
+                      {
+                        "id": "31",
+                        "title": "Github",
+                        "description": "React",
+                        "info": null,
+                        "image": null,
+                        "detail": "Design system components used in React application.",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania/corporate-ui-react"
+                      },
+                      {
+                        "id": "32",
+                        "title": "Github",
+                        "description": "Vue",
+                        "info": null,
+                        "image": null,
+                        "detail": "Design system components used in Vue application",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania/corporate-ui-vue"
+                      },
+                      {
+                        "id": "33",
+                        "title": "Github",
+                        "description": "HTML",
+                        "info": null,
+                        "image": null,
+                        "detail": "Simple HTML setup using design system components.",
+                        "type": "linkExternal",
+                        "url": "https://codepen.io/corporate-ui/pen/OYmqpr"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-07T10:28:45.351Z"
               }
             }
           ]
@@ -5407,7 +5407,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "336",
                     "Title": null,
-                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundation/pictograms/pictograms). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following our [guidelines](foundation/pictograms/contribute).",
+                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following our [guidelines](foundations/pictograms/contribute).",
                     "LeadText": null
                   },
                   {
@@ -5421,7 +5421,7 @@
                         "id": "41",
                         "title": "Pictograms",
                         "description": "Library",
-                        "info": "451.6mb",
+                        "info": "453mb",
                         "image": null,
                         "detail": null,
                         "type": "download",
@@ -5442,168 +5442,6 @@
                   }
                 ],
                 "updated_at": "2020-12-08T09:34:52.492Z"
-              }
-            }
-          ]
-        }
-      ],
-      "submenus": []
-    },
-    {
-      "id": "63",
-      "url": "design",
-      "displayLink": "Design",
-      "title": "Resources Design",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "112",
-          "title": "UI Kit",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "151",
-                "title": "Resources Design UI Kit",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "256",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The UI Kit will contain all of our components, patterns and resources that you need to start building a new digital Scania application.\n\nCurrently, the UI Kit is work in progress. It will be available to download here in Q1.",
-                      "Introduction": true,
-                      "id": "34"
-                    }
-                  }
-                ],
-                "updated_at": "2020-12-07T10:07:19.040Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "113",
-          "title": "Grid System",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "152",
-                "title": "Resources Design Grid System",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "257",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
-                      "Introduction": true,
-                      "id": "35"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "258",
-                    "Title": null,
-                    "Text": "#### Install\n##### Download the Grid System\nCurrently the Grid System is only available in Figma. Open Figma and make sure to have the most recent version installed. Then download our Grid System below. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "130",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "44",
-                        "title": "Figma",
-                        "description": "Grid System",
-                        "info": "2.9mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "667",
-                    "Title": null,
-                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface [Scania Sans](foundation/foundation-typography) installed.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-07T10:10:28.309Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "114",
-          "title": "Way of Working",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "153",
-                "title": "Resources Design Way of working",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "261",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "At Scania, we have two levels of working in design.",
-                      "Introduction": true,
-                      "id": "36"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "262",
-                    "Title": null,
-                    "Text": "##### 1. Way of working between the UX design team and the Agile development team\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. \n\nThe development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "263",
-                    "Title": null,
-                    "Text": "##### 2. The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": "",
-                    "Image": {
-                      "id": "6",
-                      "label": "Scania UX Phases",
-                      "caption": "Detailed roadmap of the UX work phases",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": "",
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/46ed36d3175e456087d8d5a7663eaaf4.png"
-                        }
-                      ]
-                    },
-                    "id": "6"
-                  }
-                ],
-                "updated_at": "2020-12-07T10:23:57.212Z"
               }
             }
           ]
@@ -7159,6 +6997,39 @@
       "submenus": []
     },
     {
+      "id": "106",
+      "url": "privacy",
+      "displayLink": "Privacy",
+      "title": "Footer Privacy",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "50",
+          "pageContent": [
+            {
+              "content": {
+                "id": "209",
+                "title": "Privacy",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1055",
+                    "Title": "Scania Privacy Statement",
+                    "Text": "A core value for us at Scania is Respect for the individual. This is the foundation when we interact with you in your role as a user of Scania Digital Design System.\n\nThe data controller responsible for your personal data is Scania CV AB, unless otherwise stated in a privacy statement specific to a service as accessible through digitaldesign.scania.com\n\nWe process your personal data when it is needed to:\n\n- deliver our services,\n- support and assist you when you use our services,\n- fulfil legal obligations and legitimate requests from law enforcement and other authorities,\n- provide information about our products and services as well as upcoming events,\n- improve quality and develop existing, as well as new,  products and  services as well as our organization.\n\nWe strive to always handle and protect your personal data with respect and integrity. Sometimes we utilize trusted business partners to help us deliver our products and services. In those cases when we need to share your data with our business partners, we ensure that they treat your data with the same respect and integrity that we do.\n\nIn this privacy statement we would like to inform you what personal data we might process, why we are doing it and how we ensure that your rights and your privacy is respected. If you have any questions or concerns you are always welcome to [contact us](https://www.scania.com/global/en/home/misc/privacy-statement/contact-privacy.html).",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-16T13:55:14.344Z"
+              }
+            }
+          ]
+        }
+      ],
+      "submenus": []
+    },
+    {
       "id": "67",
       "url": "foundation-colours",
       "displayLink": "Colour",
@@ -7380,7 +7251,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "379",
                     "Title": null,
-                    "Text": "**Colour specification**\nBelow you can find a detailed list of all official Scania colours. Note, these are also available in [Github](https://www.npmjs.com/package/@scania-sdds/colour).\n",
+                    "Text": "**Colour specification**\nBelow you can find a detailed list of all official Scania colours. Note, these are also available in <a href=\"https://www.npmjs.com/package/@scania-sdds/colour\">Github</a>.\n\n\n",
                     "LeadText": null
                   },
                   {
@@ -7499,7 +7370,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1053",
                     "Title": "Installation",
-                    "Text": "You can install SDDS colour package with [npm](https://www.npmjs.com/). Run the following command:",
+                    "Text": "You can install SDDS colour package with <a href=\"https://www.npmjs.com/r\">npm</a>. Run the following command:",
                     "LeadText": null
                   },
                   {
@@ -7615,7 +7486,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "346",
                     "Title": "Functional & Expressive",
-                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:<br/>\n[Functional type](foundation/foundation-typography/functional-type) <br/>\n[Expressive type](foundation/foundation-typography/expressive-type)\n",
+                    "Text": "At Scania, we have divided our typography into two type sets, Functional and Expressive. These two types have different purposes, but there might be applications where a combination of them could be used. \n\n**Functional**\nShould be used in non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\n**Expressive**\nShould be used for more branded external communication and public websites, for instance Scania.com. These types of applications need a much stronger expression for the typography, especially when it comes to headlines.\n\nLearn more about each specific type set:<br/>\n[Functional type](foundations/foundation-typography/functional-type) <br/>\n[Expressive type](foundations/foundation-typography/expressive-type)\n",
                     "LeadText": null
                   },
                   {
@@ -7730,7 +7601,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "607",
                     "Title": "Functional type",
-                    "Text": "The Functional type set should be used for non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](foundation/foundation-typography/information#type-scale) when defining a new text style for your project.",
+                    "Text": "The Functional type set should be used for non-branded communication, information and documentation. The main usage is for Scania applications (except apps used in-vehicle), where the typography’s focus is to help the user understand and perform tasks.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](foundations/foundation-typography/information#type-scale) when defining a new text style for your project.",
                     "LeadText": null
                   },
                   {
@@ -7782,7 +7653,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "456",
                     "Title": "Expressive type",
-                    "Text": "Expressive type should be used for more branded communication and public websites, for instance Scania.com. These types of applications need a much more dynamic expression for the typography, especially when it comes to headlines.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](foundation/foundation-typography/information#type-scale) when defining a new text style for your project.",
+                    "Text": "Expressive type should be used for more branded communication and public websites, for instance Scania.com. These types of applications need a much more dynamic expression for the typography, especially when it comes to headlines.\n\nThe text styles are available below. If you need more sizes, please select a size from our [type scale](foundations/foundation-typography/information#type-scale) when defining a new text style for your project.",
                     "LeadText": null
                   },
                   {
@@ -7845,7 +7716,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1060",
                     "Title": "Installation",
-                    "Text": "You can install SDDS typography package with [npm](https://www.npmjs.com/). Run the following command:",
+                    "Text": "You can install SDDS typography package with <a href=\"https://www.npmjs.com/r\">npm</a>. Run the following command:",
                     "LeadText": null
                   },
                   {
@@ -7902,31 +7773,160 @@
       "submenus": []
     },
     {
-      "id": "106",
-      "url": "privacy",
-      "displayLink": "Privacy",
-      "title": "Footer Privacy",
+      "id": "63",
+      "url": "design",
+      "displayLink": "Design",
+      "title": "Resources Design",
       "thumbnail": null,
-      "showTabs": false,
+      "showTabs": true,
       "pageStructure": [
         {
-          "__typename": "ComponentPagePluginArticle",
-          "id": "50",
+          "__typename": "ComponentPagePluginTab",
+          "id": "112",
+          "title": "UI Kit",
+          "active": true,
           "pageContent": [
             {
               "content": {
-                "id": "209",
-                "title": "Privacy",
+                "id": "151",
+                "title": "Resources Design UI Kit",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1055",
-                    "Title": "Scania Privacy Statement",
-                    "Text": "A core value for us at Scania is Respect for the individual. This is the foundation when we interact with you in your role as a user of Scania Digital Design System.\n\nThe data controller responsible for your personal data is Scania CV AB, unless otherwise stated in a privacy statement specific to a service as accessible through digitaldesign.scania.com\n\nWe process your personal data when it is needed to:\n\n- deliver our services,\n- support and assist you when you use our services,\n- fulfil legal obligations and legitimate requests from law enforcement and other authorities,\n- provide information about our products and services as well as upcoming events,\n- improve quality and develop existing, as well as new,  products and  services as well as our organization.\n\nWe strive to always handle and protect your personal data with respect and integrity. Sometimes we utilize trusted business partners to help us deliver our products and services. In those cases when we need to share your data with our business partners, we ensure that they treat your data with the same respect and integrity that we do.\n\nIn this privacy statement we would like to inform you what personal data we might process, why we are doing it and how we ensure that your rights and your privacy is respected. If you have any questions or concerns you are always welcome to [contact us](https://www.scania.com/global/en/home/misc/privacy-statement/contact-privacy.html).",
+                    "id": "256",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The UI Kit will contain all of our components, patterns and resources that you need to start building a new digital Scania application.\n\nCurrently, the UI Kit is work in progress. It will be available to download here in Q1.",
+                      "Introduction": true,
+                      "id": "34"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-07T10:07:19.040Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "113",
+          "title": "Grid System",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "152",
+                "title": "Resources Design Grid System",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "257",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
+                      "Introduction": true,
+                      "id": "35"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "258",
+                    "Title": null,
+                    "Text": "#### Install\n##### Download the Grid System\nCurrently the Grid System is only available in Figma. Open Figma and make sure to have the most recent version installed. Then download our Grid System below. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "130",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "44",
+                        "title": "Figma",
+                        "description": "Grid System",
+                        "info": "2.9mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "667",
+                    "Title": null,
+                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface [Scania Sans](foundation/foundation-typography) installed.",
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-16T13:55:14.344Z"
+                "updated_at": "2020-12-07T10:10:28.309Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "114",
+          "title": "Way of Working",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "153",
+                "title": "Resources Design Way of working",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "261",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "At Scania, we have two levels of working in design.",
+                      "Introduction": true,
+                      "id": "36"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "262",
+                    "Title": null,
+                    "Text": "##### 1. Way of working between the UX design team and the Agile development team\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. \n\nThe development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "263",
+                    "Title": null,
+                    "Text": "##### 2. The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": "",
+                    "Image": {
+                      "id": "6",
+                      "label": "Scania UX Phases",
+                      "caption": "Detailed roadmap of the UX work phases",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "",
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/46ed36d3175e456087d8d5a7663eaaf4.png"
+                        }
+                      ]
+                    },
+                    "id": "6"
+                  }
+                ],
+                "updated_at": "2020-12-07T10:23:57.212Z"
               }
             }
           ]
@@ -8122,7 +8122,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "336",
                     "Title": null,
-                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundation/pictograms/pictograms). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following our [guidelines](foundation/pictograms/contribute).",
+                    "Text": "#### Resources\n\nYou can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms). If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following our [guidelines](foundations/pictograms/contribute).",
                     "LeadText": null
                   },
                   {
@@ -8136,7 +8136,7 @@
                         "id": "41",
                         "title": "Pictograms",
                         "description": "Library",
-                        "info": "451.6mb",
+                        "info": "453mb",
                         "image": null,
                         "detail": null,
                         "type": "download",
