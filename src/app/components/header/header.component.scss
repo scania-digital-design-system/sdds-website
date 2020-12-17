@@ -57,6 +57,12 @@
     background-size: 30px auto;
     background-position: center;
     background-repeat: no-repeat;
+    margin-right: 54px;
+
+    @media (min-width: 1054px) {
+    //FIXME: until search is added
+    margin-right: 0;
+    }
   }
 
   .site-search {
