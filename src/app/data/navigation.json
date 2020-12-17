@@ -64,10 +64,10 @@
               "thumbnail": null
             },
             {
-              "id": "42",
-              "url": "accessibility",
-              "title": "Foundation Accessibility",
-              "displayLink": "Accessibility",
+              "id": "65",
+              "url": "foundation-typography",
+              "title": "Foundation Typography",
+              "displayLink": "Typography",
               "thumbnail": null
             },
             {
@@ -78,10 +78,10 @@
               "thumbnail": null
             },
             {
-              "id": "65",
-              "url": "foundation-typography",
-              "title": "Foundation Typography",
-              "displayLink": "Typography",
+              "id": "46",
+              "url": "pictograms",
+              "title": "Foundation Pictograms",
+              "displayLink": "Pictograms",
               "thumbnail": null
             },
             {
@@ -92,10 +92,10 @@
               "thumbnail": null
             },
             {
-              "id": "46",
-              "url": "pictograms",
-              "title": "Foundation Pictograms",
-              "displayLink": "Pictograms",
+              "id": "42",
+              "url": "accessibility",
+              "title": "Foundation Accessibility",
+              "displayLink": "Accessibility",
               "thumbnail": null
             }
           ]
@@ -162,17 +162,17 @@
               "thumbnail": null
             },
             {
-              "id": "34",
-              "url": "development",
-              "title": "Resources Development",
-              "displayLink": "Development",
-              "thumbnail": null
-            },
-            {
               "id": "63",
               "url": "design",
               "title": "Resources Design",
               "displayLink": "Design",
+              "thumbnail": null
+            },
+            {
+              "id": "34",
+              "url": "development",
+              "title": "Resources Development",
+              "displayLink": "Development",
               "thumbnail": null
             }
           ]
