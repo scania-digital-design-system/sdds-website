@@ -17,6 +17,7 @@
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 4px;
+    background: var(--sdds-grey-200);
   }
   ::-webkit-scrollbar-track {
     background: var(--sdds-grey-200); 
