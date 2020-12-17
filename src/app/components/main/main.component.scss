@@ -17,16 +17,9 @@
   overflow-y: auto;
   &::-webkit-scrollbar {
     width: 5px;
-    background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
-
-  &:hover {
-    &::-webkit-scrollbar-thumb {
-      background-color: var(--sdds-grey-300);
-    }
+    background-color: var(--sdds-grey-300);
   }
 }
 

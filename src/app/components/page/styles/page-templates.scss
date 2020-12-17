@@ -19,6 +19,9 @@
     .intro-columns{
       margin-top: 56px;
       margin-bottom: 124px;
+      p:last-child{
+        margin-bottom: 0;
+      }
       a{
         border-bottom: 1px solid var(--sdds-grey-200);
         text-decoration: none;
