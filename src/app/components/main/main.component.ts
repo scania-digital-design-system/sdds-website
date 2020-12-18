@@ -77,4 +77,9 @@ export class MainComponent{
     gtag('set', 'page', path);
     gtag('send', 'pageview');
   }
+
+  scrollToTop(){
+    const wrapper = document.querySelector('main');
+    wrapper.scroll(0, 0)
+  }
 }

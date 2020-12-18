@@ -42,4 +42,27 @@ header {
   color: #fff;
 }
 
+.scroll-to-top{
+  position: fixed;
+  color: var(--sdds-grey-700);
+  bottom: var(--sdds-spacing-layout-16);
+  right: var(--sdds-spacing-layout-16);
+  z-index: 2000;
+  font-size: 8rem;
+  border-radius: 50%;
+  padding: var(--sdds-spacing-layout-8);
+  background: var(--sdds-white);
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.05), 0px -1px 2px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  c-icon{
+    transform: rotate(90deg);
+  }
+}
+
+@media(min-width:1056px){
+  .scroll-to-top{
+    display: none;
+  }
+}
+
 
