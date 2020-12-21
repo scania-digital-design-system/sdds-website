@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, HostListener, Input, Output } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TitleCasePipe } from '@angular/common';
 
@@ -22,6 +22,12 @@ export class MainComponent{
   @Input() menuHidden;
 
   @Output() eventFromHeader = new EventEmitter<boolean>();
+
+  @HostListener('scroll', ['$event']) // for window scroll events
+  onScroll(event) {
+    if(event.srcElement.scrollTop > 128) document.querySelector('.scroll-to-top').classList.add('show');
+    else { document.querySelector('.scroll-to-top').classList.remove('show'); } 
+  }
 
 
   constructor(private router: Router, private ps: PageService, private titleCase: TitleCasePipe) {
@@ -76,5 +82,10 @@ export class MainComponent{
 
     gtag('set', 'page', path);
     gtag('send', 'pageview');
+  }
+
+  scrollToTop(){
+    const wrapper = document.querySelector('main');
+    wrapper.scroll(0, 0)
   }
 }
