@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router, Scroll } from '@angular/router';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { PageService } from 'src/app/app.service';
 import { Page } from 'src/app/app.interface';
@@ -13,13 +13,14 @@ import { menus } from '../../../data/content.json';
   host: { class: 'tab-component-container' }
 })
 
-export class TabContentComponent {
+export class TabContentComponent implements OnInit, AfterViewInit {
   title;
   content: any = {};
   tabContent: any = [];
   defaultTab = '.';
   tabExist: Boolean = false;
   typographyPage:Boolean = false;
+  titleElements = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -65,6 +66,32 @@ export class TabContentComponent {
     });
 
   }
+  ngOnInit() {
+    const scrollWrapper = document.querySelector('main');
+
+    scrollWrapper.addEventListener('scroll', this.onScroll.bind(this));
+
+  }
+
+  ngAfterViewInit()	{
+    const allTitles = document.querySelectorAll('.section-title');
+    allTitles.forEach(title => {
+      this.titleElements.push({
+        id: title.id,
+        offset: title['offsetTop']
+      })
+    })
+  }
+
+  onScroll(e){
+    const pos = e.scrollTop;
+    this.titleElements.some(title => {
+      if(title.offset <= pos + 64){
+        console.log(title.id);
+      }
+    })
+  }
+
 
   generateUrl(url){
     const generateUrlPipe = new GenerateTabURLPipe();
