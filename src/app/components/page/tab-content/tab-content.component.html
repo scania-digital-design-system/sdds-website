@@ -5,7 +5,7 @@
         <ng-container *ngFor="let section of item.content.section">
           <li *ngIf='section.Title'>
             <a [routerLink]="defaultTab" (click)='anchorMenu(section.Title)' [fragment]='section.Title | generateTabUrl'
-            class="sdds-text-grey-400" [ngClass]="isAnchorActive ? 'active' : ''">{{section.Title}}</a>
+            class="sdds-text-grey-400" [ngClass]="{'active': isAnchorActive === generateUrl(section.Title)}">{{section.Title}}</a>
           </li>
         </ng-container>
       </ul>

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 import { PageService } from 'src/app/app.service';
 import { Page } from 'src/app/app.interface';
@@ -21,11 +21,13 @@ export class TabContentComponent implements OnInit, AfterViewInit {
   tabExist: Boolean = false;
   typographyPage:Boolean = false;
   titleElements = [];
+  wrapperTop: number;
+  pageOffset = 144; // sticky nav height + padding
+  isAnchorActive: any;
 
   constructor(
     private route: ActivatedRoute,
-    public ps: PageService,
-    private router: Router
+    public ps: PageService
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
@@ -67,27 +69,26 @@ export class TabContentComponent implements OnInit, AfterViewInit {
 
   }
   ngOnInit() {
-    const scrollWrapper = document.querySelector('main');
-
-    scrollWrapper.addEventListener('scroll', this.onScroll.bind(this));
-
+    const main = document.querySelector('main');
+    this.wrapperTop = Math.round(main.getBoundingClientRect().top);
+    document.querySelector('main').addEventListener('scroll', this.onScroll.bind(this));
   }
 
   ngAfterViewInit()	{
-    const allTitles = document.querySelectorAll('.section-title');
-    allTitles.forEach(title => {
-      this.titleElements.push({
-        id: title.id,
-        offset: title['offsetTop']
-      })
+    const allTitles = document.querySelectorAll('h4.section-title');
+
+    allTitles.forEach((item) => {
+      this.titleElements = [...this.titleElements, item.id]
     })
   }
 
   onScroll(e){
-    const pos = e.scrollTop;
+    const pos = Math.round(e.target.scrollTop);
+    
     this.titleElements.some(title => {
-      if(title.offset <= pos + 64){
-        console.log(title.id);
+      const offset = document.getElementById(title).offsetTop;
+      if(offset <= (pos - this.pageOffset)){
+        this.isAnchorActive = title;
       }
     })
   }
@@ -102,10 +103,7 @@ export class TabContentComponent implements OnInit, AfterViewInit {
     id = this.generateUrl(id);
     const elem = document.getElementById(id);
     const wrapper = document.querySelector('main');
-
-    const offset = 144; // sticky nav height + padding
-
-    wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - offset), left: 0, behavior: 'smooth' });
+    wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - this.pageOffset), left: 0, behavior: 'smooth' });
 
   }
 }
