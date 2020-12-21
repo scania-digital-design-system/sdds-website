@@ -59,8 +59,14 @@
         display: block;
       }
     }
-    figcaption p{
-      margin-bottom: 0;
+
+    figure {
+      figcaption {
+        color: var(--sdds-grey-700);
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
 
     .lead-text {

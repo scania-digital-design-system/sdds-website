@@ -81,7 +81,7 @@
                         "id": "979",
                         "label": null,
                         "caption": null,
-                        "size": "Xlarge",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -198,7 +198,7 @@
                     "Images": [
                       {
                         "id": "384",
-                        "label": "Deafult ",
+                        "label": "Default ",
                         "caption": "Use as primary button size",
                         "size": "Small",
                         "negative": null,
@@ -313,7 +313,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "545",
                     "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for buttons.\n\n**Short text labels**\n\nText labels should be short and direct, since it needs to be easy to read what action the button will perform when the user interacts with it.\n\n\n\n",
+                    "Text": "Below you will find some best practice solutions for buttons.\n\n##### Short text labels\nText labels should be short and direct, since it needs to be easy to read what action the button will perform when the user interacts with it.\n\n\n\n",
                     "LeadText": {
                       "textfield": null,
                       "Introduction": null,
@@ -350,7 +350,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "676",
                     "Title": null,
-                    "Text": "**One line text labels**\n\nTo secure good legibility, a text label should be placed on one line and not be wrapped on multiple lines. If you have narrowed width space to place your button, move it below the associated content.\n\n",
+                    "Text": "##### One line text labels\nTo secure good legibility, a text label should be placed on one line and not be wrapped on multiple lines. If you have narrowed width space to place your button, move it below the associated content.\n\n",
                     "LeadText": null
                   },
                   {
@@ -383,7 +383,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "677",
                     "Title": "",
-                    "Text": "**One primary button**\n\nWe need to help the user to understand which action is more important by only having one primary button present at the time on the section.\n\n",
+                    "Text": "##### One primary button\nWe need to help the user to understand which action is more important by only having one primary button present at the time on the section.\n\n",
                     "LeadText": null
                   },
                   {
@@ -1010,7 +1010,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "447",
                     "Title": "Corner radius",
-                    "Text": "Our button containers have rounded corners with a 4px / 1em corner radius. \n\n<table>\n<thead>\n  <tr>\n    <th>Corner radious</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Applied on all four corners of button container</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "Our button containers have rounded corners with a 4px / 1em corner radius. \n\n<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Applied on all four corners of button container</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
@@ -1714,7 +1714,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "703",
                     "Title": null,
-                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface Scania Sans installed.\n\n##### UI Kit (soon)\nDuring Q1 2021 we will release a UI Kit which will contain all of our components, patters, colours and text styles gathered in one library.\n\n",
+                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface Scania Sans installed.\n\n##### UI Kit (soon)\nDuring Q1 2021 we will release a UI Kit which will contain all of our components, patterns, colours and text styles gathered in one library.\n\n",
                     "LeadText": null
                   },
                   {
@@ -4713,7 +4713,7 @@
                         "image": null,
                         "detail": "An error that causes something to unexpectedly quit or behave in an unintended manner.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug+-+%22title+text%22"
                       },
                       {
                         "id": "179",
@@ -4723,7 +4723,7 @@
                         "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22"
                       },
                       {
                         "id": "180",
@@ -4733,7 +4733,7 @@
                         "image": null,
                         "detail": "A new design could be a new component, icon etc. or a change to an existing asset of the design system.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new?assignees=&labels=Improvement&template=improvement-request.md&title=Improvement+-+%22Add+title%22"
                       }
                     ],
                     "dosAndDonts": []
@@ -6066,7 +6066,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "918",
                     "Title": "",
-                    "Text": "**Container**\n\nContainers are the base of the text field, and it is a filled container with a bottom-border. The container has top rounded corners and square bottom corners. The bottom-border varies in height and colour depending on the state to emphasize this.",
+                    "Text": "##### Container\nContainers are the base of the text field, and it is a filled container with a bottom-border. The container has top rounded corners and square bottom corners. The bottom-border varies in height and colour depending on the state to emphasize this.",
                     "LeadText": null
                   },
                   {
@@ -6109,7 +6109,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "919",
                     "Title": null,
-                    "Text": "**Label text**\n\nLabel text is the text that communicates to the user what text information that should be submitted inside each text field. ",
+                    "Text": "##### Label text\nLabel text is the text that communicates to the user what text information that should be submitted inside each text field. ",
                     "LeadText": null
                   },
                   {
@@ -6165,7 +6165,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "920",
                     "Title": null,
-                    "Text": "**Input text**\n\nInput text is the text that has been submitted by a user.\n\n",
+                    "Text": "##### Input text\nInput text is the text that has been submitted by a user.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6221,7 +6221,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "921",
                     "Title": null,
-                    "Text": "**Prefix and Suffix icons**\n\nThe prefix and suffix icons are optional. Prefix icons could be used to communicate to the user the valid input method and suffix icons are mainly used as actions, such as clear text or reveal a date picker. They could also be used to indicate another text format within the text field, such as password input or to highlight invalid text input.\n\n",
+                    "Text": "##### Prefix and Suffix icons\nThe prefix and suffix icons are optional. Prefix icons could be used to communicate to the user the valid input method and suffix icons are mainly used as actions, such as clear text or reveal a date picker. They could also be used to indicate another text format within the text field, such as password input or to highlight invalid text input.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6277,7 +6277,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "922",
                     "Title": null,
-                    "Text": "**Prefix and Suffix text**\n\nPrefix and suffix text are optional. They could be used to communicate a specific measurement unit, currency and such.\n\n",
+                    "Text": "##### Prefix and Suffix text\nPrefix and suffix text are optional. They could be used to communicate a specific measurement unit, currency and such.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6333,7 +6333,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "923",
                     "Title": null,
-                    "Text": "**Helper text**\n\nHelper text assists the user with additional information text on how it will be used, display the maximum amount of characters limit or to describe an invald text input.\n\n",
+                    "Text": "##### Helper text\nHelper text assists the user with additional information text on how it will be used, display the maximum amount of characters limit or to describe an invald text input.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6389,7 +6389,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "924",
                     "Title": null,
-                    "Text": "**Placeholder text**\n\nAnother way to assist users is to use a placeholder text, which hints of what type of information that should be entered. The placeholder text disappears when the user starts typing inside the text field.\n\n",
+                    "Text": "##### Placeholder text\nAnother way to assist users is to use a placeholder text, which hints of what type of information that should be entered. The placeholder text disappears when the user starts typing inside the text field.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6445,7 +6445,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "925",
                     "Title": null,
-                    "Text": "**Input types**\n\nThere are two input types for how our text fields can display user input; single line or text areas.\n\nSingle line is used when the user should enter a single line text. Text areas should be used for input text with more than one sentence which requires multiple lines.\n\n",
+                    "Text": "#### Input types\nThere are two input types for how our text fields can display user input; single line or text areas.\n\nSingle line is used when the user should enter a single line text. Text areas should be used for input text with more than one sentence which requires multiple lines.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6488,7 +6488,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "926",
                     "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for text fields.\n\n**Short label text**\n\nThe label text should be short and direct and not be complex nor placed on multiple lines.\n\n",
+                    "Text": "Below you will find some best practice solutions for text fields.\n\n##### Short label text\nThe label text should be short and direct and not be complex nor placed on multiple lines.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6521,7 +6521,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "927",
                     "Title": null,
-                    "Text": "**Use one text field style**\n\nThe text field style should be the same within one section or form.\n\n",
+                    "Text": "##### Use one text field style\nThe text field style should be the same within one section or form.\n\n",
                     "LeadText": null
                   },
                   {
@@ -6927,11 +6927,49 @@
                     "LeadText": null
                   },
                   {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "982",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/0e5d5db670db424b922b48a51c7303c9.png"
+                        }
+                      ]
+                    },
+                    "id": "108"
+                  },
+                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "281",
                     "Title": "Element scale",
-                    "Text": "The element scale is used when building components where we need smaller units to work with, when defining all detailed work within a component.\n\nShould a component need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale, when creating a new token.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0.5</td>\n    <td>2</td>\n    <td>$spacing-layout-2</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/c4bca33db50d4162bf4fbbc51a6f723d.png'/></td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>4</td>\n    <td>$spacing-layout-4</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/62d5e650a0b04c2da1cb11e00cd758af.png'/></td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4063aadbd8f84bdea27670b994f2087b.png'/></td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>$spacing-layout-12</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/efa8e6e2f22946948ff53ea8cd6bddb1.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/945edcce58a243d3a037d78664ab33b5.png'/></td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>$spacing-layout-20</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/7fecff6b6fc8462496db9107c6cf1487.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0500b5b59da44c52bd3c225a68adaff4.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/81c0156d41524da493222d426864af62.png'/></td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>$spacing-layout-40</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4b5eb0a4dd3d45da823b8ae53d626ae9.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-element-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/f718f11605ad4f8d9c544ad15e8744ab.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
+                    "Text": "The element scale is used when building components where we need smaller units to work with, when defining all detailed work within a component.\n\nShould a component need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale, when creating a new token.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0.5</td>\n    <td>2</td>\n    <td>$spacing-element-2</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/c4bca33db50d4162bf4fbbc51a6f723d.png'/></td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>4</td>\n    <td>$spacing-element-4</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4045a2cde53940f680b2c8e3165499d0.png'/></td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-element-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4063aadbd8f84bdea27670b994f2087b.png'/></td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>$spacing-element-12</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/efa8e6e2f22946948ff53ea8cd6bddb1.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-element-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/945edcce58a243d3a037d78664ab33b5.png'/></td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>$spacing-element-20</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/7fecff6b6fc8462496db9107c6cf1487.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-element-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0500b5b59da44c52bd3c225a68adaff4.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-element-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/81c0156d41524da493222d426864af62.png'/></td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>$spacing-element-40</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4b5eb0a4dd3d45da823b8ae53d626ae9.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-element-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/f718f11605ad4f8d9c544ad15e8744ab.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "984",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/b07a7d381341428d86365e8161805ece.png"
+                        }
+                      ]
+                    },
+                    "id": "110"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -7174,7 +7212,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "377",
                     "Title": "Themes",
-                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\nLight theme\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\nDark theme\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
+                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n##### Light theme\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n##### Dark theme\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
                     "LeadText": null
                   },
                   {
@@ -7279,7 +7317,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "571",
                     "Title": "Scales",
-                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 600</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 700</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
@@ -7730,7 +7768,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1061",
                     "Title": "Usage",
-                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nIn order to get the correct font file, make sure to install scania-theme.\n\n```\n> npm i @scania-sdds/theme-light\n\n// And add c-theme component in your HTML\n<c-theme name='scania' global='true'></c-theme>\n```\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS colour library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';\n@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
+                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nIn order to get the correct font file, make sure to install scania-theme.\n\n```\n> npm i @scania-sdds/theme-light\n\n// And add c-theme component in your HTML\n<c-theme name='scania' global='true'></c-theme>\n```\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';\n@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
                     "LeadText": null
                   },
                   {
