@@ -49,7 +49,8 @@ export class IconListComponent implements OnInit {
   }
 
   generateIconUrl(name) {
-    return `https://raw.githubusercontent.com/scania/scania-theme/master/src/icons/${name}.svg`
+    //FIXME: Fix naming in AWS to be used instead of github
+    return `https://raw.githubusercontent.com/scania-digital-design-system/sdds/master/theme/light/src/icons/${name}.svg`
   }
 
   download(event) {

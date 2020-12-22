@@ -1,3 +1,14 @@
+
+<!--
+
+Hello! Before you add a PR, please read the [FAQ](https://digitaldesign.scania.com/support/faqs) and/or [Contribution](https://digitaldesign.scania.com/contribution) information and also check if there is an issue already [reported](https://github.com/scania-digital-design-system/sdds-website/pulls).
+
+
+After the PR is done, please check so all test is finished and fix all conflicts if needed
+
+-->
+
+
 **Describe pull-request**  
 _Describe what the pull-request is about_
 
