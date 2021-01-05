@@ -95,6 +95,12 @@ fragment detail on Content {
       }
       id
     }
+    ... on ComponentNestedTable {
+      id
+      tableTitle
+      tableHtml
+      size
+    }
     ...on ComponentContentPluginTwoColumnsImages { 
       id
       Title
