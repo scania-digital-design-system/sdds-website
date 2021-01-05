@@ -11,13 +11,15 @@
       th{
         padding: var(--sdds-spacing-element-16);
         @include type-style('headline-07');
+        color: var(--sdds-grey-900);
       }
     }
     tbody{
       td{
         background-color: var(--sdds-white);
         padding: var(--sdds-spacing-element-16);
-        @include type-style('detail-02');
+        @include type-style('detail-03');
+        color: var(--sdds-grey-700);
         border-bottom: 1px solid rgba(#000, 0.05);
         vertical-align: top;
         img{
