@@ -6621,15 +6621,22 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1034",
                     "Title": "States",
-                    "Text": "###### Default\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "Text": "\n",
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1035",
-                    "Title": null,
-                    "Text": "###### Hover\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-400</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
+                    "__typename": "ComponentNestedTable",
+                    "id": "5",
+                    "tableTitle": "Default",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "6",
+                    "tableTitle": "Hover",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-400</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "size": "Large"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -6653,11 +6660,11 @@
                     "LeadText": null
                   },
                   {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1039",
-                    "Title": null,
-                    "Text": "###### Disabled\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
+                    "__typename": "ComponentNestedTable",
+                    "id": "2",
+                    "tableTitle": "Disabled",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -6792,8 +6799,15 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1043",
                     "Title": "Typography",
-                    "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our text fields types and sizes, we are using the same typography.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text / input text</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td>\n  </tr>\n  <tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our text fields types and sizes, we are using the same typography.\n\n",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "3",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text / input text</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td>\n  </tr>\n  <tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -6804,7 +6818,7 @@
                   },
                   {
                     "__typename": "ComponentNestedTable",
-                    "id": "1",
+                    "id": "4",
                     "tableTitle": null,
                     "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top left & right corners</td>\n  </tr>\n  <tr>\n    <td>0 px / 0 rem</td>\n    <td>Bottom left & right corners</td>\n  </tr>\n</tbody>\n</table>",
                     "size": "Large"
