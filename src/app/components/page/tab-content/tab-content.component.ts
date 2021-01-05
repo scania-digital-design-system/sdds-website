@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { AfterViewChecked, Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router} from '@angular/router';
 
 import { PageService } from 'src/app/app.service';
 import { Page } from 'src/app/app.interface';
@@ -13,7 +13,7 @@ import { menus } from '../../../data/content.json';
   host: { class: 'tab-component-container' }
 })
 
-export class TabContentComponent implements OnInit, AfterViewInit {
+export class TabContentComponent implements OnInit, AfterViewChecked {
   title;
   content: any = {};
   tabContent: any = [];
@@ -54,7 +54,7 @@ export class TabContentComponent implements OnInit, AfterViewInit {
           this.tabExist = false;
           this.tabContent = this.content.pageStructure[0];
         }
-
+        // For layout purpose
         if(this.content.url === 'foundation-typography') {
           this.typographyPage=true;
         }
@@ -68,15 +68,17 @@ export class TabContentComponent implements OnInit, AfterViewInit {
     });
 
   }
+
   ngOnInit() {
     const main = document.querySelector('main');
     this.wrapperTop = Math.round(main.getBoundingClientRect().top);
     document.querySelector('main').addEventListener('scroll', this.onScroll.bind(this));
   }
 
-  ngAfterViewInit()	{
-    const allTitles = document.querySelectorAll('h4.section-title');
+  ngAfterViewChecked(){
+    this.titleElements = [];
 
+    const allTitles = document.querySelectorAll('h4.section-title');
     allTitles.forEach((item) => {
       this.titleElements = [...this.titleElements, item.id]
     })
