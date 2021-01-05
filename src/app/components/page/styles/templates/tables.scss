@@ -1,9 +1,14 @@
 @import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
 @import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 
+.table-title{
+  margin-bottom: var(--sdds-spacing-element-16);
+}
+
 ::ng-deep {
   table{ 
     color: var(--sdds-black);
+    margin-top: var(--sdds-spacing-element-16);
     margin-bottom: var(--sdds-spacing-element-16);
     min-width: 100%;
     thead{
@@ -113,5 +118,8 @@
       }
     }
 
+  }
+  .sdds-table table {
+    margin-top: 0;
   }
 }
