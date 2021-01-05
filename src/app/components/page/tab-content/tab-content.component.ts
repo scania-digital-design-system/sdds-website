@@ -79,19 +79,18 @@ export class TabContentComponent implements OnInit, AfterViewChecked {
     this.titleElements = [];
 
     const allTitles = document.querySelectorAll('h4.section-title');
+    let offset;
     allTitles.forEach((item) => {
-      this.titleElements = [...this.titleElements, item.id]
+      offset = item.getBoundingClientRect().top;
+      this.titleElements = [...this.titleElements, {id: item.id, offset: offset}]
     })
   }
 
   onScroll(e){
     const pos = Math.round(e.target.scrollTop);
     
-    this.titleElements.some(title => {
-      const offset = document.getElementById(title).offsetTop;
-      if(offset <= (pos - this.pageOffset)){
-        this.isAnchorActive = title;
-      }
+    this.titleElements.forEach(title => {
+      if(title.offset <= (pos - this.pageOffset)) this.isAnchorActive = title.id;
     })
   }
 
