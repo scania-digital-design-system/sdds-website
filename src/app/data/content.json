@@ -3363,9 +3363,9 @@
                         "id": "11",
                         "name": "scania-24h_service",
                         "title": "24 Hour Service",
-                        "description": "Text added",
-                        "usage": "Text added",
-                        "restriction": "Text added"
+                        "description": "",
+                        "usage": "",
+                        "restriction": ""
                       },
                       {
                         "id": "15",

@@ -3,7 +3,9 @@
 Visit SDDS at [digitaldesign.scania.com](https://digitaldesign.scania.com/)
 ## How to get started with @scania-sdds/components and @scania-sdds/theme-light
 
-For more information how to contribute [Digitaldesign.scania.com/getting-started/](https://digitaldesign.scania.com/getting-started/development)
+For more information how to contribute [Contribution](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md)
+
+How to report a issue or feature request please visit [digitaldesign.scania.com/contribution](https://digitaldesign.scania.com/contribution)
 
 ## SDDS Website
 To run this project locally you will need **NodeJS** and **Npm** installed
@@ -38,7 +40,7 @@ To have access to latest data from our headless cms you need to fetch it with fo
 
 ## Running [@scania-sdds/components](https://www.npmjs.com/package/@scania-sdds/components) and [@scania-sdds/theme-light](https://www.npmjs.com/package/@scania-sdds/theme-light) on sdds-website
 
-This is used to be able to run the local version on your compunter toghether with the website. To find out more about the SDDS component and themes packages please visit [scania-digital-design-system/sdds](https://github.com/scania-digital-design-system/sdds)
+This is used to be able to run the local version on your computer toghether with the website. To find out more about the SDDS component and themes packages please visit [scania-digital-design-system/sdds](https://github.com/scania-digital-design-system/sdds)
 
 
 Clone SDDS components and theme from [scania-digital-design-system/sdds](https://github.com/scania-digital-design-system/sdds)
