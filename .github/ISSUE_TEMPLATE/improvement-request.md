@@ -2,7 +2,9 @@
 name: "Improvement request"
 about: "Use this option when you have defined an existing area that can be improved."
 title: Improvement - Add title
-labels: improvement
+labels:
+- Improvement
+- Website
 assignees: ''
 
 ---

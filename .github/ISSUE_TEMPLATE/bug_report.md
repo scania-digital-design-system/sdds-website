@@ -2,7 +2,9 @@
 name: "Bug report"
 about: "Use this option when you've found an bug"
 title: Bug - Add title
-labels: bug
+labels:
+- Bug
+- Website
 assignees: ''
 
 ---
