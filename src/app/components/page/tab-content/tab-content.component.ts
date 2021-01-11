@@ -87,10 +87,8 @@ export class TabContentComponent implements OnInit, AfterViewChecked {
   }
 
   onScroll(e){
-    const pos = Math.round(e.target.scrollTop);
-    
     this.titleElements.forEach(title => {
-      if(title.offset <= (pos - this.pageOffset)) this.isAnchorActive = title.id;
+      if(title.offset <= this.pageOffset + 50) this.isAnchorActive = title.id;
     })
   }
 
