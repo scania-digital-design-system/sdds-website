@@ -1,9 +1,15 @@
 @import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
 @import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 
+.table-title{
+  margin-bottom: var(--sdds-spacing-element-16);
+  margin-top: var(--sdds-spacing-element-16);
+}
+
 ::ng-deep {
   table{ 
     color: var(--sdds-black);
+    margin-top: var(--sdds-spacing-element-16);
     margin-bottom: var(--sdds-spacing-element-16);
     min-width: 100%;
     thead{
@@ -11,13 +17,15 @@
       th{
         padding: var(--sdds-spacing-element-16);
         @include type-style('headline-07');
+        color: var(--sdds-grey-900);
       }
     }
     tbody{
       td{
         background-color: var(--sdds-white);
         padding: var(--sdds-spacing-element-16);
-        @include type-style('detail-02');
+        @include type-style('detail-03');
+        color: var(--sdds-grey-700);
         border-bottom: 1px solid rgba(#000, 0.05);
         vertical-align: top;
         img{
@@ -111,5 +119,8 @@
       }
     }
 
+  }
+  .sdds-table table {
+    margin-top: 0;
   }
 }
