@@ -1,6 +1,6 @@
 {
-  "name": "corporate-ui-site",
-  "version": "1.0.3",
+  "name": "sdds-website",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "npm run angular",

@@ -1,6 +1,6 @@
 
 // TODO: When StencilJS needs to change there setting for readme or we need to always render readme´s
-// export * from 'corporate-ui/dist/data/docs';
+// export * from '@scania-sdds/components/dist/data/docs';
 
 export interface Navigation {
   id?: String;
@@ -34,7 +34,7 @@ export interface File {
   url?: String;
 }
 
-// TODO: Get this from Corporate UI
+// TODO: Get this from @scania-sdds/components
 export interface Theme {
   colors?: Object;
   components?: Object;

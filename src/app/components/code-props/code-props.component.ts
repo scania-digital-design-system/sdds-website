@@ -24,7 +24,7 @@ export class CodePropsComponent {
 
 
   ngOnInit(){
-   //Retriving the component data from Corporate-Ui
+   //Retriving the component data from @scania-sdds/components
     this.component = this.componentDocs._value.find(component => {
       if(this.currentComponent.componentTag && component.tag == this.currentComponent.componentTag.toLowerCase()) {
         return component;
