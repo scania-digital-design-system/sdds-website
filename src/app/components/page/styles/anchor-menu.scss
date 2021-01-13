@@ -45,7 +45,9 @@
         padding-bottom: 6rem;
       }
 
-      &:hover,
+      &:hover{
+        color: var(--sdds-grey-600);
+      }
       &:active,
       &.active {
         color: var(--sdds-blue-900);
