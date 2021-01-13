@@ -1,0 +1,11 @@
+@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';
+@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
+
+:host{
+  position: absolute;
+  width: 100%;
+  top: 64px;
+  background: var(--sdds-white);
+  color: var(--sdds-black);
+  @include type-style('body-02');
+}

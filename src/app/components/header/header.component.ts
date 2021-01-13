@@ -14,11 +14,9 @@ export class Header implements OnChanges {
   @Input() menuHidden;
   @Output() menuTogglingEvent = new EventEmitter<boolean>();
 
-
-  //FIXME: disabled search
-  // toggleSearch() {
-  //   this.searchOpen = !this.searchOpen;
-  // }
+  toggleSearch() {
+    this.searchOpen = !this.searchOpen;
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     if(changes.menuHidden.currentValue == true){

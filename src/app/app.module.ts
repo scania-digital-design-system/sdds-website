@@ -14,6 +14,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { MainComponent } from './components/main/main.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { CookiesMessage } from './components/cookies-message/cookies-message.component';
+import { SearchList } from './components/search-list/search-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CookiesMessage } from './components/cookies-message/cookies-message.com
     MainComponent,
     StatisticsComponent,
     Header,
-    Footer
+    Footer,
+    SearchList
   ],
   imports: [
     BrowserModule,

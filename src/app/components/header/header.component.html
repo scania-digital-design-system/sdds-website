@@ -3,10 +3,11 @@
     
     <c-icon [attr.name]="menuToggle == true ? 'scania-cross' : 'scania-menu-mobile'"></c-icon>
   </button>
-  <!-- <div class="site-search">
+  <div class="site-search">
     <button class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>
     <input class="sdds-detail-02" type="text" placeholder="Search" name="sdds-header-search">
     <button class="close-search" (click)="toggleSearch()"><c-icon name="scania-cross"></c-icon></button>
-  </div> -->
+  </div>
+  <sdds-search-list></sdds-search-list>
   <span routerLink="/home"class="scania-symbol"></span>
 </header>
