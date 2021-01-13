@@ -4,7 +4,8 @@
       <ul>
         <ng-container *ngFor="let section of item.content.section">
           <li *ngIf='section.Title'>
-            <a [routerLink]="defaultTab" (click)='anchorMenu(section.Title)' [fragment]='section.Title | generateTabUrl' class="sdds-text-grey-400">{{section.Title}}</a>
+            <a [routerLink]="defaultTab" (click)='anchorMenu(section.Title)' [fragment]='section.Title | generateTabUrl'
+            class="sdds-text-grey-400" [ngClass]="{'active': isAnchorActive === generateUrl(section.Title)}">{{section.Title}}</a>
           </li>
         </ng-container>
       </ul>
@@ -75,7 +76,7 @@
         <!-- Two column -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumns'">
           <div class="sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4">
-            <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
+            <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl' class="section-title"></h4>
           </div>
 
           <div class="sdds-col-xlg-8 sdds-col-md-4 sdds-col-sm-4">
@@ -93,7 +94,7 @@
         <!-- Multiple columns-->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumnsImages'">
           <div class="no-padding sdds-multi-col-plugin sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4">
-            <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
+            <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl' class="section-title"></h4>
           </div>
 
             <!-- If texts -->
@@ -177,7 +178,7 @@
           <div class="row RightImage">
 
             <div class='col-md-6'>
-              <h2 *ngIf='section.title' [innerHTML]='section.title | markdown | keepHtml'></h2>
+              <h4 *ngIf='section.title' [innerHTML]='section.title | markdown | keepHtml' class="section-title"></h4>
               <div class="row">
                 <div *ngFor="let paragraph of section.Paragraphs" [ngClass]="{'col-md-12': paragraph.Columns == 'One', 'col-md-6': paragraph.Columns == 'Two', 'col-md-3': paragraph.Columns == 'Three'}">
                   <div *ngIf='paragraph.textfield' [innerHTML]='paragraph.textfield | markdown | keepHtml'></div>

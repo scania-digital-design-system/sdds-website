@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router, Scroll } from '@angular/router';
+import { AfterViewChecked, Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router} from '@angular/router';
 
 import { PageService } from 'src/app/app.service';
 import { Page } from 'src/app/app.interface';
@@ -13,18 +13,21 @@ import { menus } from '../../../data/content.json';
   host: { class: 'tab-component-container' }
 })
 
-export class TabContentComponent {
+export class TabContentComponent implements OnInit, AfterViewChecked {
   title;
   content: any = {};
   tabContent: any = [];
   defaultTab = '.';
   tabExist: Boolean = false;
   typographyPage:Boolean = false;
+  titleElements = [];
+  wrapperTop: number;
+  pageOffset = 144; // sticky nav height + padding
+  isAnchorActive: any;
 
   constructor(
     private route: ActivatedRoute,
-    public ps: PageService,
-    private router: Router
+    public ps: PageService
     ) {
 
     route.params.subscribe(params => this.title = params['id']);
@@ -51,7 +54,7 @@ export class TabContentComponent {
           this.tabExist = false;
           this.tabContent = this.content.pageStructure[0];
         }
-
+        // For layout purpose
         if(this.content.url === 'foundation-typography') {
           this.typographyPage=true;
         }
@@ -66,6 +69,30 @@ export class TabContentComponent {
 
   }
 
+  ngOnInit() {
+    const main = document.querySelector('main');
+    this.wrapperTop = Math.round(main.getBoundingClientRect().top);
+    document.querySelector('main').addEventListener('scroll', this.onScroll.bind(this));
+  }
+
+  ngAfterViewChecked(){
+    this.titleElements = [];
+
+    const allTitles = document.querySelectorAll('h4.section-title');
+    let offset;
+    allTitles.forEach((item) => {
+      offset = item.getBoundingClientRect().top;
+      this.titleElements = [...this.titleElements, {id: item.id, offset: offset}]
+    })
+  }
+
+  onScroll(e){
+    this.titleElements.forEach(title => {
+      if(title.offset <= this.pageOffset + 50) this.isAnchorActive = title.id;
+    })
+  }
+
+
   generateUrl(url){
     const generateUrlPipe = new GenerateTabURLPipe();
     return generateUrlPipe.transform(url)
@@ -75,10 +102,7 @@ export class TabContentComponent {
     id = this.generateUrl(id);
     const elem = document.getElementById(id);
     const wrapper = document.querySelector('main');
-
-    const offset = 144; // sticky nav height + padding
-
-    wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - offset), left: 0, behavior: 'smooth' });
+    wrapper.scroll({ top: (elem.getBoundingClientRect().top + wrapper.scrollTop - this.pageOffset), left: 0, behavior: 'smooth' });
 
   }
 }
