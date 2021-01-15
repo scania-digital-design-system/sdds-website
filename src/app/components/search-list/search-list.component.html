@@ -1,7 +1,7 @@
-<div class="sdds-container">
-  <div class="search-list sdds-row">
-    <div class="no-padding sdds-col-xxlg-16">
-      Search result
-    </div>
-  </div>
+<div class="search-list">
+  <ul>
+    <li *ngFor="let item of search.items | async">
+      {{ item }}
+    </li>
+  </ul>
 </div>

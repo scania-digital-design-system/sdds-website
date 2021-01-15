@@ -5,7 +5,9 @@
   </button>
   <div class="site-search">
     <button class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>
-    <input class="sdds-detail-02" type="text" placeholder="Search" name="sdds-header-search">
+    <input class="sdds-detail-02" type="search" placeholder="Search" name="sdds-header-search"
+    [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()"
+    />
     <button class="close-search" (click)="toggleSearch()"><c-icon name="scania-cross"></c-icon></button>
   </div>
   <sdds-search-list></sdds-search-list>

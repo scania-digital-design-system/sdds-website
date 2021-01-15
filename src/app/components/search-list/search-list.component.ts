@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { PageService } from 'src/app/app.service';
+import { SearchService } from './search.service';
 
 @Component({
   selector: 'sdds-search-list',
@@ -10,7 +10,7 @@ import { PageService } from 'src/app/app.service';
 
 export class SearchList {
 
-  constructor(private ps: PageService) {
-    
+  constructor(private search: SearchService) {
+
   }
 }

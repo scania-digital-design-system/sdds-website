@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { SearchService } from '../search-list/search.service';
 
 @Component({
   selector:'header-component',
@@ -6,13 +7,26 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
   styleUrls: ['header.component.scss']
 })
 
-export class Header implements OnChanges {
+export class Header implements OnChanges, OnInit {
 
   searchOpen = false;
   menuToggle = false;
   navigationID = document.getElementById('sdds-sidenavigation');
   @Input() menuHidden;
   @Output() menuTogglingEvent = new EventEmitter<boolean>();
+
+  constructor(private searchService: SearchService) {
+  }
+
+  searchTerm = '';
+
+  ngOnInit() {
+    this.searchService.search(this.searchTerm);
+  }
+
+  onSearchTermChange(): void {
+    this.searchService.search(this.searchTerm);
+  }  
 
   toggleSearch() {
     this.searchOpen = !this.searchOpen;
