@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+
 import { SearchService } from '../search-list/search.service';
 
 @Component({
@@ -15,7 +17,14 @@ export class Header implements OnChanges, OnInit {
   @Input() menuHidden;
   @Output() menuTogglingEvent = new EventEmitter<boolean>();
 
-  constructor(private searchService: SearchService) {
+  constructor(private searchService: SearchService, private router:Router) {
+    this.router.events.subscribe(route => {
+      if (route instanceof NavigationEnd) {
+        this.searchService.search('');
+        this.searchTerm = '';
+        this.toggleSearch();
+      }
+    })
   }
 
   searchTerm = '';

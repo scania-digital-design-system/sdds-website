@@ -11,6 +11,5 @@ import { SearchService } from './search.service';
 export class SearchList {
 
   constructor(private search: SearchService) {
-
   }
 }
