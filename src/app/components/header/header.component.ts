@@ -13,6 +13,7 @@ export class Header implements OnChanges, OnInit {
 
   searchOpen = false;
   menuToggle = false;
+  searchTerm = '';
   navigationID = document.getElementById('sdds-sidenavigation');
   @Input() menuHidden;
   @Output() menuTogglingEvent = new EventEmitter<boolean>();
@@ -20,25 +21,27 @@ export class Header implements OnChanges, OnInit {
   constructor(private searchService: SearchService, private router:Router) {
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
-        this.searchService.search('');
         this.searchTerm = '';
-        this.toggleSearch();
+        searchService.search('')
+        this.searchOpen = false;
       }
     })
   }
-
-  searchTerm = '';
 
   ngOnInit() {
     this.searchService.search(this.searchTerm);
   }
 
-  onSearchTermChange(): void {
+  onSearchTermChange() {
     this.searchService.search(this.searchTerm);
   }  
 
   toggleSearch() {
     this.searchOpen = !this.searchOpen;
+    if(this.searchOpen === false) {
+      this.searchTerm = '';
+      this.searchService.search('');
+    }
   }
 
   ngOnChanges(changes: SimpleChanges) {

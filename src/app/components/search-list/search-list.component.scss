@@ -2,21 +2,17 @@
 @import '~node_modules/@scania-sdds/typography/dist/scss/tokens';
 
 :host{
-  position: absolute;
-  width: 100%;
-  height: auto;
-  overflow-y: auto;
-  top: 64px;
-  background: var(--sdds-white);
-  @include type-style('body-02');
-
   .search-list{
+    position: fixed;
+    width: 100%;
+    top: 64px;
+    background: var(--sdds-white);
+    @include type-style('body-02');
     ul {
       margin: 0;
       padding: 0;
       li {
         list-style: none;
-        border-bottom: 1px solid var(--sdds-grey-100);
         &:last-child{
           border-bottom: none;
         }
@@ -32,7 +28,28 @@
           padding: var(--sdds-spacing-element-16);
           margin:0;
         }
+        li{
+          background-color: var(--sdds-white);
+          border-bottom: 1px solid var(--sdds-grey-100);
+          cursor: pointer;
+          &:hover{
+            background-color: var(--sdds-blue-50);
+          }
+        }
       }
+    }
+  }
+  &.show-search{
+    .search-list{
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 1056px){
+  :host{
+    .search-list{
+      background-color: rgba(0, 0, 0, 0.2);
     }
   }
 }

@@ -1,10 +1,10 @@
 <div class="search-list">
   <ul>
     <li *ngFor="let item of search.finalResults | async">
-      <p class="sdds-detail-06 sdds-text-grey-400 sdds-background-blue-200">{{item.parent}}</p>
+      <p class="sdds-detail-06 sdds-text-grey-400 sdds-background-blue-100">{{item.parent}}</p>
       <ul>
-        <li *ngFor="let page of item.searchFound" class="sdds-text-black sdds-background-white">
-          <a [routerLink]="page.url">{{page.link}} <c-icon name="scania-angle-down"></c-icon> {{page.pageTitle}}</a>
+        <li *ngFor="let page of item.searchFound" class="sdds-text-black">
+          <a [routerLink]="page.url + '/' + (page.pageTab ? page.pageTab : '')">{{page.link}} <c-icon name="scania-angle-down"></c-icon> {{page.pageTitle}}</a>
         </li>
       </ul>
     </li>

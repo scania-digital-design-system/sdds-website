@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 import { SearchService } from './search.service';
 
@@ -9,7 +9,11 @@ import { SearchService } from './search.service';
 })
 
 export class SearchList {
+  @HostBinding('class.show-search') showSearch: boolean = false;
 
   constructor(private search: SearchService) {
+    search.finalResults.subscribe((results)=>{
+      this.showSearch = results.length > 0 ? true : false;
+    });
   }
 }
