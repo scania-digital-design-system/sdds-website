@@ -15,8 +15,7 @@ export class SearchService {
 
   finalResults: Observable<Data>;
   searchResults = [];
-  resultTemp:any = {}; 
-  countFound = 0;
+  resultTemp:any = {};
 
   constructor() {
     this.finalResults = this.term.pipe(
@@ -35,7 +34,6 @@ export class SearchService {
   
   loadAndSearch(term: string): Observable<Data> {
     this.searchResults=[];
-    this.countFound = 0;
     
     // Clean white space before and after term
     term = term.toLowerCase().trim();
@@ -44,9 +42,32 @@ export class SearchService {
       menus.forEach(item => {
         this.findOnPages(item, term)
       })
-    }   
-    
+    }
+
+    this.cleanFinalResult();
     return of(this.searchResults).pipe();
+  }
+
+  // Limit search only to show 7 results (UX reason)
+  // Prioritized based on total words found on one page
+  cleanFinalResult(){
+    this.searchResults = this.searchResults.sort((item1, item2) => item2.totalWords - item1.totalWords);
+    let count = 0;
+    let cleanedData = [];
+
+    this.searchResults.some((result, index) => {
+      cleanedData.push({parent: result.parent, totalWords: result.totalWords, searchFound: []});
+      
+      result.searchFound.forEach(page => {
+        count++;
+        if(count < 8){
+         cleanedData[index].searchFound.push(page);
+        }
+      });
+      return count >= 7;
+    })
+
+    this.searchResults = cleanedData;
   }
 
   // Recursive function to search inside nested content object
@@ -86,15 +107,11 @@ export class SearchService {
 
       // If item is string, and it is inside "Text" or "LeadText",
       // then search the given term
-      if(typeof item[key]==='string' && (key=='Text' || key=='LeadText')){
+      if(typeof item[key]==='string' && (key=='Text' || key=='textfield')){
         const searchAsRegEx = new RegExp(searchTerm, 'gmi');
-        if (item[key].match(searchAsRegEx)) {
-          // Max search results limited to 7 items
-            
-          if(this.countFound < 7){
-            const found = JSON.parse(JSON.stringify(this.resultTemp))
-            this.insertToFinalResult(found);
-          }
+        if (item[key].match(searchAsRegEx)) {  
+          const found = JSON.parse(JSON.stringify(this.resultTemp))
+          this.insertToFinalResult(found);
         }
       }
     })
@@ -105,6 +122,7 @@ export class SearchService {
   insertToFinalResult(found){
     let newData = {
       'parent': found.parent,
+      'totalWords': 1,
       'searchFound':[{
         'url':found.url,
         'link':found.link,
@@ -116,7 +134,6 @@ export class SearchService {
     let selIndex = -1;
 
     if(this.searchResults.length === 0) {
-      this.countFound++;
       this.searchResults.push(newData)
     } else {
       // Check if parent is already in the searchResults array
@@ -128,7 +145,14 @@ export class SearchService {
         // We show search result based on page
         // For example, buttons can be found multiple times on one page
         // Avoid displaying multiple pages on the search result list
-        if(!result.searchFound.some(page => page.pageTitle === found.pageTitle)) selIndex = index;
+        const pageExist = result.searchFound.some((page, sfIndex) => {
+          if(page.pageTitle === found.pageTitle) {
+            this.searchResults[index].totalWords++;
+          }
+          return page.pageTitle === found.pageTitle;
+        })
+
+        if(!pageExist) selIndex = index;
 
         return result.parent === found.parent
       });
@@ -137,7 +161,7 @@ export class SearchService {
         // If parent found and page is not indexed yet,
         // Add page to the final array according to its parent index
         if(selIndex >= 0) {
-          this.countFound++;
+          this.searchResults[selIndex].totalWords++;
           this.searchResults[selIndex].searchFound.push({
             'url':found.url,
             'link':found.link,
@@ -146,7 +170,6 @@ export class SearchService {
           })
         }
       } else {
-        this.countFound++;
         this.searchResults.push(newData);
       }
     }
