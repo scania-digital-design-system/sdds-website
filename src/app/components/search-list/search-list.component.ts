@@ -13,7 +13,6 @@ export class SearchList {
 
   constructor(private search: SearchService) {
     search.finalResults.subscribe((results)=>{
-      console.log(2, results)
       this.showSearch = results.length > 0 ? true : false;
     });
   }
