@@ -43,7 +43,7 @@ export class SearchService {
         this.findOnPages(item, term)
       })
     }
-
+    console.log(1, this.finalResults)
     this.cleanFinalResult();
     return of(this.searchResults).pipe();
   }

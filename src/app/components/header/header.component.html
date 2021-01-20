@@ -4,8 +4,8 @@
     <c-icon [attr.name]="menuToggle == true ? 'scania-cross' : 'scania-menu-mobile'"></c-icon>
   </button>
   <div class="site-search">
-    <button class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></button>
-    <input class="sdds-detail-02" type="search" placeholder="Search" name="sdds-header-search"
+    <label for="sdds-header-search-01" class="search-symbol" (click)="toggleSearch()"><c-icon name="scania-search"></c-icon></label>
+    <input id="sdds-header-search-01" class="sdds-detail-02" tabindex="-1" type="search" placeholder="Search" name="sdds-header-search"
     [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()"
     />
     <button class="close-search" (click)="toggleSearch()"><c-icon name="scania-cross"></c-icon></button>
