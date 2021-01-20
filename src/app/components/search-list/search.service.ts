@@ -43,7 +43,7 @@ export class SearchService {
         this.findOnPages(item, term)
       })
     }
-    console.log(1, this.finalResults)
+    
     this.cleanFinalResult();
     return of(this.searchResults).pipe();
   }
@@ -72,11 +72,13 @@ export class SearchService {
 
   // Recursive function to search inside nested content object
   findOnPages(item, searchTerm){
-
+    console.log(1, item)
     // Save url and parent information in temp variable called this.resultTemp
     if(item.hasOwnProperty('parent')){
       let parent = item.parent === null ? item.title : JSON.parse(JSON.stringify(item.parent.title));
       const url = (item.parent === null ? '' : item.parent.url + '/') + item.url;
+      console.log(1, 'parent', parent)
+      console.log(1, 'url', url)
       this.resultTemp = {
         'parent':parent,
         'url': url,
