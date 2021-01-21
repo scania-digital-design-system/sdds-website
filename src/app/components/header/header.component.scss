@@ -22,7 +22,7 @@
   .search-symbol, button {
     border: 0;
     background-color: transparent;
-    padding: 0 var(--sdds-spacing-element-16);
+    padding: var(--sdds-spacing-element-16);
     line-height: 0;
     display: inline-block;
     color: var(--sdds-white);
@@ -72,6 +72,7 @@
     display: flex;
     align-items: center;
     order: 2;
+    height: 100%;
 
     input {
       background-color: transparent;
@@ -151,7 +152,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   .sdds-header{
     .search-symbol, button {
-      padding: 0 var(--sdds-spacing-element-20);
+      padding: var(--sdds-spacing-element-20);
     }
     .site-search {
       order: 1;
