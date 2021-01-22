@@ -3,6 +3,10 @@ import { saveAs } from 'file-saver';
 import * as JSZip from 'jszip';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
+
+//TODO: When modal component is done and added on the website, remove this imports
+import 'node_modules/bootstrap/js/dist/modal.js';
+import 'node_modules/jquery/dist/jquery.js'
 @Component({
   selector: '[icon-list]',
   templateUrl: './icon-list.component.html',
