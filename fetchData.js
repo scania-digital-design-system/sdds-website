@@ -36,6 +36,9 @@ query {
         }
       }
     }
+    parent {
+      ...menu
+    }
     submenus {
       ...menu
     }

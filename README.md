@@ -1,7 +1,7 @@
 # Scania Digital Design System - Website
 
 Visit SDDS at [digitaldesign.scania.com](https://digitaldesign.scania.com/)
-## How to get started with @scania-sdds/components and @scania-sdds/theme-light
+## How to get started with @scania/components and @scania/theme-light
 
 For more information how to contribute [Contribution](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md)
 
@@ -38,7 +38,7 @@ To have access to latest data from our headless cms you need to fetch it with fo
 > npm run data
 ```
 
-## Running [@scania-sdds/components](https://www.npmjs.com/package/@scania-sdds/components) and [@scania-sdds/theme-light](https://www.npmjs.com/package/@scania-sdds/theme-light) on sdds-website
+## Running [@scania/components](https://www.npmjs.com/package/@scania/components) and [@scania/theme-light](https://www.npmjs.com/package/@scania/theme-light) on sdds-website
 
 This is used to be able to run the local version on your computer toghether with the website. To find out more about the SDDS component and themes packages please visit [scania-digital-design-system/sdds](https://github.com/scania-digital-design-system/sdds)
 
@@ -54,7 +54,7 @@ Create npm links of **SDDS components and theme**
 > npm link
 ```
 
-Use npm link to **@scania-sdds/components** and **@scania-sdds/theme-light** in sdds-website to run everything locally
+Use npm link to **@scania/components** and **@scania/theme-light** in sdds-website to run everything locally
 ```bash
 > npm run link
   // or
