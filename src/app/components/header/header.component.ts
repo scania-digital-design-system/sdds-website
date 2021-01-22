@@ -1,4 +1,7 @@
-import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+
+import { SearchService } from '../search-list/search.service';
 
 @Component({
   selector:'header-component',
@@ -6,19 +9,40 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
   styleUrls: ['header.component.scss']
 })
 
-export class Header implements OnChanges {
+export class Header implements OnChanges, OnInit {
 
   searchOpen = false;
   menuToggle = false;
+  searchTerm = '';
   navigationID = document.getElementById('sdds-sidenavigation');
   @Input() menuHidden;
   @Output() menuTogglingEvent = new EventEmitter<boolean>();
 
+  constructor(private searchService: SearchService, private router:Router) {
+    this.router.events.subscribe(route => {
+      if (route instanceof NavigationEnd) {
+        this.searchTerm = '';
+        searchService.search('')
+        this.searchOpen = false;
+      }
+    })
+  }
 
-  //FIXME: disabled search
-  // toggleSearch() {
-  //   this.searchOpen = !this.searchOpen;
-  // }
+  ngOnInit() {
+    this.searchService.search(this.searchTerm);
+  }
+
+  onSearchTermChange() {
+    this.searchService.search(this.searchTerm);
+  }  
+
+  toggleSearch() {
+    this.searchOpen = !this.searchOpen;
+    if(this.searchOpen === false) {
+      this.searchTerm = '';
+      this.searchService.search('');
+    }
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     if(changes.menuHidden.currentValue == true){

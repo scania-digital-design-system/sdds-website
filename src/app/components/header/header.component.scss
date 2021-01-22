@@ -19,14 +19,15 @@
   color:var(--sdds-white);
   box-sizing: content-box;
 
-  button {
+  .search-symbol, button {
     border: 0;
     background-color: transparent;
-    padding: 0 var(--sdds-spacing-element-16);
+    padding: var(--sdds-spacing-element-16);
     line-height: 0;
     display: inline-block;
     color: var(--sdds-white);
     font-size: 6rem;
+    cursor: pointer;
     c-icon {
       vertical-align: unset;
     }
@@ -57,7 +58,6 @@
     background-size: 30px auto;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 54px;
 
     @media (min-width: 1054px) {
     //FIXME: until search is added
@@ -67,11 +67,11 @@
 
   .site-search {
     border-left: 1px solid var(--sdds-blue-800);
-    border-right: 1px solid var(--sdds-blue-800);
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
     order: 2;
+    height: 100%;
 
     input {
       background-color: transparent;
@@ -113,10 +113,11 @@
 
     .site-search {
       flex-grow: 1;
+      border-left: none;
       &:hover{
         background-color: transparent;
       }
-      .search-symbol {
+      .search-symbol, button {
         padding-left: var(--sdds-spacing-element-16);
         padding-right: var(--sdds-spacing-element-16);
       }
@@ -138,6 +139,10 @@
   }
 
 }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 @media (min-width: 1056px) {
   :host{
@@ -145,8 +150,8 @@
   }
 
   .sdds-header{
-    button {
-      padding: 0 var(--sdds-spacing-element-20);
+    .search-symbol, button {
+      padding: var(--sdds-spacing-element-20);
     }
     .site-search {
       order: 1;
