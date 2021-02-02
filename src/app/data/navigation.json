@@ -137,6 +137,41 @@
               "title": "Text fields",
               "displayLink": null,
               "thumbnail": null
+            },
+            {
+              "id": "107",
+              "url": "radio-button",
+              "title": "Radio button",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "108",
+              "url": "checkbox",
+              "title": "Checkboxes",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "109",
+              "url": "toggle",
+              "title": "Toggle",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "110",
+              "url": "accordion",
+              "title": "Accordion",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "111",
+              "url": "Link",
+              "title": "Link",
+              "displayLink": null,
+              "thumbnail": null
             }
           ]
         },
