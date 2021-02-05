@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: '[code-example]',
+  selector: 'code-example',
   templateUrl:'code-example.component.html',
   styleUrls: ['code-example.component.scss']
 })

@@ -1,10 +1,12 @@
-c-code-sample {
-  margin: 0px 15px;
-}
+@import '~node_modules/@scania/typography/dist/scss/mixins';
+@import '~node_modules/@scania/typography/dist/scss/tokens';
 
-:host {
- > .row + div {
-   //FIXME: Depending how we will list component that are related we might wanna look more into this, button.disabled
-    margin-top: 60px;
+:host{
+  .code-preview{
+    margin-bottom: var(--sdds-spacing-element-16);
+    margin-top: var(--sdds-spacing-element-16);
+  }
+  .code-preview-title{
+    margin-top: var(--sdds-spacing-element-16);
   }
 }

@@ -79,6 +79,7 @@ fragment detail on Content {
       title
       code
       componentTag
+      preview
     }
     ... on ComponentContentPluginOneColumn {
       id

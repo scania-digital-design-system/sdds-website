@@ -1,19 +1,12 @@
-<div *ngFor='let type of example.code | split:"\r?\n-\r?\n"'>
-  <div class="col-12">
-    <!-- Title -->
-    <h4 class="mb-5">{{example.title}}</h4>
-
-    <!-- Example -->
-    <!-- FIXME: set width of every component ?  -->
-
-    <div class='w-100 mb-5' [innerHTML]='type | keepHtml'></div>
-
-  <!-- Code  -->
-  <c-code-sample [innerHTML]='type | keepHtml'></c-code-sample>
-    
-</div>
+<section class="code-example-wrapper">
+  <ng-template [ngIf]="example.preview">
+    <h5 class="code-preview-title">{{example.title}}</h5>
+    <div class="code-preview" [innerHTML]="example.code | keepHtml"></div>
+  </ng-template>
+  <pre><code>{{example.code}}</code></pre>
+</section>
 
 <!-- If code-properties is empty don't show -->
 
-<div code-properties [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div>
+<!-- <div code-properties [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div> -->
 
