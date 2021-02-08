@@ -27,375 +27,6 @@
       ]
     },
     {
-      "id": "112",
-      "url": "Tooltip",
-      "displayLink": null,
-      "title": "Tooltip",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "209",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "227",
-                "title": "Component Tootip Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1395",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Tooltips display an explanatory text when the user either hovers, focuses or clicks an element.",
-                      "Introduction": null,
-                      "id": "253"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1396",
-                    "Title": "Usage",
-                    "Text": "A tooltip should inform the users by showing a text about the specific element that the user is interacting with. For instance, it could clarify the action of a specific icon button within a navigation pattern. \n\nIt appears when the user either hovers over, focuses or taps/clicks it. The text of the tooltip should always be clear and concise. It is always placed on a background contrasting with the surface it appears on, and it is always placed close to the specific element it is connected to.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1397",
-                    "Title": "Placement",
-                    "Text": "Tooltips are always positioned top or bottom of the element. It should never obstruct the element and it always needs to be clearly visible. The exact position of the tooltip depends on the context. It may be positioned left, right or centre.\n\nWhen an element is located in the outer edges of the screen, eg top left, right or bottom, the tooltip should be displayed where screen space is available.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "667",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1585",
-                        "label": null,
-                        "caption": "Placement examples",
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6e17b58673fd408888a6dda4e3b7f4d7.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1398",
-                    "Title": "Anatomy",
-                    "Text": "The tooltip contains two mandatory elements; text and container. The text describes the specific element that the user interacts with.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "668",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1586",
-                        "label": null,
-                        "caption": "A. Text\nB. Container",
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4bb7fc1f6b6645c4a311d8c7c8914c22.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1399",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for tooltip.\n\n**No imagery in tooltips**\n\nDon’t use images or videos inside a tooltip, it should only contain text.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "669",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/00342a2ee3234717a6e1186309149fe9.png"
-                        },
-                        "description": "Only use text inside a tooltip",
-                        "id": "146"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/23c5d8bbefa849f7b5e5aa451f069a1f.png"
-                        },
-                        "description": "Add an image inside a tooltip",
-                        "id": "147"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1400",
-                    "Title": null,
-                    "Text": "**Don’t  restate text**\n\nMake sure not to use tooltip for restating a buttons text. Tooltips shouldn’t be used for scenarios like this.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "670",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/ae498122abf24cb0985a0760d0c24e8c.png"
-                        },
-                        "description": "Restate visible text",
-                        "id": "148"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-02-03T11:06:55.560Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "211",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "228",
-                "title": "Component Tooltip Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1446",
-                    "Title": "Colour",
-                    "Text": "The tooltip only has one default state.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1447",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Text</td> \n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Container</td>\n    <td>$grey-600</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "687",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1610",
-                        "label": "Tooltip example",
-                        "caption": "",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/21034565abc242d2bfa26dbefb85a057.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1448",
-                    "Title": "Sizing",
-                    "Text": "The toggle is only available in one size where the width vary depending on the text. In general, the tooltips text is placed one row consisting of 1 to 4 words. However, in certain scenarios we might need to use a sentence place on multiple rows. When using a sentence the height will also vary in size.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1449",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Width px / rem</th>\n    <th>Height px / rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>One row</td> \n    <td>Width varies</td>\n    <td>32 / 8</td>\n  </tr>\n  <tr>\n    <td>Multiple rows</td>\n    <td>Max. 208 / 52</td>\n    <td>Height varies</td>\n   </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1450",
-                    "Title": null,
-                    "Text": "**One row**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "688",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1611",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d516e6953b944dc6b9a239fcdf119023.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1612",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a30bee18d75b44fb95f85f8c08aa027f.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1451",
-                    "Title": null,
-                    "Text": "**Multiple rows**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "689",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1613",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2cd6345da899441a8d74187cbf6c4339.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1614",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8ce5c8227c4d49399a48cdc1edcd279e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1452",
-                    "Title": "Typography",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text Style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td> \n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1453",
-                    "Title": "Corner radius",
-                    "Text": "Our tooltip has as default rounded corners with a 4px / 1rem corner radius. When the tooltip is connected to an element that is located in the outer edges of the screen, e.g. top or bottom left/right, one of the corners is square. \n\nThe square is a subtle visualisation of an arrow, and the corner that is squared is aligned with the position of the tooltip. For instance, if the tooltip is positioned to the left, the corner that is square is the top left one.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1454",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Corner style</th>\n    <th>Corner radius</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Rounded</td> \n    <td>4 px / 1 rem</td>\n  </tr>\n  <tr>\n    <td>Square</td>\n    <td>0 px / 0 rem</td>\n   </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "690",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1615",
-                        "label": "Tooltip",
-                        "caption": "Top left example",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/01fc4cfc818041aea7f12e19635d0cc1.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-02-03T13:21:27.630Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
       "id": "5",
       "url": "buttons",
       "displayLink": null,
@@ -2160,8 +1791,12 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1506",
                     "Title": null,
-                    "Text": "Wrap radio buttons in a `div` with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
-                    "LeadText": null
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "Radio buttons styles will be applied inside a <div> with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
+                      "Introduction": true,
+                      "id": "292"
+                    }
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -4878,6 +4513,513 @@
       "submenus": []
     },
     {
+      "id": "111",
+      "url": "Links",
+      "displayLink": null,
+      "title": "Links",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "207",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "225",
+                "title": "Component Link Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1351",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A link is a reference and gateway to information located on the same page, to another page, or to an external location.",
+                      "Introduction": null,
+                      "id": "246"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1352",
+                    "Title": "Usage",
+                    "Text": "Links should be used as navigation for users to find information, go to another section on the page, go to other pages and e-mail and phone numbers. When the link is placed within a sentence, it should visually be highlighted so that it is distinguised from the rest of the text. This is done by using another colour and/or using an underline.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1353",
+                    "Title": "Types",
+                    "Text": "Links have two different types; internal and external link. Visually there is no difference, but an icon could be paired to clarify the action of the link.\n\n**Internal links**\nTarget destination is to sections or pages on the same website/application.\n\n**External links**\nTarget destination is to pages outside the website/application where the link exists.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "648",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1562",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/635b0f773bd54b4bbf81c8156ba079ab.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1563",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5a5e93cbb80041469433a399b5c6f157.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1354",
+                    "Title": "Sizes",
+                    "Text": "The link should have the same font-size as the text that it is positioned with. With that said, the link vary in size depending on its context.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "649",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1564",
+                        "label": "Size examples of a link",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0792a3b8a39c4adeaf62204d8cffc4e7.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1355",
+                    "Title": "States",
+                    "Text": "Links have different states to communicate the different status for our users. These states are active, hover, focus, visited and disabled.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "650",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1566",
+                        "label": "Active",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6f3f74bc2f3d438fab6db1377b1087eb.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1567",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1a601108d20d4e2ab4524a581b02fa77.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1568",
+                        "label": "Focus",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/abce47e1483d45b6ae7129982b89a284.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1569",
+                        "label": "Visited",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b0fcb9d5cb824fe09ff90162c2394c04.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1570",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c9d66a8509954344ba6f50dad8922643.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1356",
+                    "Title": "Anatomy",
+                    "Text": "The link contains one mandatory element; label text. The label text describes what the link is linked to.\n\nIt could also contain two optional element; underline and icon. \n\nUse the underline to emphasize that the link is an interactive element. The underline should be used when the link is within a sentence. In some components or patterns, the underline might not be needed due to the layout of the component or pattern. But when the link is placed in free text, we highly recommend to use the underline.\n\nThe icon could be used to clarify the action of the link, for instance use an external-arrow icon for an external link, or a download-arrow icon for a download file link. The icon should be placed to the right side of the label text.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "651",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1571",
+                        "label": "Link",
+                        "caption": "A. Label text\nB. Underline (optional)",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fc8035e3291849bb8720409feafee7d3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1572",
+                        "label": "Link with icon",
+                        "caption": "C. Icon (optional)",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d86d658ec0104233bb6682696183ab11.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1357",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for links.\n\n**Align text styles**\n\nThe link should have the same font-size as the text that it is positioned with.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "652",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/11575594dd984c92ae321dcd7444325a.png"
+                        },
+                        "description": "Use the same font-size",
+                        "id": "134"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/374e2025fb7d4279815cd151d8e43da3.png"
+                        },
+                        "description": "Mix font-sizes",
+                        "id": "135"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1358",
+                    "Title": null,
+                    "Text": "**Link vs button**\n\nLinks are not suitable inside a Login patterns as a CTA. For scenarios like this, button is the component to use.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "653",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a4bb1d64ac9b4f8488040662a28a6c7d.png"
+                        },
+                        "description": "Use a button as a CTA inside a Login pattern",
+                        "id": "136"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/943cc327876c47b0ab5df4af26fbfedc.png"
+                        },
+                        "description": "Use link as a CTA inside a Login pattern",
+                        "id": "137"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1359",
+                    "Title": null,
+                    "Text": "**Use sparingly**\n\nWhen links are placed within sentences/paragraphs, make sure not to overuse too many links. This will clutter the entire experience and make it harder for the user to distingish what to do.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "654",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/aed12665f23d4c648cf802acc9073839.png"
+                        },
+                        "description": "Use links sparingly within sentences, paragraphs and components",
+                        "id": "138"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1ffabc88d9e648b58fc1fd35352b6ad7.png"
+                        },
+                        "description": "Overuse links within sentences, paragraphs and components",
+                        "id": "139"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-02-01T10:17:02.336Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "208",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "226",
+                "title": "Component Link Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1364",
+                    "Title": "Colour",
+                    "Text": "Links have different states to communicate the different status for our users. These states are active, hover, focus, visited and disabled. Our default colour for a link is $blue-500. This is mainly used when it is placed within sentences and paragraphs on light backgrounds ($white, $grey-50 and $grey-100).\n\nIn some components or patterns, the colour needs to change depending on the background and context.\n\nBelow is an example of the default colour specifications.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1366",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Property</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Active</td>\n    <td>Text</td> \n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>Text</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td>Focus</td>\n    <td>Outline</td>\n    <td>$blue-400</td>\n  </tr>\n<tr>\n    <td>Visited</td>  \n    <td>Text</td>\n    <td>$grey-900</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>Text</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "655",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1573",
+                        "label": "Active",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0e894498361045c6a00b563ae658071a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1574",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1db31120346443ae8bc3ef97c7a9d590.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1575",
+                        "label": "Focus",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ad391f5e316c4c428f25e738107742b9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1576",
+                        "label": "Visited",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/77ff87ff42d545bbad4440b1949d8a4f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1577",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3233e70f00da4de08e7e02f3f640fdb7.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1367",
+                    "Title": "Typography",
+                    "Text": "The link should start with the first letter set in upper case, and the remaining letters in lower case. It should also have the same font-size as the text that it is positioned with. With that said, the link vary in size depending on its context.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-02-01T13:45:01.680Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "244",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "267",
+                "title": "Component Link Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1508",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Link will be styled automatically on all <a> elements when Scania theme component is added in an application. There is also a custom class available called \"sdds-link\".",
+                      "Introduction": true,
+                      "id": "290"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "206",
+                    "title": "Basic",
+                    "code": "This is an example of <a href=\"#\">a link</a> inside a paragraph.",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "207",
+                    "title": "Disabled",
+                    "code": "This is an example of <a class=\"disabled\" href=\"#\">a link</a> inside a paragraph.",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-02-08T11:10:05.864Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "42",
       "url": "accessibility",
       "displayLink": "Accessibility",
@@ -5105,6 +5247,26 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/Links"
+                      },
+                      {
+                        "id": "237",
+                        "title": "Component",
+                        "description": "Tooltips",
+                        "info": "",
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/Tooltips"
+                      },
+                      {
+                        "id": "238",
+                        "title": "Component",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
                       }
                     ],
                     "dosAndDonts": []
@@ -6785,6 +6947,403 @@
       "submenus": []
     },
     {
+      "id": "112",
+      "url": "Tooltips",
+      "displayLink": null,
+      "title": "Tooltips",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "209",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "227",
+                "title": "Component Tootip Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1395",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Tooltips display an explanatory text when the user either hovers, focuses or clicks an element.",
+                      "Introduction": null,
+                      "id": "253"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1396",
+                    "Title": "Usage",
+                    "Text": "A tooltip should inform the users by showing a text about the specific element that the user is interacting with. For instance, it could clarify the action of a specific icon button within a navigation pattern. \n\nIt appears when the user either hovers over, focuses or taps/clicks it. The text of the tooltip should always be clear and concise. It is always placed on a background contrasting with the surface it appears on, and it is always placed close to the specific element it is connected to.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1397",
+                    "Title": "Placement",
+                    "Text": "Tooltips are always positioned top or bottom of the element. It should never obstruct the element and it always needs to be clearly visible. The exact position of the tooltip depends on the context. It may be positioned left, right or centre.\n\nWhen an element is located in the outer edges of the screen, eg top left, right or bottom, the tooltip should be displayed where screen space is available.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "667",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1585",
+                        "label": null,
+                        "caption": "Placement examples",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6e17b58673fd408888a6dda4e3b7f4d7.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1398",
+                    "Title": "Anatomy",
+                    "Text": "The tooltip contains two mandatory elements; text and container. The text describes the specific element that the user interacts with.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "668",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1586",
+                        "label": null,
+                        "caption": "A. Text\nB. Container",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4bb7fc1f6b6645c4a311d8c7c8914c22.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1399",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for tooltip.\n\n**No imagery in tooltips**\n\nDon’t use images or videos inside a tooltip, it should only contain text.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "669",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/00342a2ee3234717a6e1186309149fe9.png"
+                        },
+                        "description": "Only use text inside a tooltip",
+                        "id": "146"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/23c5d8bbefa849f7b5e5aa451f069a1f.png"
+                        },
+                        "description": "Add an image inside a tooltip",
+                        "id": "147"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1400",
+                    "Title": null,
+                    "Text": "**Don’t  restate text**\n\nMake sure not to use tooltip for restating a buttons text. Tooltips shouldn’t be used for scenarios like this.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "670",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/ae498122abf24cb0985a0760d0c24e8c.png"
+                        },
+                        "description": "Restate visible text",
+                        "id": "148"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-02-03T11:06:55.560Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "211",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "228",
+                "title": "Component Tooltip Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1446",
+                    "Title": "Colour",
+                    "Text": "The tooltip only has one default state.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1447",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Text</td> \n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Container</td>\n    <td>$grey-600</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "687",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1610",
+                        "label": "Tooltip example",
+                        "caption": "",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/21034565abc242d2bfa26dbefb85a057.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1448",
+                    "Title": "Sizing",
+                    "Text": "The toggle is only available in one size where the width vary depending on the text. In general, the tooltips text is placed one row consisting of 1 to 4 words. However, in certain scenarios we might need to use a sentence place on multiple rows. When using a sentence the height will also vary in size.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1449",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Width px / rem</th>\n    <th>Height px / rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>One row</td> \n    <td>Width varies</td>\n    <td>32 / 8</td>\n  </tr>\n  <tr>\n    <td>Multiple rows</td>\n    <td>Max. 208 / 52</td>\n    <td>Height varies</td>\n   </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1450",
+                    "Title": null,
+                    "Text": "**One row**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "688",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1611",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d516e6953b944dc6b9a239fcdf119023.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1612",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a30bee18d75b44fb95f85f8c08aa027f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1451",
+                    "Title": null,
+                    "Text": "**Multiple rows**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "689",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1613",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2cd6345da899441a8d74187cbf6c4339.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1614",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8ce5c8227c4d49399a48cdc1edcd279e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1452",
+                    "Title": "Typography",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text Style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td> \n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1453",
+                    "Title": "Corner radius",
+                    "Text": "Our tooltip has as default rounded corners with a 4px / 1rem corner radius. When the tooltip is connected to an element that is located in the outer edges of the screen, e.g. top or bottom left/right, one of the corners is square. \n\nThe square is a subtle visualisation of an arrow, and the corner that is squared is aligned with the position of the tooltip. For instance, if the tooltip is positioned to the left, the corner that is square is the top left one.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1454",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Corner style</th>\n    <th>Corner radius</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Rounded</td> \n    <td>4 px / 1 rem</td>\n  </tr>\n  <tr>\n    <td>Square</td>\n    <td>0 px / 0 rem</td>\n   </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "690",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1615",
+                        "label": "Tooltip",
+                        "caption": "Top left example",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/01fc4cfc818041aea7f12e19635d0cc1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-02-03T13:21:27.630Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "245",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "55",
       "url": "faq-design",
       "displayLink": null,
@@ -6909,9 +7468,9 @@
         },
         {
           "id": "112",
-          "url": "Tooltip",
+          "url": "Tooltips",
           "displayLink": null,
-          "title": "Tooltip",
+          "title": "Tooltips",
           "thumbnail": null
         }
       ]
@@ -6955,469 +7514,6 @@
           "thumbnail": null
         }
       ]
-    },
-    {
-      "id": "111",
-      "url": "Links",
-      "displayLink": null,
-      "title": "Links",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "207",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "225",
-                "title": "Component Link Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1351",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "A link is a reference and gateway to information located on the same page, to another page, or to an external location.",
-                      "Introduction": null,
-                      "id": "246"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1352",
-                    "Title": "Usage",
-                    "Text": "Links should be used as navigation for users to find information, go to another section on the page, go to other pages and e-mail and phone numbers. When the link is placed within a sentence, it should visually be highlighted so that it is distinguised from the rest of the text. This is done by using another colour and/or using an underline.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1353",
-                    "Title": "Types",
-                    "Text": "Links have two different types; internal and external link. Visually there is no difference, but an icon could be paired to clarify the action of the link.\n\n**Internal links**\nTarget destination is to sections or pages on the same website/application.\n\n**External links**\nTarget destination is to pages outside the website/application where the link exists.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "648",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1562",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/635b0f773bd54b4bbf81c8156ba079ab.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1563",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5a5e93cbb80041469433a399b5c6f157.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1354",
-                    "Title": "Sizes",
-                    "Text": "The link should have the same font-size as the text that it is positioned with. With that said, the link vary in size depending on its context.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "649",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1564",
-                        "label": "Size examples of a link",
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0792a3b8a39c4adeaf62204d8cffc4e7.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1355",
-                    "Title": "States",
-                    "Text": "Links have different states to communicate the different status for our users. These states are active, hover, focus, visited and disabled.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "650",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1566",
-                        "label": "Active",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6f3f74bc2f3d438fab6db1377b1087eb.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1567",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/1a601108d20d4e2ab4524a581b02fa77.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1568",
-                        "label": "Focus",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/abce47e1483d45b6ae7129982b89a284.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1569",
-                        "label": "Visited",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b0fcb9d5cb824fe09ff90162c2394c04.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1570",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c9d66a8509954344ba6f50dad8922643.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1356",
-                    "Title": "Anatomy",
-                    "Text": "The link contains one mandatory element; label text. The label text describes what the link is linked to.\n\nIt could also contain two optional element; underline and icon. \n\nUse the underline to emphasize that the link is an interactive element. The underline should be used when the link is within a sentence. In some components or patterns, the underline might not be needed due to the layout of the component or pattern. But when the link is placed in free text, we highly recommend to use the underline.\n\nThe icon could be used to clarify the action of the link, for instance use an external-arrow icon for an external link, or a download-arrow icon for a download file link. The icon should be placed to the right side of the label text.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "651",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1571",
-                        "label": "Link",
-                        "caption": "A. Label text\nB. Underline (optional)",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fc8035e3291849bb8720409feafee7d3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1572",
-                        "label": "Link with icon",
-                        "caption": "C. Icon (optional)",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d86d658ec0104233bb6682696183ab11.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1357",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for links.\n\n**Align text styles**\n\nThe link should have the same font-size as the text that it is positioned with.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "652",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/11575594dd984c92ae321dcd7444325a.png"
-                        },
-                        "description": "Use the same font-size",
-                        "id": "134"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/374e2025fb7d4279815cd151d8e43da3.png"
-                        },
-                        "description": "Mix font-sizes",
-                        "id": "135"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1358",
-                    "Title": null,
-                    "Text": "**Link vs button**\n\nLinks are not suitable inside a Login patterns as a CTA. For scenarios like this, button is the component to use.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "653",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a4bb1d64ac9b4f8488040662a28a6c7d.png"
-                        },
-                        "description": "Use a button as a CTA inside a Login pattern",
-                        "id": "136"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/943cc327876c47b0ab5df4af26fbfedc.png"
-                        },
-                        "description": "Use link as a CTA inside a Login pattern",
-                        "id": "137"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1359",
-                    "Title": null,
-                    "Text": "**Use sparingly**\n\nWhen links are placed within sentences/paragraphs, make sure not to overuse too many links. This will clutter the entire experience and make it harder for the user to distingish what to do.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "654",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/aed12665f23d4c648cf802acc9073839.png"
-                        },
-                        "description": "Use links sparingly within sentences, paragraphs and components",
-                        "id": "138"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1ffabc88d9e648b58fc1fd35352b6ad7.png"
-                        },
-                        "description": "Overuse links within sentences, paragraphs and components",
-                        "id": "139"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-02-01T10:17:02.336Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "208",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "226",
-                "title": "Component Link Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1364",
-                    "Title": "Colour",
-                    "Text": "Links have different states to communicate the different status for our users. These states are active, hover, focus, visited and disabled. Our default colour for a link is $blue-500. This is mainly used when it is placed within sentences and paragraphs on light backgrounds ($white, $grey-50 and $grey-100).\n\nIn some components or patterns, the colour needs to change depending on the background and context.\n\nBelow is an example of the default colour specifications.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1366",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Property</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Active</td>\n    <td>Text</td> \n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>Text</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td>Focus</td>\n    <td>Outline</td>\n    <td>$blue-400</td>\n  </tr>\n<tr>\n    <td>Visited</td>  \n    <td>Text</td>\n    <td>$grey-900</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>Text</td>\n     <td>$gray-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "655",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1573",
-                        "label": "Active",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0e894498361045c6a00b563ae658071a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1574",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/1db31120346443ae8bc3ef97c7a9d590.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1575",
-                        "label": "Focus",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ad391f5e316c4c428f25e738107742b9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1576",
-                        "label": "Visited",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/77ff87ff42d545bbad4440b1949d8a4f.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1577",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3233e70f00da4de08e7e02f3f640fdb7.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1367",
-                    "Title": "Typography",
-                    "Text": "The link should start with the first letter set in upper case, and the remaining letters in lower case. It should also have the same font-size as the text that it is positioned with. With that said, the link vary in size depending on its context.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-02-01T13:45:01.680Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
     },
     {
       "id": "10",
@@ -11637,8 +11733,12 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1505",
                     "Title": null,
-                    "Text": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a `div` with class 'sdds-checkbox-item'. A checkboxes group is indicated by the same \"name\" attributes in the input element.",
-                    "LeadText": null
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a <div> with class 'sdds-checkbox-item'.  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
+                      "Introduction": true,
+                      "id": "293"
+                    }
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -12201,8 +12301,12 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1507",
                     "Title": null,
-                    "Text": "This page shows an example how to use breadcrumb classes to apply SDDS looks and feel.",
-                    "LeadText": null
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This page shows an example how to use breadcrumb classes to apply SDDS looks and feel.",
+                      "Introduction": true,
+                      "id": "291"
+                    }
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
