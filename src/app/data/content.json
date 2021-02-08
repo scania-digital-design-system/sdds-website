@@ -1054,13 +1054,9 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1501",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Button classes are available to style buttons in different types and sizes.",
-                      "Introduction": true,
-                      "id": "289"
-                    }
+                    "Title": "Introduction",
+                    "Text": "Button classes are available to style buttons in different types and sizes.",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -1790,10 +1786,10 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1506",
-                    "Title": null,
-                    "Text": "",
+                    "Title": "Introduction",
+                    "Text": "Radio buttons styles will be applied inside a <div> with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
                     "LeadText": {
-                      "textfield": "Radio buttons styles will be applied inside a <div> with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
+                      "textfield": "",
                       "Introduction": true,
                       "id": "292"
                     }
@@ -1801,7 +1797,7 @@
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "203",
-                    "title": "Basic",
+                    "title": "Enabled",
                     "code": "<div class=\"sdds-radio-button-group\">\n      <div class=\"sdds-radio-item\">\n        <input class=\"sdds-form-input\" type=\"radio\" name=\"rb-example\" id=\"rb-option-1\">\n        <label class=\"sdds-form-label\" for=\"rb-option-1\">\n          Label Text 1\n        </label>\n      </div>\n      <div class=\"sdds-radio-item\">\n        <input class=\"sdds-form-input\" type=\"radio\" name=\"rb-example\" id=\"rb-option-2\">\n        <label class=\"sdds-form-label\" for=\"rb-option-2\">\n          Label Text 2\n        </label>\n      </div>\n    </div>",
                     "componentTag": null,
                     "preview": true
@@ -4979,18 +4975,14 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1508",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Link will be styled automatically on all <a> elements when Scania theme component is added in an application. There is also a custom class available called \"sdds-link\".",
-                      "Introduction": true,
-                      "id": "290"
-                    }
+                    "Title": "Introduction",
+                    "Text": "Link will be styled automatically on all <a> elements when Scania theme component is added in an application. There is also a custom class available called \"sdds-link\".",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "206",
-                    "title": "Basic",
+                    "title": "Active",
                     "code": "This is an example of <a href=\"#\">a link</a> inside a paragraph.",
                     "componentTag": null,
                     "preview": true
@@ -11732,10 +11724,10 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1505",
-                    "Title": null,
-                    "Text": "",
+                    "Title": "Introduction",
+                    "Text": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a <div> with class 'sdds-checkbox-item'.  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
                     "LeadText": {
-                      "textfield": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a <div> with class 'sdds-checkbox-item'.  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
+                      "textfield": "",
                       "Introduction": true,
                       "id": "293"
                     }
@@ -11743,7 +11735,7 @@
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "201",
-                    "title": "Basic",
+                    "title": "Enabled",
                     "code": "<div class=\"sdds-checkbox-item\">\n     <input class=\"sdds-form-input\" type=\"checkbox\" name=\"cb-example\" id=\"cb-option-1\" checked=\"checked\">\n      <label class=\"sdds-form-label\" for=\"cb-option-1\">\n         Label Text 1\n      </label>\n </div>\n<div class=\"sdds-checkbox-item\">\n      <input class=\"sdds-form-input\" type=\"checkbox\" name=\"cb-example\" id=\"cb-option-2\">\n      <label class=\"sdds-form-label\" for=\"cb-option-2\">\n        Label Text 2\n     </label>\n</div>",
                     "componentTag": null,
                     "preview": true
@@ -12300,13 +12292,9 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1507",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This page shows an example how to use breadcrumb classes to apply SDDS looks and feel.",
-                      "Introduction": true,
-                      "id": "291"
-                    }
+                    "Title": "Introduction",
+                    "Text": "This page shows an example how to use breadcrumb classes to apply SDDS looks and feel.",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
