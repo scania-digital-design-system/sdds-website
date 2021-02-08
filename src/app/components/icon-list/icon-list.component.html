@@ -23,7 +23,7 @@
   </div>
 
   <div class="no-padding sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4">
-    <div class="sdds-divider"></div>
+    <div class="sdds-website-divider"></div>
   </div>
 
 </div>
@@ -90,7 +90,7 @@
             <p>Icons: {{checkedIcons.length}}</p>
           </div>
           <div class="col-md-6 text-right">
-            <button class="btn btn-primary" (click)='downloadZip()'>
+            <button class="sdds-btn sdds-btn-primary" (click)='downloadZip()'>
               <span *ngIf='downloading'>DOWNLOADING...</span>
               <span *ngIf='!downloading'>DOWNLOAD SVG</span>
             </button>
