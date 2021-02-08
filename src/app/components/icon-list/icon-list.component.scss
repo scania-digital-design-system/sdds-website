@@ -33,13 +33,7 @@
   }
 
   &:hover{
-    background-color: #efefef;
-    background-color: var(--light-02);
     cursor: pointer;
-
-    .sdds-select-icon {
-      display: block;
-    }
   }
 
   c-icon {
@@ -56,7 +50,7 @@
 }
 
 
-.sdds-divider {
+.sdds-website-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: 24px;
   margin-bottom: 24px
@@ -234,18 +228,7 @@
 
 }
 
-//FIXME: remove this when checkboxes are done
-.sdds-checkbox-container {
-  margin-top: var(--sdds-spacing-element-24);
-
-  .sdds-checkbox-label {
-    @include type-style('detail-02');
-    font-weight: 400;
-    color: var(--sdds-grey-900);
-  }
-
-}
-
+//FIXME: remove this when forms are done
 .sdds-form-control {
   @include type-style('detail-02');
   height: 56px;

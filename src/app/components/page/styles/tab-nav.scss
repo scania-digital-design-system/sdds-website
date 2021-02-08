@@ -19,11 +19,13 @@
         padding-left: 0;
         margin: 0;
         color: var(--sdds-grey-300);
+        outline: none;
         &.active,
         &:active,
         &:hover {
           border-bottom: none;
           color: var(--sdds-blue-900);
+          text-decoration: none;
         }
       }
     }

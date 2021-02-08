@@ -27,6 +27,7 @@
       position: relative;
       padding-left: 0;
       cursor: pointer;
+      text-decoration: none;
 
       > p { margin:0; }
 
@@ -45,13 +46,24 @@
         padding-bottom: 6rem;
       }
 
-      &:hover{
+      &:hover {
         color: var(--sdds-grey-600);
       }
+
+      &:focus {
+        color: var(--sdds-grey-400);
+        outline:none;
+      }
+
       &:active,
-      &.active {
+      &.active,
+      &.active:visited {
         color: var(--sdds-blue-900);
         &:after {border-color: var(--sdds-blue-900);}
+      }
+
+      &:visited {
+        color: var(--sdds-grey-400);
       }
     }
 

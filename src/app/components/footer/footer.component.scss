@@ -43,6 +43,7 @@
       a{
         @include type-style('headline-06');
         text-decoration: none;
+        color: var(--sdds-grey-900);
         &:hover,
         &:active,
         &.active{
@@ -56,6 +57,10 @@
     padding-top: var(--sdds-spacing-element-20);
     border-top: 1px solid var(--sdds-grey-100);
     padding-bottom: var(--sdds-spacing-element-40);
+
+    a {
+      color: var(--sdds-grey-900);
+    }
     &.no-line{
       border: 0;
     }

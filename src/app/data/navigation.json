@@ -116,20 +116,27 @@
             },
             {
               "id": "58",
-              "url": "divider",
-              "title": "Divider",
+              "url": "dividers",
+              "title": "Dividers",
               "displayLink": null,
               "thumbnail": null
+            },
+            {
+              "id": "8",
+              "url": "breadcrumbs",
+              "title": "Breadcrumbs",
+              "displayLink": null,
+              "thumbnail": {
+                "id": "44",
+                "url": "https://sdds-cms.s3.amazonaws.com/978c234012d24a918c87ddd12a1b9d92.png"
+              }
             },
             {
               "id": "5",
               "url": "buttons",
               "title": "Buttons",
               "displayLink": null,
-              "thumbnail": {
-                "id": "46",
-                "url": "https://sdds-cms.s3.amazonaws.com/632b3f1888964ceea20ef8bbead448cc.png"
-              }
+              "thumbnail": null
             },
             {
               "id": "103",
@@ -140,36 +147,43 @@
             },
             {
               "id": "107",
-              "url": "radio-button",
-              "title": "Radio button",
+              "url": "radio-buttons",
+              "title": "Radio buttons",
               "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "108",
-              "url": "checkbox",
+              "url": "checkboxes",
               "title": "Checkboxes",
               "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "109",
-              "url": "toggle",
-              "title": "Toggle",
+              "url": "toggles",
+              "title": "Toggles",
               "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "110",
-              "url": "accordion",
-              "title": "Accordion",
+              "url": "accordions",
+              "title": "Accordions",
               "displayLink": null,
               "thumbnail": null
             },
             {
               "id": "111",
-              "url": "Link",
-              "title": "Link",
+              "url": "Links",
+              "title": "Links",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "112",
+              "url": "Tooltips",
+              "title": "Tooltips",
               "displayLink": null,
               "thumbnail": null
             }
