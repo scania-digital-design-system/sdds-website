@@ -234,18 +234,7 @@
 
 }
 
-//FIXME: remove this when checkboxes are done
-.sdds-checkbox-container {
-  margin-top: var(--sdds-spacing-element-24);
-
-  .sdds-checkbox-label {
-    @include type-style('detail-02');
-    font-weight: 400;
-    color: var(--sdds-grey-900);
-  }
-
-}
-
+//FIXME: remove this when forms are done
 .sdds-form-control {
   @include type-style('detail-02');
   height: 56px;
