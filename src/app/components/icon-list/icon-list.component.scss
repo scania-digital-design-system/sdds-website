@@ -33,13 +33,7 @@
   }
 
   &:hover{
-    background-color: #efefef;
-    background-color: var(--light-02);
     cursor: pointer;
-
-    .sdds-select-icon {
-      display: block;
-    }
   }
 
   c-icon {
