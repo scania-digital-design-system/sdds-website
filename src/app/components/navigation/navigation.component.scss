@@ -73,10 +73,11 @@
 
 //Second level menu links
 .sdds-nav-section-sub-links {
-  //  display: none;
+
   margin-bottom: var(--sdds-spacing-element-12);
 
   a {
+    outline: none;
     display: block;
     margin: 0 var(--sdds-spacing-element-16);
 
