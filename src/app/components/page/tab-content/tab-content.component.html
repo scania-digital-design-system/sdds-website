@@ -39,9 +39,7 @@
 
         <!-- Code Example -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginCodeExample'">
-          <section class='code-example-wrapper no-padding sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4' >
-            <pre><code>{{section.code}}</code></pre>
-          </section>
+          <code-example [example]="section" class="no-padding sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4"></code-example>
         </ng-template>
 
         <!-- One column -->
