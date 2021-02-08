@@ -1787,7 +1787,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1506",
                     "Title": "Introduction",
-                    "Text": "Radio buttons styles will be applied inside a <div> with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
+                    "Text": "Radio buttons styles will be applied inside a \"div\" with class \"sdds-radio-button-group\", and add a class wrapper called \"sdds-radio-item\" around input and label. A radio buttons group is indicated by the same \"name\" attributes in the input element.",
                     "LeadText": {
                       "textfield": "",
                       "Introduction": true,
@@ -4976,7 +4976,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1508",
                     "Title": "Introduction",
-                    "Text": "Link will be styled automatically on all <a> elements when Scania theme component is added in an application. There is also a custom class available called \"sdds-link\".",
+                    "Text": "Link will be styled automatically on all \"a\" elements when Scania theme component is added in an application. There is also a custom class available called \"sdds-link\".",
                     "LeadText": null
                   },
                   {
@@ -11725,12 +11725,8 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1505",
                     "Title": "Introduction",
-                    "Text": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a <div> with class 'sdds-checkbox-item'.  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
-                    "LeadText": {
-                      "textfield": "",
-                      "Introduction": true,
-                      "id": "293"
-                    }
+                    "Text": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a \"div\" with class \"sdds-checkbox-item\".  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
