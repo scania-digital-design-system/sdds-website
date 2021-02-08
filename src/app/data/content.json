@@ -2593,6 +2593,765 @@
       "submenus": []
     },
     {
+      "id": "110",
+      "url": "accordions",
+      "displayLink": null,
+      "title": "Accordions",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "204",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "223",
+                "title": "Components Accordions Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1177",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "An accordion is a component that can be collapsed and expanded, used to reveal or hide additional content.",
+                      "Introduction": null,
+                      "id": "232"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1178",
+                    "Title": "Usage",
+                    "Text": "Use accordions when you want to give the user a quick and clear overview of information that is available. It is great to use when there is a need for presentation of information on a number of topics in a limited space, since it saves vertical space and reduces scrolling.\n\nBy using accordions, you can hide information with lower priority and also let the user decide what information they want to see. The additional information that is hidden, gets revealed when the user clicks/taps the accordion\n\nThe accordion can be used on its own or grouped in multiples, creating a stacked vertical list of accordions. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1186",
+                    "Title": "Placement",
+                    "Text": "Accordions can be placed in your main content area or inside other components or patterns, such as data tables or a left navigation. Depending on where the accordion is placed, the visual style may vary to be able to fit in the specific placement. An accordion should however always follow the same functional logic regarding expand and collapse, and contain it’s mandatory elements; header, icon & panel.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "530",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1228",
+                        "label": "Left navigation",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2cda0e6d998c4b4e8258193640acaa2a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1229",
+                        "label": "Main content area",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7ede7f2d55ec48028b27574221a6b895.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1230",
+                        "label": "Data tables",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/902c1428168442e7b257df270d11cb4a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1187",
+                    "Title": "Anatomy",
+                    "Text": "The accordion contains three mandatory elements; header, icon and panel. \n\nThe header gives users the context about the additional information available inside the panel. It could either be stated as a headline or a question when used in a FAQ. The icon describes the state of the accordion, if the panel is expanded or collapsed. The panel is displayed below the header and contains the additional content.\n\nIn the basic accordion, dividers are needed to separate and contain the accordions. In certain scenarios, the dividers can be removed. For instance when an accordion is used on its own inside a data table, the dividers are not needed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1231",
+                      "label": null,
+                      "caption": "A. Header\nB. Icon\nC. Panel\nD. Divider (optional)",
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/141b5b199deb4cd4822c4b3e35a2b688.png"
+                        }
+                      ]
+                    },
+                    "id": "136"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1247",
+                    "Title": null,
+                    "Text": "##### Prefix and Suffix icon\n\nAs default, we use suffix icon in our accordion, but there is an option to use prefix instead depending on the context of the accordion location. \n\nFor instance, when using accordion in a complex data table with a lot of rows and columns, we recommend to use the prefix icon to make it easier and quicker for the user to decode that certain rows are expandable.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "567",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1330",
+                        "label": "Prefix icon (Default)",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bfb31e8c5c074762aedabd816570548c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1331",
+                        "label": "Suffix icon",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7878aba85fe64e20ab1113ab25385c46.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1248",
+                    "Title": "States",
+                    "Text": "An accordion can either be collapsed or expanded. The icon arrow’s direction describes which state the accordion is in, where points up is expanded and points down collapsed. \n\nAs default, the accordion is always collapsed to maximize the overview for the user. If needed, there is an option to allow the first accordion expanded as well.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1332",
+                      "label": "Collapsed",
+                      "caption": null,
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/90a19ce08d0c4fb9b5d86f23db30e8bf.png"
+                        }
+                      ]
+                    },
+                    "id": "159"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1333",
+                      "label": "Expanded",
+                      "caption": null,
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/023bce7bcc524c01be6dace208a31071.png"
+                        }
+                      ]
+                    },
+                    "id": "160"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1249",
+                    "Title": null,
+                    "Text": "They also have different states to communicate the accordions different status for our users. These states are enabled, hover, focus, pressed and disabled. The entire accordion, not only the header or icon, is interactive.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "568",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1334",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/914f1b429e114941a6d24907517f2483.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1335",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/eee0d68bd6c742b2a6115ed599062848.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1336",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e271a55e5d154c70b2e77086da749ed3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1337",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bcc927d343b34901b38a980b18ac56a6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1338",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/385af0f263e64e18aea17aa2a8ae2b2d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1250",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for accordions.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1251",
+                    "Title": null,
+                    "Text": "##### Icon direction\nThe icon should change direction depending if the accordion is expanded or collapsed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "569",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/92a5f545b76c43da81da87ed74dbf7fb.png"
+                        },
+                        "description": "Point the icon up when collapsed",
+                        "id": "118"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/9ca899e9cd5d4415813d87dda6357b9a.png"
+                        },
+                        "description": "Point the icon up when expanded",
+                        "id": "119"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1252",
+                    "Title": null,
+                    "Text": "##### Don’t nest accordions\n\nWhen grouping accordions, they should be stacked vertically in a list and not nested. Never put an accordion inside another accordion.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "570",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/68427580409049d692100c14f41362c7.png"
+                        },
+                        "description": "Stack accordions vertically",
+                        "id": "120"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/6c48ddf63210484aa8118dc97ebf6d38.png"
+                        },
+                        "description": "Nest accordions",
+                        "id": "121"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-02-02T13:05:27.710Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "205",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "224",
+                "title": "Components Accordions Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1276",
+                    "Title": "Colour",
+                    "Text": "Accordions come in two sets of colours. Depending on what theme or background colour the accordion exists on, the colour of the accordions state focus varies.\n\nThe accordion has no container colour as default, and the colour of the container will only be applied when the state is either hover or focused.\n\nWhen placed on a $white background, the hover and focus state switches the container colour to $grey-50. On $grey-50 background, the container switches to $white when the state is hover or focused.\n\nNote, more additional information about theming will be released later this year.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "600",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1446",
+                        "label": "Hover on $white",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fd7771ce29244605b910a2d194ce272c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1447",
+                        "label": "Hover on $grey-50",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e2c8c5d918984d7d8c8dcc14bffd9100.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "44",
+                    "tableTitle": "$white theme",
+                    "tableHtml": " <table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Divider</th>\n    <th>Border</th>\n    <th>Header</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-50</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-50</td>\n    <td>-</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-100</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Disabled</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "601",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1448",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/202e52b5f0344ee8a9af706feba73b8a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1449",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/07729c8316594055be4da349305796bc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1450",
+                        "label": "Focus",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b054414609374cd09d4d0000b6b5a49b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1451",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/65fe3bc8fe4c42babf74254b55566159.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1452",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bdc60fcf79f94925ad028be15a0ac034.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "45",
+                    "tableTitle": "$grey-50 theme",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Divider</th>\n    <th>Border</th>\n    <th>Header</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>-</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-100</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Disabled</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "602",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1453",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d469f69040d44bf8afc26d83d44e82c7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1454",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c0d6671884aa4ab9a14595168b976b35.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1455",
+                        "label": "Focus",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/68af560d68b342158f04610051e8f77e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1456",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/43f70c4950554348b7163da5a99d86f1.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1457",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": false,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c0036e76bbf543dfa273160bacc92ade.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1277",
+                    "Title": "Sizing",
+                    "Text": "The basic accordion is available in one size, where the width varies depending on where it is located, in the main content area or inside a component. The height is fixed when the accordion is collapsed, and it varies when the accordion is expanded.\n\nWhen accordions are vertically stacked, the bottom divider should disappear to avoid multiple dividers in a row.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "46",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Width px / rem</th>\n    <th>Height px / rem</th>\n    <th>Icon px</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Collapsed</td>\n    <td>Width varies</td>\n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Expanded</td>\n    <td>Width varies</td>\n    <td>Height varies</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1278",
+                    "Title": null,
+                    "Text": "##### Collapsed",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "603",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1458",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/de67398784504ef88d5aa78a42d0b907.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1459",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/84689fd1096a4ee889d61a7628d617fd.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1460",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d980836523844095b03aef83588cfff7.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1279",
+                    "Title": null,
+                    "Text": "##### Expanded",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1461",
+                      "label": null,
+                      "caption": null,
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/9f983b0cdb514eff95fdbf20b1826d00.png"
+                        }
+                      ]
+                    },
+                    "id": "165"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1462",
+                      "label": null,
+                      "caption": null,
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/b239f2c21cf44e5c8f8b938cf705669a.png"
+                        }
+                      ]
+                    },
+                    "id": "166"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1280",
+                    "Title": "Typography",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "47",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>$headline-07<br></td>\n  </tr>\n  <tr>\n    <td>Panel</td>\n    <td>$detail-03</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  }
+                ],
+                "updated_at": "2021-02-02T13:05:19.582Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "206",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "37",
       "url": "design",
       "displayLink": "Design",
@@ -6196,744 +6955,6 @@
           "thumbnail": null
         }
       ]
-    },
-    {
-      "id": "110",
-      "url": "accordions",
-      "displayLink": null,
-      "title": "Accordions",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "204",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "223",
-                "title": "Components Accordions Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1177",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "An accordion is a component that can be collapsed and expanded, used to reveal or hide additional content.",
-                      "Introduction": null,
-                      "id": "232"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1178",
-                    "Title": "Usage",
-                    "Text": "Use accordions when you want to give the user a quick and clear overview of information that is available. It is great to use when there is a need for presentation of information on a number of topics in a limited space, since it saves vertical space and reduces scrolling.\n\nBy using accordions, you can hide information with lower priority and also let the user decide what information they want to see. The additional information that is hidden, gets revealed when the user clicks/taps the accordion\n\nThe accordion can be used on its own or grouped in multiples, creating a stacked vertical list of accordions. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1186",
-                    "Title": "Placement",
-                    "Text": "Accordions can be placed in your main content area or inside other components or patterns, such as data tables or a left navigation. Depending on where the accordion is placed, the visual style may vary to be able to fit in the specific placement. An accordion should however always follow the same functional logic regarding expand and collapse, and contain it’s mandatory elements; header, icon & panel.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "530",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1228",
-                        "label": "Left navigation",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2cda0e6d998c4b4e8258193640acaa2a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1229",
-                        "label": "Main content area",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7ede7f2d55ec48028b27574221a6b895.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1230",
-                        "label": "Data tables",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/902c1428168442e7b257df270d11cb4a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1187",
-                    "Title": "Anatomy",
-                    "Text": "The accordion contains three mandatory elements; header, icon and panel. \n\nThe header gives users the context about the additional information available inside the panel. It could either be stated as a headline or a question when used in a FAQ. The icon describes the state of the accordion, if the panel is expanded or collapsed. The panel is displayed below the header and contains the additional content.\n\nIn the basic accordion, dividers are needed to separate and contain the accordions. In certain scenarios, the dividers can be removed. For instance when an accordion is used on its own inside a data table, the dividers are not needed.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "1231",
-                      "label": null,
-                      "caption": "A. Header\nB. Icon\nC. Panel\nD. Divider (optional)",
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/141b5b199deb4cd4822c4b3e35a2b688.png"
-                        }
-                      ]
-                    },
-                    "id": "136"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1247",
-                    "Title": null,
-                    "Text": "##### Prefix and Suffix icon\n\nAs default, we use suffix icon in our accordion, but there is an option to use prefix instead depending on the context of the accordion location. \n\nFor instance, when using accordion in a complex data table with a lot of rows and columns, we recommend to use the prefix icon to make it easier and quicker for the user to decode that certain rows are expandable.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "567",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1330",
-                        "label": "Prefix icon (Default)",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bfb31e8c5c074762aedabd816570548c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1331",
-                        "label": "Suffix icon",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7878aba85fe64e20ab1113ab25385c46.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1248",
-                    "Title": "States",
-                    "Text": "An accordion can either be collapsed or expanded. The icon arrow’s direction describes which state the accordion is in, where points up is expanded and points down collapsed. \n\nAs default, the accordion is always collapsed to maximize the overview for the user. If needed, there is an option to allow the first accordion expanded as well.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "1332",
-                      "label": "Collapsed",
-                      "caption": null,
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/90a19ce08d0c4fb9b5d86f23db30e8bf.png"
-                        }
-                      ]
-                    },
-                    "id": "159"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "1333",
-                      "label": "Expanded",
-                      "caption": null,
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/023bce7bcc524c01be6dace208a31071.png"
-                        }
-                      ]
-                    },
-                    "id": "160"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1249",
-                    "Title": null,
-                    "Text": "They also have different states to communicate the accordions different status for our users. These states are enabled, hover, focus, pressed and disabled. The entire accordion, not only the header or icon, is interactive.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "568",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1334",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/914f1b429e114941a6d24907517f2483.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1335",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/eee0d68bd6c742b2a6115ed599062848.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1336",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e271a55e5d154c70b2e77086da749ed3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1337",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bcc927d343b34901b38a980b18ac56a6.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1338",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/385af0f263e64e18aea17aa2a8ae2b2d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1250",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for accordions.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1251",
-                    "Title": null,
-                    "Text": "##### Icon direction\nThe icon should change direction depending if the accordion is expanded or collapsed.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "569",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/92a5f545b76c43da81da87ed74dbf7fb.png"
-                        },
-                        "description": "Point the icon up when collapsed",
-                        "id": "118"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/9ca899e9cd5d4415813d87dda6357b9a.png"
-                        },
-                        "description": "Point the icon up when expanded",
-                        "id": "119"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1252",
-                    "Title": null,
-                    "Text": "##### Don’t nest accordions\n\nWhen grouping accordions, they should be stacked vertically in a list and not nested. Never put an accordion inside another accordion.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "570",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/68427580409049d692100c14f41362c7.png"
-                        },
-                        "description": "Stack accordions vertically",
-                        "id": "120"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/6c48ddf63210484aa8118dc97ebf6d38.png"
-                        },
-                        "description": "Nest accordions",
-                        "id": "121"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-02-02T13:05:27.710Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "205",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "224",
-                "title": "Components Accordions Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1276",
-                    "Title": "Colour",
-                    "Text": "Accordions come in two sets of colours. Depending on what theme or background colour the accordion exists on, the colour of the accordions state focus varies.\n\nThe accordion has no container colour as default, and the colour of the container will only be applied when the state is either hover or focused.\n\nWhen placed on a $white background, the hover and focus state switches the container colour to $grey-50. On $grey-50 background, the container switches to $white when the state is hover or focused.\n\nNote, more additional information about theming will be released later this year.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "600",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1446",
-                        "label": "Hover on $white",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fd7771ce29244605b910a2d194ce272c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1447",
-                        "label": "Hover on $grey-50",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e2c8c5d918984d7d8c8dcc14bffd9100.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "44",
-                    "tableTitle": "$white theme",
-                    "tableHtml": " <table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Divider</th>\n    <th>Border</th>\n    <th>Header</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-50</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-50</td>\n    <td>-</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-100</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Disabled</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Large"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "601",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1448",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/202e52b5f0344ee8a9af706feba73b8a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1449",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/07729c8316594055be4da349305796bc.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1450",
-                        "label": "Focus",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b054414609374cd09d4d0000b6b5a49b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1451",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/65fe3bc8fe4c42babf74254b55566159.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1452",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bdc60fcf79f94925ad028be15a0ac034.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "45",
-                    "tableTitle": "$grey-50 theme",
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Divider</th>\n    <th>Border</th>\n    <th>Header</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>-</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-100</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Disabled</td>\n    <td>-</td>\n    <td>$grey-100</td>\n    <td>-</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Large"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "602",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1453",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d469f69040d44bf8afc26d83d44e82c7.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1454",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c0d6671884aa4ab9a14595168b976b35.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1455",
-                        "label": "Focus",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/68af560d68b342158f04610051e8f77e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1456",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/43f70c4950554348b7163da5a99d86f1.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1457",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": false,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c0036e76bbf543dfa273160bacc92ade.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1277",
-                    "Title": "Sizing",
-                    "Text": "The basic accordion is available in one size, where the width varies depending on where it is located, in the main content area or inside a component. The height is fixed when the accordion is collapsed, and it varies when the accordion is expanded.\n\nWhen accordions are vertically stacked, the bottom divider should disappear to avoid multiple dividers in a row.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "46",
-                    "tableTitle": null,
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Width px / rem</th>\n    <th>Height px / rem</th>\n    <th>Icon px</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Collapsed</td>\n    <td>Width varies</td>\n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Expanded</td>\n    <td>Width varies</td>\n    <td>Height varies</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1278",
-                    "Title": null,
-                    "Text": "##### Collapsed",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "603",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1458",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/de67398784504ef88d5aa78a42d0b907.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1459",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/84689fd1096a4ee889d61a7628d617fd.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1460",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d980836523844095b03aef83588cfff7.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1279",
-                    "Title": null,
-                    "Text": "##### Expanded",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "1461",
-                      "label": null,
-                      "caption": null,
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/9f983b0cdb514eff95fdbf20b1826d00.png"
-                        }
-                      ]
-                    },
-                    "id": "165"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "1462",
-                      "label": null,
-                      "caption": null,
-                      "size": "Medium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/b239f2c21cf44e5c8f8b938cf705669a.png"
-                        }
-                      ]
-                    },
-                    "id": "166"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1280",
-                    "Title": "Typography",
-                    "Text": null,
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "47",
-                    "tableTitle": null,
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>$headline-07<br></td>\n  </tr>\n  <tr>\n    <td>Panel</td>\n    <td>$detail-03</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  }
-                ],
-                "updated_at": "2021-02-02T13:05:19.582Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "206",
-          "title": "Code",
-          "active": true,
-          "pageContent": []
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
     },
     {
       "id": "111",
