@@ -11439,8 +11439,8 @@
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "208",
-                    "title": "Divider horizontal ",
-                    "code": "<div style=\"width: 400px;\" class=\"sdds-divider-dark\"></div> ",
+                    "title": "Divider with color option ",
+                    "code": "Dark\n<div class=\"sdds-divider-dark\" style=\"margin: 5px; width: 400px;\"></div> \n\nColoured\n<div class=\"sdds-divider-coloured\" style=\"margin: 5px; width: 400px;\" ></div> \n\nLight\n<div class=\"sdds-divider-light\"style=\"margin: 5px;  width: 400px;\" ></div> ",
                     "componentTag": null,
                     "preview": true
                   },
@@ -12670,7 +12670,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1511",
                     "Title": "Introduction",
-                    "Text": "A text field can be used to gather input data from the user.",
+                    "Text": "A text field can be used to gather input data from the user.\n\nUpcoming release:\n- Label inside\n- Suffix icon and text\n- Prefix icon and text\n- Helper text\n- Text counter\n- Error validation",
                     "LeadText": null
                   },
                   {
