@@ -1132,7 +1132,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "199",
                     "title": "Fullbleed",
-                    "code": "<button class=\"sdds-btn sdds-btn-primary sdds-btn-sm sdds-btn-fullbleed\" style=\"width:200px;\"> Button example </button>",
+                    "code": "<button class=\"sdds-btn sdds-btn-primary sdds-btn-fullbleed\" style=\"width:200px;\"> Button example </button>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -10283,7 +10283,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1505",
                     "Title": "Introduction",
-                    "Text": "This pages shows an example how to apply checkboxes styles. Wrap input checkbox and label in a \"div\" with class \"sdds-checkbox-item\".  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
+                    "Text": "This page shows an example how to apply checkboxes styles. Wrap input checkbox and label in a \"div\" with class \"sdds-checkbox-item\".  A checkboxes group is indicated by the same \"name\" attributes in the input element.",
                     "LeadText": null
                   },
                   {
