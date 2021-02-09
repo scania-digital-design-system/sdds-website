@@ -3203,7 +3203,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "244",
                     "Title": "Contribute",
-                    "Text": "If you come across any problems during this installation guide or feel something needs to be more clear, please contact us ou report an issue in our <a href=\"https://github.com/scania-digital-design-system/sdds\" target=\"_blank\">github</a>.\n\nThe package size of both Scania-theme and Corporate-Ui is something we are always trying to improve.\n",
+                    "Text": "If you come across any problems during this installation guide or feel something needs to be more clear, please contact us ou report an issue in our <a href=\"https://github.com/scania-digital-design-system/sdds\" target=\"_blank\">github</a>.\n\nThe package size of SDDS i is something we are always trying to improve.\n",
                     "LeadText": null
                   },
                   {
@@ -3221,7 +3221,7 @@
                         "image": null,
                         "detail": "An error that causes something to unexpectedly quit or behave in an unintended manner.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug+-+%22title+text%22"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new/choose"
                       },
                       {
                         "id": "81",
@@ -3323,7 +3323,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "166",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania-sdds/components\n  > npm i @scania-sdds/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
                     "componentTag": null,
                     "preview": null
                   },
@@ -3331,21 +3331,21 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "600",
                     "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\n\n**Prerequisites**\nIf you are using Angular 8+, you need to add webcomponents polyfill. Install the dependency:\n```\nnpm i @webcomponents/webcomponentsjs --save-dev\n```\n\nImport the polyfill inside `src/polyfill.ts`\n```\nimport '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js'\n```\n\nAnd then, follow the steps below:\n\n1. In Angular, go to main-ts (or some other appropriate place), and import the packages\n    ```\n     import { AppModule } from './app/app.module';\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania-sdds/components';\n     import { theme as scania } from '@scania-sdds/theme-light';\n\n     // Run function to initiate component\n     defineCustomElements();\n\n     // add theme\n     addTheme(scania)\n     ```\n\n2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts\n   ```\n   import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n   \n    @NgModule({\n    declarations: [\n       AppComponent,\n    ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n   })\n   ```\n\n**Add theme in HTML**\nWhen the previous step is done, you can start adding theme to get the styling. Add c-theme component high up in the hierarchy of your application. If it works you should see fonts and so on change.\n\n```\n// In app.component.html\n  <c-theme name=\"scania\" global=\"true\"></c-theme>\n  <c-header\n    site-name=\"Corporate UI\"\n    items='[{ \"text\": \"Home\", \"href\": \"/\" }]'>\n  </c-header>\n\n  <c-footer>\n    <a href=\"/cookies\" slot=\"items\">Cookies</a>\n    <a href=\"/contact-us\" slot=\"items\">Contact us</a>\n  </c-footer>\n```",
+                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\n\n**Prerequisites**\nIf you are using Angular 8+, you need to add webcomponents polyfill. Install the dependency:\n```\nnpm i @webcomponents/webcomponentsjs --save-dev\n```\n\nImport the polyfill inside `src/polyfill.ts`\n```\nimport '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js'\n```\n\nAnd then, follow the steps below:\n\n1. In Angular, go to main-ts (or some other appropriate place), and import the packages\n    ```\n     import { AppModule } from './app/app.module';\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n\n     // Run function to initiate component\n     defineCustomElements();\n\n     // add theme\n     addTheme(scania)\n     ```\n\n2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts\n   ```\n   import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n   \n    @NgModule({\n    declarations: [\n       AppComponent,\n    ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n   })\n   ```\n\n**Add theme in HTML**\nWhen the previous step is done, you can start adding theme to get the styling. Add c-theme component high up in the hierarchy of your application. If it works you should see fonts and so on change.\n\n```\n// In app.component.html\n  <c-theme></c-theme>\n  <c-header\n    site-name=\"SDDS\"\n    items='[{ \"text\": \"Home\", \"href\": \"/\" }]'>\n  </c-header>\n\n  <c-footer>\n    <a href=\"/cookies\" slot=\"items\">Cookies</a>\n    <a href=\"/contact-us\" slot=\"items\">Contact us</a>\n  </c-footer>\n```",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "612",
                     "Title": "React",
-                    "Text": "Install SDDS components and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "Text": "Install SDDS components and theme in your project, this will install the latest version that is published on npm.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "173",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania-sdds/components\n  > npm i @scania-sdds/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
                     "componentTag": null,
                     "preview": null
                   },
@@ -3353,21 +3353,21 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "613",
                     "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\nFollow the steps below:\n\n1. In React you can go to src/index.js and import components and scania-theme\n    ```\n     import { defineCustomElements, addTheme } from '@scania-sdds/components';\n     import { theme as scania } from '@scania-sdds/theme-light';\n     ```\n\n2. You need to call defineCustomElements() that will initiate custom elements.\n   ```\n   defineCustomElements();\n   ```\n\n3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n   ```\n   addTheme(scania)\n   ```\n\n\n**Add theming**\nWhen the previous step is done, you can start adding theme to get the styling. Try and add `c-theme` component high up in the hierarchy of your application. For example app.js in react. If it works you should see fonts and so on change.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }\n```\n\n**Add header,content and footer**\nAfter theme is added (Add theming) is done, you can add components c-header, c-content and c-footer in that order. After that you should see the header and footer. Content component will push down the footer below the content.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }\n```",
+                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\nFollow the steps below:\n\n1. In React you can go to src/index.js and import components and scania-theme\n    ```\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n     ```\n\n2. You need to call defineCustomElements() that will initiate custom elements.\n   ```\n   defineCustomElements();\n   ```\n\n3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n   ```\n   addTheme(scania)\n   ```\n\n\n**Add theming**\nWhen the previous step is done, you can start adding theme to get the styling. Try and add `c-theme` component high up in the hierarchy of your application. For example app.js in react. If it works you should see fonts and so on change.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme></c-theme>\n\n        </div>\n      );\n    }\n```\n\n**Add header,content and footer**\nAfter theme is added (Add theming) is done, you can add components c-header, c-content and c-footer in that order. After that you should see the header and footer. Content component will push down the footer below the content.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-footer></c-footer>\n        </div>\n      );\n    }\n```",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "619",
                     "Title": "Vue",
-                    "Text": "Install SDDS components and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "Text": "Install SDDS components and theme in your project, this will install the latest version that is published on npm.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "179",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania-sdds/components\n  > npm i @scania-sdds/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
                     "componentTag": null,
                     "preview": null
                   },
@@ -3375,7 +3375,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "620",
                     "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\n\n1. In Vue, go to main.js and import the packages\n     ```\n      import Vue from 'vue'\n      import App from './App.vue'\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania-sdds/components';\n     import { theme as scania } from '@scania-sdds/theme-light';\n     ```\n\n2. In the main.js you also need to tell the application to ignore custom-element tags such as ```c-header``` by adding this line. Otherwise a warning will be thrown in the console.\n   ```\n  //Ignore all components custom-elements named c-*\n  Vue.config.ignoredElements = [/c-\\w*/];\n   ```\n\n3. You need to call defineCustomElements()\n   ```\n   defineCustomElements();\n   ```\n\n4. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n```\naddTheme(scania)\n```",
+                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from theme package after you have installed them (See section Installing npm packages).\n\n1. In Vue, go to main.js and import the packages\n     ```\n      import Vue from 'vue'\n      import App from './App.vue'\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n     ```\n\n2. In the main.js you also need to tell the application to ignore custom-element tags such as ```c-header``` by adding this line. Otherwise a warning will be thrown in the console.\n   ```\n  //Ignore all components custom-elements named c-*\n  Vue.config.ignoredElements = [/c-\\w*/];\n   ```\n\n3. You need to call defineCustomElements()\n   ```\n   defineCustomElements();\n   ```\n\n4. After that you need to call addTheme() , this function takes one parameter, which is the theme from theme-light packages that you imported in step 1.\n```\naddTheme(scania)\n```",
                     "LeadText": null
                   },
                   {
@@ -3389,7 +3389,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "184",
                     "title": null,
-                    "code": "  // Vue example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n\n        </div>\n      );\n    }",
+                    "code": "  // Vue example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme></c-theme>\n\n        </div>\n      );\n    }",
                     "componentTag": null,
                     "preview": null
                   },
@@ -3404,7 +3404,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "185",
                     "title": null,
-                    "code": "    // Vue example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme name=\"scania\" global=\"true\"></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-content>\n              // Application content\n          </c-content>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
+                    "code": "    // Vue example\n    function App() {\n      return (\n        <div className=\"App\">\n          <c-theme></c-theme>\n          // Add Header,content and footer component\n          <c-header></c-header>\n          <c-footer></c-footer>\n        </div>\n      );\n    }",
                     "componentTag": null,
                     "preview": null
                   }
@@ -7464,8 +7464,32 @@
           "displayLink": null,
           "title": "Tooltips",
           "thumbnail": null
+        },
+        {
+          "id": "145",
+          "url": "cards",
+          "displayLink": null,
+          "title": "Cards",
+          "thumbnail": null
         }
       ]
+    },
+    {
+      "id": "145",
+      "url": "cards",
+      "displayLink": null,
+      "title": "Cards",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
     },
     {
       "id": "35",
@@ -8639,1472 +8663,6 @@
         "url": "resources",
         "displayLink": null,
         "title": "Resources",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "103",
-      "url": "textfields",
-      "displayLink": null,
-      "title": "Text fields",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "184",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "203",
-                "title": "Components Text fields Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "912",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "A text field is a component that facilitates entry and editing of text. In general text fields are used to collect and post subsequently information provided by users.",
-                      "Introduction": null,
-                      "id": "213"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "913",
-                    "Title": "Usage",
-                    "Text": "Text fields are used as an integral part of a form (of various kinds) to enable users to edit and post text. Text fields should be legible so that users know where to enter the text. In addition to this, text fields should clearly show its state to convey when text can or cannot be entered.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "914",
-                    "Title": "Types",
-                    "Text": "Text fields have three different types; label inside, label outside and no label.\n\nYou should select text field type based on which context the text field will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the type label inside works well for more narrow spaces and label outside is a good option for forms with a lot of text fields present, making it easier for the users to decode the information\n\nNo label should be used very sparingly and only when needed. It is a good choice when adding text fields inside a data table, where a label will be present in the column head instead. \n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "368",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "844",
-                        "label": "Label inside",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/234a5e91e91545fa963a4d885627551c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "991",
-                        "label": "Label outside",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/66dfe466286846dca23fcf952670f12e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "992",
-                        "label": "No label",
-                        "caption": "",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4dbccd97ac4f4f298536bdc7b7389906.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "915",
-                    "Title": "Sizes",
-                    "Text": "There are two different text field sizes: default and medium where default is our primary text field size. Medium could be a good option to use for more narrow spaces. As for types, size could also be selected depending on what works best with the applications design you are working with.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "369",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "845",
-                        "label": "Default",
-                        "caption": "Use as primary text field size",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3951a46759cf489b8b9dc4dcdc18e8c6.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "846",
-                        "label": "Medium",
-                        "caption": "Use mainly for narrow spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a1a70c3b94b641c88375b3bc5c609fc3.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "916",
-                    "Title": "States",
-                    "Text": "Text fields have different states to communicate the fields’ different status for our users.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "370",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "847",
-                        "label": "Default",
-                        "caption": "Interactive element",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f82ecc76033245399dea02e98f10ee1d.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "848",
-                        "label": "Hover",
-                        "caption": "Mouse over",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/32d85ee0cca14a78a303e451ebd15782.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "849",
-                        "label": "Focused",
-                        "caption": "Highlighted by keyboard, voice or mouse",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0f64961058a44ea992197aa375f454d5.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "850",
-                        "label": "Error",
-                        "caption": "Invalid user input",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/abdabfbb523d4504938d50ffc46bcef0.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "851",
-                        "label": "Success",
-                        "caption": "Valid user input",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e6245aa409ae469788aa71b9c59599fe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "852",
-                        "label": "Disabled",
-                        "caption": "Non-interactive",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c7f97f66308b40c7b8f10b8b6ce4545a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "917",
-                    "Title": "Anatomy",
-                    "Text": "A text field contains at least 3 elements; a text label and a container plus input text, when the user have input text. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "371",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "853",
-                        "label": "Label inside",
-                        "caption": "A. Container\nB. Prefix icon/text (optional)\nC. Label text\nD. Input text\nE. Suffix icon/text (optional)\nF. Helper text (optional)",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/add4eec153c94dc38ac356e0ce3d9d6c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "854",
-                        "label": "Label outside",
-                        "caption": "C. Label",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bc45c614f7b0496ca8a2afa41f349bc9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "855",
-                        "label": "No label (when interacted with)",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/32bec55410ca4ffab1b4a6eb60a00f8c.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "918",
-                    "Title": "",
-                    "Text": "##### Container\nContainers are the base of the text field, and it is a filled container with a bottom-border. The container has top rounded corners and square bottom corners. The bottom-border varies in height and colour depending on the state to emphasize this.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "372",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "856",
-                        "label": "Default container",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/13d142699ade4fac9b92f5399fde357d.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "857",
-                        "label": "Focused container",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a0c5255391ab43a9b9fe8fc29e9e064a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "919",
-                    "Title": null,
-                    "Text": "##### Label text\nLabel text is the text that communicates to the user what text information that should be submitted inside each text field. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "373",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "858",
-                        "label": "Label inside",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/74ea46b85dce445280f1078eb00238eb.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "859",
-                        "label": "Label outside",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/00d7efeb9303487f8e266bc6f20ee6e8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "860",
-                        "label": "No label",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3b5dc323acca401f8ba44a09d2dd5687.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "920",
-                    "Title": null,
-                    "Text": "##### Input text\nInput text is the text that has been submitted by a user.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "374",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "861",
-                        "label": "Input text (Label inside)",
-                        "caption": "Input text from a user",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/72478a6df0f54712afebbf1256673d1a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "862",
-                        "label": "Input text (Label outside)",
-                        "caption": "Input text from a user",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fc90d2b625154f43a1726062b85c1270.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "863",
-                        "label": "Input text (No label)",
-                        "caption": "Input text from a user",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d95e82263579439689e4b523fc9335ec.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "921",
-                    "Title": null,
-                    "Text": "##### Prefix and Suffix icons\nThe prefix and suffix icons are optional. Prefix icons could be used to communicate to the user the valid input method and suffix icons are mainly used as actions, such as clear text or reveal a date picker. They could also be used to indicate another text format within the text field, such as password input or to highlight invalid text input.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "375",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "864",
-                        "label": "Prefix icon",
-                        "caption": "Example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c377cf0237424202a31e6eb51f05d5e7.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "865",
-                        "label": "Suffix icon",
-                        "caption": "Clear text example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8b50f88c8de64994bf710e391f3d8b11.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "866",
-                        "label": "Suffix icon",
-                        "caption": "Error message example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/12e000467b1345ca941c8d93b2b96427.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "922",
-                    "Title": null,
-                    "Text": "##### Prefix and Suffix text\nPrefix and suffix text are optional. They could be used to communicate a specific measurement unit, currency and such.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "376",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "867",
-                        "label": "Prefix text",
-                        "caption": "Currency example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e1071074f6b24f11965aeb158f5cac99.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "868",
-                        "label": "Suffix text",
-                        "caption": "Currency example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/30f561e8e1ec4ce2980aff51b2fa7591.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "869",
-                        "label": "Suffix text",
-                        "caption": "Unit example",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/cb2ff9942b4041e3938b09b7cb182de1.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "923",
-                    "Title": null,
-                    "Text": "##### Helper text\nHelper text assists the user with additional information text on how it will be used, display the maximum amount of characters limit or to describe an invald text input.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "377",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "870",
-                        "label": "Helper text",
-                        "caption": "Additional information text",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6d3c20110f664476b01a61e609784c94.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "871",
-                        "label": "Error text",
-                        "caption": "Invalid input text",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/820e17de804b4dd3ac5eb8bde70fc5e3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "872",
-                        "label": "Character counter",
-                        "caption": "Used if there is a character limit",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7e093bbad45245b4a7f9973986ea9254.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "924",
-                    "Title": null,
-                    "Text": "##### Placeholder text\nAnother way to assist users is to use a placeholder text, which hints of what type of information that should be entered. The placeholder text disappears when the user starts typing inside the text field.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "378",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "873",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4a530ee9305546a78a0c4ff99604a10f.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "874",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/1bfb65ccc2404d58be6478fd23060cd3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "875",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f4aed1235d874f219dfba5aa26014bd4.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "925",
-                    "Title": null,
-                    "Text": "##### Password text field\nFor a password input, we use a suffix icon to clarify that the user can show/hide the text input by pressing the icon. When hovering the icon, a tooltip explains the action.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "379",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "876",
-                        "label": "Input text",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9e21c7d8bfea41b6a2e5c844815afea9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "877",
-                        "label": "Hover icon",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4c254aecacae4a41bebccffd2657553e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "926",
-                    "Title": "",
-                    "Text": "##### Mandatory text field\nWhen text fields are mandatory, there is two different ways to describe for the user what text field that is required or optional.\n\nIf a single text field or a couple of text fields in a form are required, indicate this by adding a asterisk * at the end of the Label text. To further highlight it, you can add a helper-text describing the asterisk.\n\nIf the majority of the text fields in a form are required, instead indicate the optional ones by adding the text (Optional) att the end of the Label text.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "380",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1128",
-                        "label": "Required indicator",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/97c2e5ca280a4c78a05f2b20fd4228cc.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1129",
-                        "label": "Optional indicator",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a510c6de55634b82ba6fa7d67592bce9.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "927",
-                    "Title": "Input types",
-                    "Text": "There are two input types for how our text fields can display user input; single line or text areas.\n\nSingle line is used when the user should enter a single line text. Text areas should be used for input text with more than one sentence which requires multiple lines.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "381",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1130",
-                        "label": "Single line",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3376ec4d92a245f6a5478059e102f84e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1131",
-                        "label": "Text area",
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4c03138935d843b4a77b9883f216f0e3.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1164",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for text fields.\n\n##### Short label text\nThe label text should be short and direct and not be complex nor placed on multiple lines.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "506",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1607b83f878f4be1b71338143960fb7c.png"
-                        },
-                        "description": "Short and direct label text",
-                        "id": "88"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/caf10285547f450ca59cdf5e058b0b84.png"
-                        },
-                        "description": "Long and complicated label text",
-                        "id": "89"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1165",
-                    "Title": null,
-                    "Text": "##### Use one text field style\nThe text field style should be the same within one section or form.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "507",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/a008032f3850483a9ef4a1daa9da163a.png"
-                        },
-                        "description": "Same text field style",
-                        "id": "90"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/066c0c06c7b448c199431d07bc340c95.png"
-                        },
-                        "description": "Mix text field styles",
-                        "id": "91"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-01-29T10:27:25.399Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "185",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "204",
-                "title": "Components Text fields Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "931",
-                    "Title": "Colour",
-                    "Text": "Text fields come in different colours. Depending on what theme or background the text field exists on, the colour of the text field varies. More information about theming will be added during Q1 2021.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "932",
-                    "Title": null,
-                    "Text": "##### Container\n\n<table>\n<thead>\n  <tr>\n    <th>Theme</th>\n    <th>Container</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Light</td>\n    <td>$grey-50</td>\n  </tr>\n  <tr>\n    <td>Grey</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Dark</td>\n    <td>TBD</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "385",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "884",
-                        "label": "Light theme",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/efed6e82b23b4740bb06799db26c96a9.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "885",
-                        "label": "Grey theme",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/06472ed95f4f4f37b2a1431e70fc9b44.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1034",
-                    "Title": null,
-                    "Text": "##### States\n\n###### Default\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1035",
-                    "Title": null,
-                    "Text": "###### Hover\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-400</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1036",
-                    "Title": null,
-                    "Text": "###### Focused\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1037",
-                    "Title": null,
-                    "Text": "###### Success\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-600</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1038",
-                    "Title": null,
-                    "Text": "###### Error\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Icon error</td>\n    <td>$red-500</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1039",
-                    "Title": null,
-                    "Text": "###### Disabled\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1040",
-                    "Title": "Sizing",
-                    "Text": "##### Single line text field\n\nThe default and medium size has the same structure as well as typography, icon size and border-bottom specs. The thing that separates them a part is the container height.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Type / size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Default</td>\n    <td>Min. 208 / 52</td>\n    <td>56 / 14</td>\n  </tr>\n  <tr>\n    <td>Container</td>\n    <td>Medium</td>\n    <td>Min. 208 / 52</td>\n    <td>48 / 12</td>\n  </tr>\n  <tr>\n    <td>Border-bottom</td>\n    <td>Default</td>\n    <td>Fluid</td>\n    <td>1 / 0.25</td>\n  </tr>\n    <tr>\n   <td>Border-bottom</td>\n    <td>Focused</td>\n    <td>Fluid</td>\n    <td>2 / 0.5</td>\n  </tr>\n    <tr>\n    <td>Icon</td>\n    <td>Default</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>Medium</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>\n\n##### Default",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "411",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "957",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9dad7f7261a74eb3b7b7f115d874befd.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "958",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5ab5de7ce14f48f9b0cdd8744f3a9e15.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "959",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/362ecf7db8b44b5b9fed8cb0674dfa3e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1041",
-                    "Title": null,
-                    "Text": "##### Medium",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "412",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "960",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3da62f781f3e46eabe11ee99b1834ef1.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "961",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e35b5c129f5945879ab920fe2b02d11f.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1042",
-                    "Title": null,
-                    "Text": "**Text area**\n\nThe text area has the same structure as the single line text field, except that the container has a bigger minimum width as well as an icon present in the bottom right corner, emphasizing that it is a text area.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Type / size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Default</td>\n    <td>Min. 352 / 88</td>\n    <td>112 / 28</td>\n  </tr>\n  <tr>\n    <td>Border-bottom</td>\n    <td>Default</td>\n    <td>Fluid</td>\n    <td>1 / 0.25</td>\n  </tr>\n    <tr>\n   <td>Border-bottom</td>\n    <td>Focused</td>\n    <td>Fluid</td>\n    <td>2 / 0.5</td>\n  </tr>\n    <tr>\n    <td>Icon</td>\n    <td>Default</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "413",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "962",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3866c6589d8245dfbf15105207b7d9f4.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1043",
-                    "Title": "Typography",
-                    "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our text fields types and sizes, we are using the same typography.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text / input text</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td>\n  </tr>\n  <tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1044",
-                    "Title": "Corner radius",
-                    "Text": "Our text fields have top rounded corners with a 4px / 1em corner radius and the bottom corners are square.\n\n<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top left & right corners</td>\n  </tr>\n  <tr>\n    <td>0 px / 0 rem</td>\n    <td>Bottom left & right corners</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "414",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "963",
-                        "label": null,
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/1768c1ed82ee465da08fa49eef41141f.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "964",
-                        "label": null,
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f3a50962d6db4fb2842ed5adf393222c.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-02-02T13:10:03.705Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "186",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q1",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "58",
-      "url": "dividers",
-      "displayLink": null,
-      "title": "Dividers",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "104",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "142",
-                "title": "Components Dividers Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "209",
-                    "Title": "",
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "A divider is a 1px line that help us group and separate content within our layouts, components and patterns.",
-                      "Introduction": true,
-                      "id": "4"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "215",
-                    "Title": "Usage",
-                    "Text": "Dividers help us both to group and to separate content. We use dividers within our page layouts and also within our components and patterns.\n\nThey should be used sparingly and only if we can’t separate content using white space. Too many dividers present on a small surface will be perceived as a cluttered and busy experience.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "216",
-                    "Title": "Types",
-                    "Text": "We have two different types of dividers, full-bleed dividers and indent dividers. Each type has a horizontal and vertical version.\n\n##### Full-bleed dividers\nFull-bleed dividers are as the name describes, full-bleed components. This means that a full-bleed divider is aligned with the margins of the component or the page.\n\nThis type of dividers is used to separate different sections within a layout, to separate unrelated texts inside lists (for instance a data table) and to separate content inside a header for instance.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "19",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "25",
-                        "label": "Full-bleed divider",
-                        "caption": "Horizontal usage within search results",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": "",
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ed2401c87fc44c4789742933d4ad3d78.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "26",
-                        "label": "Full-bleed divider",
-                        "caption": "Vertical & horizontal within a pattern",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/359e66d2c0b44402a0317da8a035f47a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "294",
-                    "Title": null,
-                    "Text": "##### Indent dividers\n\nThe opposite to full-bleed dividers is our indent dividers. They have the same visual appearance and what separates them is that these do not behave as a full-bleed component. Indent dividers are used to separate related content, inside lists or data tables for instance.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "21",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "29",
-                        "label": "Indent divider",
-                        "caption": "Horizontal example",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/86c24532e53f4202af0457394f054137.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "30",
-                        "label": "Indent divider",
-                        "caption": "Vertical example used in a sub headline",
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/79d7aed40c0849ecaa63296b97954697.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-14T10:40:39.412Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "116",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "157",
-                "title": "Components Dividers Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "295",
-                    "Title": "Colour",
-                    "Text": "Dividers come in different colours. Depending on what theme or background colour the divider exists on, the colour of the divider varies.\n\nOn our lightest backgrounds, the colour of the divider will be the next step above the background colour. For instance, $white background equals $grey-100 divider and $grey-100 background equals $grey-200 divider. \n\nOn background colours with 300 or higher, colour of the divider will be the next step below the background colour. For instance, $grey-300 background equals $grey-200 divider.\n\nThe exception is when we reach the highest step within a colour, 900. Then we will use 700 as divider colour to make sure that we have a good contrast between the divider and the background.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "24",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "37",
-                        "label": "Divider",
-                        "caption": "Light version",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d2c07c2bbaeb40819aff989d1356ff83.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "38",
-                        "label": "Divider",
-                        "caption": "Dark version",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/36fed86807ee4d79a65a19ee398f432a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "39",
-                        "label": "Divider",
-                        "caption": "Coloured version",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/918f3ae9b7a242a1903a2018d86cafa3.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "297",
-                    "Title": null,
-                    "Text": "##### Examples\n\n<table>\n<thead>\n  <tr>\n    <th>Background</th>\n    <th>Divider colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$white</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>$grey-100</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>$grey-200</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td>$grey-300</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>$grey-400</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td>$grey-500</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td>$grey-600</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>$grey-700</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td>$grey-800</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td>$grey-900</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "298",
-                    "Title": "Specs",
-                    "Text": "Our dividers, both full-bleed and indents, have a width of 1 px / 0.25 rem.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": "",
-                    "caption": "",
-                    "Image": {
-                      "id": "40",
-                      "label": null,
-                      "caption": "The dividers are 1px / 0.25 rem thick.",
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/c419c409a9b743fbb69c9e7cf5dde4e4.png"
-                        }
-                      ]
-                    },
-                    "id": "7"
-                  }
-                ],
-                "updated_at": "2020-12-14T10:40:34.564Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "125",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q1",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
         "thumbnail": null
       },
       "submenus": []
@@ -12619,6 +11177,1548 @@
         }
       ],
       "parent": null,
+      "submenus": []
+    },
+    {
+      "id": "58",
+      "url": "dividers",
+      "displayLink": null,
+      "title": "Dividers",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "104",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "142",
+                "title": "Components Dividers Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "209",
+                    "Title": "",
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "A divider is a 1px line that help us group and separate content within our layouts, components and patterns.",
+                      "Introduction": true,
+                      "id": "4"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "215",
+                    "Title": "Usage",
+                    "Text": "Dividers help us both to group and to separate content. We use dividers within our page layouts and also within our components and patterns.\n\nThey should be used sparingly and only if we can’t separate content using white space. Too many dividers present on a small surface will be perceived as a cluttered and busy experience.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "216",
+                    "Title": "Types",
+                    "Text": "We have two different types of dividers, full-bleed dividers and indent dividers. Each type has a horizontal and vertical version.\n\n##### Full-bleed dividers\nFull-bleed dividers are as the name describes, full-bleed components. This means that a full-bleed divider is aligned with the margins of the component or the page.\n\nThis type of dividers is used to separate different sections within a layout, to separate unrelated texts inside lists (for instance a data table) and to separate content inside a header for instance.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "19",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "25",
+                        "label": "Full-bleed divider",
+                        "caption": "Horizontal usage within search results",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": "",
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ed2401c87fc44c4789742933d4ad3d78.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "26",
+                        "label": "Full-bleed divider",
+                        "caption": "Vertical & horizontal within a pattern",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/359e66d2c0b44402a0317da8a035f47a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "294",
+                    "Title": null,
+                    "Text": "##### Indent dividers\n\nThe opposite to full-bleed dividers is our indent dividers. They have the same visual appearance and what separates them is that these do not behave as a full-bleed component. Indent dividers are used to separate related content, inside lists or data tables for instance.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "21",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "29",
+                        "label": "Indent divider",
+                        "caption": "Horizontal example",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/86c24532e53f4202af0457394f054137.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "30",
+                        "label": "Indent divider",
+                        "caption": "Vertical example used in a sub headline",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/79d7aed40c0849ecaa63296b97954697.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-14T10:40:39.412Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "116",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "157",
+                "title": "Components Dividers Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "295",
+                    "Title": "Colour",
+                    "Text": "Dividers come in different colours. Depending on what theme or background colour the divider exists on, the colour of the divider varies.\n\nOn our lightest backgrounds, the colour of the divider will be the next step above the background colour. For instance, $white background equals $grey-100 divider and $grey-100 background equals $grey-200 divider. \n\nOn background colours with 300 or higher, colour of the divider will be the next step below the background colour. For instance, $grey-300 background equals $grey-200 divider.\n\nThe exception is when we reach the highest step within a colour, 900. Then we will use 700 as divider colour to make sure that we have a good contrast between the divider and the background.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "24",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "37",
+                        "label": "Divider",
+                        "caption": "Light version",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d2c07c2bbaeb40819aff989d1356ff83.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "38",
+                        "label": "Divider",
+                        "caption": "Dark version",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/36fed86807ee4d79a65a19ee398f432a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "39",
+                        "label": "Divider",
+                        "caption": "Coloured version",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/918f3ae9b7a242a1903a2018d86cafa3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "297",
+                    "Title": null,
+                    "Text": "##### Examples\n\n<table>\n<thead>\n  <tr>\n    <th>Background</th>\n    <th>Divider colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$white</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>$grey-100</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>$grey-200</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td>$grey-300</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>$grey-400</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td>$grey-500</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td>$grey-600</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>$grey-700</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td>$grey-800</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td>$grey-900</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "298",
+                    "Title": "Specs",
+                    "Text": "Our dividers, both full-bleed and indents, have a width of 1 px / 0.25 rem.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": "",
+                    "caption": "",
+                    "Image": {
+                      "id": "40",
+                      "label": null,
+                      "caption": "The dividers are 1px / 0.25 rem thick.",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/c419c409a9b743fbb69c9e7cf5dde4e4.png"
+                        }
+                      ]
+                    },
+                    "id": "7"
+                  }
+                ],
+                "updated_at": "2020-12-14T10:40:34.564Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "125",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "268",
+                "title": "Components Dividers Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1509",
+                    "Title": "Introduction",
+                    "Text": "Dividers is 1px width,1px height or border class that seperate elements in the layout",
+                    "LeadText": {
+                      "textfield": "",
+                      "Introduction": true,
+                      "id": "294"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "208",
+                    "title": "Divider horizontal ",
+                    "code": "<div style=\"width: 400px;\" class=\"sdds-divider-dark\"></div> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "218",
+                    "title": "Divider vertical",
+                    "code": "<div style=\"height:50px;\" class=\"sdds-divider-dark-vertical\"></div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "219",
+                    "title": "Borders top",
+                    "code": "<div style=\"width: 100px; background-color: #E5E5E5; height:100px;\" class=\"divider-border-demo sdds-divider-dark-border-top\"></div> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "235",
+                    "title": "Borders right",
+                    "code": "<div style=\"width: 100px; background-color: #E5E5E5; height:100px;\" class=\"divider-border-demo sdds-divider-dark-border-right\"></div> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "236",
+                    "title": "Borders bottom",
+                    "code": "<div style=\"width: 100px; background-color: #E5E5E5; height:100px;\" class=\"divider-border-demo sdds-divider-dark-border-bottom\"></div> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "237",
+                    "title": "Borders left",
+                    "code": "<div style=\"width: 100px; background-color: #E5E5E5; height:100px;\" class=\"divider-border-demo sdds-divider-dark-border-left\"></div> ",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-02-09T08:21:48.641Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "103",
+      "url": "textfields",
+      "displayLink": null,
+      "title": "Text fields",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "184",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "203",
+                "title": "Components Text fields Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "912",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A text field is a component that facilitates entry and editing of text. In general text fields are used to collect and post subsequently information provided by users.",
+                      "Introduction": null,
+                      "id": "213"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "913",
+                    "Title": "Usage",
+                    "Text": "Text fields are used as an integral part of a form (of various kinds) to enable users to edit and post text. Text fields should be legible so that users know where to enter the text. In addition to this, text fields should clearly show its state to convey when text can or cannot be entered.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "914",
+                    "Title": "Types",
+                    "Text": "Text fields have three different types; label inside, label outside and no label.\n\nYou should select text field type based on which context the text field will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the type label inside works well for more narrow spaces and label outside is a good option for forms with a lot of text fields present, making it easier for the users to decode the information\n\nNo label should be used very sparingly and only when needed. It is a good choice when adding text fields inside a data table, where a label will be present in the column head instead. \n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "368",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "844",
+                        "label": "Label inside",
+                        "caption": "",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/234a5e91e91545fa963a4d885627551c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "991",
+                        "label": "Label outside",
+                        "caption": "",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/66dfe466286846dca23fcf952670f12e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "992",
+                        "label": "No label",
+                        "caption": "",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4dbccd97ac4f4f298536bdc7b7389906.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "915",
+                    "Title": "Sizes",
+                    "Text": "There are two different text field sizes: default and medium where default is our primary text field size. Medium could be a good option to use for more narrow spaces. As for types, size could also be selected depending on what works best with the applications design you are working with.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "369",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "845",
+                        "label": "Default",
+                        "caption": "Use as primary text field size",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3951a46759cf489b8b9dc4dcdc18e8c6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "846",
+                        "label": "Medium",
+                        "caption": "Use mainly for narrow spaces",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a1a70c3b94b641c88375b3bc5c609fc3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "916",
+                    "Title": "States",
+                    "Text": "Text fields have different states to communicate the fields’ different status for our users.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "370",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "847",
+                        "label": "Default",
+                        "caption": "Interactive element",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f82ecc76033245399dea02e98f10ee1d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "848",
+                        "label": "Hover",
+                        "caption": "Mouse over",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/32d85ee0cca14a78a303e451ebd15782.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "849",
+                        "label": "Focused",
+                        "caption": "Highlighted by keyboard, voice or mouse",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0f64961058a44ea992197aa375f454d5.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "850",
+                        "label": "Error",
+                        "caption": "Invalid user input",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/abdabfbb523d4504938d50ffc46bcef0.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "851",
+                        "label": "Success",
+                        "caption": "Valid user input",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e6245aa409ae469788aa71b9c59599fe.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "852",
+                        "label": "Disabled",
+                        "caption": "Non-interactive",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c7f97f66308b40c7b8f10b8b6ce4545a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "917",
+                    "Title": "Anatomy",
+                    "Text": "A text field contains at least 3 elements; a text label and a container plus input text, when the user have input text. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "371",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "853",
+                        "label": "Label inside",
+                        "caption": "A. Container\nB. Prefix icon/text (optional)\nC. Label text\nD. Input text\nE. Suffix icon/text (optional)\nF. Helper text (optional)",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/add4eec153c94dc38ac356e0ce3d9d6c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "854",
+                        "label": "Label outside",
+                        "caption": "C. Label",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bc45c614f7b0496ca8a2afa41f349bc9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "855",
+                        "label": "No label (when interacted with)",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/32bec55410ca4ffab1b4a6eb60a00f8c.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "918",
+                    "Title": "",
+                    "Text": "##### Container\nContainers are the base of the text field, and it is a filled container with a bottom-border. The container has top rounded corners and square bottom corners. The bottom-border varies in height and colour depending on the state to emphasize this.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "372",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "856",
+                        "label": "Default container",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/13d142699ade4fac9b92f5399fde357d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "857",
+                        "label": "Focused container",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a0c5255391ab43a9b9fe8fc29e9e064a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "919",
+                    "Title": null,
+                    "Text": "##### Label text\nLabel text is the text that communicates to the user what text information that should be submitted inside each text field. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "373",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "858",
+                        "label": "Label inside",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/74ea46b85dce445280f1078eb00238eb.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "859",
+                        "label": "Label outside",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/00d7efeb9303487f8e266bc6f20ee6e8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "860",
+                        "label": "No label",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3b5dc323acca401f8ba44a09d2dd5687.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "920",
+                    "Title": null,
+                    "Text": "##### Input text\nInput text is the text that has been submitted by a user.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "374",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "861",
+                        "label": "Input text (Label inside)",
+                        "caption": "Input text from a user",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/72478a6df0f54712afebbf1256673d1a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "862",
+                        "label": "Input text (Label outside)",
+                        "caption": "Input text from a user",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fc90d2b625154f43a1726062b85c1270.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "863",
+                        "label": "Input text (No label)",
+                        "caption": "Input text from a user",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d95e82263579439689e4b523fc9335ec.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "921",
+                    "Title": null,
+                    "Text": "##### Prefix and Suffix icons\nThe prefix and suffix icons are optional. Prefix icons could be used to communicate to the user the valid input method and suffix icons are mainly used as actions, such as clear text or reveal a date picker. They could also be used to indicate another text format within the text field, such as password input or to highlight invalid text input.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "375",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "864",
+                        "label": "Prefix icon",
+                        "caption": "Example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c377cf0237424202a31e6eb51f05d5e7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "865",
+                        "label": "Suffix icon",
+                        "caption": "Clear text example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8b50f88c8de64994bf710e391f3d8b11.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "866",
+                        "label": "Suffix icon",
+                        "caption": "Error message example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/12e000467b1345ca941c8d93b2b96427.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "922",
+                    "Title": null,
+                    "Text": "##### Prefix and Suffix text\nPrefix and suffix text are optional. They could be used to communicate a specific measurement unit, currency and such.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "376",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "867",
+                        "label": "Prefix text",
+                        "caption": "Currency example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e1071074f6b24f11965aeb158f5cac99.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "868",
+                        "label": "Suffix text",
+                        "caption": "Currency example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/30f561e8e1ec4ce2980aff51b2fa7591.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "869",
+                        "label": "Suffix text",
+                        "caption": "Unit example",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/cb2ff9942b4041e3938b09b7cb182de1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "923",
+                    "Title": null,
+                    "Text": "##### Helper text\nHelper text assists the user with additional information text on how it will be used, display the maximum amount of characters limit or to describe an invald text input.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "377",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "870",
+                        "label": "Helper text",
+                        "caption": "Additional information text",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6d3c20110f664476b01a61e609784c94.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "871",
+                        "label": "Error text",
+                        "caption": "Invalid input text",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/820e17de804b4dd3ac5eb8bde70fc5e3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "872",
+                        "label": "Character counter",
+                        "caption": "Used if there is a character limit",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7e093bbad45245b4a7f9973986ea9254.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "924",
+                    "Title": null,
+                    "Text": "##### Placeholder text\nAnother way to assist users is to use a placeholder text, which hints of what type of information that should be entered. The placeholder text disappears when the user starts typing inside the text field.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "378",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "873",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4a530ee9305546a78a0c4ff99604a10f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "874",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1bfb65ccc2404d58be6478fd23060cd3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "875",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f4aed1235d874f219dfba5aa26014bd4.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "925",
+                    "Title": null,
+                    "Text": "##### Password text field\nFor a password input, we use a suffix icon to clarify that the user can show/hide the text input by pressing the icon. When hovering the icon, a tooltip explains the action.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "379",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "876",
+                        "label": "Input text",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9e21c7d8bfea41b6a2e5c844815afea9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "877",
+                        "label": "Hover icon",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4c254aecacae4a41bebccffd2657553e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "926",
+                    "Title": "",
+                    "Text": "##### Mandatory text field\nWhen text fields are mandatory, there is two different ways to describe for the user what text field that is required or optional.\n\nIf a single text field or a couple of text fields in a form are required, indicate this by adding a asterisk * at the end of the Label text. To further highlight it, you can add a helper-text describing the asterisk.\n\nIf the majority of the text fields in a form are required, instead indicate the optional ones by adding the text (Optional) att the end of the Label text.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "380",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1128",
+                        "label": "Required indicator",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/97c2e5ca280a4c78a05f2b20fd4228cc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1129",
+                        "label": "Optional indicator",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a510c6de55634b82ba6fa7d67592bce9.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "927",
+                    "Title": "Input types",
+                    "Text": "There are two input types for how our text fields can display user input; single line or text areas.\n\nSingle line is used when the user should enter a single line text. Text areas should be used for input text with more than one sentence which requires multiple lines.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "381",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1130",
+                        "label": "Single line",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3376ec4d92a245f6a5478059e102f84e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1131",
+                        "label": "Text area",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4c03138935d843b4a77b9883f216f0e3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1164",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for text fields.\n\n##### Short label text\nThe label text should be short and direct and not be complex nor placed on multiple lines.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "506",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/1607b83f878f4be1b71338143960fb7c.png"
+                        },
+                        "description": "Short and direct label text",
+                        "id": "88"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/caf10285547f450ca59cdf5e058b0b84.png"
+                        },
+                        "description": "Long and complicated label text",
+                        "id": "89"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1165",
+                    "Title": null,
+                    "Text": "##### Use one text field style\nThe text field style should be the same within one section or form.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "507",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a008032f3850483a9ef4a1daa9da163a.png"
+                        },
+                        "description": "Same text field style",
+                        "id": "90"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/066c0c06c7b448c199431d07bc340c95.png"
+                        },
+                        "description": "Mix text field styles",
+                        "id": "91"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-01-29T10:27:25.399Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "185",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "204",
+                "title": "Components Text fields Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "931",
+                    "Title": "Colour",
+                    "Text": "Text fields come in different colours. Depending on what theme or background the text field exists on, the colour of the text field varies. More information about theming will be added during Q1 2021.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "932",
+                    "Title": null,
+                    "Text": "##### Container\n\n<table>\n<thead>\n  <tr>\n    <th>Theme</th>\n    <th>Container</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Light</td>\n    <td>$grey-50</td>\n  </tr>\n  <tr>\n    <td>Grey</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Dark</td>\n    <td>TBD</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "385",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "884",
+                        "label": "Light theme",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/efed6e82b23b4740bb06799db26c96a9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "885",
+                        "label": "Grey theme",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/06472ed95f4f4f37b2a1431e70fc9b44.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1034",
+                    "Title": null,
+                    "Text": "##### States\n\n###### Default\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-200</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1035",
+                    "Title": null,
+                    "Text": "###### Hover\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-400</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1036",
+                    "Title": null,
+                    "Text": "###### Focused\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1037",
+                    "Title": null,
+                    "Text": "###### Success\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$grey-600</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1038",
+                    "Title": null,
+                    "Text": "###### Error\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Input text</td>\n    <td>$grey-900</td>\n  </tr>\n   <tr>\n    <td>Helper text</td>\n    <td>$grey-500</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n    <tr>\n    <td>Icon error</td>\n    <td>$red-500</td>\n  </tr>\n    <tr>\n    <td>Border-bottom</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1039",
+                    "Title": null,
+                    "Text": "###### Disabled\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text (inside)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td>Label text (outside)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Placeholder text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$grey-200</td>\n  </tr>\n    <tr>\n    <td>Suffix / prefix text</td>\n    <td>$grey-400</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>$grey-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1040",
+                    "Title": "Sizing",
+                    "Text": "##### Single line text field\n\nThe default and medium size has the same structure as well as typography, icon size and border-bottom specs. The thing that separates them a part is the container height.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Type / size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Default</td>\n    <td>Min. 208 / 52</td>\n    <td>56 / 14</td>\n  </tr>\n  <tr>\n    <td>Container</td>\n    <td>Medium</td>\n    <td>Min. 208 / 52</td>\n    <td>48 / 12</td>\n  </tr>\n  <tr>\n    <td>Border-bottom</td>\n    <td>Default</td>\n    <td>Fluid</td>\n    <td>1 / 0.25</td>\n  </tr>\n    <tr>\n   <td>Border-bottom</td>\n    <td>Focused</td>\n    <td>Fluid</td>\n    <td>2 / 0.5</td>\n  </tr>\n    <tr>\n    <td>Icon</td>\n    <td>Default</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n   <tr>\n    <td>Icon</td>\n    <td>Medium</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>\n\n##### Default",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "411",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "957",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9dad7f7261a74eb3b7b7f115d874befd.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "958",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5ab5de7ce14f48f9b0cdd8744f3a9e15.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "959",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/362ecf7db8b44b5b9fed8cb0674dfa3e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1041",
+                    "Title": null,
+                    "Text": "##### Medium",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "412",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "960",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3da62f781f3e46eabe11ee99b1834ef1.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "961",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e35b5c129f5945879ab920fe2b02d11f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1042",
+                    "Title": null,
+                    "Text": "**Text area**\n\nThe text area has the same structure as the single line text field, except that the container has a bigger minimum width as well as an icon present in the bottom right corner, emphasizing that it is a text area.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Type / size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Default</td>\n    <td>Min. 352 / 88</td>\n    <td>112 / 28</td>\n  </tr>\n  <tr>\n    <td>Border-bottom</td>\n    <td>Default</td>\n    <td>Fluid</td>\n    <td>1 / 0.25</td>\n  </tr>\n    <tr>\n   <td>Border-bottom</td>\n    <td>Focused</td>\n    <td>Fluid</td>\n    <td>2 / 0.5</td>\n  </tr>\n    <tr>\n    <td>Icon</td>\n    <td>Default</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "413",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "962",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3866c6589d8245dfbf15105207b7d9f4.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1043",
+                    "Title": "Typography",
+                    "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our text fields types and sizes, we are using the same typography.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text / input text</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td>\n  </tr>\n  <tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td>\n  </tr>\n    <tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1044",
+                    "Title": "Corner radius",
+                    "Text": "Our text fields have top rounded corners with a 4px / 1em corner radius and the bottom corners are square.\n\n<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top left & right corners</td>\n  </tr>\n  <tr>\n    <td>0 px / 0 rem</td>\n    <td>Bottom left & right corners</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "414",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "963",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1768c1ed82ee465da08fa49eef41141f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "964",
+                        "label": null,
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f3a50962d6db4fb2842ed5adf393222c.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-02-02T13:10:03.705Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "186",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "270",
+                "title": "Components Text fields Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1511",
+                    "Title": "Introduction",
+                    "Text": "A text field can be used to gather input data from the user.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "244",
+                    "title": "Basic ",
+                    "code": " <div class=\"sdds-textfield-container\">\n      <input class=\"sdds-textfield-input\" type=\"text\" placeholder=\"Placeholder\" />\n      <div class=\"sdds-textfield-bar\"></div>\n    </div>\n",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "245",
+                    "title": "Medium",
+                    "code": "    <div class=\"sdds-textfield-container\">\n      <input class=\"sdds-textfield-input-md\" type=\"text\" placeholder=\"Placeholder\" />\n      <div class=\"sdds-textfield-bar\"></div>\n    </div>\n",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "246",
+                    "title": "Disabled",
+                    "code": "  <div class=\"sdds-textfield-container\">\n      <input class=\"sdds-textfield-input\" disabled type=\"text\" placeholder=\"Placeholder\" />\n      <div class=\"sdds-textfield-bar\"></div>\n    </div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "247",
+                    "title": "Label outside",
+                    "code": "<div class=\"sdds-textfield-container\">\n      <label class=\"sdds-textfield-label\">Label</label>\n      <input class=\"sdds-textfield-input\" type=\"text\" placeholder=\"placeholder\" />\n      <div class=\"sdds-textfield-bar\"></div>\n    </div>",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-02-09T09:46:13.873Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
       "submenus": []
     }
   ]
