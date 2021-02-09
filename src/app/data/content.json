@@ -7913,7 +7913,24 @@
           "id": "248",
           "title": "Style",
           "active": true,
-          "pageContent": []
+          "pageContent": [
+            {
+              "content": {
+                "id": "271",
+                "title": "Component Cards Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1564",
+                    "Title": "Box-shadow",
+                    "Text": "The cards container always has the background $white. Depending on what theme or content background colour the card exists on, the box-shadow of the card varies. When placed on $white content background, the box-shadow is slightly stronger than on a $grey-50 background, since we need to add some more contrast between the cards container background with the content background.\n\nNote, more additional information about theming will be released later this year.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-02-09T15:17:50.651Z"
+              }
+            }
+          ]
         },
         {
           "__typename": "ComponentPagePluginTab",
@@ -13111,7 +13128,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1511",
                     "Title": "Introduction",
-                    "Text": "A text field can be used to gather input data from the user.\n\nNot all textfield types that are described in \"Usage\" tab are available right now. We are being agile and are offering you a first set of textfields, while you can expect to find the rest in our next update. More specifically, in the upcoming release you can find:\n\n- Label inside\n- Suffix icon and text\n- Prefix icon and text\n- Helper text\n- Text counter\n- Error validation",
+                    "Text": "Below you will find the code for a first set of textfield.\n\nNot all textfield types that are described in \"Usage\" tab are available right now. We are being agile and are offering a first set of textfields, while you can expect to find the rest in our next update. More specifically, in the upcoming release you can find:\n\n- Label inside\n- Suffix icon and text\n- Prefix icon and text\n- Helper text\n- Text counter\n- Error validation",
                     "LeadText": null
                   },
                   {
