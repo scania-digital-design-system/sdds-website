@@ -2167,14 +2167,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1067",
                     "Title": "Installation",
-                    "Text": "You can install SDDS grid package with [npm](https://www.npmjs.com/package/@scania-sdds/grid). Run the following command:",
+                    "Text": "You can install SDDS grid package with [npm](https://www.npmjs.com/package/@scania/grid). Run the following command:",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "191",
                     "title": "",
-                    "code": "> npm i @scania-sdds/grid --save",
+                    "code": "> npm i @scania/grid --save",
                     "componentTag": null,
                     "preview": null
                   },
@@ -2182,8 +2182,38 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1068",
                     "Title": "Usage",
-                    "Text": "You can use this grid system to create a layout based on multiple column grid system, either a regular grid system or a pushed with a sidebar on the left side. This packages also contains the tokens that is presented under information tab and also the spacing tokens avaliable under [spacing](/foundation/spacing). \n\nMore examples is coming. If you find any issue or question, please report on Github\n\n\n**SASS**\n\nIn the grid system package we ready mixins,maps and tokens to be imported in your application for your beneifit.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania-sdds/grid/dist/scss/grid';\n```\n\n**Spacing tokens**\n\nYou can use layout and element tokens to define the layout, you can read more about them in [spacing](/foundation/spacing) section\n```\n//Layout token\npadding: $spacing-layout-12;\n\n//Element tokens\n$spacing-element-2: 0.5rem; // 2px\n\n```\n\n**Screen breakpoints**\n\nWe have multiple breakpoints for different screens that you find in the grid package, that you can use to setup from mobile to desktop specific rules. You can find out more about the screen tokens in the information tab. \n\n```\n@media (min-width: $screen-s) {\n  //SASS\n}\n```\n\n**Breakpoint maps**\n\nWe have ready made maps for each grid system that is avaliable in the grid package\n\n- Normal Grid\n- Push Grid\n- Gutterless grid\n\n```\n// Example how to import the regular grid \n\n@include YourMixin($sdds-grid-breakpoints);\n\n```\n\n**CSS**\n\nWe have all option avaliable for direct usage in CSS. \n\n- Normal grid\n- Push grid\n- Gutterless grid\n- No padding\n\n```\n// Small example\n\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n    </div>\n</div>\n```\n\n**Container & Row**\n\nYou need to surround the content with a container, that will either set a max-width or have a fluid option the follow the column spacing. You need to use ```.sdds-row`` to wrap columns \n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n       //Max-width container\n    </div>\n</div>\n\n  <div class=\"sdds-container-fluid\">\n    <div class=\"sdds-row\">\n      //Fluid container\n    </div>\n  </div>\n\n\n```\n\n**Columns**\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-sm-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-sm-</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n```\n\n**Offset**\n\nYou can use offsett class to move a certain content to be placed on a specific place in the grid system\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-(number)-offset</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-1-offset sdds-col-xlg-16-offset sdds-col-lg-8-offset sdds-col-md-8-offset sdds-col-sm-4-offset\"></div>\n```\n\n**Push**\n\nPush grid is used to include a sidebar on the left side taking a certain space on desktop and not visible on mobile.\n\n```\n<div class=\"sdds-push\">\n  <div class=\"sdds-sidebar\">\n    <div>Sidebar items</div>\n  </div>\n\n  <div class=\"sdds-content-push\">\n\n    <div class=\"sdds-container-push-fluid\">\n        <!-- xxlg -->\n      <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\">\n          <div class=\"outside\">\n            <span class=\"inside\">1</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n**Gutterless**\n\nYou can apply gutterless class to follow the gutterless grid system by following classes:\n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col-xxlg-16 gutterless\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\n**No padding**\n\nIf you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"no-padding sdds-col-xxlg-16\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n",
+                    "Text": "You can use this grid system to create a layout based on multiple column grid system, either a regular grid system or a pushed with a sidebar on the left side. This packages also contains the tokens that is presented under information tab and also the spacing tokens avaliable under [spacing](/foundation/spacing). \n\nMore examples is coming. If you find any issue or question, please report on Github\n\n\n**SASS**\n\nIn the grid system package we ready mixins,maps and tokens to be imported in your application for your beneifit.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/grid/dist/scss/grid';\n```\n\n**Spacing tokens**\n\nYou can use layout and element tokens to define the layout, you can read more about them in [spacing](/foundation/spacing) section\n```\n//Layout token\npadding: $spacing-layout-12;\n\n//Element tokens\n$spacing-element-2: 0.5rem; // 2px\n\n```\n\n**Screen breakpoints**\n\nWe have multiple breakpoints for different screens that you find in the grid package, that you can use to setup from mobile to desktop specific rules. You can find out more about the screen tokens in the information tab. \n\n```\n@media (min-width: $screen-s) {\n  //SASS\n}\n```\n\n**Breakpoint maps**\n\nWe have ready made maps for each grid system that is avaliable in the grid package\n\n- Normal Grid\n- Push Grid\n- Gutterless grid\n\n```\n// Example how to import the regular grid \n\n@include YourMixin($sdds-grid-breakpoints);\n\n```\n\n**CSS**\n\nWe have all option avaliable for direct usage in CSS. \n\n- Normal grid\n- Push grid\n- Gutterless grid\n- No padding\n\n```\n// Small example\n\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n    </div>\n</div>\n```\n\n**Container & Row**\n\nYou need to surround the content with a container, that will either set a max-width or have a fluid option the follow the column spacing. You need to use ```.sdds-row`` to wrap columns \n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n       //Max-width container\n    </div>\n</div>\n\n  <div class=\"sdds-container-fluid\">\n    <div class=\"sdds-row\">\n      //Fluid container\n    </div>\n  </div>\n\n\n```\n\n**Columns**\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-sm-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-sm-</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n```\n\n**Offset**\n\nYou can use offsett class to move a certain content to be placed on a specific place in the grid system\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-(number)-offset</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-1-offset sdds-col-xlg-16-offset sdds-col-lg-8-offset sdds-col-md-8-offset sdds-col-sm-4-offset\"></div>\n```\n\n**Push**\n\nPush grid is used to include a sidebar on the left side taking a certain space on desktop and not visible on mobile.\n\n```\n<div class=\"sdds-push\">\n  <div class=\"sdds-sidebar\">\n    <div>Sidebar items</div>\n  </div>\n\n  <div class=\"sdds-content-push\">\n\n    <div class=\"sdds-container-push-fluid\">\n        <!-- xxlg -->\n      <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\">\n          <div class=\"outside\">\n            <span class=\"inside\">1</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n**Gutterless**\n\nYou can apply gutterless class to follow the gutterless grid system by following classes:\n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col-xxlg-16 gutterless\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\n**No padding**\n\nIf you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"no-padding sdds-col-xxlg-16\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "743",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "241",
+                        "title": "Github",
+                        "description": "Grid package repository",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/theme/core/grid"
+                      },
+                      {
+                        "id": "242",
+                        "title": "Npm",
+                        "description": "Npm package for the grid system",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://www.npmjs.com/package/@scania/grid"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
                 "updated_at": "2020-12-17T10:15:04.136Z"
@@ -3316,7 +3346,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "599",
                     "Title": "Angular",
-                    "Text": "Install SDDS components and Scania-theme in your project, this will install the latest version that is published on npm.",
+                    "Text": "Install SDDS components and theme in your project, this will install the latest version that is published on npm.",
                     "LeadText": null
                   },
                   {
@@ -3852,7 +3882,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "6",
                     "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
                     "LeadText": null
                   },
                   {
@@ -3970,7 +4000,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "6",
                     "Title": "General",
-                    "Text": "<details>\n    <summary>What is Corporate UI?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
                     "LeadText": null
                   },
                   {
@@ -6861,7 +6891,7 @@
                         "image": null,
                         "detail": "This repo contains design system components, themes, and demo page. You can also find components presented in Storybook in this repo.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui"
+                        "url": "https://github.com/scania-digital-design-system/sdds/"
                       }
                     ],
                     "dosAndDonts": []
@@ -6887,7 +6917,7 @@
                         "image": null,
                         "detail": "Design system components used in Angular application.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-angular"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo"
                       },
                       {
                         "id": "31",
@@ -6897,7 +6927,7 @@
                         "image": null,
                         "detail": "Design system components used in React application.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-react"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo"
                       },
                       {
                         "id": "32",
@@ -6907,7 +6937,7 @@
                         "image": null,
                         "detail": "Design system components used in Vue application",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui-vue"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo"
                       },
                       {
                         "id": "33",
@@ -6917,7 +6947,7 @@
                         "image": null,
                         "detail": "Simple HTML setup using design system components.",
                         "type": "linkExternal",
-                        "url": "https://codepen.io/corporate-ui/pen/OYmqpr"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo"
                       }
                     ],
                     "dosAndDonts": []
@@ -7481,7 +7511,418 @@
       "title": "Cards",
       "thumbnail": null,
       "showTabs": true,
-      "pageStructure": [],
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "247",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "269",
+                "title": "Component Cards Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1552",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A card is a container used to display content and actions on  a single topic.",
+                      "Introduction": null,
+                      "id": "302"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1553",
+                    "Title": "Usage",
+                    "Text": "Mainly a card serves as an entry point to more detailed information located on another internal or external page. The summary text should be clear, concise and easy to understand, to make it easy for the user to scan and find relevant information. Cards could also contain content such as images, buttons, icons and text links.\n\nCards are a good choice to use when presenting related content available on another section, page or articles.\n\nIt’s important that the cards have a container shadow present to add contrast between its background and the surface it appears on.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1554",
+                    "Title": "Placement",
+                    "Text": "Cards do not have a specific place on a page. Their placement can be decided based on the need and context, i.e. cards can be placed at the centre of the screen or left/right aligned side by side with text or other media content. \n\nOrientation of cards can be vertical or horizontal depending on the requirement of the content for the specific card.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1555",
+                    "Title": "Anatomy",
+                    "Text": "A card only has one mandatory element, its container. The rest of the elements are optional. The container is the element that group all the card elements together. Thumbnails are used for images such as icons, avatars or logotypes.\n\nThe card has three different text elements. The header text is the title of the card, which should capsulate the card content. If needed, you can use the subheader text to support the header text. The third text element, supporting text, is used for more descriptive summary text.\n\nImages can be used in the cards as well as actions such as icons, buttons or text links. Note, the entire card could be clickable so buttons or text links should only be used if you have several links present on the card or if you want to highlight the CTA.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "753",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1682",
+                        "label": null,
+                        "caption": "A. Container\nB. Thumbnail (optional)\nC. Header text (optional)\nD. Sub-header text (optional)\nE. Image (optional)\nF. Supporting text (optional)\nG. Button or link (optional)\nH. Icons (optional)",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/22d2ccf135684dfeb4cd55b62a649117.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1556",
+                    "Title": null,
+                    "Text": "**Dividers**\n\nIt is also possible to use dividers in our cards to group or separate specific content and to distinguish revealed content on an expanded card. Note, these should be used sparingly.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "754",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1683",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ebbd6594954540699296c25fa1a90f39.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1557",
+                    "Title": "Layout",
+                    "Text": "The layout of the card is modular and will vary depending on which elements that are used and what type of content hierachy that is needed for the specific card.\n\nFor example, in a card with image, the image could either be placed above or below the header text. It could also either be stacked horizontally or vertically with the rest of the card’s elements.\n\nWe do recommend to always place the action elements, button or links, in the bottom of card to maintain consistency for navigation. And to group the header and subheader text when used.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "755",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1684",
+                        "label": null,
+                        "caption": "Card layout example",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9d5274333fb84395b2dcc7ece1970cd8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1685",
+                        "label": null,
+                        "caption": "Card layout example",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/363a27516f294753b7a9937b88756c36.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1686",
+                        "label": null,
+                        "caption": "Card layout example",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/02d552a277f346bc9f1e0f7791c6a1ed.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1558",
+                    "Title": "Behaviour",
+                    "Text": "**Expandable**\n\nCards can be expanded in order to reveal additional information inside the card.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "756",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1687",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2c4962ddf24c431b9e30cf8978968a24.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1559",
+                    "Title": null,
+                    "Text": "**Re-organize**\n\nWhen multiple cards are displayed on a section or a page, dragging and reorganizing cards may be proposed. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "757",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1688",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/72758ee18d334bbab686abf834473e61.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1560",
+                    "Title": null,
+                    "Text": "**Scrolling**\n\nWhen and only when there is a need to display a long supporting text on reveal, scrolling may be proposed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "758",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1689",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3ad0601d30c3418fabcbb9558646267a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1561",
+                    "Title": "States",
+                    "Text": "Normally the entire card container is linked, and when it is, it has different states to communicate the different status for our users. These states are default, hover, focused, pressed and dragged.\n\nWhen the cards container is not linked, it has fewer states. These states are enabled and focused.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "759",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1690",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/969330aa59654dbf9f9b397ee072598a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1691",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0848bf15892848b1ba953c5de12bb01f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1692",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ce251c5a5abc40aabdd70ac01027b436.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1693",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fde2abd2bb9b4c9c8520e2616648f953.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1694",
+                        "label": "Dragged",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b57d700cb95049c8ad6aed4db22056f5.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1562",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for cards.\n\n**Working with links**\n\nCards are a good choice to use when presenting related content available on another section, page or articles. Make sure just to use a couple of  links on each card to make it useful for our users.\n\n\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "760",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/4184db2c5b4f4b698a72b2901b8ffda5.png"
+                        },
+                        "description": "Use links sparingly",
+                        "id": "186"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/daa64c442faa45e9a50d900002f2f8cd.png"
+                        },
+                        "description": "Use many links in the supporting text",
+                        "id": "187"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1563",
+                    "Title": null,
+                    "Text": "**Positioning action elements**\n\nWe do recommend to always place the action elements, button, links and icons in the bottom of card to be maintain consistency for navigation. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "761",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/deba1840a20d4589816c8503530f59f8.png"
+                        },
+                        "description": "Place the action links in the bottom of the card",
+                        "id": "188"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/31271286781e42dca4edcabf6a7dce46.png"
+                        },
+                        "description": "Place action links in any other position than the bottom of the card",
+                        "id": "189"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-02-09T08:27:10.067Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "248",
+          "title": "Style",
+          "active": true,
+          "pageContent": []
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "249",
+          "title": "Code",
+          "active": false,
+          "pageContent": []
+        }
+      ],
       "parent": {
         "id": "4",
         "url": "components",
@@ -9223,7 +9664,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1054",
                     "Title": "Usage",
-                    "Text": "You can use SDDS colour scale in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the colour from SDDS colour library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import the main file in your sass file\n@import '~node_modules/@scania-sdds/colour/dist/scss/colour';\n\n// use a function called get-colour(token-name) to get colour from SDDS colour scale\n.my-div {\n  color: get-colour(blue-900);\n}\n\n// The code will be rendered as below\n.my-div {\n  color: #041E42;\n}\n```\n\n**CSS classes and CSS Custom Properties**\n\nAll colours are available if you install scania-theme and enable global properties. \n\n```<c-theme name='scania' global='true'></c-theme>```\n\nOr, if you do not use scania-theme, you can import the main css from @scania-sdds/colour into your main css file. \nThen, you are ready to use the available classes and CSS variables in your CSS or HTML. Available properties for CSS classes are background and text colour. The format of CSS variables and classes, are always started with prefix `sdds-`.\n\n```\n// On your CSS file\n// You don't need to do this if you use scania-theme\n@import '~node_modules/@scania-sdds/colour/dist/css/colour.css';\n\n.my-text{\n   color: var(--sdds-blue-900);\n}\n```\n\nIn HTML file:\n\n```\n// Use this to style your element\n// .sdds-{property}-{token-name}\n\n<p class=\"sdds-text-blue-900 sdds-background-grey-200\">\n  An example paragraph\n</p>\n\n```",
+                    "Text": "You can use SDDS colour scale in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the colour from SDDS colour library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import the main file in your sass file\n@import '~node_modules/@scania/colour/dist/scss/colour';\n\n// use a function called get-colour(token-name) to get colour from SDDS colour scale\n.my-div {\n  color: get-colour(blue-900);\n}\n\n// The code will be rendered as below\n.my-div {\n  color: #041E42;\n}\n```\n\n**CSS classes and CSS Custom Properties**\n\nAll colours are available if you install scania-theme and enable global properties. \n\n```<c-theme></c-theme>```\n\nOr, if you do not use scania-theme, you can import the main css from @scania/colour into your main css file. \nThen, you are ready to use the available classes and CSS variables in your CSS or HTML. Available properties for CSS classes are background and text colour. The format of CSS variables and classes, are always started with prefix `sdds-`.\n\n```\n// On your CSS file\n// You don't need to do this if you use scania-theme\n@import '~node_modules/@scania/colour/dist/css/colour.css';\n\n.my-text{\n   color: var(--sdds-blue-900);\n}\n```\n\nIn HTML file:\n\n```\n// Use this to style your element\n// .sdds-{property}-{token-name}\n\n<p class=\"sdds-text-blue-900 sdds-background-grey-200\">\n  An example paragraph\n</p>\n\n```",
                     "LeadText": null
                   },
                   {
@@ -9241,7 +9682,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkExternal",
-                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/theme/light/src/styles/core/colour"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/theme/core"
                       },
                       {
                         "id": "182",
@@ -9251,7 +9692,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkExternal",
-                        "url": "https://www.npmjs.com/package/@scania-sdds/colour"
+                        "url": "https://www.npmjs.com/package/@scania/colour"
                       }
                     ],
                     "dosAndDonts": []
@@ -9569,7 +10010,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "187",
                     "title": null,
-                    "code": "> npm i @scania-sdds/typography --save",
+                    "code": "> npm i @scania/typography --save",
                     "componentTag": null,
                     "preview": null
                   },
@@ -9577,7 +10018,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1061",
                     "Title": "Usage",
-                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nIn order to get the correct font file, make sure to install scania-theme.\n\n```\n> npm i @scania-sdds/theme-light\n\n// And add c-theme component in your HTML\n<c-theme name='scania' global='true'></c-theme>\n```\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania-sdds/typography/dist/scss/mixins';\n@import '~node_modules/@scania-sdds/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
+                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nIn order to get the correct font file, make sure to install scania-theme.\n\n```\n> npm i @scania-sdds/theme-light\n\n// And add c-theme component in your HTML\n<c-theme name='scania' global='true'></c-theme>\n```\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/typography/dist/scss/mixins';\n@import '~node_modules/@scania/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
                     "LeadText": null
                   },
                   {
@@ -9595,7 +10036,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkExternal",
-                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/theme/light/src/styles/core/typography"
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/theme/core"
                       },
                       {
                         "id": "184",
@@ -9605,7 +10046,7 @@
                         "image": null,
                         "detail": null,
                         "type": "linkExternal",
-                        "url": "https://www.npmjs.com/package/@scania-sdds/typography"
+                        "url": "https://www.npmjs.com/package/@scania/typography"
                       }
                     ],
                     "dosAndDonts": []
@@ -12670,7 +13111,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1511",
                     "Title": "Introduction",
-                    "Text": "A text field can be used to gather input data from the user.\n\nUpcoming release:\n- Label inside\n- Suffix icon and text\n- Prefix icon and text\n- Helper text\n- Text counter\n- Error validation",
+                    "Text": "A text field can be used to gather input data from the user.\n\nNot all textfield types that are described in \"Usage\" tab are available right now. We are being agile and are offering you a first set of textfields, while you can expect to find the rest in our next update. More specifically, in the upcoming release you can find:\n\n- Label inside\n- Suffix icon and text\n- Prefix icon and text\n- Helper text\n- Text counter\n- Error validation",
                     "LeadText": null
                   },
                   {
