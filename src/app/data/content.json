@@ -5289,6 +5289,16 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/breadcrumbs"
+                      },
+                      {
+                        "id": "243",
+                        "title": "Component",
+                        "description": "Cards",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/cards"
                       }
                     ],
                     "dosAndDonts": []
@@ -7505,6 +7515,46 @@
       ]
     },
     {
+      "id": "35",
+      "url": "resources",
+      "displayLink": null,
+      "title": "Resources",
+      "thumbnail": null,
+      "showTabs": null,
+      "pageStructure": [],
+      "parent": null,
+      "submenus": [
+        {
+          "id": "34",
+          "url": "development",
+          "displayLink": "Development",
+          "title": "Resources Development",
+          "thumbnail": null
+        },
+        {
+          "id": "60",
+          "url": "overview",
+          "displayLink": "Overview",
+          "title": "Resources Overview",
+          "thumbnail": null
+        },
+        {
+          "id": "61",
+          "url": "brand",
+          "displayLink": "Brand",
+          "title": "Resources Brand",
+          "thumbnail": null
+        },
+        {
+          "id": "63",
+          "url": "design",
+          "displayLink": "Design",
+          "title": "Resources Design",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
       "id": "145",
       "url": "cards",
       "displayLink": null,
@@ -7921,10 +7971,373 @@
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1564",
+                    "id": "1583",
                     "Title": "Box-shadow",
                     "Text": "The cards container always has the background $white. Depending on what theme or content background colour the card exists on, the box-shadow of the card varies. When placed on $white content background, the box-shadow is slightly stronger than on a $grey-50 background, since we need to add some more contrast between the cards container background with the content background.\n\nNote, more additional information about theming will be released later this year.",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "772",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1730",
+                        "label": "$white",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/76e35c334ca546009993b945bb781966.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1731",
+                        "label": "$grey-50",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/99dd97b0198c417b83138ea0b1b46a21.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1584",
+                    "Title": null,
+                    "Text": "**$white theme**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1585",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "773",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1732",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6a4de51f568042bfae2002c562f8c289.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1733",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/85114875e58a4fdab0f529e9caa56640.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1734",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9580f1e609af4785a28d4586731a7afb.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1735",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8aeb13c5f8ed441ba0bb6179febea89c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1736",
+                        "label": "Dragged",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d6816743fdaf44d2bd4b0db212051fcb.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1586",
+                    "Title": null,
+                    "Text": "**$grey theme**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1587",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "774",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1737",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2aeebb2453c641e0993c006c14f1c7ec.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1738",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ad413e45310642c8af0689b24944b36d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1739",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/90de15f0ff7e47b5817a4676c88375c7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1740",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a606ec19324b4971a362294378ead7c5.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1741",
+                        "label": "Dragged",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/23a50358f3a740aea3b18095fcadeace.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1588",
+                    "Title": "Sizing",
+                    "Text": "Since the layout of the card is modular, there is no defined sizing specs for the card. Depending on the content and its needs, the card containers width and height therefore varies.\n\n**Examples**\n\nBelow shows a variety of different cards to get an understanding for how they are structured, both in sizing and how to organize elements within the container.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "775",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1742",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a9d5c43f112d4382ac70e43e0e0fb72a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1743",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b5fa08c876234214b023bc5faf945155.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1744",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2fe0560b648e4afd8fb527607c1b968f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1745",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c8a5ce63af434a41b740479d82f89053.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1746",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/22e6bd680f884b69ad4dfa661898b1e5.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1589",
+                    "Title": null,
+                    "Text": "**Container width**\n\nAs the rest of our components, the card width and height should be based on our [Unit System](https://digitaldesign.scania.com/foundations/unit-grid-system/code). A good way to achieve visual balance in your layout, is to align the cards containers width with your applications grid systems columns.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "776",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1747",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8666fa316b7b412fa70d83326f3bda4e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1590",
+                    "Title": "Corner radius",
+                    "Text": "The card has rounded corners with a 4px / 1 rem corner radius.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1591",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top, bottom, left and right</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "777",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1748",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5705d02f34534bd2823646ea4642ef4b.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
                   }
                 ],
                 "updated_at": "2021-02-09T15:17:50.651Z"
@@ -7936,8 +8349,29 @@
           "__typename": "ComponentPagePluginTab",
           "id": "249",
           "title": "Code",
-          "active": false,
-          "pageContent": []
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
         }
       ],
       "parent": {
@@ -7948,46 +8382,6 @@
         "thumbnail": null
       },
       "submenus": []
-    },
-    {
-      "id": "35",
-      "url": "resources",
-      "displayLink": null,
-      "title": "Resources",
-      "thumbnail": null,
-      "showTabs": null,
-      "pageStructure": [],
-      "parent": null,
-      "submenus": [
-        {
-          "id": "34",
-          "url": "development",
-          "displayLink": "Development",
-          "title": "Resources Development",
-          "thumbnail": null
-        },
-        {
-          "id": "60",
-          "url": "overview",
-          "displayLink": "Overview",
-          "title": "Resources Overview",
-          "thumbnail": null
-        },
-        {
-          "id": "61",
-          "url": "brand",
-          "displayLink": "Brand",
-          "title": "Resources Brand",
-          "thumbnail": null
-        },
-        {
-          "id": "63",
-          "url": "design",
-          "displayLink": "Design",
-          "title": "Resources Design",
-          "thumbnail": null
-        }
-      ]
     },
     {
       "id": "10",
