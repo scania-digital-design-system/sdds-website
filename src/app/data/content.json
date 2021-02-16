@@ -2567,9 +2567,9 @@
                       {
                         "type": "Do",
                         "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/92a5f545b76c43da81da87ed74dbf7fb.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/ebd200f14c6642369e3dff17ed9daf81.png"
                         },
-                        "description": "Point the icon up when collapsed",
+                        "description": "Point the icon down when collapsed",
                         "id": "118"
                       },
                       {
@@ -2577,7 +2577,7 @@
                         "image": {
                           "url": "https://sdds-cms.s3.amazonaws.com/9ca899e9cd5d4415813d87dda6357b9a.png"
                         },
-                        "description": "Point the icon up when expanded",
+                        "description": "Point the icon down when expanded",
                         "id": "119"
                       }
                     ]
@@ -3237,6 +3237,13 @@
                     "LeadText": null
                   },
                   {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1593",
+                    "Title": "Browser Support",
+                    "Text": "We support the latest major browsers in SDDS \n\n\n- Chrome\n- Edge(Chromium based)\n- Firefox\n- Safari",
+                    "LeadText": null
+                  },
+                  {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "151",
                     "Title": null,
@@ -3882,35 +3889,35 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "6",
                     "Title": "General",
-                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>SDDS is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Theming?</summary>\n  <section>Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in SDDS that is a web-component is the sdds-textfield. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [design system repository](https://github.com/scania-digital-design-system/sdds) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is SDDS so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and SDDS will be improved to have smaller size.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in SDDS? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in SDDS: Create a [feature request](https://github.com/scania-digital-design-system/sdds/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "145",
                     "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>Chrome, Safari, Firefox and Edge</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use SDDS on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "146",
                     "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 or 4 to SDDS?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://github.com/scania-digital-design-system/sdds/blob/master/MIGRATION.md)). One thing to remember is that, not everything that was in Corporate-UI 3 and 4 will be in SDDS. We have removed and/or changed some components and dependencies that we had, .\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version corporate-ui 3 and SDDS?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- How you import a component\n- Removed bootstrap\n- Theming is added for styling components\n- Removed Font-awesome Pro support\n\n[Read migration guideline here](https://github.com/scania-digital-design-system/sdds/blob/master/MIGRATION.md)\n    </section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n- [Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n- [Visit documentation for Corporate UI 4](https://digitaldesign.devtest.aws.scania.com/home/)\n\n</section>\n</details>\n<br/>\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "147",
                     "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: SDDS/components for base component and theme/\"theme-name\" for specific theme \n- Structure: SDDS/components\n- Functionality: SDDS/components\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nSDDS is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of SDDS. [See contributing guidelines here](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n  Go to our github at Scania digital design system\n  </section>\n</details>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "148",
                     "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove SDDS dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of SDDS I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag or NPM package you installed\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to SDDS by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md).</section>\n</details>",
                     "LeadText": null
                   }
                 ],
@@ -4000,35 +4007,35 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "6",
                     "Title": "General",
-                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>Corporate-UI is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Scania-Theme?</summary>\n  <section>Scania-Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in Corporate-UI that is a web-component is the c-header. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [corporate-ui repository](https://github.com/scania/corporate-ui) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is Corporate-UI / Scania-Theme so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and Corporate-Ui is something are always trying to improve.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in Corporate-UI? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in Corporate UI: Create a [feature request](https://github.com/scania/corporate-ui/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>\n\n<details>\n    <summary>Can I use custom bootstrap javascript plugin such as modal, tooltip, carousel together with Corporate-ui? </summary>\n    <section>\n      Yes.  We have bootstrap plugin script built in Corporate UI. You can access them by enabling global attribute in c-theme component.\n\n&lt;c-theme name='scania' global='true'&gt;&lt;/c-theme&gt;\n\nIt is important to listen to 'bsReady' event before initiating bootstrap plugin. An example how to use it:\n\ndocument.addEventListener('bsReady', function(event) {\nCorporateUi.$('#modalMoveSelected').modal('hide')\n});</section>\n\n</details>\n",
+                    "Text": "<details>\n    <summary>What is SDDS components and theme?</summary>\n    <section>SDDS is framework, based on stencilJS, which provide a UI toolbox to use in your application. All components are Web-components and follow the web-component standard in the browser.</section>\n</details>\n<br/>\n<details>\n  <summary>What is Theming?</summary>\n  <section>Theme is a package built with CSS(SASS) to style every component according to Scania identity guidelines</section>\n</details>\n<br/>\n<details>\n  <summary>What is a web-component?</summary>\n  <section>Web-components are a standard for creating elements that you can use in your application. One standard component that is using the same technology is the &lt;video&gt;&lt;/video&gt; element. If you look at it with “shadow-dom show” enabled in your settings, you can see it is more than just video elements inside it. One example component in SDDS that is a web-component is the sdds-textfield. Web-components consist of:\n\n- Custom-elements\n- Shadow DOM\n- HTML templates\n\nYou can read more about it here: [Link](https://auth0.com/blog/creating-web-components-with-stencil/)</section>\n</details>\n\n<br/>\n\n<details>\n    <summary>Is there any documentation or list of components?</summary>\n    <section>\n\nYou can find documentation of components here: [Link](https://digitaldesign.scania.com/components)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Where do I find the Experimental components and patterns?</summary>\n    <section>\n\nWe are planning to add all experimental components and pattern into Scania Digital Design System site later. Right now it is not possible to see component that is under development. You can check [design system repository](https://github.com/scania-digital-design-system/sdds) to see our current backlog and components that are being developed in the moment.</section>\n</details>\n\n<br/>\n\n<details>\n  <summary>What should I do if I find a component that isn’t accessible?</summary>\n  <section>Contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>Where can I get help implementing the components with my project?</summary>\n  <section>\n\nRead how to use components in the [getting started section](https://digitaldesign.scania.com/getting-started/development) </section>\n</details>\n<br/>\n\n<details>\n\n  <summary>Why is SDDS so big?</summary>\n  <section>\n\n   A very important part with Stencil is how the components are loaded, Stencil is built with [self-lazy loading](https://stenciljs.com/docs/distribution).\n\n   Only the components that are used(imported) will be loaded into the application and only take that specific space in the memory.\n\n   You just have to add one import for every component, instead of importing every individual component. The package size of both Scania-theme and SDDS will be improved to have smaller size.\n\n </section>\n</details>\n<br/>\n\n<details>\n    <summary>Is there Dark mode in SDDS? </summary>\n    <section>Right now, no. But this is something that is highly demanded. The reason why we haven’t added is that it needs a lot for research before something like that can be implemented</section>\n</details>\n<br/>\n\n<details>\n    <summary>I need a new icon, how do I add it?</summary>\n    <section>\n\n- First, check if icon is available [here](https://digitaldesign.scania.com/foundation/icons)\n- Icon that has been included in Scania Media Provider but not available in SDDS: Create a [feature request](https://github.com/scania-digital-design-system/sdds/issues/new/choose) with detail information about the icon that you need.\n- New icon: Contact our team for more information.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>Are there .psd or .sketch files of the components?</summary>\n    <section>\n\n[Link](https://digitaldesign.scania.com/resources/ui-kits)</section>\n</details>\n<br/>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "145",
                     "Title": "What is supported",
-                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>All Major ones. IE, Chrome FF and Edge, with polyfills if needed</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use corporate-ui on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
+                    "Text": "<details>\n  <summary>Who can use the components?</summary>\n  <section>Developers, with somewhat understanding of front-end development for all web based application</section>\n</details>\n<br/>\n\n<details>\n  <summary>Which browsers are supported?</summary>\n  <section>Chrome, Safari, Firefox and Edge</section>\n</details>\n<br/>\n\n<details>\n  <summary>What JavaScript frameworks are supported?</summary>\n  <section>Angular, React and Vue. More might come in the future.\n\n[See live examples](https://digitaldesign.scania.com/resources/development).\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Can I use SDDS on third party application?</summary>\n  <section>Third part application is very limited support, due to every third-party application is built differently. If you know you can import libraries and so on, please try it out!</section>\n</details>\n<br/>\n\n<details>\n  <summary>Why did you stop supporting font-awesome pro? </summary>\n  <section>We took the decision to start creating and using our own Scania icons. You can still use font-awesome pro, but you need to buy your own licence.</section>\n</details>\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "146",
                     "Title": "Migration",
-                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 to 4?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://digitaldesign.scania.com/getting-started/development)). One thing to remember is that, not everything that was in Corporate-UI 3 will be in 4. We have removed and/or changed some components and dependencies that we had, for example upgrade bootstrap 3 to 4.\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version three and version four?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- Upgrade from Bootstrap 3 to 4\n- How you import a component\n- Scania-theme is added for styling components\n- Removed Font-awesome Pro support\n- Not using BootstrapNativeJS for JS support in bootstrap\n\n[Read migration guideline here](https://digitaldesign.scania.com/getting-started/development)\n    </section>\n</details>\n<br/>\n\n<details>\n  <summary>What are the major changes Bootstrap 3 to 4?</summary>\n  <section>\n\nYou can see what are the major changes in bootstrap 3 to 4 in bootstraps own documentation. For example Panel component have been removed and replaced by cards. [Link](https://getbootstrap.com/docs/4.4/migration/)\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n[Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>Will you add every component that bootstrap 4 have?</summary>\n  <section>We will add component that has been requested and had a good reason to be added in.</section>\n</details>\n",
+                    "Text": "\n<details>\n  <summary>Is it possible to migrate from Corporate-ui 3 or 4 to SDDS?</summary>\n  <section>\n\nYes, it is! It will take some effort, but that is how all upgrades are when it is a major one. You can read more about it in our migration guide ([Link](https://github.com/scania-digital-design-system/sdds/blob/master/MIGRATION.md)). One thing to remember is that, not everything that was in Corporate-UI 3 and 4 will be in SDDS. We have removed and/or changed some components and dependencies that we had, .\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>What are the differences between version corporate-ui 3 and SDDS?</summary>\n    <section>\n      One of the key things that changed are:\n\n- Moved from polymer to stencilJS\n- How you import a component\n- Removed bootstrap\n- Theming is added for styling components\n- Removed Font-awesome Pro support\n\n[Read migration guideline here](https://github.com/scania-digital-design-system/sdds/blob/master/MIGRATION.md)\n    </section>\n</details>\n<br/>\n\n<details>\n    <summary>I haven’t updated to the latest version of Corporate UI yet, and I still need the old documentation. Where can I find it?</summary>\n    <section>\n\n- [Visit documentation for Corporate UI 3](https://scania.github.io/corporate-ui-docs/)\n- [Visit documentation for Corporate UI 4](https://digitaldesign.devtest.aws.scania.com/home/)\n\n</section>\n</details>\n<br/>\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "147",
                     "Title": "Contribution",
-                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: Corporate-UI for base component and Scania-theme\n- Structure: Corporate-UI\n- Functionality: Corporate-UI\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nCorporate UI is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of Corporate UI. [See contributing guidelines here]( https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania/corporate-ui/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n\n[Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md)</section>\n</details>",
+                    "Text": "<details>\n    <summary>How do I modify a components styling, structure or functionality ? </summary>\n    <section>Depending what part of the components you want to modify:\n\n- Styling: SDDS/components for base component and theme/\"theme-name\" for specific theme \n- Structure: SDDS/components\n- Functionality: SDDS/components\n\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I need a new component, who do I talk to? </summary>\n  <section>\n\nSDDS is an open source and collaborative project. It means you can develop your own component and make a pull-request to add it as a part of SDDS. [See contributing guidelines here](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md).\nIf you cannot make your own component, you can add a feature request in our Github page : [Link to Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose) or contact our team</section>\n</details>\n<br/>\n\n<details>\n  <summary>How do I make a pull request? What branch should I pull request into?</summary>\n  <section>\n  Go to our github at Scania digital design system\n  </section>\n</details>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "148",
                     "Title": "Debug",
-                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove Corporate-UI/Scania-theme dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania/corporate-ui/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of Corporate-UI I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag , NPM package you installed and in the script if you are using CDN.\n![Corporate UI version](https://sdds-cms.s3.amazonaws.com/4607f69014b24c45bd78c4b4f053b8ed.png)\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania/corporate-ui/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to corporate-ui by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania/corporate-ui/blob/master/CONTRIBUTING.md).</section>\n</details>",
+                    "Text": "\n<details>\n  <summary>How do I debug? </summary>\n  <section>\n\n- Investigate the cause of your problem from the development window. Go to the browser, and press *Ctr+Shift+I*. Check console tab, and see the error message.\n- Version: First of you need to know which version you are using, maybe the problem is solved in later version. Look at the HTML TAG\n- Styling/CSS/SASS problem: Look if anything is overriding our/your css first depending what you except.\n- Crashing: If there is any error what files is it coming from? Try and investigate, remove SDDS dependencies see if the error still occurs or maybe upgrade?\n- If you still can’t see the solution either report in [Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose) or ask in [team channel](https://teams.microsoft.com/l/team/19%3a1257007a64d44c64954acca27a9d4b46%40thread.skype/conversations?groupId=79f9bfeb-73e2-424d-9477-b236191ece5e&tenantId=3bc062e4-ac9d-4c17-b4dd-3aad637ff1ac) for support\n\n</section>\n</details>\n<br/>\n\n<details>\n    <summary>How do I see which version of SDDS I’m using?</summary>\n    <section>\n\nYou can see that in the HTML tag or NPM package you installed\n</section>\n</details>\n<br/>\n\n<details>\n  <summary>I see a bug. How do I report it?</summary>\n  <section>\n\nYou can report in [Github](https://github.com/scania-digital-design-system/sdds/issues/new/choose)</section>\n</details>\n<br/>\n\n<details>\n  <summary>What can I expect for a response to my bug report?</summary>\n  <section>\n\nOur team will try to help fix the bug as soon as possible depends on the severity of the bug. If you know the solution, you can contribute and add the solution to SDDS by creating a pull-request. Please provide a detail information or an idea for the solution when you report an issue. This will make the the bug can be solved faster.  [Read contribution guideline](https://github.com/scania-digital-design-system/sdds/blob/master/CONTRIBUTING.md).</section>\n</details>",
                     "LeadText": null
                   }
                 ],
@@ -5143,178 +5150,6 @@
         "url": "foundations",
         "displayLink": null,
         "title": "Foundations",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "102",
-      "url": "overview",
-      "displayLink": "Overview",
-      "title": "Components Overview",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "189",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "39",
-                "title": "Components Overview",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "671",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "All of our user interfaces consist of components. These are our interactive building blocks, which we use to create new interfaces and applications sure to unpack complex technology, making information and functions immediately apparent for our users.",
-                      "Introduction": true,
-                      "id": "139"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "138",
-                    "Title": "Introduction",
-                    "Images": [],
-                    "texts": [
-                      {
-                        "textfield": "We have utilised a collection of reusable components which are aligned with our brand identity and expression. These components can be assembled together to build consistent and harmonised Scania applications. \n\nIf you have a suggestion for a new component, [please let us know](contribution).\n\n**The list of components will be updated regularly, with all of them being available during Q1.**",
-                        "Introduction": null,
-                        "id": "140"
-                      }
-                    ],
-                    "linkCards": [
-                      {
-                        "id": "59",
-                        "title": "Component",
-                        "description": "Buttons",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/buttons"
-                      },
-                      {
-                        "id": "64",
-                        "title": "Component",
-                        "description": "Dividers",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/divider"
-                      },
-                      {
-                        "id": "70",
-                        "title": "Component",
-                        "description": "Text fields",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/textfields"
-                      },
-                      {
-                        "id": "192",
-                        "title": "Component",
-                        "description": "Radio buttons",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/radio-buttons"
-                      },
-                      {
-                        "id": "193",
-                        "title": "Component",
-                        "description": "Checkboxes",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/checkboxes"
-                      },
-                      {
-                        "id": "194",
-                        "title": "Component",
-                        "description": "Toggles",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/toggles"
-                      },
-                      {
-                        "id": "195",
-                        "title": "Component",
-                        "description": "Accordions",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/accordions"
-                      },
-                      {
-                        "id": "202",
-                        "title": "Component",
-                        "description": "Links",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/Links"
-                      },
-                      {
-                        "id": "237",
-                        "title": "Component",
-                        "description": "Tooltips",
-                        "info": "",
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/Tooltips"
-                      },
-                      {
-                        "id": "238",
-                        "title": "Component",
-                        "description": "Breadcrumbs",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/breadcrumbs"
-                      },
-                      {
-                        "id": "243",
-                        "title": "Component",
-                        "description": "Cards",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/cards"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-11T09:54:43.032Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
         "thumbnail": null
       },
       "submenus": []
@@ -8988,6 +8823,225 @@
       "submenus": []
     },
     {
+      "id": "102",
+      "url": "overview",
+      "displayLink": "Overview",
+      "title": "Components Overview",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "189",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "39",
+                "title": "Components Overview",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "671",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "All of our user interfaces consist of components. These are our interactive building blocks, which we use to create new interfaces and applications sure to unpack complex technology, making information and functions immediately apparent for our users.",
+                      "Introduction": true,
+                      "id": "139"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "138",
+                    "Title": "Introduction",
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "We have utilised a collection of reusable components which are aligned with our brand identity and expression. These components can be assembled together to build consistent and harmonised Scania applications. \n\nIf you have a suggestion for a new component, [please let us know](contribution).\n\n**The list of components will be updated regularly, with all of them being available during Q1.**",
+                        "Introduction": null,
+                        "id": "140"
+                      }
+                    ],
+                    "linkCards": [
+                      {
+                        "id": "59",
+                        "title": "Component",
+                        "description": "Buttons",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/buttons"
+                      },
+                      {
+                        "id": "64",
+                        "title": "Component",
+                        "description": "Dividers",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/divider"
+                      },
+                      {
+                        "id": "70",
+                        "title": "Component",
+                        "description": "Text fields",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/textfields"
+                      },
+                      {
+                        "id": "192",
+                        "title": "Component",
+                        "description": "Radio buttons",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/radio-buttons"
+                      },
+                      {
+                        "id": "193",
+                        "title": "Component",
+                        "description": "Checkboxes",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/checkboxes"
+                      },
+                      {
+                        "id": "194",
+                        "title": "Component",
+                        "description": "Toggles",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/toggles"
+                      },
+                      {
+                        "id": "195",
+                        "title": "Component",
+                        "description": "Accordions",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/accordions"
+                      },
+                      {
+                        "id": "202",
+                        "title": "Component",
+                        "description": "Links",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/Links"
+                      },
+                      {
+                        "id": "237",
+                        "title": "Component",
+                        "description": "Tooltips",
+                        "info": "",
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/Tooltips"
+                      },
+                      {
+                        "id": "238",
+                        "title": "Component",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      },
+                      {
+                        "id": "243",
+                        "title": "Component",
+                        "description": "Cards",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/cards"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-11T09:54:43.032Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "250",
+          "title": "Progress",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "272",
+                "title": "Component progress",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1592",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Below you can check the progress of the work around components and see what you can expect in the near future. The list will be updated every two weeks. Feel free to contact us if you want one or more of the components be prioritized.",
+                      "Introduction": null,
+                      "id": "303"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "1749",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/27bbfde88f884124b1aa34e8f78b38f9.png"
+                        }
+                      ]
+                    },
+                    "id": "194"
+                  }
+                ],
+                "updated_at": "2021-02-15T10:03:46.276Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "51",
       "url": "content-component",
       "displayLink": null,
@@ -10503,7 +10557,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Checkbox is a component that allows the user to select zero, one or several items from a list when there are multiple options.",
+                      "textfield": "Checkbox is a component that allows the user to select one or several items from a list when there are multiple options.",
                       "Introduction": true,
                       "id": "224"
                     }
@@ -10512,7 +10566,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1077",
                     "Title": "Usage",
-                    "Text": "Checkboxes should be used to inform the user that they can select zero, one or several options from a range of options. The user should always be able to regret a choice, hence they should be able to unselect a checkbox after selecting one. ",
+                    "Text": "Checkboxes should be used to inform the user that they can select one or several options from a range of options. The user should always be able to regret a choice, hence they should be able to unselect a checkbox after selecting one. ",
                     "LeadText": null
                   },
                   {
@@ -10754,7 +10808,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1370",
                     "Title": null,
-                    "Text": "##### One option selection\n\nCheckboxes are not suitable for scenarios where a user should only select one option. For a scenario like this, radio button is the component to use.",
+                    "Text": "##### One option selection\n\nCheckboxes are not suitable for scenarios where a user should be limited to select a singel option. For a scenario like this, radio button is the component to use.",
                     "LeadText": null
                   },
                   {
