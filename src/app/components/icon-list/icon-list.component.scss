@@ -45,11 +45,6 @@
   }
 }
 
-.sdds-input-group {
-  margin-top: var(--sdds-spacing-element-32);
-}
-
-
 .sdds-website-divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: 24px;
@@ -226,25 +221,4 @@
     outline: none;
   }
 
-}
-
-//FIXME: remove this when forms are done
-.sdds-form-control {
-  @include type-style('detail-02');
-  height: 56px;
-  border-radius: 1rem 1rem 0 0;
-  border: 0;
-  border-bottom: 1px solid var(--sdds-grey-200);
-
-
-  &:hover {
-    border-bottom: 1px solid var(--sdds-grey-500);
-  }
-
-  &:focus {
-    //FIXME: two px should be added on focus state
-    border-bottom: 1px solid var(--sdds-blue-500);
-    background-color: var(--sdds-white);
-    color: var(--sdds-grey-700);
-  }
 }
