@@ -81,7 +81,7 @@
             <!-- If images -->
             <ng-container *ngIf="section.Images">
               <ng-container *ngFor="let image of section.Images; let index=index">
-                <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Small' ? 'sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (image.size=='Medium' ? 'sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'')  + (image.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-8 sdds-col-md-8':''))">
+                <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Small' ? 'sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (image.size=='ExtraMedium' ? 'sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Medium' ? 'sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'')  + (image.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-8 sdds-col-md-8':''))">
                   <figure>
                     <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                     <figcaption *ngIf='image.label' class="sdds-detail-02" >
@@ -92,6 +92,9 @@
                   </figure>
                 </div>
               <ng-container *ngIf="image.size==='Small' && (index+1) % 3 === 0">
+                <div class="line-break"></div>
+              </ng-container>
+              <ng-container *ngIf="image.size==='Medium' && (index+2) % 3 === 0">
                 <div class="line-break"></div>
               </ng-container>
             </ng-container>
