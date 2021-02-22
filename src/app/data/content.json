@@ -1160,10 +1160,96 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1720",
+                    "id": "1860",
                     "Title": "Types",
+                    "Text": "",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "461",
+                    "title": "Button Primary",
+                    "code": "<sdds-button type=\"primary\" text=\"Button\"></sdds-button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "462",
+                    "title": "Button Secondary",
+                    "code": "<sdds-button type=\"secondary\" text=\"Button\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "463",
+                    "title": "Button Ghost",
+                    "code": "<sdds-button type=\"ghost\" text=\"Button\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "464",
+                    "title": "Button Danger",
+                    "code": "<sdds-button type=\"danger\" text=\"Button\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1861",
+                    "Title": "Sizes",
                     "Text": null,
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "465",
+                    "title": "Default",
+                    "code": "<sdds-button type=\"primary\" text=\"Button example\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "466",
+                    "title": "Small",
+                    "code": "<sdds-button type=\"primary\" size=\"sm\" text=\"Button example\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "467",
+                    "title": "Medium",
+                    "code": "<sdds-button type=\"primary\" size=\"md\" text=\"Button example\"></button>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "468",
+                    "title": "Fullbleed",
+                    "code": "<sdds-button type=\"primary\" fullbleed text=\"Button example\" style=\"width:200px;\"></button>",
+                    "componentTag": null,
+                    "preview": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1862",
+                    "Title": "Disabled state",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "469",
+                    "title": "Disabled button",
+                    "code": "<sdds-button type=\"primary\" disabled\" text=\"Button disabled\"></button>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
                 "updated_at": "2021-02-08T08:31:22.307Z"
@@ -12386,952 +12472,6 @@
       "submenus": []
     },
     {
-      "id": "146",
-      "url": "dropdowns",
-      "displayLink": null,
-      "title": "Dropdowns",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "254",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "273",
-                "title": "Component Dropdowns Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1638",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "A dropdown presents a list of options to the user, and allows them to choose one or more to take action.",
-                      "Introduction": null,
-                      "id": "310"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1639",
-                    "Title": "Usage",
-                    "Text": "Dropdowns can be used to represent a value in a form, as well as to filter or sort content. They can be used in a wide context, spanning from full page layouts, modals and components like data tables. The items they contain are usually sorted by the priority of their usage.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1640",
-                    "Title": "Types",
-                    "Text": "There are four types of dropdowns that cater for different needs; default, multi-select, filter and nested dropdown.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "806",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1785",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/94119a2cb0684a2d9c5a8603939fdbba.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1641",
-                    "Title": null,
-                    "Text": "**Default dropdown**\n\nThe default dropdown should be used when one selection between a limited number of items needs to be made. The dropdown automatically collapses when the user has pressed one of the items in the list.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "807",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1786",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4c206c72c86e4125880f9d9004f014a8.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1642",
-                    "Title": null,
-                    "Text": "**Multi-select dropdown**\n\nSometimes users need to select more than one item in a dropdown menu, and that is the case when the multi-select dropdown should be used. The main difference compared to the default dropdown is that a checkbox appears on the left side of each dropdown items, as well as the fact that the dropdown does not collapse automatically when the user selects an item. The user needs to manually close the dropdown when they are done with their selections by either clicking on the dropdown or outside the dropdown. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "808",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1787",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/448e69b96b4d432aa4b487c3a2546652.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1643",
-                    "Title": null,
-                    "Text": "**Filter dropdown**\n\nThe filter dropdown is the preferable way when the users needs to make a selection from a very long list, thus making the use of a simple dropdown cumbersome. In this variation, users can start typing right when they have clicked on the dropdown. Filter can be used on all dropdown types.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "809",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1788",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7fa804205b6f40fa93238e52bac3d734.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1644",
-                    "Title": null,
-                    "Text": "**Nested dropdown**\n\nSometimes, having a single list of items in the dropdown is not enough. That is when a nested dropdown can come handy, by giving the possibility to group items into categories, which adds one extra hierarchy level. However this type should be used in moderation, only when it’s truly necessary.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "810",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1789",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f4e77c311d454ea1b8539fe31b17ddf9.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1645",
-                    "Title": "Sizes",
-                    "Text": "As our [buttons](https://digitaldesign.scania.com/components/buttons), there are four different dropdown sizes: large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "811",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1790",
-                        "label": "Large",
-                        "caption": "Use as primary dropdown size",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5eac2bf169a1495890fa5a9df19bd4a4.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1791",
-                        "label": "Medium",
-                        "caption": "Use for narrowed spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9d9998231f634cd482d56f7cb95eef24.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1792",
-                        "label": "Small",
-                        "caption": "Use for very narrowed spaces",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ad641e07165e4260aee665ed1c623373.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1793",
-                        "label": "Full bleed",
-                        "caption": "Fluid width of the screen or in components",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5f45df7461f64217bb50b8e9f77c7c1d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1646",
-                    "Title": "States",
-                    "Text": "A dropdown can either be collapsed or expanded. The icon arrow’s direction describes which state the dropdown is in, where points up is expanded and points down collapsed. As default, the dropdown is always collapsed.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "812",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1794",
-                        "label": "Collapsed",
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5546831ccb4f4b6fa2ae6bda093fe012.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1795",
-                        "label": "Expanded",
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ec0d130a79de402db00be96fee351fa5.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1647",
-                    "Title": null,
-                    "Text": "They also have different states, for both collapsed and expanded, to communicate the dropdowns different status for our users.\n\n**Collapsed**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "813",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1796",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/742bc9b475e04cff8596427166b892ef.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1797",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d59203aa7c9f40ffa9557df033e2386a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1798",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/95cc7277866c480d8335d817550060a6.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1799",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/01e74ef47fd541548e4cf21f384cee72.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1800",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/917151b88c044468b8fc49c4d763b13a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1801",
-                        "label": "Error",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/18b17745ad6d43d5b4a68c163ccf5560.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1802",
-                        "label": "Enabled: Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a7e6f8e6dc2743ebb5c690e01eef5718.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1648",
-                    "Title": null,
-                    "Text": "**Expanded**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "814",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1803",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/426cd3760aed4295a5c0a8df7f110cb6.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1804",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b67dbc0eba8b4842a368c2fbae6ac156.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1805",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/021f6340ca6a49c7ada80759508b5333.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1806",
-                        "label": "Enabled: Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9699b3903dec4e0c8e7e3a74dca89df5.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1668",
-                    "Title": "Anatomy",
-                    "Text": "The dropdown always contain the following elements; a text label, container, icon, option container and divider.\n\nFor a multi-select dropdown, the component checkbox is also added as a mandatory element.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "828",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1843",
-                        "label": "Collapsed",
-                        "caption": "A. Text label\nB. Container\nC. Icon",
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/946befabf2954d08b27d1da244951cd8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1844",
-                        "label": "Expanded (Default)",
-                        "caption": "D. Option text\nE. Option container\nF. Divider",
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a52f89f5b75442bba7845fbe99f19f3c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1845",
-                        "label": "Expanded (Multi-select)",
-                        "caption": "G. Checkbox",
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6f62690cce7c4ffd8375ae88a70bbec4.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1669",
-                    "Title": null,
-                    "Text": "**Label text**\n\nThe label text will help us to describe to the users what the dropdown contains and all of our dropdown types also have variations on how the label text could be used; label inside, no label and label outside. \n\nYou should select dropdown variation  based on which context the dropdown will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the label inside works well for more narrow spaces and label outside is a good option for forms with a lot of dropdowns present, making it easier for the users to decode the information. When using label outside, you still need to have a dropdown text present. Note, for our smallest size ‘Small’, you can not use label-inside due to size limitations.\n\nNo label is a good choice when adding a dropdown inside a data table, where a label will be present in the column head instead.  ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "829",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1846",
-                        "label": "Label inside",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/45f0995ac3ff4c34a12bed771270c362.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1847",
-                        "label": "No label",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/907609f1f2e247f087311b8222278def.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1848",
-                        "label": "Label outside",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/db62e0e0c38e44eaa817fc52aa61fa11.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1670",
-                    "Title": null,
-                    "Text": "**Helper text**\n\nHelper text assists the user with additional information text about the dropdown and to act as an error message.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "830",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1849",
-                        "label": "Helper text",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/008d943f8372456fad63634fce75f749.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1850",
-                        "label": "Error message",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7072800230f5440fa419932ade97115b.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1671",
-                    "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for dropdowns.\n\n**Scrollbar**\n\nIt’s important that an expanded dropdown doesn’t list too many options at once. Use a scrollbar to limit the amount of items shown to the user. A rule of thumb is to never list more than 5-7 options at a time. With that said, it is up to each designer to make the decision depending on the context of the dropdown.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "831",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/2b30571c237243578c9cc4be3d0061d6.png"
-                        },
-                        "description": "Use a scroll bar for dropdowns with more than 7 options",
-                        "id": "190"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/ccad911eeca74d368d596cf4282cdcc8.png"
-                        },
-                        "description": "List more than 7 options without a scroll bar",
-                        "id": "191"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-02-22T12:26:25.199Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "255",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "274",
-                "title": "Component Dropdowns Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1710",
-                    "Title": "Colour",
-                    "Text": "Our dropdowns come in different types and a set of states. The types have the same styling, with some additional elements added depending on state. These additional elments are specified for each type. The container is using the same shadow-settings used on our cards.\n\n**Collapsed**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1711",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$white</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "844",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1903",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bb05cf1004ce42db83514264935ccfcb.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1904",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8af15903eb734db4b97887daccb41b05.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1905",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fe18697bed374a12abf1b0c29b92ed01.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1906",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6ec092f1de0b4d88b3f8728d4678a959.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1907",
-                        "label": "Disabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5efdebe0641a4cac8685e1f8298801ef.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1908",
-                        "label": "Error",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e11c3847e68541e0bf35021c2a808e09.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1712",
-                    "Title": null,
-                    "Text": "**Expanded**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1713",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Option container</th>\n    <th>Option border</th>\n     <th>Option text</th>\n     <th>Divider</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue -50</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$blue-100</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "845",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1909",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/a6b1855cc80c45bcb9588bfee3ff99bd.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1910",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/50af1df827da430faf7a4a57cc4084b3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1911",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d760f59ac9e647c99dca8fd9bf18b81d.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1912",
-                        "label": "Enabled: Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/cf4f987252434298965a5b64a718f856.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1714",
-                    "Title": null,
-                    "Text": "**Expanded (Filter)**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1715",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Placeholder text</th>\n    <th>Border-bottom</th>\n     <th>Input text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-500</td> \n    <td>$blue-500</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Typing</td>\n    <td>-</td> \n    <td>$blue-500</td>\n    <td>$grey-900</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "846",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "1913",
-                        "label": "Enabled",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/76ca27e95e274be1be79eee301225588.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1914",
-                        "label": "Typing",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9330f52a55da43bb88485a085501c6fa.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1716",
-                    "Title": "Sizing",
-                    "Text": "A dropdown contains a lot of elements in combination with a container. Depending on the dropdown size, the spacing to its elements varies inside the dropdown.\n\nThe sizes are large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.\n\nThe width of the dropdown varies, since it should align with the context and layout where it is placed.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1717",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n     <th>Icon</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Large</td>\n    <td>Fluid</td> \n    <td>56 / 14</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td> \n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Small</td>\n    <td>Fluid</td> \n    <td>40 / 10</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Full bleed</td>\n    <td>Fluid</td> \n    <td>56 / 14\n            48 / 12\n            40 / 10</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-02-22T12:26:45.900Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "256",
-          "title": "Code",
-          "active": true,
-          "pageContent": []
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
       "id": "110",
       "url": "accordions",
       "displayLink": null,
@@ -14687,6 +13827,1387 @@
               }
             }
           ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "146",
+      "url": "dropdowns",
+      "displayLink": null,
+      "title": "Dropdowns",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "254",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "273",
+                "title": "Component Dropdowns Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1638",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A dropdown presents a list of options to the user, and allows them to choose one or more to take action.",
+                      "Introduction": null,
+                      "id": "310"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1639",
+                    "Title": "Usage",
+                    "Text": "Dropdowns can be used to represent a value in a form, as well as to filter or sort content. They can be used in a wide context, spanning from full page layouts, modals and components like data tables. The items they contain are usually sorted by the priority of their usage.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1640",
+                    "Title": "Types",
+                    "Text": "There are four types of dropdowns that cater for different needs; default, multi-select, filter and nested dropdown.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "806",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1785",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/94119a2cb0684a2d9c5a8603939fdbba.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1641",
+                    "Title": null,
+                    "Text": "**Default dropdown**\n\nThe default dropdown should be used when one selection between a limited number of items needs to be made. The dropdown automatically collapses when the user has pressed one of the items in the list.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "807",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1786",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4c206c72c86e4125880f9d9004f014a8.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1642",
+                    "Title": null,
+                    "Text": "**Multi-select dropdown**\n\nSometimes users need to select more than one item in a dropdown menu, and that is the case when the multi-select dropdown should be used. The main difference compared to the default dropdown is that a checkbox appears on the left side of each dropdown items, as well as the fact that the dropdown does not collapse automatically when the user selects an item. The user needs to manually close the dropdown when they are done with their selections by either clicking on the dropdown or outside the dropdown. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "808",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1787",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/448e69b96b4d432aa4b487c3a2546652.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1643",
+                    "Title": null,
+                    "Text": "**Filter dropdown**\n\nThe filter dropdown is the preferable way when the users needs to make a selection from a very long list, thus making the use of a simple dropdown cumbersome. In this variation, users can start typing right when they have clicked on the dropdown. Filter can be used on all dropdown types.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "809",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1788",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7fa804205b6f40fa93238e52bac3d734.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1644",
+                    "Title": null,
+                    "Text": "**Nested dropdown**\n\nSometimes, having a single list of items in the dropdown is not enough. That is when a nested dropdown can come handy, by giving the possibility to group items into categories, which adds one extra hierarchy level. However this type should be used in moderation, only when it’s truly necessary.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "810",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1789",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f4e77c311d454ea1b8539fe31b17ddf9.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1645",
+                    "Title": "Sizes",
+                    "Text": "As our [buttons](https://digitaldesign.scania.com/components/buttons), there are four different dropdown sizes: large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "811",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1790",
+                        "label": "Large",
+                        "caption": "Use as primary dropdown size",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5eac2bf169a1495890fa5a9df19bd4a4.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1791",
+                        "label": "Medium",
+                        "caption": "Use for narrowed spaces",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9d9998231f634cd482d56f7cb95eef24.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1792",
+                        "label": "Small",
+                        "caption": "Use for very narrowed spaces",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ad641e07165e4260aee665ed1c623373.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1793",
+                        "label": "Full bleed",
+                        "caption": "Fluid width of the screen or in components",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5f45df7461f64217bb50b8e9f77c7c1d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1646",
+                    "Title": "States",
+                    "Text": "A dropdown can either be collapsed or expanded. The icon arrow’s direction describes which state the dropdown is in, where points up is expanded and points down collapsed. As default, the dropdown is always collapsed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "812",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1794",
+                        "label": "Collapsed",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5546831ccb4f4b6fa2ae6bda093fe012.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1795",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ec0d130a79de402db00be96fee351fa5.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1647",
+                    "Title": null,
+                    "Text": "They also have different states, for both collapsed and expanded, to communicate the dropdowns different status for our users.\n\n**Collapsed**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "813",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1796",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/742bc9b475e04cff8596427166b892ef.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1797",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d59203aa7c9f40ffa9557df033e2386a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1798",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/95cc7277866c480d8335d817550060a6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1799",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/01e74ef47fd541548e4cf21f384cee72.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1800",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/917151b88c044468b8fc49c4d763b13a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1801",
+                        "label": "Error",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/18b17745ad6d43d5b4a68c163ccf5560.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1802",
+                        "label": "Enabled: Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a7e6f8e6dc2743ebb5c690e01eef5718.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1648",
+                    "Title": null,
+                    "Text": "**Expanded**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "814",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1803",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/426cd3760aed4295a5c0a8df7f110cb6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1804",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b67dbc0eba8b4842a368c2fbae6ac156.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1805",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/021f6340ca6a49c7ada80759508b5333.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1806",
+                        "label": "Enabled: Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9699b3903dec4e0c8e7e3a74dca89df5.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1668",
+                    "Title": "Anatomy",
+                    "Text": "The dropdown always contain the following elements; a text label, container, icon, option container and divider.\n\nFor a multi-select dropdown, the component checkbox is also added as a mandatory element.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "828",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1843",
+                        "label": "Collapsed",
+                        "caption": "A. Text label\nB. Container\nC. Icon",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/946befabf2954d08b27d1da244951cd8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1844",
+                        "label": "Expanded (Default)",
+                        "caption": "D. Option text\nE. Option container\nF. Divider",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a52f89f5b75442bba7845fbe99f19f3c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1845",
+                        "label": "Expanded (Multi-select)",
+                        "caption": "G. Checkbox",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6f62690cce7c4ffd8375ae88a70bbec4.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1669",
+                    "Title": null,
+                    "Text": "**Label text**\n\nThe label text will help us to describe to the users what the dropdown contains and all of our dropdown types also have variations on how the label text could be used; label inside, no label and label outside. \n\nYou should select dropdown variation  based on which context the dropdown will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the label inside works well for more narrow spaces and label outside is a good option for forms with a lot of dropdowns present, making it easier for the users to decode the information. When using label outside, you still need to have a dropdown text present. Note, for our smallest size ‘Small’, you can not use label-inside due to size limitations.\n\nNo label is a good choice when adding a dropdown inside a data table, where a label will be present in the column head instead.  ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "829",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1846",
+                        "label": "Label inside",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/45f0995ac3ff4c34a12bed771270c362.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1847",
+                        "label": "No label",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/907609f1f2e247f087311b8222278def.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1848",
+                        "label": "Label outside",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/db62e0e0c38e44eaa817fc52aa61fa11.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1670",
+                    "Title": null,
+                    "Text": "**Helper text**\n\nHelper text assists the user with additional information text about the dropdown and to act as an error message.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "830",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "1849",
+                        "label": "Helper text",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/008d943f8372456fad63634fce75f749.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1850",
+                        "label": "Error message",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7072800230f5440fa419932ade97115b.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1671",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for dropdowns.\n\n**Scrollbar**\n\nIt’s important that an expanded dropdown doesn’t list too many options at once. Use a scrollbar to limit the amount of items shown to the user. A rule of thumb is to never list more than 5-7 options at a time. With that said, it is up to each designer to make the decision depending on the context of the dropdown.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "831",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/2b30571c237243578c9cc4be3d0061d6.png"
+                        },
+                        "description": "Use a scroll bar for dropdowns with more than 7 options",
+                        "id": "190"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/ccad911eeca74d368d596cf4282cdcc8.png"
+                        },
+                        "description": "List more than 7 options without a scroll bar",
+                        "id": "191"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-02-22T12:26:25.199Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "255",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "274",
+                "title": "Component Dropdowns Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1819",
+                    "Title": "Colour",
+                    "Text": "Our dropdowns come in different types and a set of states. The types have the same styling, with some additional elements added depending on state. These additional elments are specified for each type. The container is using the same shadow-settings used on our cards.\n\n**Collapsed**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1820",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$white</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "887",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2088",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d6db6f758c3e4877a8d1f5b6f94c4e39.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2089",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/09fce3a4487e4036adfeb5fb8afb7d43.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2090",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f8524360e82343ee8fcd943d47c741e4.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2091",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b4e48a6d01b646b5bf547d446418ee1e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2092",
+                        "label": "Disabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c40c7d0a2c55402f80a385d2ab3a5efd.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2093",
+                        "label": "Error",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/734c1a8dd5844017b1a52d9c2df48ad9.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1821",
+                    "Title": null,
+                    "Text": "**Expanded**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1822",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Option container</th>\n    <th>Option border</th>\n     <th>Option text</th>\n     <th>Divider</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue -50</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$blue-100</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "888",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2094",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/16e0341598cb4641adb8b0244c7f77b1.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2095",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e0be562bdc7a412d85afe1da24d536a7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2096",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/33adf02462f34dbeb2433b82b5e94a44.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2097",
+                        "label": "Enabled: Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b95b6a53b72447658cf5cf73bd4fb14f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1823",
+                    "Title": null,
+                    "Text": "**Expanded (Filter)**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1824",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Placeholder text</th>\n    <th>Border-bottom</th>\n     <th>Input text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-500</td> \n    <td>$blue-500</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Typing</td>\n    <td>-</td> \n    <td>$blue-500</td>\n    <td>$grey-900</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "889",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2098",
+                        "label": "Enabled",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ebdb3039ab704eeab337040318bbbfc7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2099",
+                        "label": "Typing",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b38475ffb7d344d8a89d0aceb7490b76.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1825",
+                    "Title": "Sizing",
+                    "Text": "A dropdown contains a lot of elements in combination with a container. Depending on the dropdown size, the spacing to its elements varies inside the dropdown.\n\nThe sizes are large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.\n\nThe width of the dropdown varies, since it should align with the context and layout where it is placed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1826",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n     <th>Icon</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Large</td>\n    <td>Fluid</td> \n    <td>56 / 14</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td> \n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Small</td>\n    <td>Fluid</td> \n    <td>40 / 10</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Full bleed</td>\n    <td>Fluid</td> \n    <td>56 / 14\n            48 / 12\n            40 / 10</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1827",
+                    "Title": null,
+                    "Text": "**Large**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "890",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2100",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b834d6ce1bab4fce95cebc693756e890.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2101",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/6f58768dbf2b414d843ceff2bdef5fa6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2102",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/98d4d19875e0418a9870f902bd146f3d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2103",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/f1ad37ef683d41c29cad27177f4b661e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2104",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4ccba5699adf4fd0b6931c4352da850a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2105",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e0459dde80534323b74b405e5cfabffc.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1828",
+                    "Title": null,
+                    "Text": "**Medium**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "891",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2106",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/168ee30b5de0497d97f91cca6674ae86.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2107",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2aacde1ea640435c97b31f32169ef1e2.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2108",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/044302a138cf4f56b09716b609f795c4.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2109",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c8fcc3b2eb674e379f39977cdccf05be.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2110",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/cc791af8f45d43cebe8f14e4c30e0c02.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2111",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c5792641267f43bf9774261b9795bc10.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1829",
+                    "Title": null,
+                    "Text": "**Small**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "892",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2112",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/beb05685763243cfb745b1bd0b4b9de8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2113",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1c8430566fc04a7ca2df16d5de2c7958.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2114",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b1e7ddc77e1d4705ab8be26dcbb478af.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2115",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/607b5879988a428f9d5e2ad1739fd45a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2116",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/c62e727c7c5c4e2bba2700de98b541ac.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2117",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/002983e02e7547ab81084bf52f88f441.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1830",
+                    "Title": null,
+                    "Text": "**Label inside**\n\nWhen using label inside, the label text animates and positions above the Option text, which takes the Label text old position, when a user has done a selection. Label inside is available for the sizes Large and Medium. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "893",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2118",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ee672734149b4e8b8e88d9e3bdc064ed.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2119",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/968a3b4c728440dc8874f3c1eae4c994.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1831",
+                    "Title": null,
+                    "Text": "**Label outside**\n\nLabel outside is available for all sizes.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "894",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2120",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/0f07e0b23bac4b1e9c8e71763db7e551.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2121",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3b1734a8614446448b921ca71b425885.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2122",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/58fc7440774b4dc78bbaaa770618fad2.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1832",
+                    "Title": "Typography",
+                    "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our dropdown types and sizes, we are using the same typography.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1833",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text</td>\n    <td>$detail-02</td> \n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td> \n  </tr>\n<tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td> \n  </tr>\n<tr>\n    <td>Option text</td>\n    <td>$detail-02</td>\n  </tr>\n<tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1834",
+                    "Title": "Corner radius",
+                    "Text": "The dropdown and option container have rounded corners with a 4px / 1 rem corner radius.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1835",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top, bottom, left and right</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "895",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2123",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/fc3661d1a59b468bace90a594be68899.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-02-22T12:26:45.900Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "256",
+          "title": "Code",
+          "active": true,
+          "pageContent": []
         }
       ],
       "parent": {
