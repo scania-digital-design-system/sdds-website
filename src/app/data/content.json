@@ -1154,20 +1154,13 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1719",
-                    "Title": "Button Components",
-                    "Text": "Showig new button components",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1860",
-                    "Title": "Types",
-                    "Text": "",
+                    "Title": "Web Components",
+                    "Text": "Web components with another way to integrate isolated attributes for the buttons",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "461",
+                    "id": "587",
                     "title": "Button Primary",
                     "code": "<sdds-button type=\"primary\" text=\"Button\"></sdds-button>",
                     "componentTag": null,
@@ -1175,7 +1168,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "462",
+                    "id": "588",
                     "title": "Button Secondary",
                     "code": "<sdds-button type=\"secondary\" text=\"Button\"></button>",
                     "componentTag": null,
@@ -1183,7 +1176,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "463",
+                    "id": "589",
                     "title": "Button Ghost",
                     "code": "<sdds-button type=\"ghost\" text=\"Button\"></button>",
                     "componentTag": null,
@@ -1191,22 +1184,15 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "464",
+                    "id": "590",
                     "title": "Button Danger",
                     "code": "<sdds-button type=\"danger\" text=\"Button\"></button>",
                     "componentTag": null,
                     "preview": true
                   },
                   {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1861",
-                    "Title": "Sizes",
-                    "Text": null,
-                    "LeadText": null
-                  },
-                  {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "465",
+                    "id": "591",
                     "title": "Default",
                     "code": "<sdds-button type=\"primary\" text=\"Button example\"></button>",
                     "componentTag": null,
@@ -1214,7 +1200,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "466",
+                    "id": "592",
                     "title": "Small",
                     "code": "<sdds-button type=\"primary\" size=\"sm\" text=\"Button example\"></button>",
                     "componentTag": null,
@@ -1222,7 +1208,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "467",
+                    "id": "593",
                     "title": "Medium",
                     "code": "<sdds-button type=\"primary\" size=\"md\" text=\"Button example\"></button>",
                     "componentTag": null,
@@ -1230,22 +1216,15 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "468",
+                    "id": "594",
                     "title": "Fullbleed",
                     "code": "<sdds-button type=\"primary\" fullbleed text=\"Button example\" style=\"width:200px;\"></button>",
                     "componentTag": null,
-                    "preview": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1862",
-                    "Title": "Disabled state",
-                    "Text": null,
-                    "LeadText": null
+                    "preview": true
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "469",
+                    "id": "595",
                     "title": "Disabled button",
                     "code": "<sdds-button type=\"primary\" disabled\" text=\"Button disabled\"></button>",
                     "componentTag": null,
@@ -13891,7 +13870,7 @@
                         "id": "1785",
                         "label": null,
                         "caption": null,
-                        "size": "Xlarge",
+                        "size": "ExtraMedium",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -14118,9 +14097,19 @@
                             "url": "https://sdds-cms.s3.amazonaws.com/5546831ccb4f4b6fa2ae6bda093fe012.png"
                           }
                         ]
-                      },
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "914",
+                    "Title": "",
+                    "Images": [
                       {
-                        "id": "1795",
+                        "id": "2196",
                         "label": "Expanded",
                         "caption": null,
                         "size": "ExtraMedium",
@@ -14128,7 +14117,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ec0d130a79de402db00be96fee351fa5.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/cfdec6665e37405ebd6e6979dd9301a9.png"
                           }
                         ]
                       }
@@ -14521,25 +14510,25 @@
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1819",
+                    "id": "1895",
                     "Title": "Colour",
                     "Text": "Our dropdowns come in different types and a set of states. The types have the same styling, with some additional elements added depending on state. These additional elments are specified for each type. The container is using the same shadow-settings used on our cards.\n\n**Collapsed**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1820",
+                    "id": "1896",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$white</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "887",
+                    "id": "905",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2088",
+                        "id": "2160",
                         "label": "Enabled",
                         "caption": null,
                         "size": "Small",
@@ -14547,12 +14536,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d6db6f758c3e4877a8d1f5b6f94c4e39.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/8b272d9d51c643d3abc167b0fb0de332.png"
                           }
                         ]
                       },
                       {
-                        "id": "2089",
+                        "id": "2161",
                         "label": "Hover",
                         "caption": null,
                         "size": "Small",
@@ -14560,12 +14549,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/09fce3a4487e4036adfeb5fb8afb7d43.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/ac2fe9736cc74ffb9251f260abd85f91.png"
                           }
                         ]
                       },
                       {
-                        "id": "2090",
+                        "id": "2162",
                         "label": "Focused",
                         "caption": null,
                         "size": "Small",
@@ -14573,12 +14562,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f8524360e82343ee8fcd943d47c741e4.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/60f1cf48958349c8b6bc1c320fcd28e6.png"
                           }
                         ]
                       },
                       {
-                        "id": "2091",
+                        "id": "2163",
                         "label": "Pressed",
                         "caption": null,
                         "size": "Small",
@@ -14586,12 +14575,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b4e48a6d01b646b5bf547d446418ee1e.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/721fd75298834b78ae96d0156f24cdf4.png"
                           }
                         ]
                       },
                       {
-                        "id": "2092",
+                        "id": "2164",
                         "label": "Disabled",
                         "caption": null,
                         "size": "Small",
@@ -14599,12 +14588,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c40c7d0a2c55402f80a385d2ab3a5efd.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/6e0f6d58a81143449147a776e4cb648a.png"
                           }
                         ]
                       },
                       {
-                        "id": "2093",
+                        "id": "2165",
                         "label": "Error",
                         "caption": null,
                         "size": "Small",
@@ -14612,7 +14601,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/734c1a8dd5844017b1a52d9c2df48ad9.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/e9d166323e91490d8d33411c2bd3671a.png"
                           }
                         ]
                       }
@@ -14623,25 +14612,25 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1821",
+                    "id": "1897",
                     "Title": null,
                     "Text": "**Expanded**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1822",
+                    "id": "1898",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Option container</th>\n    <th>Option border</th>\n     <th>Option text</th>\n     <th>Divider</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue -50</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$blue-100</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "888",
+                    "id": "906",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2094",
+                        "id": "2166",
                         "label": "Enabled",
                         "caption": null,
                         "size": "Small",
@@ -14649,12 +14638,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/16e0341598cb4641adb8b0244c7f77b1.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/96b244248740445f96f955296af19193.png"
                           }
                         ]
                       },
                       {
-                        "id": "2095",
+                        "id": "2167",
                         "label": "Hover",
                         "caption": null,
                         "size": "Small",
@@ -14662,12 +14651,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e0be562bdc7a412d85afe1da24d536a7.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/0fcba53379c0495bb8b1827fa657da90.png"
                           }
                         ]
                       },
                       {
-                        "id": "2096",
+                        "id": "2168",
                         "label": "Focused",
                         "caption": null,
                         "size": "Small",
@@ -14675,12 +14664,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/33adf02462f34dbeb2433b82b5e94a44.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/719042884d84414eb915c6bdad5d1695.png"
                           }
                         ]
                       },
                       {
-                        "id": "2097",
+                        "id": "2169",
                         "label": "Enabled: Selected",
                         "caption": null,
                         "size": "Small",
@@ -14688,7 +14677,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b95b6a53b72447658cf5cf73bd4fb14f.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/d03925326fe1469b9dda5d302aec1335.png"
                           }
                         ]
                       }
@@ -14699,25 +14688,25 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1823",
+                    "id": "1899",
                     "Title": null,
                     "Text": "**Expanded (Filter)**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1824",
+                    "id": "1900",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Placeholder text</th>\n    <th>Border-bottom</th>\n     <th>Input text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-500</td> \n    <td>$blue-500</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Typing</td>\n    <td>-</td> \n    <td>$blue-500</td>\n    <td>$grey-900</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "889",
+                    "id": "907",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2098",
+                        "id": "2170",
                         "label": "Enabled",
                         "caption": null,
                         "size": "Small",
@@ -14725,12 +14714,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ebdb3039ab704eeab337040318bbbfc7.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/8fa7c39bb31b41539d20bca883eef511.png"
                           }
                         ]
                       },
                       {
-                        "id": "2099",
+                        "id": "2171",
                         "label": "Typing",
                         "caption": null,
                         "size": "Small",
@@ -14738,7 +14727,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b38475ffb7d344d8a89d0aceb7490b76.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/dc30f642aa5f4fe5b47a0b8207413d50.png"
                           }
                         ]
                       }
@@ -14749,32 +14738,32 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1825",
+                    "id": "1901",
                     "Title": "Sizing",
                     "Text": "A dropdown contains a lot of elements in combination with a container. Depending on the dropdown size, the spacing to its elements varies inside the dropdown.\n\nThe sizes are large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.\n\nThe width of the dropdown varies, since it should align with the context and layout where it is placed.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1826",
+                    "id": "1902",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n     <th>Icon</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Large</td>\n    <td>Fluid</td> \n    <td>56 / 14</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td> \n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Small</td>\n    <td>Fluid</td> \n    <td>40 / 10</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Full bleed</td>\n    <td>Fluid</td> \n    <td>56 / 14\n            48 / 12\n            40 / 10</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1827",
+                    "id": "1903",
                     "Title": null,
                     "Text": "**Large**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "890",
+                    "id": "908",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2100",
+                        "id": "2172",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14782,12 +14771,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b834d6ce1bab4fce95cebc693756e890.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/e802b1390a294de8ab19039ad14a0905.png"
                           }
                         ]
                       },
                       {
-                        "id": "2101",
+                        "id": "2173",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14795,12 +14784,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/6f58768dbf2b414d843ceff2bdef5fa6.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/2a400154cf144bcf9c2593769e75aaab.png"
                           }
                         ]
                       },
                       {
-                        "id": "2102",
+                        "id": "2174",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14808,12 +14797,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/98d4d19875e0418a9870f902bd146f3d.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/af1a32c5f07f426a91311d8a5b012554.png"
                           }
                         ]
                       },
                       {
-                        "id": "2103",
+                        "id": "2175",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14821,12 +14810,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/f1ad37ef683d41c29cad27177f4b661e.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/afc1a6a2f18544afb529e50b8a39c4e9.png"
                           }
                         ]
                       },
                       {
-                        "id": "2104",
+                        "id": "2176",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14834,12 +14823,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/4ccba5699adf4fd0b6931c4352da850a.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/947d9425a98a41deb89d8a1c29e3542d.png"
                           }
                         ]
                       },
                       {
-                        "id": "2105",
+                        "id": "2177",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14847,7 +14836,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e0459dde80534323b74b405e5cfabffc.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/f142675470514d2fb18cc103a5beb544.png"
                           }
                         ]
                       }
@@ -14858,18 +14847,18 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1828",
+                    "id": "1904",
                     "Title": null,
                     "Text": "**Medium**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "891",
+                    "id": "909",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2106",
+                        "id": "2178",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14877,12 +14866,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/168ee30b5de0497d97f91cca6674ae86.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/1d047f14a9704cf3a1eb6646dd95ed04.png"
                           }
                         ]
                       },
                       {
-                        "id": "2107",
+                        "id": "2179",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14890,12 +14879,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2aacde1ea640435c97b31f32169ef1e2.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/153586a730f64121810958f000add189.png"
                           }
                         ]
                       },
                       {
-                        "id": "2108",
+                        "id": "2180",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14903,12 +14892,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/044302a138cf4f56b09716b609f795c4.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/60c4a6d652094375992ff81be58a5009.png"
                           }
                         ]
                       },
                       {
-                        "id": "2109",
+                        "id": "2181",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14916,12 +14905,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c8fcc3b2eb674e379f39977cdccf05be.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/7a4b61f3286e40f281f0201ebeb8a8a7.png"
                           }
                         ]
                       },
                       {
-                        "id": "2110",
+                        "id": "2182",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14929,12 +14918,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/cc791af8f45d43cebe8f14e4c30e0c02.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/72d6e52ba18a42a9a568e1f0b6d07273.png"
                           }
                         ]
                       },
                       {
-                        "id": "2111",
+                        "id": "2183",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14942,7 +14931,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c5792641267f43bf9774261b9795bc10.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/7afb2363ca534a07911331b0d425593a.png"
                           }
                         ]
                       }
@@ -14953,18 +14942,18 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1829",
+                    "id": "1905",
                     "Title": null,
                     "Text": "**Small**",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "892",
+                    "id": "910",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2112",
+                        "id": "2184",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14972,12 +14961,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/beb05685763243cfb745b1bd0b4b9de8.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/e42ecf5b705f42e7aaa5eb5a6f286cef.png"
                           }
                         ]
                       },
                       {
-                        "id": "2113",
+                        "id": "2185",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14985,12 +14974,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/1c8430566fc04a7ca2df16d5de2c7958.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/a749d5d2fb214281950449817186cb89.png"
                           }
                         ]
                       },
                       {
-                        "id": "2114",
+                        "id": "2186",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -14998,12 +14987,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/b1e7ddc77e1d4705ab8be26dcbb478af.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/9391951511034b81b7d88102569cd373.png"
                           }
                         ]
                       },
                       {
-                        "id": "2115",
+                        "id": "2187",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15011,12 +15000,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/607b5879988a428f9d5e2ad1739fd45a.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/d298d774e7dc4aee986e5df3fb5a8d3b.png"
                           }
                         ]
                       },
                       {
-                        "id": "2116",
+                        "id": "2188",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15024,12 +15013,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/c62e727c7c5c4e2bba2700de98b541ac.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/635340f8f68f4be698e0de0445f26996.png"
                           }
                         ]
                       },
                       {
-                        "id": "2117",
+                        "id": "2189",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15037,7 +15026,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/002983e02e7547ab81084bf52f88f441.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/a6237491ffec462a9d667c37383d7cc5.png"
                           }
                         ]
                       }
@@ -15048,18 +15037,18 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1830",
+                    "id": "1906",
                     "Title": null,
                     "Text": "**Label inside**\n\nWhen using label inside, the label text animates and positions above the Option text, which takes the Label text old position, when a user has done a selection. Label inside is available for the sizes Large and Medium. ",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "893",
+                    "id": "911",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2118",
+                        "id": "2190",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15067,12 +15056,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ee672734149b4e8b8e88d9e3bdc064ed.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/2f762b58c32142ccb211a79e36d2c0c0.png"
                           }
                         ]
                       },
                       {
-                        "id": "2119",
+                        "id": "2191",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15080,7 +15069,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/968a3b4c728440dc8874f3c1eae4c994.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/5f6daaa706b14344a2637a49457b1286.png"
                           }
                         ]
                       }
@@ -15091,18 +15080,18 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1831",
+                    "id": "1907",
                     "Title": null,
                     "Text": "**Label outside**\n\nLabel outside is available for all sizes.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "894",
+                    "id": "912",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2120",
+                        "id": "2192",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15110,12 +15099,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/0f07e0b23bac4b1e9c8e71763db7e551.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/bcaf5d8642eb44b1a7f7db4b3ca4052b.png"
                           }
                         ]
                       },
                       {
-                        "id": "2121",
+                        "id": "2193",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15123,12 +15112,12 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3b1734a8614446448b921ca71b425885.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/7d0c632abb6c44969907a16e532bb14d.png"
                           }
                         ]
                       },
                       {
-                        "id": "2122",
+                        "id": "2194",
                         "label": null,
                         "caption": null,
                         "size": "Small",
@@ -15136,7 +15125,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/58fc7440774b4dc78bbaaa770618fad2.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/041feb8445154c019f2e32b1a79bcb3a.png"
                           }
                         ]
                       }
@@ -15147,39 +15136,39 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1832",
+                    "id": "1908",
                     "Title": "Typography",
                     "Text": "The label text should start with the first letter set in upper case, and the remaining letters in lower case. For all of our dropdown types and sizes, we are using the same typography.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1833",
+                    "id": "1909",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Label text</td>\n    <td>$detail-02</td> \n  </tr>\n  <tr>\n    <td>Label text inside (focused)</td>\n    <td>$detail-07</td> \n  </tr>\n<tr>\n    <td>Label text outside</td>\n    <td>$detail-05</td> \n  </tr>\n<tr>\n    <td>Option text</td>\n    <td>$detail-02</td>\n  </tr>\n<tr>\n    <td>Helper text</td>\n    <td>$detail-05</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1834",
+                    "id": "1910",
                     "Title": "Corner radius",
                     "Text": "The dropdown and option container have rounded corners with a 4px / 1 rem corner radius.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1835",
+                    "id": "1911",
                     "Title": null,
                     "Text": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top, bottom, left and right</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "895",
+                    "id": "913",
                     "Title": null,
                     "Images": [
                       {
-                        "id": "2123",
+                        "id": "2195",
                         "label": null,
                         "caption": null,
                         "size": "Large",
@@ -15187,7 +15176,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/fc3661d1a59b468bace90a594be68899.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/14dc966243d24e829e06cd9fe33ceb48.png"
                           }
                         ]
                       }
