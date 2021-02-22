@@ -7741,6 +7741,16 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/cards"
+                      },
+                      {
+                        "id": "244",
+                        "title": "Component",
+                        "description": "Dropdowns",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/dropdowns"
                       }
                     ],
                     "dosAndDonts": []
@@ -7786,7 +7796,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://sdds-cms.s3.amazonaws.com/27bbfde88f884124b1aa34e8f78b38f9.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/4096746c465e47ea8939e111484f85e1.png"
                         }
                       ]
                     },
@@ -15196,7 +15206,28 @@
           "id": "256",
           "title": "Code",
           "active": true,
-          "pageContent": []
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q1",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2020-12-14T10:57:36.968Z"
+              }
+            }
+          ]
         }
       ],
       "parent": {
