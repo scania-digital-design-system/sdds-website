@@ -1,0 +1,14 @@
+<div testDir ngClass="{{height ? 'expandable' : ''}}">
+  <pre ngClass="{{toggle ? 'expand': ''}}"><code #codeSnippet></code></pre>
+  <button
+    *ngIf="height"
+    (click)="OnToggle()"
+    ngClass="{{toggle ? 'expand': ''}}"
+    class="sdds-btn sdds-btn-fullbleed sdds-headline-07 sdds-btn-expand">
+    {{toggle ? 'Show less' : 'Show more'}}
+    <span></span>
+  </button>
+  <span class="sdds-code-snippet-copy-btn">
+    <span (click)="copy()" class="sdds-code-snippet-copy"></span>
+  </span>
+</div>

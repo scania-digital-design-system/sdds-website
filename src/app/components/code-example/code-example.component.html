@@ -3,10 +3,7 @@
     <h5 class="code-preview-title">{{example.title}}</h5>
     <div class="code-preview" [innerHTML]="example.code | keepHtml"></div>
   </ng-template>
-  <pre><code>{{example.code}}</code></pre>
+  <div>
+    <code-snippet></code-snippet>
+  </div>
 </section>
-
-<!-- If code-properties is empty don't show -->
-
-<!-- <div code-properties [currentComponent]='example' (change)='showProps($event)' [hidden]='emptyParent'></div> -->
-
