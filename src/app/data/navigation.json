@@ -115,9 +115,9 @@
               "thumbnail": null
             },
             {
-              "id": "58",
-              "url": "dividers",
-              "title": "Dividers",
+              "id": "110",
+              "url": "accordions",
+              "title": "Accordions",
               "displayLink": null,
               "thumbnail": null
             },
@@ -139,23 +139,9 @@
               "thumbnail": null
             },
             {
-              "id": "146",
-              "url": "dropdowns",
-              "title": "Dropdowns",
-              "displayLink": null,
-              "thumbnail": null
-            },
-            {
-              "id": "103",
-              "url": "textfields",
-              "title": "Text fields",
-              "displayLink": null,
-              "thumbnail": null
-            },
-            {
-              "id": "107",
-              "url": "radio-buttons",
-              "title": "Radio buttons",
+              "id": "145",
+              "url": "cards",
+              "title": "Cards",
               "displayLink": null,
               "thumbnail": null
             },
@@ -167,16 +153,16 @@
               "thumbnail": null
             },
             {
-              "id": "109",
-              "url": "toggles",
-              "title": "Toggles",
+              "id": "58",
+              "url": "dividers",
+              "title": "Dividers",
               "displayLink": null,
               "thumbnail": null
             },
             {
-              "id": "110",
-              "url": "accordions",
-              "title": "Accordions",
+              "id": "146",
+              "url": "dropdowns",
+              "title": "Dropdowns",
               "displayLink": null,
               "thumbnail": null
             },
@@ -188,16 +174,30 @@
               "thumbnail": null
             },
             {
-              "id": "112",
-              "url": "Tooltips",
-              "title": "Tooltips",
+              "id": "107",
+              "url": "radio-buttons",
+              "title": "Radio buttons",
               "displayLink": null,
               "thumbnail": null
             },
             {
-              "id": "145",
-              "url": "cards",
-              "title": "Cards",
+              "id": "103",
+              "url": "textfields",
+              "title": "Text fields",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "109",
+              "url": "toggles",
+              "title": "Toggles",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "112",
+              "url": "Tooltips",
+              "title": "Tooltips",
               "displayLink": null,
               "thumbnail": null
             }
