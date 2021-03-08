@@ -6763,7 +6763,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1645",
                     "Title": "Sizes",
-                    "Text": "As our [buttons](https://digitaldesign.scania.com/components/buttons), there are four different dropdown sizes: large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.",
+                    "Text": "There are four different dropdown sizes: large, medium and small, where large is our primary dropdown size.",
                     "LeadText": null
                   },
                   {
@@ -6807,19 +6807,6 @@
                         "image": [
                           {
                             "url": "https://sdds-cms.s3.amazonaws.com/ad641e07165e4260aee665ed1c623373.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "1793",
-                        "label": "Full bleed",
-                        "caption": "Fluid width of the screen or in components",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5f45df7461f64217bb50b8e9f77c7c1d.png"
                           }
                         ]
                       }
@@ -7118,7 +7105,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1669",
                     "Title": null,
-                    "Text": "**Label text**\n\nThe label text will help us to describe to the users what the dropdown contains and all of our dropdown types also have variations on how the label text could be used; label inside, no label and label outside. \n\nYou should select dropdown variation  based on which context the dropdown will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the label inside works well for more narrow spaces and label outside is a good option for forms with a lot of dropdowns present, making it easier for the users to decode the information. When using label outside, you still need to have a dropdown text present. Note, for our smallest size ‘Small’, you can not use label-inside due to size limitations.\n\nNo label is a good choice when adding a dropdown inside a data table, where a label will be present in the column head instead.  ",
+                    "Text": "**Label text**\n\nThe label text will help us to describe to the users what the dropdown contains and all of our dropdown types also have variations on how the label text could be used; label inside, no label and label outside. \n\nYou should select dropdown variation based on which context the dropdown will be placed in and what works best with the applications design you are working with in general. \n\nFor instance, the label inside works well for more narrow spaces and label outside is a good option for forms with a lot of dropdowns present, making it easier for the users to decode the information. When using label outside, you still need to have a dropdown text present. Note, for our smallest size ‘Small’, you can not use label-inside due to size limitations.\n\nNo label is a good choice when adding a dropdown inside a data table, where a label will be present in the column head instead.  \n\nMake sure to keep the label text short and concised.",
                     "LeadText": null
                   },
                   {
@@ -7495,14 +7482,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1901",
                     "Title": "Sizing",
-                    "Text": "A dropdown contains a lot of elements in combination with a container. Depending on the dropdown size, the spacing to its elements varies inside the dropdown.\n\nThe sizes are large, medium, small and full bleed, where large is our primary dropdown size. The full bleed size is available for default, medium and small.\n\nThe width of the dropdown varies, since it should align with the context and layout where it is placed.",
+                    "Text": "A dropdown contains a lot of elements in combination with a container. Depending on the dropdown size, the spacing to its elements varies inside the dropdown.\n\nThe sizes are large, medium, and small, where large is our primary dropdown size. \n\nThe width of the dropdown varies, since it should align with the context and layout where it is placed. We have a recommended minimum width, but there might be specific scenarios where you need to have a smaller width, and therefor it is possible to remove.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1902",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n     <th>Icon</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Large</td>\n    <td>Fluid</td> \n    <td>56 / 14</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td> \n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Small</td>\n    <td>Fluid</td> \n    <td>40 / 10</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Full bleed</td>\n    <td>Fluid</td> \n    <td>56 / 14\n            48 / 12\n            40 / 10</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Size</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n     <th>Icon</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Large</td>\n    <td>Fluid</td> \n    <td>56 / 14</td>\n    <td>16x16</td>\n  </tr>\n  <tr>\n    <td>Medium</td>\n    <td>Fluid</td> \n    <td>48 / 12</td>\n    <td>16x16</td>\n  </tr>\n<tr>\n    <td>Small</td>\n    <td>Fluid</td> \n    <td>40 / 10</td>\n    <td>16x16</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
