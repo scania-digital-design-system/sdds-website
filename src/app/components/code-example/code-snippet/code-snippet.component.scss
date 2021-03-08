@@ -3,6 +3,8 @@
 @import '~node_modules/@scania/typography/dist/scss/tokens';
 
 
+//FIXME: Scrollbar custom is needed
+
 :host {
   ::ng-deep {
 
@@ -16,7 +18,7 @@
         color: var(--sdds-red-400);
       }
       .hljs-attr {
-        color: var(--sdds-blue-500);
+        color: var(--sdds-blue-400);
       }
     }
 
@@ -78,7 +80,7 @@
     color: white;
     text-align: left;
     background-color: var(--sdds-grey-800);
-    box-shadow: var(--sdds-grey-900) 0px -17px 0px;
+    // box-shadow: var(--sdds-grey-900) 0px -17px 0px; //Keep it for later, if needed
     border: none;
     border-radius: 0 0 1rem 1rem;
 
