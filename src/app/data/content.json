@@ -4797,7 +4797,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://sdds-cms.s3.amazonaws.com/c1230174c10b4a57860a57944d5363c7.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/0b442d5faa734cd3ab495b3747674fa9.png"
                         }
                       ]
                     },
@@ -4950,7 +4950,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "569",
                     "Title": "Secondary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2c164d61b082459fa455fe22fbbcdb8b.png\"></td>\n    <td>Orange</td>\n    <td>#E35205</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-900</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ebd5e9cee91c48a3a300963db685c039.png\"></td>\n    <td>Orange</td>\n    <td>#FA6E23</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
@@ -15154,7 +15154,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://sdds-cms.s3.amazonaws.com/4096746c465e47ea8939e111484f85e1.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/1b61508021944133a0fc42f45024c553.png"
                         }
                       ]
                     },
