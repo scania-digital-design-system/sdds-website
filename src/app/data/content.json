@@ -15372,12 +15372,12 @@
                       "id": "2229",
                       "label": "User Persona example",
                       "caption": null,
-                      "size": "Large",
+                      "size": "Xlarge",
                       "negative": null,
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f18dac5760d04ee8b4995177f859ddc2.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/d22067b5d28d4dcc8463b84edea25278.png"
                         }
                       ]
                     },
