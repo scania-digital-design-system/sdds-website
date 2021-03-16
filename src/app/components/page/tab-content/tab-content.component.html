@@ -143,7 +143,8 @@
 
           <!-- If Dos and Donts -->
           <ng-container *ngIf="section.dosAndDonts">
-            <div *ngFor="let item of section.dosAndDonts" class="no-padding sdds-col-sm-4 sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4">
+            <div *ngFor="let item of section.dosAndDonts"
+              [ngClass]="('no-padding sdds-col-sm-4 ' + (item.size === 'Small' || item.size === null ? 'sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4' : '') + (item.size === 'Medium' ? 'sdds-col-md-8 sdds-col-lg-8 sdds-col-xlg-8 sdds-col-xxlg-8' : '') + (item.size === 'Large' ? 'sdds-col-md-8 sdds-col-lg-12 sdds-col-xlg-12 sdds-col-xxlg-12' : '') + '')">
               <div [ngClass]="('do-dont '+(item.type))">
                 <img [src]="item.image.url"/>
                 <span class="check-mark"></span>
