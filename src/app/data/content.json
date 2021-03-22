@@ -6524,7 +6524,7 @@
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "655",
-                    "title": "Placement Bottom",
+                    "title": "Tooltip Bottom",
                     "code": "<div style=\"text-align: center;\">\n  <sdds-tooltip placement=\"bottom\" selector=\"#bottom-1\" text=\"Tooltip\" ></sdds-tooltip>\n  <button class=\"sdds-btn sdds-btn-primary\" id=\"bottom-1\">Button</button>\n</div>",
                     "componentTag": null,
                     "preview": true
@@ -6541,7 +6541,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "806",
                     "title": "Tooltip Right",
-                    "code": "<div style=\"text-align: center;\">\n  <sdds-tooltip placement=\"left\" selector=\"#left-1\" text=\"Tooltip\"></sdds-tooltip>\n  <button class=\"sdds-btn sdds-btn-primary\" id=\"left-1\">Button</button>\n</div>",
+                    "code": "<div style=\"text-align: center;\">\n  <sdds-tooltip placement=\"right\" selector=\"#right-1\" text=\"Tooltip\"></sdds-tooltip>\n  <button class=\"sdds-btn sdds-btn-primary\" id=\"right-1\">Button</button>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -6549,7 +6549,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "807",
                     "title": "Tooltip Left",
-                    "code": "<div style=\"text-align: center;\">\n  <sdds-tooltip placement=\"right\" selector=\"#right-1\" text=\"Tooltip\"></sdds-tooltip>\n  <button class=\"sdds-btn sdds-btn-primary\" id=\"right-1\">Button</button>\n</div>",
+                    "code": "<div style=\"text-align: center;\">\n  <sdds-tooltip placement=\"left\" selector=\"#left-1\" text=\"Tooltip\"></sdds-tooltip>\n  <button class=\"sdds-btn sdds-btn-primary\" id=\"left-1\">Button</button>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -16077,7 +16077,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "825",
+                    "id": "833",
                     "title": "card with supporting text",
                     "code": "<div class=\"sdds-card \">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
                     "componentTag": null,
@@ -16085,7 +16085,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "826",
+                    "id": "834",
                     "title": "Card with divider",
                     "code": "<div class=\"sdds-card\">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
                     "componentTag": null,
@@ -16093,7 +16093,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "827",
+                    "id": "835",
                     "title": "Card with link",
                     "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><a href=\"#\">Link text</a><a href=\"#\">Link text</a></div>\n</div>",
                     "componentTag": null,
@@ -16101,7 +16101,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "828",
+                    "id": "836",
                     "title": "Card with button action",
                     "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><button class=\"sdds-btn sdds-btn-sm sdds-btn-primary\">Button text</button></div>\n</div>",
                     "componentTag": null,
@@ -16109,7 +16109,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "829",
+                    "id": "837",
                     "title": "Card with image on top",
                     "code": "<div class=\"sdds-card \">\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></c-icon></div>\n</div>",
                     "componentTag": null,
@@ -16117,7 +16117,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "830",
+                    "id": "838",
                     "title": "Card with image in the middle",
                     "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></c-icon></div>\n</div>",
                     "componentTag": null,
@@ -16125,7 +16125,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "831",
+                    "id": "839",
                     "title": "Card with avatar in header",
                     "code": "<div class=\"sdds-card\">\n        \n  <div class=\"sdds-card-header-avatar\">\n   <div class=\"sdds-card-avatar\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"18\" fill=\"#E2E2E4\"></circle></svg></div>\n    <div class=\"sdds-card-headlines\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n      <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  \n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
                     "componentTag": null,
@@ -16133,7 +16133,7 @@
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
-                    "id": "832",
+                    "id": "840",
                     "title": "Card with clickable states",
                     "code": "<div class=\"sdds-card sdds-clickable\">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n </div>",
                     "componentTag": null,
@@ -16399,8 +16399,8 @@
                     "linkCards": [
                       {
                         "id": "282",
-                        "title": null,
-                        "description": null,
+                        "title": "Component",
+                        "description": "Header",
                         "info": null,
                         "image": {
                           "url": "https://sdds-cms.s3.amazonaws.com/5cc4c08d88f84baf8048dcd70998a02c.png"
@@ -16411,8 +16411,8 @@
                       },
                       {
                         "id": "283",
-                        "title": null,
-                        "description": null,
+                        "title": "Component",
+                        "description": "Tabs",
                         "info": null,
                         "image": {
                           "url": "https://sdds-cms.s3.amazonaws.com/5d8506170a4a4975a21579fdd34053a3.png"
@@ -16423,8 +16423,8 @@
                       },
                       {
                         "id": "284",
-                        "title": null,
-                        "description": null,
+                        "title": "Component",
+                        "description": "Breadcrumbs",
                         "info": null,
                         "image": {
                           "url": "https://sdds-cms.s3.amazonaws.com/79576fbba4174a01b5082c432c6db65c.png"
@@ -16498,14 +16498,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2267",
                     "Title": "Colour",
-                    "Text": "**Side menu**",
+                    "Text": "**Side menu**\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2268",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "",
                     "LeadText": null
                   },
                   {
@@ -16711,7 +16711,11 @@
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
-                        "image": []
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/26eff36d8fc742a0b35778e4338bc698.png"
+                          }
+                        ]
                       }
                     ],
                     "texts": [],
