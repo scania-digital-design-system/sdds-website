@@ -16060,7 +16060,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2154",
                     "Title": "Introduction",
-                    "Text": "Card is works like a container to present content with a specifc action. The action can be the card it self or with inside the footer as a link. Card is a very flexible component.\nCard is built on three container options: \n- Header\n- Body\n- Footer\n\nInside the header you can place headlines and avatar image. Inside the body you have the support text for the card. Inside the footer is the placement for the actions like links or button. \nDivider component can be used inside the card to create a divider line between, for example the header and body. It also has support for image placement in both the top and middle of the card. ",
+                    "Text": "Card is works like a container to present content with a specific action. The action can be the card it self or with inside the footer as a link. Card is a very flexible component.\nCard is built on three container options: \n- Header\n- Body\n- Footer\n\nInside the header you can place headlines and avatar image. Inside the body you have the support text for the card. Inside the footer is the placement for the actions like links or button. \nDivider component can be used inside the card to create a divider line between, for example the header and body. It also has support for image placement in both the top and middle of the card. ",
                     "LeadText": {
                       "textfield": "",
                       "Introduction": true,
