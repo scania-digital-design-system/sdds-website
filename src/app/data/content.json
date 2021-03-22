@@ -1867,7 +1867,7 @@
             {
               "content": {
                 "id": "202",
-                "title": "Coming Q1",
+                "title": "Coming Q2",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -1875,13 +1875,13 @@
                     "Title": null,
                     "Text": "",
                     "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
                       "Introduction": true,
                       "id": "183"
                     }
                   }
                 ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -3321,7 +3321,7 @@
             {
               "content": {
                 "id": "202",
-                "title": "Coming Q1",
+                "title": "Coming Q2",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -3329,13 +3329,13 @@
                     "Title": null,
                     "Text": "",
                     "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
                       "Introduction": true,
                       "id": "183"
                     }
                   }
                 ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -4298,7 +4298,7 @@
             {
               "content": {
                 "id": "202",
-                "title": "Coming Q1",
+                "title": "Coming Q2",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4306,13 +4306,13 @@
                     "Title": null,
                     "Text": "",
                     "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
                       "Introduction": true,
                       "id": "183"
                     }
                   }
                 ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -4657,7 +4657,7 @@
             {
               "content": {
                 "id": "202",
-                "title": "Coming Q1",
+                "title": "Coming Q2",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -4665,13 +4665,13 @@
                     "Title": null,
                     "Text": "",
                     "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q1 2021.",
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
                       "Introduction": true,
                       "id": "183"
                     }
                   }
                 ],
-                "updated_at": "2020-12-14T10:57:36.968Z"
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -5441,382 +5441,6 @@
       "submenus": []
     },
     {
-      "id": "179",
-      "url": "Modals",
-      "displayLink": null,
-      "title": "Modals",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "291",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "314",
-                "title": "Components Modals Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1981",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Modals disrupts the workflow to focus users’ attention to a specific task or message to complete before resuming their workflow.",
-                      "Introduction": true,
-                      "id": "351"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1982",
-                    "Title": "Usage",
-                    "Text": "Modals are tightly integrated into user’s workflow to present information for users to take the next steps in their workflow. They can also be used to provide feedback from the system to the user, and to prompt users to take action or to notify users about information that is important for them to accomplish their task.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1983",
-                    "Title": "Sizes",
-                    "Text": "The modals overlay will completely cover the entire page in the application, while the modal container needs to be adjusted to the content it will contain. \n\nThe modal comes in four sizes; large, medium, small and xsmall, where medium is our primary modal size. XSmall and Small should be used for shorter messages, and medium and large should be used for larger amount of content in combination with complex components. Select the modal size that works best for the content that you want to add to the modal.\n\n##### XSmall\nUsed to display short messages.\n\n##### Small\nUsed for messages with multiple lines of text, together with a couple of components.\n\n##### Medium\nUsed for moderate amount of content like text in combination with components like multiple forms or wizards.\n\n##### Large\nUsed for larger amounts of content like text in combination with components like multiple forms or wizards.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1984",
-                    "Title": "Anatomy",
-                    "Text": "The modal always consists of the following elements; card, close icon, header text and overlay.\n\nThe overlay will completely cover the entire page in the application, and the card will be positioned above the overlay. The close icon is always positioned in the top-right corner of the modal, which will close the modal when being pressed.\n\nAn overlay could also contain a lot of other elements, such as body text, components like text fields, check boxes along with actions such as buttons. \n\nBelow is an example of a modal, to show a possible composition of a modal pattern. You can read more about the different modal patterns that exist in our [modal pattern section.](link)",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2234",
-                      "label": null,
-                      "caption": "A. Header text\nB. Card\nC. Overlay\nD. Close icon\nE. Body text\nF. Text field\nG. Dropdown\nH. Buttons",
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/2b7177ada6fa461bad1e11a38731d43e.png"
-                        }
-                      ]
-                    },
-                    "id": "200"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2016",
-                    "Title": "Do's and Don'ts",
-                    "Text": "Below you will find some best practice solutions for modals.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2017",
-                    "Title": null,
-                    "Text": "##### Use modals with caution\nThe purpose of modals is to disrupt the workflow and present a message that blocks the user from continuing until the modal is dismissed. For this reason, modals can be frustrating when used for communicating non-critical messages or actions that is not related to the task.\n\nFor less critical and task unrelated messages, it’s better to use non disruptive components like alerts.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "958",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/d6d1858365474d4f909e3a8f565988fc.png"
-                        },
-                        "size": "Large",
-                        "description": "Use modals to direct users focus to important actions related to their task or critical information",
-                        "id": "243"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/49e0372a52434c16b734dd1f7e36207f.png"
-                        },
-                        "size": "Large",
-                        "description": "Be that guy",
-                        "id": "244"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-03-22T11:33:33.292Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "292",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "318",
-                "title": "Components Modals Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2018",
-                    "Title": "Colour",
-                    "Text": "All components used in the modal, should follow the colours specified for each component.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "69",
-                    "tableTitle": null,
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Card</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Icon</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Overlay</td>\n    <td>$black 40%</td>\n  </tr>\n  <tr>\n    <td>Header text</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Body text</td>\n    <td>$grey-900</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Small"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2300",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/3b4ffa47caee420ca0fd9fae59a3051c.png"
-                        }
-                      ]
-                    },
-                    "id": "247"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2087",
-                    "Title": "Sizing",
-                    "Text": "##### Sizes\nThe modal comes in four sizes; large, medium, small and xsmall. The widths are based on our grid systems columns, and will vary in width depending on the breakpoint size. The height of the modal depends on the content inside the card, and will therefore vary.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "116",
-                    "tableTitle": "Large",
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>8 / 8</td>\n    <td>8 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>12 / 16</td>\n    <td>8 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>12 / 16</td>\n    <td>12 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>12 / 16</td>\n    <td>12 / 16</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "117",
-                    "tableTitle": "Medium",
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>7 / 8</td>\n    <td>7 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>10 / 16</td>\n    <td>7 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>10 / 16</td>\n    <td>10 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>8 / 16</td>\n    <td>8 / 16</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "118",
-                    "tableTitle": "Small",
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>6 / 8</td>\n    <td>6 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>7 / 16</td>\n    <td>5 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>6 / 16</td>\n    <td>7 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>6 / 16</td>\n    <td>6 / 16</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "119",
-                    "tableTitle": "XSmall",
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>4 / 8</td>\n    <td>4 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>5 / 16</td>\n    <td>4 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>5 / 16</td>\n    <td>5 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>4 / 16</td>\n    <td>4 / 16</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Medium"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2088",
-                    "Title": null,
-                    "Text": "##### Mobile size\nOn mobile devices, all of our modals are covering 100% of the breakpoint width and height except for the xSmall, which instead is aligned to the grid system columns and covering 4 of 4 columns.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2301",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/01c8b83317c34dcca136aa05c2295966.png"
-                        }
-                      ]
-                    },
-                    "id": "248"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2089",
-                    "Title": null,
-                    "Text": "##### Examples\nSince the content of the card will vary, you need to define the spacing for the elements that you are using. We do have some specific spacing defined, for instance we are always using the same side-margins (16px / 4rem) as well as specific margin between the header text and the content below (16px / 4rem). The spacing between the content, if a card does not have any actions, is also fixed (40px / 10rem).\n\nWhen creating new modals, make sure to use our [Layout scale](https://digitaldesign.scania.com/foundations/spacing/information#layout-scale), which is using our Unit System, when adding space between the elements that are being used.\n\nBelow shows a variety of different modals to get an understanding for how they are structured and how to organize the elements within our cards. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2302",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/35aec53f15704c6abcd54114c3c05def.png"
-                        }
-                      ]
-                    },
-                    "id": "249"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2303",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/7df1ac89c07743bfa29121d1bf237e72.png"
-                        }
-                      ]
-                    },
-                    "id": "250"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2090",
-                    "Title": null,
-                    "Text": "We have different right margins for the elements (except close icon) in our smallest modal XSmall and Small to Large modals.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2304",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/e417fef67bd1487a8ff52059d091a97a.png"
-                        }
-                      ]
-                    },
-                    "id": "251"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2305",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f5fa106550d640238c7a6b55ce90c837.png"
-                        }
-                      ]
-                    },
-                    "id": "252"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2091",
-                    "Title": "Typography",
-                    "Text": "The header text should start with the first letter set in upper case, and the remaining letters in lower case. Always keep the header text short and concise.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "120",
-                    "tableTitle": null,
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header text</td>\n    <td>$headline-05</td>\n  </tr>\n  <tr>\n    <td>Body text</td>\n    <td>$body-01</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Small"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2092",
-                    "Title": "Corner radius",
-                    "Text": "The card has rounded corners with a 4px / 1 rem corner radius.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentNestedTable",
-                    "id": "121",
-                    "tableTitle": null,
-                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
-                    "size": "Large"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2306",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://sdds-cms.s3.amazonaws.com/c57993122e69468d8879009644ac1400.png"
-                        }
-                      ]
-                    },
-                    "id": "253"
-                  }
-                ],
-                "updated_at": "2021-03-22T11:33:03.178Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
       "id": "38",
       "url": "overview",
       "displayLink": "Overview",
@@ -6578,6 +6202,766 @@
       "submenus": []
     },
     {
+      "id": "181",
+      "url": "header",
+      "displayLink": null,
+      "title": "Header",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "297",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "320",
+                "title": "Components Header Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2285",
+                    "Title": "",
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The header helps to establish a global way for our users to navigate in our applications, as well as beeing a brand carrier.",
+                      "Introduction": true,
+                      "id": "370"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2286",
+                    "Title": "Usage",
+                    "Text": "The header is a core component and the first thing our users will see when entering an application. It informs the user about the sender of the application It is frequently used in different navigation patterns that allows users to browse the content of an application in a structured way. \n\nIt can also contain important system-level functions, such as notifications, search, app switcher, and user profile settings.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2287",
+                    "Title": "Types",
+                    "Text": "We have two different types of headers at Scania; functional and expressive. Depending on what type of application you are designing, one of these types should be used. Note, currently we have only defined the functional header. The expressive header is still under development.\n\n##### Functional\nShould be used for our applications where ergonomics and efficiency takes precedence over brand awareness, since the focus is to help our users in their everyday tasks. Mainly for applications that requires a log-in access, for instance Fleet Management Portal, Autonomous Vehicle Control and Reflex.\n\n##### Expressive\nShould be used for more branded external communication and our public websites. For instance Scania.com or a Scania webshop. Not yet finalised/under development.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2288",
+                    "Title": "Navigation",
+                    "Text": "When logged in in a functional application the default header always contains the application name along with the Scania symbol. It could also contain the toolbar, with important system-level functions, such as notifications, search, app switcher, and user profile settings.\n\nThe header could either be used on its own, or being paired with the component side menu.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2517",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/31eea6766b5a4470b86a190a2c80fe68.png"
+                        }
+                      ]
+                    },
+                    "id": "267"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2300",
+                    "Title": null,
+                    "Text": "Depending on the complexity of an application, the header solution varies. Either the header contains page links (inline menu) or it will be paired with a side menu, which then contains the page links.\n\n##### Inline menu\nFor applications with up to ~3 sections, the inline menu should be used. On this type the page links are located in our header.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2518",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/55b712d89f884bab93890a8ad4bb3546.png"
+                        }
+                      ]
+                    },
+                    "id": "268"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2301",
+                    "Title": null,
+                    "Text": "##### Side menu\nApplications with a larger page structure, more than 3 sections, should use the default header paired with the side menu. On this type the page links are located in the side menu.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2519",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/0d88639078944dc8afc6b7c6242f51b5.png"
+                        }
+                      ]
+                    },
+                    "id": "269"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2302",
+                    "Title": "Anatomy",
+                    "Text": "The header always contains the application name and the Scania symbol (depending on the breakpoint). The Scania symbol always directs you to the start page of the application. The rest of the elements are optional, and should be used depending on your applications requirements and which navigation solution you are using.\n\nThe inline menu is only positioned in the header for applications with up to ~3 sections.\n\nThe toolbar contains links for important system-level functions, such as notifications, search, app switcher, and user profile. Depending on your applications needs and requirements, the amount of links varies.\n\nThe app switcher, which is a part of the toolbar, enables for users to go from one application to another. \n\nThe inline menu along with a part of the toolbar collapses into a menu on smaller devices.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2520",
+                      "label": null,
+                      "caption": "A. Application name\nB. Inline menu\nC. Toolbar\nD. App switcher\nE. Scania symbol\nF. Menu drawer",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/a70d0a88c2514fa8bbcff1f105028e11.png"
+                        }
+                      ]
+                    },
+                    "id": "270"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2303",
+                    "Title": "Behaviour",
+                    "Text": "##### Interaction\nThe header has different states, such as hover and press. Visit the style tab for full detailed specifications for all of the states.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2521",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/11866400976c444fb4f4537b5404b929.png"
+                        }
+                      ]
+                    },
+                    "id": "271"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2304",
+                    "Title": null,
+                    "Text": "##### Responsive\nOn smaller breakpoints and devices,  $medium (tablet) and $small (mobile), the inline menu and the toolbar are moved to the menu drawer, which on click expands and shows the side menu. More information about this is available on the component page for the side menu.\n\nThe menu is then always present, along with the app switcher (if its needed). If really necessary, it is possible to show one more toolbar item in the header, but that can only be done on breakpoints larger than $small-375. \n\nOn smaller breakpoints, starting from the width 520px, the Scania symbol is removed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2522",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/aee64ec29a5544b29f41964c32c4eea8.png"
+                        }
+                      ]
+                    },
+                    "id": "272"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2305",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for headers.\n\n##### Usage\nWhen applications consist of multiple pages, its easy as a user to lose track since multiple  links will make the header cluttered and hard for the users to scan. And the more links we add in the header, the fewer options we can have present in our toolbar. \n\nWhen your application has more than 3 sections, you should use the header with side menu. And when your application has 3 or less sections, use the inline menu.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1080",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f3fdcea58ffc42188c7217451f4b7fe5.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the inline menu for applications with 3 or less sections",
+                        "id": "254"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/2724869051c340499e5620aa957db83a.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the inline menu for applications with 3 or more sections",
+                        "id": "255"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2306",
+                    "Title": "Related",
+                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1081",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "287",
+                        "title": "Component",
+                        "description": "Side menu",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/sidemenu"
+                      },
+                      {
+                        "id": "289",
+                        "title": "Components",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-03-22T15:58:46.249Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "298",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "321",
+                "title": "Components Header Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2307",
+                    "Title": "Colour",
+                    "Text": "##### Header\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Application name</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Divider</td>\n    <td>$blue-800</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2523",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f68969987370402f90b3d678e4233cf7.png"
+                        }
+                      ]
+                    },
+                    "id": "273"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2310",
+                    "Title": null,
+                    "Text": "##### Toolbar\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1083",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2529",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a3bdaa0bc54e40d1859fa069600fe847.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2530",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a0fa174e6a314e4aaa1e162a4a0a5a05.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2531",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ba31b9660f3d471f9171a34f8b986d06.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2532",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/df97244ad0e042dab32ec3586c232f19.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2533",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3eb585dcd484451a8f8c3ea7a000de20.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2311",
+                    "Title": null,
+                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Bottom-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1086",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2546",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8ef984cbc33a49b3992faa11505fe4ee.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2547",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1d828d6150a1440cb14611c6ca807e34.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2548",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/4e6183a4c02b4f938dc963774c7dabdc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2549",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/b02d2864530d41b0b1c0ae6f61bdfae5.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2550",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a0d6bc309f824d37995f3bd7829df50a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2551",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a7e27e11ce2748ef953182d8d3162251.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2312",
+                    "Title": null,
+                    "Text": "##### Sub-menu item\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Text</th>\n    <th>Container</th>\n    <th>Icon</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-600</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1089",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2556",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2518ec4de6b047c2bcea14c46d0372dc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2557",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/1968e850b2574eafb891c1fce82dde4c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2558",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/a61c7c450e2b43358f6a4f0dd8a62a25.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2313",
+                    "Title": "Sizing",
+                    "Text": "##### Header\nThe header is a fluid element, which means it should fill the entire browser window width.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>Fluid</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Icon container</td>\n    <td>64 / 16</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Symbol</td>\n    <td>32 / 16</td>\n    <td>Scale proportionally</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2568",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/e1331ef62a9346b8b087542d42b25ae0.png"
+                        }
+                      ]
+                    },
+                    "id": "283"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2569",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/4396fb2924f349aa9281c3da81fe6dbd.png"
+                        }
+                      ]
+                    },
+                    "id": "284"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2570",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/978f5159b8424d1ba42b982b61751aee.png"
+                        }
+                      ]
+                    },
+                    "id": "285"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2315",
+                    "Title": null,
+                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Link container</td>\n    <td>Width varies</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Bottom-border</td>\n    <td>Width varies</td>\n    <td>4 / 1</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2583",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/c3f98630d3fa426fa8a1b27ee3215b42.png"
+                        }
+                      ]
+                    },
+                    "id": "298"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2584",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/ec52c484512843bf83b2dd579932db26.png"
+                        }
+                      ]
+                    },
+                    "id": "299"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2585",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/29b336456f544cd3af724ff1361c3220.png"
+                        }
+                      ]
+                    },
+                    "id": "300"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2318",
+                    "Title": null,
+                    "Text": "##### Sub menu\nThe sub menu has a minimun width of 192px. It expands with the length of the sub page name. The height of the sub menu depends on the amount of sub pages inside the sub menu.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>64 / 16</td>\n    <td>Varies</td>\n  </tr>\n  <tr>\n    <td>Sub page container</td>\n    <td>Varies</td>\n    <td>Min. 192 / 48</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2319",
+                    "Title": null,
+                    "Text": "##### Mobile header\nDetailed specifications for the expanded side menu, is available on the component page side menus style tab for full detailed specifications for all of the states.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2588",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/ce3f05239d9b42648630a0fc1678cfdf.png"
+                        }
+                      ]
+                    },
+                    "id": "303"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2321",
+                    "Title": "Typography",
+                    "Text": "Sub menus, Page links, and Sub page link starts with the first letter set in upper case, and the remaining letters in lower case. Same typography styles are applied on all header sizes, from $xxlarge to $small.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Page link</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td>\n    <td>All states except selected</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td>\n    <td>Selected</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-03-22T16:24:43.399Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "299",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "10",
       "url": "button-groups",
       "displayLink": null,
@@ -6619,6 +7003,1193 @@
         }
       ],
       "parent": null,
+      "submenus": []
+    },
+    {
+      "id": "179",
+      "url": "Modals",
+      "displayLink": null,
+      "title": "Modals",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "291",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "314",
+                "title": "Components Modals Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1981",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Modals disrupts the workflow to focus users’ attention to a specific task or message to complete before resuming their workflow.",
+                      "Introduction": true,
+                      "id": "351"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1982",
+                    "Title": "Usage",
+                    "Text": "Modals are tightly integrated into user’s workflow to present information for users to take the next steps in their workflow. They can also be used to provide feedback from the system to the user, and to prompt users to take action or to notify users about information that is important for them to accomplish their task.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1983",
+                    "Title": "Sizes",
+                    "Text": "The modals overlay will completely cover the entire page in the application, while the modal container needs to be adjusted to the content it will contain. \n\nThe modal comes in four sizes; large, medium, small and xsmall, where medium is our primary modal size. XSmall and Small should be used for shorter messages, and medium and large should be used for larger amount of content in combination with complex components. Select the modal size that works best for the content that you want to add to the modal.\n\n##### XSmall\nUsed to display short messages.\n\n##### Small\nUsed for messages with multiple lines of text, together with a couple of components.\n\n##### Medium\nUsed for moderate amount of content like text in combination with components like multiple forms or wizards.\n\n##### Large\nUsed for larger amounts of content like text in combination with components like multiple forms or wizards.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1984",
+                    "Title": "Anatomy",
+                    "Text": "The modal always consists of the following elements; card, close icon, header text and overlay.\n\nThe overlay will completely cover the entire page in the application, and the card will be positioned above the overlay. The close icon is always positioned in the top-right corner of the modal, which will close the modal when being pressed.\n\nAn overlay could also contain a lot of other elements, such as body text, components like text fields, check boxes along with actions such as buttons. \n\nBelow is an example of a modal, to show a possible composition of a modal pattern. You can read more about the different modal patterns that exist in our [modal pattern section.](link)",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2234",
+                      "label": null,
+                      "caption": "A. Header text\nB. Card\nC. Overlay\nD. Close icon\nE. Body text\nF. Text field\nG. Dropdown\nH. Buttons",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/2b7177ada6fa461bad1e11a38731d43e.png"
+                        }
+                      ]
+                    },
+                    "id": "200"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2016",
+                    "Title": "Do's and Don'ts",
+                    "Text": "Below you will find some best practice solutions for modals.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2017",
+                    "Title": null,
+                    "Text": "##### Use modals with caution\nThe purpose of modals is to disrupt the workflow and present a message that blocks the user from continuing until the modal is dismissed. For this reason, modals can be frustrating when used for communicating non-critical messages or actions that is not related to the task.\n\nFor less critical and task unrelated messages, it’s better to use non disruptive components like alerts.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "958",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/d6d1858365474d4f909e3a8f565988fc.png"
+                        },
+                        "size": "Large",
+                        "description": "Use modals to direct users focus to important actions related to their task or critical information",
+                        "id": "243"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/49e0372a52434c16b734dd1f7e36207f.png"
+                        },
+                        "size": "Large",
+                        "description": "Be that guy",
+                        "id": "244"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-03-22T11:33:33.292Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "292",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "318",
+                "title": "Components Modals Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2018",
+                    "Title": "Colour",
+                    "Text": "All components used in the modal, should follow the colours specified for each component.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "69",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Card</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Icon</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Overlay</td>\n    <td>$black 40%</td>\n  </tr>\n  <tr>\n    <td>Header text</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Body text</td>\n    <td>$grey-900</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Small"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2300",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/3b4ffa47caee420ca0fd9fae59a3051c.png"
+                        }
+                      ]
+                    },
+                    "id": "247"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2087",
+                    "Title": "Sizing",
+                    "Text": "##### Sizes\nThe modal comes in four sizes; large, medium, small and xsmall. The widths are based on our grid systems columns, and will vary in width depending on the breakpoint size. The height of the modal depends on the content inside the card, and will therefore vary.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "116",
+                    "tableTitle": "Large",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>8 / 8</td>\n    <td>8 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>12 / 16</td>\n    <td>8 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>12 / 16</td>\n    <td>12 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>12 / 16</td>\n    <td>12 / 16</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "117",
+                    "tableTitle": "Medium",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>7 / 8</td>\n    <td>7 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>10 / 16</td>\n    <td>7 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>10 / 16</td>\n    <td>10 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>8 / 16</td>\n    <td>8 / 16</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "118",
+                    "tableTitle": "Small",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>6 / 8</td>\n    <td>6 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>7 / 16</td>\n    <td>5 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>6 / 16</td>\n    <td>7 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>6 / 16</td>\n    <td>6 / 16</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "119",
+                    "tableTitle": "XSmall",
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Columns (Grid System)</th>\n    <th>Columns (Grid Push System)</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>4 / 4</td>\n    <td>4 / 4</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>4 / 8</td>\n    <td>4 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>5 / 16</td>\n    <td>4 / 8</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>5 / 16</td>\n    <td>5 / 16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>4 / 16</td>\n    <td>4 / 16</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Medium"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2088",
+                    "Title": null,
+                    "Text": "##### Mobile size\nOn mobile devices, all of our modals are covering 100% of the breakpoint width and height except for the xSmall, which instead is aligned to the grid system columns and covering 4 of 4 columns.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2301",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/01c8b83317c34dcca136aa05c2295966.png"
+                        }
+                      ]
+                    },
+                    "id": "248"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2089",
+                    "Title": null,
+                    "Text": "##### Examples\nSince the content of the card will vary, you need to define the spacing for the elements that you are using. We do have some specific spacing defined, for instance we are always using the same side-margins (16px / 4rem) as well as specific margin between the header text and the content below (16px / 4rem). The spacing between the content, if a card does not have any actions, is also fixed (40px / 10rem).\n\nWhen creating new modals, make sure to use our [Layout scale](https://digitaldesign.scania.com/foundations/spacing/information#layout-scale), which is using our Unit System, when adding space between the elements that are being used.\n\nBelow shows a variety of different modals to get an understanding for how they are structured and how to organize the elements within our cards. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2302",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/35aec53f15704c6abcd54114c3c05def.png"
+                        }
+                      ]
+                    },
+                    "id": "249"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2303",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/7df1ac89c07743bfa29121d1bf237e72.png"
+                        }
+                      ]
+                    },
+                    "id": "250"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2090",
+                    "Title": null,
+                    "Text": "We have different right margins for the elements (except close icon) in our smallest modal XSmall and Small to Large modals.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2304",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/e417fef67bd1487a8ff52059d091a97a.png"
+                        }
+                      ]
+                    },
+                    "id": "251"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2305",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f5fa106550d640238c7a6b55ce90c837.png"
+                        }
+                      ]
+                    },
+                    "id": "252"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2091",
+                    "Title": "Typography",
+                    "Text": "The header text should start with the first letter set in upper case, and the remaining letters in lower case. Always keep the header text short and concise.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "120",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header text</td>\n    <td>$headline-05</td>\n  </tr>\n  <tr>\n    <td>Body text</td>\n    <td>$body-01</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Small"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2092",
+                    "Title": "Corner radius",
+                    "Text": "The card has rounded corners with a 4px / 1 rem corner radius.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "121",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>4 px / 1 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2306",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://sdds-cms.s3.amazonaws.com/c57993122e69468d8879009644ac1400.png"
+                        }
+                      ]
+                    },
+                    "id": "253"
+                  }
+                ],
+                "updated_at": "2021-03-22T11:33:03.178Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "300",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "180",
+      "url": "sidemenu",
+      "displayLink": null,
+      "title": "Side menu",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "293",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "316",
+                "title": "Components Side Menu Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2142",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
+                      "Introduction": null,
+                      "id": "368"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2143",
+                    "Title": "Usage",
+                    "Text": "The side menu should always be paired with the [functional header](components/header), when it is used for applications with a large page structure, like more than 3 sections. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1016",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2348",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3e3f3c80a4a7497eb5aa1400d8004727.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2144",
+                    "Title": "Types",
+                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, [tabs](https://) should be used for this specific purpose. Read more about it at our [Navigation Pattern](https://).\n\n**Collapsible**\n\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1017",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2349",
+                        "label": "Expanded & Collapsed example",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/ee46a1b3e8c0418fa97a9a72b80942df.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2145",
+                    "Title": "Anatomy",
+                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1018",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2350",
+                        "label": null,
+                        "caption": "A. Header links\nB. Icons",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/65e34a4f592c4ed48e31eb7088ee720e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2146",
+                    "Title": "Behaviour",
+                    "Text": "**Interaction**\nThe side menu has different states, such as hover and press. Visit the [style tab](https://) for full detailed specifications for all of the states.\n\n\n**Sub-menu expand/collapse**\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1019",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2351",
+                        "label": "Sub-menu item collapsed",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/45bf0b760aea45fd9674fe393f3d8d49.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2352",
+                        "label": "Sub-menu item expanded",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d7f5b1b7ef3b4d6988092e8f503da93e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2147",
+                    "Title": null,
+                    "Text": "**Responsive**\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1020",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2353",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/60dce05f5a43492d8e2693795d04bf36.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2148",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for side menu.\n\n**Usage**\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1021",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/79ccdb071bd846a18803741d51b42313.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with more than 3 sections",
+                        "id": "252"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/f2ba25c746034f8d99ff1a3d3c8843a6.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with 3 or less sections",
+                        "id": "253"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2149",
+                    "Title": "Related",
+                    "Text": "**Components**\nThe following components are also used for navigation inside our applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1022",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "282",
+                        "title": "Component",
+                        "description": "Header",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/5cc4c08d88f84baf8048dcd70998a02c.png"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/header"
+                      },
+                      {
+                        "id": "284",
+                        "title": "Component",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": {
+                          "url": "https://sdds-cms.s3.amazonaws.com/79576fbba4174a01b5082c432c6db65c.png"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-03-22T11:01:27.856Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "294",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "317",
+                "title": "Components Side Menu Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2267",
+                    "Title": "Colour",
+                    "Text": "**Side menu**\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2268",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1072",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2485",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/53f1692578d04533869534c76e9cbe7e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2269",
+                    "Title": null,
+                    "Text": "**Side menu items**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2270",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1073",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2486",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bbebd980d1e64598891037d96dd44fca.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2487",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/79fffdaaf3dc49da8c66b1c37ba01d59.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2488",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/d48e64a2df1e4623baca59fa9f7b9e26.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2489",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/7469aef123514ca598ae45d8920b9ec3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2490",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/e1ca3a1c81304c35a30b720d21d6acfe.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2491",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5d7578adc58e489a8af511f1e241b6db.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2271",
+                    "Title": null,
+                    "Text": "**Sub-menu items**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2272",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1074",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2492",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8effc57447844282b1dd3793f8ea9b37.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2493",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9f7df665a3604e7fbaf95eb984e65766.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2494",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/2b9d051a1aa94bc5b89c4130fca99c76.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2495",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/5d1b04ec44fd4616a443f4330e81f0d2.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2496",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/26eff36d8fc742a0b35778e4338bc698.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2273",
+                    "Title": null,
+                    "Text": "**Mobile overlay**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2274",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1075",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2497",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2275",
+                    "Title": "Sizing",
+                    "Text": "**Side menu**\n\nThe width of the side menus container is fixed until it reaches smaller viewports. The height of the side menu should fill the entire browser window height. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2276",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1076",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2498",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/9de12a97ad424d47bbcd7e9693aacd55.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2277",
+                    "Title": null,
+                    "Text": "**Side menu on smaller breakpoints**\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2278",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1077",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2499",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bc1fee8df5104ae5b4a66f2869da3070.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2279",
+                    "Title": null,
+                    "Text": "**Side menu items**\n\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2280",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1078",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2500",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2501",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/3b503de9f50b460493ca12ee91c3f509.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2281",
+                    "Title": null,
+                    "Text": "**Sub menu items**",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2282",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1079",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2502",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/bd49da3168744e88b123d6fcf1dee86b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2503",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://sdds-cms.s3.amazonaws.com/70530996a1884168937949fe4d20aa02.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2283",
+                    "Title": "Typography",
+                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2284",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-03-22T11:02:41.247Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "301",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
       "submenus": []
     },
     {
@@ -15247,6 +16818,13 @@
           "displayLink": null,
           "title": "Side menu",
           "thumbnail": null
+        },
+        {
+          "id": "181",
+          "url": "header",
+          "displayLink": null,
+          "title": "Header",
+          "thumbnail": null
         }
       ]
     },
@@ -16141,814 +17719,6 @@
                   }
                 ],
                 "updated_at": "2021-03-22T14:15:54.926Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "180",
-      "url": "sidemenu",
-      "displayLink": null,
-      "title": "Side menu",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "293",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "316",
-                "title": "Components Side Menu Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2142",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
-                      "Introduction": null,
-                      "id": "368"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2143",
-                    "Title": "Usage",
-                    "Text": "The side menu should always be paired with the [functional header](https://), when it is used for applications with a large page structure, like more than 3 sections. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1016",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2348",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3e3f3c80a4a7497eb5aa1400d8004727.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2144",
-                    "Title": "Types",
-                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, [tabs](https://) should be used for this specific purpose. Read more about it at our [Navigation Pattern](https://).\n\n**Collapsible**\n\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1017",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2349",
-                        "label": "Expanded & Collapsed example",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/ee46a1b3e8c0418fa97a9a72b80942df.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2145",
-                    "Title": "Anatomy",
-                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1018",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2350",
-                        "label": null,
-                        "caption": "A. Header links\nB. Icons",
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/65e34a4f592c4ed48e31eb7088ee720e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2146",
-                    "Title": "Behaviour",
-                    "Text": "**Interaction**\nThe side menu has different states, such as hover and press. Visit the [style tab](https://) for full detailed specifications for all of the states.\n\n\n**Sub-menu expand/collapse**\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1019",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2351",
-                        "label": "Sub-menu item collapsed",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/45bf0b760aea45fd9674fe393f3d8d49.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2352",
-                        "label": "Sub-menu item expanded",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d7f5b1b7ef3b4d6988092e8f503da93e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2147",
-                    "Title": null,
-                    "Text": "**Responsive**\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1020",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2353",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/60dce05f5a43492d8e2693795d04bf36.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2148",
-                    "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for side menu.\n\n**Usage**\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1021",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/79ccdb071bd846a18803741d51b42313.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with more than 3 sections",
-                        "id": "252"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f2ba25c746034f8d99ff1a3d3c8843a6.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with 3 or less sections",
-                        "id": "253"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2149",
-                    "Title": "Related",
-                    "Text": "**Components**\nThe following components are also used for navigation inside our applications.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1022",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "282",
-                        "title": "Component",
-                        "description": "Header",
-                        "info": null,
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/5cc4c08d88f84baf8048dcd70998a02c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "283",
-                        "title": "Component",
-                        "description": "Tabs",
-                        "info": null,
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/5d8506170a4a4975a21579fdd34053a3.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "284",
-                        "title": "Component",
-                        "description": "Breadcrumbs",
-                        "info": null,
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/79576fbba4174a01b5082c432c6db65c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "https://digitaldesign.scania.com/components/breadcrumbs"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2150",
-                    "Title": null,
-                    "Text": "**Patterns**\nLearn more about our patterns for header and navigation.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1023",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "285",
-                        "title": "Pattern",
-                        "description": "Header",
-                        "info": null,
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/fb64853f744e48168e853edb8853aab9.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      },
-                      {
-                        "id": "286",
-                        "title": "Pattern",
-                        "description": "Navigation",
-                        "info": null,
-                        "image": {
-                          "url": "https://sdds-cms.s3.amazonaws.com/f07d4f0a92674fe58d2f80168a23af7e.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": null
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-03-22T11:01:27.856Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "294",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "317",
-                "title": "Components Side Menu Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2267",
-                    "Title": "Colour",
-                    "Text": "**Side menu**\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2268",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1072",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2485",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/53f1692578d04533869534c76e9cbe7e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2269",
-                    "Title": null,
-                    "Text": "**Side menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2270",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1073",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2486",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bbebd980d1e64598891037d96dd44fca.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2487",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/79fffdaaf3dc49da8c66b1c37ba01d59.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2488",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/d48e64a2df1e4623baca59fa9f7b9e26.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2489",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/7469aef123514ca598ae45d8920b9ec3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2490",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/e1ca3a1c81304c35a30b720d21d6acfe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2491",
-                        "label": "Expanded",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5d7578adc58e489a8af511f1e241b6db.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2271",
-                    "Title": null,
-                    "Text": "**Sub-menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2272",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1074",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2492",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8effc57447844282b1dd3793f8ea9b37.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2493",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9f7df665a3604e7fbaf95eb984e65766.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2494",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/2b9d051a1aa94bc5b89c4130fca99c76.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2495",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/5d1b04ec44fd4616a443f4330e81f0d2.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2496",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/26eff36d8fc742a0b35778e4338bc698.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2273",
-                    "Title": null,
-                    "Text": "**Mobile overlay**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2274",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1075",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2497",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2275",
-                    "Title": "Sizing",
-                    "Text": "**Side menu**\n\nThe width of the side menus container is fixed until it reaches smaller viewports. The height of the side menu should fill the entire browser window height. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2276",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1076",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2498",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/9de12a97ad424d47bbcd7e9693aacd55.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2277",
-                    "Title": null,
-                    "Text": "**Side menu on smaller breakpoints**\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2278",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1077",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2499",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bc1fee8df5104ae5b4a66f2869da3070.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2279",
-                    "Title": null,
-                    "Text": "**Side menu items**\n\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2280",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1078",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2500",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2501",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/3b503de9f50b460493ca12ee91c3f509.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2281",
-                    "Title": null,
-                    "Text": "**Sub menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2282",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1079",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2502",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/bd49da3168744e88b123d6fcf1dee86b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2503",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://sdds-cms.s3.amazonaws.com/70530996a1884168937949fe4d20aa02.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2283",
-                    "Title": "Typography",
-                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2284",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-03-22T11:02:41.247Z"
               }
             }
           ]
