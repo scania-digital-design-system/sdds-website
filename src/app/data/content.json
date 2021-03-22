@@ -16628,6 +16628,26 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/Tooltips"
+                      },
+                      {
+                        "id": "290",
+                        "title": "Component",
+                        "description": "Header",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/header"
+                      },
+                      {
+                        "id": "291",
+                        "title": "Component",
+                        "description": "Side menu",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/sidemenu"
                       }
                     ],
                     "dosAndDonts": []
