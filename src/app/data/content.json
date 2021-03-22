@@ -16078,7 +16078,7 @@
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "833",
-                    "title": "card with supporting text",
+                    "title": "Card with supporting text",
                     "code": "<div class=\"sdds-card \">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
