@@ -200,6 +200,20 @@
               "title": "Tooltips",
               "displayLink": null,
               "thumbnail": null
+            },
+            {
+              "id": "179",
+              "url": "Modals",
+              "title": "Modals",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "180",
+              "url": "sidemenu",
+              "title": "Side menu",
+              "displayLink": null,
+              "thumbnail": null
             }
           ]
         },
