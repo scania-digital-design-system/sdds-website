@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'sdds-card',
+  selector: 'sdds-card-site',
   templateUrl: 'card.component.html',
   styleUrls: ['card.component.scss']
 })
