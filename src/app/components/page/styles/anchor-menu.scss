@@ -58,8 +58,8 @@
       &:active,
       &.active,
       &.active:visited {
-        color: var(--sdds-blue-900);
-        &:after {border-color: var(--sdds-blue-900);}
+        color: var(--sdds-grey-900);
+        &:after {border-color: var(--sdds-grey-400);}
       }
 
       &:visited {
@@ -67,7 +67,7 @@
       }
     }
 
-    &:first-child { 
+    &:first-child {
       margin-top: var(--sdds-spacing-element-32);
       a:before {padding-top:0; top:0;}
     }
