@@ -6249,7 +6249,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2288",
                     "Title": "Navigation",
-                    "Text": "When logged in in a functional application the default header always contains the application name along with the Scania symbol. It could also contain the toolbar, with important system-level functions, such as notifications, search, app switcher, and user profile settings.\n\nThe header could either be used on its own, or being paired with the component side menu.",
+                    "Text": "When logged in in a functional application the default header always contains the application name along with the Scania symbol. It could also contain the toolbar, with important system-level functions, such as notifications, search, app switcher, and user profile settings.\n\nThe header could either be used on its own, or being paired with the component [side menu](https://digitaldesign.scania.com/components/sidemenu).",
                     "LeadText": null
                   },
                   {
@@ -6301,7 +6301,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2301",
                     "Title": null,
-                    "Text": "##### Side menu\nApplications with a larger page structure, more than 3 sections, should use the default header paired with the side menu. On this type the page links are located in the side menu.",
+                    "Text": "##### Side menu\nApplications with a larger page structure, more than 3 sections, should use the default header paired with the side menu. On this type the page links are located in the [side menu](https://digitaldesign.scania.com/components/sidemenu).",
                     "LeadText": null
                   },
                   {
@@ -6353,7 +6353,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2303",
                     "Title": "Behaviour",
-                    "Text": "##### Interaction\nThe header has different states, such as hover and press. Visit the style tab for full detailed specifications for all of the states.",
+                    "Text": "##### Interaction\nThe header has different states, such as hover and press. Visit the [style tab](https://digitaldesign.scania.com/components/header/style) for full detailed specifications for all of the states.",
                     "LeadText": null
                   },
                   {
@@ -6379,7 +6379,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2304",
                     "Title": null,
-                    "Text": "##### Responsive\nOn smaller breakpoints and devices,  $medium (tablet) and $small (mobile), the inline menu and the toolbar are moved to the menu drawer, which on click expands and shows the side menu. More information about this is available on the component page for the side menu.\n\nThe menu is then always present, along with the app switcher (if its needed). If really necessary, it is possible to show one more toolbar item in the header, but that can only be done on breakpoints larger than $small-375. \n\nOn smaller breakpoints, starting from the width 520px, the Scania symbol is removed.",
+                    "Text": "##### Responsive\nOn smaller breakpoints and devices,  $medium (tablet) and $small (mobile), the inline menu and the toolbar are moved to the menu drawer, which on click expands and shows the side menu. More information about this is available on the component page for the [side menu](https://digitaldesign.scania.com/components/sidemenu).\nThe menu is then always present, along with the app switcher (if its needed). If really necessary, it is possible to show one more toolbar item in the header, but that can only be done on breakpoints larger than $small-375. \n\nOn smaller breakpoints, starting from the width 520px, the Scania symbol is removed.",
                     "LeadText": null
                   },
                   {
@@ -6888,7 +6888,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2319",
                     "Title": null,
-                    "Text": "##### Mobile header\nDetailed specifications for the expanded side menu, is available on the component page side menus style tab for full detailed specifications for all of the states.",
+                    "Text": "##### Mobile header\nDetailed specifications for the expanded side menu, is available on the component page [side menus style tab](https://digitaldesign.scania.com/components/sidemenu/style) for full detailed specifications for all of the states.",
                     "LeadText": null
                   },
                   {
@@ -7473,7 +7473,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2144",
                     "Title": "Types",
-                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, [tabs](https://) should be used for this specific purpose. Read more about it at our [Navigation Pattern](https://).\n\n**Collapsible**\n\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
+                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, tabs (coming soon) should be used for this specific purpose. Read more about it at our Navigation Pattern (coming soon)\n\n##### Collapsible\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
                     "LeadText": null
                   },
                   {
@@ -7520,7 +7520,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/65e34a4f592c4ed48e31eb7088ee720e.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/ae84d63ed8084be699a3d47f7b04ae30.png"
                           }
                         ]
                       }
@@ -7533,7 +7533,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2146",
                     "Title": "Behaviour",
-                    "Text": "**Interaction**\nThe side menu has different states, such as hover and press. Visit the [style tab](https://) for full detailed specifications for all of the states.\n\n\n**Sub-menu expand/collapse**\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
+                    "Text": "##### Interaction\nThe side menu has different states, such as hover and press. Visit the [style tab](components/sidemenu/style) for full detailed specifications for all of the states.\n\n\n##### Sub-menu expand/collapse\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
                     "LeadText": null
                   },
                   {
@@ -7576,7 +7576,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2147",
                     "Title": null,
-                    "Text": "**Responsive**\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
+                    "Text": "##### Responsive\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
                     "LeadText": null
                   },
                   {
@@ -7588,7 +7588,7 @@
                         "id": "2353",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -7606,7 +7606,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2148",
                     "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for side menu.\n\n**Usage**\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
+                    "Text": "Below you will find some best practice solutions for side menu.\n\n##### Usage\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
                     "LeadText": null
                   },
                   {
@@ -7641,7 +7641,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2149",
                     "Title": "Related",
-                    "Text": "**Components**\nThe following components are also used for navigation inside our applications.",
+                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
                     "LeadText": null
                   },
                   {
@@ -7699,14 +7699,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2267",
                     "Title": "Colour",
-                    "Text": "**Side menu**\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2268",
-                    "Title": null,
-                    "Text": "",
+                    "Text": "##### Side menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Side menu items",
                     "LeadText": null
                   },
                   {
@@ -7718,12 +7711,12 @@
                         "id": "2485",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://sdds-cms.s3.amazonaws.com/53f1692578d04533869534c76e9cbe7e.png"
+                            "url": "https://sdds-cms.s3.amazonaws.com/4bff3fd228a24104bf3c4678ab99ba81.png"
                           }
                         ]
                       }
@@ -7734,16 +7727,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2269",
-                    "Title": null,
-                    "Text": "**Side menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2270",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Side menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>",
                     "LeadText": null
                   },
                   {
@@ -7836,16 +7822,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2271",
-                    "Title": null,
-                    "Text": "**Sub-menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2272",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Sub-menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -7925,16 +7904,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2273",
-                    "Title": null,
-                    "Text": "**Mobile overlay**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2274",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Mobile overlay\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -7946,7 +7918,7 @@
                         "id": "2497",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -7964,14 +7936,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2275",
                     "Title": "Sizing",
-                    "Text": "**Side menu**\n\nThe width of the side menus container is fixed until it reaches smaller viewports. The height of the side menu should fill the entire browser window height. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2276",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Side menu\nThe width of the side menus container is fixed until it reaches smaller viewports. The height of the side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -7983,7 +7948,7 @@
                         "id": "2498",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -8001,14 +7966,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2277",
                     "Title": null,
-                    "Text": "**Side menu on smaller breakpoints**\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2278",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Side menu on smaller breakpoints\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.\n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -8020,7 +7978,7 @@
                         "id": "2499",
                         "label": null,
                         "caption": null,
-                        "size": "Large",
+                        "size": "Xlarge",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -8036,16 +7994,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2279",
-                    "Title": null,
-                    "Text": "**Side menu items**\n\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2280",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -8057,7 +8008,7 @@
                         "id": "2500",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -8070,7 +8021,7 @@
                         "id": "2501",
                         "label": null,
                         "caption": null,
-                        "size": "ExtraMedium",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -8086,16 +8037,9 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2281",
-                    "Title": null,
-                    "Text": "**Sub menu items**",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2282",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Sub menu items\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -8138,14 +8082,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2283",
                     "Title": "Typography",
-                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2284",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
+                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. \n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   }
                 ],
@@ -15010,7 +14947,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "648",
                     "title": "Basic textarea",
-                    "code": "<sdds-textarea state=\"default\" placeholder=\"Placeholder\" > </sdds-textarea>",
+                    "code": "<sdds-textarea placeholder=\"Placeholder\" > </sdds-textarea>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -15018,7 +14955,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "649",
                     "title": "Textarea with label inside",
-                    "code": "<sdds-textarea state=\"default\" label=\"Label text\" label-position=\"inside\" placeholder=\"Placeholder\" > </sdds-textarea> ",
+                    "code": "<sdds-textarea label=\"Label text\" label-position=\"inside\" placeholder=\"Placeholder\" > </sdds-textarea> ",
                     "componentTag": null,
                     "preview": true
                   },
@@ -15026,7 +14963,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "650",
                     "title": "Textarea with label outside",
-                    "code": "<sdds-textarea state=\"default\" label=\"Label text\" label-position=\"outside\" placeholder=\"Placeholder\" > </sdds-textarea>",
+                    "code": "<sdds-textarea label=\"Label text\" label-position=\"outside\" placeholder=\"Placeholder\" > </sdds-textarea>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -15034,7 +14971,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "651",
                     "title": "Textarea with helper text",
-                    "code": "<sdds-textarea state=\"default\" label=\"Label text\" helper=\"Helper text\" placeholder=\"Placeholder\" > </sdds-textarea>",
+                    "code": "<sdds-textarea label=\"Label text\" helper=\"Helper text\" placeholder=\"Placeholder\" > </sdds-textarea>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -15042,7 +14979,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "652",
                     "title": "Textarea with text counter",
-                    "code": "<sdds-textarea state=\"default\" placeholder=\"Placeholder\" maxlength=\"10\"> </sdds-textarea>",
+                    "code": "<sdds-textarea placeholder=\"Placeholder\" maxlength=\"10\"> </sdds-textarea>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -15350,6 +15287,13 @@
                       }
                     ],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2324",
+                    "Title": "References",
+                    "Text": "The above page is a collection of information and best practices around the topic of User Personas, from organizations like the Nielsen Norman Group, the Interaction Design Foundation, and others.",
+                    "LeadText": null
                   }
                 ],
                 "updated_at": "2021-03-03T15:24:37.915Z"
@@ -16693,7 +16637,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://sdds-cms.s3.amazonaws.com/1b61508021944133a0fc42f45024c553.png"
+                          "url": "https://sdds-cms.s3.amazonaws.com/98c94cc7efba453ba2e7e7d56cfab370.png"
                         }
                       ]
                     },
