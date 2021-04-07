@@ -79,6 +79,12 @@
       margin-bottom: var(--sdds-spacing-element-16);
     }
 
+    div.tab-content .sdds-container-push,
+    > div > div:nth-child(11),
+    > div h5 {
+      margin-bottom: var(--sdds-spacing-element-16);
+    }
+
     figure{
       margin-top: var(--sdds-spacing-element-8);
       margin-bottom: var(--sdds-spacing-element-24);
