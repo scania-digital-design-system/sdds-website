@@ -1,4 +1,4 @@
-<div class="card-wrapper" (click)="clickCard()">
+<!-- <div class="card-wrapper" (click)="clickCard()">
   <div *ngIf='card.image' [ngClass]="('card-image ' + type )" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
   <div class="card">
     <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
@@ -15,5 +15,44 @@
     <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
       <c-icon name='scania-arrow'></c-icon>
     </span>
+  </div>
+</div> -->
+
+<!-- <div class="card-wrapper" (click)="clickCard()">
+  <div *ngIf='card.image' [ngClass]="('card-image ' + type )" [style.backgroundImage]="'url(' + card.image.url + ')'"></div>
+  <div class="card">
+    <p class="sdds-headline-06 sdds-text-blue-300">{{card.title}}</p>
+    <p class="sdds-headline-06 sdds-text-blue-900">
+      {{card.description}}
+      <span *ngIf="card.info" class="sdds-headline-06 sdds-text-blue-300">{{card.info}}</span>
+    </p>
+    <p *ngIf="card.detail" class="card-detail sdds-detail-03 sdds-text-grey-900">
+      {{card.detail}}
+    </p>
+    <span class="card-link" *ngIf="card.type == 'download'">
+      <c-icon name='scania-save'></c-icon>
+    </span>
+    <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
+      <c-icon name='scania-arrow'></c-icon>
+    </span>
+  </div>
+</div> -->
+
+<div class="card-wrapper" (click)="clickCard()">
+
+  <div class="sdds-card">
+    <img *ngIf='card.image' [ngClass]="('sdds-card-img ' + type )" [style.backgroundImage]="'url(' + card.image.url + ')'">
+
+    <div class="sdds-card-header">
+      <h6 class="sdds-card-headline">{{card.title}}</h6>
+      <h6 class="sdds-card-sub-headline">{{card.description}}</h6>
+    </div>
+
+    <div *ngIf="card.detail" class="sdds-divider-light-border-top"></div>
+    <div *ngIf="card.detail" class="sdds-card-body">{{card.detail}}</div>
+
+    <div *ngIf="card.type == 'linkInternal' || card.type == 'linkExternal' " [ngClass]="('sdds-card-footer ' + (card.type))">
+      <c-icon style="font-size: 20px;" name="scania-arrow" class="hydrated"></c-icon>
+    </div>
   </div>
 </div>
