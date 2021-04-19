@@ -126,10 +126,7 @@
               "url": "breadcrumbs",
               "title": "Breadcrumbs",
               "displayLink": null,
-              "thumbnail": {
-                "id": "44",
-                "url": "https://sdds-cms.s3.amazonaws.com/978c234012d24a918c87ddd12a1b9d92.png"
-              }
+              "thumbnail": null
             },
             {
               "id": "5",
