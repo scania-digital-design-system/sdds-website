@@ -2,7 +2,7 @@ const { GraphQLClient } = require('graphql-request');
 const fs = require('fs');
 const HttpsProxyAgent = require('https-proxy-agent');
 
-const url = 'https://sdds-cms.herokuapp.com/graphql';
+const url = 'https://cms.digitaldesign.scania.com/graphql';
 // const url = 'http://localhost:1340/graphql';
 
 const init = () => {
