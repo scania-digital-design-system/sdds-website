@@ -232,14 +232,14 @@
           "id": "184",
           "url": "patterns",
           "title": "Patterns",
-          "displayLink": null,
+          "displayLink": "",
           "thumbnail": null,
           "submenus": [
             {
               "id": "183",
               "url": "forms",
               "title": "Forms",
-              "displayLink": null,
+              "displayLink": "",
               "thumbnail": null
             }
           ]
