@@ -150,6 +150,13 @@
               "thumbnail": null
             },
             {
+              "id": "182",
+              "url": "data-tables",
+              "title": "Data tables",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
               "id": "58",
               "url": "dividers",
               "title": "Dividers",
@@ -216,6 +223,22 @@
               "id": "180",
               "url": "sidemenu",
               "title": "Side menu",
+              "displayLink": null,
+              "thumbnail": null
+            }
+          ]
+        },
+        {
+          "id": "184",
+          "url": "patterns",
+          "title": "Patterns",
+          "displayLink": null,
+          "thumbnail": null,
+          "submenus": [
+            {
+              "id": "183",
+              "url": "forms",
+              "title": "Forms",
               "displayLink": null,
               "thumbnail": null
             }

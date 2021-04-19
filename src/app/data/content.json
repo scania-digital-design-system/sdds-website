@@ -15913,12 +15913,22 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/sidemenu"
+                      },
+                      {
+                        "id": "296",
+                        "title": "Component",
+                        "description": "Data tables",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "data-tables"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-11T09:54:43.032Z"
+                "updated_at": "2021-04-19T19:16:47.349Z"
               }
             }
           ]
@@ -16092,6 +16102,13 @@
           "url": "textfields",
           "displayLink": null,
           "title": "Text fields",
+          "thumbnail": null
+        },
+        {
+          "id": "182",
+          "url": "data-tables",
+          "displayLink": null,
+          "title": "Data tables",
           "thumbnail": null
         },
         {
@@ -19262,7 +19279,414 @@
           ]
         }
       ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "184",
+      "url": "patterns",
+      "displayLink": null,
+      "title": "Patterns",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [],
       "parent": null,
+      "submenus": [
+        {
+          "id": "183",
+          "url": "forms",
+          "displayLink": null,
+          "title": "Forms",
+          "thumbnail": null
+        }
+      ]
+    },
+    {
+      "id": "183",
+      "url": "forms",
+      "displayLink": null,
+      "title": "Forms",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginArticle",
+          "id": "51",
+          "pageContent": [
+            {
+              "content": {
+                "id": "326",
+                "title": "Patterns Forms",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2375",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Forms are a collection of input components put together to allow users to provide data or configure options.",
+                      "Introduction": true,
+                      "id": "390"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2376",
+                    "Title": "Usage",
+                    "Text": "There is usually a high degree of freedom when designing forms, considering that there are infinite variations that can be generated when combining components in different ways. That is exactly why it is particularly important to have some guidelines that will be followed, in order to achieve a consistent result which is effective and efficient for users to interact with.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2377",
+                    "Title": "Types",
+                    "Text": "The most common forms used within Scania are standard forms, full-width forms, multi-step forms and modal forms, all of which can be seen below.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2770",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/no1_74ddf75c0b.png"
+                        }
+                      ]
+                    },
+                    "id": "351"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2378",
+                    "Title": "Standard form",
+                    "Text": "A standard form is one of our most commonly used forms. It is preferable for less extensive forms and works well on pages consisting of other types of content. \n\nOur standard form extends over a maximum of 8 columns and can be adjusted to the left or to the centre.\n\n###### Left aligned",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2771",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_dc8e98485f.png"
+                        }
+                      ]
+                    },
+                    "id": "352"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2379",
+                    "Title": null,
+                    "Text": "###### Centre aligned",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2772",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_0025e244b3.png"
+                        }
+                      ]
+                    },
+                    "id": "353"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2380",
+                    "Title": "Full-width form",
+                    "Text": "As the name suggests, a full-width form extends the full width of a page, and should be used when the form is the most important element on a particular page. It works best when spacing is valued high. However, if the form ends up being very long, other variations of forms are suggested i.e. multi-step form. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2773",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_61c63e1cb3.png"
+                        }
+                      ]
+                    },
+                    "id": "354"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2381",
+                    "Title": "Multi-step form",
+                    "Text": "If your form grows in size to include a lot of information, it is recommended that you use a multi-step form, as it can be overwhelming to display all input elements on a single page. \n\nA multi-step form instead spreads the content across multiple pages and includes a progress bar to track the users' progress while making it possible to travel back and forth within the form.\n\nThere are two variants of multi-step forms; horizontal and vertical.\n\n##### a. Multi-step horizontal\nThis form should be used when the steps are limited, i.e. about 4 to 5.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2774",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_47d5101807.png"
+                        }
+                      ]
+                    },
+                    "id": "355"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2382",
+                    "Title": null,
+                    "Text": "##### b. Multi-step vertical\nThis form should be used for more complex forms, when the different steps are more than 6.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2775",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_ac1d73bbd1.png"
+                        }
+                      ]
+                    },
+                    "id": "356"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2383",
+                    "Title": "Modal form",
+                    "Text": "Sometimes a form is not part of a page but part of a larger context. In these cases, it is preferable to display the form in the form of a modal. This solution is also suitable when the focus should be entirely on the form. However, it is important to point out that in such a solution, the form should not be too long.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2776",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_0b71e907e8.png"
+                        }
+                      ]
+                    },
+                    "id": "357"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2384",
+                    "Title": "Mobile",
+                    "Text": "On mobile devices, we stack all input elements on top of each other. Input elements take up 100% of the width while the width of the button is dictated by its content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2777",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_b6221b3929.png"
+                        }
+                      ]
+                    },
+                    "id": "358"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2385",
+                    "Title": "Anatomy of a form",
+                    "Text": "Forms are made up of several components, some of which are [Text fields](components/textfields), [Dropdowns](components/dropdowns), [Radio buttons](components/radio-buttons) and [Buttons](components/buttons). It’s up to each designer to choose the most suitable components for his or hers respective need. \n\nBelow you can see an example of a standard form.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2778",
+                      "label": null,
+                      "caption": "A. Form title\nB. Brief description (Optional)\nC. Label\nD. Text inputs\nE. Data inputs\nF. Button",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/anatomy_8ee74ee21c.png"
+                        }
+                      ]
+                    },
+                    "id": "359"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2386",
+                    "Title": null,
+                    "Text": "##### Components\nHere is a list of components that are associated with forms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1124",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "292",
+                        "title": "Components",
+                        "description": "Textfields",
+                        "info": "",
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/textfields"
+                      },
+                      {
+                        "id": "293",
+                        "title": "Components",
+                        "description": "Checkboxes",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/checkboxes"
+                      },
+                      {
+                        "id": "294",
+                        "title": "Components",
+                        "description": "Radio buttons",
+                        "info": "",
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/radio-buttons"
+                      },
+                      {
+                        "id": "295",
+                        "title": "Components",
+                        "description": "Dropdown",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/dropdown"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2387",
+                    "Title": "Building a form",
+                    "Text": "When creating a form, it is important to consider spacing and key adjustments. This varies depending on the context and placement of the form. As an example, the spacing in a modal form or mobile form will not be the same as for a full-width form. However, there are certain key principles regarding spacing that can be applied to create a cohesive experience throughout.\n\nHere is a good approach to follow:\n\n- Start by selecting an initial value based on our Unit System\n- This value represents your spacing between the form title and your first input\n- For spacing between input elements (Text fields, Dropdowns, Radio buttons etc), take the initial value and subtract with 8px if your initial value is 24px and above, or 4px if the initial value is 20px and below.\n- For spacing between the last input and the button or button group, take the initial value and add 8px if your initial value is 24px and above or 4px if the initial value is 20px and below.\n\nThe table below serves as a cheat sheet for some of the more common values. Recommended initial value for standard forms is 32px.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2779",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Visual_ac418e570c.png"
+                        }
+                      ]
+                    },
+                    "id": "360"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2388",
+                    "Title": null,
+                    "Text": "##### Common spacings",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentNestedTable",
+                    "id": "124",
+                    "tableTitle": null,
+                    "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Initial value</th>\n    <th>Spacing between inputs</th>\n    <th>Spacing between last input and call to action</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>16 px / 4 rem</td>\n    <td>12 px / 3 rem</td>\n    <td>20 px / 5 rem</td>\n  </tr>\n  <tr>\n    <td>20 px / 5 rem</td>\n    <td>16 px / 4 rem</td>\n    <td>24 px / 6 rem</td>\n  </tr>\n  <tr>\n    <td>24 px / 6 rem</td>\n    <td>16 px / 4 rem</td>\n    <td>32 px / 8 rem</td>\n  </tr>\n  <tr>\n    <td>32 px / 8 rem</td>\n    <td>24 px / 6 rem</td>\n    <td>40 px / 10 rem</td>\n  </tr>\n  <tr>\n    <td>40 px / 10 rem</td>\n    <td>32 px / 8 rem</td>\n    <td>48 px / 12 rem</td>\n  </tr>\n</tbody>\n</table>",
+                    "size": "Large"
+                  }
+                ],
+                "updated_at": "2021-04-19T15:37:36.531Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "184",
+        "url": "patterns",
+        "displayLink": null,
+        "title": "Patterns",
+        "thumbnail": null
+      },
       "submenus": []
     }
   ]
