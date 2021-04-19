@@ -80,9 +80,8 @@
     }
 
     div.tab-content .sdds-container-push,
-    > div > div:nth-child(11),
-    > div h5 {
-      margin-bottom: var(--sdds-spacing-element-16);
+    h5 + h6 {
+      margin-top: var(--sdds-spacing-element-16);
     }
 
     figure{
