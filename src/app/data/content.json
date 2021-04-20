@@ -15968,14 +15968,14 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/98c94cc7efba453ba2e7e7d56cfab370.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Component_Progress_as_of_Apri_20_34b4c05b0b.png"
                         }
                       ]
                     },
                     "id": "194"
                   }
                 ],
-                "updated_at": "2021-02-15T10:03:46.276Z"
+                "updated_at": "2021-04-20T08:34:27.385Z"
               }
             }
           ]
@@ -18263,9 +18263,158 @@
                     "tableTitle": null,
                     "tableHtml": "<table>\n<thead>\n  <tr>\n    <th>Initial value</th>\n    <th>Spacing between inputs</th>\n    <th>Spacing between last input and call to action</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>16 px / 4 rem</td>\n    <td>12 px / 3 rem</td>\n    <td>20 px / 5 rem</td>\n  </tr>\n  <tr>\n    <td>20 px / 5 rem</td>\n    <td>16 px / 4 rem</td>\n    <td>24 px / 6 rem</td>\n  </tr>\n  <tr>\n    <td>24 px / 6 rem</td>\n    <td>16 px / 4 rem</td>\n    <td>32 px / 8 rem</td>\n  </tr>\n  <tr>\n    <td>32 px / 8 rem</td>\n    <td>24 px / 6 rem</td>\n    <td>40 px / 10 rem</td>\n  </tr>\n  <tr>\n    <td>40 px / 10 rem</td>\n    <td>32 px / 8 rem</td>\n    <td>48 px / 12 rem</td>\n  </tr>\n</tbody>\n</table>",
                     "size": "Large"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2389",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice examples for forms.\n\n##### Alignment\nMake sure to align all the elements within the form",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1125",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Align_Do_9ac0c6d255.png"
+                        },
+                        "size": "Medium",
+                        "description": "Align all elements",
+                        "id": "264"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Align_Dont_e077c1c00f.png"
+                        },
+                        "size": "Medium",
+                        "description": "Align the text",
+                        "id": "265"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2390",
+                    "Title": null,
+                    "Text": "##### Layout\nWhen designing your form, consider your choice of layout. The desire is to create a smooth flow through the form that makes it easy for the user to scan. A misaligned form is hard to follow and creates poor scannability, the same applies to forms designed on a single line.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1126",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Layout_Do_b2354d56de.png"
+                        },
+                        "size": "Medium",
+                        "description": "Make sure that the form lines up and flows vertically.",
+                        "id": "266"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Layout_Dont_1_69b3caf2a2.png"
+                        },
+                        "size": "Medium",
+                        "description": "Misalign the input elements",
+                        "id": "267"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Layout_Dont_2_befcebb123.png"
+                        },
+                        "size": "Medium",
+                        "description": "Design single-line forms",
+                        "id": "268"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2391",
+                    "Title": null,
+                    "Text": "##### Consider the length of your form\nTry to avoid long scrollable forms. If your form grows too large, it may be a good idea to consider another type of form, e.g.  a multi-step form.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1127",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Lenght_Do_4ccb147065.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use a multi-step form when there are many inputs",
+                        "id": "269"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Lenght_Dont_13de670335.png"
+                        },
+                        "size": "Medium",
+                        "description": "Long scrollable forms",
+                        "id": "270"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2392",
+                    "Title": null,
+                    "Text": "##### Use one text field style\nThe text field style should be the same within one section or form.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1128",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Text_field_Do_805864a1a4.png"
+                        },
+                        "size": "Small",
+                        "description": "Same text field style",
+                        "id": "271"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Text_field_Dont_65b47ad33d.png"
+                        },
+                        "size": "Small",
+                        "description": "Mix text field styles",
+                        "id": "272"
+                      }
+                    ]
                   }
                 ],
-                "updated_at": "2021-04-19T15:37:36.531Z"
+                "updated_at": "2021-04-20T14:24:42.236Z"
               }
             }
           ]
