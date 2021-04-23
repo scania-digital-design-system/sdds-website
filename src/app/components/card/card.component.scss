@@ -17,6 +17,7 @@
   .sdds-card {
     margin-bottom: var(--sdds-spacing-element-32);
 
+
     &-headline {
       color: var(--sdds-blue-300);
       margin-bottom: 0px;
@@ -29,12 +30,28 @@
       color: var(--sdds-blue-900);
     }
 
-    .sdds-card-footer {
-      padding-top: var(--sdds-spacing-element-8);
+    &-body {
+      padding-top: 15px;
+    }
+
+    &-footer {
+      svg {
+        display: block;
+      }
 
       &.linkExternal svg {
         transform: rotate(320deg);
       }
+
+      &.download {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  @media(min-width:1312px) {
+    .sdds-card-body {
+      height: 23rem;
     }
   }
 
