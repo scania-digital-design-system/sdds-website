@@ -4,8 +4,7 @@
     <img *ngIf='card.image' [ngClass]="('sdds-card-img ' + type )" src='{{card.image.url}}'>
 
     <div class="sdds-card-header">
-      <h6 class="sdds-card-headline">{{card.title}}<span *ngIf="card.info" class="sdds-text-blue-300" style="float:right;">{{card.info}}</span></h6>
-      <!-- <h6  class="sdds-card-headline card-info">{{card.info}}</h6> -->
+      <h6 class="sdds-card-headline">{{card.title}}<span *ngIf="card.info" class="sdds-card-headline">{{card.info}}</span></h6>
       <h6 class="sdds-card-sub-headline">{{card.description}}</h6>
     </div>
 
@@ -13,11 +12,17 @@
     <div *ngIf="card.detail" class="sdds-card-body">{{card.detail}}</div>
 
     <div *ngIf="card.type == 'linkInternal' || card.type == 'linkExternal' " [ngClass]="('sdds-card-footer ' + (card.type))">
-      <!-- <c-icon name="scania-arrow" class="hydrated"></c-icon> -->
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 8H15.0211M15.0211 8L8 15.0216M15.0211 8L7.99951 0.978908" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
 
     <div *ngIf="card.type == 'download'" [ngClass]="('sdds-card-footer ' + (card.type))">
-      <c-icon name="scania-save" class="hydrated"></c-icon>
+      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 16.1504H15.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 1.65039V13.885M8 13.885L1.0575 6.9425M8 13.885L14.9425 6.9425" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
     </div>
   </div>
 </div>

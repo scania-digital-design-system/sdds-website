@@ -1,4 +1,4 @@
-.card-wrapper {
+.card-wrapper { // For higher specificity
 
   .sdds-card-img {
     object-fit: cover;
@@ -19,31 +19,21 @@
 
     &-headline {
       color: var(--sdds-blue-300);
+      margin-bottom: 0px;
+      span {
+        float: right;
+      }
     }
 
     &-sub-headline {
       color: var(--sdds-blue-900);
     }
 
-    .sdds-card-body {
-      // height: 29rem;
-    }
-
     .sdds-card-footer {
       padding-top: var(--sdds-spacing-element-8);
 
-      &.linkInternal c-icon {
-        transform: rotate(180deg);
-        // font-size: 25px;
-      }
-
-      &.linkExternal c-icon {
-        transform: rotate(135deg);
-        // font-size: 30px;
-      }
-
-      &.download {
-        font-size: 25px;
+      &.linkExternal svg {
+        transform: rotate(320deg);
       }
     }
   }
