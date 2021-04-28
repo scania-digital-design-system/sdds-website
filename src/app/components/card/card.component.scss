@@ -35,16 +35,23 @@
     }
 
     &-footer {
+      color: var(--sdds-black);
       svg {
         display: block;
       }
-
       &.linkExternal svg {
         transform: rotate(320deg);
       }
-
       &.download {
         padding-top: 15px;
+        display: inline-flex;
+        svg {
+          margin-right: var(--sdds-spacing-element-12);
+        }
+        .sdds-detail-04 {
+          margin: auto;
+          word-spacing: -1rem;
+        }
       }
     }
   }

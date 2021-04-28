@@ -4,7 +4,7 @@
     <img *ngIf='card.image' [ngClass]="('sdds-card-img ' + type )" src='{{card.image.url}}'>
 
     <div class="sdds-card-header">
-      <h6 class="sdds-card-headline">{{card.title}}<span *ngIf="card.info" class="sdds-card-headline">{{card.info}}</span></h6>
+      <h6 class="sdds-card-headline">{{card.title}}</h6>
       <h6 class="sdds-card-sub-headline">{{card.description}}</h6>
     </div>
 
@@ -22,7 +22,7 @@
         <path d="M0.75 16.1504H15.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M8 1.65039V13.885M8 13.885L1.0575 6.9425M8 13.885L14.9425 6.9425" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-
+      <span *ngIf="card.info" class="sdds-detail-04">{{card.info}}</span>
     </div>
   </div>
 </div>
