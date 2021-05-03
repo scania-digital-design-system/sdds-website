@@ -122,6 +122,13 @@
               "thumbnail": null
             },
             {
+              "id": "186",
+              "url": "banners",
+              "title": "Components Banners",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
               "id": "8",
               "url": "breadcrumbs",
               "title": "Breadcrumbs",
@@ -209,6 +216,13 @@
               "id": "103",
               "url": "textfields",
               "title": "Text fields",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "185",
+              "url": "toasts",
+              "title": "Components Toasts",
               "displayLink": null,
               "thumbnail": null
             },
