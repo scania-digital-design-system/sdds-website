@@ -873,7 +873,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "600",
                     "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\n\n**Prerequisites**\nIf you are using Angular 8+, you need to add webcomponents polyfill. Install the dependency:\n```\nnpm i @webcomponents/webcomponentsjs --save-dev\n```\n\nImport the polyfill inside `src/polyfill.ts`\n```\nimport '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js'\n```\n\nAnd then, follow the steps below:\n\n1. In Angular, go to main-ts (or some other appropriate place), and import the packages\n    ```\n     import { AppModule } from './app/app.module';\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n\n     // Run function to initiate component\n     defineCustomElements();\n\n     // add theme\n     addTheme(scania)\n     ```\n\n2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts\n   ```\n   import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n   \n    @NgModule({\n    declarations: [\n       AppComponent,\n    ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n   })\n   ```\n\n**Add theme in HTML**\nWhen the previous step is done, you can start adding theme to get the styling. Add c-theme component high up in the hierarchy of your application. If it works you should see fonts and so on change.\n\n```\n// In app.component.html\n  <sdds-theme name=\"scania\"></sdds-theme>\n  <sdds-dropdown\n    placeholder=\"Select option\">\n    <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n    <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n    <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n </sdds-dropdown>\n```",
+                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\n\n**Prerequisites**\nIf you are using Angular 8+, you need to add webcomponents polyfill. Install the dependency:\n```\nnpm i @webcomponents/webcomponentsjs --save-dev\n```\n\nImport the polyfill inside `src/polyfill.ts`\n```\nimport '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js'\n```\n\nAnd then, follow the steps below:\n\n1. In Angular, go to main-ts (or some other appropriate place), and import the packages\n    ```\n     import { AppModule } from './app/app.module';\n     //Import components and theme\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n\n     // Run function to initiate component\n     defineCustomElements();\n\n     // add theme\n     addTheme(scania)\n     ```\n\n2. Angular doesn't recognize what a stencil component is, so what you need to do to solve this is to add CUSTOM_ELEMENTS_SCHEMA inside app.module.ts\n   ```\n   import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';\n   \n    @NgModule({\n    declarations: [\n       AppComponent,\n    ],\n   imports: [\n     BrowserModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent],\n   schemas: [CUSTOM_ELEMENTS_SCHEMA] // Add the Schema\n   })\n   ```\n\n**Add theme in HTML**\nWhen the previous step is done, you can start adding theme to get the styling. Add sdds-theme component high up in the hierarchy of your application. If it works you should see fonts and so on change.\n\n```\n// In app.component.html\n  <sdds-theme name=\"scania\"></sdds-theme>\n  <sdds-dropdown\n    placeholder=\"Select option\">\n    <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n    <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n    <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n </sdds-dropdown>\n```",
                     "LeadText": null
                   },
                   {
@@ -895,7 +895,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "613",
                     "Title": null,
-                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\nFollow the steps below:\n\n1. In React you can go to src/index.js and import components and scania-theme\n    ```\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n     ```\n\n2. You need to call defineCustomElements() that will initiate custom elements.\n   ```\n   defineCustomElements();\n   ```\n\n3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n   ```\n   addTheme(scania)\n   ```\n\n\n**Add theming**\nWhen the previous step is done, you can start adding theme to get the styling. Try and add `c-theme` component high up in the hierarchy of your application. For example app.js in react. If it works you should see fonts and so on change.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <c-theme></c-theme>\n\n        </div>\n      );\n    }\n```\n\n**Add header,content and footer**\nAfter theme is added (Add theming) is done, you can add components c-header, c-content and c-footer in that order. After that you should see the header and footer. Content component will push down the footer below the content.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <sdds-theme name=\"scania\"></sdds-theme>\n          // Add Header,content and footer component\n          <button class=\"sdds-btn sdds-btn-primary\"></button>\n\n           <sdds-dropdown placeholder=\"Select option\">\n               <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n           </sdds-dropdown>\n        </div>\n      );\n    }\n```",
+                    "Text": "You need to import { addTheme, defineCustomElements } from components package and { theme } from Scania-theme package after you have installed them (See section Installing npm packages).\nFollow the steps below:\n\n1. In React you can go to src/index.js and import components and scania-theme\n    ```\n     import { defineCustomElements, addTheme } from '@scania/components';\n     import { theme as scania } from '@scania/theme-light';\n     ```\n\n2. You need to call defineCustomElements() that will initiate custom elements.\n   ```\n   defineCustomElements();\n   ```\n\n3. After that you need to call addTheme() , this function takes one parameter, which is the theme from Scania-theme packages that you imported in step 1.\n   ```\n   addTheme(scania)\n   ```\n\n\n**Add theming**\nWhen the previous step is done, you can start adding theme to get the styling. Try and add `sdds-theme` component high up in the hierarchy of your application. For example app.js in react. If it works you should see fonts and so on change.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n\n          // Add Theme like this for the styling\n          <sdds-theme></sdds-theme>\n\n        </div>\n      );\n    }\n```\n\n**Add header,content and footer**\nAfter theme is added (Add theming) is done, you can add components c-header, c-content and c-footer in that order. After that you should see the header and footer. Content component will push down the footer below the content.\n\n```\n// React example\n    function App() {\n      return (\n        <div className=\"App\">\n          <sdds-theme name=\"scania\"></sdds-theme>\n          // Add Header,content and footer component\n          <button class=\"sdds-btn sdds-btn-primary\"></button>\n\n           <sdds-dropdown placeholder=\"Select option\">\n               <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n           </sdds-dropdown>\n        </div>\n      );\n    }\n```",
                     "LeadText": null
                   },
                   {
@@ -942,9 +942,16 @@
                     "code": "    // Vue example\n    function App() {\n      return (\n        <div className=\"App\">\n          <sdds-theme name=\"scania\" global=\"true\"></sdds-theme>\n          // Add Header,content and footer component\n            <sdds-dropdown placeholder=\"Select option\">\n              <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n              <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n           </sdds-dropdown>\n        </div>\n      );\n    }",
                     "componentTag": null,
                     "preview": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2398",
+                    "Title": "Typescript - Strict:false",
+                    "Text": "Typescript have a rule called strict in the tsconfig.json file that is set to true. When this rule is set to true, it will cause a error in the imports of theme-light and component package, at this time we an issue reported for that. A workaround right now is to set the rule strict: false instead.",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-09T10:55:51.425Z"
+                "updated_at": "2021-05-03T09:09:58.875Z"
               }
             }
           ]
@@ -1226,7 +1233,7 @@
                         "description": "Design",
                         "info": null,
                         "image": null,
-                        "detail": "UI Kit & Grid Systems in downloadable files.",
+                        "detail": "UI Kit & Grid Systems in downloadable files, as well\nas guidelines on common UX practices.",
                         "type": "linkInternal",
                         "url": "/resources/design"
                       },
@@ -1267,7 +1274,7 @@
                     }
                   }
                 ],
-                "updated_at": "2020-06-04T09:35:01.660Z"
+                "updated_at": "2021-04-22T07:32:32.052Z"
               }
             }
           ]
@@ -3085,7 +3092,7 @@
                       {
                         "id": "510",
                         "name": "scania-vehicle_rent",
-                        "title": "vehicle rent",
+                        "title": "Vehicle rent",
                         "description": null,
                         "usage": null,
                         "restriction": null
@@ -3133,7 +3140,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2020-12-14T10:22:43.138Z"
+                "updated_at": "2021-04-22T07:33:29.070Z"
               }
             }
           ]
@@ -3825,9 +3832,16 @@
                       }
                     ],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2396",
+                    "Title": null,
+                    "Text": "All assents and resources of the Scania Digital Design System are copyright © Scania CV AB (publ), SE-151 87 Södertälje, Sweden, or its subsidiaries. All rights reserved.\n\nContents of the Scania Digital Design System – such as logotypes and typefaces – may not without prior written consent from Scania CV AB (publ) be used, downloaded, altered, transferred or distributed, except for strictly private use.\n\nContents of the Scania Digital Design System (as describe above) may only be used by Scania and behalf of Scania.\n\nBy downloading any contents from the Scania Digital Design System, the user accepts the conditions set out above and undertakes to abide by them at all times.",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-14T14:14:55.450Z"
+                "updated_at": "2021-04-30T08:02:33.856Z"
               }
             }
           ]
@@ -3890,9 +3904,16 @@
                       }
                     ],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2397",
+                    "Title": null,
+                    "Text": "All assents and resources of the Scania Digital Design System are copyright © Scania CV AB (publ), SE-151 87 Södertälje, Sweden, or its subsidiaries. All rights reserved.\n\nContents of the Scania Digital Design System – such as logotypes and typefaces – may not without prior written consent from Scania CV AB (publ) be used, downloaded, altered, transferred or distributed, except for strictly private use.\n\nContents of the Scania Digital Design System (as describe above) may only be used by Scania and behalf of Scania.\n\nBy downloading any contents from the Scania Digital Design System, the user accepts the conditions set out above and undertakes to abide by them at all times.",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-07T09:17:49.937Z"
+                "updated_at": "2021-04-30T08:02:49.916Z"
               }
             }
           ]
@@ -5102,9 +5123,16 @@
                       }
                     ],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2397",
+                    "Title": null,
+                    "Text": "All assents and resources of the Scania Digital Design System are copyright © Scania CV AB (publ), SE-151 87 Södertälje, Sweden, or its subsidiaries. All rights reserved.\n\nContents of the Scania Digital Design System – such as logotypes and typefaces – may not without prior written consent from Scania CV AB (publ) be used, downloaded, altered, transferred or distributed, except for strictly private use.\n\nContents of the Scania Digital Design System (as describe above) may only be used by Scania and behalf of Scania.\n\nBy downloading any contents from the Scania Digital Design System, the user accepts the conditions set out above and undertakes to abide by them at all times.",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-07T09:17:49.937Z"
+                "updated_at": "2021-04-30T08:02:49.916Z"
               }
             }
           ]
@@ -6738,846 +6766,6 @@
         {
           "__typename": "ComponentPagePluginTab",
           "id": "299",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "180",
-      "url": "sidemenu",
-      "displayLink": null,
-      "title": "Side menu",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "293",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "316",
-                "title": "Components Side Menu Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2142",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
-                      "Introduction": null,
-                      "id": "368"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2143",
-                    "Title": "Usage",
-                    "Text": "The side menu should always be paired with the [functional header](components/header), when it is used for applications with a large page structure, like more than 3 sections. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1016",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2348",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3e3f3c80a4a7497eb5aa1400d8004727.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2144",
-                    "Title": "Types",
-                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, tabs (coming soon) should be used for this specific purpose. Read more about it at our Navigation Pattern (coming soon)\n\n##### Collapsible\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1017",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2349",
-                        "label": "Expanded & Collapsed example",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ee46a1b3e8c0418fa97a9a72b80942df.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2145",
-                    "Title": "Anatomy",
-                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1018",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2350",
-                        "label": null,
-                        "caption": "A. Header links\nB. Icons",
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ae84d63ed8084be699a3d47f7b04ae30.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2146",
-                    "Title": "Behaviour",
-                    "Text": "##### Interaction\nThe side menu has different states, such as hover and press. Visit the [style tab](components/sidemenu/style) for full detailed specifications for all of the states.\n\n\n##### Sub-menu expand/collapse\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1019",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2351",
-                        "label": "Sub-menu item collapsed",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/45bf0b760aea45fd9674fe393f3d8d49.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2352",
-                        "label": "Sub-menu item expanded",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d7f5b1b7ef3b4d6988092e8f503da93e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2147",
-                    "Title": null,
-                    "Text": "##### Responsive\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1020",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2353",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60dce05f5a43492d8e2693795d04bf36.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2148",
-                    "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for side menu.\n\n##### Usage\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1021",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79ccdb071bd846a18803741d51b42313.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with more than 3 sections",
-                        "id": "252"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f2ba25c746034f8d99ff1a3d3c8843a6.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with 3 or less sections",
-                        "id": "253"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2149",
-                    "Title": "Related",
-                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1022",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "282",
-                        "title": "Component",
-                        "description": "Header",
-                        "info": null,
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5cc4c08d88f84baf8048dcd70998a02c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/header"
-                      },
-                      {
-                        "id": "284",
-                        "title": "Component",
-                        "description": "Breadcrumbs",
-                        "info": null,
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79576fbba4174a01b5082c432c6db65c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/breadcrumbs"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-03-22T11:01:27.856Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "294",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "317",
-                "title": "Components Side Menu Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2267",
-                    "Title": "Colour",
-                    "Text": "##### Side menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Side menu items",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1072",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2485",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6def8d9c3693487a85bcd89331464317.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2270",
-                    "Title": null,
-                    "Text": "##### Side menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1073",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2486",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bbebd980d1e64598891037d96dd44fca.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2487",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79fffdaaf3dc49da8c66b1c37ba01d59.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2488",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d48e64a2df1e4623baca59fa9f7b9e26.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2489",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7469aef123514ca598ae45d8920b9ec3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2490",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1ca3a1c81304c35a30b720d21d6acfe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2491",
-                        "label": "Expanded",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d7578adc58e489a8af511f1e241b6db.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1108",
-                    "Title": "",
-                    "Images": [
-                      {
-                        "id": "2714",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/550149be1adb4750955002b73554559a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2715",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aae3be7ec6824021b1907829ff360372.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2716",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/343020463b1145fb95741a88f09cdf87.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2717",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5636831f472c4c7893f82e4feafe3ab8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2718",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9a5834650e414b43be62bfa834e98111.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [
-                      {
-                        "textfield": "##### Side menu items - Collapsed\nThe collapsed side menu has the same colour and styling for the different states as the expanded variant.",
-                        "Introduction": null,
-                        "id": "387"
-                      }
-                    ],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2272",
-                    "Title": null,
-                    "Text": "##### Sub-menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1074",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2492",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8effc57447844282b1dd3793f8ea9b37.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2493",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9f7df665a3604e7fbaf95eb984e65766.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2494",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2b9d051a1aa94bc5b89c4130fca99c76.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2495",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d1b04ec44fd4616a443f4330e81f0d2.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2496",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/08dac59b2b79446685c5399effca5e85.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2274",
-                    "Title": null,
-                    "Text": "##### Mobile overlay\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1075",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2497",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2275",
-                    "Title": "Sizing",
-                    "Text": "##### Side menu - Expanded\nThe width of the expanded side menus container is fixed until it reaches smaller viewports. The height of the expanded side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1076",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2498",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9de12a97ad424d47bbcd7e9693aacd55.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2330",
-                    "Title": null,
-                    "Text": "##### Side menu - Collapsed\nThe width of the collapsed side menus container is fixed until it reaches smaller viewports. The height of the collapsed side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>68 / 17</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>68 / 17</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2622",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b45c0ac1b59e4fbcb332f5e211af9dfd.png"
-                        }
-                      ]
-                    },
-                    "id": "323"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2277",
-                    "Title": null,
-                    "Text": "##### Side menu on smaller breakpoints\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.\n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1077",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2499",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bc1fee8df5104ae5b4a66f2869da3070.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2280",
-                    "Title": null,
-                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1078",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2500",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2501",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b503de9f50b460493ca12ee91c3f509.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2623",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/512f3cc466fc49dc8bd971d88cab207d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2282",
-                    "Title": null,
-                    "Text": "##### Sub menu items\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1079",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2502",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bd49da3168744e88b123d6fcf1dee86b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2503",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/70530996a1884168937949fe4d20aa02.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2283",
-                    "Title": "Typography",
-                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. The typography remains the same on all breakpoints.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-03-22T11:02:41.247Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "301",
           "title": "Code",
           "active": true,
           "pageContent": [
@@ -14311,9 +13499,39 @@
                     "code": " <sdds-textarea state=\"error\" label=\"Label text\" helper=\"Helper message\" label-position=\"outside\" placeholder=\"Placeholder\" > </sdds-textarea>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2393",
+                    "Title": "Angular forms",
+                    "Text": "Our web-components can be used on angular forms, but there some differences between regular input and our textfields. \nOne major thing you need to add to the custom form is `ngDefaultControl`. This will tell angular to handle the textfield or textarea as a regular form in angular\n\nFor reactive forms you can add like any other input `formControlName=\"username\" like normal",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "847",
+                    "title": "Angular form example",
+                    "code": "    <sdds-textfield\n      ngDefaultControl\n      formControlName=\"myTextfield\"\n      type=\"text\"\n      placeholder=\"Placeholder text\"\n    >\n      <span slot=\"sdds-helper\">Helper text</span>\n    </sdds-textfield>",
+                    "componentTag": null,
+                    "preview": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2395",
+                    "Title": "Angular control value accessor",
+                    "Text": "You can also use something called [control value accessor ](https://angular.io/api/forms/ControlValueAccessor) to handle the angular component with our sdds-textfield inside. control value accessor will create bridge between the angular form API and the DOM element\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "848",
+                    "title": "Angular control value accessor example",
+                    "code": "\n//custom.component.html\n<sdds-textfield (blur)=\"onTouched()\" (input)=\"onChange($event.target.value)\" [disabled]=\"onDisabled\" [value]=\"value\"></sdds-textfield>\n\n// custom.component.ts\nimport { Component, forwardRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector:'custom-input',\n  templateUrl: './custom-component.html',\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CustomInput),\n      multi: true\n    }\n  ]\n})\n\nexport class CustomInput implements ControlValueAccessor {\n  value: string;\n  onChange: () => void;\n  onTouched: () => void;\n  onDisabled: boolean;\n  constructor() {\n\n  }\n  writeValue(value: string): void {\n    console.log(value)\n    this.value = value ? value : '';\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState?(isDisabled: boolean): void {\n    this.onDisabled = isDisabled;\n  }\n\n}\n",
+                    "componentTag": null,
+                    "preview": null
                   }
                 ],
-                "updated_at": "2021-02-09T09:46:13.873Z"
+                "updated_at": "2021-04-29T08:36:53.187Z"
               }
             }
           ]
@@ -16014,6 +15232,13 @@
           "thumbnail": null
         },
         {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
+          "thumbnail": null
+        },
+        {
           "id": "146",
           "url": "dropdowns",
           "displayLink": null,
@@ -16116,13 +15341,6 @@
           "url": "accordions",
           "displayLink": null,
           "title": "Accordions",
-          "thumbnail": null
-        },
-        {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
           "thumbnail": null
         }
       ]
@@ -16600,7 +15818,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1585",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>0px 3px 3px rgba(0, 0, 0, 0.15), 0px -1px 1px rgba(0, 0, 0, 0.1)</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>0px 3px 3px rgba(0, 0, 0, 0.25), 0px -1px 1px rgba(0, 0, 0, 0.1)</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>0px 3px 3px rgba(0, 0, 0, 0.35), 0px -1px 1px rgba(0, 0, 0, 0.1)</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>0px 1px 3px rgba(0, 0, 0, 0.25), 0px -1px 1px rgba(0, 0, 0, 0.1)</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>0px 3px 6px 2px rgba(0, 0, 0, 0.2), 0px -1px 1px rgba(0, 0, 0, 0.1)</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -16689,7 +15907,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1587",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>will-be-added-soon</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Box-shadow</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td> \n    <td>0px 3px 3px rgba(0, 0, 0, 0.1), 0px -1px 1px rgba(0, 0, 0, 0.05)</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>0px 3px 3px rgba(0, 0, 0, 0.2), 0px -1px 1px rgba(0, 0, 0, 0.05)</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td>\n    <td>0px 3px 3px rgba(0, 0, 0, 0.3), 0px -1px 1px rgba(0, 0, 0, 0.05)</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$white</td>\n    <td>0px 1px 3px rgba(0, 0, 0, 0.2), 0px -1px 1px rgba(0, 0, 0, 0.05)</td>\n  </tr>\n<tr>\n    <td>Dragged</td>\n    <td>$white</td>\n     <td>0px 4px 4px rgba(0, 0, 0, 0.25), 0px -1px 1px rgba(0, 0, 0, 0.05)</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -16853,7 +16071,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1589",
                     "Title": null,
-                    "Text": "**Container width**\n\nAs the rest of our components, the card width and height should be based on our [Unit System](https://digitaldesign.scania.com/foundations/unit-grid-system/code). A good way to achieve visual balance in your layout, is to align the cards containers width with your applications grid systems columns.",
+                    "Text": "##### Container width\nAs the rest of our components, the card width and height should be based on our [Unit System](https://digitaldesign.scania.com/foundations/unit-grid-system/code). A good way to achieve visual balance in your layout is to align the card container's width with your application's grid systems columns. The card width can take a maximum of 8 columns. It will take the same amount of columns on every device, except on mobile screens where it will take the full width of the grid layout.",
                     "LeadText": null
                   },
                   {
@@ -16917,7 +16135,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-02-09T15:17:50.651Z"
+                "updated_at": "2021-04-30T07:38:56.086Z"
               }
             }
           ]
@@ -17520,7 +16738,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2017",
                     "Title": null,
-                    "Text": "##### Use modals with caution\nThe purpose of modals is to disrupt the workflow and present a message that blocks the user from continuing until the modal is dismissed. For this reason, modals can be frustrating when used for communicating non-critical messages or actions that is not related to the task.\n\nFor less critical and task unrelated messages, it’s better to use non disruptive components like alerts.",
+                    "Text": "##### Use modals with caution\nThe purpose of modals is to disrupt the workflow and present a message that blocks the user from continuing until the modal is dismissed. For this reason, modals can be frustrating when used for communicating non-critical messages or actions that is not related to the task.\n\nFor less critical and task unrelated messages, it’s better to use non disruptive components like [banners](components/banners) or [components](toasts).",
                     "LeadText": null
                   },
                   {
@@ -17552,7 +16770,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-03-22T11:33:33.292Z"
+                "updated_at": "2021-04-30T07:46:19.409Z"
               }
             }
           ]
@@ -18430,6 +17648,846 @@
       "submenus": []
     },
     {
+      "id": "180",
+      "url": "sidemenu",
+      "displayLink": null,
+      "title": "Side menu",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "293",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "316",
+                "title": "Components Side Menu Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2142",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
+                      "Introduction": null,
+                      "id": "368"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2143",
+                    "Title": "Usage",
+                    "Text": "The side menu should always be paired with the [functional header](components/header), when it is used for applications with a large page structure, like more than 3 sections. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1016",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2348",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3e3f3c80a4a7497eb5aa1400d8004727.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2144",
+                    "Title": "Types",
+                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, tabs (coming soon) should be used for this specific purpose. Read more about it at our Navigation Pattern (coming soon)\n\n##### Collapsible\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1017",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2349",
+                        "label": "Expanded & Collapsed example",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ee46a1b3e8c0418fa97a9a72b80942df.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2145",
+                    "Title": "Anatomy",
+                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1018",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2350",
+                        "label": null,
+                        "caption": "A. Header links\nB. Icons",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ae84d63ed8084be699a3d47f7b04ae30.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2146",
+                    "Title": "Behaviour",
+                    "Text": "##### Interaction\nThe side menu has different states, such as hover and press. Visit the [style tab](components/sidemenu/style) for full detailed specifications for all of the states.\n\n\n##### Sub-menu expand/collapse\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1019",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2351",
+                        "label": "Sub-menu item collapsed",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/45bf0b760aea45fd9674fe393f3d8d49.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2352",
+                        "label": "Sub-menu item expanded",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d7f5b1b7ef3b4d6988092e8f503da93e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2147",
+                    "Title": null,
+                    "Text": "##### Responsive\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1020",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2353",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60dce05f5a43492d8e2693795d04bf36.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2148",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for side menu.\n\n##### Usage\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1021",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79ccdb071bd846a18803741d51b42313.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with more than 3 sections",
+                        "id": "252"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f2ba25c746034f8d99ff1a3d3c8843a6.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with 3 or less sections",
+                        "id": "253"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2149",
+                    "Title": "Related",
+                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1022",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "282",
+                        "title": "Component",
+                        "description": "Header",
+                        "info": null,
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5cc4c08d88f84baf8048dcd70998a02c.png"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/header"
+                      },
+                      {
+                        "id": "284",
+                        "title": "Component",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79576fbba4174a01b5082c432c6db65c.png"
+                        },
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-03-22T11:01:27.856Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "294",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "317",
+                "title": "Components Side Menu Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2267",
+                    "Title": "Colour",
+                    "Text": "##### Side menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Side menu items",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1072",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2485",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6def8d9c3693487a85bcd89331464317.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2270",
+                    "Title": null,
+                    "Text": "##### Side menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1073",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2486",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bbebd980d1e64598891037d96dd44fca.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2487",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79fffdaaf3dc49da8c66b1c37ba01d59.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2488",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d48e64a2df1e4623baca59fa9f7b9e26.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2489",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7469aef123514ca598ae45d8920b9ec3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2490",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1ca3a1c81304c35a30b720d21d6acfe.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2491",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d7578adc58e489a8af511f1e241b6db.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1108",
+                    "Title": "",
+                    "Images": [
+                      {
+                        "id": "2714",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/550149be1adb4750955002b73554559a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2715",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aae3be7ec6824021b1907829ff360372.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2716",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/343020463b1145fb95741a88f09cdf87.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2717",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5636831f472c4c7893f82e4feafe3ab8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2718",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9a5834650e414b43be62bfa834e98111.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Side menu items - Collapsed\nThe collapsed side menu has the same colour and styling for the different states as the expanded variant.",
+                        "Introduction": null,
+                        "id": "387"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2272",
+                    "Title": null,
+                    "Text": "##### Sub-menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1074",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2492",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8effc57447844282b1dd3793f8ea9b37.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2493",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9f7df665a3604e7fbaf95eb984e65766.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2494",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2b9d051a1aa94bc5b89c4130fca99c76.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2495",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d1b04ec44fd4616a443f4330e81f0d2.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2496",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/08dac59b2b79446685c5399effca5e85.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2274",
+                    "Title": null,
+                    "Text": "##### Mobile overlay\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1075",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2497",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2275",
+                    "Title": "Sizing",
+                    "Text": "##### Side menu - Expanded\nThe width of the expanded side menus container is fixed until it reaches smaller viewports. The height of the expanded side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1076",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2498",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9de12a97ad424d47bbcd7e9693aacd55.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2330",
+                    "Title": null,
+                    "Text": "##### Side menu - Collapsed\nThe width of the collapsed side menus container is fixed until it reaches smaller viewports. The height of the collapsed side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>68 / 17</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>68 / 17</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2622",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b45c0ac1b59e4fbcb332f5e211af9dfd.png"
+                        }
+                      ]
+                    },
+                    "id": "323"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2277",
+                    "Title": null,
+                    "Text": "##### Side menu on smaller breakpoints\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.\n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1077",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2499",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bc1fee8df5104ae5b4a66f2869da3070.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2280",
+                    "Title": null,
+                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1078",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2500",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2501",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b503de9f50b460493ca12ee91c3f509.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2623",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/512f3cc466fc49dc8bd971d88cab207d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2282",
+                    "Title": null,
+                    "Text": "##### Sub menu items\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1079",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2502",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bd49da3168744e88b123d6fcf1dee86b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2503",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/70530996a1884168937949fe4d20aa02.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2283",
+                    "Title": "Typography",
+                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. The typography remains the same on all breakpoints.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-03-22T11:02:41.247Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "301",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "182",
       "url": "data-tables",
       "displayLink": null,
@@ -18519,7 +18577,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sorting_07f4dd74a1.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sorting_2_238bca522f.png"
                         }
                       ]
                     },
@@ -18808,7 +18866,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/hor_scr_b753c162f5.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/hor_scr_2_a9625debec.png"
                         }
                       ]
                     },
@@ -18955,7 +19013,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-04-19T11:58:26.094Z"
+                "updated_at": "2021-04-21T12:35:07.287Z"
               }
             }
           ]
@@ -19441,7 +19499,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/data_size_2_94a08b1298.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dt_3528e9b5fe.png"
                         }
                       ]
                     },
@@ -19748,7 +19806,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2371",
                     "Title": "Typography",
-                    "Text": "The data table header and column header starts with the first letter set in upper case, and the remaining letters in lower case. \n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Data table header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Column header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Information text</td>",
+                    "Text": "The data table header and column header starts with the first letter set in upper case, and the remaining letters in lower case. \n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Data table header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Column header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Information text</td>\n    <td>$detail-02</td>\n  </tr>\n</tbody>\n</table>\n",
                     "LeadText": null
                   },
                   {
@@ -19797,7 +19855,7 @@
                     "id": "350"
                   }
                 ],
-                "updated_at": "2021-04-19T15:02:02.705Z"
+                "updated_at": "2021-04-30T07:43:12.751Z"
               }
             }
           ]

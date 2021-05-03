@@ -199,6 +199,13 @@
               "thumbnail": null
             },
             {
+              "id": "180",
+              "url": "sidemenu",
+              "title": "Side menu",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
               "id": "103",
               "url": "textfields",
               "title": "Text fields",
@@ -216,13 +223,6 @@
               "id": "112",
               "url": "Tooltips",
               "title": "Tooltips",
-              "displayLink": null,
-              "thumbnail": null
-            },
-            {
-              "id": "180",
-              "url": "sidemenu",
-              "title": "Side menu",
               "displayLink": null,
               "thumbnail": null
             }
