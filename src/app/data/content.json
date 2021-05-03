@@ -9079,10 +9079,25 @@
                     "title": "Add data via script",
                     "code": "<sdds-dropdown-filter\n  id=\"myFilter\" \n  placeholder=\"Select option\">\n</sdds-dropdown-filter>\n\n<script>\nvar data= [\n        {\"value\":\"opt-1\",\"label\":\"Jakarta\"},\n        {\"value\":\"opt-2\",\"label\":\"Stockholm\"},\n        {\"value\":\"opt-3\",\"label\":\"Barcelona\"}\n    ];\nvar dropdown = document.querySelector('#myFilter');\ndropdown.data = data;\n</script>\n",
                     "componentTag": null,
-                    "preview": null
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2432",
+                    "Title": "Event Handler",
+                    "Text": "There are 2 available events from the components that can be used to fetch the selected options and catch the search term.\n\n##### selectOption\n\nThe event is triggered everytime an option is being clicked. It will return the option value, option label, and parent node.\n\n##### inputSearch\n\nThis event is available on dropdown with search function. This event is triggered every time the text field input is being clicked or being focused during the typing action. It will return an input text event, which can be used to fetch the input text value at the moment.\n\nSee example below on how to use the events.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "849",
+                    "title": null,
+                    "code": "document.addEventListener('selectOption', handleSelectOption);\n\nfunction handleSelectOption(event) {\n      console.log(event.detail);\n}\n\ndocument.addEventListener('inputSearch', handleSelectSearch);\n\nfunction handleSelectSearch(event) {\n     const searchTerm = event.target.value;\n     console.log(searchTerm);\n}",
+                    "componentTag": null,
+                    "preview": false
                   }
                 ],
-                "updated_at": "2021-03-08T13:54:09.221Z"
+                "updated_at": "2021-05-03T13:39:29.781Z"
               }
             }
           ]
@@ -13358,20 +13373,45 @@
                     "preview": true
                   },
                   {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2425",
+                    "Title": "Medium size",
+                    "Text": "You can add the attribute size=\"md\" too make it a bit smaller",
+                    "LeadText": null
+                  },
+                  {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "245",
-                    "title": "Medium",
+                    "title": "",
                     "code": "<div style=\"width:208px\">  \n  <sdds-textfield type=\"text\" size=\"md\" placeholder=\"Placeholder\" ></sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
                   {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2426",
+                    "Title": "Disabled",
+                    "Text": "Too set a textfield to disabled you can use the attribute disabled",
+                    "LeadText": {
+                      "textfield": null,
+                      "Introduction": null,
+                      "id": "392"
+                    }
+                  },
+                  {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "246",
-                    "title": "Disabled",
+                    "title": "",
                     "code": "<div style=\"width:208px\">  \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" disabled ></sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2427",
+                    "Title": "Labels",
+                    "Text": "We have two ways of adding a label, both inside and outside of the text field",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -13390,12 +13430,26 @@
                     "preview": true
                   },
                   {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2431",
+                    "Title": "Helper text",
+                    "Text": "Add small div with a helper text for the user",
+                    "LeadText": null
+                  },
+                  {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "309",
-                    "title": "Helper text",
+                    "title": "",
                     "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\">\n    <span slot=\"sdds-helper\">Helper text</span>\n  </sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2428",
+                    "Title": "States",
+                    "Text": "You have three different states\n\n- Default/None\n- Success\n- Error",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -13412,6 +13466,13 @@
                     "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" state=\"success\"></sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2429",
+                    "Title": "Prefix/Suffix",
+                    "Text": "You can add a symbol as prefix or suffix. You can also use icons in the same way",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
@@ -13438,9 +13499,16 @@
                     "preview": true
                   },
                   {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2430",
+                    "Title": "Text counter",
+                    "Text": "Set a text counter with a max value ",
+                    "LeadText": null
+                  },
+                  {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "627",
-                    "title": "Text counter",
+                    "title": "",
                     "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" maxlength=\"20\"> \n     <c-icon name=\"scania-cross\" slot=\"sdds-prefix\">Label text</c-icon>\n  </sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
@@ -13518,20 +13586,20 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2395",
-                    "Title": "Angular control value accessor",
+                    "Title": "",
                     "Text": "You can also use something called [control value accessor ](https://angular.io/api/forms/ControlValueAccessor) to handle the angular component with our sdds-textfield inside. control value accessor will create bridge between the angular form API and the DOM element\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "848",
-                    "title": "Angular control value accessor example",
+                    "title": "",
                     "code": "\n//custom.component.html\n<sdds-textfield (blur)=\"onTouched()\" (input)=\"onChange($event.target.value)\" [disabled]=\"onDisabled\" [value]=\"value\"></sdds-textfield>\n\n// custom.component.ts\nimport { Component, forwardRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector:'custom-input',\n  templateUrl: './custom-component.html',\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CustomInput),\n      multi: true\n    }\n  ]\n})\n\nexport class CustomInput implements ControlValueAccessor {\n  value: string;\n  onChange: () => void;\n  onTouched: () => void;\n  onDisabled: boolean;\n  constructor() {\n\n  }\n  writeValue(value: string): void {\n    console.log(value)\n    this.value = value ? value : '';\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState?(isDisabled: boolean): void {\n    this.onDisabled = isDisabled;\n  }\n\n}\n",
                     "componentTag": null,
                     "preview": null
                   }
                 ],
-                "updated_at": "2021-04-29T08:36:53.187Z"
+                "updated_at": "2021-05-03T13:47:57.817Z"
               }
             }
           ]
