@@ -38,7 +38,7 @@
     "@ngneat/transloco": "^2.14.0",
     "@scania/components": "^1.5.1",
     "@scania/theme-light": "^2.2.1",
-    "@scania/typography": "1.1.0",
+    "@scania/typography": "1.1.1",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
