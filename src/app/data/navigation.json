@@ -126,10 +126,7 @@
               "url": "breadcrumbs",
               "title": "Breadcrumbs",
               "displayLink": null,
-              "thumbnail": {
-                "id": "44",
-                "url": "https://sdds-cms.s3.amazonaws.com/978c234012d24a918c87ddd12a1b9d92.png"
-              }
+              "thumbnail": null
             },
             {
               "id": "5",
@@ -149,6 +146,13 @@
               "id": "108",
               "url": "checkboxes",
               "title": "Checkboxes",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "182",
+              "url": "data-tables",
+              "title": "Data tables",
               "displayLink": null,
               "thumbnail": null
             },
@@ -220,6 +224,22 @@
               "url": "sidemenu",
               "title": "Side menu",
               "displayLink": null,
+              "thumbnail": null
+            }
+          ]
+        },
+        {
+          "id": "184",
+          "url": "patterns",
+          "title": "Patterns",
+          "displayLink": "",
+          "thumbnail": null,
+          "submenus": [
+            {
+              "id": "183",
+              "url": "forms",
+              "title": "Forms",
+              "displayLink": "",
               "thumbnail": null
             }
           ]
