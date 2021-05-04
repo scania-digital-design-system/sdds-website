@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "npm run angular",
     "build": "npm run data && ng build",
-    "netlify": "npm run build",
+    "netlify": "ng build",
     "link": "npm link @scania/components && npm link @scania/theme-light",
     "angular": "npm run data && ng serve --configuration es5 --disable-host-check --port 1337",
     "data": "node ./fetchData.js",
