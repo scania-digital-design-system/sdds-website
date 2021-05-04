@@ -11,9 +11,15 @@
     <div *ngIf="card.detail" class="sdds-divider-light-border-top"></div>
     <div *ngIf="card.detail" class="sdds-card-body">{{card.detail}}</div>
 
-    <div *ngIf="card.type == 'linkInternal' || card.type == 'linkExternal' " [ngClass]="('sdds-card-footer ' + (card.type))">
+    <div *ngIf="card.type == 'linkInternal' " [ngClass]="('sdds-card-footer ' + (card.type))">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.75 8H15.0211M15.0211 8L8 15.0216M15.0211 8L7.99951 0.978908" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div *ngIf="card.type == 'linkExternal' " [ngClass]="('sdds-card-footer ' + (card.type))">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 14L14 1M14 1L14 11.6364M14 1L3.36364 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
 
