@@ -122,6 +122,13 @@
               "thumbnail": null
             },
             {
+              "id": "186",
+              "url": "banners",
+              "title": "Banners",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
               "id": "8",
               "url": "breadcrumbs",
               "title": "Breadcrumbs",
@@ -199,9 +206,23 @@
               "thumbnail": null
             },
             {
+              "id": "180",
+              "url": "sidemenu",
+              "title": "Side menu",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
               "id": "103",
               "url": "textfields",
               "title": "Text fields",
+              "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "185",
+              "url": "toasts",
+              "title": "Toasts",
               "displayLink": null,
               "thumbnail": null
             },
@@ -216,13 +237,6 @@
               "id": "112",
               "url": "Tooltips",
               "title": "Tooltips",
-              "displayLink": null,
-              "thumbnail": null
-            },
-            {
-              "id": "180",
-              "url": "sidemenu",
-              "title": "Side menu",
               "displayLink": null,
               "thumbnail": null
             }
