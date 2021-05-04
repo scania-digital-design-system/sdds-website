@@ -15349,6 +15349,13 @@
           "thumbnail": null
         },
         {
+          "id": "186",
+          "url": "banners",
+          "displayLink": null,
+          "title": "Banners",
+          "thumbnail": null
+        },
+        {
           "id": "146",
           "url": "dropdowns",
           "displayLink": null,
@@ -15405,20 +15412,6 @@
           "thumbnail": null
         },
         {
-          "id": "185",
-          "url": "toasts",
-          "displayLink": null,
-          "title": "Components Toasts",
-          "thumbnail": null
-        },
-        {
-          "id": "186",
-          "url": "banners",
-          "displayLink": null,
-          "title": "Components Banners",
-          "thumbnail": null
-        },
-        {
           "id": "107",
           "url": "radio-buttons",
           "displayLink": null,
@@ -15437,6 +15430,13 @@
           "url": "header",
           "displayLink": null,
           "title": "Header",
+          "thumbnail": null
+        },
+        {
+          "id": "185",
+          "url": "toasts",
+          "displayLink": null,
+          "title": "Toasts",
           "thumbnail": null
         },
         {
@@ -16360,6 +16360,827 @@
                   }
                 ],
                 "updated_at": "2021-03-22T14:15:54.926Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "186",
+      "url": "banners",
+      "displayLink": null,
+      "title": "Banners",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "309",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "329",
+                "title": "Components Banners Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2443",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A banner is a container displaying system messages to the users without interrupting their workflow. It is an efficient tool to build a trustful and intuitive communication with the users.",
+                      "Introduction": true,
+                      "id": "393"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2444",
+                    "Title": "Usage",
+                    "Text": "To ensure a good usage of this component and get more context about which notification variant to use, please refer to the [notifications pattern page](http://digitaldesign.scania.com). \n\nThe banner is one of the three existing variants of a notification. It is used to display short system messages and general messages that have low priority, and are not connected to a user task, e.g. “The application will undergo maintenance on Monday October 16th, from 2am to 4am”.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2812",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/usage_example_21f6cab9a9.png"
+                        }
+                      ]
+                    },
+                    "id": "385"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2445",
+                    "Title": "Placement",
+                    "Text": "The banner is placed at the top of the active page right above the top navigation (see example below). When entering the page, all content below it is being pushed downwards. Banners never overlap any content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2813",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/placement_example_7f16d78169.png"
+                        }
+                      ]
+                    },
+                    "id": "386"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2446",
+                    "Title": "Anatomy",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2814",
+                      "label": "Banner alert",
+                      "caption": "A. Container\nB. Prefix icon (optional)\nC. Header\nD. Subheader (optional)\nE. Link (optional)\nF. Close icon",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/anatomy_1739491332.png"
+                        }
+                      ]
+                    },
+                    "id": "387"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2447",
+                    "Title": "Content",
+                    "Text": "The banner should convey a clear and concise message. Thus its textual content must be as short and straightforward as possible, avoiding repetition and unnecessary details. These guidelines allow the user to be able to grasp the information in a short amount of time and quickly understand what will happen if they interact with the banner.\n\nThe prefix icon highlights the nature of the message. It is filled with the corresponding colour.\n\nThe header text should convey the main message in few words. \n\nThe subheader text supports the header text if extra information is needed for more clarity. Avoid paraphrasing the header. Do not use the subheader text when the header text is sufficient. The subheader helps the user to understand what action is expecting from him.\n\nThe link label must be short (one or two words) and describe explicitly the action taken by clicking on it.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2815",
+                      "label": null,
+                      "caption": "Hyperlinks can be used for additional information if needed.",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/content_8c1d868aaf.png"
+                        }
+                      ]
+                    },
+                    "id": "388"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2448",
+                    "Title": "Sizes",
+                    "Text": "The banner size varies depending on the size of the viewport size and its content. Its width expands to the full width of the layout, therefore it adapts to the viewport size, while its height adapts to its content. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2816",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_1_c79035acae.png"
+                        }
+                      ]
+                    },
+                    "id": "389"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2817",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_2_baedaca97d.png"
+                        }
+                      ]
+                    },
+                    "id": "390"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2818",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_3_c2a90988f2.png"
+                        }
+                      ]
+                    },
+                    "id": "391"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2449",
+                    "Title": "Message type",
+                    "Text": "Banner notifications can display two different main types of messages: system messages and general messages.\n\n##### System messages\nBanner notifications can display two different types of system messages: informative and error messages. The distinction between each of them is visually translated through the use of colours, and can be supported by a prefix icon.\n\nNote: icon information + error need to be designed.\n\n##### General messages\nBanner notifications can also display more general messages such as product advertisements or events, which are represented through the use of default styling.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2819",
+                      "label": null,
+                      "caption": "A. General message\nB. Informative system message\nC. Error system message",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/messagetypes_6e540080ae.png"
+                        }
+                      ]
+                    },
+                    "id": "392"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2450",
+                    "Title": "Behaviour",
+                    "Text": "When entering the page, the banner push all the content below it downwards, including the navigation.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1137",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2820",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/behaviour_1_8e0fcf6376.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2821",
+                        "label": null,
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/behaviour_2_1b7b09260e.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2451",
+                    "Title": null,
+                    "Text": "Banners behave in two different ways depending on the message they communicate. \n\nWhen displaying system messages, banners stay sticky on scroll. They are visible until the user dismisses them by clicking on a close icon on the top right corner of the component.\n\nWhen displaying general messages, such as product advertisements or events, banners disappear on scroll.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2452",
+                    "Title": "Animation",
+                    "Text": "The banner enters the viewport from the top while pushing the content below it down.\n\nNote: animation styles will be available soon",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1138",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2822",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_1_4d2a364afc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2823",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_2_2751d6fd3b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2824",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_3_d1f200b3c6.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2453",
+                    "Title": "Do and Don’ts",
+                    "Text": "Below you will find some best practice solutions for banners.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2454",
+                    "Title": null,
+                    "Text": "##### Content\nKeep the content clear and concise.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1139",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_content_do_338150f5ab.png"
+                        },
+                        "size": "Medium",
+                        "description": "Ensure that the text displayed on the banner is clear and concise",
+                        "id": "281"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_content_dont_e8f01271d1.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use long and repetitive text. The message must be short and direct.",
+                        "id": "282"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2455",
+                    "Title": null,
+                    "Text": "##### Placement\nBanners are always placed on top of the viewport without hiding any content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1140",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement_do_6b0ab52a02.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the banner on the top of the viewport",
+                        "id": "283"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement_dont_d12df74041.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the banner alert over content such as the top navigation bar",
+                        "id": "284"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1141",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement2_do_d5d27ee7e7.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the banner on the top of the viewport",
+                        "id": "285"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement2_dont_47f5864bef.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the banner over the side navigation",
+                        "id": "286"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2456",
+                    "Title": null,
+                    "Text": "##### Left alignment\nAlways align the text to the left.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1142",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_leftalignment_do_63fe8df807.png"
+                        },
+                        "size": "Medium",
+                        "description": "Always align the text to the left",
+                        "id": "287"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_leftalignment_dont_8317991399.png"
+                        },
+                        "size": "Medium",
+                        "description": "Center-align the text",
+                        "id": "288"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2457",
+                    "Title": null,
+                    "Text": "##### Number of banners\nAvoid displaying more than one banner on a page. When possible, it is recommanded to combine the messages within one banner. If the messages are too different to live on the same banner, only show the highest priority banner.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1143",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_numberofbanners_do_632e06ec03.png"
+                        },
+                        "size": "Medium",
+                        "description": "Display one banner at a time",
+                        "id": "289"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_numberofbanners_dont_cc27735772.png"
+                        },
+                        "size": "Medium",
+                        "description": "Stacking multiple banners",
+                        "id": "290"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2458",
+                    "Title": null,
+                    "Text": "##### Action\nOnly one action can be perform through the banners.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1144",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_action_do_7ae6b946cc.png"
+                        },
+                        "size": "Medium",
+                        "description": "Only allow users to perform one action",
+                        "id": "291"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_action_dont_db19d510e3.png"
+                        },
+                        "size": "Medium",
+                        "description": "Allow multiple actions",
+                        "id": "292"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-05-03T16:11:14.325Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "310",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "330",
+                "title": "Contents Banners Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2459",
+                    "Title": "Colour",
+                    "Text": "The colour plays an essential role in the banner component as it indicates the type of message displayed.\n\n<table>\n<thead>\n  <tr>\n    <th>Type</th>\n    <th>Container</th>\n    <th>Icon</th>\n    <th>Text</th>\n    <th>Link</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-50</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td>Information</td>\n    <td>$blue-100</td>\n    <td>$blue-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td>Error</td>\n    <td>$red-100</td>\n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2460",
+                    "Title": null,
+                    "Text": "##### Default\nGeneral messages, such as events or product advertisements, are displayed in the default style of a banner. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2825",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_8f0c6976f6.png"
+                        }
+                      ]
+                    },
+                    "id": "393"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2461",
+                    "Title": null,
+                    "Text": "##### Information\nInformative messages are visually translated with the use of a $blue-100 container background, and can be supported with a $blue-500 filled information prefix icon.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2826",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_192364cafd.png"
+                        }
+                      ]
+                    },
+                    "id": "394"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2462",
+                    "Title": null,
+                    "Text": "##### Error\nError messages are visually translated with the use of a $red-100 container background, and can be supported with a filled $red-500 error prefix icon. When designing the error icon, make sure that it can’t be confused with the close icon. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2827",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_bba07b667a.png"
+                        }
+                      ]
+                    },
+                    "id": "395"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2463",
+                    "Title": "Sizing",
+                    "Text": "Banners expand to the full width of the viewport and their content follows the grid layout. Their height varies depending on their content.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1145",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2828",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_7c9ca7a97c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2829",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_4812215567.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2830",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_529384779c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2831",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_55f6d366d4.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2832",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_76770347f7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2833",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_fe7663fd7f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2464",
+                    "Title": "Typography",
+                    "Text": "The text should start with the first letter set in upper case, and the remaining letters in lower case. Don't use full stops in short phrases or single sentences. Only use full stops when using multiple sentences. \n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text Style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Subheader</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Link</td>\n    <td>$link</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2465",
+                    "Title": "Animation",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Trigger</th>\n    <th>Scania motion</th>\n    <th>CSS</th>\n    <th>After Effects</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Appearing</td>\n    <td>Auto</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Disappearing</td>\n    <td>Click on cross-icon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2466",
+                    "Title": "Corner radius",
+                    "Text": "The banner has squared corners with a 0px / 0 rem corner radius.\n\n<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0 px / 0 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2834",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_994ee26ed6.png"
+                        }
+                      ]
+                    },
+                    "id": "396"
+                  }
+                ],
+                "updated_at": "2021-05-03T16:23:01.055Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "311",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -20026,7 +20847,7 @@
       "id": "185",
       "url": "toasts",
       "displayLink": null,
-      "title": "Components Toasts",
+      "title": "Toasts",
       "thumbnail": null,
       "showTabs": true,
       "pageStructure": [
@@ -20988,827 +21809,6 @@
         {
           "__typename": "ComponentPagePluginTab",
           "id": "308",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "186",
-      "url": "banners",
-      "displayLink": null,
-      "title": "Components Banners",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "309",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "329",
-                "title": "Components Banners Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2443",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "A banner is a container displaying system messages to the users without interrupting their workflow. It is an efficient tool to build a trustful and intuitive communication with the users.",
-                      "Introduction": true,
-                      "id": "393"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2444",
-                    "Title": "Usage",
-                    "Text": "To ensure a good usage of this component and get more context about which notification variant to use, please refer to the [notifications pattern page](http://digitaldesign.scania.com). \n\nThe banner is one of the three existing variants of a notification. It is used to display short system messages and general messages that have low priority, and are not connected to a user task, e.g. “The application will undergo maintenance on Monday October 16th, from 2am to 4am”.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2812",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/usage_example_21f6cab9a9.png"
-                        }
-                      ]
-                    },
-                    "id": "385"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2445",
-                    "Title": "Placement",
-                    "Text": "The banner is placed at the top of the active page right above the top navigation (see example below). When entering the page, all content below it is being pushed downwards. Banners never overlap any content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2813",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/placement_example_7f16d78169.png"
-                        }
-                      ]
-                    },
-                    "id": "386"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2446",
-                    "Title": "Anatomy",
-                    "Text": null,
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2814",
-                      "label": "Banner alert",
-                      "caption": "A. Container\nB. Prefix icon (optional)\nC. Header\nD. Subheader (optional)\nE. Link (optional)\nF. Close icon",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/anatomy_1739491332.png"
-                        }
-                      ]
-                    },
-                    "id": "387"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2447",
-                    "Title": "Content",
-                    "Text": "The banner should convey a clear and concise message. Thus its textual content must be as short and straightforward as possible, avoiding repetition and unnecessary details. These guidelines allow the user to be able to grasp the information in a short amount of time and quickly understand what will happen if they interact with the banner.\n\nThe prefix icon highlights the nature of the message. It is filled with the corresponding colour.\n\nThe header text should convey the main message in few words. \n\nThe subheader text supports the header text if extra information is needed for more clarity. Avoid paraphrasing the header. Do not use the subheader text when the header text is sufficient. The subheader helps the user to understand what action is expecting from him.\n\nThe link label must be short (one or two words) and describe explicitly the action taken by clicking on it.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2815",
-                      "label": null,
-                      "caption": "Hyperlinks can be used for additional information if needed.",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/content_8c1d868aaf.png"
-                        }
-                      ]
-                    },
-                    "id": "388"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2448",
-                    "Title": "Sizes",
-                    "Text": "The banner size varies depending on the size of the viewport size and its content. Its width expands to the full width of the layout, therefore it adapts to the viewport size, while its height adapts to its content. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2816",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_1_c79035acae.png"
-                        }
-                      ]
-                    },
-                    "id": "389"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2817",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_2_baedaca97d.png"
-                        }
-                      ]
-                    },
-                    "id": "390"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2818",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/sizes_3_c2a90988f2.png"
-                        }
-                      ]
-                    },
-                    "id": "391"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2449",
-                    "Title": "Message type",
-                    "Text": "Banner notifications can display two different main types of messages: system messages and general messages.\n\n##### System messages\nBanner notifications can display two different types of system messages: informative and error messages. The distinction between each of them is visually translated through the use of colours, and can be supported by a prefix icon.\n\nNote: icon information + error need to be designed.\n\n##### General messages\nBanner notifications can also display more general messages such as product advertisements or events, which are represented through the use of default styling.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2819",
-                      "label": null,
-                      "caption": "A. General message\nB. Informative system message\nC. Error system message",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/messagetypes_6e540080ae.png"
-                        }
-                      ]
-                    },
-                    "id": "392"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2450",
-                    "Title": "Behaviour",
-                    "Text": "When entering the page, the banner push all the content below it downwards, including the navigation.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1137",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2820",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/behaviour_1_8e0fcf6376.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2821",
-                        "label": null,
-                        "caption": null,
-                        "size": "ExtraMedium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/behaviour_2_1b7b09260e.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2451",
-                    "Title": null,
-                    "Text": "Banners behave in two different ways depending on the message they communicate. \n\nWhen displaying system messages, banners stay sticky on scroll. They are visible until the user dismisses them by clicking on a close icon on the top right corner of the component.\n\nWhen displaying general messages, such as product advertisements or events, banners disappear on scroll.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2452",
-                    "Title": "Animation",
-                    "Text": "The banner enters the viewport from the top while pushing the content below it down.\n\nNote: animation styles will be available soon",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1138",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2822",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_1_4d2a364afc.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2823",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_2_2751d6fd3b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2824",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/animation_3_d1f200b3c6.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2453",
-                    "Title": "Do and Don’ts",
-                    "Text": "Below you will find some best practice solutions for banners.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2454",
-                    "Title": null,
-                    "Text": "##### Content\nKeep the content clear and concise.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1139",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_content_do_338150f5ab.png"
-                        },
-                        "size": "Medium",
-                        "description": "Ensure that the text displayed on the banner is clear and concise",
-                        "id": "281"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_content_dont_e8f01271d1.png"
-                        },
-                        "size": "Medium",
-                        "description": "Use long and repetitive text. The message must be short and direct.",
-                        "id": "282"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2455",
-                    "Title": null,
-                    "Text": "##### Placement\nBanners are always placed on top of the viewport without hiding any content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1140",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement_do_6b0ab52a02.png"
-                        },
-                        "size": "Medium",
-                        "description": "Place the banner on the top of the viewport",
-                        "id": "283"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement_dont_d12df74041.png"
-                        },
-                        "size": "Medium",
-                        "description": "Place the banner alert over content such as the top navigation bar",
-                        "id": "284"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1141",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement2_do_d5d27ee7e7.png"
-                        },
-                        "size": "Medium",
-                        "description": "Place the banner on the top of the viewport",
-                        "id": "285"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_placement2_dont_47f5864bef.png"
-                        },
-                        "size": "Medium",
-                        "description": "Place the banner over the side navigation",
-                        "id": "286"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2456",
-                    "Title": null,
-                    "Text": "##### Left alignment\nAlways align the text to the left.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1142",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_leftalignment_do_63fe8df807.png"
-                        },
-                        "size": "Medium",
-                        "description": "Always align the text to the left",
-                        "id": "287"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_leftalignment_dont_8317991399.png"
-                        },
-                        "size": "Medium",
-                        "description": "Center-align the text",
-                        "id": "288"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2457",
-                    "Title": null,
-                    "Text": "##### Number of banners\nAvoid displaying more than one banner on a page. When possible, it is recommanded to combine the messages within one banner. If the messages are too different to live on the same banner, only show the highest priority banner.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1143",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_numberofbanners_do_632e06ec03.png"
-                        },
-                        "size": "Medium",
-                        "description": "Display one banner at a time",
-                        "id": "289"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_numberofbanners_dont_cc27735772.png"
-                        },
-                        "size": "Medium",
-                        "description": "Stacking multiple banners",
-                        "id": "290"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2458",
-                    "Title": null,
-                    "Text": "##### Action\nOnly one action can be perform through the banners.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1144",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_action_do_7ae6b946cc.png"
-                        },
-                        "size": "Medium",
-                        "description": "Only allow users to perform one action",
-                        "id": "291"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dosdonts_action_dont_db19d510e3.png"
-                        },
-                        "size": "Medium",
-                        "description": "Allow multiple actions",
-                        "id": "292"
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-05-03T16:11:14.325Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "310",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "330",
-                "title": "Contents Banners Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2459",
-                    "Title": "Colour",
-                    "Text": "The colour plays an essential role in the banner component as it indicates the type of message displayed.\n\n<table>\n<thead>\n  <tr>\n    <th>Type</th>\n    <th>Container</th>\n    <th>Icon</th>\n    <th>Text</th>\n    <th>Link</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-50</td>\n    <td>$grey-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td>Information</td>\n    <td>$blue-100</td>\n    <td>$blue-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td>Error</td>\n    <td>$red-100</td>\n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$blue-600</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2460",
-                    "Title": null,
-                    "Text": "##### Default\nGeneral messages, such as events or product advertisements, are displayed in the default style of a banner. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2825",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_8f0c6976f6.png"
-                        }
-                      ]
-                    },
-                    "id": "393"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2461",
-                    "Title": null,
-                    "Text": "##### Information\nInformative messages are visually translated with the use of a $blue-100 container background, and can be supported with a $blue-500 filled information prefix icon.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2826",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_192364cafd.png"
-                        }
-                      ]
-                    },
-                    "id": "394"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2462",
-                    "Title": null,
-                    "Text": "##### Error\nError messages are visually translated with the use of a $red-100 container background, and can be supported with a filled $red-500 error prefix icon. When designing the error icon, make sure that it can’t be confused with the close icon. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2827",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_bba07b667a.png"
-                        }
-                      ]
-                    },
-                    "id": "395"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2463",
-                    "Title": "Sizing",
-                    "Text": "Banners expand to the full width of the viewport and their content follows the grid layout. Their height varies depending on their content.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1145",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2828",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_7c9ca7a97c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2829",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_4812215567.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2830",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_529384779c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2831",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_55f6d366d4.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2832",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_76770347f7.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2833",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_fe7663fd7f.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2464",
-                    "Title": "Typography",
-                    "Text": "The text should start with the first letter set in upper case, and the remaining letters in lower case. Don't use full stops in short phrases or single sentences. Only use full stops when using multiple sentences. \n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text Style</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>$headline-07</td>\n  </tr>\n  <tr>\n    <td>Subheader</td>\n    <td>$detail-02</td>\n  </tr>\n  <tr>\n    <td>Link</td>\n    <td>$link</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2465",
-                    "Title": "Animation",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Trigger</th>\n    <th>Scania motion</th>\n    <th>CSS</th>\n    <th>After Effects</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Appearing</td>\n    <td>Auto</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n  </tr>\n  <tr>\n    <td>Disappearing</td>\n    <td>Click on cross-icon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n    <td>will-be-added-soon</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2466",
-                    "Title": "Corner radius",
-                    "Text": "The banner has squared corners with a 0px / 0 rem corner radius.\n\n<table>\n<thead>\n  <tr>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0 px / 0 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2834",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_994ee26ed6.png"
-                        }
-                      ]
-                    },
-                    "id": "396"
-                  }
-                ],
-                "updated_at": "2021-05-03T16:23:01.055Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "311",
           "title": "Code",
           "active": true,
           "pageContent": [
