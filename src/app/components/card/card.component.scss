@@ -30,10 +30,6 @@
       color: var(--sdds-blue-900);
     }
 
-    &-body {
-      padding-top: 15px;
-    }
-
     &-footer {
       color: var(--sdds-black);
       svg {
@@ -50,12 +46,6 @@
           word-spacing: -1rem;
         }
       }
-    }
-  }
-
-  @media(min-width:672px) {
-    .sdds-card-body {
-      height: 23rem;
     }
   }
 
