@@ -718,7 +718,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "240",
                     "Title": "Scania Theme",
-                    "Text": "Scania theme is a package that contains Scania specific styling for each of those components/patterns in the SDDS toolbox. Every component has a unique styling with Scania look and feel. Moreover, you can also expect to find fonts, icons, tokens and much more.",
+                    "Text": "Scania theme is a package that contains Scania specific styling for each of those components/patterns in the SDDS toolbox. Every component has a unique styling with Scania look and feel. You can expect to use SDDS design tokens from the available CSS variables, as well as Scania fonts, logotype, wordmarks, and many more. To use Scania icons and pictograms, you need to install the package separately. See the documention in the [Pictograms page](foundations/pictograms/code). ",
                     "LeadText": null
                   },
                   {
@@ -795,7 +795,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-07T09:17:10.992Z"
+                "updated_at": "2021-05-11T12:06:36.394Z"
               }
             }
           ]
@@ -1888,1460 +1888,6 @@
           "__typename": "ComponentPagePluginTab",
           "id": "191",
           "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "17",
-        "url": "foundations",
-        "displayLink": null,
-        "title": "Foundations",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "46",
-      "url": "pictograms",
-      "displayLink": "Pictograms",
-      "title": "Foundation Pictograms",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "180",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "206",
-                "title": "Foundation Pictogram Information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "933",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
-                      "Introduction": true,
-                      "id": "215"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "934",
-                    "Title": "Usage",
-                    "Text": "The design of the pictograms — where soft curves meet sharp edges — is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Then our illustrative pictograms could be used to visualise information in a simplified way, and when used, supportive text should always be present. \n\nCorrectly used, the pictograms improve the structure and clarity of any message.  We also have [icons](foundations/icons), which are a smaller non-decorative icon element which purpose is to highlight functions or actions. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "880",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ac94031e798f423eae1f66453f70c0fc.png"
-                        }
-                      ]
-                    },
-                    "id": "87"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "935",
-                    "Title": "Sizing",
-                    "Text": "Our pictograms could be used in a variety of sizes, which are based on our Unit System. The minum size is 48px and the maximum size will vary depending on application.\n\nFor pictograms in size 48px, we have thicker line width than pictograms larger than 72px. When downloading a pictogram, you will get both a 48 and a 72px version.\n\nLearn more about our [Unit System](foundations/unit-grid-system).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "881",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b80ce821d7294ef6bd7484cfa7066063.png"
-                        }
-                      ]
-                    },
-                    "id": "88"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "936",
-                    "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "383",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "163",
-                        "title": "Pictograms",
-                        "description": "Library",
-                        "info": "453mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/pictogram/1.0.0/pictogram_v1.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-14T14:25:56.969Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "182",
-          "title": "Pictograms",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "112",
-                "title": "Foundation Pictograms Pictograms",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "167",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "All our pictograms are available in the list below, where you can download or copy the HTML snippet for specific pictograms. Simply browse the list or search to find what you are looking for.",
-                      "Introduction": true,
-                      "id": "144"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginIconList",
-                    "id": "2",
-                    "category": "System",
-                    "iconList": "scania-24h_service\nscania-accident_repair\nscania-adr_vehicle_service\nscania-alternative_fuels\nscania-angle-down\nscania-arrow\nscania-battery\nscania-bio-natural_gas\nscania-biodiesel\nscania-bioethanol\nscania-boat\nscania-book\nscania-bus\nscania-bus-sale\nscania-bus_application\nscania-bus_connected\nscania-bus_service\nscania-business_operator",
-                    "Icons": [
-                      {
-                        "id": "11",
-                        "name": "scania-24h_service",
-                        "title": "24 Hour Service",
-                        "description": "",
-                        "usage": "",
-                        "restriction": ""
-                      },
-                      {
-                        "id": "15",
-                        "name": "scania-accident_repair",
-                        "title": "Accident repair",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "217",
-                        "name": "scania-adr_vehicle_service",
-                        "title": "Vehicle service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "218",
-                        "name": "scania-alternative_fuels",
-                        "title": "Alternative fuels",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "219",
-                        "name": "scania-angle-down",
-                        "title": "Angle down",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "220",
-                        "name": "scania-arrow",
-                        "title": "Arrow",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "221",
-                        "name": "scania-battery",
-                        "title": "Battery",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "222",
-                        "name": "scania-bio-natural_gas",
-                        "title": "Bio natural gas",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "223",
-                        "name": "scania-biodiesel",
-                        "title": "Biodiesel",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "224",
-                        "name": "scania-bioethanol",
-                        "title": "Bioethanol",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "225",
-                        "name": "scania-boat",
-                        "title": "Boat",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "226",
-                        "name": "scania-book",
-                        "title": "Book",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "227",
-                        "name": "scania-bus-sale",
-                        "title": "Bus sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "228",
-                        "name": "scania-bus",
-                        "title": "Bus",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "229",
-                        "name": "scania-bus_application",
-                        "title": "Bus application",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "230",
-                        "name": "scania-bus_connected",
-                        "title": "Bus connected",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "231",
-                        "name": "scania-bus_service",
-                        "title": "Bus service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "232",
-                        "name": "scania-business_operator",
-                        "title": "Business operator",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "233",
-                        "name": "scania-cab",
-                        "title": "Cab",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "234",
-                        "name": "scania-circular_arrows",
-                        "title": "Circular arrows",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "235",
-                        "name": "scania-cloud",
-                        "title": "Cloud",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "236",
-                        "name": "scania-co2",
-                        "title": "CO2",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "237",
-                        "name": "scania-cogwheel_star",
-                        "title": "Cogwheel star",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "238",
-                        "name": "scania-comfort_passenger",
-                        "title": "Comfort passenger",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "239",
-                        "name": "scania-communication",
-                        "title": "Communication",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "240",
-                        "name": "scania-compass",
-                        "title": "Compass",
-                        "description": "",
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "241",
-                        "name": "scania-concrete_mixer",
-                        "title": "Concrete mixer",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "242",
-                        "name": "scania-configurator",
-                        "title": "Configurator",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "243",
-                        "name": "scania-connected_engines",
-                        "title": "Connected engines",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "244",
-                        "name": "scania-crane",
-                        "title": "Crane",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "245",
-                        "name": "scania-cross",
-                        "title": "Cross",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "246",
-                        "name": "scania-cross_circle",
-                        "title": "Cross circle",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "247",
-                        "name": "scania-data",
-                        "title": "Data",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "248",
-                        "name": "scania-date",
-                        "title": "Date",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "249",
-                        "name": "scania-detect_location",
-                        "title": "Detect location",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "250",
-                        "name": "scania-driveability",
-                        "title": "Driveability",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "251",
-                        "name": "scania-driver_bus",
-                        "title": "Driver bus",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "252",
-                        "name": "scania-driving_licence",
-                        "title": "Driving licence",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "253",
-                        "name": "scania-efficiency",
-                        "title": "Efficiency",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "254",
-                        "name": "scania-email",
-                        "title": "Email",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "255",
-                        "name": "scania-engine",
-                        "title": "Engine",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "256",
-                        "name": "scania-engine_application",
-                        "title": "Engine application",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "257",
-                        "name": "scania-engine_sale",
-                        "title": "Engine sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "258",
-                        "name": "scania-engines_service",
-                        "title": "Engines service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "259",
-                        "name": "scania-event",
-                        "title": "Event",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "260",
-                        "name": "scania-external_link",
-                        "title": "External link",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "261",
-                        "name": "scania-facebook",
-                        "title": "Facebook",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "262",
-                        "name": "scania-filter",
-                        "title": "Filter",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "263",
-                        "name": "scania-finance",
-                        "title": "Finance",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "264",
-                        "name": "scania-find_a_dealer",
-                        "title": "Find a dealer",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "265",
-                        "name": "scania-flickr",
-                        "title": "Flickr",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "266",
-                        "name": "scania-forbiden_enter",
-                        "title": "Forbidden enter",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "267",
-                        "name": "scania-fuel_cell",
-                        "title": "Fuel cell",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "268",
-                        "name": "scania-fuel_meter",
-                        "title": "Fuel meter",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "269",
-                        "name": "scania-gear",
-                        "title": "Gear",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "270",
-                        "name": "scania-genset_sale",
-                        "title": "Genset sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "271",
-                        "name": "scania-gensets_service",
-                        "title": "Gensets service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "272",
-                        "name": "scania-globe",
-                        "title": "Globe",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "273",
-                        "name": "scania-graph_check",
-                        "title": "Graph check",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "274",
-                        "name": "scania-graph_search",
-                        "title": "Graph search",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "275",
-                        "name": "scania-home",
-                        "title": "Home",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "276",
-                        "name": "scania-hourglass",
-                        "title": "Hourglass",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "277",
-                        "name": "scania-hvo",
-                        "title": "Hvo",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "278",
-                        "name": "scania-hybrid",
-                        "title": "Hybrid",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "279",
-                        "name": "scania-hydraulics_service",
-                        "title": "Hydraulic service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "280",
-                        "name": "scania-information",
-                        "title": "Information",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "281",
-                        "name": "scania-instagram",
-                        "title": "Instagram",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "282",
-                        "name": "scania-instrumentation",
-                        "title": "Instrumentation",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "283",
-                        "name": "scania-lightbulb",
-                        "title": "Lightbulb",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "284",
-                        "name": "scania-linkedin",
-                        "title": "LinkedIn",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "285",
-                        "name": "scania-listen_driver",
-                        "title": "Listen driver",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "286",
-                        "name": "scania-marine_engine_sale",
-                        "title": "Marine engine sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "287",
-                        "name": "scania-marine_engine_service",
-                        "title": "Marine engine service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "288",
-                        "name": "scania-mechanic_technician",
-                        "title": "Mechanic technician",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "289",
-                        "name": "scania-menu-mobile",
-                        "title": "Menu mobile",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "290",
-                        "name": "scania-mining_sale",
-                        "title": "Mining sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "291",
-                        "name": "scania-mining_service",
-                        "title": "Mining service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "292",
-                        "name": "scania-minus",
-                        "title": "Minus",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "293",
-                        "name": "scania-news",
-                        "title": "News",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "294",
-                        "name": "scania-no-sound",
-                        "title": "No sound",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "295",
-                        "name": "scania-no_phone",
-                        "title": "No phone",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "296",
-                        "name": "scania-no_photo",
-                        "title": "No photo",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "297",
-                        "name": "scania-no_smoking",
-                        "title": "No smoking",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "298",
-                        "name": "scania-open_24h",
-                        "title": "Open 24h",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "299",
-                        "name": "scania-part_sale",
-                        "title": "Part sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "300",
-                        "name": "scania-passenger",
-                        "title": "Passenger",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "301",
-                        "name": "scania-payload",
-                        "title": "Payload",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "302",
-                        "name": "scania-pdf",
-                        "title": "PDF",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "303",
-                        "name": "scania-phone",
-                        "title": "Phone",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "304",
-                        "name": "scania-pin-flag",
-                        "title": "Pin flag",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "305",
-                        "name": "scania-plus",
-                        "title": "Plus",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "306",
-                        "name": "scania-power-plug",
-                        "title": "Power plug",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "307",
-                        "name": "scania-powergen",
-                        "title": "Power generator",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "308",
-                        "name": "scania-productivity",
-                        "title": "Productivity",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "309",
-                        "name": "scania-profile_icon",
-                        "title": "Profile icon",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "310",
-                        "name": "scania-repairs",
-                        "title": "Repairs",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "478",
-                        "name": "scania-roller_break",
-                        "title": "Roller break",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "479",
-                        "name": "scania-safety",
-                        "title": "Safety",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "480",
-                        "name": "scania-save",
-                        "title": "Save",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "481",
-                        "name": "scania-search-details",
-                        "title": "Search details",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "482",
-                        "name": "scania-search",
-                        "title": "Search",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "483",
-                        "name": "scania-seatbelt",
-                        "title": "Seatbelt",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "484",
-                        "name": "scania-settings",
-                        "title": "Settings",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "485",
-                        "name": "scania-share_page_tool",
-                        "title": "Share page tool",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "486",
-                        "name": "scania-slideshare",
-                        "title": "Slideshare",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "487",
-                        "name": "scania-sound",
-                        "title": "Sound",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "488",
-                        "name": "scania-square_stack",
-                        "title": "Square stack",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "489",
-                        "name": "scania-tachograph_analogue",
-                        "title": "Tachograph analogue",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "490",
-                        "name": "scania-tail_lift",
-                        "title": "Tail lift",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "491",
-                        "name": "scania-tail_lift_service",
-                        "title": "Tail lift service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "492",
-                        "name": "scania-tarpaulin_service",
-                        "title": "Tarpaulin service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "493",
-                        "name": "scania-team",
-                        "title": "Team",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "494",
-                        "name": "scania-toe",
-                        "title": "Toe",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "495",
-                        "name": "scania-toll_collect_recovery_service",
-                        "title": "Toll collect recovery service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "496",
-                        "name": "scania-towing_service",
-                        "title": "Towing service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "497",
-                        "name": "scania-trailer",
-                        "title": "Trailer",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "498",
-                        "name": "scania-training_classroom",
-                        "title": "Training classroom ",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "499",
-                        "name": "scania-transport_refrigeration_service",
-                        "title": "Transport refrigeration service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "500",
-                        "name": "scania-truck-sale",
-                        "title": "Truck sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "501",
-                        "name": "scania-truck",
-                        "title": "Truck",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "502",
-                        "name": "scania-truck_assembly",
-                        "title": "Truck assembly",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "503",
-                        "name": "scania-truck_connected",
-                        "title": "Truck connected",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "504",
-                        "name": "scania-truck_service",
-                        "title": "Truck service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "505",
-                        "name": "scania-twitter",
-                        "title": "Twitter",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "506",
-                        "name": "scania-tyre_service",
-                        "title": "Tyre service",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "507",
-                        "name": "scania-umbrella",
-                        "title": "Umbrella",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "508",
-                        "name": "scania-uptime",
-                        "title": "Uptime",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "509",
-                        "name": "scania-used_vehicle_sale",
-                        "title": "Used vehicle sale",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "510",
-                        "name": "scania-vehicle_rent",
-                        "title": "Vehicle rent",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "511",
-                        "name": "scania-vehicle_washing",
-                        "title": "Vehicle washing",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "512",
-                        "name": "scania-video_player",
-                        "title": "Video player",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "513",
-                        "name": "scania-warning",
-                        "title": "Warning",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "514",
-                        "name": "scania-wifi",
-                        "title": "Wifi",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      },
-                      {
-                        "id": "515",
-                        "name": "scania-youtube",
-                        "title": "Youtube",
-                        "description": null,
-                        "usage": null,
-                        "restriction": null
-                      }
-                    ]
-                  }
-                ],
-                "updated_at": "2021-04-22T07:33:29.070Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "183",
-          "title": "Contribute",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "207",
-                "title": "Foundation Pictograms Contribute",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "945",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following the guidelines below. ",
-                      "Introduction": true,
-                      "id": "216"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "946",
-                    "Title": "Re-use elements",
-                    "Text": "Please note that already existing pictogram elements should be re-used as far as possible. As an example for “electricity/power”, the same element (flash) is used in both the battery and the Scania Gensets pictogram. \n\nAnother one is the element “tyre”, which is used both in the pictogram for conditions roads and tyre service.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "896",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e6f63ea836a240398f44c0696bd5c1f9.png"
-                        }
-                      ]
-                    },
-                    "id": "99"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "947",
-                    "Title": "Construct a pictogram",
-                    "Text": "Below you find detailed information about how to build a new custom pictogram, using Adobe Illustrator.\n\n\n##### Steps 1-3",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "386",
-                    "Title": "",
-                    "Images": [
-                      {
-                        "id": "897",
-                        "label": "Step 1 — Grid settings",
-                        "caption": "A square shape pixel grid (256x256px) is used as a base. To match the optical volume sub-containers help to match the different format pictograms.",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/115a5c28948f47379bf09aa279844a50.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "933",
-                        "label": "Step 2 — Line width",
-                        "caption": "For the same optical appearance of the pictograms in different sizes, the line width is adjusted. A smaller scale pictogram (up to 48px) requires thicker line width (10 pixels) than a larger one (line width: 7 pixels).",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0a88ed9a45fb4079a7e9ab179dfdf0c3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "934",
-                        "label": "Step 3 — Geometry",
-                        "caption": "The pictogram shape is based on the bespoke font Scania Sans, industrial design elements, - a mix of straight lines and curvatures. For letters and numbers in pictograms use the Scania Sans typeface. ",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5caa9b1f8be64896b2810bc0a788dd91.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "399",
-                    "Title": "Clear space",
-                    "Images": [
-                      {
-                        "id": "931",
-                        "label": "",
-                        "caption": "The minimum clear space of the pictogram is a square with the same size as 1/8 of the width of the pictogram.",
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1ec0a77f8c8844bd959923916c7dad68.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "965",
-                    "Title": "Contribution process",
-                    "Text": "##### Approval\nBefore finalising the icon, the icon design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the icon, make sure to convert all strokes to outlines and unite the icon to one single path.\n\nAll new icons must always be saved in two versions (positive and negative), two sizes (small and large) and three file formats (.ai, .svg and .png) - in total 12 files for each icon:\n\n##### Positive version: Scania Blue <br/>\n• PNG and SVG files: RGB 40_30_66<br/>\n• AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White <br/>\n• PNG and SVG files: RGB 250_250_250<br/>\n• AI files: CMYK 0_0_0_0\n\n##### Sizes <br/>\n• Small: Line width 10px (for sizes 24-48px)<br/>\n• Large Line width 7px (for sizes 54-72px)\n\n##### Formats <br/>\n• AI file format for use in print<br/>\n• PNG and SVG file format for digital use\n\n##### Naming <br/>\nThe icon file name should begin with “ICON”, followed by a short name for the icon and end with the size for which the icon is optimised. For the negative versions “neg” is added after the size. So, the file names for e.g. “Truck service” would then be:<br/>\nICON_Truck_service_24-48px.ai /.svg /.png <br/>\nICON_Truck_service_24-48px_neg.ai /.svg /.png <br/>\nICON_Truck_service_54-72px.ai /.svg /.png <br/>\nICON_Truck_service_54-72px_neg.ai /.svg /.png\n\n##### Scania Icon PDF Template <br/>\nFor each new icon a PDF file needs to be created. Use the “Scania Icon PDF Template” and include the following information:\n\n• Name of the icon (max. three words)<br/>\n• Description of the icon<br/>\n• Restrictions for use of the icon (if any/optional)<br/>\n• An image/illustration of the new icon\n\nThe PDF file name should be an ID number (please contact your contact person at the Marketing Communications or Brand Management department or identity@scania.com).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "932",
-                      "label": null,
-                      "caption": "Scania Icon PDF Template",
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/25fb33afb178416c89a82e20cd38fae9.png"
-                        }
-                      ]
-                    },
-                    "id": "106"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "966",
-                    "Title": null,
-                    "Text": "##### Delivery\nAll icon files are sent together with the PDF file to imagedesk@scania.com (to be published in the “icon library” in Scania Media Provider) and identity@scania.com (to be published in Scania Digital Design System).\n\nDelivering the icon files also means that it is approved to be published as well as archived in Scania Media Provider and Scania Digital Design System. The icon may also be used by other users, for it’s intended purpose and as long as the restrictions (if any) are respected.\n\n##### Support\nShould you have any questions, please do not hesitate to contact Scania Identity Helpdesk at [identity@scania.com](mailto:identity@scania.com).\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "967",
-                    "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "400",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "169",
-                        "title": "Pictograms",
-                        "description": "Scania Icon PDF Template",
-                        "info": "1.25mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/brand/1.0.0/Scania+icon+PDF+template.docx.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2020-12-14T16:45:33.834Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "187",
-          "title": "Code",
           "active": true,
           "pageContent": [
             {
@@ -4889,7 +3435,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1060",
                     "Title": "Installation",
-                    "Text": "You can install SDDS typography package with <a href=\"https://www.npmjs.com/r\">npm</a>. Run the following command:",
+                    "Text": "If you already install '@scania/theme-light' you can use the CSS classes directly in your HTML. If you need the SCSS functions, you can install SDDS typography package with <a href=\"https://www.npmjs.com/package/@scania/typography\">npm</a>. Run the following command:",
                     "LeadText": null
                   },
                   {
@@ -4898,13 +3444,13 @@
                     "title": null,
                     "code": "> npm i @scania/typography --save",
                     "componentTag": null,
-                    "preview": null
+                    "preview": false
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1061",
                     "Title": "Using tokens",
-                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nIn order to get the correct font file, make sure to install scania-theme.\n\n```\n> npm i @scania-sdds/theme-light\n\n// And add sdds-theme component in your HTML\n<sdds-theme name='scania'></sdds-theme>\n```\n\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/typography/dist/scss/mixins';\n@import '~node_modules/@scania/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
+                    "Text": "You can use SDDS typography tokens in your Javascript application by importing the SASS file or use the ready-made CSS custom properties and classes.\n\nYou need to include the font-face CSS *only if* you do not install '@scania/theme-light'.\nYou can add it from the package or from the CDN.\n\n```\n@import '~node_modules/@scania/typography/dist/fonts/scania-sans.css';\n\n// OR\n\n@import url('https://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/scania-sans.css');\n```\n\n**SASS**\n\nWe have a ready-to-use function to help you get the typography from SDDS library. Remember, you need to install `node-sass` in your application.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/typography/dist/scss/mixins';\n@import '~node_modules/@scania/typography/dist/scss/tokens';\n\n// use a mixin called type-style(token-name) to get typography properties from SDDS\n.my-headline {\n    @include type-style('headline-01');\n}\n\n// The code will be rendered as below\n.my-headline {\n  font-family: \"Scania Sans Headline\", Arial, Helvetica, sans-serif;\n  font-weight: bold;\n  font-size: 10rem;\n  line-height: 10rem;\n  letter-spacing: 0em;\n}\n```\n\n**CSS classes**\n\nThe format of CSS class is `sdds-{token-name}`.\n\nIn HTML file:\n\n```\n<p class=\"sdds-headline-01\">\n  This is a headline\n</p>\n\n```",
                     "LeadText": null
                   },
                   {
@@ -4920,7 +3466,14 @@
                     "title": null,
                     "code": "@import '~node_modules/@scania/typography/dist/css/typography';\n\n// Sometimes you need to include .css at the end of the import.\n\n// If in some case you do not have @scania/theme-light installed, \n// you need to set the body font to 4px (SDDS unit base) to normalize the font size.\nhtml, body {\n  font-size: 4px;\n}",
                     "componentTag": null,
-                    "preview": null
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2470",
+                    "Title": "Fonts CSS",
+                    "Text": "As an alternative from the solution above, you can also import the fonts directly into your application via CDN. Remember, if you already installed @scania/theme-light in your application, you do not need to import the CSS again. If you need the fonts without the theme, the CSS is available on this URL:\n\nhttps://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/scania-sans.css\n\n",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
@@ -4953,7 +3506,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-16T14:28:30.665Z"
+                "updated_at": "2021-05-17T13:30:32.016Z"
               }
             }
           ]
@@ -5570,7 +4123,7 @@
                     "Title": "",
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Local Digital Design Leads are design evalgelists working towards championing assimilation of the Scania Digital Design System within the way of working of their respective departments.",
+                      "textfield": "Local Digital Design Leads are design evangelists working towards championing assimilation of the Scania Digital Design System within the way of working of their respective departments.",
                       "Introduction": null,
                       "id": "348"
                     }
@@ -5583,7 +4136,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-03-17T09:13:47.662Z"
+                "updated_at": "2021-05-11T11:52:59.242Z"
               }
             }
           ]
@@ -13425,7 +11978,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "308",
                     "title": "Label inside",
-                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" labelinside=\"Label text\" ></sdds-textfield>\n</div>",
+                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" label-inside=\"Label text\" ></sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -13621,7 +12174,7 @@
                     "preview": null
                   }
                 ],
-                "updated_at": "2021-05-03T14:04:22.524Z"
+                "updated_at": "2021-05-11T13:54:59.994Z"
               }
             }
           ]
@@ -15433,13 +13986,6 @@
           "thumbnail": null
         },
         {
-          "id": "185",
-          "url": "toasts",
-          "displayLink": null,
-          "title": "Toasts",
-          "thumbnail": null
-        },
-        {
           "id": "102",
           "url": "overview",
           "displayLink": "Overview",
@@ -15451,6 +13997,13 @@
           "url": "textfields",
           "displayLink": null,
           "title": "Text fields",
+          "thumbnail": null
+        },
+        {
+          "id": "185",
+          "url": "toasts",
+          "displayLink": null,
+          "title": "Toasts",
           "thumbnail": null
         },
         {
@@ -16195,7 +14748,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1589",
                     "Title": null,
-                    "Text": "##### Container width\nAs the rest of our components, the card width and height should be based on our [Unit System](https://digitaldesign.scania.com/foundations/unit-grid-system/code). A good way to achieve visual balance in your layout is to align the card container's width with your application's grid systems columns. The card width can take a maximum of 8 columns. It will take the same amount of columns on every device, except on mobile screens where it will take the full width of the grid layout.",
+                    "Text": "##### Container width\nAs the rest of our components, the card width and height should be based on our [Unit System](https://digitaldesign.scania.com/foundations/unit-grid-system/code). A good way to achieve visual balance in your layout is to align the card container's width with your application's grid systems columns. The card width can take a maximum of 8 columns and, for most cases, will take the full width of the grid layout only on mobile screens.",
                     "LeadText": null
                   },
                   {
@@ -16259,7 +14812,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-04-30T07:38:56.086Z"
+                "updated_at": "2021-05-05T06:35:36.998Z"
               }
             }
           ]
@@ -17058,7 +15611,7 @@
                         "id": "2830",
                         "label": null,
                         "caption": null,
-                        "size": "Xlarge",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -17071,7 +15624,7 @@
                         "id": "2831",
                         "label": null,
                         "caption": null,
-                        "size": "Xlarge",
+                        "size": "Large",
                         "negative": null,
                         "alternate": null,
                         "image": [
@@ -17152,7 +15705,7 @@
                     "id": "396"
                   }
                 ],
-                "updated_at": "2021-05-03T16:23:01.055Z"
+                "updated_at": "2021-05-04T09:46:14.037Z"
               }
             }
           ]
@@ -17803,7 +16356,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2088",
                     "Title": null,
-                    "Text": "##### Mobile size\nOn mobile devices, all of our modals are covering 100% of the breakpoint width and height except for the xSmall, which instead is aligned to the grid system columns and covering 4 of 4 columns.",
+                    "Text": "##### Mobile size\nOn mobile devices, all of our modals are aligned to the grid system columns and covering 4 of 4 columns. The modal height can either adapts to its content, or take the full viewport height and width.",
                     "LeadText": null
                   },
                   {
@@ -17829,7 +16382,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2089",
                     "Title": null,
-                    "Text": "##### Examples\nSince the content of the card will vary, you need to define the spacing for the elements that you are using. We do have some specific spacing defined, for instance we are always using the same side-margins (16px / 4rem) as well as specific margin between the header text and the content below (16px / 4rem). The spacing between the content, if a card does not have any actions, is also fixed (40px / 10rem).\n\nWhen creating new modals, make sure to use our [Layout scale](https://digitaldesign.scania.com/foundations/spacing/information#layout-scale), which is using our Unit System, when adding space between the elements that are being used.\n\nBelow shows a variety of different modals to get an understanding for how they are structured and how to organize the elements within our cards. ",
+                    "Text": "##### Spacing\nSince the content of the card will vary, you need to define the spacing for the elements that you are using. We do have some specific spacing defined, for instance we are always using the same side-margins (16px / 4rem) as well as specific margin between the header text and the content below (16px / 4rem). The spacing between the content, if a card does not have any actions, is also fixed (40px / 10rem).\n\nWhen creating new modals, make sure to use our [Layout scale](https://digitaldesign.scania.com/foundations/spacing/information#layout-scale), which is using our Unit System, when adding space between the elements that are being used.\n\nBelow shows a variety of different modals to get an understanding for how they are structured and how to organize the elements within our cards. ",
                     "LeadText": null
                   },
                   {
@@ -17845,7 +16398,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/35aec53f15704c6abcd54114c3c05def.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_e7c69ebc5b.png"
                         }
                       ]
                     },
@@ -17864,17 +16417,36 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7df1ac89c07743bfa29121d1bf237e72.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_6a8e2b791e.png"
                         }
                       ]
                     },
                     "id": "250"
                   },
                   {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2305",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f5fa106550d640238c7a6b55ce90c837.png"
+                        }
+                      ]
+                    },
+                    "id": "252"
+                  },
+                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2090",
                     "Title": null,
-                    "Text": "We have different right margins for the elements (except close icon) in our smallest modal XSmall and Small to Large modals.",
+                    "Text": "The spacing between the close icon and other elements remains the same for all modal sizes. Nevertheless, some margins can vary between different elements on smaller modal sizes such as the right margins. For instance, in our smallest modals XSmall and Small, the right side of the text container aligns to the close icon instead of keeping 48px spacing in between (see example below).",
                     "LeadText": null
                   },
                   {
@@ -17895,25 +16467,6 @@
                       ]
                     },
                     "id": "251"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2305",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f5fa106550d640238c7a6b55ce90c837.png"
-                        }
-                      ]
-                    },
-                    "id": "252"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -17963,7 +16516,7 @@
                     "id": "253"
                   }
                 ],
-                "updated_at": "2021-04-19T11:31:25.096Z"
+                "updated_at": "2021-05-05T06:33:40.710Z"
               }
             }
           ]
@@ -18588,6 +17141,1483 @@
         "url": "patterns",
         "displayLink": "",
         "title": "Patterns",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "46",
+      "url": "pictograms",
+      "displayLink": "Pictograms",
+      "title": "Foundation Pictograms",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "180",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "206",
+                "title": "Foundation Pictogram Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "933",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
+                      "Introduction": true,
+                      "id": "215"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "934",
+                    "Title": "Usage",
+                    "Text": "The design of the pictograms — where soft curves meet sharp edges — is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Then our illustrative pictograms could be used to visualise information in a simplified way, and when used, supportive text should always be present. \n\nCorrectly used, the pictograms improve the structure and clarity of any message.  We also have [icons](foundations/icons), which are a smaller non-decorative icon element which purpose is to highlight functions or actions. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "880",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ac94031e798f423eae1f66453f70c0fc.png"
+                        }
+                      ]
+                    },
+                    "id": "87"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "935",
+                    "Title": "Sizing",
+                    "Text": "Our pictograms could be used in a variety of sizes, which are based on our Unit System. The minum size is 48px and the maximum size will vary depending on application.\n\nFor pictograms in size 48px, we have thicker line width than pictograms larger than 72px. When downloading a pictogram, you will get both a 48 and a 72px version.\n\nLearn more about our [Unit System](foundations/unit-grid-system).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "881",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b80ce821d7294ef6bd7484cfa7066063.png"
+                        }
+                      ]
+                    },
+                    "id": "88"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "936",
+                    "Title": "Resources",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "383",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "163",
+                        "title": "Pictograms",
+                        "description": "Library",
+                        "info": "453mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/pictogram/1.0.0/pictogram_v1.zip"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-14T14:25:56.969Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "182",
+          "title": "Pictograms",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "112",
+                "title": "Foundation Pictograms Pictograms",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "167",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "All our pictograms are available in the list below, where you can download or copy the HTML snippet for specific pictograms. Simply browse the list or search to find what you are looking for.",
+                      "Introduction": true,
+                      "id": "144"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginIconList",
+                    "id": "2",
+                    "category": "System",
+                    "iconList": "scania-24h_service\nscania-accident_repair\nscania-adr_vehicle_service\nscania-alternative_fuels\nscania-angle-down\nscania-arrow\nscania-battery\nscania-bio-natural_gas\nscania-biodiesel\nscania-bioethanol\nscania-boat\nscania-book\nscania-bus\nscania-bus-sale\nscania-bus_application\nscania-bus_connected\nscania-bus_service\nscania-business_operator",
+                    "Icons": [
+                      {
+                        "id": "11",
+                        "name": "scania-24h_service",
+                        "title": "24 Hour Service",
+                        "description": "",
+                        "usage": "",
+                        "restriction": ""
+                      },
+                      {
+                        "id": "15",
+                        "name": "scania-accident_repair",
+                        "title": "Accident repair",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "217",
+                        "name": "scania-adr_vehicle_service",
+                        "title": "Vehicle service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "218",
+                        "name": "scania-alternative_fuels",
+                        "title": "Alternative fuels",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "219",
+                        "name": "scania-angle-down",
+                        "title": "Angle down",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "220",
+                        "name": "scania-arrow",
+                        "title": "Arrow",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "221",
+                        "name": "scania-battery",
+                        "title": "Battery",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "222",
+                        "name": "scania-bio-natural_gas",
+                        "title": "Bio natural gas",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "223",
+                        "name": "scania-biodiesel",
+                        "title": "Biodiesel",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "224",
+                        "name": "scania-bioethanol",
+                        "title": "Bioethanol",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "225",
+                        "name": "scania-boat",
+                        "title": "Boat",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "226",
+                        "name": "scania-book",
+                        "title": "Book",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "227",
+                        "name": "scania-bus-sale",
+                        "title": "Bus sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "228",
+                        "name": "scania-bus",
+                        "title": "Bus",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "229",
+                        "name": "scania-bus_application",
+                        "title": "Bus application",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "230",
+                        "name": "scania-bus_connected",
+                        "title": "Bus connected",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "231",
+                        "name": "scania-bus_service",
+                        "title": "Bus service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "232",
+                        "name": "scania-business_operator",
+                        "title": "Business operator",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "233",
+                        "name": "scania-cab",
+                        "title": "Cab",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "234",
+                        "name": "scania-circular_arrows",
+                        "title": "Circular arrows",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "235",
+                        "name": "scania-cloud",
+                        "title": "Cloud",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "236",
+                        "name": "scania-co2",
+                        "title": "CO2",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "237",
+                        "name": "scania-cogwheel_star",
+                        "title": "Cogwheel star",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "238",
+                        "name": "scania-comfort_passenger",
+                        "title": "Comfort passenger",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "239",
+                        "name": "scania-communication",
+                        "title": "Communication",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "240",
+                        "name": "scania-compass",
+                        "title": "Compass",
+                        "description": "",
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "241",
+                        "name": "scania-concrete_mixer",
+                        "title": "Concrete mixer",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "242",
+                        "name": "scania-configurator",
+                        "title": "Configurator",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "243",
+                        "name": "scania-connected_engines",
+                        "title": "Connected engines",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "244",
+                        "name": "scania-crane",
+                        "title": "Crane",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "245",
+                        "name": "scania-cross",
+                        "title": "Cross",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "246",
+                        "name": "scania-cross_circle",
+                        "title": "Cross circle",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "247",
+                        "name": "scania-data",
+                        "title": "Data",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "248",
+                        "name": "scania-date",
+                        "title": "Date",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "249",
+                        "name": "scania-detect_location",
+                        "title": "Detect location",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "250",
+                        "name": "scania-driveability",
+                        "title": "Driveability",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "251",
+                        "name": "scania-driver_bus",
+                        "title": "Driver bus",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "252",
+                        "name": "scania-driving_licence",
+                        "title": "Driving licence",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "253",
+                        "name": "scania-efficiency",
+                        "title": "Efficiency",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "254",
+                        "name": "scania-email",
+                        "title": "Email",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "255",
+                        "name": "scania-engine",
+                        "title": "Engine",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "256",
+                        "name": "scania-engine_application",
+                        "title": "Engine application",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "257",
+                        "name": "scania-engine_sale",
+                        "title": "Engine sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "258",
+                        "name": "scania-engines_service",
+                        "title": "Engines service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "259",
+                        "name": "scania-event",
+                        "title": "Event",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "260",
+                        "name": "scania-external_link",
+                        "title": "External link",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "261",
+                        "name": "scania-facebook",
+                        "title": "Facebook",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "262",
+                        "name": "scania-filter",
+                        "title": "Filter",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "263",
+                        "name": "scania-finance",
+                        "title": "Finance",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "264",
+                        "name": "scania-find_a_dealer",
+                        "title": "Find a dealer",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "265",
+                        "name": "scania-flickr",
+                        "title": "Flickr",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "266",
+                        "name": "scania-forbiden_enter",
+                        "title": "Forbidden enter",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "267",
+                        "name": "scania-fuel_cell",
+                        "title": "Fuel cell",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "268",
+                        "name": "scania-fuel_meter",
+                        "title": "Fuel meter",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "269",
+                        "name": "scania-gear",
+                        "title": "Gear",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "270",
+                        "name": "scania-genset_sale",
+                        "title": "Genset sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "271",
+                        "name": "scania-gensets_service",
+                        "title": "Gensets service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "272",
+                        "name": "scania-globe",
+                        "title": "Globe",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "273",
+                        "name": "scania-graph_check",
+                        "title": "Graph check",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "274",
+                        "name": "scania-graph_search",
+                        "title": "Graph search",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "275",
+                        "name": "scania-home",
+                        "title": "Home",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "276",
+                        "name": "scania-hourglass",
+                        "title": "Hourglass",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "277",
+                        "name": "scania-hvo",
+                        "title": "Hvo",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "278",
+                        "name": "scania-hybrid",
+                        "title": "Hybrid",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "279",
+                        "name": "scania-hydraulics_service",
+                        "title": "Hydraulic service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "280",
+                        "name": "scania-information",
+                        "title": "Information",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "281",
+                        "name": "scania-instagram",
+                        "title": "Instagram",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "282",
+                        "name": "scania-instrumentation",
+                        "title": "Instrumentation",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "283",
+                        "name": "scania-lightbulb",
+                        "title": "Lightbulb",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "284",
+                        "name": "scania-linkedin",
+                        "title": "LinkedIn",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "285",
+                        "name": "scania-listen_driver",
+                        "title": "Listen driver",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "286",
+                        "name": "scania-marine_engine_sale",
+                        "title": "Marine engine sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "287",
+                        "name": "scania-marine_engine_service",
+                        "title": "Marine engine service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "288",
+                        "name": "scania-mechanic_technician",
+                        "title": "Mechanic technician",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "289",
+                        "name": "scania-menu-mobile",
+                        "title": "Menu mobile",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "290",
+                        "name": "scania-mining_sale",
+                        "title": "Mining sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "291",
+                        "name": "scania-mining_service",
+                        "title": "Mining service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "292",
+                        "name": "scania-minus",
+                        "title": "Minus",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "293",
+                        "name": "scania-news",
+                        "title": "News",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "294",
+                        "name": "scania-no-sound",
+                        "title": "No sound",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "295",
+                        "name": "scania-no_phone",
+                        "title": "No phone",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "296",
+                        "name": "scania-no_photo",
+                        "title": "No photo",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "297",
+                        "name": "scania-no_smoking",
+                        "title": "No smoking",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "298",
+                        "name": "scania-open_24h",
+                        "title": "Open 24h",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "299",
+                        "name": "scania-part_sale",
+                        "title": "Part sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "300",
+                        "name": "scania-passenger",
+                        "title": "Passenger",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "301",
+                        "name": "scania-payload",
+                        "title": "Payload",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "302",
+                        "name": "scania-pdf",
+                        "title": "PDF",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "303",
+                        "name": "scania-phone",
+                        "title": "Phone",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "304",
+                        "name": "scania-pin-flag",
+                        "title": "Pin flag",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "305",
+                        "name": "scania-plus",
+                        "title": "Plus",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "306",
+                        "name": "scania-power-plug",
+                        "title": "Power plug",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "307",
+                        "name": "scania-powergen",
+                        "title": "Power generator",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "308",
+                        "name": "scania-productivity",
+                        "title": "Productivity",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "309",
+                        "name": "scania-profile_icon",
+                        "title": "Profile icon",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "310",
+                        "name": "scania-repairs",
+                        "title": "Repairs",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "478",
+                        "name": "scania-roller_break",
+                        "title": "Roller break",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "479",
+                        "name": "scania-safety",
+                        "title": "Safety",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "480",
+                        "name": "scania-save",
+                        "title": "Save",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "481",
+                        "name": "scania-search-details",
+                        "title": "Search details",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "482",
+                        "name": "scania-search",
+                        "title": "Search",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "483",
+                        "name": "scania-seatbelt",
+                        "title": "Seatbelt",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "484",
+                        "name": "scania-settings",
+                        "title": "Settings",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "485",
+                        "name": "scania-share_page_tool",
+                        "title": "Share page tool",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "486",
+                        "name": "scania-slideshare",
+                        "title": "Slideshare",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "487",
+                        "name": "scania-sound",
+                        "title": "Sound",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "488",
+                        "name": "scania-square_stack",
+                        "title": "Square stack",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "489",
+                        "name": "scania-tachograph_analogue",
+                        "title": "Tachograph analogue",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "490",
+                        "name": "scania-tail_lift",
+                        "title": "Tail lift",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "491",
+                        "name": "scania-tail_lift_service",
+                        "title": "Tail lift service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "492",
+                        "name": "scania-tarpaulin_service",
+                        "title": "Tarpaulin service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "493",
+                        "name": "scania-team",
+                        "title": "Team",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "494",
+                        "name": "scania-toe",
+                        "title": "Toe",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "495",
+                        "name": "scania-toll_collect_recovery_service",
+                        "title": "Toll collect recovery service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "496",
+                        "name": "scania-towing_service",
+                        "title": "Towing service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "497",
+                        "name": "scania-trailer",
+                        "title": "Trailer",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "498",
+                        "name": "scania-training_classroom",
+                        "title": "Training classroom ",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "499",
+                        "name": "scania-transport_refrigeration_service",
+                        "title": "Transport refrigeration service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "500",
+                        "name": "scania-truck-sale",
+                        "title": "Truck sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "501",
+                        "name": "scania-truck",
+                        "title": "Truck",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "502",
+                        "name": "scania-truck_assembly",
+                        "title": "Truck assembly",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "503",
+                        "name": "scania-truck_connected",
+                        "title": "Truck connected",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "504",
+                        "name": "scania-truck_service",
+                        "title": "Truck service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "505",
+                        "name": "scania-twitter",
+                        "title": "Twitter",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "506",
+                        "name": "scania-tyre_service",
+                        "title": "Tyre service",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "507",
+                        "name": "scania-umbrella",
+                        "title": "Umbrella",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "508",
+                        "name": "scania-uptime",
+                        "title": "Uptime",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "509",
+                        "name": "scania-used_vehicle_sale",
+                        "title": "Used vehicle sale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "510",
+                        "name": "scania-vehicle_rent",
+                        "title": "Vehicle rent",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "511",
+                        "name": "scania-vehicle_washing",
+                        "title": "Vehicle washing",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "512",
+                        "name": "scania-video_player",
+                        "title": "Video player",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "513",
+                        "name": "scania-warning",
+                        "title": "Warning",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "514",
+                        "name": "scania-wifi",
+                        "title": "Wifi",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "515",
+                        "name": "scania-youtube",
+                        "title": "Youtube",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-04-22T07:33:29.070Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "183",
+          "title": "Contribute",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "207",
+                "title": "Foundation Pictograms Contribute",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "945",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following the guidelines below. ",
+                      "Introduction": true,
+                      "id": "216"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "946",
+                    "Title": "Re-use elements",
+                    "Text": "Please note that already existing pictogram elements should be re-used as far as possible. As an example for “electricity/power”, the same element (flash) is used in both the battery and the Scania Gensets pictogram. \n\nAnother one is the element “tyre”, which is used both in the pictogram for conditions roads and tyre service.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "896",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e6f63ea836a240398f44c0696bd5c1f9.png"
+                        }
+                      ]
+                    },
+                    "id": "99"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "947",
+                    "Title": "Construct a pictogram",
+                    "Text": "Below you find detailed information about how to build a new custom pictogram, using Adobe Illustrator.\n\n\n##### Steps 1-3",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "386",
+                    "Title": "",
+                    "Images": [
+                      {
+                        "id": "897",
+                        "label": "Step 1 — Grid settings",
+                        "caption": "A square shape pixel grid (256x256px) is used as a base. To match the optical volume sub-containers help to match the different format pictograms.",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/115a5c28948f47379bf09aa279844a50.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "933",
+                        "label": "Step 2 — Line width",
+                        "caption": "For the same optical appearance of the pictograms in different sizes, the line width is adjusted. A smaller scale pictogram (up to 48px) requires thicker line width (10 pixels) than a larger one (line width: 7 pixels).",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0a88ed9a45fb4079a7e9ab179dfdf0c3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "934",
+                        "label": "Step 3 — Geometry",
+                        "caption": "The pictogram shape is based on the bespoke font Scania Sans, industrial design elements, - a mix of straight lines and curvatures. For letters and numbers in pictograms use the Scania Sans typeface. ",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5caa9b1f8be64896b2810bc0a788dd91.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "399",
+                    "Title": "Clear space",
+                    "Images": [
+                      {
+                        "id": "931",
+                        "label": "",
+                        "caption": "The minimum clear space of the pictogram is a square with the same size as 1/8 of the width of the pictogram.",
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1ec0a77f8c8844bd959923916c7dad68.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "965",
+                    "Title": "Contribution process",
+                    "Text": "##### Approval\nBefore finalising the icon, the icon design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the icon, make sure to convert all strokes to outlines and unite the icon to one single path.\n\nAll new icons must always be saved in two versions (positive and negative), two sizes (small and large) and three file formats (.ai, .svg and .png) - in total 12 files for each icon:\n\n##### Positive version: Scania Blue <br/>\n• PNG and SVG files: RGB 40_30_66<br/>\n• AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White <br/>\n• PNG and SVG files: RGB 250_250_250<br/>\n• AI files: CMYK 0_0_0_0\n\n##### Sizes <br/>\n• Small: Line width 10px (for sizes 24-48px)<br/>\n• Large Line width 7px (for sizes 54-72px)\n\n##### Formats <br/>\n• AI file format for use in print<br/>\n• PNG and SVG file format for digital use\n\n##### Naming <br/>\nThe icon file name should begin with “ICON”, followed by a short name for the icon and end with the size for which the icon is optimised. For the negative versions “neg” is added after the size. So, the file names for e.g. “Truck service” would then be:<br/>\nICON_Truck_service_24-48px.ai /.svg /.png <br/>\nICON_Truck_service_24-48px_neg.ai /.svg /.png <br/>\nICON_Truck_service_54-72px.ai /.svg /.png <br/>\nICON_Truck_service_54-72px_neg.ai /.svg /.png\n\n##### Scania Icon PDF Template <br/>\nFor each new icon a PDF file needs to be created. Use the “Scania Icon PDF Template” and include the following information:\n\n• Name of the icon (max. three words)<br/>\n• Description of the icon<br/>\n• Restrictions for use of the icon (if any/optional)<br/>\n• An image/illustration of the new icon\n\nThe PDF file name should be an ID number (please contact your contact person at the Marketing Communications or Brand Management department or identity@scania.com).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "932",
+                      "label": null,
+                      "caption": "Scania Icon PDF Template",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/25fb33afb178416c89a82e20cd38fae9.png"
+                        }
+                      ]
+                    },
+                    "id": "106"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "966",
+                    "Title": null,
+                    "Text": "##### Delivery\nAll icon files are sent together with the PDF file to imagedesk@scania.com (to be published in the “icon library” in Scania Media Provider) and identity@scania.com (to be published in Scania Digital Design System).\n\nDelivering the icon files also means that it is approved to be published as well as archived in Scania Media Provider and Scania Digital Design System. The icon may also be used by other users, for it’s intended purpose and as long as the restrictions (if any) are respected.\n\n##### Support\nShould you have any questions, please do not hesitate to contact Scania Identity Helpdesk at [identity@scania.com](mailto:identity@scania.com).\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "967",
+                    "Title": "Resources",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "400",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "169",
+                        "title": "Pictograms",
+                        "description": "Scania Icon PDF Template",
+                        "info": "1.25mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/brand/1.0.0/Scania+icon+PDF+template.docx.zip"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2020-12-14T16:45:33.834Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "187",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "332",
+                "title": "Foundation Pictogram Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2468",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Scania Digital Design System's icons package will help you implement the official pictograms and icons in your application in an easy way.",
+                      "Introduction": true,
+                      "id": "394"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2469",
+                    "Title": "Installation",
+                    "Text": "There are 2 options to use icons package. You can use it as a module or as a webfont. \n\n##### Use as a module with sdds-icon component\n\nThis is a good option if your application supports script bundling, and for example you need all resources to be offline or hosted in your own server. To install icons package as a module, install using [npm](https://www.npmjs.com/package/@scania/icons).\n\n```\nnpm i @scania/icons --save\n```\n\nThen you can use it together with 'sdds-icon' component. It will only load icon that are used your application. If you are using a bundler such as webpack, it will only bundle the icons that are used in your application.\n\n```\n<sdds-icon name=\"scania-truck\"></sdds-icon>\n```\n\n##### Webfont\n\nAll icons are available as font icons. Import the font CSS from Scania CDN in your CSS or HTML. The CSS for icon webfont is available here: https://cdn.digitaldesign.scania.com/icons/dist/1.0.0/fonts/css/sdds-icons.css\n\n```\n// in CSS\n@import url('https://cdn.digitaldesign.scania.com/icons/dist/1.0.0/fonts/css/sdds-icons.css');\n\n//OR you can add it in the HTML inside <head>\n<head>\n    <link rel=\"stylesheet\" href=\"https://cdn.digitaldesign.scania.com/icons/dist/1.0.0/fonts/css/sdds-icons.css\">\n</head>\n```\n\nThen, you can use it as a class in your element. Do not forget to add 'sdds-icon' class before the icon name.\n\n```\n<i class=\"sdds-icon scania-arrow\"></i>\n```",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "851",
+                    "title": "Sdds-icon example",
+                    "code": "<sdds-icon name='scania-truck'></sdds-icon>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "852",
+                    "title": "Icon font example",
+                    "code": "<i class=\"sdds-icon scania-truck\"></i>",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-05-17T13:34:36.510Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "17",
+        "url": "foundations",
+        "displayLink": null,
+        "title": "Foundations",
         "thumbnail": null
       },
       "submenus": []
@@ -21007,7 +21037,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2401",
                     "Title": "Message type",
-                    "Text": "Toast notifications can display four different types of messages: success, information, warning and error messages. The distinction between each of them is visually translated through the use of four different colours, as well as a prefix icon.\n\n##### Success toast\nWhen an action has been executed successfully\ne.g. Your files have been saved successfully\n\n##### Information toast\nWhen an action has been executed successfully, but further information needs to be provided\ne.g. 37 duplicate files might exist\n\n##### Warning toast\nWhen an action cannot be performed due to external factors.\ne.g. Specified people don’t have permission\n\n##### Error toast\nWhen an action cannot be performed due to system issues\ne.g. There is another file with the same name\n\nNote: icon success + information + warning + error are not yet designed.",
+                    "Text": "Toast notifications can display four different types of messages: success, information, warning and error messages. The distinction between each of them is visually translated through the use of four different colours, as well as a prefix icon.\n\n##### Success toast\nWhen an action has been executed successfully</br>\ne.g. Your files have been saved successfully\n\n##### Information toast\nWhen an action has been executed successfully, but further information needs to be provided</br>\ne.g. 37 duplicate files might exist\n\n##### Warning toast\nWhen an action cannot be performed due to external factors.</br>\ne.g. Specified people don’t have permission\n\n##### Error toast\nWhen an action cannot be performed due to system issues</br>\ne.g. There is another file with the same name\n\nNote: icon success + information + warning + error are not yet designed.",
                     "LeadText": null
                   },
                   {
@@ -21372,7 +21402,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-05-03T11:34:59.331Z"
+                "updated_at": "2021-05-04T09:49:03.963Z"
               }
             }
           ]
@@ -21386,7 +21416,7 @@
             {
               "content": {
                 "id": "328",
-                "title": "Components Toast notification Style",
+                "title": "Component Toast notification Style",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -21801,7 +21831,7 @@
                     "id": "384"
                   }
                 ],
-                "updated_at": "2021-05-03T15:36:01.473Z"
+                "updated_at": "2021-05-18T07:11:29.346Z"
               }
             }
           ]
@@ -21814,22 +21844,50 @@
           "pageContent": [
             {
               "content": {
-                "id": "202",
-                "title": "Coming Q2",
+                "id": "333",
+                "title": "Component Toast notification Code",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
+                    "id": "2471",
+                    "Title": "Introduction",
+                    "Text": "The toast component, which acts as a notification pop up, consists of a icon slot, header and the body, where the body, aswell as it's own contents is optional depending on the issued situation.\n- Icon\n- Header\n- Body (optional)\n\nYou can place any related icon inside the icon container, and set it to 16x16 pixels, like shown in the code example. Inside the header container, we have the headline, including the dismiss button, which is always present. The body container consists of the subheadline and link, which can be individually used, one without the other, as the body is optional.\nTo determine the type of message, i.e. the color palette of the toast, is made by setting the correct toast type. Read more about the message type in the [usage tab](https://digitaldesign.scania.com/components/toasts/usage).\n- sdds-toast-success\n- sdds-toast-info\n- sdds-toast-warning\n- sdds-toast-error\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "853",
+                    "title": "Basic Toast",
+                    "code": "<div class=\"sdds-toast sdds-toast-success\">\n\n    <div class=\"sdds-toast-icon\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    </div>\n\n    <div class=\"sdds-toast-content\">\n\n      <div class=\"sdds-toast-header\">\n        <span class=\"sdds-toast-headline\">This is a message</span>\n        <span class='sdds-toast-dismiss'></span>\n      </div>\n\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "854",
+                    "title": "Toast with a subheader",
+                    "code": "<div class=\"sdds-toast sdds-toast-info\">\n\n    <div class=\"sdds-toast-icon\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    </div>\n\n    <div class=\"sdds-toast-content\">\n\n      <div class=\"sdds-toast-header\">\n        <span class=\"sdds-toast-headline\">This is a message</span>\n        <span class='sdds-toast-dismiss'></span>\n      </div>\n\n      <div class=\"sdds-toast-body\">\n        <span class=\"sdds-toast-subheadline\">Short subheader</span>\n      </div>\n\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "855",
+                    "title": "Toast with a link",
+                    "code": "<div class=\"sdds-toast sdds-toast-warning>\n\n    <div class=\"sdds-toast-icon\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    </div>\n\n    <div class=\"sdds-toast-content\">\n\n      <div class=\"sdds-toast-header\">\n        <span class=\"sdds-toast-headline\">This is a message</span>\n        <span class='sdds-toast-dismiss'></span>\n      </div>\n\n      <div class=\"sdds-toast-body\">\n        <span class=\"sdds-toast-link\"><a href=\"#\">Link example</a></span>\n      </div>\n\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "856",
+                    "title": "Toast with a supporting full body",
+                    "code": "<div class=\"sdds-toast sdds-toast-error>\n\n    <div class=\"sdds-toast-icon\">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    </div>\n\n    <div class=\"sdds-toast-content\">\n\n      <div class=\"sdds-toast-header\">\n        <span class=\"sdds-toast-headline\">This is a message</span>\n        <span class='sdds-toast-dismiss'></span>\n      </div>\n\n      <div class=\"sdds-toast-body\">\n        <span class=\"sdds-toast-subheadline\">Short subheader</span>\n        <span class=\"sdds-toast-link\"><a href=\"#\">Link example</a></span>\n      </div>\n\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
+                "updated_at": "2021-05-18T07:13:43.657Z"
               }
             }
           ]
