@@ -55,15 +55,33 @@
 
   @media(min-width:1056px){
     .sdds-card-img {
-      &.small{
+      &.small {
         height: 232px;
       }
       &.medium {
         height: 456px;
       }
-      &.xlarge{
+      &.xlarge {
         height: 632px;
       }
+    }
+  }
+
+  @media(min-width:1312px) and (max-width:1584px) {
+    .sdds-card-body {
+      min-height: 91px;
+    }
+  }
+
+  @media(min-width:705px) and (max-width:1312px) {
+    .sdds-card-body {
+      min-height: 71px;
+    }
+  }
+
+  @media(min-width:672px) and (max-width:705px) {
+    .sdds-card-body {
+      min-height: 91px;
     }
   }
 }
