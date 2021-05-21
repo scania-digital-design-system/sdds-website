@@ -3486,7 +3486,7 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2470",
-                    "Title": "Fonts CSS",
+                    "Title": "Fonts via CDN",
                     "Text": "As an alternative from the solution above, you can also import the fonts directly into your application via CDN. Remember, if you already installed @scania/theme-light in your application, you do not need to import the CSS again. If you need the fonts without the theme, the CSS is available on this URL:\n\nhttps://cdn.digitaldesign.scania.com/fonts/scania-sans/1.0.0/scania-sans.css\n\n",
                     "LeadText": null
                   },
@@ -3521,7 +3521,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-05-17T13:30:32.016Z"
+                "updated_at": "2021-05-21T07:56:44.277Z"
               }
             }
           ]
@@ -6836,14 +6836,57 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1895",
                     "Title": "Colour",
-                    "Text": "Our dropdowns come in different types and a set of states. The types have the same styling, with some additional elements added depending on state. These additional elments are specified for each type. The container is using the same shadow-settings used on our cards.\n\n**Collapsed**",
+                    "Text": "Our dropdowns come in different types and a set of states. The types have the same styling, with some additional elements added depending on state. These additional elments are specified for each type. The container is using the same shadow-settings used on our cards.\n\n",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2482",
+                    "Title": null,
+                    "Text": "##### Container\n\n<table>\n<thead>\n  <tr>\n    <th>Theme</th>\n    <th>Theme variant</th>\n    <th>Container Enabled Dropdown</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$light</td>\n    <td>$on-white</td>\n    <td>$grey-50</td>\n  </tr>\n  <tr>\n    <td>$light</td>\n    <td>$on-grey</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>$dark</td>\n    <td>-</td>\n    <td>TBD</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1147",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2837",
+                        "label": "$on-white",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_90b5c3d54d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2838",
+                        "label": "$on-grey",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_90b5c3d54d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1896",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$white</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$white</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$white</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Collapsed\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$grey-50</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -6860,7 +6903,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8b272d9d51c643d3abc167b0fb0de332.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_34_0b588a6266.png"
                           }
                         ]
                       },
@@ -6873,7 +6916,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ac2fe9736cc74ffb9251f260abd85f91.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_33_57573e69d4.png"
                           }
                         ]
                       },
@@ -6886,7 +6929,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60f1cf48958349c8b6bc1c320fcd28e6.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_32_41752571fc.png"
                           }
                         ]
                       },
@@ -6899,7 +6942,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/721fd75298834b78ae96d0156f24cdf4.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_31_bfb5a9f764.png"
                           }
                         ]
                       },
@@ -6912,7 +6955,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6e0f6d58a81143449147a776e4cb648a.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_30_acd39f7b6d.png"
                           }
                         ]
                       },
@@ -6925,7 +6968,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e9d166323e91490d8d33411c2bd3671a.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_29_30f6890219.png"
                           }
                         ]
                       }
@@ -6945,7 +6988,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1898",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Option container</th>\n    <th>Option border</th>\n     <th>Option text</th>\n     <th>Divider</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$white</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue -50</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$blue-100</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Option container</th>\n    <th>Option border</th>\n     <th>Option text</th>\n     <th>Divider</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-50</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$blue-100</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$blue-100</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$blue-2  00</td> \n    <td>-</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -6962,7 +7005,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/96b244248740445f96f955296af19193.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_28_3998cb3f87.png"
                           }
                         ]
                       },
@@ -6975,7 +7018,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0fcba53379c0495bb8b1827fa657da90.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_27_580a0db614.png"
                           }
                         ]
                       },
@@ -6988,7 +7031,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/719042884d84414eb915c6bdad5d1695.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_26_f6f32984be.png"
                           }
                         ]
                       },
@@ -7001,7 +7044,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d03925326fe1469b9dda5d302aec1335.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_25_50fe79befd.png"
                           }
                         ]
                       }
@@ -7038,7 +7081,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8fa7c39bb31b41539d20bca883eef511.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_24_0d6f8f8839.png"
                           }
                         ]
                       },
@@ -7051,7 +7094,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dc30f642aa5f4fe5b47a0b8207413d50.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_23_aa41604c19.png"
                           }
                         ]
                       }
@@ -7095,7 +7138,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e802b1390a294de8ab19039ad14a0905.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_22_40940ae3e6.png"
                           }
                         ]
                       },
@@ -7108,7 +7151,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2a400154cf144bcf9c2593769e75aaab.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_21_f64cc1486b.png"
                           }
                         ]
                       },
@@ -7121,7 +7164,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/af1a32c5f07f426a91311d8a5b012554.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_20_c42a40c7d4.png"
                           }
                         ]
                       },
@@ -7134,7 +7177,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/afc1a6a2f18544afb529e50b8a39c4e9.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_19_0672f84d29.png"
                           }
                         ]
                       },
@@ -7147,7 +7190,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/947d9425a98a41deb89d8a1c29e3542d.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_18_d38dca2b85.png"
                           }
                         ]
                       },
@@ -7160,7 +7203,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f142675470514d2fb18cc103a5beb544.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_17_8764a2f6fd.png"
                           }
                         ]
                       }
@@ -7190,7 +7233,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1d047f14a9704cf3a1eb6646dd95ed04.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_16_f89d6df7b1.png"
                           }
                         ]
                       },
@@ -7203,7 +7246,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/153586a730f64121810958f000add189.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_15_795a5da19b.png"
                           }
                         ]
                       },
@@ -7216,7 +7259,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60c4a6d652094375992ff81be58a5009.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_14_16a00b231d.png"
                           }
                         ]
                       },
@@ -7229,7 +7272,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7a4b61f3286e40f281f0201ebeb8a8a7.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_13_e1fc52203e.png"
                           }
                         ]
                       },
@@ -7242,7 +7285,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/72d6e52ba18a42a9a568e1f0b6d07273.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_12_8e2d7e72e0.png"
                           }
                         ]
                       },
@@ -7255,7 +7298,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7afb2363ca534a07911331b0d425593a.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_11_9d1fa8fcca.png"
                           }
                         ]
                       }
@@ -7285,7 +7328,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e42ecf5b705f42e7aaa5eb5a6f286cef.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_10_587a1f96c8.png"
                           }
                         ]
                       },
@@ -7298,7 +7341,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a749d5d2fb214281950449817186cb89.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_9_0381d65873.png"
                           }
                         ]
                       },
@@ -7311,7 +7354,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9391951511034b81b7d88102569cd373.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_8_9b8a4ef15c.png"
                           }
                         ]
                       },
@@ -7324,7 +7367,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d298d774e7dc4aee986e5df3fb5a8d3b.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_7_018420322c.png"
                           }
                         ]
                       },
@@ -7337,7 +7380,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/635340f8f68f4be698e0de0445f26996.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_4976eab47a.png"
                           }
                         ]
                       },
@@ -7350,7 +7393,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a6237491ffec462a9d667c37383d7cc5.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_71b1a94710.png"
                           }
                         ]
                       }
@@ -7380,7 +7423,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2f762b58c32142ccb211a79e36d2c0c0.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_219a2497e6.png"
                           }
                         ]
                       },
@@ -7393,7 +7436,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5f6daaa706b14344a2637a49457b1286.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_cd15328e03.png"
                           }
                         ]
                       }
@@ -7423,7 +7466,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bcaf5d8642eb44b1a7f7db4b3ca4052b.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_fd48740e73.png"
                           }
                         ]
                       },
@@ -7436,7 +7479,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7d0c632abb6c44969907a16e532bb14d.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_d2399efe4f.png"
                           }
                         ]
                       },
@@ -7449,7 +7492,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/041feb8445154c019f2e32b1a79bcb3a.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_e859210412.png"
                           }
                         ]
                       }
@@ -7510,7 +7553,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-02-22T12:26:45.900Z"
+                "updated_at": "2021-05-21T08:11:51.685Z"
               }
             }
           ]
@@ -9052,7 +9095,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "841",
                     "title": null,
-                    "code": "<button class=\"sdds-btn sdds-btn-primary\"> \n     Button with Icon <span class='sdds-btn-icon'><c-icon name='scania-cross'></c-icon></span>\n</button>",
+                    "code": "<button class=\"sdds-btn sdds-btn-primary\"> \n     Button with Icon <span class='sdds-btn-icon'><sdds-icon name='scania-cross'></sdds-icon></span>\n</button>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -9136,7 +9179,7 @@
                     "preview": true
                   }
                 ],
-                "updated_at": "2021-04-19T11:28:32.636Z"
+                "updated_at": "2021-05-21T08:29:44.254Z"
               }
             }
           ]
@@ -12105,7 +12148,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "314",
                     "title": "Icon",
-                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\"> \n     <c-icon name=\"scania-cross\" slot=\"sdds-prefix\">Label text</c-icon>\n  </sdds-textfield>\n</div>",
+                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\"> \n     <sdds-icon name=\"scania-cross\" slot=\"sdds-prefix\">Label text</sdds-icon>\n  </sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -12120,7 +12163,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "627",
                     "title": "",
-                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" maxlength=\"20\"> \n     <c-icon name=\"scania-cross\" slot=\"sdds-prefix\">Label text</c-icon>\n  </sdds-textfield>\n</div>",
+                    "code": "<div style=\"width:208px\"> \n  <sdds-textfield type=\"text\" placeholder=\"Placeholder\" maxlength=\"20\"> \n     <sdds-icon name=\"scania-cross\" slot=\"sdds-prefix\">Label text</sdds-icon>\n  </sdds-textfield>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -12232,7 +12275,7 @@
                     "preview": null
                   }
                 ],
-                "updated_at": "2021-05-11T13:54:59.994Z"
+                "updated_at": "2021-05-21T08:33:44.906Z"
               }
             }
           ]
@@ -14897,7 +14940,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "703",
                     "title": "Basic Card",
-                    "code": "<div class=\"sdds-card \">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n </div>",
+                    "code": "<div class=\"sdds-card \">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n </div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14905,7 +14948,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "833",
                     "title": "Card with supporting text",
-                    "code": "<div class=\"sdds-card \">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card \">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14913,7 +14956,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "834",
                     "title": "Card with divider",
-                    "code": "<div class=\"sdds-card\">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card\">\n\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14937,7 +14980,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "837",
                     "title": "Card with image on top",
-                    "code": "<div class=\"sdds-card \">\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></c-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card \">\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14945,7 +14988,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "838",
                     "title": "Card with image in the middle",
-                    "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></c-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14953,7 +14996,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "839",
                     "title": "Card with avatar in header",
-                    "code": "<div class=\"sdds-card\">\n        \n  <div class=\"sdds-card-header-avatar\">\n   <div class=\"sdds-card-avatar\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"18\" fill=\"#E2E2E4\"></circle></svg></div>\n    <div class=\"sdds-card-headlines\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n      <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  \n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card\">\n        \n  <div class=\"sdds-card-header-avatar\">\n   <div class=\"sdds-card-avatar\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"18\" fill=\"#E2E2E4\"></circle></svg></div>\n    <div class=\"sdds-card-headlines\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n      <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  \n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14961,12 +15004,12 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "840",
                     "title": "Card with clickable states",
-                    "code": "<div class=\"sdds-card sdds-clickable\">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><c-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></c-icon></div>\n </div>",
+                    "code": "<div class=\"sdds-card sdds-clickable\">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n </div>",
                     "componentTag": null,
                     "preview": true
                   }
                 ],
-                "updated_at": "2021-03-22T14:15:54.926Z"
+                "updated_at": "2021-05-21T08:31:21.981Z"
               }
             }
           ]
@@ -21984,7 +22027,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "860",
                     "title": null,
-                    "code": "<div class=\"sdds-banner\">\n\n  <div class=\"sdds-banner-body\">\n    <h6 class=\"sdds-banner-header\">This is a default banner</h6>\n    <div class=\"sdds-banner-subheader\">Short subheader</div>\n    <a class=\"sdds-link sdds-banner-link\">Link example</a>\n  </div>\n\n  <div class=\"sdds-banner-close\"></div>\n</div>",
+                    "code": "<div class=\"sdds-banner\">\n\n  <div class=\"sdds-banner-body\">\n    <h6 class=\"sdds-banner-header\">This is a default banner</h6>\n    <div class=\"sdds-banner-subheader\">Short subheader</div>\n    <a class=\"sdds-link sdds-banner-link\" href=\"#\">Link example</a>\n  </div>\n\n  <div class=\"sdds-banner-close\"></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -22019,7 +22062,7 @@
                     "preview": true
                   }
                 ],
-                "updated_at": "2021-05-20T14:27:40.057Z"
+                "updated_at": "2021-05-21T07:54:06.594Z"
               }
             }
           ]
