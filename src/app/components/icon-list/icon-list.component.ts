@@ -43,7 +43,7 @@ export class IconListComponent implements OnInit {
   openModal(icon) {
     this.currentIcon = icon;
     // Because of innerHTML, need to have the code-sample here, cannot be rendered from html
-    this.currentIcon['code'] = `<c-icon name="${icon.name}"></c-icon>`;
+    this.currentIcon['code'] = `<sdds-icon name="${icon.name}"></sdds-icon>`;
   }
 
   getModalLayout(currentIcon) {
