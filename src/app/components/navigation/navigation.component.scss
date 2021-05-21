@@ -40,7 +40,7 @@
   }
 
   // Collapse/expand icon
-  c-icon {
+  sdds-icon {
     margin-left: auto;
     // FIXME:Will change when new icons is added
     font-size: 7rem;
@@ -59,7 +59,7 @@
   span {
     border-bottom: 1px solid transparent;
   }
-  c-icon {
+  sdds-icon {
     transform: rotate(180deg);
   }
 }
@@ -119,7 +119,7 @@
 
   > a {
     display: flex;
-    c-icon {
+    sdds-icon {
       margin-left: auto;
     }
   }

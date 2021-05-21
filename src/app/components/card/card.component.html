@@ -10,10 +10,10 @@
       {{card.detail}}
     </p>
     <span class="card-link" *ngIf="card.type == 'download'">
-      <c-icon name='scania-save'></c-icon>
+      <sdds-icon name='scania-save'></sdds-icon>
     </span>
     <span [ngClass]="('card-link ' + (card.type))" *ngIf="card.type == 'linkInternal' || card.type =='linkExternal'">
-      <c-icon name='scania-arrow'></c-icon>
+      <sdds-icon name='scania-arrow'></sdds-icon>
     </span>
   </div>
 </div>

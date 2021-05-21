@@ -43,7 +43,7 @@ export class IconListComponent implements OnInit {
   openModal(icon) {
     this.currentIcon = icon;
     // Because of innerHTML, need to have the code-sample here, cannot be rendered from html
-    this.currentIcon['code'] = `<c-icon name="${icon.name}"></c-icon>`;
+    this.currentIcon['code'] = `<sdds-icon name="${icon.name}"></sdds-icon>`;
   }
 
   getModalLayout(currentIcon) {
@@ -54,7 +54,7 @@ export class IconListComponent implements OnInit {
 
   generateIconUrl(name) {
     //FIXME: Fix naming in AWS to be used instead of github
-    return `https://raw.githubusercontent.com/scania-digital-design-system/sdds/master/theme/core/assets/icons/${name}.svg`
+    return `https://raw.githubusercontent.com/scania-digital-design-system/sdds/master/theme/core/icons/src/svg/${name}.svg`
   }
 
   download(event) {

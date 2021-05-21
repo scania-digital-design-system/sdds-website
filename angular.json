@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "corporate-ui-site": {
+    "sdds-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,22 +72,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "corporate-ui-site:build",
+            "browserTarget": "sdds-website:build",
             "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
-              "browserTarget": "corporate-ui-site:build:production"
+              "browserTarget": "sdds-website:build:production"
             },
             "es5": {
-              "browserTarget": "corporate-ui-site:build:es5"
+              "browserTarget": "sdds-website:build:es5"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "corporate-ui-site:build"
+            "browserTarget": "sdds-website:build"
           }
         },
         "test": {
@@ -125,15 +125,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "corporate-ui-site:serve"
+            "devServerTarget": "sdds-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "corporate-ui-site:serve:production"
+              "devServerTarget": "sdds-website:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "corporate-ui-site"
+  "defaultProject": "sdds-website"
 }
