@@ -32,6 +32,7 @@
 
     &-body {
       padding-top: 15px;
+      min-height: 92px;
     }
 
     &-footer {
@@ -67,21 +68,24 @@
     }
   }
 
-  @media(min-width:1312px) and (max-width:1584px) {
+  //Specific cards height, based on the biggest card
+  //Needs to be changed if content of the cards changes
+
+  @media(min-width:1584px) {
     .sdds-card-body {
-      min-height: 91px;
+      min-height: 92px;
     }
   }
 
-  @media(min-width:705px) and (max-width:1312px) {
-    .sdds-card-body {
-      min-height: 71px;
+  @media(min-width:1312px) {
+     .sdds-card-body {
+      min-height: 72px;
     }
   }
 
-  @media(min-width:672px) and (max-width:705px) {
+  @media(min-width:672px) {
     .sdds-card-body {
-      min-height: 91px;
+      min-height: 92px;
     }
   }
 }
