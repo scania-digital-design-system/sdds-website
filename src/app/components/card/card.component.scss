@@ -1,15 +1,8 @@
-// Cards
-.card-wrapper{
-  cursor: pointer;
-  margin-top: var(--sdds-spacing-element-8);
+.card-wrapper { // For higher specificity
 
-  .card-image {
-    overflow: hidden;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .sdds-card-img {
+    object-fit: cover;
+
     &.xlarge{
       height: 180px;
     }
@@ -20,69 +13,79 @@
       height: 280px;
     }
   }
-  .card {
-    border: 0;
-    background-color: var(--sdds-white);
-    padding: var(--sdds-spacing-element-16);
-    padding-bottom: var(--sdds-spacing-layout-64);
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
+
+  .sdds-card {
     margin-bottom: var(--sdds-spacing-element-32);
-    position: relative;
-    
-    p{
-      margin: 0;
-      position: relative;
-      span{
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      &.card-detail {
-        margin-top: var(--sdds-spacing-element-16);
-        padding-top: var(--sdds-spacing-element-16);
-        height: 26rem;
-        border-top: 1px solid var(--sdds-grey-100);
+
+
+    &-headline {
+      color: var(--sdds-blue-300);
+      margin-bottom: 0px;
+      span {
+        float: right;
       }
     }
-  
-    .card-link {
-      display: block;
-      position: absolute;
-      bottom: var(--sdds-spacing-element-8);
-      left: var(--sdds-spacing-element-16);
-      font-size: 6rem;
-      &.linkInternal {
-        transform: rotate(180deg);
-      }
-      &.linkExternal {
-        transform: rotate(135deg);
-      }
+
+    &-sub-headline {
+      color: var(--sdds-blue-900);
     }
-  }
-  &:hover {
-    .card {
-      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.15);
+
+    &-body {
+      padding-top: 15px;
+      min-height: 92px;
     }
-  }
-  &:active {
-    .card{
-      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+
+    &-footer {
+      color: var(--sdds-black);
+      svg {
+        display: block;
+      }
+      &.download {
+        padding-top: 15px;
+        display: inline-flex;
+        svg {
+          margin-right: var(--sdds-spacing-element-12);
+        }
+        .sdds-detail-04 {
+          margin: auto;
+          word-spacing: -1rem;
+        }
+      }
     }
   }
 
   @media(min-width:1056px){
-    .card-image{
-      &.xlarge{
-        height: 632px;
+    .sdds-card-img {
+      &.small {
+        height: 232px;
       }
       &.medium {
         height: 456px;
       }
-      &.small{
-        height: 232px;
+      &.xlarge {
+        height: 632px;
       }
     }
   }
+
+  //Specific cards height, based on the biggest card
+  //Needs to be changed if content of the cards changes
+
+  @media(min-width:1584px) {
+    .sdds-card-body {
+      min-height: 92px;
+    }
+  }
+
+  @media(min-width:1312px) {
+     .sdds-card-body {
+      min-height: 72px;
+    }
+  }
+
+  @media(min-width:672px) {
+    .sdds-card-body {
+      min-height: 92px;
+    }
+  }
 }
-  

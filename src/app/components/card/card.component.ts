@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'sdds-card-site',
+  encapsulation: ViewEncapsulation.None,
   templateUrl: 'card.component.html',
   styleUrls: ['card.component.scss']
 })

@@ -102,7 +102,7 @@
                   <div *ngIf='text.Introduction' class="lead-text sdds-paragraph-01">{{text.textfield}}</div>
                   <div *ngIf='!text.Introduction' [innerHTML]='text.textfield | markdown | keepHtml'></div>
                 </div>
-              </ng-container>  
+              </ng-container>
             </ng-container>
 
             <div class="line-break"></div>
@@ -135,7 +135,7 @@
           <ng-container *ngIf="section.linkCards">
             <sdds-card-site *ngFor="let card of section.linkCards"
             [card]="card"
-            class="no-padding sdds-col-sm-4 sdds-col-md-8 sdds-col-lg-5 sdds-col-xlg-5">
+            class="no-padding sdds-col-sm-4 sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-5">
             </sdds-card-site>
           </ng-container>
 
@@ -165,7 +165,7 @@
             </div>
             <div [ngClass]="('no-padding sdds-table sdds-col-sm-4 sdds-col-lg-8 sdds-col-md-8' + (section.size=='Small' ? 'sdds-col-xxlg-6 sdds-col-xlg-6':'') + (section.size=='Medium' ? 'sdds-col-xxlg-9 sdds-col-xlg-9':'')  + (section.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12':'') + (section.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15':''))"
             [innerHTML]='section.tableHtml | markdown | keepHtml'>
-              
+
             </div>
         </ng-container>
         </ng-template>
