@@ -4,7 +4,7 @@
       <p class="sdds-detail-06 sdds-text-grey-400 sdds-background-blue-100">{{item.parent}}</p>
       <ul>
         <li *ngFor="let page of item.searchFound" class="sdds-text-black">
-          <a [routerLink]="page.url + '/' + (page.pageTab ? page.pageTab : '')">{{page.link}} <c-icon name="scania-angle-down"></c-icon> {{page.pageTitle}}</a>
+          <a [routerLink]="page.url + '/' + (page.pageTab ? page.pageTab : '')">{{page.link}} <sdds-icon name="scania-angle-down"></sdds-icon> {{page.pageTitle}}</a>
         </li>
       </ul>
     </li>
