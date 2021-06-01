@@ -652,8 +652,8 @@
                         "info": null,
                         "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
-                        "type": "linkInternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22"
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new/choose"
                       },
                       {
                         "id": "153",
@@ -662,14 +662,14 @@
                         "info": null,
                         "image": null,
                         "detail": "A new design could be a new component, icon etc or a change to an existing asset of the design system. ",
-                        "type": "linkInternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new/choose"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-07T10:19:13.951Z"
+                "updated_at": "2021-05-24T12:32:00.277Z"
               }
             }
           ]
@@ -3907,7 +3907,7 @@
                         "image": null,
                         "detail": "Functionality is essentially what the website can do and how it works.",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22"
                       },
                       {
                         "id": "83",
@@ -3917,13 +3917,13 @@
                         "image": null,
                         "detail": "A new design could be a new component, icon etc. or a change to an existing asset of the design system. ",
                         "type": "linkExternal",
-                        "url": "https://github.com/scania/corporate-ui/issues/new/choose"
+                        "url": "https://github.com/scania-digital-design-system/sdds/issues/new?assignees=&labels=Feature&template=feature_request.md&title=Feature+-+%22title+text%22"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-07T09:51:28.718Z"
+                "updated_at": "2021-05-24T12:26:26.779Z"
               }
             }
           ]
@@ -4595,766 +4595,6 @@
                   }
                 ],
                 "updated_at": "2021-03-22T10:29:37.312Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "181",
-      "url": "header",
-      "displayLink": null,
-      "title": "Header",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "297",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "320",
-                "title": "Components Header Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2285",
-                    "Title": "",
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The header helps to establish a global way for our users to navigate in our applications, as well as beeing a brand carrier.",
-                      "Introduction": true,
-                      "id": "370"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2286",
-                    "Title": "Usage",
-                    "Text": "The header is a core component and the first thing our users will see when entering an application. It informs the user about the sender of the application It is frequently used in different navigation patterns that allows users to browse the content of an application in a structured way. \n\nIt can also contain important system-level functions, such as notifications, search, app switcher, and user profile settings.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2287",
-                    "Title": "Types",
-                    "Text": "We have two different types of headers at Scania; functional and expressive. Depending on what type of application you are designing, one of these types should be used. Note, currently we have only defined the functional header. The expressive header is still under development.\n\n##### Functional\nShould be used for our applications where ergonomics and efficiency takes precedence over brand awareness, since the focus is to help our users in their everyday tasks. Mainly for applications that requires a log-in access, for instance Fleet Management Portal, Autonomous Vehicle Control and Reflex.\n\n##### Expressive\nShould be used for more branded external communication and our public websites. For instance Scania.com or a Scania webshop. Not yet finalised/under development.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2288",
-                    "Title": "Navigation",
-                    "Text": "When logged in in a functional application the default header always contains the application name along with the Scania symbol. It could also contain the toolbar, with important system-level functions, such as notifications, search, app switcher, and user profile settings.\n\nThe header could either be used on its own, or being paired with the component [side menu](https://digitaldesign.scania.com/components/sidemenu).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2517",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/31eea6766b5a4470b86a190a2c80fe68.png"
-                        }
-                      ]
-                    },
-                    "id": "267"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2300",
-                    "Title": null,
-                    "Text": "Depending on the complexity of an application, the header solution varies. Either the header contains page links (inline menu) or it will be paired with a side menu, which then contains the page links.\n\n##### Inline menu\nFor applications with up to ~3 sections, the inline menu should be used. On this type the page links are located in our header.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2518",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/55b712d89f884bab93890a8ad4bb3546.png"
-                        }
-                      ]
-                    },
-                    "id": "268"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2301",
-                    "Title": null,
-                    "Text": "##### Side menu\nApplications with a larger page structure, more than 3 sections, should use the default header paired with the side menu. On this type the page links are located in the [side menu](https://digitaldesign.scania.com/components/sidemenu).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2519",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0d88639078944dc8afc6b7c6242f51b5.png"
-                        }
-                      ]
-                    },
-                    "id": "269"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2302",
-                    "Title": "Anatomy",
-                    "Text": "The header always contains the application name and the Scania symbol (depending on the breakpoint). The Scania symbol always directs you to the start page of the application. The rest of the elements are optional, and should be used depending on your applications requirements and which navigation solution you are using.\n\nThe inline menu is only positioned in the header for applications with up to ~3 sections.\n\nThe toolbar contains links for important system-level functions, such as notifications, search, app switcher, and user profile. Depending on your applications needs and requirements, the amount of links varies.\n\nThe app switcher, which is a part of the toolbar, enables for users to go from one application to another. \n\nThe inline menu along with a part of the toolbar collapses into a menu on smaller devices.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2520",
-                      "label": null,
-                      "caption": "A. Application name\nB. Inline menu\nC. Toolbar\nD. App switcher\nE. Scania symbol\nF. Menu drawer",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a70d0a88c2514fa8bbcff1f105028e11.png"
-                        }
-                      ]
-                    },
-                    "id": "270"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2303",
-                    "Title": "Behaviour",
-                    "Text": "##### Interaction\nThe header has different states, such as hover and press. Visit the [style tab](https://digitaldesign.scania.com/components/header/style) for full detailed specifications for all of the states.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2521",
-                      "label": null,
-                      "caption": null,
-                      "size": null,
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/11866400976c444fb4f4537b5404b929.png"
-                        }
-                      ]
-                    },
-                    "id": "271"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2304",
-                    "Title": null,
-                    "Text": "##### Responsive\nOn smaller breakpoints and devices,  $medium (tablet) and $small (mobile), the inline menu and the toolbar are moved to the menu drawer, which on click expands and shows the side menu. More information about this is available on the component page for the [side menu](https://digitaldesign.scania.com/components/sidemenu).\nThe menu is then always present, along with the app switcher (if its needed). If really necessary, it is possible to show one more toolbar item in the header, but that can only be done on breakpoints larger than $small-375. \n\nOn smaller breakpoints, starting from the width 520px, the Scania symbol is removed.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2522",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aee64ec29a5544b29f41964c32c4eea8.png"
-                        }
-                      ]
-                    },
-                    "id": "272"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2305",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for headers.\n\n##### Usage\nWhen applications consist of multiple pages, its easy as a user to lose track since multiple  links will make the header cluttered and hard for the users to scan. And the more links we add in the header, the fewer options we can have present in our toolbar. \n\nWhen your application has more than 3 sections, you should use the header with side menu. And when your application has 3 or less sections, use the inline menu.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1080",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f3fdcea58ffc42188c7217451f4b7fe5.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the inline menu for applications with 3 or less sections",
-                        "id": "254"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2724869051c340499e5620aa957db83a.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the inline menu for applications with 3 or more sections",
-                        "id": "255"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2306",
-                    "Title": "Related",
-                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1081",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "287",
-                        "title": "Component",
-                        "description": "Side menu",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/sidemenu"
-                      },
-                      {
-                        "id": "289",
-                        "title": "Components",
-                        "description": "Breadcrumbs",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/breadcrumbs"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-03-22T15:58:46.249Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "298",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "321",
-                "title": "Components Header Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2307",
-                    "Title": "Colour",
-                    "Text": "##### Header\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Application name</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Divider</td>\n    <td>$blue-800</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2523",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f68969987370402f90b3d678e4233cf7.png"
-                        }
-                      ]
-                    },
-                    "id": "273"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2310",
-                    "Title": null,
-                    "Text": "##### Toolbar\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1083",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2529",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a3bdaa0bc54e40d1859fa069600fe847.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2530",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a0fa174e6a314e4aaa1e162a4a0a5a05.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2531",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ba31b9660f3d471f9171a34f8b986d06.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2532",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/df97244ad0e042dab32ec3586c232f19.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2533",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3eb585dcd484451a8f8c3ea7a000de20.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2311",
-                    "Title": null,
-                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Bottom-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1086",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2546",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8ef984cbc33a49b3992faa11505fe4ee.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2547",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1d828d6150a1440cb14611c6ca807e34.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2548",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4e6183a4c02b4f938dc963774c7dabdc.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2549",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b02d2864530d41b0b1c0ae6f61bdfae5.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2550",
-                        "label": "Expanded",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a0d6bc309f824d37995f3bd7829df50a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2551",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a7e27e11ce2748ef953182d8d3162251.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2312",
-                    "Title": null,
-                    "Text": "##### Sub-menu item\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Text</th>\n    <th>Container</th>\n    <th>Icon</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-600</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1089",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2556",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2518ec4de6b047c2bcea14c46d0372dc.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2557",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1968e850b2574eafb891c1fce82dde4c.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2558",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Medium",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a61c7c450e2b43358f6a4f0dd8a62a25.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2313",
-                    "Title": "Sizing",
-                    "Text": "##### Header\nThe header is a fluid element, which means it should fill the entire browser window width.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>Fluid</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Icon container</td>\n    <td>64 / 16</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Symbol</td>\n    <td>32 / 16</td>\n    <td>Scale proportionally</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2568",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1331ef62a9346b8b087542d42b25ae0.png"
-                        }
-                      ]
-                    },
-                    "id": "283"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2569",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4396fb2924f349aa9281c3da81fe6dbd.png"
-                        }
-                      ]
-                    },
-                    "id": "284"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2570",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/978f5159b8424d1ba42b982b61751aee.png"
-                        }
-                      ]
-                    },
-                    "id": "285"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2315",
-                    "Title": null,
-                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Link container</td>\n    <td>Width varies</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Bottom-border</td>\n    <td>Width varies</td>\n    <td>4 / 1</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2583",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/c3f98630d3fa426fa8a1b27ee3215b42.png"
-                        }
-                      ]
-                    },
-                    "id": "298"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2584",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ec52c484512843bf83b2dd579932db26.png"
-                        }
-                      ]
-                    },
-                    "id": "299"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2585",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/29b336456f544cd3af724ff1361c3220.png"
-                        }
-                      ]
-                    },
-                    "id": "300"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2318",
-                    "Title": null,
-                    "Text": "##### Sub menu\nThe sub menu has a minimun width of 192px. It expands with the length of the sub page name. The height of the sub menu depends on the amount of sub pages inside the sub menu.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>64 / 16</td>\n    <td>Varies</td>\n  </tr>\n  <tr>\n    <td>Sub page container</td>\n    <td>Varies</td>\n    <td>Min. 192 / 48</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2319",
-                    "Title": null,
-                    "Text": "##### Mobile header\nDetailed specifications for the expanded side menu, is available on the component page [side menus style tab](https://digitaldesign.scania.com/components/sidemenu/style) for full detailed specifications for all of the states.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2588",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ce3f05239d9b42648630a0fc1678cfdf.png"
-                        }
-                      ]
-                    },
-                    "id": "303"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2321",
-                    "Title": "Typography",
-                    "Text": "Sub menus, Page links, and Sub page link starts with the first letter set in upper case, and the remaining letters in lower case. Same typography styles are applied on all header sizes, from $xxlarge to $small.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Page link</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td>\n    <td>All states except selected</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td>\n    <td>Selected</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-03-22T16:24:43.399Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "299",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -6135,9 +5375,24 @@
                     "code": "<sdds-accordion>\n    <sdds-accordion-item header=\"First item\" affix=\"prefix\" disabled tabindex=\"1\">\n    This is the panel, which contains associated information with the header. Usually it contains text, set in the same size as the header. Lorem ipsum doler sit amet.\n    </sdds-accordion-item>\n <sdds-accordion-item header=\"Second Item\" affix=\"prefix\" disabled tabindex=\"2\" expanded=\"true\">\n    This is the panel, which contains associated information with the header. Usually it contains text, set in the same size as the header. Lorem ipsum doler sit amet.\n    </sdds-accordion-item>\n</sdds-accordion>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2487",
+                    "Title": "On white",
+                    "Text": "If you are using a white background the contrast might be different compared with gray with the default component. If you use a class called `sdds-on-white-bg` on either container level or on the component it self, the css variables have different values that will match with the white background.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "864",
+                    "title": null,
+                    "code": "<div style=\"background-color: white; padding: 16px;\">\n<sdds-accordion class=\"sdds-on-white-bg\">\n    <sdds-accordion-item header=\"First item\" affix=\"prefix\" tabindex=\"1\">\n    This is the panel, which contains associated information with the header. Usually it contains text, set in the same size as the header. Lorem ipsum doler sit amet.\n    </sdds-accordion-item>\n <sdds-accordion-item header=\"Second Item\" affix=\"prefix\" tabindex=\"2\" expanded=\"true\">\n    This is the panel, which contains associated information with the header. Usually it contains text, set in the same size as the header. Lorem ipsum doler sit amet.\n    </sdds-accordion-item>\n</sdds-accordion>\n</div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-02-22T13:02:15.661Z"
+                "updated_at": "2021-06-01T11:06:09.697Z"
               }
             }
           ]
@@ -6873,7 +6128,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_90b5c3d54d.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_af9432ddcd.png"
                           }
                         ]
                       }
@@ -7553,7 +6808,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-05-21T08:11:51.685Z"
+                "updated_at": "2021-05-24T13:09:41.107Z"
               }
             }
           ]
@@ -7706,9 +6961,24 @@
                     "code": "document.addEventListener('selectOption', handleSelectOption);\n\nfunction handleSelectOption(event) {\n      console.log(event.detail);\n}\n\ndocument.addEventListener('inputSearch', handleSelectSearch);\n\nfunction handleSelectSearch(event) {\n     const searchTerm = event.target.value;\n     console.log(searchTerm);\n}",
                     "componentTag": null,
                     "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2496",
+                    "Title": "On white",
+                    "Text": "If you are using a white background the contrast might be different compared with gray with the default component. If you use a class called `sdds-on-white-bg` on either container level or on the component it self, the css variables have different values that will match with the white background.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "870",
+                    "title": null,
+                    "code": "<div style=\"background-color: white; padding: 16px;\"> \n<sdds-dropdown class=\"sdds-on-white-bg\"\n     placeholder=\"Select option\">\n     <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n     <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n     <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n </sdds-dropdown>\n</div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-05-03T13:39:29.781Z"
+                "updated_at": "2021-06-01T12:04:41.828Z"
               }
             }
           ]
@@ -12273,9 +11543,24 @@
                     "code": "\n//custom.component.html\n<sdds-textfield (blur)=\"onTouched()\" (input)=\"onChange($event.target.value)\" [disabled]=\"onDisabled\" [value]=\"value\"></sdds-textfield>\n\n// custom.component.ts\nimport { Component, forwardRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector:'custom-input',\n  templateUrl: './custom-component.html',\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CustomInput),\n      multi: true\n    }\n  ]\n})\n\nexport class CustomInput implements ControlValueAccessor {\n  value: string;\n  onChange: () => void;\n  onTouched: () => void;\n  onDisabled: boolean;\n  constructor() {\n\n  }\n  writeValue(value: string): void {\n    console.log(value)\n    this.value = value ? value : '';\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState?(isDisabled: boolean): void {\n    this.onDisabled = isDisabled;\n  }\n\n}\n",
                     "componentTag": null,
                     "preview": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2497",
+                    "Title": "On white",
+                    "Text": "If you are using a white background the contrast might be different compared with gray with the default component. If you use a class called `.sdds-on-white-bg` on either container level or on the component it self, the css variables have different values that will match with the white background.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "871",
+                    "title": null,
+                    "code": "<div style=\"width:242px; background-color: white; padding: 16px;\"  class=\"sdds-on-white-bg\"> \n  <sdds-textfield type=\"text\" > </sdds-textfield>\n  <sdds-textarea type=\"text\"> </sdds-textarea>\n</div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-05-21T08:33:44.906Z"
+                "updated_at": "2021-06-01T12:32:42.566Z"
               }
             }
           ]
@@ -12286,310 +11571,6 @@
         "url": "components",
         "displayLink": null,
         "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "63",
-      "url": "design",
-      "displayLink": "Design",
-      "title": "Resources Design",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "112",
-          "title": "UI Kit",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "151",
-                "title": "Resources Design UI Kit",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "256",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The UI Kit will contain all of our components, patterns and resources that you need to start building a new digital Scania application.\n\nCurrently, the UI Kit is work in progress. It will be available to download here in Q2.",
-                      "Introduction": true,
-                      "id": "34"
-                    }
-                  }
-                ],
-                "updated_at": "2021-05-03T14:32:37.647Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "113",
-          "title": "Grid System",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "152",
-                "title": "Resources Design Grid System",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "257",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
-                      "Introduction": true,
-                      "id": "35"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "258",
-                    "Title": null,
-                    "Text": "#### Install\n##### Download the Grid System\nCurrently the Grid System is only available in Figma. Open Figma and make sure to have the most recent version installed. Then download our Grid System below. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "130",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "44",
-                        "title": "Figma",
-                        "description": "Grid System",
-                        "info": "2.9mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "667",
-                    "Title": null,
-                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface [Scania Sans](foundation/foundation-typography) installed.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2020-12-07T10:10:28.309Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "114",
-          "title": "Way of Working",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "153",
-                "title": "Resources Design Way of working",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "261",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "At Scania, we have two levels of working in design.",
-                      "Introduction": true,
-                      "id": "36"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "262",
-                    "Title": null,
-                    "Text": "##### 1. Way of working between the UX design team and the Agile development team\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. \n\nThe development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "263",
-                    "Title": null,
-                    "Text": "##### 2. The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": "",
-                    "Image": {
-                      "id": "6",
-                      "label": "Scania UX Phases",
-                      "caption": "Detailed roadmap of the UX work phases",
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": "",
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/46ed36d3175e456087d8d5a7663eaaf4.png"
-                        }
-                      ]
-                    },
-                    "id": "6"
-                  }
-                ],
-                "updated_at": "2020-12-07T10:23:57.212Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "288",
-          "title": "User Personas",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "308",
-                "title": "User Personas",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1951",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Personas are fictional characters that are created in order to represent different types of users of a product. The goal is to better understand your users' needs, experiences, behaviours and goals.",
-                      "Introduction": true,
-                      "id": "343"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1952",
-                    "Title": "Purpose",
-                    "Text": "- To create a consistent understanding of your users’ needs, experiences, behaviours and goals\n- To relate to our users, by adding a human touch to otherwise cold research facts\n- To engage all the team with the users, by involving them all in the persona creation process (very important!)\n- To add an efficient shortcut for day-to-day conversation\n- To guide your Ideation Process",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2229",
-                      "label": "User Persona example",
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ac47a97db82347409f742c32279e979d.png"
-                        }
-                      ]
-                    },
-                    "id": "195"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1953",
-                    "Title": "How to create User Personas",
-                    "Text": "There are two ways to create Personas; either by performing user research in order to create your User Personas, which is the proper way to do the activity, or by exploiting the expertise that lies in a team.\n\n##### User research\nIdeally, personas are the outcome of user research:\na) Interviews with several target users.\nb) Extraction of patterns and insights.\nc) Conversion of them into User Personas.\n \n##### Team expertise\nHowever, conducting user research is not always feasible. That’s why it’s not uncommon in the industry, to create User Personas exploiting the expertise and user knowledge that lies in the team.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1954",
-                    "Title": "Important notes",
-                    "Text": "Below you can find a list of must-do’s, to get the most out of User Personas.\n\n##### Team\nRegardless of if you do User Research or Expertise based persona creation, involve the whole team in the excerise.\n\n##### Exposure\nWhen you are done creating the Personas, don’t just put them in a drawer. Stick them in the walls, use their names when referring to users and in general make them as visible as possible.\n\n##### Fact-based\nAvoid assumptions and guesses. Try to base everything on insights collected from user or expert interviews. Either hard ones or empirical.\n\n##### Number of User Personas\nYou shouldn’t over do it. Typically, 2 or 3 personas are the max limit.\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1955",
-                    "Title": "Step by step guide",
-                    "Text": "There are plenty of methods how you can create User Personas. \nBelow you can find one of them, which you can follow in order to create User Personas in an easy but still proper way.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2230",
-                      "label": null,
-                      "caption": null,
-                      "size": "ExtraMedium",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/505d357e095f4d408cd5fed90fafe338.png"
-                        }
-                      ]
-                    },
-                    "id": "196"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1956",
-                    "Title": null,
-                    "Text": "A workshop of around 8-12 people (Stakeholders, PO, PM, Devs, UX etc.) should be organized. Duration is min. 3 hours, and up to a full day.\n\n##### Set-up Workshop\nPeople that are required in order to run the Workshop:\na) Facilitator - Running the workshop\nb) Customer Proxy - Has digested the User Research that has been done, and will present it to the others, either in the form of raw data or insights, patterns etc.\n \n##### Preparation\nDecide on a persona template (choose which sections will be useful etc.) Material: Either a white-board or a large printed persona template, post-its and stickers.\n\n##### Number of participants\nInvite 8-12 people to the Workshop. Fewer participants will make the group have less energy and more will make it difficult for all participants to feel like they have contributed. People that can be invited include stakeholders, PO, PM, Devs, UX etc. You want to have representantives from all sides that will work on the project.\n\n##### Present User Research\nThe Customer Proxy should present the User Research to the participants in a structured manner. This should approximately occupy 40-50% of the total workshop time.\n\n##### Split in teams\nSplit participants in teams of 2-3 people, trying to mix up groups (e.g. you do not want to have a team of only business people, or only developers).\n\n##### Segment\nEach team needs to decide on how many Personas the project needs to have, as well as define them on a very high level (e.g. New Employee, Worker etc.). This shouldn’t take more than 15-20 minutes.\n\n##### Vote\n1. Each team presents what they came up with. \n2. The facilitator (consulting with the participants) clusters similar archetypes, so that only a few alternatives are left.\n3. Each team member gets 3 stickers (votes) and votes for the most important archetypes.\n4. After this prioritization, the participants discuss on how many archetypes they are going to go with.\n\nThis should take around 30 minutes.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1957",
-                    "Title": null,
-                    "Text": "##### Fill in User Personas\nTeams are presented with the Persona template and are asked to fill it in one section at a time, based on the User Research presentation and their own view on the users.\nExample: If we have the sections “Needs”, “Motivations” and “Personality”, we start with one of them, follow this and the following step and then iterate for the others.\n\n##### Present and Discuss\n1. Each team presents what they came up with.\n2. The facilitator (consulting with the participants) clusters similar items, so that only a few alternatives are left.\n3. Each team member gets 3 stickers (votes) and votes for the most important items.\n4. The 3-5 most voted items are included in the Persona\n\nDuration\nThis should take around 20 minutes. \n\n##### Iterate and Finalize\n1. The last two steps are iterated until all Persona sections are filled.\n2. The final persona is presented and given the last touches by the participants.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "947",
-                    "Title": "Resources",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "277",
-                        "title": "PowerPoint template",
-                        "description": "User Persona",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/83e985ffec544618bd44db4297a8d715.pptx"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2324",
-                    "Title": "References",
-                    "Text": "The above page is a collection of information and best practices around the topic of User Personas, from organizations like the Nielsen Norman Group, the Interaction Design Foundation, and others.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-03-03T15:24:37.915Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "35",
-        "url": "resources",
-        "displayLink": null,
-        "title": "Resources",
         "thumbnail": null
       },
       "submenus": []
@@ -13985,6 +12966,27 @@
       "parent": null,
       "submenus": [
         {
+          "id": "182",
+          "url": "data-tables",
+          "displayLink": null,
+          "title": "Data tables",
+          "thumbnail": null
+        },
+        {
+          "id": "110",
+          "url": "accordions",
+          "displayLink": null,
+          "title": "Accordions",
+          "thumbnail": null
+        },
+        {
+          "id": "181",
+          "url": "header",
+          "displayLink": null,
+          "title": "Header",
+          "thumbnail": null
+        },
+        {
           "id": "111",
           "url": "Links",
           "displayLink": null,
@@ -14069,13 +13071,6 @@
           "thumbnail": null
         },
         {
-          "id": "181",
-          "url": "header",
-          "displayLink": null,
-          "title": "Header",
-          "thumbnail": null
-        },
-        {
           "id": "102",
           "url": "overview",
           "displayLink": "Overview",
@@ -14101,20 +13096,6 @@
           "url": "toasts",
           "displayLink": null,
           "title": "Toasts",
-          "thumbnail": null
-        },
-        {
-          "id": "182",
-          "url": "data-tables",
-          "displayLink": null,
-          "title": "Data tables",
-          "thumbnail": null
-        },
-        {
-          "id": "110",
-          "url": "accordions",
-          "displayLink": null,
-          "title": "Accordions",
           "thumbnail": null
         }
       ]
@@ -14257,7 +13238,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/363a27516f294753b7a9937b88756c36.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/card_new_14ceb11d9f.png"
                           }
                         ]
                       },
@@ -14522,7 +13503,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-02-09T08:27:10.067Z"
+                "updated_at": "2021-05-26T14:05:27.754Z"
               }
             }
           ]
@@ -15007,9 +13988,24 @@
                     "code": "<div class=\"sdds-card sdds-clickable\">\n  <div class=\"sdds-card-header\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n   <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n </div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2495",
+                    "Title": "On white",
+                    "Text": "If you are using a white background the contrast might be different compared with gray with the default component. If you use a class called `sdds-on-white-bg` on either container level or on the component it self, the css variables have different values that will match with the white background.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "869",
+                    "title": null,
+                    "code": "<div style=\"background-color:white; padding: 16px;\">\n <div class=\"sdds-card sdds-clickable sdds-on-white-bg\">\n   <div class=\"sdds-card-header\">\n       <h6 class=\"sdds-card-headline\">Header text</h6>\n       <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n   </div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n </div>\n</div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-05-21T08:31:21.981Z"
+                "updated_at": "2021-06-01T11:53:21.188Z"
               }
             }
           ]
@@ -22063,6 +21059,1227 @@
                   }
                 ],
                 "updated_at": "2021-05-21T07:54:06.594Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "63",
+      "url": "design",
+      "displayLink": "Design",
+      "title": "Resources Design",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "112",
+          "title": "UI Kit",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "151",
+                "title": "Resources Design UI Kit",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "256",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The UI Kit will contain all of our components, patterns and resources that you need to start building a new digital Scania application.\n\nCurrently, the UI Kit is work in progress. It will be available to download here in Q2.",
+                      "Introduction": true,
+                      "id": "34"
+                    }
+                  }
+                ],
+                "updated_at": "2021-05-03T14:32:37.647Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "113",
+          "title": "Grid System",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "152",
+                "title": "Resources Design Grid System",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "257",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "At Scania, we use two systems to manage our layout and grid — the Unit and the Grid System. These two systems are the fundament to everything that we design and develop.",
+                      "Introduction": true,
+                      "id": "35"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "258",
+                    "Title": null,
+                    "Text": "#### Install\n##### Download the Grid System\nCurrently the Grid System is only available in Figma. Open Figma and make sure to have the most recent version installed. Then download our Grid System below. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "130",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "44",
+                        "title": "Figma",
+                        "description": "Grid System",
+                        "info": "2.9mb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "667",
+                    "Title": null,
+                    "Text": "##### Resources\nBefore opening the UI Kit, make sure you have the latest version of our typeface [Scania Sans](foundation/foundation-typography) installed.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-07T10:10:28.309Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "114",
+          "title": "Way of Working",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "153",
+                "title": "Resources Design Way of working",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "261",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "At Scania, we have two levels of working in design.",
+                      "Introduction": true,
+                      "id": "36"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "262",
+                    "Title": null,
+                    "Text": "##### 1. Way of working between the UX design team and the Agile development team\n\nIt is recommended that UX design stage precedes Agile development stage. In practice, the UX design stage is recommended to be carried out at two levels. One, at meta level where the information architecture (IA) of the solution is carried out and finalized in collaboration with the development team. At the same time, this stage of UX design also delivers detailed wireframes, including the behaviour of the interactive elements, that are evaluated with the intended users. Once this is finalised, it provides the vision for the development team. \n\nThe development team then breaks down the vision in terms of epics, stories and sub tasks and prioritize them for development. Two, at micro level, where UX design team details out the wireframes – for the epic/story prioritised for development - and provides UI specifications for development. This stage of UX design works in parallel with development and provides continuous contribution as required by the epic/story. Once an epic/story is implemented and tested, the UX design team, moves on to the next sprint/development stage and repeats above mentioned tasks based on the epic/story. This continues until the end of the project.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "263",
+                    "Title": null,
+                    "Text": "##### 2. The way of working within the UX team\n\nUX team is, ideally, a multidisciplinary team with its members coming from a variety of disciplines, such as, design, computer science, graphic design, psychology, anthropology, sociology etc. It is not always the case that the UX design team will have this kind of diversity. At the same time, it is common for UX designers (through their education and experience) to have a good level of competence (originating from a variety of fields, such as sociology, design etc.) to run all aspects of the UX design process.\n\nGiven this, the UX design team should assess their competencies via a vis UX various stages of UX design process (such as, research, design, prototyping and evaluation) and assign responsibilities of conducting each such stages amongst themselves.\n\nThe UX design process, then, is carried out iteratively, in a sprint like fashion. That is, when the first cycle of UX design process constituting of research, design, prototyping and evaluation is complete and reflected upon (to access if the solution arrived at meets the needs of the intended users), another cycle of UX design process is carried out and the same is repeated until the solution arrived at addresses the needs of the intended users in the best possible manner and at an optimum cost.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": "",
+                    "Image": {
+                      "id": "6",
+                      "label": "Scania UX Phases",
+                      "caption": "Detailed roadmap of the UX work phases",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": "",
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/46ed36d3175e456087d8d5a7663eaaf4.png"
+                        }
+                      ]
+                    },
+                    "id": "6"
+                  }
+                ],
+                "updated_at": "2020-12-07T10:23:57.212Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "288",
+          "title": "User Personas",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "308",
+                "title": "User Personas",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1951",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Personas are fictional characters that are created in order to represent different types of users of a product. The goal is to better understand your users' needs, experiences, behaviours and goals.",
+                      "Introduction": true,
+                      "id": "343"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1952",
+                    "Title": "Purpose",
+                    "Text": "- To create a consistent understanding of your users’ needs, experiences, behaviours and goals\n- To relate to our users, by adding a human touch to otherwise cold research facts\n- To engage all the team with the users, by involving them all in the persona creation process (very important!)\n- To add an efficient shortcut for day-to-day conversation\n- To guide your Ideation Process",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2229",
+                      "label": "User Persona example",
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ac47a97db82347409f742c32279e979d.png"
+                        }
+                      ]
+                    },
+                    "id": "195"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1953",
+                    "Title": "How to create User Personas",
+                    "Text": "There are two ways to create Personas; either by performing user research in order to create your User Personas, which is the proper way to do the activity, or by exploiting the expertise that lies in a team.\n\n##### User research\nIdeally, personas are the outcome of user research:\na) Interviews with several target users.\nb) Extraction of patterns and insights.\nc) Conversion of them into User Personas.\n \n##### Team expertise\nHowever, conducting user research is not always feasible. That’s why it’s not uncommon in the industry, to create User Personas exploiting the expertise and user knowledge that lies in the team.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1954",
+                    "Title": "Important notes",
+                    "Text": "Below you can find a list of must-do’s, to get the most out of User Personas.\n\n##### Team\nRegardless of if you do User Research or Expertise based persona creation, involve the whole team in the excerise.\n\n##### Exposure\nWhen you are done creating the Personas, don’t just put them in a drawer. Stick them in the walls, use their names when referring to users and in general make them as visible as possible.\n\n##### Fact-based\nAvoid assumptions and guesses. Try to base everything on insights collected from user or expert interviews. Either hard ones or empirical.\n\n##### Number of User Personas\nYou shouldn’t over do it. Typically, 2 or 3 personas are the max limit.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1955",
+                    "Title": "Step by step guide",
+                    "Text": "There are plenty of methods how you can create User Personas. \nBelow you can find one of them, which you can follow in order to create User Personas in an easy but still proper way.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2230",
+                      "label": null,
+                      "caption": null,
+                      "size": "ExtraMedium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/505d357e095f4d408cd5fed90fafe338.png"
+                        }
+                      ]
+                    },
+                    "id": "196"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1956",
+                    "Title": null,
+                    "Text": "A workshop of around 8-12 people (Stakeholders, PO, PM, Devs, UX etc.) should be organized. Duration is min. 3 hours, and up to a full day.\n\n##### Set-up Workshop\nPeople that are required in order to run the Workshop:\na) Facilitator - Running the workshop\nb) Customer Proxy - Has digested the User Research that has been done, and will present it to the others, either in the form of raw data or insights, patterns etc.\n \n##### Preparation\nDecide on a persona template (choose which sections will be useful etc.) Material: Either a white-board or a large printed persona template, post-its and stickers.\n\n##### Number of participants\nInvite 8-12 people to the Workshop. Fewer participants will make the group have less energy and more will make it difficult for all participants to feel like they have contributed. People that can be invited include stakeholders, PO, PM, Devs, UX etc. You want to have representantives from all sides that will work on the project.\n\n##### Present User Research\nThe Customer Proxy should present the User Research to the participants in a structured manner. This should approximately occupy 40-50% of the total workshop time.\n\n##### Split in teams\nSplit participants in teams of 2-3 people, trying to mix up groups (e.g. you do not want to have a team of only business people, or only developers).\n\n##### Segment\nEach team needs to decide on how many Personas the project needs to have, as well as define them on a very high level (e.g. New Employee, Worker etc.). This shouldn’t take more than 15-20 minutes.\n\n##### Vote\n1. Each team presents what they came up with. \n2. The facilitator (consulting with the participants) clusters similar archetypes, so that only a few alternatives are left.\n3. Each team member gets 3 stickers (votes) and votes for the most important archetypes.\n4. After this prioritization, the participants discuss on how many archetypes they are going to go with.\n\nThis should take around 30 minutes.\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1957",
+                    "Title": null,
+                    "Text": "##### Fill in User Personas\nTeams are presented with the Persona template and are asked to fill it in one section at a time, based on the User Research presentation and their own view on the users.\nExample: If we have the sections “Needs”, “Motivations” and “Personality”, we start with one of them, follow this and the following step and then iterate for the others.\n\n##### Present and Discuss\n1. Each team presents what they came up with.\n2. The facilitator (consulting with the participants) clusters similar items, so that only a few alternatives are left.\n3. Each team member gets 3 stickers (votes) and votes for the most important items.\n4. The 3-5 most voted items are included in the Persona\n\nDuration\nThis should take around 20 minutes. \n\n##### Iterate and Finalize\n1. The last two steps are iterated until all Persona sections are filled.\n2. The final persona is presented and given the last touches by the participants.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "947",
+                    "Title": "Resources",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "277",
+                        "title": "PowerPoint template",
+                        "description": "User Persona",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://sdds-cms.s3.amazonaws.com/83e985ffec544618bd44db4297a8d715.pptx"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2324",
+                    "Title": "References",
+                    "Text": "The above page is a collection of information and best practices around the topic of User Personas, from organizations like the Nielsen Norman Group, the Interaction Design Foundation, and others.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-03-03T15:24:37.915Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "313",
+          "title": "Usability Testing",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "336",
+                "title": "Usability Testing",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2483",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Usability testing is the process where users of a product are presented with a user interface or a prototype, and are asked to perform specific tasks, with the aim of collecting data that will subsequently help the product team improve it.",
+                      "Introduction": true,
+                      "id": "395"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2484",
+                    "Title": "Purpose",
+                    "Text": "- To validate an idea (if a prototype  or PoC is being tested)\n- To get insights on the why and how users use your products\n- To save time from possible costly mistakes. It’s better to identify problems as early as possible. before reaching a wide audience. And it’s much cheaper to fix a problem in design, than later on in code.\n- To increase user satisfaction",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2485",
+                    "Title": "How to run a User Testing",
+                    "Text": "Before going into a Usability Testing session, it is important that the one running it, has done some preparation in advance.\n\nCreating a couple of documents that will help both the tester and the testee during the session is a very common practice. The following sections are suggested to be part of these documents.\n\n##### User\nA section with information regarding the user, but not the name! It is better if tests are anonymous. That way users feel less pressure to perform, and they act more natural. In case it is relevant, demographic/education information may be gathered.\n\n*Example: User #1 – IT professional – 18/24 years old*\n\n##### Scenario\nThis should be handed over to the user.\nThe idea is that you should try to give the users you are going to test, the context and other details they need in order to accomplish the goal of the test. They should be relatively in high level.\n\n*Example: You are a cable designer working with the Instrument Panel of a truck’s cab. You have recently started working on a project that adds some new devices in Scania’s trucks for the British market.*\n\n##### Information users might need\nThis should be handed over to the user.\nIt is concrete information that the users are going to need while interacting with the prototype.\n\n*Example: FPC codes needed for filtering out the trucks: 1561963 & 1561725*\n\n##### Tasks\nThis should be handed over to the user.\nInformation in this section will let the users know what they need to perform when using the prototype, or application. The purpose is to engage participants by writing task scenarios that are realistic, encourage an action, and don't give away how the interface should be used.\n\n*Example:\nYou want to find the trucks with the largest cable harnesses in Bundle Segment 2 & 3.\nYou want to see if harnesses similar to the largest one, are actually common in Scania.\nYou now want to see if the new cables that you want to add (3 microwave cables), will have the space needed in only a subset of Scania’s trucks: Right Hand Drive trucks with high ceiling (FPC codes given above)\nYou want to remove some of the cables of the truck in question, to see if the new setup could work. More specifically you want to try removing Cables 1 & 2 from Part No. 2634787, as well as all Part No. 2479514.*\n\n##### Quantitative metrics\nWhile the user is interacting with the prototype, the facilitator needs to take notes. Ideally 2-3 people need to be present in the test:\n\nFacilitator – is the one that talks with the user, explains what the user needs to do, performing the interviews, taking notes & observations etc.\nNote taker – keeps track of the user’s clicks, errors, mistakes and time\nComputer – this role is only needed in paper-prototype testing, and is responsible to change the “screens” appropriately\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2839",
+                      "label": "Metrics table",
+                      "caption": null,
+                      "size": "Medium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/image_2_cea543bd42.png"
+                        }
+                      ]
+                    },
+                    "id": "397"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2486",
+                    "Title": null,
+                    "Text": "##### Observations\nAny information that the facilitator/notetaker thinks of relevance is put here; for example facial expressions, confidence levels while using the prototype etc.\n\n*Example:\nThe user navigated to the filter element instead of the histogram, which she couldn’t associate with the task she was asked to perform.\nShe tried to right click on the “done” button.\nDid not see the save icon and went back instead without saving.\nThe user felt insecure on her every click on the first task, but was very confident on the second one.*\n\n##### Interview Questions\nInterviews are used in order to get some qualitative data regarding the users’ interaction with the prototype. Anything can be asked, as long as the question is not directing the user. For example, a question like “did you think that the design was easy to use?” should be omitted, and replaced with a question like “what did you think of your interaction with the design?”. The latter is an open question that gives the user the space to create their own answer.\n\n*Example:\nWhat did you think of your interaction with this prototype?\nDid you ever felt lost in the process?\nWhich of the two tasks was more challenging for you to accomplish?\nWhat was the best and the worst thing about the flow?*\n\n##### System Usability Scale\nSUS is a form that users fill, stating how they felt about their interaction with the prototype. After, the results are summed (odd questions are in the scale of 1-5 and even questions are graded in the scale 5-1), and are transformed from the 25-scale to the 100-scale (for better intuitiveness).\n\nAny score above 70 is considered acceptable, whereas scores below 70 indicate a possible problem with the flow/design.\n\nThe following table can be used to get an idea of how a prototype scored.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2840",
+                      "label": "System Usability Scale questionnaire",
+                      "caption": null,
+                      "size": "ExtraMedium",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/kortum_figure1_1_80f9885288.png"
+                        }
+                      ]
+                    },
+                    "id": "398"
+                  }
+                ],
+                "updated_at": "2021-05-24T14:26:35.956Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "35",
+        "url": "resources",
+        "displayLink": null,
+        "title": "Resources",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "181",
+      "url": "header",
+      "displayLink": null,
+      "title": "Header",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "297",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "320",
+                "title": "Components Header Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2285",
+                    "Title": "",
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The header helps to establish a global way for our users to navigate in our applications, as well as beeing a brand carrier.",
+                      "Introduction": true,
+                      "id": "370"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2286",
+                    "Title": "Usage",
+                    "Text": "The header is a core component and the first thing our users will see when entering an application. It informs the user about the sender of the application It is frequently used in different navigation patterns that allows users to browse the content of an application in a structured way. \n\nIt can also contain important system-level functions, such as notifications, search, app switcher, and user profile settings.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2287",
+                    "Title": "Types",
+                    "Text": "We have two different types of headers at Scania; functional and expressive. Depending on what type of application you are designing, one of these types should be used. Note, currently we have only defined the functional header. The expressive header is still under development.\n\n##### Functional\nShould be used for our applications where ergonomics and efficiency takes precedence over brand awareness, since the focus is to help our users in their everyday tasks. Mainly for applications that requires a log-in access, for instance Fleet Management Portal, Autonomous Vehicle Control and Reflex.\n\n##### Expressive\nShould be used for more branded external communication and our public websites. For instance Scania.com or a Scania webshop. Not yet finalised/under development.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2288",
+                    "Title": "Navigation",
+                    "Text": "When logged in in a functional application the default header always contains the application name along with the Scania symbol. It could also contain the toolbar, with important system-level functions, such as notifications, search, app switcher, and user profile settings.\n\nThe header could either be used on its own, or being paired with the component [side menu](https://digitaldesign.scania.com/components/sidemenu).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2517",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/31eea6766b5a4470b86a190a2c80fe68.png"
+                        }
+                      ]
+                    },
+                    "id": "267"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2300",
+                    "Title": null,
+                    "Text": "Depending on the complexity of an application, the header solution varies. Either the header contains page links (inline menu) or it will be paired with a side menu, which then contains the page links.\n\n##### Inline menu\nFor applications with up to ~3 sections, the inline menu should be used. On this type the page links are located in our header.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2518",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/55b712d89f884bab93890a8ad4bb3546.png"
+                        }
+                      ]
+                    },
+                    "id": "268"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2301",
+                    "Title": null,
+                    "Text": "##### Side menu\nApplications with a larger page structure, more than 3 sections, should use the default header paired with the side menu. On this type the page links are located in the [side menu](https://digitaldesign.scania.com/components/sidemenu).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2519",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0d88639078944dc8afc6b7c6242f51b5.png"
+                        }
+                      ]
+                    },
+                    "id": "269"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2302",
+                    "Title": "Anatomy",
+                    "Text": "The header always contains the application name and the Scania symbol (depending on the breakpoint). The Scania symbol always directs you to the start page of the application. The rest of the elements are optional, and should be used depending on your applications requirements and which navigation solution you are using.\n\nThe inline menu is only positioned in the header for applications with up to ~3 sections.\n\nThe toolbar contains links for important system-level functions, such as notifications, search, app switcher, and user profile. Depending on your applications needs and requirements, the amount of links varies.\n\nThe app switcher, which is a part of the toolbar, enables for users to go from one application to another. \n\nThe inline menu along with a part of the toolbar collapses into a menu on smaller devices.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2520",
+                      "label": null,
+                      "caption": "A. Application name\nB. Inline menu\nC. Toolbar\nD. App switcher\nE. Scania symbol\nF. Menu drawer",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a70d0a88c2514fa8bbcff1f105028e11.png"
+                        }
+                      ]
+                    },
+                    "id": "270"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2303",
+                    "Title": "Behaviour",
+                    "Text": "##### Interaction\nThe header has different states, such as hover and press. Visit the [style tab](https://digitaldesign.scania.com/components/header/style) for full detailed specifications for all of the states.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2521",
+                      "label": null,
+                      "caption": null,
+                      "size": null,
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/11866400976c444fb4f4537b5404b929.png"
+                        }
+                      ]
+                    },
+                    "id": "271"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2304",
+                    "Title": null,
+                    "Text": "##### Responsive\nOn smaller breakpoints and devices,  $medium (tablet) and $small (mobile), the inline menu and the toolbar are moved to the menu drawer, which on click expands and shows the side menu. More information about this is available on the component page for the [side menu](https://digitaldesign.scania.com/components/sidemenu).\nThe menu is then always present, along with the app switcher (if its needed). If really necessary, it is possible to show one more toolbar item in the header, but that can only be done on breakpoints larger than $small-375. \n\nOn smaller breakpoints, starting from the width 520px, the Scania symbol is removed.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2522",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aee64ec29a5544b29f41964c32c4eea8.png"
+                        }
+                      ]
+                    },
+                    "id": "272"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2305",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for headers.\n\n##### Usage\nWhen applications consist of multiple pages, its easy as a user to lose track since multiple  links will make the header cluttered and hard for the users to scan. And the more links we add in the header, the fewer options we can have present in our toolbar. \n\nWhen your application has more than 3 sections, you should use the header with side menu. And when your application has 3 or less sections, use the inline menu.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1080",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f3fdcea58ffc42188c7217451f4b7fe5.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the inline menu for applications with 3 or less sections",
+                        "id": "254"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2724869051c340499e5620aa957db83a.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the inline menu for applications with 3 or more sections",
+                        "id": "255"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2306",
+                    "Title": "Related",
+                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1081",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "287",
+                        "title": "Component",
+                        "description": "Side menu",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/sidemenu"
+                      },
+                      {
+                        "id": "289",
+                        "title": "Components",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-03-22T15:58:46.249Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "298",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "321",
+                "title": "Components Header Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2307",
+                    "Title": "Colour",
+                    "Text": "##### Header\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Application name</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Divider</td>\n    <td>$blue-800</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2523",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f68969987370402f90b3d678e4233cf7.png"
+                        }
+                      ]
+                    },
+                    "id": "273"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2310",
+                    "Title": null,
+                    "Text": "##### Toolbar\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1083",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2529",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a3bdaa0bc54e40d1859fa069600fe847.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2530",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a0fa174e6a314e4aaa1e162a4a0a5a05.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2531",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ba31b9660f3d471f9171a34f8b986d06.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2532",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/df97244ad0e042dab32ec3586c232f19.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2533",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3eb585dcd484451a8f8c3ea7a000de20.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2311",
+                    "Title": null,
+                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Bottom-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$white</td>\n    <td>$blue-900</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$white</td>\n    <td>$blue-700</td>\n    <td>$white</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$white</td>\n    <td>$blue-800</td>\n    <td>$white</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1086",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2546",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8ef984cbc33a49b3992faa11505fe4ee.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2547",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1d828d6150a1440cb14611c6ca807e34.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2548",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4e6183a4c02b4f938dc963774c7dabdc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2549",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b02d2864530d41b0b1c0ae6f61bdfae5.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2550",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a0d6bc309f824d37995f3bd7829df50a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2551",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a7e27e11ce2748ef953182d8d3162251.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2312",
+                    "Title": null,
+                    "Text": "##### Sub-menu item\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Text</th>\n    <th>Container</th>\n    <th>Icon</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-600</td>\n    <td>$white</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-600</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1089",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2556",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2518ec4de6b047c2bcea14c46d0372dc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2557",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1968e850b2574eafb891c1fce82dde4c.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2558",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a61c7c450e2b43358f6a4f0dd8a62a25.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2313",
+                    "Title": "Sizing",
+                    "Text": "##### Header\nThe header is a fluid element, which means it should fill the entire browser window width.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Header</td>\n    <td>Fluid</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Icon container</td>\n    <td>64 / 16</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Symbol</td>\n    <td>32 / 16</td>\n    <td>Scale proportionally</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2568",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1331ef62a9346b8b087542d42b25ae0.png"
+                        }
+                      ]
+                    },
+                    "id": "283"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2569",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4396fb2924f349aa9281c3da81fe6dbd.png"
+                        }
+                      ]
+                    },
+                    "id": "284"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2570",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/978f5159b8424d1ba42b982b61751aee.png"
+                        }
+                      ]
+                    },
+                    "id": "285"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2315",
+                    "Title": null,
+                    "Text": "##### Inline menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Icon</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Link container</td>\n    <td>Width varies</td>\n    <td>64 / 16</td>\n  </tr>\n  <tr>\n    <td>Bottom-border</td>\n    <td>Width varies</td>\n    <td>4 / 1</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2583",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/c3f98630d3fa426fa8a1b27ee3215b42.png"
+                        }
+                      ]
+                    },
+                    "id": "298"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2584",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ec52c484512843bf83b2dd579932db26.png"
+                        }
+                      ]
+                    },
+                    "id": "299"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2585",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/29b336456f544cd3af724ff1361c3220.png"
+                        }
+                      ]
+                    },
+                    "id": "300"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2318",
+                    "Title": null,
+                    "Text": "##### Sub menu\nThe sub menu has a minimun width of 192px. It expands with the length of the sub page name. The height of the sub menu depends on the amount of sub pages inside the sub menu.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>64 / 16</td>\n    <td>Varies</td>\n  </tr>\n  <tr>\n    <td>Sub page container</td>\n    <td>Varies</td>\n    <td>Min. 192 / 48</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2319",
+                    "Title": null,
+                    "Text": "##### Mobile header\nDetailed specifications for the expanded side menu, is available on the component page [side menus style tab](https://digitaldesign.scania.com/components/sidemenu/style) for full detailed specifications for all of the states.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2588",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ce3f05239d9b42648630a0fc1678cfdf.png"
+                        }
+                      ]
+                    },
+                    "id": "303"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2321",
+                    "Title": "Typography",
+                    "Text": "Sub menus, Page links, and Sub page link starts with the first letter set in upper case, and the remaining letters in lower case. Same typography styles are applied on all header sizes, from $xxlarge to $small.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Page link</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td>\n    <td>All states except selected</td>\n  </tr>\n  <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td>\n    <td>Selected</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-03-22T16:24:43.399Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "299",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "337",
+                "title": "Components Header Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2488",
+                    "Title": "Introduction",
+                    "Text": "Documentation and template for Scania header for functional application with responsive feature. Includes styling support for header menu, global menu, brand, and app launcher menu.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2490",
+                    "Title": "How it works",
+                    "Text": "Here's what you need to know before getting started with SDSS header.\n\n- Add class 'sdds-navbar' to wrap the header container.\n- Use '&lt;nav>' element for semantic accessibility.\n- The default navbar is fixed on the top of the application (to keep Scania brand always shown on the page). If you somehow need it to be static, add class 'sdds-navbar sdds-navbar-static'.\n- On the mobile view, the header will only display side menu toggler icon, 'Application name', and app launcher icon (if any). Scania symbol will be hidden on mobile view.\n- Checkout the design requirements for what should be and should not be added in the header in the [Usage tab](https://digitaldesign.scania.com/components/header/usage). ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2491",
+                    "Title": "Supported content",
+                    "Text": "There are few sub-components that is supported by SDDS navbar styling.\n\n- 'sdds-navbar-overlay' will add a black backdrop on the mobile view when the side menu is shown. Add class 'expanded' when side-menu is open to show the overlay.\n- 'sdds-navbar-icon-button' will add basic styling to icons that is placed inside header.\n- 'sdds-navbar-side-menu-toggler' is used to add toggle button on mobile view. You can trigger javascript event on this button to toggle side menu on mobile view. Add class 'expanded' to this class when side menu is open.\n- 'sdds-navbar-application-brand' for your application name.\n- 'sdds-navbar-collapsible' for grouping inline menu and global menu that will be hidden on mobile view, it will also styles the menu grouping into a side menu on mobile view.\n- 'sdds-navbar-scania-brand' is for Scania symbol on the right side of the header.\n- Inline menu can be added with a list for 'ul' and 'li' element. The classes used are 'sdds-navbar-menu-list' for 'ul', and 'sdds-navbar-menu-item' for each 'li' items. Add class 'active' to the active item / current page item.\n- 'sdds-navbar-menu-item-dropdown' is used for an item that has a dropdown. Add class 'opened' for dropdown open state. For the dropdown items, you can use 'sdds-navbar-menu__dropdown-menu' for 'ul' and 'sdds-navbar-menu__dropdown-item' for 'li'.\n- 'sdds-navbar-menu-global-mobile' is used for global menu (right side of header) and will hide the menu on mobile view and display it on the side menu. For example, language option or global link can go here.\n- 'sdds-navbar-menu-global' for a default menu that will not be hidden on the mobile view. This is used for a menu such as app launcher menu.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2489",
+                    "Title": "Basic header",
+                    "Text": "Basic header contains Scania brand, application name, and should be responsive.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "865",
+                    "title": null,
+                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler \">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \"></div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2492",
+                    "Title": "Inline menu",
+                    "Text": "Inline menu will be shown in the side menu on mobile application. To make it responsive, wrap inline menus inside 'sdds-navbar-collapsible'. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "866",
+                    "title": null,
+                    "code": "<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler \">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2493",
+                    "Title": null,
+                    "Text": "To expand side menu on the mobile view, add class 'expanded' to:\n- sdds-navbar-side-menu-toggler\n- sdds-navbar-collapsible\n- sdds-navbar-overlay\n\n```\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay expanded\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler expanded\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible expanded\">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n```\n\nTo add styling to the inline menu, use class 'sdds-navbar-menu-list' for the 'ul' container. And you can add 'sdds-navbar-menu-item' or 'sdds-navbar-menu-item-dropdown' on the children 'li'. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "867",
+                    "title": null,
+                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay expanded\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler expanded\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible expanded\">\n      <ul class=\"sdds-navbar-menu-list\">\n         <li class=\"sdds-navbar-menu-item active\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-navbar-icon-button\">\n              <svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"16\" height=\"16\"/> </svg>\n            </span> Item 1</a>\n         </li>\n         <li class=\"sdds-navbar-menu-item\"> <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 2 </a> </li>\n         <li class=\"sdds-navbar-menu-item-dropdown opened\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 3 <span class=\"sdds-icon-arrow\"></span> </a>\n              <ul class=\"sdds-navbar-menu__dropdown-menu\">\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Sub item 3</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n             </ul>\n         </li>\n     </ul>\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2494",
+                    "Title": "Global menu",
+                    "Text": "Global menu is all inline menus that are located on the right side of the header. On mobile view, app launcher must be shown in the header, while the rest of global menu (such as language and user account) are shown in the side menu on mobile view. Global inline menu should be goes under 'sdds-navbar-collapsible' and under 'sdds-navbar-menu-global-mobile'.  And the app-launcher should be under 'sdds-navbar-menu-global' and be placed outside 'sdds-navbar-collapsible'.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "868",
+                    "title": null,
+                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible\">\n      <div class=\"sdds-navbar-menu-global-mobile\">\n      <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">Global link</a>\n        </li>\n        <li class=\"sdds-navbar-menu-item-dropdown\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">EN <span class=\"sdds-icon-arrow\"></span></a>\n          <ul class=\"sdds-navbar-menu__dropdown-menu\">\n            <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Select language</li>\n            <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">English</a></li>\n            <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Swedish</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n   </div>\n    \n   <div class=\"sdds-navbar-menu-global\">\n    <div class=\"sdds-navbar-menu-item-dropdown\">\n      <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-icon-applauncher\"></span></a>\n      <ul class=\"sdds-navbar-menu__dropdown-menu\">\n        <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Category name</li>\n        <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Application name 1</a></li>\n        <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Application name 2</a></li>\n      </ul>\n    </div>\n  </div>\n    \n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-06-01T12:29:05.059Z"
               }
             }
           ]
