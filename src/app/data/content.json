@@ -865,7 +865,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "166",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/theme-icons",
                     "componentTag": null,
                     "preview": null
                   },
@@ -887,7 +887,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "173",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/theme-icons",
                     "componentTag": null,
                     "preview": null
                   },
@@ -924,7 +924,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "179",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/theme-icons",
                     "componentTag": null,
                     "preview": null
                   },
@@ -964,9 +964,16 @@
                     "Title": "Typescript - Strict:false",
                     "Text": "Typescript have a rule called strict in the tsconfig.json file that is set to true. When this rule is set to true, it will cause a error in the imports of theme-light and component package, at this time we an issue reported for that. A workaround right now is to set the rule strict: false instead.",
                     "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2498",
+                    "Title": "Theming",
+                    "Text": "#### On white\n\nWhen using a component inside a container that is using a white background, you need to put `sdds-on-white-bg` on that specific container or on specific component. Some components have other variations to the component depending on the background color. What that class will do is change the css variables for those specific components to match more with the white background. \n\n- `<div class=\"sdds-on-white-bg\"> <component> used on white</component> </div>`\n- `<component class=\"sdds-on-white-bg\"> used on white</component>`\n\n\n#### Dark theme\n \nStill in exploration phase",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2021-05-21T07:13:35.424Z"
+                "updated_at": "2021-06-01T13:10:09.838Z"
               }
             }
           ]
@@ -22201,21 +22208,21 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2488",
                     "Title": "Introduction",
-                    "Text": "Documentation and template for Scania header for functional application with responsive feature. Includes styling support for header menu, global menu, brand, and app launcher menu.",
+                    "Text": "Documentation and template for Scania header for functional application with responsive feature. Includes styling support for header menu, toolbar menu, brand, and app launcher menu.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2490",
                     "Title": "How it works",
-                    "Text": "Here's what you need to know before getting started with SDSS header.\n\n- Add class 'sdds-navbar' to wrap the header container.\n- Use '&lt;nav>' element for semantic accessibility.\n- The default navbar is fixed on the top of the application (to keep Scania brand always shown on the page). If you somehow need it to be static, add class 'sdds-navbar sdds-navbar-static'.\n- On the mobile view, the header will only display side menu toggler icon, 'Application name', and app launcher icon (if any). Scania symbol will be hidden on mobile view.\n- Checkout the design requirements for what should be and should not be added in the header in the [Usage tab](https://digitaldesign.scania.com/components/header/usage). ",
+                    "Text": "Here's what you need to know before getting started with SDSS header.\n\n- Add class 'sdds-navbar' to wrap the header container.\n- Use '&lt;nav>' element for semantic accessibility.\n- The default navbar is fixed on the top of the application (to keep Scania brand always shown on the page). If you somehow need it to be static, add class 'sdds-navbar sdds-navbar-static'.\n- On the mobile view, the header will only display side menu drawer icon, 'Application name', and app launcher icon (if any). Scania symbol will be hidden on mobile view.\n- Checkout the design requirements for what should be and should not be added in the header in the [Usage tab](https://digitaldesign.scania.com/components/header/usage). ",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2491",
                     "Title": "Supported content",
-                    "Text": "There are few sub-components that is supported by SDDS navbar styling.\n\n- 'sdds-navbar-overlay' will add a black backdrop on the mobile view when the side menu is shown. Add class 'expanded' when side-menu is open to show the overlay.\n- 'sdds-navbar-icon-button' will add basic styling to icons that is placed inside header.\n- 'sdds-navbar-side-menu-toggler' is used to add toggle button on mobile view. You can trigger javascript event on this button to toggle side menu on mobile view. Add class 'expanded' to this class when side menu is open.\n- 'sdds-navbar-application-brand' for your application name.\n- 'sdds-navbar-collapsible' for grouping inline menu and global menu that will be hidden on mobile view, it will also styles the menu grouping into a side menu on mobile view.\n- 'sdds-navbar-scania-brand' is for Scania symbol on the right side of the header.\n- Inline menu can be added with a list for 'ul' and 'li' element. The classes used are 'sdds-navbar-menu-list' for 'ul', and 'sdds-navbar-menu-item' for each 'li' items. Add class 'active' to the active item / current page item.\n- 'sdds-navbar-menu-item-dropdown' is used for an item that has a dropdown. Add class 'opened' for dropdown open state. For the dropdown items, you can use 'sdds-navbar-menu__dropdown-menu' for 'ul' and 'sdds-navbar-menu__dropdown-item' for 'li'.\n- 'sdds-navbar-menu-global-mobile' is used for global menu (right side of header) and will hide the menu on mobile view and display it on the side menu. For example, language option or global link can go here.\n- 'sdds-navbar-menu-global' for a default menu that will not be hidden on the mobile view. This is used for a menu such as app launcher menu.\n",
+                    "Text": "There are few sub-components that is supported by SDDS navbar styling.\n\n- 'sdds-navbar-overlay' will add a black backdrop on the mobile view when the side menu is shown. Add class 'expanded' when side-menu is open to show the overlay.\n- 'sdds-navbar-icon-button' will add basic styling to icons that is placed inside header.\n- 'sdds-navbar-side-menu-drawer' is used to add toggle button on mobile view. You can trigger javascript event on this button to toggle side menu on mobile view. Add class 'expanded' to this class when side menu is open.\n- 'sdds-navbar-application-brand' for your application name.\n- 'sdds-navbar-collapsible' for grouping inline menu and toolbar menu that will be hidden on mobile view, it will also styles the menu grouping into a side menu on mobile view.\n- 'sdds-navbar-scania-brand' is for Scania symbol on the right side of the header.\n- Inline menu can be added with a list for 'ul' and 'li' element. The classes used are 'sdds-navbar-menu-list' for 'ul', and 'sdds-navbar-menu-item' for each 'li' items. Add class 'active' to the active item / current page item.\n- 'sdds-navbar-menu-item-dropdown' is used for an item that has a dropdown. Add class 'opened' for dropdown open state. For the dropdown items, you can use 'sdds-navbar-menu__dropdown-menu' for 'ul' and 'sdds-navbar-menu__dropdown-item' for 'li'.\n- 'sdds-navbar-menu-toolbar-mobile' is used menus placed on the right side of header. Toolbar menus will be hidden on mobile view and display it on the side menu. For example, language option or global link can go here.\n- 'sdds-navbar-menu-toolbar' for a default menu that will not be hidden on the mobile view. This is used for a menu such as app launcher menu.\n",
                     "LeadText": null
                   },
                   {
@@ -22229,7 +22236,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "865",
                     "title": null,
-                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler \">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \"></div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer\">\n      <span class=\"sdds-icon-drawer\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \"></div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -22244,7 +22251,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "866",
                     "title": null,
-                    "code": "<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler \">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>",
+                    "code": "<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay \"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer\">\n      <span class=\"sdds-icon-drawer\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible \">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>",
                     "componentTag": null,
                     "preview": false
                   },
@@ -22252,34 +22259,34 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2493",
                     "Title": null,
-                    "Text": "To expand side menu on the mobile view, add class 'expanded' to:\n- sdds-navbar-side-menu-toggler\n- sdds-navbar-collapsible\n- sdds-navbar-overlay\n\n```\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay expanded\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler expanded\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible expanded\">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n```\n\nTo add styling to the inline menu, use class 'sdds-navbar-menu-list' for the 'ul' container. And you can add 'sdds-navbar-menu-item' or 'sdds-navbar-menu-item-dropdown' on the children 'li'. ",
+                    "Text": "To expand side menu on the mobile view, add class 'expanded' to:\n- sdds-navbar-side-menu-drawer\n- sdds-navbar-collapsible\n- sdds-navbar-overlay\n\n```\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay expanded\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer expanded\">\n      <span class=\"sdds-icon-drawer\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible expanded\">\n     // ...... Inline menu and everything that will be on shown on side-menu on mobile view goes here\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n```\n\nTo add styling to the inline menu, use class 'sdds-navbar-menu-list' for the 'ul' container. And you can add 'sdds-navbar-menu-item' or 'sdds-navbar-menu-item-dropdown' on the children 'li'. ",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "867",
                     "title": null,
-                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay expanded\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler expanded\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible expanded\">\n      <ul class=\"sdds-navbar-menu-list\">\n         <li class=\"sdds-navbar-menu-item active\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-navbar-icon-button\">\n              <svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"16\" height=\"16\"/> </svg>\n            </span> Item 1</a>\n         </li>\n         <li class=\"sdds-navbar-menu-item\"> <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 2 </a> </li>\n         <li class=\"sdds-navbar-menu-item-dropdown opened\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 3 <span class=\"sdds-icon-arrow\"></span> </a>\n              <ul class=\"sdds-navbar-menu__dropdown-menu\">\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Sub item 3</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n             </ul>\n         </li>\n     </ul>\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "code": "<div class=\"sdds-example-navbar example-dropdown\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer\">\n      <span class=\"sdds-icon-drawer\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible\">\n      <ul class=\"sdds-navbar-menu-list\">\n         <li class=\"sdds-navbar-menu-item active\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-navbar-icon-button\">\n              <svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"16\" height=\"16\"/> </svg>\n            </span> Item 1</a>\n         </li>\n         <li class=\"sdds-navbar-menu-item\"> <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 2 </a> </li>\n         <li class=\"sdds-navbar-menu-item-dropdown opened\">\n            <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> Item 3 <span class=\"sdds-icon-arrow\"></span> </a>\n              <ul class=\"sdds-navbar-menu__dropdown-menu\">\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Sub item 3</a></li>\n                 <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3 long label...</a></li>\n             </ul>\n         </li>\n     </ul>\n   </div>\n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2494",
-                    "Title": "Global menu",
-                    "Text": "Global menu is all inline menus that are located on the right side of the header. On mobile view, app launcher must be shown in the header, while the rest of global menu (such as language and user account) are shown in the side menu on mobile view. Global inline menu should be goes under 'sdds-navbar-collapsible' and under 'sdds-navbar-menu-global-mobile'.  And the app-launcher should be under 'sdds-navbar-menu-global' and be placed outside 'sdds-navbar-collapsible'.",
+                    "Title": "Toolbar menu",
+                    "Text": "Toolbar menu is all inline menus that are located on the right side of the header. On mobile view, app launcher must be shown in the header, while the rest of toolbar menu (such as language and user account) are shown in the side menu on mobile view. Toolbar inline menu should be goes under 'sdds-navbar-collapsible' and under 'sdds-navbar-menu-toolbar-mobile'.  And the app-launcher should be under 'sdds-navbar-menu-toolbar' and be placed outside 'sdds-navbar-collapsible'.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "868",
                     "title": null,
-                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-toggler\">\n      <span class=\"sdds-icon-toggler\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible\">\n      <div class=\"sdds-navbar-menu-global-mobile\">\n      <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">Global link</a>\n        </li>\n        <li class=\"sdds-navbar-menu-item-dropdown\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">EN <span class=\"sdds-icon-arrow\"></span></a>\n          <ul class=\"sdds-navbar-menu__dropdown-menu\">\n            <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Select language</li>\n            <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">English</a></li>\n            <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Swedish</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n   </div>\n    \n   <div class=\"sdds-navbar-menu-global\">\n    <div class=\"sdds-navbar-menu-item-dropdown\">\n      <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-icon-applauncher\"></span></a>\n      <ul class=\"sdds-navbar-menu__dropdown-menu\">\n        <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Category name</li>\n        <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Application name 1</a></li>\n        <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Application name 2</a></li>\n      </ul>\n    </div>\n  </div>\n    \n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
+                    "code": "<div class=\"sdds-example-navbar\">\n<nav class=\"sdds-navbar\">\n   <div class=\"sdds-navbar-overlay\"></div>\n   <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer\">\n      <span class=\"sdds-icon-drawer\"></span>\n   </button>\n   <div class=\"sdds-navbar-application-brand\">My Application</div>\n   <div id=\"side-menu\" class=\"sdds-navbar-collapsible\">\n      <div class=\"sdds-navbar-menu-toolbar-mobile\">\n      <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">Global link</a>\n        </li>\n        <li class=\"sdds-navbar-menu-item-dropdown\">\n          <a class=\"sdds-navbar-menu-item-link\" href=\"#\">EN <span class=\"sdds-icon-arrow\"></span></a>\n          <ul class=\"sdds-navbar-menu__dropdown-menu\">\n            <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Select language</li>\n            <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">English</a></li>\n            <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Swedish</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div>\n   </div>\n    \n   <div class=\"sdds-navbar-menu-toolbar\">\n    <div class=\"sdds-navbar-menu-item-dropdown\">\n      <a class=\"sdds-navbar-menu-item-link\" href=\"#\"><span class=\"sdds-icon-applauncher\"></span></a>\n      <ul class=\"sdds-navbar-menu__dropdown-menu\">\n        <li class=\"sdds-navbar-menu__dropdown-item sdds-navbar-menu-item-description\">Category name</li>\n        <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Application name 1</a></li>\n        <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Application name 2</a></li>\n      </ul>\n    </div>\n  </div>\n    \n   <div class=\"sdds-navbar-scania-brand\"></div>\n</nav>\n</div>",
                     "componentTag": null,
                     "preview": true
                   }
                 ],
-                "updated_at": "2021-06-01T12:29:05.059Z"
+                "updated_at": "2021-06-01T14:48:54.042Z"
               }
             }
           ]
