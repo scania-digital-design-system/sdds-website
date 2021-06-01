@@ -9,4 +9,15 @@
   .code-preview-title{
     margin-top: var(--sdds-spacing-element-16);
   }
+  ::ng-deep .sdds-example-navbar {
+    width: 100%;
+    position: relative;
+    padding: var(--sdds-spacing-layout-48);
+    ul {
+      margin: 0;
+    }
+    .sdds-navbar {
+      position: absolute;
+    }
+  }
 }
