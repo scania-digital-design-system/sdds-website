@@ -20,5 +20,11 @@
       position: absolute;
       z-index: 999;
     }
+    &.example-dropdown {
+      height:auto;
+      @media all and (min-width: 769px) {
+        height:236px;
+      }
+    }
   }
 }
