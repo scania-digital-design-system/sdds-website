@@ -22797,7 +22797,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Badges are circular or pill shaped containers that are used to display count (numerical value) associated with an item/event. This count on a badge can vary depending on changes in item/events.",
+                      "textfield": "Badges are circular or pill shaped containers that are used to display the change in property associated with an item/event. They come with or without a count (numerical value). This count on a badge can vary depending on changes in item/events.",
                       "Introduction": true,
                       "id": "397"
                     }
@@ -22806,7 +22806,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2504",
                     "Title": "Usage",
-                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colo, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \nIntegers should be used to display count with badges. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
+                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colour, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \n\nBadges come in two sizes; a small one and a default one. The former is used when a change of property or new notification needs to be signaled to the user, without a numerical value attached to it. The latter should be used when the user needs to know the exact number of new items that are present. \n\nIn the case of badges with a numerical value attached to them, only integers should be used to display the count. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
                     "LeadText": null
                   },
                   {
@@ -22822,7 +22822,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_64a47a6b1d.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_bb8beaecaa.png"
                         }
                       ]
                     },
@@ -23078,7 +23078,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-06-15T09:31:49.824Z"
+                "updated_at": "2021-06-15T12:32:30.808Z"
               }
             }
           ]
@@ -23105,7 +23105,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2511",
                     "Title": "Sizing",
-                    "Text": "Badges come in one size, but their width adjust depending on the value to be shown. ",
+                    "Text": "Badges come in two sizes; a small one (without a numerical value) and a default one (with numerical value inside). ",
                     "LeadText": null
                   },
                   {
@@ -23123,19 +23123,6 @@
                         "image": [
                           {
                             "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_a9b53d581f.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2855",
-                        "label": null,
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_f898d9c42f.png"
                           }
                         ]
                       },
@@ -23260,7 +23247,7 @@
                     "id": "404"
                   }
                 ],
-                "updated_at": "2021-06-15T10:10:19.782Z"
+                "updated_at": "2021-06-15T12:33:38.401Z"
               }
             }
           ]
