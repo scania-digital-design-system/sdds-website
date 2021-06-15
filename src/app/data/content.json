@@ -21631,7 +21631,7 @@
                         "image": null,
                         "detail": null,
                         "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.1/sdds-grid_system-new-q2-2021"
                       }
                     ],
                     "dosAndDonts": []
@@ -21644,7 +21644,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-07T10:10:28.309Z"
+                "updated_at": "2021-06-15T13:15:50.491Z"
               }
             }
           ]
@@ -22797,7 +22797,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Badges are circular or pill shaped containers that are used to display the change in property associated with an item/event. They come with or without a count (numerical value). This count on a badge can vary depending on changes in item/events.",
+                      "textfield": "Badges are circular or pill shaped containers that are used to display a change in property associated with an item/event. They come with or without a count (numerical value). This count on a badge can vary depending on changes in item/events.",
                       "Introduction": true,
                       "id": "397"
                     }
@@ -22806,7 +22806,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2504",
                     "Title": "Usage",
-                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colour, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \n\nBadges come in two sizes; a small one and a default one. The former is used when a change of property or new notification needs to be signaled to the user, without a numerical value attached to it. The latter should be used when the user needs to know the exact number of new items that are present. \n\nIn the case of badges with a numerical value attached to them, only integers should be used to display the count. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
+                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colour, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \n\nBadges come in two sizes; a small and a default one. The former is used when a change of property or new notification needs to be signaled to the user, without a numerical value attached to it. The latter should be used when the user needs to know the exact number of new items that are present. \n\nIn the case of badges with a numerical value attached to them, only integers should be used to display the count. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
                     "LeadText": null
                   },
                   {
@@ -22959,7 +22959,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_0918ac5f8d.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/222_642102e053.png"
                           }
                         ]
                       }
@@ -22992,7 +22992,7 @@
                       {
                         "type": "Do",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_ca4aba1446.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/99_88cfaa912c.png"
                         },
                         "size": "Medium",
                         "description": "Make badges stand out by using bold colours with solid filling",
@@ -23001,9 +23001,9 @@
                       {
                         "type": "Dont",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_0de8a947e3.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_ea8bcd726a.png"
                         },
-                        "size": null,
+                        "size": "Medium",
                         "description": "Don’t use colours that merge into the background",
                         "id": "294"
                       }
@@ -23026,7 +23026,7 @@
                       {
                         "type": "Do",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_002a2a06ce.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_395766648d.png"
                         },
                         "size": "Medium",
                         "description": "Use badges for counts",
@@ -23035,7 +23035,7 @@
                       {
                         "type": "Dont",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/11_8dc4a7bcbe.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_9588e638c9.png"
                         },
                         "size": "Medium",
                         "description": "Use badges for text labels",
@@ -23060,7 +23060,7 @@
                       {
                         "type": "Do",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/12_5e1a9e5018.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_487e3603dd.png"
                         },
                         "size": "Medium",
                         "description": "Place the badge close to the UI element it refers to",
@@ -23069,7 +23069,7 @@
                       {
                         "type": "Dont",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/13_2d76cdc6ee.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_2e37e3c66f.png"
                         },
                         "size": "Medium",
                         "description": "Place the badge far from the UI elements it refers to",
@@ -23078,7 +23078,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-06-15T12:32:30.808Z"
+                "updated_at": "2021-06-15T13:12:43.112Z"
               }
             }
           ]
