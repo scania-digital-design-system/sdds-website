@@ -7067,9 +7067,39 @@
                     "code": "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormGroup, Validators } from '@angular/forms';\n\n@Component({\n  selector: 'basic-form',\n  template: `\n    <form [formGroup]=\"myForm\" (ngSubmit)=\"onSubmit(myForm)\" class=\"sdds-row\">\n        <custom-dropdown\n            [list]=\"list\"\n            [initialValue]=\"initialValue.value\"\n            [myValue]=\"myForm.value.CustomDropdown\"\n            ngDefaultControl\n            formControlName=\"CustomDropdown\"></custom-dropdown>\n        <h6>Values in the reactive form:</h6>\n        <div>Values: {{myForm.value | json}}</div>\n    </form>    \n  `,\n  styleUrls: ['./form.component.scss']\n})\n\nexport class FormComponent implements OnInit {\n  username = 'Add username';\n  myForm: FormGroup;\n  myValue: any = {};\n  initialValue: any = {};\n  list= [\n    {\"value\":\"opt-1\",\"label\":\"Jakarta\"},\n    {\"value\":\"opt-2\",\"label\":\"Stockholm\"},\n    {\"value\":\"opt-3\",\"label\":\"Barcelona\"}\n  ];\n\n  constructor(private fb: FormBuilder) {}\n\n  ngOnInit() {\n\n    // Dropdown\n    \n    this.initialValue= this.list[0];\n    this.myValue = this.initialValue;\n\n    //Formcontrol\n    this.myForm = this.fb.group({\n      CustomDropdown:['', Validators.required]\n    })\n    this.myForm.valueChanges.subscribe(console.log)\n  }\n\n  onSubmit(...formTest){\n    console.log(formTest)\n  }\n}",
                     "componentTag": null,
                     "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1155",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "299",
+                        "title": "Demo",
+                        "description": "Form example in Angular",
+                        "info": null,
+                        "image": null,
+                        "detail": "Demo in CodeSandbox on how to use SDDS textfield and dropdown in Angular, includes form validation example.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-angular-form-example"
+                      },
+                      {
+                        "id": "300",
+                        "title": "Demo",
+                        "description": "Form example in React",
+                        "info": null,
+                        "image": null,
+                        "detail": "Demo in CodeSandbox on how to use SDDS textfield and dropdown in React, includes form validation example.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-react-form-example"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-06-10T13:00:20.125Z"
+                "updated_at": "2021-06-15T09:52:30.721Z"
               }
             }
           ]
@@ -11649,9 +11679,39 @@
                     "code": "<div style=\"width:242px; background-color: white; padding: 16px;\"  class=\"sdds-on-white-bg\"> \n  <sdds-textfield type=\"text\" > </sdds-textfield>\n  <sdds-textarea type=\"text\"> </sdds-textarea>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1156",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "301",
+                        "title": "Demo",
+                        "description": "Example demo form in Angular",
+                        "info": null,
+                        "image": null,
+                        "detail": "CodeSandbox demo SDDS textfield and dropdown in Angular, includes form validation.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-angular-form-example"
+                      },
+                      {
+                        "id": "302",
+                        "title": "Demo",
+                        "description": "Example demo form in React",
+                        "info": null,
+                        "image": null,
+                        "detail": "CodeSandbox demo SDDS textfield and dropdown in React, includes form validation.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-react-form-example"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-06-01T12:32:42.566Z"
+                "updated_at": "2021-06-15T10:04:03.078Z"
               }
             }
           ]
@@ -12973,12 +13033,22 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/toasts"
+                      },
+                      {
+                        "id": "303",
+                        "title": "Component",
+                        "description": "Badges",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/badges"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-05-03T16:27:21.118Z"
+                "updated_at": "2021-06-15T10:13:58.245Z"
               }
             }
           ]
@@ -13103,6 +13173,13 @@
           "url": "dividers",
           "displayLink": null,
           "title": "Dividers",
+          "thumbnail": null
+        },
+        {
+          "id": "187",
+          "url": "badges",
+          "displayLink": null,
+          "title": "Badges",
           "thumbnail": null
         },
         {
@@ -22681,6 +22758,537 @@
                   }
                 ],
                 "updated_at": "2021-06-01T14:48:54.042Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "187",
+      "url": "badges",
+      "displayLink": null,
+      "title": "Badges",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "314",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "338",
+                "title": "Components Badges Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2503",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Badges are circular or pill shaped containers that are used to display count (numerical value) associated with an item/event. This count on a badge can vary depending on changes in item/events.",
+                      "Introduction": true,
+                      "id": "397"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2504",
+                    "Title": "Usage",
+                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colo, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \nIntegers should be used to display count with badges. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2847",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_64a47a6b1d.png"
+                        }
+                      ]
+                    },
+                    "id": "399"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2505",
+                    "Title": "Types",
+                    "Text": "Badges can be circular or pill-shaped.\nFor single digit values, a circular pill is used; for more digits, the badge  is becoming pill-shaped.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2848",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_fd8abef369.png"
+                        }
+                      ]
+                    },
+                    "id": "400"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2506",
+                    "Title": "Placement",
+                    "Text": "A badge can be placed within a button or can be juxtaposed with an icon (e.g. notifications etc.). In the latter case, the badge is floating over the icon, and is not bound by the icon’s dimensions.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2849",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_d48dec6e58.png"
+                        }
+                      ]
+                    },
+                    "id": "401"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2850",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_0ec09949ea.png"
+                        }
+                      ]
+                    },
+                    "id": "402"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2507",
+                    "Title": "Anatomy",
+                    "Text": "The badge contains two mandatory elements; text (numerical value and in some cases a plus sign) and container.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2851",
+                      "label": null,
+                      "caption": "A. Container\nB. Number",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_b7e1f964f8.png"
+                        }
+                      ]
+                    },
+                    "id": "403"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2508",
+                    "Title": "Behaviour",
+                    "Text": "A badge is not an interactive element, however, the count displayed on a badge can go up or down.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1149",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2852",
+                        "label": null,
+                        "caption": "Circle",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_8a7c5cfe42.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2853",
+                        "label": null,
+                        "caption": "Pill",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_0918ac5f8d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2509",
+                    "Title": "Do and Don’ts",
+                    "Text": "Below you will find some best practice solutions for badges.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1150",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Appearance",
+                        "Introduction": null,
+                        "id": "398"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_ca4aba1446.png"
+                        },
+                        "size": "Medium",
+                        "description": "Make badges stand out by using bold colours with solid filling",
+                        "id": "293"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_0de8a947e3.png"
+                        },
+                        "size": null,
+                        "description": "Don’t use colours that merge into the background",
+                        "id": "294"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1151",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Usage",
+                        "Introduction": null,
+                        "id": "399"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_002a2a06ce.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use badges for counts",
+                        "id": "295"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/11_8dc4a7bcbe.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use badges for text labels",
+                        "id": "296"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1152",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Placement",
+                        "Introduction": null,
+                        "id": "400"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/12_5e1a9e5018.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the badge close to the UI element it refers to",
+                        "id": "297"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/13_2d76cdc6ee.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the badge far from the UI elements it refers to",
+                        "id": "298"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-06-15T09:31:49.824Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "315",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "339",
+                "title": "Components Badges Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2510",
+                    "Title": "Colour",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Container</th>\n    <th>Text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$red-500</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2511",
+                    "Title": "Sizing",
+                    "Text": "Badges come in one size, but their width adjust depending on the value to be shown. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1153",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2854",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_a9b53d581f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2855",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_f898d9c42f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2856",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_20a827aabc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2857",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_fa98a876ea.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2512",
+                    "Title": "Placement",
+                    "Text": "To right corner of the UI element.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1154",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2858",
+                        "label": null,
+                        "caption": "Rounded badges placed on an icon",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6befebfd5f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2859",
+                        "label": null,
+                        "caption": "Pill-shaped badges placed on an icon. Always expands horizontaly from the left to the right.",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_7a19990984.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2860",
+                        "label": null,
+                        "caption": "Rounded badges placed inside a button",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_6a7ed8a2f3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2513",
+                    "Title": "Typography",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Font</th>\n    <th>Text size</th>\n    <th>Weight</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Number</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>12px</td>\n    <td>$bold</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2514",
+                    "Title": "Corner radius",
+                    "Text": "The badge in a shape of a pill has rounded corners with a 12px / 3 rem corner radius.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>12 px / 3 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2861",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Corner_radius_20ef557682.png"
+                        }
+                      ]
+                    },
+                    "id": "404"
+                  }
+                ],
+                "updated_at": "2021-06-15T10:10:19.782Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "316",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
