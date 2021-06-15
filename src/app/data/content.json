@@ -200,7 +200,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "326",
                     "Title": "Grid System",
-                    "Text": "A grid system is a structure containing a series of horizontal and vertical lines, used to arrange and present content such as text, imagery and graphics in a structured and well-balanced way. It provides consistency and uniformity of our brand presence and all our page layouts. \n\n##### Columns\nColumns are the foundation of the grid system. The content is placed inside our columns. They are usually too small to contain content by themselves, but when grouped together they create harmonized, coherent and well-crafted design layouts.\n \nOur grid system consists of 16 columns for larger screens, 8 for medium and 4 for small screens.  \n \nWhen a browser is in between two breakpoints, the columns scale proportionally (%).\n\n",
+                    "Text": "A grid system is a structure containing a series of horizontal and vertical lines, used to arrange and present content such as text, imagery and graphics in a structured and well-balanced way. It provides consistency and uniformity of our brand presence and all our page layouts. \n\n##### Columns\nColumns are the foundation of the grid system. The content is placed inside our columns. They are usually too small to contain content by themselves, but when grouped together they create harmonized, coherent and well-crafted design layouts.\n \nOur grid system consists of 12 columns.\n\n",
                     "LeadText": null
                   },
                   {
@@ -216,7 +216,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/43e0dfed0b30485d9d3e84281dd6a26a.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_c3942041e2.png"
                         }
                       ]
                     },
@@ -226,7 +226,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "327",
                     "Title": null,
-                    "Text": "##### Margins\nOur margins on each side (left and right) of the grid system are always in a fixed size within the breakpoint. It’s either 24, 16 or 0 px depending on the breakpoint.\n\n",
+                    "Text": "##### Margins\nOur margins on each side (left and right) of the grid system are always in a fixed size within the breakpoint. It’s either 24 or 16 px depending on the breakpoint.\n",
                     "LeadText": null
                   },
                   {
@@ -242,7 +242,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e47e09e5ec624e32bbc09e5e91576c41.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_2b3eec400b.png"
                         }
                       ]
                     },
@@ -252,7 +252,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "328",
                     "Title": null,
-                    "Text": "##### Padding\nPadding is the space inside our columns which we can use to get more space between our content and components. It is possible to select if you want to use the grid system with or without paddings. Grids with gutters rarely need paddings.\n\nOur padding is a defined size of 16 or 8 px depending on breakpoint. ",
+                    "Text": "##### Padding\nPadding is the space inside our columns which we can use to get more space between our content and components. It is possible to select if you want to use the grid system with or without paddings. \n\nOur padding is a defined size of 16 or 8 px depending on breakpoint. ",
                     "LeadText": null
                   },
                   {
@@ -268,7 +268,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b7e566635f1d4f4498d54df0ed32a455.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_df33a8995a.png"
                         }
                       ]
                     },
@@ -278,7 +278,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "329",
                     "Title": null,
-                    "Text": "##### Gutters\nGutter is the space between our columns and it aims to help separating content. Our gutter width is a fixed value of 32 px. \n\nSometimes a gutterless grid could be a better option when designing for specific applications. When working with a gutterless grid, we automatically get bigger columns within our grid system.",
+                    "Text": "##### Gutters\nGutter is the gap between columns, created by horizontal padding. It aims to help separating content. Our gutter width has a fixed value of 32 px, the sum of 16 px padding-right and padding-left on each column.\n\nSometimes a gutterless grid could be a better option when designing for specific applications. When working with a gutterless grid, we automatically get bigger columns within our grid system.",
                     "LeadText": null
                   },
                   {
@@ -294,7 +294,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2cbf59ab9bfa473699a01e1f2f8eb851.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_7dce3666fa.png"
                         }
                       ]
                     },
@@ -304,7 +304,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "330",
                     "Title": null,
-                    "Text": "##### Breakpoints\nBelow you will find a defined set of breakpoints, which is available as a grid package at <a href=\"https://www.npmjs.com/package/@scania-sdds/grid\" target=\"_blank\">GitHub</a>\n and templates in <a href=\"https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/design/1.0.0/grid_system_figma_v1.zip\">Figma</a>.\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Width px / rem</th>\n    <th>Columns</th>\n    <th>Size px / %</th>\n    <th>Margin</th>\n    <th>Padding</th>\n    <th>Gutter</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-s</td>\n    <td>320 / 80</td>\n    <td>4</td>\n    <td>48 / 15</td>\n    <td>0</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-m</td>\n    <td>672 / 168</td>\n    <td>8</td>\n    <td>48 / 7.5</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-l</td>\n    <td>1056 / 264</td>\n    <td>16</td>\n    <td>32 / 3.125</td>\n    <td>16 px</td>\n    <td>8 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xl</td>\n    <td>1312 / 328</td>\n    <td>16</td>\n    <td>48 / 3.75</td>\n    <td>16 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n  <tr>\n    <td>$screen-xxl</td>\n    <td>1584 / 396</td>\n    <td>16</td>\n    <td>64 / 4.167</td>\n    <td>24 px</td>\n    <td>16 px</td>\n    <td>32 px</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Breakpoints\nBelow you will find a defined set of breakpoints, which is available as a grid package at <a href=\"https://www.npmjs.com/package/@scania-sdds/grid\" target=\"_blank\">GitHub</a>\n and templates in <a href=\"https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/design/1.0.0/grid_system_figma_v1.zip\">Figma</a>.\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Container (max-width)</th>\n    <th># of columns</th>\n    <th>Column width (px)</th>\n    <th>Column width (%)</th>\n    <th>Padding</th>\n    <th>Margin</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>≥ 608</td>\n    <td>None (auto)</td>\n    <td>12</td>\n    <td>None (auto)</td>\n    <td>8.333%</td>\n    <td>8 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 608</td>\n    <td>576 px</td>\n    <td>12</td>\n    <td>48 px</td>\n    <td>8.333%</td>\n    <td>8 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 800</td>\n    <td>768 px</td>\n    <td>12</td>\n    <td>64 px</td>\n    <td>8.333%</td>\n    <td>16 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 992</td>\n    <td>960 px</td>\n    <td>12</td>\n    <td>80 px</td>\n    <td>8.333%</td>\n    <td>16 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 1184</td>\n    <td>1152 px</td>\n    <td>12</td>\n    <td>96 px</td>\n    <td>8.333%</td>\n    <td>16 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 1376</td>\n    <td>1344 px</td>\n    <td>12</td>\n    <td>112 px</td>\n    <td>8.333%</td>\n    <td>16 px</td>\n    <td>16 px</td>\n  </tr>\n  <tr>\n    <td>≥ 1584</td>\n    <td>1536 px</td>\n    <td>12</td>\n    <td>128 px</td>\n    <td>8.333%</td>\n    <td>16 px</td>\n    <td>24 px</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -334,7 +334,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/61dda21e30b94153a8ea4a8cc04de455.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_266fb2cfd7.png"
                         }
                       ]
                     },
@@ -360,7 +360,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/a0c34babd5704c539b363a414f0aa949.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_06b437df01.png"
                         }
                       ]
                     },
@@ -379,7 +379,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0139a88a67e04935bcda9246b874f7be.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_fa82124a5b.png"
                         }
                       ]
                     },
@@ -410,13 +410,13 @@
                         "image": null,
                         "detail": "",
                         "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/design/1.1.0/sdds-grid_system-q1-2021.fig"
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.1/sdds-grid_system-new-q2-2021"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-08T07:46:25.626Z"
+                "updated_at": "2021-06-14T14:49:29.354Z"
               }
             }
           ]
@@ -6148,7 +6148,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1896",
                     "Title": null,
-                    "Text": "##### Collapsed\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$grey-50</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "##### Collapsed\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Border</th>\n     <th>Icon</th>\n     <th>Text</th>\n     <th>Helper text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Enabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-50</td> \n    <td>$grey-300</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-50</td> \n    <td>$blue-400</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Pressed</td>\n    <td>$blue-100</td> \n    <td>$grey-200</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Disabled</td>\n    <td>$grey-50</td> \n    <td>$grey-100</td>\n    <td>$grey-200</td>\n    <td>$grey-200</td>\n    <td>-</td>\n  </tr>\n<tr>\n    <td>Error</td>\n    <td>$grey-50</td> \n    <td>$red-500</td>\n    <td>$grey-900</td>\n    <td>$grey-900</td>\n    <td>$red-500</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -6815,7 +6815,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-05-24T13:09:41.107Z"
+                "updated_at": "2021-06-07T09:29:55.704Z"
               }
             }
           ]
@@ -6912,7 +6912,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "635",
                     "title": "Small",
-                    "code": "<sdds-dropdown\n   size=\"small\"\n   placeholder=\"Select option\">\n          <sdds-dropdown-option value=\"option-1\" class=\"hydrated\">Option 1</sdds-dropdown-option>\n          <sdds-dropdown-option value=\"option-2\" class=\"hydrated\">Option 2</sdds-dropdown-option>\n          <sdds-dropdown-option value=\"option-3\" class=\"hydrated\">Option 3</sdds-dropdown-option>\n</sdds-dropdown>",
+                    "code": "-<sdds-dropdown\n   size=\"small\"\n   placeholder=\"Select option\">\n          <sdds-dropdown-option value=\"option-1\" class=\"hydrated\">Option 1</sdds-dropdown-option>\n          <sdds-dropdown-option value=\"option-2\" class=\"hydrated\">Option 2</sdds-dropdown-option>\n          <sdds-dropdown-option value=\"option-3\" class=\"hydrated\">Option 3</sdds-dropdown-option>\n</sdds-dropdown>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -6983,9 +6983,123 @@
                     "code": "<div style=\"background-color: white; padding: 16px;\"> \n<sdds-dropdown class=\"sdds-on-white-bg\"\n     placeholder=\"Select option\">\n     <sdds-dropdown-option value=\"option-1\">Option 1</sdds-dropdown-option>\n     <sdds-dropdown-option value=\"option-2\">Option 2</sdds-dropdown-option>\n     <sdds-dropdown-option value=\"option-3\">Option 3</sdds-dropdown-option>\n </sdds-dropdown>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2499",
+                    "Title": "Native select",
+                    "Text": "You can style native select-options with SDDS styling, but it will not style the options. You can use this for easier integration for data binding. If you want full-styling for your dropdown, you can use sdds-dropdown web components, and use the available events to mimic native form. (See React and Angular example).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "872",
+                    "title": "Native select with SDDS style",
+                    "code": "<div class=\"sdds-dropdown\" >\n    <span class=\"sdds-dropdown-label-outside\">Label</span>\n    <select name=\"nativeDropdown\" id=\"mySelect\">\n    <option value=\"truck\">Truck</option>\n    <option value=\"bus\">Bus</option>\n    <option value=\"car\">Car</option>\n    </select>\n    <span class=\"sdds-dropdown-helper\">Helper text</span>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "873",
+                    "title": "Native select with error state",
+                    "code": "<div class=\"sdds-dropdown is-error\" >\n    <span class=\"sdds-dropdown-label-outside\">Label</span>\n    <select name=\"nativeDropdown\" id=\"mySelect\">\n    <option value=\"truck\">Truck</option>\n    <option value=\"bus\">Bus</option>\n    <option value=\"car\">Car</option>\n    </select>\n    <span class=\"sdds-dropdown-helper\">Helper text</span>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "874",
+                    "title": "Native select with different size",
+                    "code": "<div class=\"sdds-dropdown sdds-dropdown-small\" >\n    <span class=\"sdds-dropdown-label-outside\">Small dropdown</span>\n    <select name=\"nativeDropdown\" id=\"mySelect\">\n    <option value=\"truck\">Truck</option>\n    <option value=\"bus\">Bus</option>\n    <option value=\"car\">Car</option>\n    </select>\n    <span class=\"sdds-dropdown-helper\">Helper text</span>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2500",
+                    "Title": "Example in React",
+                    "Text": "",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "875",
+                    "title": null,
+                    "code": "\nimport React, {Component} from 'react'\n\nclass Form extends Component {\n\n  cities = [\n    'Stockholm',\n    'Paris',\n    'Tokyo',\n    'Bangkok',\n    'Bandung'\n  ];\n\n  constructor(props) {\n    super(props);\n    this.state = {\n      values : 'Stockholm',\n      errors:''\n    };\n  }\n\n  componentDidMount(){\n    this.sddsDropdown.addEventListener('selectOption', (evt) => {\n      const newValue = evt.detail.label;\n      this.setState({...this.state, values:newValue})\n\n      // Input validation\n      const errorMessage = this.cityValidation(newValue);\n      this.setState({...this.state, errors: errorMessage})\n    })\n  }\n\n  cityValidation(selected){\n    if(selected.trim() === '') return 'City is required';\n    if(selected==='Tokyo') return 'Sorry, you cannot live in Tokyo';\n    return null;\n  }\n\n  render() {\n    return (\n        \n        <div className=\"container\">\n          <sdds-dropdown\n            name=\"city\"\n            placeholder=\"Select city\"\n            label=\"City\"\n            label-position=\"outside\"\n            default-option={this.state.values}\n            ref={elem => this.sddsDropdown = elem}\n            state={this.state.errors && 'error'}\n            helper={this.state.errors || 'Please select a city' }\n            >\n            {this.cities.map((city) => <sdds-dropdown-option key={\"id-\" + city} value={city}>{city}</sdds-dropdown-option>)}\n          </sdds-dropdown>\n          <p>Selected value:</p>\n          <p>{this.state.values}</p>\n        </div>\n    );\n  }\n}\n\nexport default Form;",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2501",
+                    "Title": "Example in Angular",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "876",
+                    "title": "Template-driven form",
+                    "code": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'template-driven-form',\n  template: `\n  <div>value: {{myValue.label}}</div>\n  <sdds-dropdown\n    label=\"Label text\"\n    label-position=\"outside\"\n    placeholder=\"Select option\"\n    helper=\"Field required\"\n    (selectOption)=\"myValue=$event['detail']\"\n    placeholder=\"Select option\"\n    [defaultOption]=\"initialValue.value\"\n    [state]=\"myValue.label==='' || myValue.label==='None' ? 'error' : ''\">\n        <sdds-dropdown-option value=\"\">None</sdds-dropdown-option>\n        <sdds-dropdown-option \n        *ngFor=\"let option of list\" \n        [selected]=\"option.value === initialValue.value\"\n        [value]=\"option.value\">\n            {{option.label}}\n        </sdds-dropdown-option>\n  </sdds-dropdown>\n  `,\n  styleUrls: ['./form.component.scss']\n})\n\nexport class FormComponent implements OnInit {\n  username = 'Add username';\n  myValue: any = {};\n  initialValue: any = {};\n  list= [\n    {\"value\":\"opt-1\",\"label\":\"Jakarta\"},\n    {\"value\":\"opt-2\",\"label\":\"Stockholm\"},\n    {\"value\":\"opt-3\",\"label\":\"Barcelona\"}\n  ];\n\n  constructor() {}\n\n  ngOnInit() {    \n    this.initialValue= this.list[0];\n    this.myValue = this.initialValue;\n  }\n\n}",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2502",
+                    "Title": null,
+                    "Text": "To use in Reactive Form, you can wrap dropdown in Angular component or directive, and use it with reactive form.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "877",
+                    "title": "Angular wrapper for dropdown",
+                    "code": "import { Component, forwardRef, Input } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n// https://angular.io/api/forms/ControlValueAccessor\n\n@Component({\n  selector:'custom-dropdown',\n  template: `\n  <sdds-dropdown\n  label=\"Label text\"\n  label-position=\"outside\"\n  placeholder=\"Select option\"\n  placeholder=\"Select option\"\n  [defaultOption]=\"initialValue\"\n  [state]=\"myValue.label==='' || myValue.label==='None' ? 'error' : ''\"\n  (selectOption)=\"handleChange($event)\">\n    <sdds-dropdown-option value=\"\">None</sdds-dropdown-option>\n    <sdds-dropdown-option \n      *ngFor=\"let option of list\" \n      [selected]=\"option.value === initialValue.value\"\n      [value]=\"option.value\">\n        {{option.label}}\n    </sdds-dropdown-option>\n  </sdds-dropdown>\n`,\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CustomDropdown),\n      multi: true\n    }\n  ]\n})\n\nexport class CustomDropdown implements ControlValueAccessor {\n  @Input() list:any;\n  @Input() initialValue:any;\n  @Input() myValue:any;\n\n  value: string;\n  onChange: (value: string) => void;\n  onTouched: () => {};\n  onDisabled: boolean;\n\n  constructor() {\n    this.onChange = (value:string) => {};\n  }\n\n  writeValue(value: string) {\n    this.value = value ? value : '';\n  }\n\n  registerOnChange(onChange: any)  {\n    this.onChange = onChange;\n  }\n\n  registerOnTouched(fn: any)  {\n    this.onTouched = fn;\n  }\n  \n  setDisabledState?(isDisabled: boolean)  {\n    this.onDisabled = isDisabled;\n  }\n\n  handleChange(event) {\n    console.log(event)\n    this.onChange(event.detail.label)\n  }\n\n}\n",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "878",
+                    "title": "Use in reactive form Angular",
+                    "code": "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormGroup, Validators } from '@angular/forms';\n\n@Component({\n  selector: 'basic-form',\n  template: `\n    <form [formGroup]=\"myForm\" (ngSubmit)=\"onSubmit(myForm)\" class=\"sdds-row\">\n        <custom-dropdown\n            [list]=\"list\"\n            [initialValue]=\"initialValue.value\"\n            [myValue]=\"myForm.value.CustomDropdown\"\n            ngDefaultControl\n            formControlName=\"CustomDropdown\"></custom-dropdown>\n        <h6>Values in the reactive form:</h6>\n        <div>Values: {{myForm.value | json}}</div>\n    </form>    \n  `,\n  styleUrls: ['./form.component.scss']\n})\n\nexport class FormComponent implements OnInit {\n  username = 'Add username';\n  myForm: FormGroup;\n  myValue: any = {};\n  initialValue: any = {};\n  list= [\n    {\"value\":\"opt-1\",\"label\":\"Jakarta\"},\n    {\"value\":\"opt-2\",\"label\":\"Stockholm\"},\n    {\"value\":\"opt-3\",\"label\":\"Barcelona\"}\n  ];\n\n  constructor(private fb: FormBuilder) {}\n\n  ngOnInit() {\n\n    // Dropdown\n    \n    this.initialValue= this.list[0];\n    this.myValue = this.initialValue;\n\n    //Formcontrol\n    this.myForm = this.fb.group({\n      CustomDropdown:['', Validators.required]\n    })\n    this.myForm.valueChanges.subscribe(console.log)\n  }\n\n  onSubmit(...formTest){\n    console.log(formTest)\n  }\n}",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1155",
+                    "Title": "Form Demo",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "299",
+                        "title": "Demo",
+                        "description": "Form example in Angular",
+                        "info": null,
+                        "image": null,
+                        "detail": "Demo in CodeSandbox on how to use SDDS textfield and dropdown in Angular, includes form validation example.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-angular-form-example"
+                      },
+                      {
+                        "id": "300",
+                        "title": "Demo",
+                        "description": "Form example in React",
+                        "info": null,
+                        "image": null,
+                        "detail": "Demo in CodeSandbox on how to use SDDS textfield and dropdown in React, includes form validation example.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-react-form-example"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-06-01T12:04:41.828Z"
+                "updated_at": "2021-06-15T11:54:24.337Z"
               }
             }
           ]
@@ -11565,9 +11679,39 @@
                     "code": "<div style=\"width:242px; background-color: white; padding: 16px;\"  class=\"sdds-on-white-bg\"> \n  <sdds-textfield type=\"text\" > </sdds-textfield>\n  <sdds-textarea type=\"text\"> </sdds-textarea>\n</div>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1156",
+                    "Title": "Form Demo",
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "301",
+                        "title": "Demo",
+                        "description": "Example demo form in Angular",
+                        "info": null,
+                        "image": null,
+                        "detail": "CodeSandbox demo SDDS textfield and dropdown in Angular, includes form validation.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-angular-form-example"
+                      },
+                      {
+                        "id": "302",
+                        "title": "Demo",
+                        "description": "Example demo form in React",
+                        "info": null,
+                        "image": null,
+                        "detail": "CodeSandbox demo SDDS textfield and dropdown in React, includes form validation.",
+                        "type": "linkExternal",
+                        "url": "https://codesandbox.io/s/github/digitaldesign-scania/sdds-react-form-example"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-06-01T12:32:42.566Z"
+                "updated_at": "2021-06-15T11:53:56.144Z"
               }
             }
           ]
@@ -12889,12 +13033,22 @@
                         "detail": null,
                         "type": "linkInternal",
                         "url": "components/toasts"
+                      },
+                      {
+                        "id": "303",
+                        "title": "Component",
+                        "description": "Badges",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/badges"
                       }
                     ],
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-05-03T16:27:21.118Z"
+                "updated_at": "2021-06-15T10:13:58.245Z"
               }
             }
           ]
@@ -13019,6 +13173,13 @@
           "url": "dividers",
           "displayLink": null,
           "title": "Dividers",
+          "thumbnail": null
+        },
+        {
+          "id": "187",
+          "url": "badges",
+          "displayLink": null,
+          "title": "Badges",
           "thumbnail": null
         },
         {
@@ -16638,11 +16799,227 @@
                         "description": null,
                         "usage": null,
                         "restriction": null
+                      },
+                      {
+                        "id": "518",
+                        "name": "scania-battery",
+                        "title": "Battery-car",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "519",
+                        "name": "scania-bird",
+                        "title": "Bird",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "520",
+                        "name": "scania-business",
+                        "title": "Business",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "521",
+                        "name": "scania-business_development",
+                        "title": "Business development",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "522",
+                        "name": "scania-car",
+                        "title": "Car",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "523",
+                        "name": "scania-charge_management_system",
+                        "title": "Charge management system",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "524",
+                        "name": "scania-chemicals",
+                        "title": "Chemicals",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "526",
+                        "name": "scania-dont_touch_face",
+                        "title": "Don't touch face",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "527",
+                        "name": "scania-electricity_contract",
+                        "title": "Electricity contract",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "528",
+                        "name": "scania-electricity_production",
+                        "title": "Electricity production",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "530",
+                        "name": "scania-gastruck",
+                        "title": "Gastruck",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "531",
+                        "name": "scania-keep_distance",
+                        "title": "Keep distance",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "532",
+                        "name": "scania-local_surrounding",
+                        "title": "Local surrounding",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "533",
+                        "name": "scania-market",
+                        "title": "Market",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "534",
+                        "name": "scania-motorbike",
+                        "title": "Motorbike",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "536",
+                        "name": "scania-raw_material",
+                        "title": "Raw material",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "537",
+                        "name": "scania-scale",
+                        "title": "Scale",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "538",
+                        "name": "scania-sds",
+                        "title": "SDS",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "539",
+                        "name": "scania-shopping_cart",
+                        "title": "Shopping cart",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "540",
+                        "name": "scania-solar_power_cell",
+                        "title": "Solar power cell",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "543",
+                        "name": "scania-thunder",
+                        "title": "Thunder",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "545",
+                        "name": "scania-transformer_station",
+                        "title": "Transformer station",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "546",
+                        "name": "scania-transmission_network",
+                        "title": "Transmission network",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "547",
+                        "name": "scania-tree",
+                        "title": "Tree",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "548",
+                        "name": "scania-vacuum_cleaner",
+                        "title": "Vacuum cleaner",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "549",
+                        "name": "scania-warehouse",
+                        "title": "Warehouse",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
+                      },
+                      {
+                        "id": "551",
+                        "name": "scania-workshop",
+                        "title": "Workshop",
+                        "description": null,
+                        "usage": null,
+                        "restriction": null
                       }
                     ]
                   }
                 ],
-                "updated_at": "2021-04-22T07:33:29.070Z"
+                "updated_at": "2021-06-11T15:02:19.671Z"
               }
             }
           ]
@@ -17065,6 +17442,19 @@
                             "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d7f5b1b7ef3b4d6988092e8f503da93e.png"
                           }
                         ]
+                      },
+                      {
+                        "id": "2841",
+                        "label": "Collapsed: Pop-over appears at hover of sub-menu item",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_feac7ae447.png"
+                          }
+                        ]
                       }
                     ],
                     "texts": [],
@@ -17178,7 +17568,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-03-22T11:01:27.856Z"
+                "updated_at": "2021-06-14T14:53:39.882Z"
               }
             }
           ]
@@ -17346,7 +17736,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aae3be7ec6824021b1907829ff360372.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
                           }
                         ]
                       },
@@ -17359,7 +17749,7 @@
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/343020463b1145fb95741a88f09cdf87.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
                           }
                         ]
                       },
@@ -17483,6 +17873,87 @@
                     "dosAndDonts": []
                   },
                   {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1148",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2842",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_99aca44d4e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2843",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_091aa66412.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2844",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_71e54bd3ba.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2845",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_0401a8ec43.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2846",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2ddba1afc1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Popover items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n</tbody>\n</table>",
+                        "Introduction": null,
+                        "id": "396"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2274",
                     "Title": null,
@@ -17544,6 +18015,13 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2280",
+                    "Title": null,
+                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "2330",
                     "Title": null,
                     "Text": "##### Side menu - Collapsed\nThe width of the collapsed side menus container is fixed until it reaches smaller viewports. The height of the collapsed side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>68 / 17</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>68 / 17</td> \n  </tr>\n</tbody>\n</table>",
@@ -17597,13 +18075,6 @@
                     "texts": [],
                     "linkCards": [],
                     "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2280",
-                    "Title": null,
-                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
@@ -17705,7 +18176,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-03-22T11:02:41.247Z"
+                "updated_at": "2021-06-14T15:09:38.013Z"
               }
             }
           ]
@@ -21160,7 +21631,7 @@
                         "image": null,
                         "detail": null,
                         "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/e0c2e9f0bf564e8886af99f42ff10f26.zip"
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.1/sdds-grid_system-new-q2-2021"
                       }
                     ],
                     "dosAndDonts": []
@@ -21173,7 +21644,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-07T10:10:28.309Z"
+                "updated_at": "2021-06-15T13:15:50.491Z"
               }
             }
           ]
@@ -22287,6 +22758,524 @@
                   }
                 ],
                 "updated_at": "2021-06-01T14:48:54.042Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "187",
+      "url": "badges",
+      "displayLink": null,
+      "title": "Badges",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "314",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "338",
+                "title": "Components Badges Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2503",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Badges are circular or pill shaped containers that are used to display a change in property associated with an item/event. They come with or without a count (numerical value). This count on a badge can vary depending on changes in item/events.",
+                      "Introduction": true,
+                      "id": "397"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2504",
+                    "Title": "Usage",
+                    "Text": "Badges are meant to catch user’s attention, that is why they are by default filled and using a red colour, in order to be prominent when displayed within or next to a UI element. However, if needed by the context they are used in, they can also use other bright colours. \n\nBadges come in two sizes; a small and a default one. The former is used when a change of property or new notification needs to be signaled to the user, without a numerical value attached to it. The latter should be used when the user needs to know the exact number of new items that are present. \n\nIn the case of badges with a numerical value attached to them, only integers should be used to display the count. Moreover, badges are supposed to depict values of maximum 2 digits. In case of higher values, it is suggested that a plus icon is used to convey this.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2847",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_bb8beaecaa.png"
+                        }
+                      ]
+                    },
+                    "id": "399"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2505",
+                    "Title": "Types",
+                    "Text": "Badges can be circular or pill-shaped.\nFor single digit values, a circular pill is used; for more digits, the badge  is becoming pill-shaped.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2848",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_fd8abef369.png"
+                        }
+                      ]
+                    },
+                    "id": "400"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2506",
+                    "Title": "Placement",
+                    "Text": "A badge can be placed within a button or can be juxtaposed with an icon (e.g. notifications etc.). In the latter case, the badge is floating over the icon, and is not bound by the icon’s dimensions.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2849",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_d48dec6e58.png"
+                        }
+                      ]
+                    },
+                    "id": "401"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2850",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_0ec09949ea.png"
+                        }
+                      ]
+                    },
+                    "id": "402"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2507",
+                    "Title": "Anatomy",
+                    "Text": "The badge contains two mandatory elements; text (numerical value and in some cases a plus sign) and container.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2851",
+                      "label": null,
+                      "caption": "A. Container\nB. Number",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_b7e1f964f8.png"
+                        }
+                      ]
+                    },
+                    "id": "403"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2508",
+                    "Title": "Behaviour",
+                    "Text": "A badge is not an interactive element, however, the count displayed on a badge can go up or down.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1149",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2852",
+                        "label": null,
+                        "caption": "Circle",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_8a7c5cfe42.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2853",
+                        "label": null,
+                        "caption": "Pill",
+                        "size": "Medium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/222_642102e053.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2509",
+                    "Title": "Do and Don’ts",
+                    "Text": "Below you will find some best practice solutions for badges.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1150",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Appearance",
+                        "Introduction": null,
+                        "id": "398"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/99_88cfaa912c.png"
+                        },
+                        "size": "Medium",
+                        "description": "Make badges stand out by using bold colours with solid filling",
+                        "id": "293"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_ea8bcd726a.png"
+                        },
+                        "size": "Medium",
+                        "description": "Don’t use colours that merge into the background",
+                        "id": "294"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1151",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Usage",
+                        "Introduction": null,
+                        "id": "399"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_395766648d.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use badges for counts",
+                        "id": "295"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_9588e638c9.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use badges for text labels",
+                        "id": "296"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1152",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Placement",
+                        "Introduction": null,
+                        "id": "400"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_487e3603dd.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the badge close to the UI element it refers to",
+                        "id": "297"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_2e37e3c66f.png"
+                        },
+                        "size": "Medium",
+                        "description": "Place the badge far from the UI elements it refers to",
+                        "id": "298"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-06-15T13:12:43.112Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "315",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "339",
+                "title": "Components Badges Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2510",
+                    "Title": "Colour",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Container</th>\n    <th>Text</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$red-500</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2511",
+                    "Title": "Sizing",
+                    "Text": "Badges come in two sizes; a small one (without a numerical value) and a default one (with numerical value inside). ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1153",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2854",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_a9b53d581f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2856",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_20a827aabc.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2857",
+                        "label": null,
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_fa98a876ea.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2512",
+                    "Title": "Placement",
+                    "Text": "To right corner of the UI element.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1154",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2858",
+                        "label": null,
+                        "caption": "Rounded badges placed on an icon",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6befebfd5f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2859",
+                        "label": null,
+                        "caption": "Pill-shaped badges placed on an icon. Always expands horizontaly from the left to the right.",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_7a19990984.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2860",
+                        "label": null,
+                        "caption": "Rounded badges placed inside a button",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_6a7ed8a2f3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2513",
+                    "Title": "Typography",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Font</th>\n    <th>Text size</th>\n    <th>Weight</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Number</td>\n    <td>Scania Sans Semi Condensed</td>\n    <td>12px</td>\n    <td>$bold</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2514",
+                    "Title": "Corner radius",
+                    "Text": "The badge in a shape of a pill has rounded corners with a 12px / 3 rem corner radius.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Corner radius</th>\n    <th>Corners</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>12 px / 3 rem</td>\n    <td>Top, bottom, left and right</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2861",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Corner_radius_20ef557682.png"
+                        }
+                      ]
+                    },
+                    "id": "404"
+                  }
+                ],
+                "updated_at": "2021-06-15T12:33:38.401Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "316",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
