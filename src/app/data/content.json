@@ -1825,7 +1825,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "670",
                     "Title": null,
-                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://sdds-cms.s3.amazonaws.com/40fe6a47ccd145eeabd06df1272108b0.png)",
+                    "Text": "</br>\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n\n\n\n![text](https://dw1u92ia6bs84.cloudfront.net/Images/40fe6a47ccd145eeabd06df1272108b0.png)",
                     "LeadText": null
                   }
                 ],
@@ -2991,56 +2991,56 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "568",
                     "Title": "Primary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4a38fd5b6e5e491ab1d019a935498ac5.png\"></td>\n    <td>Red</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4a38fd5b6e5e491ab1d019a935498ac5.png\"></td>\n    <td>Red</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "569",
                     "Title": "Secondary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ebd5e9cee91c48a3a300963db685c039.png\"></td>\n    <td>Orange</td>\n    <td>#FA6E23</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ebd5e9cee91c48a3a300963db685c039.png\"></td>\n    <td>Orange</td>\n    <td>#FA6E23</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "570",
                     "Title": "Semantic colors",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b3d6ebb136c843afa949ed0a4fa4b07e.png\"></td>\n    <td>CTA</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/dd4f1a4a61a748b69df9daf1b2dd0778.png\"></td>\n    <td>Negative</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4558bdb903ae4bf091981688ab10932e.png\"></td>\n    <td>Warning</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/72124c6a6b4947b1bc8cb58c645b1d96.png\"></td>\n    <td>Positive</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/25f6f37ee31e427eb437cb6b5bac22bc.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b3d6ebb136c843afa949ed0a4fa4b07e.png\"></td>\n    <td>CTA</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/dd4f1a4a61a748b69df9daf1b2dd0778.png\"></td>\n    <td>Negative</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4558bdb903ae4bf091981688ab10932e.png\"></td>\n    <td>Warning</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/72124c6a6b4947b1bc8cb58c645b1d96.png\"></td>\n    <td>Positive</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/25f6f37ee31e427eb437cb6b5bac22bc.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "571",
                     "Title": "Scales",
-                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 700</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 700</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "572",
                     "Title": null,
-                    "Text": "**Blue scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/961a9b35627542ccab43bb175ed61e40.png\"></td>\n    <td>Blue 900</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4e331bb3b5c243a2bfc97d4ef99cd85a.png\"></td>\n    <td>Blue 800</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/4c8e4e67f12641c2b22c3c3bc322fe62.png\"></td>\n    <td>Blue 700</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e55301bc735941c3ac388023d45fa99a.png\"></td>\n    <td>Blue 600</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/cbdb86ff8780443685a885180548034d.png\"></td>\n    <td>Blue 500</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/9e3f18eb908e4c85be6cc8a6094eeb9c.png\"></td>\n    <td>Blue 400</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/365a3ce9207b4c58be87535ec8fd0538.png\"></td>\n    <td>Blue 300</td>\n    <td>#9CA5C2</td>\n    <td>(156,165,194,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f71be4d191f4894ada43e38c9f7effb.png\"></td>\n    <td>Blue 200</td>\n    <td>#C1C6D8</td>\n    <td>(193,198,216,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/8f32b721ba234b4bac4bc90cb2105529.png\"></td>\n    <td>Blue 100</td>\n    <td>#E0E2EB</td>\n    <td>(224,226,235,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3eda052338354b2aaaf7a93ca77657be.png\"></td>\n    <td>Blue 50</td>\n    <td>#F6F6F9</td>\n    <td>(246,246,249,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "**Blue scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/961a9b35627542ccab43bb175ed61e40.png\"></td>\n    <td>Blue 900</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4e331bb3b5c243a2bfc97d4ef99cd85a.png\"></td>\n    <td>Blue 800</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4c8e4e67f12641c2b22c3c3bc322fe62.png\"></td>\n    <td>Blue 700</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/e55301bc735941c3ac388023d45fa99a.png\"></td>\n    <td>Blue 600</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/cbdb86ff8780443685a885180548034d.png\"></td>\n    <td>Blue 500</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/9e3f18eb908e4c85be6cc8a6094eeb9c.png\"></td>\n    <td>Blue 400</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/365a3ce9207b4c58be87535ec8fd0538.png\"></td>\n    <td>Blue 300</td>\n    <td>#9CA5C2</td>\n    <td>(156,165,194,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3f71be4d191f4894ada43e38c9f7effb.png\"></td>\n    <td>Blue 200</td>\n    <td>#C1C6D8</td>\n    <td>(193,198,216,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/8f32b721ba234b4bac4bc90cb2105529.png\"></td>\n    <td>Blue 100</td>\n    <td>#E0E2EB</td>\n    <td>(224,226,235,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3eda052338354b2aaaf7a93ca77657be.png\"></td>\n    <td>Blue 50</td>\n    <td>#F6F6F9</td>\n    <td>(246,246,249,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "573",
                     "Title": null,
-                    "Text": "**Red scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "**Red scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "574",
                     "Title": null,
-                    "Text": "**Green scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/6a660876624444eca48c3eda58ff2c79.png\"></td>\n    <td>Green 900</td>\n    <td>#112616</td>\n    <td>(17,38,22,1)</td>\n    <td>$green-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/d0d1c4d952a342ddb102c3430ff35051.png\"></td>\n    <td>Green 800</td>\n    <td>#1C3822</td>\n    <td>(28,56,34,1)</td>\n    <td>$green-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/61948dbe34eb44a5a2ae84ce274d0247.png\"></td>\n    <td>Green 700</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/89b9222956bf49ab9cccf45b0f9e7f03.png\"></td>\n    <td>Green 600</td>\n    <td>#386E44</td>\n    <td>(56,110,68,1)</td>\n    <td>$green-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/82a081df758347d0b23fd771d1de1555.png\"></td>\n    <td>Green 500</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bef85d637a734b4099fefe5e762f54db.png\"></td>\n    <td>Green 400</td>\n    <td>#539E63</td>\n    <td>(83,158,99,1)</td>\n    <td>$green-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/977452b1757f4eaf8a4c88d1a28bd399.png\"></td>\n    <td>Green 300</td>\n    <td>#89B691</td>\n    <td>(137,182,145,1)</td>\n    <td>$green-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee40e7fe84b646a98ad94387a982f9d2.png\"></td>\n    <td>Green 200</td>\n    <td>#A6D1AD</td>\n    <td>(166,209,173,1)</td>\n    <td>$green-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/f24acf045b9f4146ad137ffa6f7aeb16.png\"></td>\n    <td>Green 100</td>\n    <td>#CAEBD0</td>\n    <td>(202,235,208,1)</td>\n    <td>$green-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3b385b2c131a4ec686c506723d2d8292.png\"></td>\n    <td>Green 50</td>\n    <td>#F1F8F2</td>\n    <td>(241,248,242,1)</td>\n    <td>$green-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "**Green scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6a660876624444eca48c3eda58ff2c79.png\"></td>\n    <td>Green 900</td>\n    <td>#112616</td>\n    <td>(17,38,22,1)</td>\n    <td>$green-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/d0d1c4d952a342ddb102c3430ff35051.png\"></td>\n    <td>Green 800</td>\n    <td>#1C3822</td>\n    <td>(28,56,34,1)</td>\n    <td>$green-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/61948dbe34eb44a5a2ae84ce274d0247.png\"></td>\n    <td>Green 700</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/89b9222956bf49ab9cccf45b0f9e7f03.png\"></td>\n    <td>Green 600</td>\n    <td>#386E44</td>\n    <td>(56,110,68,1)</td>\n    <td>$green-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/82a081df758347d0b23fd771d1de1555.png\"></td>\n    <td>Green 500</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/bef85d637a734b4099fefe5e762f54db.png\"></td>\n    <td>Green 400</td>\n    <td>#539E63</td>\n    <td>(83,158,99,1)</td>\n    <td>$green-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/977452b1757f4eaf8a4c88d1a28bd399.png\"></td>\n    <td>Green 300</td>\n    <td>#89B691</td>\n    <td>(137,182,145,1)</td>\n    <td>$green-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ee40e7fe84b646a98ad94387a982f9d2.png\"></td>\n    <td>Green 200</td>\n    <td>#A6D1AD</td>\n    <td>(166,209,173,1)</td>\n    <td>$green-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/f24acf045b9f4146ad137ffa6f7aeb16.png\"></td>\n    <td>Green 100</td>\n    <td>#CAEBD0</td>\n    <td>(202,235,208,1)</td>\n    <td>$green-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3b385b2c131a4ec686c506723d2d8292.png\"></td>\n    <td>Green 50</td>\n    <td>#F1F8F2</td>\n    <td>(241,248,242,1)</td>\n    <td>$green-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "575",
                     "Title": null,
-                    "Text": "**Orange scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/0b68903a702847edb546245290638df6.png\"></td>\n    <td>Orange 900</td>\n    <td>#112616</td>\n    <td>(51,17,3,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/2a4ee842cf654d19a6935eecffa5ec40.png\"></td>\n    <td>Orange 800</td>\n    <td>#893B15</td>\n    <td>(137,59,21,1)</td>\n    <td>$orange-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3a36ec35a9844a1cac694271c01df91c.png\"></td>\n    <td>Orange 700</td>\n    <td>#C65416</td>\n    <td>(198,84,22,1)</td>\n    <td>$orange-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ded62d3a338546a6942063b739d4fa1c.png\"></td>\n    <td>Orange 600</td>\n    <td>#EB6200</td>\n    <td>(235,98,0,1)</td>\n    <td>$orange-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/ee8edb5d47514961980034f5d5a2a7be.png\"></td>\n    <td>Orange 500</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/28090f448a90449ebdb4fe7edb25e65b.png\"></td>\n    <td>Orange 400</td>\n    <td>#F98A67</td>\n    <td>(249,138,103,1)</td>\n    <td>$orange-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/bc42b24388964792aa9fa29e6f636ddb.png\"></td>\n    <td>Orange 300</td>\n    <td>#F9A38D</td>\n    <td>(249,163,141,1)</td>\n    <td>$orange-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/5d7f20edd4854c17a87c6da2f42b9f1c.png\"></td>\n    <td>Orange 200</td>\n    <td>#F9CAC0</td>\n    <td>(249,202,192,1)</td>\n    <td>$orange-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/b22bfc5022bb4d1ab91816b53db8d3be.png\"></td>\n    <td>Orange 100</td>\n    <td>#FBE3DF</td>\n    <td>(251,227,223,1)</td>\n    <td>$orange-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://sdds-cms.s3.amazonaws.com/3f965ef8ce8e4567afa74f2d272b1427.png\"></td>\n    <td>Orange 50</td>\n    <td>#FDF5F3</td>\n    <td>(253,245,243,1)</td>\n    <td>$orange-50</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
+                    "Text": "**Orange scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/0b68903a702847edb546245290638df6.png\"></td>\n    <td>Orange 900</td>\n    <td>#112616</td>\n    <td>(51,17,3,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/2a4ee842cf654d19a6935eecffa5ec40.png\"></td>\n    <td>Orange 800</td>\n    <td>#893B15</td>\n    <td>(137,59,21,1)</td>\n    <td>$orange-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3a36ec35a9844a1cac694271c01df91c.png\"></td>\n    <td>Orange 700</td>\n    <td>#C65416</td>\n    <td>(198,84,22,1)</td>\n    <td>$orange-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ded62d3a338546a6942063b739d4fa1c.png\"></td>\n    <td>Orange 600</td>\n    <td>#EB6200</td>\n    <td>(235,98,0,1)</td>\n    <td>$orange-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ee8edb5d47514961980034f5d5a2a7be.png\"></td>\n    <td>Orange 500</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/28090f448a90449ebdb4fe7edb25e65b.png\"></td>\n    <td>Orange 400</td>\n    <td>#F98A67</td>\n    <td>(249,138,103,1)</td>\n    <td>$orange-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/bc42b24388964792aa9fa29e6f636ddb.png\"></td>\n    <td>Orange 300</td>\n    <td>#F9A38D</td>\n    <td>(249,163,141,1)</td>\n    <td>$orange-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5d7f20edd4854c17a87c6da2f42b9f1c.png\"></td>\n    <td>Orange 200</td>\n    <td>#F9CAC0</td>\n    <td>(249,202,192,1)</td>\n    <td>$orange-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b22bfc5022bb4d1ab91816b53db8d3be.png\"></td>\n    <td>Orange 100</td>\n    <td>#FBE3DF</td>\n    <td>(251,227,223,1)</td>\n    <td>$orange-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3f965ef8ce8e4567afa74f2d272b1427.png\"></td>\n    <td>Orange 50</td>\n    <td>#FDF5F3</td>\n    <td>(253,245,243,1)</td>\n    <td>$orange-50</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
                     "LeadText": null
                   }
                 ],
@@ -7162,7 +7162,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "280",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-layout-8</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/93dc8476e29b4518872aaaf02b0e6157.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-layout-16</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/3528aeccb8704064b2089d556421e4ef.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-layout-24</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/0c1aa65b96aa40cbbba51b99ab52bb93.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-layout-32</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/d4e0dbf95c064a73a54a31f1e1c119ed.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-layout-48</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/4d43723ebf5c4eb4857ab383b9e25e7e.png'/></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>64</td>\n    <td>$spacing-layout-64</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/90e0a4db9a2541a0affdf55a13347481.png'/></td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>96</td>\n    <td>$spacing-layout-96</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/5d1cf3ec27744cdaac1c19c09d5a5509.png'/></td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>128</td>\n    <td>$spacing-layout-128</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/df881c9a516b4115b9b1bd5a07361c8a.png'/></td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>160</td>\n    <td>$spacing-layout-160</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/6ea891a79645485ab13ec306be4f8912.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
                     "LeadText": null
                   },
                   {
@@ -7188,7 +7188,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "281",
                     "Title": "Element scale",
-                    "Text": "The element scale is used when building components where we need smaller units to work with, when defining all detailed work within a component.\n\nShould a component need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale, when creating a new token.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0.5</td>\n    <td>2</td>\n    <td>$spacing-element-2</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/c4bca33db50d4162bf4fbbc51a6f723d.png'/></td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>4</td>\n    <td>$spacing-element-4</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4045a2cde53940f680b2c8e3165499d0.png'/></td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-element-8</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4063aadbd8f84bdea27670b994f2087b.png'/></td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>$spacing-element-12</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/efa8e6e2f22946948ff53ea8cd6bddb1.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-element-16</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/945edcce58a243d3a037d78664ab33b5.png'/></td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>$spacing-element-20</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/7fecff6b6fc8462496db9107c6cf1487.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-element-24</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/0500b5b59da44c52bd3c225a68adaff4.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-element-32</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/81c0156d41524da493222d426864af62.png'/></td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>$spacing-element-40</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/4b5eb0a4dd3d45da823b8ae53d626ae9.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-element-48</td>\n    <td><img src='https://sdds-cms.s3.amazonaws.com/f718f11605ad4f8d9c544ad15e8744ab.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
+                    "Text": "The element scale is used when building components where we need smaller units to work with, when defining all detailed work within a component.\n\nShould a component need an additional spacing size, make sure to use our Unit System as base to create a consistent spacing scale, when creating a new token.\n\n<table>\n<thead>\n  <tr>\n    <th>Rem</th>\n    <th>Pixel</th>\n    <th>Token</th>\n    <th>Scale</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>0.5</td>\n    <td>2</td>\n    <td>$spacing-element-2</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/c4bca33db50d4162bf4fbbc51a6f723d.png'/></td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>4</td>\n    <td>$spacing-element-4</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/4045a2cde53940f680b2c8e3165499d0.png'/></td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>8</td>\n    <td>$spacing-element-8</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/4063aadbd8f84bdea27670b994f2087b.png'/></td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>12</td>\n    <td>$spacing-element-12</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/efa8e6e2f22946948ff53ea8cd6bddb1.png'/></td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>16</td>\n    <td>$spacing-element-16</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/945edcce58a243d3a037d78664ab33b5.png'/></td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>20</td>\n    <td>$spacing-element-20</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/7fecff6b6fc8462496db9107c6cf1487.png'/></td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>24</td>\n    <td>$spacing-element-24</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/0500b5b59da44c52bd3c225a68adaff4.png'/></td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>32</td>\n    <td>$spacing-element-32</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/81c0156d41524da493222d426864af62.png'/></td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>40</td>\n    <td>$spacing-element-40</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/4b5eb0a4dd3d45da823b8ae53d626ae9.png'/></td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>48</td>\n    <td>$spacing-element-48</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/f718f11605ad4f8d9c544ad15e8744ab.png'/></td>\n  </tr>\n</tbody>\n</table>\n",
                     "LeadText": null
                   },
                   {
@@ -13127,80 +13127,10 @@
       "parent": null,
       "submenus": [
         {
-          "id": "182",
-          "url": "data-tables",
-          "displayLink": null,
-          "title": "Data tables",
-          "thumbnail": null
-        },
-        {
-          "id": "110",
-          "url": "accordions",
-          "displayLink": null,
-          "title": "Accordions",
-          "thumbnail": null
-        },
-        {
-          "id": "181",
-          "url": "header",
-          "displayLink": null,
-          "title": "Header",
-          "thumbnail": null
-        },
-        {
-          "id": "111",
-          "url": "Links",
-          "displayLink": null,
-          "title": "Links",
-          "thumbnail": null
-        },
-        {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
-          "thumbnail": null
-        },
-        {
-          "id": "146",
-          "url": "dropdowns",
-          "displayLink": null,
-          "title": "Dropdowns",
-          "thumbnail": null
-        },
-        {
-          "id": "58",
-          "url": "dividers",
-          "displayLink": null,
-          "title": "Dividers",
-          "thumbnail": null
-        },
-        {
-          "id": "187",
-          "url": "badges",
-          "displayLink": null,
-          "title": "Badges",
-          "thumbnail": null
-        },
-        {
-          "id": "179",
-          "url": "Modals",
-          "displayLink": null,
-          "title": "Modals",
-          "thumbnail": null
-        },
-        {
           "id": "5",
           "url": "buttons",
           "displayLink": null,
           "title": "Buttons",
-          "thumbnail": null
-        },
-        {
-          "id": "112",
-          "url": "Tooltips",
-          "displayLink": null,
-          "title": "Tooltips",
           "thumbnail": null
         },
         {
@@ -13211,31 +13141,10 @@
           "thumbnail": null
         },
         {
-          "id": "145",
-          "url": "cards",
+          "id": "58",
+          "url": "dividers",
           "displayLink": null,
-          "title": "Cards",
-          "thumbnail": null
-        },
-        {
-          "id": "108",
-          "url": "checkboxes",
-          "displayLink": null,
-          "title": "Checkboxes",
-          "thumbnail": null
-        },
-        {
-          "id": "107",
-          "url": "radio-buttons",
-          "displayLink": null,
-          "title": "Radio buttons",
-          "thumbnail": null
-        },
-        {
-          "id": "109",
-          "url": "toggles",
-          "displayLink": null,
-          "title": "Toggles",
+          "title": "Dividers",
           "thumbnail": null
         },
         {
@@ -13253,10 +13162,87 @@
           "thumbnail": null
         },
         {
-          "id": "186",
-          "url": "banners",
+          "id": "107",
+          "url": "radio-buttons",
           "displayLink": null,
-          "title": "Banners",
+          "title": "Radio buttons",
+          "thumbnail": null
+        },
+        {
+          "id": "108",
+          "url": "checkboxes",
+          "displayLink": null,
+          "title": "Checkboxes",
+          "thumbnail": null
+        },
+        {
+          "id": "109",
+          "url": "toggles",
+          "displayLink": null,
+          "title": "Toggles",
+          "thumbnail": null
+        },
+        {
+          "id": "110",
+          "url": "accordions",
+          "displayLink": null,
+          "title": "Accordions",
+          "thumbnail": null
+        },
+        {
+          "id": "111",
+          "url": "Links",
+          "displayLink": null,
+          "title": "Links",
+          "thumbnail": null
+        },
+        {
+          "id": "112",
+          "url": "Tooltips",
+          "displayLink": null,
+          "title": "Tooltips",
+          "thumbnail": null
+        },
+        {
+          "id": "145",
+          "url": "cards",
+          "displayLink": null,
+          "title": "Cards",
+          "thumbnail": null
+        },
+        {
+          "id": "146",
+          "url": "dropdowns",
+          "displayLink": null,
+          "title": "Dropdowns",
+          "thumbnail": null
+        },
+        {
+          "id": "179",
+          "url": "Modals",
+          "displayLink": null,
+          "title": "Modals",
+          "thumbnail": null
+        },
+        {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
+          "thumbnail": null
+        },
+        {
+          "id": "181",
+          "url": "header",
+          "displayLink": null,
+          "title": "Header",
+          "thumbnail": null
+        },
+        {
+          "id": "182",
+          "url": "data-tables",
+          "displayLink": null,
+          "title": "Data tables",
           "thumbnail": null
         },
         {
@@ -13264,6 +13250,20 @@
           "url": "toasts",
           "displayLink": null,
           "title": "Toasts",
+          "thumbnail": null
+        },
+        {
+          "id": "186",
+          "url": "banners",
+          "displayLink": null,
+          "title": "Banners",
+          "thumbnail": null
+        },
+        {
+          "id": "187",
+          "url": "badges",
+          "displayLink": null,
+          "title": "Badges",
           "thumbnail": null
         }
       ]
@@ -14129,7 +14129,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "837",
                     "title": "Card with image on top",
-                    "code": "<div class=\"sdds-card \">\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card \">\n  <img class=\"sdds-card-img\" src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  \n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14137,7 +14137,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "838",
                     "title": "Card with image in the middle",
-                    "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card \">\n            \n  <div class=\"sdds-card-header\">\n    <h6 class=\"sdds-card-headline\">Header text</h6>\n    <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6c2b2108316345e683d483663943bf59.jpg\">\n  <div class=\"sdds-divider-light-border-top\"></div>\n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\" class=\"hydrated\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -14145,7 +14145,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "839",
                     "title": "Card with avatar in header",
-                    "code": "<div class=\"sdds-card\">\n        \n  <div class=\"sdds-card-header-avatar\">\n   <div class=\"sdds-card-avatar\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"18\" fill=\"#E2E2E4\"></circle></svg></div>\n    <div class=\"sdds-card-headlines\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n      <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://sdds-cms.s3.amazonaws.com/6c2b2108316345e683d483663943bf59.jpg\">\n  \n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n</div>",
+                    "code": "<div class=\"sdds-card\">\n        \n  <div class=\"sdds-card-header-avatar\">\n   <div class=\"sdds-card-avatar\"><svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"18\" cy=\"18\" r=\"18\" fill=\"#E2E2E4\"></circle></svg></div>\n    <div class=\"sdds-card-headlines\">\n      <h6 class=\"sdds-card-headline\">Header text</h6>\n      <h6 class=\"sdds-card-sub-headline\">Subheader text</h6>\n    </div>\n  </div>\n  <img class=\"sdds-card-img\" src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6c2b2108316345e683d483663943bf59.jpg\">\n  \n  <div class=\"sdds-card-body\">This is a short and consist detail text describing for the user what this text is really about.</div>\n  <div class=\"sdds-card-footer\"><sdds-icon style=\"font-size: 20px;\" name=\"scania-arrow\"></sdds-icon></div>\n</div>",
                     "componentTag": null,
                     "preview": true
                   },
@@ -21827,7 +21827,7 @@
                         "image": null,
                         "detail": null,
                         "type": "download",
-                        "url": "https://sdds-cms.s3.amazonaws.com/83e985ffec544618bd44db4297a8d715.pptx"
+                        "url": "https://dw1u92ia6bs84.cloudfront.net/Images/83e985ffec544618bd44db4297a8d715.pptx"
                       }
                     ],
                     "dosAndDonts": []
