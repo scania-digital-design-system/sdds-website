@@ -15586,7 +15586,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
+                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our pictograms facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
                       "Introduction": true,
                       "id": "215"
                     }
@@ -15595,7 +15595,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "934",
                     "Title": "Usage",
-                    "Text": "The design of the pictograms — where soft curves meet sharp edges — is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Then our illustrative pictograms could be used to visualise information in a simplified way, and when used, supportive text should always be present. \n\nCorrectly used, the pictograms improve the structure and clarity of any message.  We also have [icons](foundations/icons), which are a smaller non-decorative icon element which purpose is to highlight functions or actions. ",
+                    "Text": "The design of the pictograms is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Our illustrative pictograms help visualising information in a simplified way, always combined with supportive text. Correctly used, pictograms improve the structure and clarity of any message. Pictograms can be use both on digital and physical environments.\n\nPictograms shouldn’t be confused with icons, smaller non-decorative visual element which purpose is to highlight functions or actions on digital interfaces. ",
                     "LeadText": null
                   },
                   {
@@ -15620,58 +15620,329 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "935",
-                    "Title": "Sizing",
-                    "Text": "Our pictograms could be used in a variety of sizes, which are based on our Unit System. The minum size is 48px and the maximum size will vary depending on application.\n\nFor pictograms in size 48px, we have thicker line width than pictograms larger than 72px. When downloading a pictogram, you will get both a 48 and a 72px version.\n\nLearn more about our [Unit System](foundations/unit-grid-system).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "881",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b80ce821d7294ef6bd7484cfa7066063.png"
-                        }
-                      ]
-                    },
-                    "id": "88"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "936",
-                    "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
+                    "Title": "Size",
+                    "Text": "Our pictograms are designed in a 40x40 px grid as a master grid size. Our pictograms can then be proporionally scaled up as needed. Their stroke width on 40x40 px size is 1,75px, and also scales up proportionally with the pictogram size. \n\nPlease note that if you want to use pictograms for sizes smaller than 40x40 px, icons might be preferable. Find more information about icons usage on the related [Icon Usage](foundations/icons) page.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "383",
+                    "id": "1163",
                     "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
+                    "Images": [
                       {
-                        "id": "163",
-                        "title": "Pictograms",
-                        "description": "Library",
-                        "info": "453mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/pictogram/1.0.0/pictogram_v1.zip"
+                        "id": "2880",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_1_c610596867.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2881",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_2_c72eba569d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2882",
+                        "label": null,
+                        "caption": "Pictograms are meant to be used in big sizes starting from 40px and above, following our Unit system. ",
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": []
+                      },
+                      {
+                        "id": "2883",
+                        "label": null,
+                        "caption": "Pictograms stroke width scales proportionnaly with their size. More guidelines regarding stroke width will follow soon.",
+                        "size": null,
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1669_2e26a02f86.png"
+                          }
+                        ]
                       }
                     ],
+                    "texts": [],
+                    "linkCards": [],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2544",
+                    "Title": "Guidelines",
+                    "Text": "The grid offers guidelines for some basic shapes and proportions as a starting point when designing new pictograms. This includes keyshapes and angles which derives from the Scania logo anatomy. Adhering to these guides will help create consistency across our pictograms library. \n\nPlease note that these guides should be seen as starting points. Deviations from these guides are accepted if it makes a specific pictogram more clear in its design. It is allowed to use the margins with small objects to ensure that the pictograms feel centered. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1164",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2884",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_be37fe8fa9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2885",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1670_ecc4d4fbed.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2545",
+                    "Title": null,
+                    "Text": "##### Clearspace\nOur pictogram grid keep a clearspace of 4px around. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1165",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2886",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_3_674ff529f2.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2546",
+                    "Title": null,
+                    "Text": "##### Curvature\nThe curvature consists of a compilation of circles which follows our unit system. The curvature is a good guide to ensure a consistent visual expression throughout all our pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1166",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2887",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_1_45443f15e0.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2888",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_2_78f1622ac4.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1167",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2889",
+                        "label": null,
+                        "caption": "1. As full, half or quarter circles.",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_01_c57f3d672b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2890",
+                        "label": null,
+                        "caption": "2. Depending on the motif they are a part of.",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_02_7a017ac2bc.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "The curvature can be applied in two different ways:",
+                        "Introduction": null,
+                        "id": "404"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2547",
+                    "Title": "Level of detail",
+                    "Text": "When creating pictograms, the key is to find the right level of detail. The pictograms should translate Scania look and feel, but they also should avoid too much complexity in order to communicate their meaning efficiently.\n\nIn the same way, pictograms shouldn’t be too simplified risking losing the Scania DNA. In those cases, try to add some details. The curvature is also here to help to inject these characteristics, but its use must not be forced into the design.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1168",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2891",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_475213f313.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2548",
+                    "Title": "Meaning",
+                    "Text": "Avoid combining more than one pictogram into new combinations of pictograms. Choose the one that best communicates what you want. If the pictogram does not in its own right communicate what it represents, add supporting text in the context where it is used. The same pictogram can be used to communicate more than one thing. Before designing new one, start by looking in our pictogram library for suitable pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1169",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2892",
+                        "label": null,
+                        "caption": "Example: The same pictogram can represent different subject by giving it context and supporting text.",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/icon_meaning_855e7278d6.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2549",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1170",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Illustrative purpose\nPictograms must only be used for illustrative purpose and in combination with supporting text. For smaller sizes and non-decorative purpose, use icons.",
+                        "Introduction": null,
+                        "id": "405"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/111_38fac75956.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use pictogram as a visual supporting element combined with a text.",
+                        "id": "305"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/222_3c4276fef4.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use pictograms as a substitute for UI icons, that is not their purpose.",
+                        "id": "306"
+                      }
+                    ]
                   }
                 ],
-                "updated_at": "2020-12-14T14:25:56.969Z"
+                "updated_at": "2021-06-29T14:44:56.106Z"
               }
             }
           ]
@@ -17017,7 +17288,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following the guidelines below. ",
+                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following the guidelines below. ",
                       "Introduction": true,
                       "id": "216"
                     }
@@ -17037,7 +17308,7 @@
                       "id": "896",
                       "label": null,
                       "caption": null,
-                      "size": null,
+                      "size": "Large",
                       "negative": null,
                       "alternate": null,
                       "image": [
@@ -17052,7 +17323,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "947",
                     "Title": "Construct a pictogram",
-                    "Text": "Below you find detailed information about how to build a new custom pictogram, using Adobe Illustrator.\n\n\n##### Steps 1-3",
+                    "Text": "Below you can find detailed information about how to build a new custom pictogram, using Adobe Illustrator. You can also download our Pictogram template file to use as a base when designing.\n\n##### Guiding steps",
                     "LeadText": null
                   },
                   {
@@ -17063,39 +17334,39 @@
                       {
                         "id": "897",
                         "label": "Step 1 — Grid settings",
-                        "caption": "A square shape pixel grid (256x256px) is used as a base. To match the optical volume sub-containers help to match the different format pictograms.",
+                        "caption": "A squared shape pixel grid (40x40px) is used as a base to construct pictograms. To match the optical volume, sub-containers help to suit various pictograms format.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/115a5c28948f47379bf09aa279844a50.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_9c284df6da.png"
                           }
                         ]
                       },
                       {
                         "id": "933",
                         "label": "Step 2 — Line width",
-                        "caption": "For the same optical appearance of the pictograms in different sizes, the line width is adjusted. A smaller scale pictogram (up to 48px) requires thicker line width (10 pixels) than a larger one (line width: 7 pixels).",
+                        "caption": "The line width for a 48x48px pictogram is 2px and will adjust proportionally when scaling up in order to achieve a consistent optical appearance between pictograms.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0a88ed9a45fb4079a7e9ab179dfdf0c3.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_d919859515.png"
                           }
                         ]
                       },
                       {
                         "id": "934",
-                        "label": "Step 3 — Geometry",
-                        "caption": "The pictogram shape is based on the bespoke font Scania Sans, industrial design elements, - a mix of straight lines and curvatures. For letters and numbers in pictograms use the Scania Sans typeface. ",
+                        "label": "Step 3 — Use rounded corners",
+                        "caption": "For outside edges and curved angles use the curvature. All pictograms corners should be rounded.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5caa9b1f8be64896b2810bc0a788dd91.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_9878776f79.png"
                           }
                         ]
                       }
@@ -17107,18 +17378,18 @@
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "399",
-                    "Title": "Clear space",
+                    "Title": "Clearspace",
                     "Images": [
                       {
                         "id": "931",
                         "label": "",
-                        "caption": "The minimum clear space of the pictogram is a square with the same size as 1/8 of the width of the pictogram.",
+                        "caption": "The minimum clear space around the pictogram is 4px. ",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1ec0a77f8c8844bd959923916c7dad68.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/444_0fd08e6959.png"
                           }
                         ]
                       }
@@ -17131,7 +17402,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "965",
                     "Title": "Contribution process",
-                    "Text": "##### Approval\nBefore finalising the icon, the icon design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the icon, make sure to convert all strokes to outlines and unite the icon to one single path.\n\nAll new icons must always be saved in two versions (positive and negative), two sizes (small and large) and three file formats (.ai, .svg and .png) - in total 12 files for each icon:\n\n##### Positive version: Scania Blue <br/>\n• PNG and SVG files: RGB 40_30_66<br/>\n• AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White <br/>\n• PNG and SVG files: RGB 250_250_250<br/>\n• AI files: CMYK 0_0_0_0\n\n##### Sizes <br/>\n• Small: Line width 10px (for sizes 24-48px)<br/>\n• Large Line width 7px (for sizes 54-72px)\n\n##### Formats <br/>\n• AI file format for use in print<br/>\n• PNG and SVG file format for digital use\n\n##### Naming <br/>\nThe icon file name should begin with “ICON”, followed by a short name for the icon and end with the size for which the icon is optimised. For the negative versions “neg” is added after the size. So, the file names for e.g. “Truck service” would then be:<br/>\nICON_Truck_service_24-48px.ai /.svg /.png <br/>\nICON_Truck_service_24-48px_neg.ai /.svg /.png <br/>\nICON_Truck_service_54-72px.ai /.svg /.png <br/>\nICON_Truck_service_54-72px_neg.ai /.svg /.png\n\n##### Scania Icon PDF Template <br/>\nFor each new icon a PDF file needs to be created. Use the “Scania Icon PDF Template” and include the following information:\n\n• Name of the icon (max. three words)<br/>\n• Description of the icon<br/>\n• Restrictions for use of the icon (if any/optional)<br/>\n• An image/illustration of the new icon\n\nThe PDF file name should be an ID number (please contact your contact person at the Marketing Communications or Brand Management department or identity@scania.com).",
+                    "Text": "##### Approval\nBefore finalising the pictogram, the pictogram design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the pictogram, make sure to convert all strokes to outlines and unite the pictogram to one single path. Always keep a version of the original construction path in your file in order for the community to be able to work with it more easily.\n\nAll new pictogram must always be saved in two versions (positive and negative) and two file formats (.ai and .svg) - in total 4 files for each pictogram:\n\n##### Positive version: Scania Blue\n• SVG files: RGB 4_30_66\n• AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White\n• SVG files: RGB 255_255_255\n• AI files: CMYK 0_0_0_0\n\n##### Formats\n• AI file format for use in print\n• SVG file format for digital use\n\n##### Naming\nThe pictogram file name should be concise and descriptive. More specifically, it should follow the following format \n\n*descriptive_name.format* or *descriptive_name-neg.format* (in case of negative pictogram)\n\nKeep in mind:\n\n• Do not use uppercase letters at all\n• Dashes should only be used between the icon name and the suffix for the negative version, in case this exists.\n• Spaces should not be used at all.\n\nAs an example, the file names for e.g. “Truck service” would then be:\n*truck_service.ai /.svg*\n*truck_service-neg.ai /.svg*\n\n##### Delivery\nAll pictogram files are sent as a zip file containing all 4 file variations to [identity@scania.com](identity@scania.com) in order to be published in the Scania Digital Design System. It is strongly suggested that you also include a short description of the pictogram, as well as \nany restrictions for use of the it (if any exist).\n\nDelivering the pictogram files also means that it is approved to be published as well as archived in the Scania Digital Design System. The pictogram may also be used by other users, for its intended purpose and as long as the restrictions (if any) are respected. \n\n##### Support\nShould you have any questions, please do not hesitate to contact Scania Identity Helpdesk at [identity@scania.com](identity@scania.com).",
                     "LeadText": null
                   },
                   {
@@ -17188,7 +17459,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-14T16:45:33.834Z"
+                "updated_at": "2021-06-29T14:53:45.702Z"
               }
             }
           ]
