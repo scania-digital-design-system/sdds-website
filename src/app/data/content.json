@@ -14546,6 +14546,13 @@
           "displayLink": "",
           "title": "Forms",
           "thumbnail": null
+        },
+        {
+          "id": "188",
+          "url": "cookies",
+          "displayLink": null,
+          "title": "Cookies",
+          "thumbnail": null
         }
       ]
     },
@@ -23309,6 +23316,322 @@
         "url": "components",
         "displayLink": null,
         "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "188",
+      "url": "cookies",
+      "displayLink": null,
+      "title": "Cookies",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "317",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "342",
+                "title": "Patterns Cookies",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2531",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Cookies enable users to give their consent to different cookie types that a site uses to collect data about the users’ behaviour.",
+                      "Introduction": true,
+                      "id": "402"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2532",
+                    "Title": "Usage",
+                    "Text": "The cookie consent pattern can be used to provide site visitors with a way to manage how  data about them can be collected through using the site. It provides information about the different types of cookies that the site uses and gives users the option to disable cookies which they aren’t willing to accept.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2533",
+                    "Title": "Cookie banner anatomy",
+                    "Text": "The container is used to separate the cookie banner from the page it is on. The cookie has two different text elements. \n\nThe header text is the title of the cookie, which should capsulate the card content. The second text element, supporting text, is used for more descriptive summary text. There are two buttons within the banner; one primary and one secondary. This is to make it possible for the user to make changes, but easily proceed with the primary button which is highlighted with the CTA color.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2872",
+                      "label": null,
+                      "caption": "A. Container\nB. Header text \nC. Body text\nD. Primary button \nE. Secondary button",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_3534e06089.png"
+                        }
+                      ]
+                    },
+                    "id": "409"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2534",
+                    "Title": "Placement",
+                    "Text": "The cookie is placed on the bottom of the page so it doesn’t get placed over the header. The placement is the same both on desktop and on mobile.\n\nOrientation of cards can be vertical or horizontal depending on the requirement of the content for the specific card.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2535",
+                    "Title": null,
+                    "Text": "##### Desktop\nContent could differ depending on the needs.  But the ambition is to keep the cookie as small as possible. Here are the buttons placed on the right side in the cookie, easily to be navigated and still visible. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2873",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_82b1a261a0.png"
+                        }
+                      ]
+                    },
+                    "id": "410"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2536",
+                    "Title": null,
+                    "Text": "##### Mobile\nAt smaller breakpoints, all elements are stacked. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2874",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_8271d5f1e9.png"
+                        }
+                      ]
+                    },
+                    "id": "411"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2537",
+                    "Title": "Cookie Modal anatomy",
+                    "Text": "When clicking the “make changes” button a new modal will be activated. On desktop an overlay will be placed over the site and the modal will be placed on top of it. The modal will be centered on desktop. In mobile, there's no need for overlay because the modal will expand all over the screen. The modal is based on the anatomy of the accordion, although a little bit more complex. The cookie modal uses toggles and has the ability of scrolling within it.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2875",
+                      "label": null,
+                      "caption": "A. Overlay\nB. Container\nC. Modal headline\nD. Scroll\nE. Symbol\nF. Headline\nG. Information\nH. Body text\nI. Horizontal divider\nJ. Toggle with label\nK. Information and link\nL. Button secondary\nM. Button primary",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_cc3c2a404a.png"
+                        }
+                      ]
+                    },
+                    "id": "412"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2538",
+                    "Title": "Examples",
+                    "Text": "Here are some examples of the modal in use and different modes are activated.\nFirst showing desktop changes, then the same changes in mobile view.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2539",
+                    "Title": null,
+                    "Text": "##### Desktop\nThis is what you first see when activating the modal in desktop.\nNotice the overlay behind the modal is also activated.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2876",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_2696f4142c.png"
+                        }
+                      ]
+                    },
+                    "id": "413"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2540",
+                    "Title": null,
+                    "Text": "##### Changes\nWhen making changes, the fields will expand and the header text will become highlighted.  In this example “Necessary cookies” is expanded.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2877",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_556d62e2a9.png"
+                        }
+                      ]
+                    },
+                    "id": "414"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2541",
+                    "Title": null,
+                    "Text": "##### Multiple fields\nIn this example two fields are active and the scroll is also further down the page.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2878",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_93714e2645.png"
+                        }
+                      ]
+                    },
+                    "id": "415"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2542",
+                    "Title": null,
+                    "Text": "##### Mobile\nAt smaller breakpoints, all elements are stacked and have bigger spacing so the text fields can be opened the settings can easily be changed with the toggles.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2879",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_1958a94456.png"
+                        }
+                      ]
+                    },
+                    "id": "416"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2543",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for the cookie and its modal.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1162",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Prioritze content\nWhen the user wants to make changes in the modal it’s important it from the background, this is easily made with an overlay so the modal is placed as the top layer of the page. ",
+                        "Introduction": null,
+                        "id": "403"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_c09d96689e.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the black overlay when the modal is open.",
+                        "id": "303"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_f7d6930342.png"
+                        },
+                        "size": "Large",
+                        "description": "Place the modal directly on the background without the overlay.",
+                        "id": "304"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-06-29T14:12:28.327Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "184",
+        "url": "patterns",
+        "displayLink": "",
+        "title": "Patterns",
         "thumbnail": null
       },
       "submenus": []
