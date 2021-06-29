@@ -865,7 +865,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "166",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/theme-icons",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/icons",
                     "componentTag": null,
                     "preview": null
                   },
@@ -973,7 +973,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-06-01T13:10:09.838Z"
+                "updated_at": "2021-06-21T06:26:58.394Z"
               }
             }
           ]
@@ -1884,52 +1884,6 @@
                   }
                 ],
                 "updated_at": "2020-12-08T13:24:44.066Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "17",
-        "url": "foundations",
-        "displayLink": null,
-        "title": "Foundations",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "104",
-      "url": "icons",
-      "displayLink": "Icons",
-      "title": "Foundation Icons",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "191",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -13127,10 +13081,80 @@
       "parent": null,
       "submenus": [
         {
+          "id": "182",
+          "url": "data-tables",
+          "displayLink": null,
+          "title": "Data tables",
+          "thumbnail": null
+        },
+        {
+          "id": "110",
+          "url": "accordions",
+          "displayLink": null,
+          "title": "Accordions",
+          "thumbnail": null
+        },
+        {
+          "id": "181",
+          "url": "header",
+          "displayLink": null,
+          "title": "Header",
+          "thumbnail": null
+        },
+        {
+          "id": "111",
+          "url": "Links",
+          "displayLink": null,
+          "title": "Links",
+          "thumbnail": null
+        },
+        {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
+          "thumbnail": null
+        },
+        {
+          "id": "146",
+          "url": "dropdowns",
+          "displayLink": null,
+          "title": "Dropdowns",
+          "thumbnail": null
+        },
+        {
+          "id": "58",
+          "url": "dividers",
+          "displayLink": null,
+          "title": "Dividers",
+          "thumbnail": null
+        },
+        {
+          "id": "179",
+          "url": "Modals",
+          "displayLink": null,
+          "title": "Modals",
+          "thumbnail": null
+        },
+        {
           "id": "5",
           "url": "buttons",
           "displayLink": null,
           "title": "Buttons",
+          "thumbnail": null
+        },
+        {
+          "id": "112",
+          "url": "Tooltips",
+          "displayLink": null,
+          "title": "Tooltips",
+          "thumbnail": null
+        },
+        {
+          "id": "187",
+          "url": "badges",
+          "displayLink": null,
+          "title": "Badges",
           "thumbnail": null
         },
         {
@@ -13141,10 +13165,31 @@
           "thumbnail": null
         },
         {
-          "id": "58",
-          "url": "dividers",
+          "id": "145",
+          "url": "cards",
           "displayLink": null,
-          "title": "Dividers",
+          "title": "Cards",
+          "thumbnail": null
+        },
+        {
+          "id": "108",
+          "url": "checkboxes",
+          "displayLink": null,
+          "title": "Checkboxes",
+          "thumbnail": null
+        },
+        {
+          "id": "107",
+          "url": "radio-buttons",
+          "displayLink": null,
+          "title": "Radio buttons",
+          "thumbnail": null
+        },
+        {
+          "id": "109",
+          "url": "toggles",
+          "displayLink": null,
+          "title": "Toggles",
           "thumbnail": null
         },
         {
@@ -13162,97 +13207,6 @@
           "thumbnail": null
         },
         {
-          "id": "107",
-          "url": "radio-buttons",
-          "displayLink": null,
-          "title": "Radio buttons",
-          "thumbnail": null
-        },
-        {
-          "id": "108",
-          "url": "checkboxes",
-          "displayLink": null,
-          "title": "Checkboxes",
-          "thumbnail": null
-        },
-        {
-          "id": "109",
-          "url": "toggles",
-          "displayLink": null,
-          "title": "Toggles",
-          "thumbnail": null
-        },
-        {
-          "id": "110",
-          "url": "accordions",
-          "displayLink": null,
-          "title": "Accordions",
-          "thumbnail": null
-        },
-        {
-          "id": "111",
-          "url": "Links",
-          "displayLink": null,
-          "title": "Links",
-          "thumbnail": null
-        },
-        {
-          "id": "112",
-          "url": "Tooltips",
-          "displayLink": null,
-          "title": "Tooltips",
-          "thumbnail": null
-        },
-        {
-          "id": "145",
-          "url": "cards",
-          "displayLink": null,
-          "title": "Cards",
-          "thumbnail": null
-        },
-        {
-          "id": "146",
-          "url": "dropdowns",
-          "displayLink": null,
-          "title": "Dropdowns",
-          "thumbnail": null
-        },
-        {
-          "id": "179",
-          "url": "Modals",
-          "displayLink": null,
-          "title": "Modals",
-          "thumbnail": null
-        },
-        {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
-          "thumbnail": null
-        },
-        {
-          "id": "181",
-          "url": "header",
-          "displayLink": null,
-          "title": "Header",
-          "thumbnail": null
-        },
-        {
-          "id": "182",
-          "url": "data-tables",
-          "displayLink": null,
-          "title": "Data tables",
-          "thumbnail": null
-        },
-        {
-          "id": "185",
-          "url": "toasts",
-          "displayLink": null,
-          "title": "Toasts",
-          "thumbnail": null
-        },
-        {
           "id": "186",
           "url": "banners",
           "displayLink": null,
@@ -13260,10 +13214,10 @@
           "thumbnail": null
         },
         {
-          "id": "187",
-          "url": "badges",
+          "id": "185",
+          "url": "toasts",
           "displayLink": null,
-          "title": "Badges",
+          "title": "Toasts",
           "thumbnail": null
         }
       ]
@@ -15035,9 +14989,24 @@
                     "code": "\n<button onclick=\"console.log('Open modal md')\" id=\"modaldismiss\" class=\"sdds-btn sdds-btn-primary\">Open modal md</button>\n\n  <sdds-modal size=\"md\" selector=\"#modaldismiss\" >\n    <h5 slot=\"sdds-modal-headline\">Header 1</h5>\n      <p slot=\"sdds-modal-body\">\n        Click on the cancel buttons to close the modal\n      </p>\n      <button slot=\"sdds-modal-actions\"  onclick=\"console.log('delete')\" class=\"sdds-btn sdds-btn-danger sdds-btn-md\">Delete</button>\n      <button slot=\"sdds-modal-actions\" modal-dismiss onclick=\"console.log('cancel')\" class=\"sdds-btn sdds-btn-secondary sdds-btn-md\">Cancel</button>\n  </sdds-modal>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2515",
+                    "Title": "CSS Only",
+                    "Text": "If you want to use your own script to trigger modal, you can add '.show' and '.hide' in the container '.sdds-modal-backdrop'. Add the size of the modal in the container '.sdds-modal'.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "879",
+                    "title": null,
+                    "code": "<!-- Add show and hide class to show and hide -->\n<div class=\"sdds-modal-backdrop show\">\n    <!-- Add size class here, for example sdds-modal-md -->\n    <div class='sdds-modal sdds-modal-md'>\n      <div class=\"sdds-modal-header\">\n        <div class=\"sdds-modal-headline\">\n          <h5>Headline</h5>\n        </div>\n        <span class=\"sdds-modal-btn\"></span>\n      </div>\n        <div class=\"sdds-modal-body\">\n          <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Maecenas tempus, tellus eget condimentum rhoncus.</p>\n        </div>\n        <div class=\"sdds-modal-actions\">\n          <div class=\"sdds-modal-actions\">\n            <button class=\"sdds-btn sdds-btn-primary sdds-btn-md\">Save</button>\n            <button class=\"sdds-btn sdds-btn-secondary sdds-btn-md\">Cancel</button>\n          </div>\n        </div>\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": false
                   }
                 ],
-                "updated_at": "2021-04-19T15:30:51.535Z"
+                "updated_at": "2021-06-29T07:39:01.201Z"
               }
             }
           ]
@@ -22773,6 +22742,48 @@
       "submenus": []
     },
     {
+      "id": "104",
+      "url": "icons",
+      "displayLink": "Icons",
+      "title": "Foundation Icons",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "191",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "214",
+                "title": "Foundation Icon Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "1069",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2020-12-16T16:02:25.077Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "17",
+        "url": "foundations",
+        "displayLink": null,
+        "title": "Foundations",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "187",
       "url": "badges",
       "displayLink": null,
@@ -23260,22 +23271,34 @@
           "pageContent": [
             {
               "content": {
-                "id": "202",
-                "title": "Coming Q2",
+                "id": "341",
+                "title": "Components Badges Code",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
+                    "id": "2528",
+                    "Title": "Introduction",
+                    "Text": "This page shows how the badges web-component work.  If the value is more than 100, it will automatically shows 99++ in the component. The default color is red. To change the background colour of the badges, add a CSS variable '--sdds-badges-bg-color' to your project CSS inside the parent element. See example below.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "880",
+                    "title": "Badge component",
+                    "code": "<sdds-badges value=\"100\"></sdds-badges> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "881",
+                    "title": "Badges with position and custom colour",
+                    "code": "<style>\n    .sdds-badges-demo{\n        margin:20px;\n        height: 50px;\n        width: 50px;\n        position: relative;\n        background-color: #C4C4C4;\n    }\n    .sdds-badges-demo sdds-badges{\n        position: absolute;\n        left: 32px;\n        top: -5px;\n        --sdds-badges-bg-color: var(--sdds-green-500);\n    }\n</style>\n\n<div class=\"sdds-badges-demo\">  \n      <sdds-badges value=\"20\"></sdds-badges>\n</div>",
+                    "componentTag": null,
+                    "preview": true
                   }
                 ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
+                "updated_at": "2021-06-29T07:50:17.872Z"
               }
             }
           ]
