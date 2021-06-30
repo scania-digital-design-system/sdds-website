@@ -87,7 +87,7 @@
             {
               "id": "104",
               "url": "icons",
-              "title": "Foundation Icons",
+              "title": "Icons",
               "displayLink": "Icons",
               "thumbnail": null
             },
@@ -182,6 +182,13 @@
               "url": "dropdowns",
               "title": "Dropdowns",
               "displayLink": null,
+              "thumbnail": null
+            },
+            {
+              "id": "189",
+              "url": "footer",
+              "title": "Footer",
+              "displayLink": "Footer",
               "thumbnail": null
             },
             {
