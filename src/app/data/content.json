@@ -24620,7 +24620,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2530",
                     "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon size (px)</th>\n    <th>Stroke width</th>\n    <th>-</th>\n    <th>-</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>32x32</td>\n    <td>2px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_17_927c6c8bdf.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_13_f47dcace40.png'/></td>\n  </tr>\n  <tr>\n    <td>24x24</td>\n    <td>1,75px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_16_55ff28bc51.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_12_20d8061372.png'/></td>\n  </tr>\n  <tr>\n    <td>20x20</td>\n    <td>1,5px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_15_536897b204.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_10_053dcd24b1.png'/></td>\n  </tr>\n  <tr>\n    <td>16x16</td>\n    <td>1px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_14_32318e8c3c.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_11_89cd54c287.png'/></td>\n  </tr>\n</tbody>\n</table>",
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon size (px)</th>\n    <th>Stroke width</th>\n    <th>-</th>\n    <th>-</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>32x32</td>\n    <td>2px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_17_41c4f47208.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_13_f47dcace40.png'/></td>\n  </tr>\n  <tr>\n    <td>24x24</td>\n    <td>1,75px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_16_55ff28bc51.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_12_20d8061372.png'/></td>\n  </tr>\n  <tr>\n    <td>20x20</td>\n    <td>1,5px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_15_536897b204.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_10_053dcd24b1.png'/></td>\n  </tr>\n  <tr>\n    <td>16x16</td>\n    <td>1px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_14_32318e8c3c.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_11_89cd54c287.png'/></td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   },
                   {
@@ -24926,7 +24926,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-06-30T07:17:18.496Z"
+                "updated_at": "2021-06-30T07:52:08.178Z"
               }
             }
           ]
