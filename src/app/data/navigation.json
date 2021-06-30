@@ -87,7 +87,7 @@
             {
               "id": "104",
               "url": "icons",
-              "title": "Foundation Icons",
+              "title": "Icons",
               "displayLink": "Icons",
               "thumbnail": null
             },
@@ -185,6 +185,13 @@
               "thumbnail": null
             },
             {
+              "id": "189",
+              "url": "footer",
+              "title": "Footer",
+              "displayLink": "Footer",
+              "thumbnail": null
+            },
+            {
               "id": "181",
               "url": "header",
               "title": "Header",
@@ -256,6 +263,13 @@
           "displayLink": "",
           "thumbnail": null,
           "submenus": [
+            {
+              "id": "188",
+              "url": "cookies",
+              "title": "Cookies",
+              "displayLink": null,
+              "thumbnail": null
+            },
             {
               "id": "183",
               "url": "forms",

@@ -82,7 +82,7 @@
           "id": "104",
           "url": "icons",
           "displayLink": "Icons",
-          "title": "Foundation Icons",
+          "title": "Icons",
           "thumbnail": null
         }
       ]
@@ -865,7 +865,7 @@
                     "__typename": "ComponentContentPluginCodeExample",
                     "id": "166",
                     "title": null,
-                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/theme-icons",
+                    "code": "  > cd <You project folder>\n  > npm i @scania/components\n  > npm i @scania/theme-light\n  > npm i @scania/icons",
                     "componentTag": null,
                     "preview": null
                   },
@@ -973,7 +973,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-06-01T13:10:09.838Z"
+                "updated_at": "2021-06-21T06:26:58.394Z"
               }
             }
           ]
@@ -1884,52 +1884,6 @@
                   }
                 ],
                 "updated_at": "2020-12-08T13:24:44.066Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "17",
-        "url": "foundations",
-        "displayLink": null,
-        "title": "Foundations",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "104",
-      "url": "icons",
-      "displayLink": "Icons",
-      "title": "Foundation Icons",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "191",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
               }
             }
           ]
@@ -13127,10 +13081,80 @@
       "parent": null,
       "submenus": [
         {
+          "id": "182",
+          "url": "data-tables",
+          "displayLink": null,
+          "title": "Data tables",
+          "thumbnail": null
+        },
+        {
+          "id": "110",
+          "url": "accordions",
+          "displayLink": null,
+          "title": "Accordions",
+          "thumbnail": null
+        },
+        {
+          "id": "181",
+          "url": "header",
+          "displayLink": null,
+          "title": "Header",
+          "thumbnail": null
+        },
+        {
+          "id": "111",
+          "url": "Links",
+          "displayLink": null,
+          "title": "Links",
+          "thumbnail": null
+        },
+        {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
+          "thumbnail": null
+        },
+        {
+          "id": "146",
+          "url": "dropdowns",
+          "displayLink": null,
+          "title": "Dropdowns",
+          "thumbnail": null
+        },
+        {
+          "id": "58",
+          "url": "dividers",
+          "displayLink": null,
+          "title": "Dividers",
+          "thumbnail": null
+        },
+        {
+          "id": "179",
+          "url": "Modals",
+          "displayLink": null,
+          "title": "Modals",
+          "thumbnail": null
+        },
+        {
           "id": "5",
           "url": "buttons",
           "displayLink": null,
           "title": "Buttons",
+          "thumbnail": null
+        },
+        {
+          "id": "112",
+          "url": "Tooltips",
+          "displayLink": null,
+          "title": "Tooltips",
+          "thumbnail": null
+        },
+        {
+          "id": "187",
+          "url": "badges",
+          "displayLink": null,
+          "title": "Badges",
           "thumbnail": null
         },
         {
@@ -13141,10 +13165,31 @@
           "thumbnail": null
         },
         {
-          "id": "58",
-          "url": "dividers",
+          "id": "145",
+          "url": "cards",
           "displayLink": null,
-          "title": "Dividers",
+          "title": "Cards",
+          "thumbnail": null
+        },
+        {
+          "id": "108",
+          "url": "checkboxes",
+          "displayLink": null,
+          "title": "Checkboxes",
+          "thumbnail": null
+        },
+        {
+          "id": "107",
+          "url": "radio-buttons",
+          "displayLink": null,
+          "title": "Radio buttons",
+          "thumbnail": null
+        },
+        {
+          "id": "109",
+          "url": "toggles",
+          "displayLink": null,
+          "title": "Toggles",
           "thumbnail": null
         },
         {
@@ -13162,94 +13207,10 @@
           "thumbnail": null
         },
         {
-          "id": "107",
-          "url": "radio-buttons",
-          "displayLink": null,
-          "title": "Radio buttons",
-          "thumbnail": null
-        },
-        {
-          "id": "108",
-          "url": "checkboxes",
-          "displayLink": null,
-          "title": "Checkboxes",
-          "thumbnail": null
-        },
-        {
-          "id": "109",
-          "url": "toggles",
-          "displayLink": null,
-          "title": "Toggles",
-          "thumbnail": null
-        },
-        {
-          "id": "110",
-          "url": "accordions",
-          "displayLink": null,
-          "title": "Accordions",
-          "thumbnail": null
-        },
-        {
-          "id": "111",
-          "url": "Links",
-          "displayLink": null,
-          "title": "Links",
-          "thumbnail": null
-        },
-        {
-          "id": "112",
-          "url": "Tooltips",
-          "displayLink": null,
-          "title": "Tooltips",
-          "thumbnail": null
-        },
-        {
-          "id": "145",
-          "url": "cards",
-          "displayLink": null,
-          "title": "Cards",
-          "thumbnail": null
-        },
-        {
-          "id": "146",
-          "url": "dropdowns",
-          "displayLink": null,
-          "title": "Dropdowns",
-          "thumbnail": null
-        },
-        {
-          "id": "179",
-          "url": "Modals",
-          "displayLink": null,
-          "title": "Modals",
-          "thumbnail": null
-        },
-        {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
-          "thumbnail": null
-        },
-        {
-          "id": "181",
-          "url": "header",
-          "displayLink": null,
-          "title": "Header",
-          "thumbnail": null
-        },
-        {
-          "id": "182",
-          "url": "data-tables",
-          "displayLink": null,
-          "title": "Data tables",
-          "thumbnail": null
-        },
-        {
-          "id": "185",
-          "url": "toasts",
-          "displayLink": null,
-          "title": "Toasts",
+          "id": "189",
+          "url": "footer",
+          "displayLink": "Footer",
+          "title": "Footer",
           "thumbnail": null
         },
         {
@@ -13260,10 +13221,10 @@
           "thumbnail": null
         },
         {
-          "id": "187",
-          "url": "badges",
+          "id": "185",
+          "url": "toasts",
           "displayLink": null,
-          "title": "Badges",
+          "title": "Toasts",
           "thumbnail": null
         }
       ]
@@ -14592,6 +14553,13 @@
           "displayLink": "",
           "title": "Forms",
           "thumbnail": null
+        },
+        {
+          "id": "188",
+          "url": "cookies",
+          "displayLink": null,
+          "title": "Cookies",
+          "thumbnail": null
         }
       ]
     },
@@ -15035,9 +15003,24 @@
                     "code": "\n<button onclick=\"console.log('Open modal md')\" id=\"modaldismiss\" class=\"sdds-btn sdds-btn-primary\">Open modal md</button>\n\n  <sdds-modal size=\"md\" selector=\"#modaldismiss\" >\n    <h5 slot=\"sdds-modal-headline\">Header 1</h5>\n      <p slot=\"sdds-modal-body\">\n        Click on the cancel buttons to close the modal\n      </p>\n      <button slot=\"sdds-modal-actions\"  onclick=\"console.log('delete')\" class=\"sdds-btn sdds-btn-danger sdds-btn-md\">Delete</button>\n      <button slot=\"sdds-modal-actions\" modal-dismiss onclick=\"console.log('cancel')\" class=\"sdds-btn sdds-btn-secondary sdds-btn-md\">Cancel</button>\n  </sdds-modal>",
                     "componentTag": null,
                     "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2515",
+                    "Title": "CSS Only",
+                    "Text": "If you want to use your own script to trigger modal, you can add '.show' and '.hide' in the container '.sdds-modal-backdrop'. Add the size of the modal in the container '.sdds-modal'.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "879",
+                    "title": null,
+                    "code": "<!-- Add show and hide class to show and hide -->\n<div class=\"sdds-modal-backdrop show\">\n    <!-- Add size class here, for example sdds-modal-md -->\n    <div class='sdds-modal sdds-modal-md'>\n      <div class=\"sdds-modal-header\">\n        <div class=\"sdds-modal-headline\">\n          <h5>Headline</h5>\n        </div>\n        <span class=\"sdds-modal-btn\"></span>\n      </div>\n        <div class=\"sdds-modal-body\">\n          <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Maecenas tempus, tellus eget condimentum rhoncus.</p>\n        </div>\n        <div class=\"sdds-modal-actions\">\n          <div class=\"sdds-modal-actions\">\n            <button class=\"sdds-btn sdds-btn-primary sdds-btn-md\">Save</button>\n            <button class=\"sdds-btn sdds-btn-secondary sdds-btn-md\">Cancel</button>\n          </div>\n        </div>\n    </div>\n  </div>",
+                    "componentTag": null,
+                    "preview": false
                   }
                 ],
-                "updated_at": "2021-04-19T15:30:51.535Z"
+                "updated_at": "2021-06-29T07:39:01.201Z"
               }
             }
           ]
@@ -15610,7 +15593,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our icons facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
+                      "textfield": "Scania’s pictogram family helps us to organise and categorise information. Speaking the universal language of symbols, our pictograms facilitate the encounter with the Scania brand. They create a unified and uncluttered experience in every channel. ",
                       "Introduction": true,
                       "id": "215"
                     }
@@ -15619,7 +15602,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "934",
                     "Title": "Usage",
-                    "Text": "The design of the pictograms — where soft curves meet sharp edges — is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Then our illustrative pictograms could be used to visualise information in a simplified way, and when used, supportive text should always be present. \n\nCorrectly used, the pictograms improve the structure and clarity of any message.  We also have [icons](foundations/icons), which are a smaller non-decorative icon element which purpose is to highlight functions or actions. ",
+                    "Text": "The design of the pictograms is inspired by the shapes in our symbol, the Scania Sans typography and our product DNA.\n\nSometimes the information we need to bring across is detailed, and even complex. Our illustrative pictograms help visualising information in a simplified way, always combined with supportive text. Correctly used, pictograms improve the structure and clarity of any message. Pictograms can be use both on digital and physical environments.\n\nPictograms shouldn’t be confused with icons, smaller non-decorative visual element which purpose is to highlight functions or actions on digital interfaces. ",
                     "LeadText": null
                   },
                   {
@@ -15644,58 +15627,320 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "935",
-                    "Title": "Sizing",
-                    "Text": "Our pictograms could be used in a variety of sizes, which are based on our Unit System. The minum size is 48px and the maximum size will vary depending on application.\n\nFor pictograms in size 48px, we have thicker line width than pictograms larger than 72px. When downloading a pictogram, you will get both a 48 and a 72px version.\n\nLearn more about our [Unit System](foundations/unit-grid-system).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "881",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b80ce821d7294ef6bd7484cfa7066063.png"
-                        }
-                      ]
-                    },
-                    "id": "88"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "936",
-                    "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
+                    "Title": "Size",
+                    "Text": "Our pictograms are designed in a 40x40 px grid as a master grid size. Our pictograms can then be proporionally scaled up as needed. Their stroke width on 40x40 px size is 1,75px, and also scales up proportionally with the pictogram size. \n\nPlease note that if you want to use pictograms for sizes smaller than 40x40 px, icons might be preferable. Find more information about icons usage on the related [Icon Usage](foundations/icons) page.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "383",
+                    "id": "1163",
                     "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
+                    "Images": [
                       {
-                        "id": "163",
-                        "title": "Pictograms",
-                        "description": "Library",
-                        "info": "453mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/pictogram/1.0.0/pictogram_v1.zip"
+                        "id": "2880",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_1_c610596867.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2881",
+                        "label": null,
+                        "caption": "Pictograms are meant to be used in big sizes starting from 40px and above, following our Unit system. ",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_2_c72eba569d.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2883",
+                        "label": null,
+                        "caption": "Pictograms stroke width scales proportionnaly with their size. More guidelines regarding stroke width will follow soon.",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1669_2e26a02f86.png"
+                          }
+                        ]
                       }
                     ],
+                    "texts": [],
+                    "linkCards": [],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2544",
+                    "Title": "Guidelines",
+                    "Text": "The grid offers guidelines for some basic shapes and proportions as a starting point when designing new pictograms. This includes keyshapes and angles which derives from the Scania logo anatomy. Adhering to these guides will help create consistency across our pictograms library. \n\nPlease note that these guides should be seen as starting points. Deviations from these guides are accepted if it makes a specific pictogram more clear in its design. It is allowed to use the margins with small objects to ensure that the pictograms feel centered. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1164",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2884",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_be37fe8fa9.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2885",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1670_ecc4d4fbed.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2545",
+                    "Title": null,
+                    "Text": "##### Clearspace\nOur pictogram grid keep a clearspace of 4px around. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1165",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2886",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_3_674ff529f2.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2546",
+                    "Title": null,
+                    "Text": "##### Curvature\nThe curvature consists of a compilation of circles which follows our unit system. The curvature is a good guide to ensure a consistent visual expression throughout all our pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1166",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2887",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_1_45443f15e0.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2888",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_new_3f0066a9ff.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1167",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2889",
+                        "label": null,
+                        "caption": "1. As full, half or quarter circles.",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_01_c57f3d672b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2890",
+                        "label": null,
+                        "caption": "2. Depending on the motif they are a part of.",
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_02_7a017ac2bc.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "The curvature can be applied in two different ways:",
+                        "Introduction": null,
+                        "id": "404"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2547",
+                    "Title": "Level of detail",
+                    "Text": "When creating pictograms, the key is to find the right level of detail. The pictograms should translate Scania look and feel, but they also should avoid too much complexity in order to communicate their meaning efficiently.\n\nIn the same way, pictograms shouldn’t be too simplified risking losing the Scania DNA. In those cases, try to add some details. The curvature is also here to help to inject these characteristics, but its use must not be forced into the design.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1168",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2891",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_475213f313.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2548",
+                    "Title": "Meaning",
+                    "Text": "Avoid combining more than one pictogram into new combinations of pictograms. Choose the one that best communicates what you want. If the pictogram does not in its own right communicate what it represents, add supporting text in the context where it is used. The same pictogram can be used to communicate more than one thing. Before designing new one, start by looking in our pictogram library for suitable pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1169",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2892",
+                        "label": null,
+                        "caption": "Example: The same pictogram can represent different subject by giving it context and supporting text.",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/icon_meaning_855e7278d6.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2549",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1170",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Illustrative purpose\nPictograms must only be used for illustrative purpose and in combination with supporting text. For smaller sizes and non-decorative purpose, use icons.",
+                        "Introduction": null,
+                        "id": "405"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/111_38fac75956.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use pictogram as a visual supporting element combined with a text.",
+                        "id": "305"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/222_3c4276fef4.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use pictograms as a substitute for UI icons, that is not their purpose.",
+                        "id": "306"
+                      }
+                    ]
                   }
                 ],
-                "updated_at": "2020-12-14T14:25:56.969Z"
+                "updated_at": "2021-06-30T06:37:44.463Z"
               }
             }
           ]
@@ -17041,7 +17286,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new icon following the guidelines below. ",
+                      "textfield": "If you need a pictogram, please check thoroughly in our pictogram library if you could use any of the already existing ones. Should the needed pictogram not exist, you may create a new pictogram following the guidelines below. ",
                       "Introduction": true,
                       "id": "216"
                     }
@@ -17061,7 +17306,7 @@
                       "id": "896",
                       "label": null,
                       "caption": null,
-                      "size": null,
+                      "size": "Large",
                       "negative": null,
                       "alternate": null,
                       "image": [
@@ -17076,7 +17321,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "947",
                     "Title": "Construct a pictogram",
-                    "Text": "Below you find detailed information about how to build a new custom pictogram, using Adobe Illustrator.\n\n\n##### Steps 1-3",
+                    "Text": "Below you can find detailed information about how to build a new custom pictogram, using Adobe Illustrator. You can also download our Pictogram template file to use as a base when designing.\n\n##### Guiding steps",
                     "LeadText": null
                   },
                   {
@@ -17087,39 +17332,39 @@
                       {
                         "id": "897",
                         "label": "Step 1 — Grid settings",
-                        "caption": "A square shape pixel grid (256x256px) is used as a base. To match the optical volume sub-containers help to match the different format pictograms.",
+                        "caption": "A squared shape pixel grid (40x40px) is used as a base to construct pictograms. To match the optical volume, sub-containers help to suit various pictograms format.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/115a5c28948f47379bf09aa279844a50.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_9c284df6da.png"
                           }
                         ]
                       },
                       {
                         "id": "933",
                         "label": "Step 2 — Line width",
-                        "caption": "For the same optical appearance of the pictograms in different sizes, the line width is adjusted. A smaller scale pictogram (up to 48px) requires thicker line width (10 pixels) than a larger one (line width: 7 pixels).",
+                        "caption": "The line width for a 48x48px pictogram is 2px and will adjust proportionally when scaling up in order to achieve a consistent optical appearance between pictograms.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0a88ed9a45fb4079a7e9ab179dfdf0c3.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_d919859515.png"
                           }
                         ]
                       },
                       {
                         "id": "934",
-                        "label": "Step 3 — Geometry",
-                        "caption": "The pictogram shape is based on the bespoke font Scania Sans, industrial design elements, - a mix of straight lines and curvatures. For letters and numbers in pictograms use the Scania Sans typeface. ",
+                        "label": "Step 3 — Use rounded corners",
+                        "caption": "For outside edges and curved angles use the curvature. All pictograms corners should be rounded.",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5caa9b1f8be64896b2810bc0a788dd91.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_9878776f79.png"
                           }
                         ]
                       }
@@ -17131,18 +17376,18 @@
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
                     "id": "399",
-                    "Title": "Clear space",
+                    "Title": "Clearspace",
                     "Images": [
                       {
                         "id": "931",
                         "label": "",
-                        "caption": "The minimum clear space of the pictogram is a square with the same size as 1/8 of the width of the pictogram.",
+                        "caption": "The minimum clear space around the pictogram is 4px. ",
                         "size": "Small",
                         "negative": null,
                         "alternate": null,
                         "image": [
                           {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1ec0a77f8c8844bd959923916c7dad68.png"
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/444_0fd08e6959.png"
                           }
                         ]
                       }
@@ -17155,64 +17400,11 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "965",
                     "Title": "Contribution process",
-                    "Text": "##### Approval\nBefore finalising the icon, the icon design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the icon, make sure to convert all strokes to outlines and unite the icon to one single path.\n\nAll new icons must always be saved in two versions (positive and negative), two sizes (small and large) and three file formats (.ai, .svg and .png) - in total 12 files for each icon:\n\n##### Positive version: Scania Blue <br/>\n• PNG and SVG files: RGB 40_30_66<br/>\n• AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White <br/>\n• PNG and SVG files: RGB 250_250_250<br/>\n• AI files: CMYK 0_0_0_0\n\n##### Sizes <br/>\n• Small: Line width 10px (for sizes 24-48px)<br/>\n• Large Line width 7px (for sizes 54-72px)\n\n##### Formats <br/>\n• AI file format for use in print<br/>\n• PNG and SVG file format for digital use\n\n##### Naming <br/>\nThe icon file name should begin with “ICON”, followed by a short name for the icon and end with the size for which the icon is optimised. For the negative versions “neg” is added after the size. So, the file names for e.g. “Truck service” would then be:<br/>\nICON_Truck_service_24-48px.ai /.svg /.png <br/>\nICON_Truck_service_24-48px_neg.ai /.svg /.png <br/>\nICON_Truck_service_54-72px.ai /.svg /.png <br/>\nICON_Truck_service_54-72px_neg.ai /.svg /.png\n\n##### Scania Icon PDF Template <br/>\nFor each new icon a PDF file needs to be created. Use the “Scania Icon PDF Template” and include the following information:\n\n• Name of the icon (max. three words)<br/>\n• Description of the icon<br/>\n• Restrictions for use of the icon (if any/optional)<br/>\n• An image/illustration of the new icon\n\nThe PDF file name should be an ID number (please contact your contact person at the Marketing Communications or Brand Management department or identity@scania.com).",
+                    "Text": "##### Approval\nBefore finalising the pictogram, the pictogram design including name and description/restrictions, must be approved by any of the central departments Marketing Communications or Brand Management or the Scania Identity Helpdesk at identity@scania.com.\n\n##### File versions and formats\nBefore exporting the pictogram, make sure to convert all strokes to outlines and unite the pictogram to one single path. Always keep a version of the original construction path in your file in order for the community to be able to work with it more easily.\n\nAll new pictogram must always be saved in two versions (positive and negative) and two file formats (.ai and .svg) - in total 4 files for each pictogram:\n\n##### Positive version: Scania Blue\n- SVG files: RGB 4_30_66\n- AI files: CMYK 100_90_13_62\n\n##### Negative version: Scania White\n- SVG files: RGB 255_255_255\n- AI files: CMYK 0_0_0_0\n\n##### Formats\n- AI file format for use in print\n- SVG file format for digital use\n\n##### Naming\nThe pictogram file name should be concise and descriptive. More specifically, it should follow the following format \n\n*descriptive_name.format* or *descriptive_name-neg.format* (in case of negative pictogram)\n\nKeep in mind:\n\n- Do not use uppercase letters at all\n- Dashes should only be used between the icon name and the suffix for the negative version, in case this exists.\n- Spaces should not be used at all.\n\nAs an example, the file names for e.g. “Truck service” would then be:\n</br>*truck_service.ai /.svg*\n</br>*truck_service-neg.ai /.svg*\n\n##### Delivery\nAll pictogram files are sent as a zip file containing all 4 file variations to [identity@scania.com](identity@scania.com) in order to be published in the Scania Digital Design System. It is strongly suggested that you also include a short description of the pictogram, as well as \nany restrictions for use of the it (if any exist).\n\nDelivering the pictogram files also means that it is approved to be published as well as archived in the Scania Digital Design System. The pictogram may also be used by other users, for its intended purpose and as long as the restrictions (if any) are respected. \n\n##### Support\nShould you have any questions, please do not hesitate to contact Scania Identity Helpdesk at [identity@scania.com](identity@scania.com).",
                     "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "932",
-                      "label": null,
-                      "caption": "Scania Icon PDF Template",
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/25fb33afb178416c89a82e20cd38fae9.png"
-                        }
-                      ]
-                    },
-                    "id": "106"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "966",
-                    "Title": null,
-                    "Text": "##### Delivery\nAll icon files are sent together with the PDF file to imagedesk@scania.com (to be published in the “icon library” in Scania Media Provider) and identity@scania.com (to be published in Scania Digital Design System).\n\nDelivering the icon files also means that it is approved to be published as well as archived in Scania Media Provider and Scania Digital Design System. The icon may also be used by other users, for it’s intended purpose and as long as the restrictions (if any) are respected.\n\n##### Support\nShould you have any questions, please do not hesitate to contact Scania Identity Helpdesk at [identity@scania.com](mailto:identity@scania.com).\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "967",
-                    "Title": "Resources",
-                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our [Pictogram Library](foundations/pictograms/pictograms).",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "400",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "169",
-                        "title": "Pictograms",
-                        "description": "Scania Icon PDF Template",
-                        "info": "1.25mb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://digitaldesign-assets.s3-eu-west-1.amazonaws.com/brand/1.0.0/Scania+icon+PDF+template.docx.zip"
-                      }
-                    ],
-                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2020-12-14T16:45:33.834Z"
+                "updated_at": "2021-06-29T17:16:16.493Z"
               }
             }
           ]
@@ -23260,6 +23452,1058 @@
           "pageContent": [
             {
               "content": {
+                "id": "341",
+                "title": "Components Badges Code",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2528",
+                    "Title": "Introduction",
+                    "Text": "This page shows how the badges web-component work.  If the value is more than 100, it will automatically shows 99++ in the component. The default color is red. To change the background colour of the badges, add a CSS variable '--sdds-badges-bg-color' to your project CSS inside the parent element. See example below.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "880",
+                    "title": "Badge component",
+                    "code": "<sdds-badges value=\"100\"></sdds-badges> ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "881",
+                    "title": "Badges with position and custom colour",
+                    "code": "<style>\n    .sdds-badges-demo{\n        margin:20px;\n        height: 50px;\n        width: 50px;\n        position: relative;\n        background-color: #C4C4C4;\n    }\n    .sdds-badges-demo sdds-badges{\n        position: absolute;\n        left: 32px;\n        top: -5px;\n        --sdds-badges-bg-color: var(--sdds-green-500);\n    }\n</style>\n\n<div class=\"sdds-badges-demo\">  \n      <sdds-badges value=\"20\"></sdds-badges>\n</div>",
+                    "componentTag": null,
+                    "preview": true
+                  }
+                ],
+                "updated_at": "2021-06-29T07:50:17.872Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "188",
+      "url": "cookies",
+      "displayLink": null,
+      "title": "Cookies",
+      "thumbnail": null,
+      "showTabs": false,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "317",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "342",
+                "title": "Patterns Cookies",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2531",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Cookies enable users to give their consent to different cookie types that a site uses to collect data about the users’ behaviour.",
+                      "Introduction": true,
+                      "id": "402"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2532",
+                    "Title": "Usage",
+                    "Text": "The cookie consent pattern can be used to provide site visitors with a way to manage how  data about them can be collected through using the site. It provides information about the different types of cookies that the site uses and gives users the option to disable cookies which they aren’t willing to accept.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2533",
+                    "Title": "Cookie banner anatomy",
+                    "Text": "The container is used to separate the cookie banner from the page it is on. The cookie has two different text elements. \n\nThe header text is the title of the cookie, which should capsulate the card content. The second text element, supporting text, is used for more descriptive summary text. There are two buttons within the banner; one primary and one secondary. This is to make it possible for the user to make changes, but easily proceed with the primary button which is highlighted with the CTA color.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2872",
+                      "label": null,
+                      "caption": "A. Container\nB. Header text \nC. Body text\nD. Primary button \nE. Secondary button",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_3534e06089.png"
+                        }
+                      ]
+                    },
+                    "id": "409"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2534",
+                    "Title": "Placement",
+                    "Text": "The cookie is placed on the bottom of the page so it doesn’t get placed over the header. The placement is the same both on desktop and on mobile.\n\nOrientation of cards can be vertical or horizontal depending on the requirement of the content for the specific card.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2535",
+                    "Title": null,
+                    "Text": "##### Desktop\nContent could differ depending on the needs.  But the ambition is to keep the cookie as small as possible. Here are the buttons placed on the right side in the cookie, easily to be navigated and still visible. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2873",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_82b1a261a0.png"
+                        }
+                      ]
+                    },
+                    "id": "410"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2536",
+                    "Title": null,
+                    "Text": "##### Mobile\nAt smaller breakpoints, all elements are stacked. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2874",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_8271d5f1e9.png"
+                        }
+                      ]
+                    },
+                    "id": "411"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2537",
+                    "Title": "Cookie Modal anatomy",
+                    "Text": "When clicking the “make changes” button a new modal will be activated. On desktop an overlay will be placed over the site and the modal will be placed on top of it. The modal will be centered on desktop. In mobile, there's no need for overlay because the modal will expand all over the screen. The modal is based on the anatomy of the accordion, although a little bit more complex. The cookie modal uses toggles and has the ability of scrolling within it.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2875",
+                      "label": null,
+                      "caption": "A. Overlay\nB. Container\nC. Modal headline\nD. Scroll\nE. Symbol\nF. Headline\nG. Information\nH. Body text\nI. Horizontal divider\nJ. Toggle with label\nK. Information and link\nL. Button secondary\nM. Button primary",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_cc3c2a404a.png"
+                        }
+                      ]
+                    },
+                    "id": "412"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2538",
+                    "Title": "Examples",
+                    "Text": "Here are some examples of the modal in use and different modes are activated.\nFirst showing desktop changes, then the same changes in mobile view.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2539",
+                    "Title": null,
+                    "Text": "##### Desktop\nThis is what you first see when activating the modal in desktop.\nNotice the overlay behind the modal is also activated.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2876",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_2696f4142c.png"
+                        }
+                      ]
+                    },
+                    "id": "413"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2540",
+                    "Title": null,
+                    "Text": "##### Changes\nWhen making changes, the fields will expand and the header text will become highlighted.  In this example “Necessary cookies” is expanded.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2877",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_556d62e2a9.png"
+                        }
+                      ]
+                    },
+                    "id": "414"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2541",
+                    "Title": null,
+                    "Text": "##### Multiple fields\nIn this example two fields are active and the scroll is also further down the page.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2878",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_93714e2645.png"
+                        }
+                      ]
+                    },
+                    "id": "415"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2542",
+                    "Title": null,
+                    "Text": "##### Mobile\nAt smaller breakpoints, all elements are stacked and have bigger spacing so the text fields can be opened the settings can easily be changed with the toggles.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2879",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_1958a94456.png"
+                        }
+                      ]
+                    },
+                    "id": "416"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2543",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for the cookie and its modal.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1162",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Prioritze content\nWhen the user wants to make changes in the modal it’s important it from the background, this is easily made with an overlay so the modal is placed as the top layer of the page. ",
+                        "Introduction": null,
+                        "id": "403"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_c09d96689e.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the black overlay when the modal is open.",
+                        "id": "303"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_f7d6930342.png"
+                        },
+                        "size": "Large",
+                        "description": "Place the modal directly on the background without the overlay.",
+                        "id": "304"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-06-29T14:12:28.327Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "184",
+        "url": "patterns",
+        "displayLink": "",
+        "title": "Patterns",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "189",
+      "url": "footer",
+      "displayLink": "Footer",
+      "title": "Footer",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "318",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "343",
+                "title": "Components Footer Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2550",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "A website’s footer is an area located at the bottom of every page on a website, below the main body content.",
+                      "Introduction": true,
+                      "id": "406"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2551",
+                    "Title": "Usage",
+                    "Text": "Footer are always located at the bottom end of the site and is a great section to place content and give the user a second chance to find it. They can also be used to place content that is not a priority find immediately when entering the site.   \n\nFooter is optional for internal applications single page applications, if used minimal requirements.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2552",
+                    "Title": "Modular",
+                    "Text": "The footer is designed to fit several types of applications within Scania. It is built in a modular manner consisting of two main parts, a bottom part (1) which is mandatory and a top part (2) which is optional. In this way, we ensure that a coherent visual expression is maintained while the footer gets the flexibility it needs.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1171",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2893",
+                        "label": null,
+                        "caption": "1. Bottom part (mandatory)\n2. Top part (optional)",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Visual_acf0973c65.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2553",
+                    "Title": "Examples",
+                    "Text": "Below are some examples of different designs of the footer. It is up to each designer to choose the design that best suits the application and its specific needs.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2554",
+                    "Title": null,
+                    "Text": "##### Footer small\nIn its purest form, the footer consist of its bottom part. The bottom part of the footer always contains legal links, a copyright label and the Scania word mark. Depending on the application, it may also contain social links.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1172",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2894",
+                        "label": "Social links excluded",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_8_8eaae2ad49.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2895",
+                        "label": "Social links included",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_7_3261a2f60f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1173",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2896",
+                        "label": "With contact information",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_f5f267d78f.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2897",
+                        "label": "With secondary menu items",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_c9cb82139b.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Footer large\nContent could differ depending on the needs. For larger and/or more complex applications, the footer can be used to provide contact information or secondary menu items. If so, that information is presented in the footers top part.",
+                        "Introduction": null,
+                        "id": "407"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1174",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2898",
+                        "label": "Co-branding stand alone",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_79eb9b6597.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2899",
+                        "label": "Co-branding paired with secondary menu items",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_334c982404.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Co-branding\nIn some cases, the footer may contain a co-branding element. In order not to compete with the Scania brand, any co-branding elements are placed bottom-left in the top part of the footer. If the top part contains navigation links or additional information, they are placed above the co-branding element.",
+                        "Introduction": null,
+                        "id": "408"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1175",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2900",
+                        "label": "Footer side menu expanded",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_5577d67f83.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2901",
+                        "label": "Footer side menu collapsed",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_f75511ddeb.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Side-menu\nIf your application uses a side menu, the footer is positioned to the right of it. ",
+                        "Introduction": null,
+                        "id": "409"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1176",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2902",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_78_06bfe3e2e0.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Mobile\nAt smaller breakpoints, all elements are stacked. If your footer design includes secondary menu items e.g. site map, they will appear as a dropdown to prevent our footer from getting too tall.",
+                        "Introduction": null,
+                        "id": "410"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2555",
+                    "Title": "Anatomy",
+                    "Text": "The footer is built from the bottom up and consists of two parts, a bottom part (1) mandatory and a top part (2) optional. The bottom part contains at least three elements — legal links, a copyright label and the Scania wordmark. As an option, the bottom part can also contain social links. The top part may vary in content, but it can contain other types of useful information such as a sitemap/navigation links or contact details. Any form of co-branding element is also contained in this part of the footer. \n\nThe example below shows a footer in its full design.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2903",
+                      "label": null,
+                      "caption": "1. Bottom part (mandatory)\n a. Legal links\n b. Copyright label\n c. Scania wordmark\n d. Social links (optional)\n2. Top part (optional)\n a. Page links\n b. Co-branding element",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_e36622a13d.png"
+                        }
+                      ]
+                    },
+                    "id": "417"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2556",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for headers.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1177",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [
+                      {
+                        "textfield": "##### Prioritze content\nWhen the user hits the end of the page it is important to avoid trying to repeat the entire sitemap. Footer can instead be used to promote content that is not priotized to see in the top level section of the page.",
+                        "Introduction": null,
+                        "id": "411"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2222_e610929c17.png"
+                        },
+                        "size": "Large",
+                        "description": "Prioritize which links that are important and leave room for negative space.",
+                        "id": "307"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/333_d0a1beee4b.png"
+                        },
+                        "size": "Large",
+                        "description": "Overpopulate the footer with links.",
+                        "id": "308"
+                      }
+                    ]
+                  }
+                ],
+                "updated_at": "2021-06-29T17:38:28.343Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "319",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "344",
+                "title": "Components Footer Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2557",
+                    "Title": "Colour",
+                    "Text": "##### Footer - Bottom\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n    <th>Opacity</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-900</td>\n    <td>100%</td>\n  </tr>\n  <tr>\n    <td>Legal link</td>\n    <td>$white</td>\n    <td>87%</td>\n  </tr>\n  <tr>\n    <td>Social icons</td>\n    <td>$white</td>\n    <td>87%</td>\n  </tr>\n  <tr>\n    <td>Divider</td>\n    <td>$blue-700</td>\n    <td>100%</td>\n  </tr>\n  <tr>\n    <td>Copyright</td>\n    <td>$white</td>\n    <td>60%</td>\n  </tr>\n  <tr>\n    <td>Scania wordmark</td>\n    <td>$white</td>\n    <td>100%</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2904",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_11_186a516eec.png"
+                        }
+                      ]
+                    },
+                    "id": "418"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2558",
+                    "Title": null,
+                    "Text": "##### Footer - Top desktop\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n    <th>Opacity</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-50</td>\n    <td>100%</td>\n  </tr>\n  <tr>\n    <td>Title</td>\n    <td>$blue-900</td>\n    <td>38%</td>\n  </tr>\n  <tr>\n    <td>Page links</td>\n    <td>$blue-900</td>\n    <td>87%</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2905",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_10_a7faf7b9f5.png"
+                        }
+                      ]
+                    },
+                    "id": "419"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2559",
+                    "Title": null,
+                    "Text": "##### Footer - Top mobile\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Icon</th>\n    <th>Border-bottom</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$blue-50</td>\n    <td>$blue-900 (87%)</td>\n    <td>$blue-900 (87%)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td>Title</td>\n    <td>$blue-100</td>\n    <td>$blue-900 (87%)</td>\n    <td>$blue-900 (87%)</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1178",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2906",
+                        "label": "Title default",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_82_76394ad2d3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2907",
+                        "label": "Title pressed",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_84_46adafc573.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2908",
+                        "label": "Title expanded",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_85_e87c749c36.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2909",
+                        "label": "Page link pressed",
+                        "caption": null,
+                        "size": "ExtraMedium",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_86_c01b0ec8f3.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2560",
+                    "Title": "Sizing",
+                    "Text": "##### Footer\nThe footer is a fluid element, which means it should fill the entire browser width. The footer elements are aligned with their grid for each breakpoint.\n\n##### Footer -  Bottom desktop\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>None (auto)</td>\n    <td>198 / 49.5</td>\n  </tr>\n  <tr>\n    <td>Social icons</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Scania wordmark</td>\n    <td>Auto</td>\n    <td>20 / 5</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1179",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2910",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_9_fdbab72675.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2911",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_8_e836e748c6.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2912",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_7_21bf2c6445.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2561",
+                    "Title": null,
+                    "Text": "##### Footer - Bottom mobile\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>None (auto)</td>\n    <td>None (auto)</td>\n  </tr>\n  <tr>\n    <td>Social icons</td>\n    <td>16 / 4</td>\n    <td>16 / 4</td>\n  </tr>\n  <tr>\n    <td>Scania wordmark</td>\n    <td>Auto</td>\n    <td>20 / 5</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1180",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2913",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_312cd602d1.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2914",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_3d22b18c3f.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1181",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2915",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_523a97b91b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2916",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_9255b28125.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2917",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_6e06cc62cd.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Footer - Top desktop\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>None (auto)</td>\n    <td>None (auto)</td>\n  </tr>\n</tbody>\n</table>",
+                        "Introduction": null,
+                        "id": "412"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1182",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2918",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_4753d6e7a2.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2919",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_bd91dbe5da.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Footer - Top mobile\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>None (auto)</td>\n    <td>56 / 14</td>\n  </tr>\n</tbody>\n</table>",
+                        "Introduction": null,
+                        "id": "413"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2562",
+                    "Title": "Typography",
+                    "Text": "Title, Page links, and Legal links starts with the first letter set in upper case, and the remaining letters in lower case. Same typography styles are applied on all header sizes, from $xxlarge to $small.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Title</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Page link</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Legal link</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n  <tr>\n    <td>Copyright</td>\n    <td>$headline-07</td>\n    <td>All states</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-06-29T18:21:19.311Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "320",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
                 "id": "202",
                 "title": "Coming Q2",
                 "section": [
@@ -23286,6 +24530,413 @@
         "url": "components",
         "displayLink": null,
         "title": "Components",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "104",
+      "url": "icons",
+      "displayLink": "Icons",
+      "title": "Icons",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "191",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "340",
+                "title": "Foundations Icons Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2516",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Iconography allows for communication that goes beyond words and language. Our icons serve to guide our users in our digital experiences making information and navigation easy to understand and interact with.",
+                      "Introduction": true,
+                      "id": "401"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2517",
+                    "Title": "Usage",
+                    "Text": "Icons are used within Scania digital environments to simplify and enrich the user experience. They support the various interactive components, from the navigation to clickable elements, by being universal and coherent communicative assets. They assist the textual content as comprehensive backing visual cues.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2862",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_73_165b6d57c9.png"
+                        }
+                      ]
+                    },
+                    "id": "405"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2518",
+                    "Title": "Sizes",
+                    "Text": "Our icons are designed in four grid sizes: 32x32 px, 24x24 px, 20x20px and 16x16 px. In order to keep an optical alignment between the different icon sizes, the stroke width is adjusted for each of them. You can find in the table below the grid sizes and their corresponding stroke widths.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2863",
+                      "label": null,
+                      "caption": "Icons are diplayed in small sizes, from 32px and less.",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_8fab5b8f92.png"
+                        }
+                      ]
+                    },
+                    "id": "406"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2530",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon size (px)</th>\n    <th>Stroke width</th>\n    <th>-</th>\n    <th>-</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>32x32</td>\n    <td>2px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_17_41c4f47208.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_13_f47dcace40.png'/></td>\n  </tr>\n  <tr>\n    <td>24x24</td>\n    <td>1,75px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_16_55ff28bc51.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_12_20d8061372.png'/></td>\n  </tr>\n  <tr>\n    <td>20x20</td>\n    <td>1,5px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_15_536897b204.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_10_053dcd24b1.png'/></td>\n  </tr>\n  <tr>\n    <td>16x16</td>\n    <td>1px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_14_32318e8c3c.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_11_89cd54c287.png'/></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2519",
+                    "Title": "Level of detail",
+                    "Text": "Our icons should visually be as simple and clear as possible to communicate the function it represents efficiently. Conform to established industry standards if possible when designing icons for our icon library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2864",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_2_75a587d832.png"
+                        }
+                      ]
+                    },
+                    "id": "407"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2520",
+                    "Title": "Styling",
+                    "Text": "All icon paths should have rounded corners.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2865",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_1_1dae66efba.png"
+                        }
+                      ]
+                    },
+                    "id": "408"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2521",
+                    "Title": "Guidelines",
+                    "Text": "Icons are build based on a grid divided in 2px units. Four keyshapes deriving from the Scania logo structure can be used as guides to create a consistent UI Icon Kit.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1157",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2866",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6a89670e19.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2867",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_32eed1739e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2868",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_5324b37619.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2869",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_97f167eb8a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2522",
+                    "Title": null,
+                    "Text": "In addition to these keyshapes, angles can also be used as guides to design icons angles.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1158",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2870",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_8d75dabdce.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2871",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_adad630be0.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2523",
+                    "Title": "Clearspace",
+                    "Text": "Icons respect a clearspace of 2px around on 32x32 px grid, and 1px around for smaller grid sizes.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2524",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for icons.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2525",
+                    "Title": null,
+                    "Text": "##### Functional purpose\nIcons must only be used for funcitonal purpose in small sizes for digital interfaces. For bigger sizes and illustrative purpose, use pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1159",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_e23b8053f7.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use icons as functional interactive UI element",
+                        "id": "299"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_54abeb9ebd.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use icons as a substitute for pictograms, that is not their purpose",
+                        "id": "300"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2526",
+                    "Title": "",
+                    "Text": "##### Simplicity\nIcons are displayed in small sizes, therefore their design should be kept as simple as possible. Avoid adding unnecessary details.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1160",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_6f90d00b65.png"
+                        },
+                        "size": "Medium",
+                        "description": "Keep icon design simple",
+                        "id": "301"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_abe3df1b13.png"
+                        },
+                        "size": "Medium",
+                        "description": "Create complex visuals",
+                        "id": "302"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2527",
+                    "Title": "Resources",
+                    "Text": "You can download all our icons below. If you are looking for a specific one, please browse our Icon Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1161",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "304",
+                        "title": "Icon Library",
+                        "description": "Figma",
+                        "info": "245 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icon_kit.fig"
+                      },
+                      {
+                        "id": "305",
+                        "title": "Icon grids",
+                        "description": "Illustrator",
+                        "info": "196 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icons_grid_system_template_rgb.ai.zip"
+                      },
+                      {
+                        "id": "306",
+                        "title": "Icon grids",
+                        "description": "Figma",
+                        "info": "170 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icon_grid_template.fig"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2529",
+                    "Title": "Contributing",
+                    "Text": "Scania Digital Design System is an active organism, constantly evolving and adopting to meet the demands of our users. Therefore we strongly encourage and welcome contributions from the whole organisation. Together, we can update and make SDDS a better design system.\n\nWhen final artwork is produced please make sure to outline the vector paths and combine the shapes.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-06-30T07:52:08.178Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "17",
+        "url": "foundations",
+        "displayLink": null,
+        "title": "Foundations",
         "thumbnail": null
       },
       "submenus": []
