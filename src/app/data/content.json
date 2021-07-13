@@ -444,6 +444,26 @@
                     }
                   },
                   {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1185",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "309",
+                        "title": "Grid",
+                        "description": "Grid demo storybook",
+                        "info": null,
+                        "image": null,
+                        "detail": "You can see the grid live in our storybook, running on master branch",
+                        "type": "linkExternal",
+                        "url": "https://sdds-storybook.netlify.app/?path=/story/foundation-grid--basic"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "1067",
                     "Title": "Installation",
@@ -460,9 +480,58 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "1068",
-                    "Title": "Usage",
-                    "Text": "You can use this grid system to create a layout based on multiple column grid system, either a regular grid system or a pushed with a sidebar on the left side. This packages also contains the tokens that is presented under information tab and also the spacing tokens avaliable under [spacing](/foundation/spacing). \n\nMore examples is coming. If you find any issue or question, please report on Github\n\n\n**SASS**\n\nIn the grid system package we ready mixins,maps and tokens to be imported in your application for your beneifit.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/grid/dist/scss/grid';\n```\n\n**Spacing tokens**\n\nYou can use layout and element tokens to define the layout, you can read more about them in [spacing](/foundation/spacing) section\n```\n//Layout token\npadding: $spacing-layout-12;\n\n//Element tokens\n$spacing-element-2: 0.5rem; // 2px\n\n```\n\n**Screen breakpoints**\n\nWe have multiple breakpoints for different screens that you find in the grid package, that you can use to setup from mobile to desktop specific rules. You can find out more about the screen tokens in the information tab. \n\n```\n@media (min-width: $screen-s) {\n  //SASS\n}\n```\n\n**Breakpoint maps**\n\nWe have ready made maps for each grid system that is avaliable in the grid package\n\n- Normal Grid\n- Push Grid\n- Gutterless grid\n\n```\n// Example how to import the regular grid \n\n@include YourMixin($sdds-grid-breakpoints);\n\n```\n\n**CSS**\n\nWe have all option avaliable for direct usage in CSS. \n\n- Normal grid\n- Push grid\n- Gutterless grid\n- No padding\n\n```\n// Small example\n\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n    </div>\n</div>\n```\n\n**Container & Row**\n\nYou need to surround the content with a container, that will either set a max-width or have a fluid option the follow the column spacing. You need to use ```.sdds-row`` to wrap columns \n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n       //Max-width container\n    </div>\n</div>\n\n  <div class=\"sdds-container-fluid\">\n    <div class=\"sdds-row\">\n      //Fluid container\n    </div>\n  </div>\n\n\n```\n\n**Columns**\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-xlg-</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-xxlg-</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n```\n\n**Offset**\n\nYou can use offsett class to move a certain content to be placed on a specific place in the grid system\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$screen-sm</td>\n    <td>.sdds-col-sm-(number)-offset</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>$screen-md</td>\n    <td>.sdds-col-md-(number)-offset</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>$screen-lg</td>\n    <td>.sdds-col-lg-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xlg</td>\n    <td>.sdds-col-xlg-(number)-offset</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>$screen-xxlg</td>\n    <td>.sdds-col-xxlg-(number)-offset</td>\n    <td>16</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-1-offset sdds-col-xlg-16-offset sdds-col-lg-8-offset sdds-col-md-8-offset sdds-col-sm-4-offset\"></div>\n```\n\n**Push**\n\nPush grid is used to include a sidebar on the left side taking a certain space on desktop and not visible on mobile.\n\n```\n<div class=\"sdds-push\">\n  <div class=\"sdds-sidebar\">\n    <div>Sidebar items</div>\n  </div>\n\n  <div class=\"sdds-content-push\">\n\n    <div class=\"sdds-container-push-fluid\">\n        <!-- xxlg -->\n      <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\">\n          <div class=\"outside\">\n            <span class=\"inside\">1</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```\n\n**Gutterless**\n\nYou can apply gutterless class to follow the gutterless grid system by following classes:\n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col-xxlg-16 gutterless\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\n**No padding**\n\nIf you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"no-padding sdds-col-xxlg-16\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n",
+                    "id": "2564",
+                    "Title": "Introduction",
+                    "Text": "You can use this grid system to create a layout based on multiple column grid system, either a regular grid system or a pushed with a sidebar on the left side. This packages also contains the tokens that is presented under information tab and also the spacing tokens available under [spacing](/foundation/spacing). \n\n**SASS**\n\nIn the grid system package we created ready mixins,maps and tokens to be imported in your application for your beneifit.\n\n```\n// First, import mixin and tokens file in your SASS environment\n@import '~node_modules/@scania/grid/dist/scss/grid';\n```\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2565",
+                    "Title": "Spacing tokens",
+                    "Text": "If you want to know how place different elements and component inside the grid system, then you can use layout and element tokens to define that. you can read more about them in [spacing](/foundation/spacing) section\n\n```\n//Layout token\npadding: $spacing-layout-12;\n\n//Element tokens\n$spacing-element-2: 0.5rem; // 2px\n\n```",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2566",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2567",
+                    "Title": "Breakpoints",
+                    "Text": "We have multiple breakpoints for different screens that you find in the grid package, that you can use to setup from mobile to desktop specific rules. You can find out more about the screen tokens in the information tab. \n\n```\n@media (min-width: $grid-sm) {\n  //SASS\n}\n```\n\n```\n//css variable\n--sdds-grid-sm\n```\n\n**Breakpoint maps**\n\nWe have ready made maps for each grid system that is avaliable in the grid package, which you can find `grid/breakpoint.scss` file in the grid package\n\n- Normal Grid\n- Push Grid\n\n```\n// Example how to import the regular grid \n\n@include YourMixin($sdds-grid-breakpoints);\n\n```\n\n**CSS**\n\nWe have all option avaliable for direct usage in CSS. \n\n- Normal grid\n- Push grid\n- No padding\n\n```\n// Small example\n\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n        <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n    </div>\n</div>\n```\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2568",
+                    "Title": "Container & Rows",
+                    "Text": "You need to surround the content with a container, that will either set a max-width or have a fluid option the follow the column spacing. You need to use ```.sdds-row`` to wrap columns \n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n       //Max-width container\n    </div>\n</div>\n\n  <div class=\"sdds-container-fluid\">\n    <div class=\"sdds-row\">\n      //Fluid container\n    </div>\n  </div>\n\n\n```\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2569",
+                    "Title": "Columns",
+                    "Text": "For columns we have different breakpoints\n\n<table>\n<thead>\n  <tr>\n    <th>Breakpoint</th>\n    <th>Prefix/class</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$grid-xs</td>\n    <td>.sdds-col-xs-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-sm</td>\n    <td>.sdds-col-sm-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-md</td>\n    <td>.sdds-col-md-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-lg</td>\n    <td>.sdds-col-lg-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-xlg</td>\n    <td>.sdds-col-xlg-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-xxlg</td>\n    <td>.sdds-col-xxlg-1</td>\n    <td>12</td>\n  </tr>\n  <tr>\n    <td>$grid-max</td>\n    <td>.sdds-col-max-1</td>\n    <td>12</td>\n  </tr>\n</tbody>\n</table>\n\n```\n <div class=\"sdds-col-xxlg-16 sdds-col-xlg-16 sdds-col-lg-8 sdds-col-md-8 sdds-col-sm-4\"></div>\n```",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2570",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2571",
+                    "Title": "Push",
+                    "Text": "\nPush grid is used to include a sidebar on the left side taking a certain space on desktop and not visible on mobile.\n\n```\n<div class=\"sdds-push\">\n  <div class=\"sdds-sidebar\">\n    <div>Sidebar items</div>\n  </div>\n\n  <div class=\"sdds-content-push\">\n\n    <div class=\"sdds-container-push-fluid\">\n        <!-- xxlg -->\n      <div class=\"sdds-row\">\n        <div class=\"sdds-col-max- sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-12 sdds-col-sm-12\">\n          <div class=\"outside\">\n            <span class=\"inside\">1</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n```",
                     "LeadText": null
                   },
                   {
@@ -494,9 +563,37 @@
                       }
                     ],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2587",
+                    "Title": "no padding",
+                    "Text": "If you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-no-padding sdds-col-max- sdds-col-xxlg-12\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\nYou can also set the class on a parent to apply it to all columns below\n\n`<div class=\"sdds-container 'sdds-no-padding\">`",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2589",
+                    "Title": "Nested",
+                    "Text": "You can place columns within other columns, nest the grid. \nSo for example you can place 12 child columns row inside a 6 columns parent\n\n```\n<div class=\"sdds-row\">\n    <div class=\"sdds-col-max-6 sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-6 sdds-col-md-6 sdds-col-sm-6 sdds-col-xs-6\">\n      <div class=\"sdds-row\">\n        <div class=\"sdds-col-max-6 sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-6 sdds-col-md-6 sdds-col-sm-6 sdds-col-xs-6\">\n          <div class=\"inside-demo\">6 nested</div>\n        </div>\n        <div class=\" ${padding == false ? 'sdds-no-padding': ''} sdds-col-max-6 sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-6 sdds-col-md-6 sdds-col-sm-6 sdds-col-xs-6\">\n          <div class=\"inside-demo\">6 nested</div>\n        </div>\n      </div>\n    </div>\n      <div class=\"sdds-col-max-6 sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-6 sdds-col-md-6 sdds-col-sm-6 sdds-col-xs-6\">\n       <div class=\"inside-demo\">6</div>\n     </div>\n  </div>\n</div>\n```\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2588",
+                    "Title": "Auto columns",
+                    "Text": "If you have dynamic content that will be place in the grid you can use auto columns to always take the full width up to 12 col.\n\nSo if you have one auto column it will take up the full 12 columns space, if you add one more auto column it will take half, which is 6 columns, since 12/2=6. That is how auto col works\n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md sdds-col-sm sdds-col-xs\">\n        <div class=\"inside-demo\">.sdds-col</div>\n      </div>\n      <div class=\"sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md sdds-col-sm sdds-col-xs\">\n        <div class=\"inside-demo\">.sdds-col</div>\n      </div>\n      <div class=\"sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md sdds-col-sm sdds-col-xs\">\n        <div class=\"inside-demo\">.sdds-col</div>\n      </div>\n      <div class=\"sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md sdds-col-sm sdds-col-xs\">\n        <div class=\"inside-demo\">.sdds-col</div>\n      </div>\n    </div>\n  </div>\n\n```",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2590",
+                    "Title": "Display on breakpoint",
+                    "Text": "If you either want to hide or show on a certain breakpoints you can use classes like sdds-hide-xlg or sdds-show-xlg.\n\nHow it works is that you, if you add class `sdds-hide-xlg` it will hide content on xlg or bigger. If you want to show on for example  md and above but want to hide on smaller. You can add classes `.sdds-hide-xs` and above and show on md and above `.sdds.show-md`\n\b\n- Every breakpoint has it's own show or hide class\n\n\n```\n  <div class=\"sdds-hide-xlg sdds-col-max-12 sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-12 sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12\">\n       <div class=\"inside-demo\">Hide on xlg and wider</div>\n     </div>\n```",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2021-05-03T14:34:14.039Z"
+                "updated_at": "2021-07-13T09:11:59.875Z"
               }
             }
           ]
@@ -1096,7 +1193,7 @@
                       "alternate": "Scania Digital Design System",
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6c2b2108316345e683d483663943bf59.jpg"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/289ef2cc0c4f4e6e819429dfa2e0f8e5.jpg"
                         }
                       ]
                     },
@@ -1296,7 +1393,7 @@
                     }
                   }
                 ],
-                "updated_at": "2021-04-22T07:32:32.052Z"
+                "updated_at": "2021-07-12T19:17:08.177Z"
               }
             }
           ]
@@ -2749,41 +2846,8 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "365",
-                    "Title": "Colour",
-                    "Text": "Our colour palette for digital platforms consists of primary and secondary colours, which derives from our colours defined in our brand identity. We also have an extended palette that consists of a range of scales, which carefully and purposefully should be used as supporting colours and a number of semantic colours used strictly for UI CTAs and notifications such as alarm, warning, success and information.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "366",
-                    "Title": null,
-                    "Text": "**Primary palette**\nOur brand colours, blue and red, are derived from the Scania symbol and wordmark and effectively establish, represent and communicate the brand. Together with black and white they create our primary palette for digital applications.\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "891",
-                      "label": null,
-                      "caption": null,
-                      "size": "Xlarge",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3f3f3cbb290b46a4868fd02280904a0a.png"
-                        }
-                      ]
-                    },
-                    "id": "94"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "367",
-                    "Title": null,
-                    "Text": "##### Secondary palette\nOur secondary palette is designed to be used to vary or highlight content. These colours add warmth and variety in our layouts, along with associations to sustainability and our well-grounded company. This palette is mainly used for our Expressive experiences, where we need a more dynamic and rich colour palette.",
+                    "Title": "Colours",
+                    "Text": "In order to answer digital environment needs and constraints, we have broadened Scania brand colour core palette with additional semantic colours as well as extended colour scales.\n\nMore information regarding Scania Brand Colour Palette will be available soon on Scania Brand Portal.",
                     "LeadText": null
                   },
                   {
@@ -2799,7 +2863,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/0b442d5faa734cd3ab495b3747674fa9.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_59693f78f0.png"
                         }
                       ]
                     },
@@ -2807,9 +2871,35 @@
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
+                    "id": "366",
+                    "Title": null,
+                    "Text": "##### Brand palette\nOur primary brand colour, Scania Blue, is derived from the Scania symbol and wordmark, and effectively establishes, represents and communicates the brand DNA. Together with black and white they create our brand palette for digital applications.\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "891",
+                      "label": null,
+                      "caption": null,
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image2_47cb7fc75d.png"
+                        }
+                      ]
+                    },
+                    "id": "94"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
                     "id": "368",
                     "Title": null,
-                    "Text": "##### Semantic colours\nThe purpose of our semantic colours is to quickly and efficiently signal a specific CTA or information to the user. The colours are used to create clear communication hierarchies within our applications and should be used with care and purpose. Never use these colours as decoration or as a background colour on large surfaces.\n\nWhen using these colours, they need to be paired with text, an icon or both to fulfil their purpose in the best way possible.",
+                    "Text": "##### Semantic colours\nSemantic colours communicate important status to the user such as success, information, warning or error. They essentially have a functionnal purpose, therefore they shouldn’t be used as decoration or as a background colour on large surfaces. \n\nThese colours should be used paired with text, an icon or both to fulfill their purpose in the best way possible.",
                     "LeadText": null
                   },
                   {
@@ -2825,7 +2915,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/c1545d034d7842ecb1afa1b44b811668.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/semantic_colours02_ff6f599b0b.gif"
                         }
                       ]
                     },
@@ -2834,8 +2924,8 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "369",
-                    "Title": "Scales",
-                    "Text": "As supporting colours to our primary, secondary and semantic colours, we have several steps for each colour, creating a scale. Instead of creating new colours, we can use these steps to drive brand recognition and create strong associations to the brand. These scales enables us to create strong and clear colour hierarchies within our applications. \n\nSome of the steps are used as background colours, others on text, icons, CTAs or dividers. The most prominent ones are the Grey and Blue colour scales, while the others are used more sparingly. \n\nThe scales do not only have to be applied within our applications - they could also be used in visualisations and illustrations to ensure a unified overall brand presence. ",
+                    "Title": "",
+                    "Text": "##### Scales\nIn addition to our brand palette and semantic colours, we have defined extended colour scales of blue and red. These scales enable us to create strong and clear colour hierarchies within our applications, as well as visualising different states of our interactive UI components such as CTA. You can find more information on how to apply these scales to CTA on the [Buttons](components/buttons) component page.",
                     "LeadText": null
                   },
                   {
@@ -2845,13 +2935,13 @@
                     "Image": {
                       "id": "172",
                       "label": null,
-                      "caption": "All scales are available at Specifications",
+                      "caption": "Find all scales on the Specifications tab",
                       "size": "Xlarge",
                       "negative": null,
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8f18cf1790ac41c1b422b77f878e9463.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Scales_b16a09ea63.png"
                         }
                       ]
                     },
@@ -2860,15 +2950,8 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "377",
-                    "Title": "Themes",
-                    "Text": "For all Scania applications we have two themes, light and dark theme. These themes serve as foundation for colours. Depending on what and for whom you are designing, you should select which theme to use carefully.\n\n##### Light theme\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It’s also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.\n\n##### Dark theme\nThe dark theme is a low-light UI which uses our darker colours as primary background colours. In general we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment in general. It also has a sustainable approach, since it conserves battery life for devices with OLED screens.  This theme is mainly used for our Functional applications.\n\nAnother option is to apply a toggle within your application, to let the users own personal preference decide which theme to use.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "943",
-                    "Title": "Legibility",
-                    "Text": "At Scania we value accessibility and consider it as an important element of an overall user experience within our applications. Our texts and links should be legible and meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\" target=\"_blank\">The Web Content Accessibility Guidelines (WCAG 2.0) level AA</a>, which requires a contrast ratio of at least 4.5:1 for normal text, and 3:1 to large text.\n\nOur colours have a scale which consists of 10 values (black and white excluded). On backgrounds using darker values, white text is accessible and on backgrounds using lighter values, dark text is accessible.\n\nLearn more about our thoughts on [Accessibility design](foundations/accessibility).",
+                    "Title": "",
+                    "Text": "##### Background colours\nIn order to allow Scania applications to live on both light and dark theme, we have defined a grey scale used for the different background colours elevations. ",
                     "LeadText": null
                   },
                   {
@@ -2876,7 +2959,167 @@
                     "title": null,
                     "caption": null,
                     "Image": {
-                      "id": "895",
+                      "id": "2922",
+                      "label": "",
+                      "caption": "Find all scales on the Specifications tab",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/background_ad6b3a9028.png"
+                        }
+                      ]
+                    },
+                    "id": "420"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2573",
+                    "Title": "Themes",
+                    "Text": "All Scania applications can live on two main different themes: a light theme and a dark theme. These themes serve as the foundation for colours and should be selected carefully depending on their usage and for whom the interfaces are designed for.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2923",
+                      "label": null,
+                      "caption": "Each theme has two variants. These variants define the lower level colour value applicable on which the elevation principle will apply (more information below).",
+                      "size": "Xlarge",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/new_themes_779f3514a7.png"
+                        }
+                      ]
+                    },
+                    "id": "421"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2574",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Theme</th>\n    <th>Theme variant</th>\n    <th>Background colour</th>\n    <th>HEX value</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$light-theme</td>\n    <td>$on-white</td>\n    <td>$white</td>\n    <td>#FFFFFF</td>\n  </tr>\n  <tr>\n    <td>$light-theme</td>\n    <td>$on-grey-50</td>\n    <td>$grey-50</td>\n    <td>#F9FAFB</td>\n  </tr>\n  <tr>\n    <td>$dark-theme</td>\n    <td>$on-grey-958</td>\n    <td>$grey-958</td>\n    <td>#0D0F13</td>\n  </tr>\n  <tr>\n    <td>$dark-theme</td>\n    <td>$on-grey-900</td>\n    <td>$grey-900</td>\n    <td>#1D2229</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Light theme\nThis theme is the standard choice for Expressive applications, where we need to have a dynamic and rich brand experience. It is also the standard choice for our Functional applications, where the user is mainly active in a work place with natural lightning.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2924",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/light_70e90e7e67.png"
+                        }
+                      ]
+                    },
+                    "id": "422"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2575",
+                    "Title": null,
+                    "Text": "##### Dark theme\nThe dark theme is a low-light UI which uses our darker colours from the greyscale as a primary background colours. In general, we use more desaturated colours since colours with high saturation tend to vibrate on dark backgrounds. \n\nA dark framework helps to reduce eye-strain for our users, especially when they are using our applications during night time or in a low-light environment. It also has a sustainable approach, since it conserves battery life for devices with OLED screens. This theme is mainly used for our Functional applications.\n\nThe choice between dark and light theme can also be left to the user’s preference including a toggle switch functionnality in the application.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1186",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2925",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dark_a97e53f9cb.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2926",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/light_and_dark_b5a2abf868.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2927",
+                        "label": null,
+                        "caption": "The values from $white to $grey-500 are used for surfaces on light theme. The values from $grey-958 to $grey-600 are used for surfaces on dark theme.",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/new_a9d4ff905b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2928",
+                        "label": null,
+                        "caption": "Surface colours according to the elevation level on light theme",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/light_elevation_fb456d49f7.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2929",
+                        "label": null,
+                        "caption": "Depth can be visually translated by the use of lighter surface colours at higher levels of elevation.",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/new_dark_e10ecd75c2.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2576",
+                    "Title": "Legibility",
+                    "Text": "At Scania we value accessibility and consider it as an important element of an overall user experience within our applications. Our texts and links should be legible and meet [The Web Content Accessibility Guidelines (WCAG 2.0) level AA](https://www.w3.org/WAI/standards-guidelines/wcag/), which requires a contrast ratio of at least 4.5:1 for normal text, and 3:1 to large text.\n\nOur colours have a scale which consists of 10 values (black and white excluded). On backgrounds using darker values, white text is accessible and on backgrounds using lighter values, dark text is accessible.\n\nLearn more about our thoughts on [Accessibility](foundations/accessibility) design.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2930",
                       "label": null,
                       "caption": null,
                       "size": "Xlarge",
@@ -2884,41 +3127,64 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/85bb996348094934b58e5348e2cfa493.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/legibility_465645bd8d.png"
                         }
                       ]
                     },
-                    "id": "98"
+                    "id": "423"
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "944",
-                    "Title": "Colour tokens",
-                    "Text": "In our Unit System, we are using tokens to manage our variables, and this is to be able to go away from having hard coded values to ensure consistency in our UIs. It also makes it more efficient to implement, maintain and update.\n\nWe are using the same approach for our colour palettes. For instance, instead of coding all instances when using our blue colour with #041E42, we can instead apply a token like $blue-900.",
+                    "id": "2577",
+                    "Title": "Colour typography",
+                    "Text": "Our typography hierarchy treatment is highlighted by the use of an opacity system on light and dark themes to ensure enough legibility.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "207",
-                    "Title": "Resources",
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
+                    "id": "1187",
+                    "Title": null,
+                    "Images": [
                       {
-                        "id": "157",
-                        "title": "Github",
-                        "description": "Colours element package",
-                        "info": null,
-                        "image": null,
-                        "detail": null,
-                        "type": "linkExternal",
-                        "url": "https://www.npmjs.com/package/@scania-sdds/colour"
+                        "id": "2931",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/light_typo_297be23eba.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2932",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dark_typo_75902ed587.png"
+                          }
+                        ]
                       }
                     ],
+                    "texts": [],
+                    "linkCards": [],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2578",
+                    "Title": "Colour tokens",
+                    "Text": "In our Unit System, we are using tokens to manage our variables, and this is to be able to go away from having hard coded values to ensure consistency in our UIs. It also makes it more efficient to implement, maintain and update.\n\nWe are using the same approach for our colour palettes. For instance, instead of coding all instances when using our blue colour with #041E42, we can instead apply a token like $blue-800.",
+                    "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-08T13:15:47.336Z"
+                "updated_at": "2021-07-09T12:23:02.047Z"
               }
             }
           ]
@@ -2938,67 +3204,53 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "379",
                     "Title": null,
-                    "Text": "**Colour specification**\nBelow you can find a detailed list of all official Scania colours. Note, these are also available in <a href=\"https://www.npmjs.com/package/@scania-sdds/colour\">Github</a>.\n\n\n",
+                    "Text": "##### Colour specification\nBelow you can find a detailed list of all official Scania colours. Note, these are also available in <a href=\"https://www.npmjs.com/package/@scania-sdds/colour\">Github</a>,as ASE and within our UI Kit.\n\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "568",
-                    "Title": "Primary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4a38fd5b6e5e491ab1d019a935498ac5.png\"></td>\n    <td>Red</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "569",
-                    "Title": "Secondary palette",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ebd5e9cee91c48a3a300963db685c039.png\"></td>\n    <td>Orange</td>\n    <td>#FA6E23</td>\n    <td>(227,82,5,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/573703ac056e41268a500169f868855a.png\"></td>\n    <td>Beige</td>\n    <td>#CEB888</td>\n    <td>(206,184,136,1)</td>\n    <td>$beige-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4cd251ecd81a461b981f267019d4ae12.png\"></td>\n    <td>Green</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Title": "Brand palette",
+                    "Text": "The brand palette contains the Scania primary brand colours. \n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n    <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Black</td>\n    <td>#000000</td>\n    <td>(0,0,0,1)</td>\n    <td>$black</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/67e9ebde2f3942c2a7dd55deb74e14e7.png\"></td>\n    <td>White</td>\n    <td>#FFFFFF</td>\n    <td>(255,255,255,1)</td>\n    <td>$white</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/40b5265cc9a34206862e07bd497ca3f9.png\"></td>\n    <td>Scania Blue</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-800</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "570",
                     "Title": "Semantic colors",
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b3d6ebb136c843afa949ed0a4fa4b07e.png\"></td>\n    <td>CTA</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/dd4f1a4a61a748b69df9daf1b2dd0778.png\"></td>\n    <td>Negative</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4558bdb903ae4bf091981688ab10932e.png\"></td>\n    <td>Warning</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/72124c6a6b4947b1bc8cb58c645b1d96.png\"></td>\n    <td>Positive</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/25f6f37ee31e427eb437cb6b5bac22bc.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "Our extended colour scales are meant to be used to visualised different states.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n    <th>Usage</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_3a1c0cea6c.png\"></td>\n    <td>Negative</td>\n    <td>#FF2340</td>\n    <td>(255, 35, 64, 1)</td>\n    <td>$semantic-red</td>\n    <td>Error and danger message</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1014eaa528.png\"></td>\n    <td>Warning</td>\n    <td>#F1C21B</td>\n    <td>(241,194,27,1)</td>\n    <td>$semantic-yellow</td>\n    <td>Warning messages</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_3cf120211a.png\"></td>\n    <td>Positive</td>\n    <td>#1DAB8B</td>\n    <td>(29,171,139,1)</td>\n    <td>$semantic-green</td>\n    <td>For success messages, when an action has been completed successfully.</br></br>For showing an active state, when an operation or process is running as intended.</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_85189c98ca.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$semantic-blue</td>\n    <td>Informative message</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "571",
-                    "Title": "Scales",
-                    "Text": "**Grey scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/76a0d5c969f04e1cb0a038333bec542c.png\"></td>\n    <td>Grey 900</td>\n    <td>#171719</td>\n    <td>(23,23,25,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/7de3e487e3af4a1c98035652d171d34d.png\"></td>\n    <td>Grey 800</td>\n    <td>#2B2C2F</td>\n    <td>(43,44,47,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/19dba74f690240f0b7b6ecf264c8fc9c.png\"></td>\n    <td>Grey 700</td>\n    <td>#3A3B3F</td>\n    <td>(58,59,63,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3ba94d97ac344f06b146afc3244bfec7.png\"></td>\n    <td>Grey 600</td>\n    <td>#515257</td>\n    <td>(81,82,87,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5c49ec52d1d94f0ebd306dde14d8f660.png\"></td>\n    <td>Grey 500</td>\n    <td>#696A70</td>\n    <td>(105,106,112,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/809a6f7783124236803577a824b27d79.png\"></td>\n    <td>Grey 400</td>\n    <td>#82848A</td>\n    <td>(130,132,138,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/46ec4be348d84d1dbb57b1d27729cb2b.png\"></td>\n    <td>Grey 300</td>\n    <td>#A4A6AB</td>\n    <td>(164,166,171,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b6d0e3dc726a405b96ef9a3ffcc649e2.png\"></td>\n    <td>Grey 200</td>\n    <td>#C5C6C9</td>\n    <td>(197,198,201,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/d0342eafe434450fa274fef5bb925d4f.png\"></td>\n    <td>Grey 100</td>\n    <td>#E2E2E4</td>\n    <td>(226,226,288,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/7c05f11b406e482eb327fa570f31f551.png\"></td>\n    <td>Grey 50</td>\n    <td>#F6F6F7</td>\n    <td>(246,246,247,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Title": "Background colours",
+                    "Text": "Our grey scale is used to define theming background colours, as well as some graphic element such as dividers.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_13_17ff8f006b.png\"></td>\n    <td>Grey 958</td>\n    <td>#0D0F13</td>\n    <td>(13,15,19,1)</td>\n    <td>$grey-958</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_12_568183c8ba.png\"></td>\n    <td>Grey 900</td>\n    <td>#1D2229</td>\n    <td>(29,34,41,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_11_996b76ab6f.png\"></td>\n    <td>Grey 868</td>\n    <td>#242A33</td>\n    <td>(36,42,51,1)</td>\n    <td>$grey-868</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_10_4f6d3bc441.png\"></td>\n    <td>Grey 846</td>\n    <td>#2B323D</td>\n    <td>(43,50,61,1)</td>\n    <td>$grey-846</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_9_e6988b2d05.png\"></td>\n    <td>Grey 800</td>\n    <td>#37414F</td>\n    <td>(55,65,79,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_8_6341c89387.png\"></td>\n    <td>Grey 700</td>\n    <td>#56657A</td>\n    <td>(86,101,122,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_67ba4afcfd.png\"></td>\n    <td>Grey 600</td>\n    <td>#868FA2</td>\n    <td>(134,143,162,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_9f977a2b95.png\"></td>\n    <td>Grey 500</td>\n    <td>#B0B7C4</td>\n    <td>(176,183,196,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_48b248849c.png\"></td>\n    <td>Grey 400</td>\n    <td>#CDD1DB</td>\n    <td>(205,209,219,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_ac3392686d.png\"></td>\n    <td>Grey 300</td>\n    <td>#DBDFE6</td>\n    <td>(219,223,230,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_6971654570.png\"></td>\n    <td>Grey 200</td>\n    <td>#E7E9EE</td>\n    <td>(231,233,238,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1f3ae391f1.png\"></td>\n    <td>Grey 100</td>\n    <td>#EDEFF3</td>\n    <td>(237,239,243,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_bde3e08d5b.png\"></td>\n    <td>Grey 50</td>\n    <td>#F9FAFB</td>\n    <td>(219,250,251,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "572",
-                    "Title": null,
-                    "Text": "**Blue scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/961a9b35627542ccab43bb175ed61e40.png\"></td>\n    <td>Blue 900</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4e331bb3b5c243a2bfc97d4ef99cd85a.png\"></td>\n    <td>Blue 800</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/4c8e4e67f12641c2b22c3c3bc322fe62.png\"></td>\n    <td>Blue 700</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/e55301bc735941c3ac388023d45fa99a.png\"></td>\n    <td>Blue 600</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/cbdb86ff8780443685a885180548034d.png\"></td>\n    <td>Blue 500</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/9e3f18eb908e4c85be6cc8a6094eeb9c.png\"></td>\n    <td>Blue 400</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/365a3ce9207b4c58be87535ec8fd0538.png\"></td>\n    <td>Blue 300</td>\n    <td>#9CA5C2</td>\n    <td>(156,165,194,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3f71be4d191f4894ada43e38c9f7effb.png\"></td>\n    <td>Blue 200</td>\n    <td>#C1C6D8</td>\n    <td>(193,198,216,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/8f32b721ba234b4bac4bc90cb2105529.png\"></td>\n    <td>Blue 100</td>\n    <td>#E0E2EB</td>\n    <td>(224,226,235,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3eda052338354b2aaaf7a93ca77657be.png\"></td>\n    <td>Blue 50</td>\n    <td>#F6F6F9</td>\n    <td>(246,246,249,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Title": "Extended colour scales",
+                    "Text": "Our extended colour scales are meant to be used to define visual hierarchy and as well as different interactive UI element states.\n\n##### Blue scale\nThe blue scale is mainly used for interactive components such as header, CTA, links and buttons for their various states. You can find which value should be used on the corresponding component page.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_9_8a124300e3.png\"></td>\n    <td>Blue 900</td>\n    <td>#001533</td>\n    <td>(0,21,51,1)</td>\n    <td>$blue-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_8_be8c51a423.png\"></td>\n    <td>Blue 800</td>\n    <td>#041E42</td>\n    <td>(4,30,66,1)</td>\n    <td>$blue-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_7_92cb192feb.png\"></td>\n    <td>Blue 700</td>\n    <td>#0F3263</td>\n    <td>(15,50,99,1)</td>\n    <td>$blue-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_6_a8f51f6027.png\"></td>\n    <td>Blue 600</td>\n    <td>#16417F</td>\n    <td>(22,65,127,1)</td>\n    <td>$blue-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_5_3a634f5a87.png\"></td>\n    <td>Blue 500</td>\n    <td>#2058A8</td>\n    <td>(32,88,1,68,1)</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_4_00afc5aac6.png\"></td>\n    <td>Blue 400</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$blue-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_76dd422a79.png\"></td>\n    <td>Blue 300</td>\n    <td>#4A89F3</td>\n    <td>(74,137,243,1)</td>\n    <td>$blue-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_7c632747c7.png\"></td>\n    <td>Blue 200</td>\n    <td>#87AFE8</td>\n    <td>(135,175,232,1)</td>\n    <td>$blue-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_558e8e9855.png\"></td>\n    <td>Blue 100</td>\n    <td>#BACDE8</td>\n    <td>(186,205,232,1)</td>\n    <td>$blue-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_b9dd359105.png\"></td>\n    <td>Blue 50</td>\n    <td>#E4E9F1</td>\n    <td>(228,233,241,1)</td>\n    <td>$blue-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "573",
                     "Title": null,
-                    "Text": "**Red scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "##### Red scale\nThe extended red scale is used to visually translate the different states of CTA such as danger buttons, and its lighter values could also be used as background color for banners notifications.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ea488456eba8494f8355ed906046d93a.png\"></td>\n    <td>Red 900</td>\n    <td>#450307</td>\n    <td>(69,3,7,1)</td>\n    <td>$red-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/e31b97a32f6642558870839b1ee177e9.png\"></td>\n    <td>Red 800</td>\n    <td>#6A080F</td>\n    <td>(106,8,15,1)</td>\n    <td>$red-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3af05ca3cb334414a6454d8beea36b7e.png\"></td>\n    <td>Red 700</td>\n    <td>#950A16</td>\n    <td>(149,10,22,1)</td>\n    <td>$red-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3ddd5dc217094e7dbfeb74d310d43df8.png\"></td>\n    <td>Red 600</td>\n    <td>#D6001C</td>\n    <td>(214,0,28,1)</td>\n    <td>$red-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/15a0882fd95545c2b70cd42c81684ea8.png\"></td>\n    <td>Red 500</td>\n    <td>#DE2B36</td>\n    <td>(222,43,54,1)</td>\n    <td>$red-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5efde654941c4930a5b9e164e0f6807e.png\"></td>\n    <td>Red 400</td>\n    <td>#F35359</td>\n    <td>(243,83,89,1)</td>\n    <td>$red-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6aeecb888552489494e86188e6496a3c.png\"></td>\n    <td>Red 300</td>\n    <td>#F58E90</td>\n    <td>(245,142,144,1)</td>\n    <td>$red-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/1375cec5b20944b38ef25fe75d0ddd03.png\"></td>\n    <td>Red 200</td>\n    <td>#F8B6B7</td>\n    <td>(248,182,183,1)</td>\n    <td>$red-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/69e1d5222ef449ccb4ec078accd6a8aa.png\"></td>\n    <td>Red 100</td>\n    <td>#FADBDC</td>\n    <td>(250,219,220,1)</td>\n    <td>$red-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/de8fb61d6c0348078a427848d320711b.png\"></td>\n    <td>Red 50</td>\n    <td>#FDF4F5</td>\n    <td>(253,244,245,1)</td>\n    <td>$red-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "574",
-                    "Title": null,
-                    "Text": "**Green scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/6a660876624444eca48c3eda58ff2c79.png\"></td>\n    <td>Green 900</td>\n    <td>#112616</td>\n    <td>(17,38,22,1)</td>\n    <td>$green-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/d0d1c4d952a342ddb102c3430ff35051.png\"></td>\n    <td>Green 800</td>\n    <td>#1C3822</td>\n    <td>(28,56,34,1)</td>\n    <td>$green-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/61948dbe34eb44a5a2ae84ce274d0247.png\"></td>\n    <td>Green 700</td>\n    <td>#2C5234</td>\n    <td>(44,82,52,1)</td>\n    <td>$green-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/89b9222956bf49ab9cccf45b0f9e7f03.png\"></td>\n    <td>Green 600</td>\n    <td>#386E44</td>\n    <td>(56,110,68,1)</td>\n    <td>$green-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/82a081df758347d0b23fd771d1de1555.png\"></td>\n    <td>Green 500</td>\n    <td>#438151</td>\n    <td>(67,129,81,1)</td>\n    <td>$green-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/bef85d637a734b4099fefe5e762f54db.png\"></td>\n    <td>Green 400</td>\n    <td>#539E63</td>\n    <td>(83,158,99,1)</td>\n    <td>$green-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/977452b1757f4eaf8a4c88d1a28bd399.png\"></td>\n    <td>Green 300</td>\n    <td>#89B691</td>\n    <td>(137,182,145,1)</td>\n    <td>$green-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ee40e7fe84b646a98ad94387a982f9d2.png\"></td>\n    <td>Green 200</td>\n    <td>#A6D1AD</td>\n    <td>(166,209,173,1)</td>\n    <td>$green-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/f24acf045b9f4146ad137ffa6f7aeb16.png\"></td>\n    <td>Green 100</td>\n    <td>#CAEBD0</td>\n    <td>(202,235,208,1)</td>\n    <td>$green-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3b385b2c131a4ec686c506723d2d8292.png\"></td>\n    <td>Green 50</td>\n    <td>#F1F8F2</td>\n    <td>(241,248,242,1)</td>\n    <td>$green-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "575",
-                    "Title": null,
-                    "Text": "**Orange scale**\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/0b68903a702847edb546245290638df6.png\"></td>\n    <td>Orange 900</td>\n    <td>#112616</td>\n    <td>(51,17,3,1)</td>\n    <td>$orange-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/2a4ee842cf654d19a6935eecffa5ec40.png\"></td>\n    <td>Orange 800</td>\n    <td>#893B15</td>\n    <td>(137,59,21,1)</td>\n    <td>$orange-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3a36ec35a9844a1cac694271c01df91c.png\"></td>\n    <td>Orange 700</td>\n    <td>#C65416</td>\n    <td>(198,84,22,1)</td>\n    <td>$orange-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ded62d3a338546a6942063b739d4fa1c.png\"></td>\n    <td>Orange 600</td>\n    <td>#EB6200</td>\n    <td>(235,98,0,1)</td>\n    <td>$orange-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/ee8edb5d47514961980034f5d5a2a7be.png\"></td>\n    <td>Orange 500</td>\n    <td>#FA6E23</td>\n    <td>(250,110,35,1)</td>\n    <td>$orange-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/28090f448a90449ebdb4fe7edb25e65b.png\"></td>\n    <td>Orange 400</td>\n    <td>#F98A67</td>\n    <td>(249,138,103,1)</td>\n    <td>$orange-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/bc42b24388964792aa9fa29e6f636ddb.png\"></td>\n    <td>Orange 300</td>\n    <td>#F9A38D</td>\n    <td>(249,163,141,1)</td>\n    <td>$orange-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/5d7f20edd4854c17a87c6da2f42b9f1c.png\"></td>\n    <td>Orange 200</td>\n    <td>#F9CAC0</td>\n    <td>(249,202,192,1)</td>\n    <td>$orange-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/b22bfc5022bb4d1ab91816b53db8d3be.png\"></td>\n    <td>Orange 100</td>\n    <td>#FBE3DF</td>\n    <td>(251,227,223,1)</td>\n    <td>$orange-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/3f965ef8ce8e4567afa74f2d272b1427.png\"></td>\n    <td>Orange 50</td>\n    <td>#FDF5F3</td>\n    <td>(253,245,243,1)</td>\n    <td>$orange-50</td>\n  </tr>\n</tbody>\n</table>\n\n\n",
+                    "id": "2579",
+                    "Title": "Typography scale",
+                    "Text": "Our typography colour scheme are not defined by solid colour, but make use of opacity to represent the different hierarchy levels.\n\n<table>\n<thead>\n  <tr>\n    <th>Piority level</th>\n    <th>Colour on dark-theme</th>\n    <th>Colour on light-theme</th>\n    <th>Opacity</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$high-emphasis</td>\n    <td>$white</td>\n    <td>$black</td>\n    <td>87%</td>\n  </tr>\n  <tr>\n    <td>$medium-emphasis</td>\n    <td>$white</td>\n    <td>$black</td>\n    <td>60%</td>\n  </tr>\n  <tr>\n    <td>$disabled</td>\n    <td>$white</td>\n    <td>$black</td>\n    <td>38%</td>\n  </tr>\n</tbody>\n</table>",
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2020-12-08T13:49:59.410Z"
+                "updated_at": "2021-07-13T12:11:05.307Z"
               }
             }
           ]
@@ -13109,13 +13361,6 @@
           "thumbnail": null
         },
         {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
-          "thumbnail": null
-        },
-        {
           "id": "146",
           "url": "dropdowns",
           "displayLink": null,
@@ -13148,6 +13393,13 @@
           "url": "Tooltips",
           "displayLink": null,
           "title": "Tooltips",
+          "thumbnail": null
+        },
+        {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
           "thumbnail": null
         },
         {
@@ -15628,7 +15880,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "935",
                     "Title": "Size",
-                    "Text": "Our pictograms are designed in a 40x40 px grid as a master grid size. Our pictograms can then be proporionally scaled up as needed. Their stroke width on 40x40 px size is 1,75px, and also scales up proportionally with the pictogram size. \n\nPlease note that if you want to use pictograms for sizes smaller than 40x40 px, icons might be preferable. Find more information about icons usage on the related [Icon Usage](foundations/icons) page.",
+                    "Text": "Our pictograms are designed in a 40x40 px grid as a master grid size. They can then be proportionally scaled up to the sizes needed.\n\nPlease note that if you want to use pictograms for sizes smaller than 40x40 px, icons might be preferable. Find more information about icons usage on the related [Icon Usage](foundations/icons) page.",
                     "LeadText": null
                   },
                   {
@@ -15661,24 +15913,60 @@
                             "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_grid_2_c72eba569d.png"
                           }
                         ]
-                      },
-                      {
-                        "id": "2883",
-                        "label": null,
-                        "caption": "Pictograms stroke width scales proportionnaly with their size. More guidelines regarding stroke width will follow soon.",
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1669_2e26a02f86.png"
-                          }
-                        ]
                       }
                     ],
                     "texts": [],
                     "linkCards": [],
                     "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1183",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2920",
+                        "label": null,
+                        "caption": "Draw the pictogram on a master grid of 40x40px.",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_8ec21aaa2e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2921",
+                        "label": null,
+                        "caption": "Once the two styles are created, outline the stroke and scale the master grid to the sizes wanted. We recommand to use Bold style up to 88x88px pictogram size. From this size and above, we advise to use the Regular style.",
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_8a11edc075.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "In order to optimize pictograms throughout their different application, always create them in two different styles: bold and regular. This way they will be optimized for a use on both normal and large sizes. ",
+                        "Introduction": null,
+                        "id": "414"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2563",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon style</th>\n    <th>Stroke width</th>\n    <th>Master size</th>\n    <th>Output size</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Bold</td>\n    <td>2px</td>\n    <td>40x40px</td>\n    <td>&lt; 88px</td>\n  </tr>\n  <tr>\n    <td>Regular</td>\n    <td>1,5px</td>\n    <td>40x40px</td>\n    <td>&gt; 88px</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
@@ -15938,9 +16226,46 @@
                         "id": "306"
                       }
                     ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2572",
+                    "Title": "Resources",
+                    "Text": "You can download all our pictograms below. If you are looking for a specific one, please browse our Pictogram Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1184",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "307",
+                        "title": "Pictograms grid",
+                        "description": "Illustrator",
+                        "info": "183 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.4/figma/grid/sdds_pictogram_grid_system_template_rgb_ai.zip"
+                      },
+                      {
+                        "id": "308",
+                        "title": "Pictograms grid",
+                        "description": "Figma",
+                        "info": "177 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.4/figma/grid/sdds_pictogram_grid_template.fig"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-06-30T06:37:44.463Z"
+                "updated_at": "2021-07-06T09:37:28.312Z"
               }
             }
           ]
@@ -17473,940 +17798,6 @@
         "url": "foundations",
         "displayLink": null,
         "title": "Foundations",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "180",
-      "url": "sidemenu",
-      "displayLink": null,
-      "title": "Side menu",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "293",
-          "title": "Usage",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "316",
-                "title": "Components Side Menu Usage",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2142",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
-                      "Introduction": null,
-                      "id": "368"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2143",
-                    "Title": "Usage",
-                    "Text": "The side menu should always be paired with the [functional header](components/header), when it is used for applications with a large page structure, like more than 3 sections. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1016",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2348",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3e3f3c80a4a7497eb5aa1400d8004727.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2144",
-                    "Title": "Types",
-                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, tabs (coming soon) should be used for this specific purpose. Read more about it at our Navigation Pattern (coming soon)\n\n##### Collapsible\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1017",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2349",
-                        "label": "Expanded & Collapsed example",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ee46a1b3e8c0418fa97a9a72b80942df.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2145",
-                    "Title": "Anatomy",
-                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1018",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2350",
-                        "label": null,
-                        "caption": "A. Header links\nB. Icons",
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ae84d63ed8084be699a3d47f7b04ae30.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2146",
-                    "Title": "Behaviour",
-                    "Text": "##### Interaction\nThe side menu has different states, such as hover and press. Visit the [style tab](components/sidemenu/style) for full detailed specifications for all of the states.\n\n\n##### Sub-menu expand/collapse\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1019",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2351",
-                        "label": "Sub-menu item collapsed",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/45bf0b760aea45fd9674fe393f3d8d49.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2352",
-                        "label": "Sub-menu item expanded",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d7f5b1b7ef3b4d6988092e8f503da93e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2841",
-                        "label": "Collapsed: Pop-over appears at hover of sub-menu item",
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_feac7ae447.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2147",
-                    "Title": null,
-                    "Text": "##### Responsive\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1020",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2353",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60dce05f5a43492d8e2693795d04bf36.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2148",
-                    "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for side menu.\n\n##### Usage\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1021",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79ccdb071bd846a18803741d51b42313.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with more than 3 sections",
-                        "id": "252"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f2ba25c746034f8d99ff1a3d3c8843a6.png"
-                        },
-                        "size": "Large",
-                        "description": "Use the side menu for applications with 3 or less sections",
-                        "id": "253"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2149",
-                    "Title": "Related",
-                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1022",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "282",
-                        "title": "Component",
-                        "description": "Header",
-                        "info": null,
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5cc4c08d88f84baf8048dcd70998a02c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/header"
-                      },
-                      {
-                        "id": "284",
-                        "title": "Component",
-                        "description": "Breadcrumbs",
-                        "info": null,
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79576fbba4174a01b5082c432c6db65c.png"
-                        },
-                        "detail": null,
-                        "type": "linkInternal",
-                        "url": "components/breadcrumbs"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  }
-                ],
-                "updated_at": "2021-06-14T14:53:39.882Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "294",
-          "title": "Style",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "317",
-                "title": "Components Side Menu Style",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2267",
-                    "Title": "Colour",
-                    "Text": "##### Side menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Side menu items",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1072",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2485",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6def8d9c3693487a85bcd89331464317.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2270",
-                    "Title": null,
-                    "Text": "##### Side menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1073",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2486",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bbebd980d1e64598891037d96dd44fca.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2487",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79fffdaaf3dc49da8c66b1c37ba01d59.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2488",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d48e64a2df1e4623baca59fa9f7b9e26.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2489",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7469aef123514ca598ae45d8920b9ec3.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2490",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1ca3a1c81304c35a30b720d21d6acfe.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2491",
-                        "label": "Expanded",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d7578adc58e489a8af511f1e241b6db.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1108",
-                    "Title": "",
-                    "Images": [
-                      {
-                        "id": "2714",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/550149be1adb4750955002b73554559a.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2715",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2716",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2717",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5636831f472c4c7893f82e4feafe3ab8.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2718",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9a5834650e414b43be62bfa834e98111.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [
-                      {
-                        "textfield": "##### Side menu items - Collapsed\nThe collapsed side menu has the same colour and styling for the different states as the expanded variant.",
-                        "Introduction": null,
-                        "id": "387"
-                      }
-                    ],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2272",
-                    "Title": null,
-                    "Text": "##### Sub-menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1074",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2492",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8effc57447844282b1dd3793f8ea9b37.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2493",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9f7df665a3604e7fbaf95eb984e65766.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2494",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2b9d051a1aa94bc5b89c4130fca99c76.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2495",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d1b04ec44fd4616a443f4330e81f0d2.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2496",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/08dac59b2b79446685c5399effca5e85.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1148",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2842",
-                        "label": "Default",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_99aca44d4e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2843",
-                        "label": "Hover",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_091aa66412.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2844",
-                        "label": "Focused",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_71e54bd3ba.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2845",
-                        "label": "Pressed",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_0401a8ec43.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2846",
-                        "label": "Selected",
-                        "caption": null,
-                        "size": "Small",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2ddba1afc1.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [
-                      {
-                        "textfield": "##### Popover items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n</tbody>\n</table>",
-                        "Introduction": null,
-                        "id": "396"
-                      }
-                    ],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2274",
-                    "Title": null,
-                    "Text": "##### Mobile overlay\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1075",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2497",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2275",
-                    "Title": "Sizing",
-                    "Text": "##### Side menu - Expanded\nThe width of the expanded side menus container is fixed until it reaches smaller viewports. The height of the expanded side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1076",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2498",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9de12a97ad424d47bbcd7e9693aacd55.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2280",
-                    "Title": null,
-                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2330",
-                    "Title": null,
-                    "Text": "##### Side menu - Collapsed\nThe width of the collapsed side menus container is fixed until it reaches smaller viewports. The height of the collapsed side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>68 / 17</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>68 / 17</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2622",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b45c0ac1b59e4fbcb332f5e211af9dfd.png"
-                        }
-                      ]
-                    },
-                    "id": "323"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2277",
-                    "Title": null,
-                    "Text": "##### Side menu on smaller breakpoints\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.\n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1077",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2499",
-                        "label": null,
-                        "caption": null,
-                        "size": "Xlarge",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bc1fee8df5104ae5b4a66f2869da3070.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1078",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2500",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2501",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b503de9f50b460493ca12ee91c3f509.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2623",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/512f3cc466fc49dc8bd971d88cab207d.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2282",
-                    "Title": null,
-                    "Text": "##### Sub menu items\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1079",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2502",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bd49da3168744e88b123d6fcf1dee86b.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2503",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/70530996a1884168937949fe4d20aa02.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2283",
-                    "Title": "Typography",
-                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. The typography remains the same on all breakpoints.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-06-14T15:09:38.013Z"
-              }
-            }
-          ]
-        },
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "301",
-          "title": "Code",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "202",
-                "title": "Coming Q2",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
-                    "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
-                  }
-                ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "4",
-        "url": "components",
-        "displayLink": null,
-        "title": "Components",
         "thumbnail": null
       },
       "submenus": []
@@ -22328,7 +21719,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/aee64ec29a5544b29f41964c32c4eea8.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/head_fe7834fc02.png"
                         }
                       ]
                     },
@@ -22407,7 +21798,7 @@
                     "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-03-22T15:58:46.249Z"
+                "updated_at": "2021-07-06T09:39:18.048Z"
               }
             }
           ]
@@ -23519,7 +22910,7 @@
                     "Title": null,
                     "Text": null,
                     "LeadText": {
-                      "textfield": "Cookies enable users to give their consent to different cookie types that a site uses to collect data about the users’ behaviour.",
+                      "textfield": "Enables users to give their consent to different cookie types that a site uses to collect data about them.",
                       "Introduction": true,
                       "id": "402"
                     }
@@ -23528,14 +22919,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2532",
                     "Title": "Usage",
-                    "Text": "The cookie consent pattern can be used to provide site visitors with a way to manage how  data about them can be collected through using the site. It provides information about the different types of cookies that the site uses and gives users the option to disable cookies which they aren’t willing to accept.",
+                    "Text": "The cookie consent pattern can be used to provide users with a way to manage how data about them can be collected throughout using the website. It provides information about the different types of cookies that the website uses, as well as the reasoning behind them, and gives users the option to disable whichever of them they aren’t willing to accept.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2533",
                     "Title": "Cookie banner anatomy",
-                    "Text": "The container is used to separate the cookie banner from the page it is on. The cookie has two different text elements. \n\nThe header text is the title of the cookie, which should capsulate the card content. The second text element, supporting text, is used for more descriptive summary text. There are two buttons within the banner; one primary and one secondary. This is to make it possible for the user to make changes, but easily proceed with the primary button which is highlighted with the CTA color.",
+                    "Text": "A container is used to separate the cookie banner from the page it lives on. The cookie banner has two different text elements. \n\nThe header text is the title of the cookie, which should reflect the card content. The second text element, supporting text, is used for a more descriptive summary text.\n\nThere are two buttons within the banner; one primary and one secondary. This is to make it possible for the user to make changes, but at the same time quickly direct their attention to the button that accepts cookies, which is the most commonly pressed by users.",
                     "LeadText": null
                   },
                   {
@@ -23561,14 +22952,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2534",
                     "Title": "Placement",
-                    "Text": "The cookie is placed on the bottom of the page so it doesn’t get placed over the header. The placement is the same both on desktop and on mobile.\n\nOrientation of cards can be vertical or horizontal depending on the requirement of the content for the specific card.",
+                    "Text": "The cookie banner is placed on the bottom of the page so it doesn’t get placed over the header. The placement is the same both on desktop and on mobile.\n\nOrientation of cards can be vertical or horizontal depending on the context of use.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2535",
                     "Title": null,
-                    "Text": "##### Desktop\nContent could differ depending on the needs.  But the ambition is to keep the cookie as small as possible. Here are the buttons placed on the right side in the cookie, easily to be navigated and still visible. ",
+                    "Text": "##### Desktop\nContent could differ depending on the needs. But the ambition is to try and keep the cookie banner as concise as possible. In this example, buttons are placed on the right side of the cookie banner, easily reachable and visible.",
                     "LeadText": null
                   },
                   {
@@ -23620,7 +23011,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2537",
                     "Title": "Cookie Modal anatomy",
-                    "Text": "When clicking the “make changes” button a new modal will be activated. On desktop an overlay will be placed over the site and the modal will be placed on top of it. The modal will be centered on desktop. In mobile, there's no need for overlay because the modal will expand all over the screen. The modal is based on the anatomy of the accordion, although a little bit more complex. The cookie modal uses toggles and has the ability of scrolling within it.",
+                    "Text": "When clicking on “Make changes” button, a new modal is activated.\nOn desktop, an overlay will be placed over the site and the cookie modal is placed on top of it. The modal will be centered on desktop.\nIn mobile, there's no need for overlay because the modal will expand all over the screen.\nThe modal is based on the anatomy of the accordion, with some small modifications. It uses toggles and gives users the possibility to scroll within it.",
                     "LeadText": null
                   },
                   {
@@ -23636,7 +23027,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_cc3c2a404a.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1903_228e4f33ba.png"
                         }
                       ]
                     },
@@ -23646,14 +23037,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2538",
                     "Title": "Examples",
-                    "Text": "Here are some examples of the modal in use and different modes are activated.\nFirst showing desktop changes, then the same changes in mobile view.",
+                    "Text": "Here are some examples of the modal in use, when different modes are activated.",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2539",
                     "Title": null,
-                    "Text": "##### Desktop\nThis is what you first see when activating the modal in desktop.\nNotice the overlay behind the modal is also activated.",
+                    "Text": "##### Desktop\nThis is the first view when the cookie modal is triggered in desktop.\nNotice the overlay behind the modal.",
                     "LeadText": null
                   },
                   {
@@ -23669,7 +23060,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5_2696f4142c.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_98_c96a98c1ef.png"
                         }
                       ]
                     },
@@ -23695,7 +23086,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6_556d62e2a9.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1892_7a78e0be1a.png"
                         }
                       ]
                     },
@@ -23721,7 +23112,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7_93714e2645.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Frame_100_f3974d8450.png"
                         }
                       ]
                     },
@@ -23731,7 +23122,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2542",
                     "Title": null,
-                    "Text": "##### Mobile\nAt smaller breakpoints, all elements are stacked and have bigger spacing so the text fields can be opened the settings can easily be changed with the toggles.",
+                    "Text": "##### Mobile\nAt smaller breakpoints, elements are stacked and use extra spacing for better usability.",
                     "LeadText": null
                   },
                   {
@@ -23747,7 +23138,7 @@
                       "alternate": null,
                       "image": [
                         {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8_1958a94456.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_1891_5afffdb53a.png"
                         }
                       ]
                     },
@@ -23757,7 +23148,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2543",
                     "Title": "Do’s and Dont’s",
-                    "Text": "Below you will find some best practice solutions for the cookie and its modal.",
+                    "Text": "Below you will find some best practice solutions for the cookie banner and its modal.",
                     "LeadText": null
                   },
                   {
@@ -23767,7 +23158,7 @@
                     "Images": [],
                     "texts": [
                       {
-                        "textfield": "##### Prioritze content\nWhen the user wants to make changes in the modal it’s important it from the background, this is easily made with an overlay so the modal is placed as the top layer of the page. ",
+                        "textfield": "##### Prioritze content\nWhen a user wants to make changes in their cookie settings, it is important to place the cookie modal higher in the visual hierarchy, by using an overlay to get all attention on it.",
                         "Introduction": null,
                         "id": "403"
                       }
@@ -23777,7 +23168,7 @@
                       {
                         "type": "Do",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9_c09d96689e.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/do1_a1605282a4.png"
                         },
                         "size": "Large",
                         "description": "Use the black overlay when the modal is open.",
@@ -23786,7 +23177,7 @@
                       {
                         "type": "Dont",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/10_f7d6930342.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/do2_8c7d66876f.png"
                         },
                         "size": "Large",
                         "description": "Place the modal directly on the background without the overlay.",
@@ -23795,7 +23186,7 @@
                     ]
                   }
                 ],
-                "updated_at": "2021-06-29T14:12:28.327Z"
+                "updated_at": "2021-07-01T10:51:54.431Z"
               }
             }
           ]
@@ -24828,7 +24219,7 @@
                       {
                         "type": "Dont",
                         "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2_54abeb9ebd.png"
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dont_a58cdf71a4.png"
                         },
                         "size": "Medium",
                         "description": "Use icons as a substitute for pictograms, that is not their purpose",
@@ -24893,7 +24284,7 @@
                         "image": null,
                         "detail": null,
                         "type": "download",
-                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icon_kit.fig"
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.3/figma/icons/sdds_icon_kit.fig"
                       },
                       {
                         "id": "305",
@@ -24926,7 +24317,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-06-30T07:52:08.178Z"
+                "updated_at": "2021-07-01T06:19:40.008Z"
               }
             }
           ]
@@ -24937,6 +24328,936 @@
         "url": "foundations",
         "displayLink": null,
         "title": "Foundations",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
+      "id": "180",
+      "url": "sidemenu",
+      "displayLink": null,
+      "title": "Side menu",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "293",
+          "title": "Usage",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "316",
+                "title": "Components Side Menu Usage",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2142",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "The side menu is one of our navigation components, that should be paired with the header when being used.",
+                      "Introduction": null,
+                      "id": "368"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2143",
+                    "Title": "Usage",
+                    "Text": "The side menu should always be paired with the [functional header](components/header), when it is used for applications with a large page structure, like more than 3 sections. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1016",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2348",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3e3f3c80a4a7497eb5aa1400d8004727.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2144",
+                    "Title": "Types",
+                    "Text": "The side menu is available in two types; non-collapsible and collapsible. The only thing that differs between the types is that they are either possible to collapse or not possible to collapse. The collapsible option has mandatory icons whereas the non-collapsible option does not require any icons. Our default side menu is the non-collapsible one.\n\nAll the page links for the application’s navigation are positioned in the side menu. It contains the page links which could be both sub-menus and page links. \n\nThe side menu does not include any third level navigation. If needed, tabs (coming soon) should be used for this specific purpose. Read more about it at our Navigation Pattern (coming soon)\n\n##### Collapsible\nFor applications where users could benefit from more content width, the side menu is available as a collapsed version as well. The user can easily toggle between the expanded and collapsed state by pressing the expand/collapse link in the bottom of the side menu.\n\nNote, this option requires that icons are positioned on the left side of the sub-menu and page links, since only the icons are visible in the collapsed view.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1017",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2349",
+                        "label": "Expanded & Collapsed example",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ee46a1b3e8c0418fa97a9a72b80942df.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2145",
+                    "Title": "Anatomy",
+                    "Text": "The side menu is always fixed-positioned on the left side of the application, below the header. It contains the inline menu, which could be both sub-menus and page links.\n\nThe links should be supported by icons if the side menu is collapsible. The icons should be a representation of the link name. \n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1018",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2350",
+                        "label": null,
+                        "caption": "A. Header links\nB. Icons",
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/ae84d63ed8084be699a3d47f7b04ae30.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2146",
+                    "Title": "Behaviour",
+                    "Text": "##### Interaction\nThe side menu has different states, such as hover and press. Visit the [style tab](components/sidemenu/style) for full detailed specifications for all of the states.\n\n\n##### Sub-menu expand/collapse\nThe sub-menu expands when clicked, pushing the rest of the links downwards. It can be collapsed by pressing the sub-menu again. The expanded sub-menu reveals the sub page links.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1019",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2351",
+                        "label": "Sub-menu item collapsed",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/45bf0b760aea45fd9674fe393f3d8d49.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2352",
+                        "label": "Sub-menu item expanded",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d7f5b1b7ef3b4d6988092e8f503da93e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2841",
+                        "label": "Collapsed: Pop-over appears at hover of sub-menu item",
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_feac7ae447.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2147",
+                    "Title": null,
+                    "Text": "##### Responsive\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu. The expanded side menu is placed above the rest of the application.\n\nThe menu is always present on the left side of the header in these viewports.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1020",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2353",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/60dce05f5a43492d8e2693795d04bf36.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2148",
+                    "Title": "Do’s and Dont’s",
+                    "Text": "Below you will find some best practice solutions for side menu.\n\n##### Usage\nWhen your application have more than 3 sections, you should use the side menu paired with header. ",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1021",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79ccdb071bd846a18803741d51b42313.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with more than 3 sections",
+                        "id": "252"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/f2ba25c746034f8d99ff1a3d3c8843a6.png"
+                        },
+                        "size": "Large",
+                        "description": "Use the side menu for applications with 3 or less sections",
+                        "id": "253"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2149",
+                    "Title": "Related",
+                    "Text": "##### Components\nThe following components are also used for navigation inside our applications.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1022",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "282",
+                        "title": "Component",
+                        "description": "Header",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/header"
+                      },
+                      {
+                        "id": "284",
+                        "title": "Component",
+                        "description": "Breadcrumbs",
+                        "info": null,
+                        "image": null,
+                        "detail": null,
+                        "type": "linkInternal",
+                        "url": "components/breadcrumbs"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  }
+                ],
+                "updated_at": "2021-07-05T09:07:26.423Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "294",
+          "title": "Style",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "317",
+                "title": "Components Side Menu Style",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2267",
+                    "Title": "Colour",
+                    "Text": "##### Side menu\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$white</td> \n  </tr>\n  <tr>\n    <td>Icons</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td>Dividers</td>\n    <td>$grey-100</td>\n  </tr>\n</tbody>\n</table>\n\n\n##### Side menu items",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1072",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2485",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/6def8d9c3693487a85bcd89331464317.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2270",
+                    "Title": null,
+                    "Text": "##### Side menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-900</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Expanded</td>\n    <td>$grey-900</td>\n     <td>$white</td>\n     <td>$grey-900</td>\n     <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1073",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2486",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bbebd980d1e64598891037d96dd44fca.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2487",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/79fffdaaf3dc49da8c66b1c37ba01d59.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2488",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/d48e64a2df1e4623baca59fa9f7b9e26.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2489",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/7469aef123514ca598ae45d8920b9ec3.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2490",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/e1ca3a1c81304c35a30b720d21d6acfe.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2491",
+                        "label": "Expanded",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d7578adc58e489a8af511f1e241b6db.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1108",
+                    "Title": "",
+                    "Images": [
+                      {
+                        "id": "2714",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/550149be1adb4750955002b73554559a.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2715",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2716",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5d9cac828b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2717",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5636831f472c4c7893f82e4feafe3ab8.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2718",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9a5834650e414b43be62bfa834e98111.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Side menu items - Collapsed\nThe collapsed side menu has the same colour and styling for the different states as the expanded variant.",
+                        "Introduction": null,
+                        "id": "387"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2272",
+                    "Title": null,
+                    "Text": "##### Sub-menu items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td> \n    <td>$white</td>\n     <td>$grey-600</td>\n     <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n<tr>\n    <td>Pressed</td>  \n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n<tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n     <td>$blue-50</td>\n     <td>$grey-900</td>\n     <td>$blue-500</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1074",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2492",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8effc57447844282b1dd3793f8ea9b37.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2493",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9f7df665a3604e7fbaf95eb984e65766.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2494",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/2b9d051a1aa94bc5b89c4130fca99c76.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2495",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/5d1b04ec44fd4616a443f4330e81f0d2.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2496",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/08dac59b2b79446685c5399effca5e85.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1148",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2842",
+                        "label": "Default",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_99aca44d4e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2843",
+                        "label": "Hover",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_091aa66412.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2844",
+                        "label": "Focused",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_71e54bd3ba.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2845",
+                        "label": "Pressed",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_0401a8ec43.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2846",
+                        "label": "Selected",
+                        "caption": null,
+                        "size": "Small",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2ddba1afc1.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [
+                      {
+                        "textfield": "##### Popover items\n\n<table>\n<thead>\n  <tr>\n    <th>State</th>\n    <th>Icon</th>\n    <th>Container</th>\n    <th>Text</th>\n    <th>Left-border</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Default</td>\n    <td>$grey-900</td>\n    <td>$white</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Hover</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Focused</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>$blue-500</td>\n  </tr>\n  <tr>\n    <td>Pressed</td>\n    <td>$grey-900</td>\n    <td>$blue-100</td>\n    <td>$grey-600</td>\n    <td>transparent</td>\n  </tr>\n  <tr>\n    <td>Selected</td>\n    <td>$grey-900</td>\n    <td>$blue-50</td>\n    <td>$grey-900</td>\n    <td>-</td>\n  </tr>\n</tbody>\n</table>",
+                        "Introduction": null,
+                        "id": "396"
+                      }
+                    ],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2274",
+                    "Title": null,
+                    "Text": "##### Mobile overlay\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Colour</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>$black 40%</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1075",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2497",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b79a4d964ab4cbfb7f423ee91e5dc29.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2275",
+                    "Title": "Sizing",
+                    "Text": "##### Side menu - Expanded\nThe width of the expanded side menus container is fixed until it reaches smaller viewports. The height of the expanded side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>256 / 64</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>256 / 64</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>256 / 64</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1076",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2498",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/9de12a97ad424d47bbcd7e9693aacd55.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2280",
+                    "Title": null,
+                    "Text": "##### Side menu items\nThe width of the sub menu items varies, since its dependant on the breakpoint width. On $xxlarge to $large it is 256px, and on smaller it follows the grid columns, as stated in the previous section above.\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>Prefix icon</td>\n    <td>20 / 5</td> \n    <td>20 / 5</td> \n  </tr>\n    <tr>\n    <td>Suffix icon</td>\n    <td>16 / 4</td> \n    <td>16 / 4</td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2330",
+                    "Title": null,
+                    "Text": "##### Side menu - Collapsed\nThe width of the collapsed side menus container is fixed until it reaches smaller viewports. The height of the collapsed side menu should fill the entire browser window height. \n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Width px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$xxlarge</td>\n    <td>68 / 17</td> \n  </tr>\n  <tr>\n    <td>$xlarge</td>\n    <td>68 / 17</td> \n  </tr>\n    <tr>\n    <td>$large</td>\n    <td>68 / 17</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2622",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/b45c0ac1b59e4fbcb332f5e211af9dfd.png"
+                        }
+                      ]
+                    },
+                    "id": "323"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2277",
+                    "Title": null,
+                    "Text": "##### Side menu on smaller breakpoints\n\nOn smaller breakpoints, starting from $medium, the left navigation collapses into a menu drawer, which on click expands and reveals the side menu.\n\nWhen expanded, it should always fill the entire browser window height.\n\nThe width of the side menu’s container follows our grid system’s columns, and the amount of columns depends on the viewport width. The height of the side menu should fill the entire browser window height.\n\n<table>\n<thead>\n  <tr>\n    <th>Viewport</th>\n    <th>Columns</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>$small-320</td>\n    <td>4 / 4</td> \n  </tr>\n  <tr>\n    <td>$small-375</td>\n    <td>3 / 4</td> \n  </tr>\n    <tr>\n    <td>$medium-672</td>\n    <td>6 / 8</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1077",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2499",
+                        "label": null,
+                        "caption": null,
+                        "size": "Xlarge",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bc1fee8df5104ae5b4a66f2869da3070.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1078",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2500",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/8e7cfbca47c24c1cb591eb5e9c1763bf.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2501",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3b503de9f50b460493ca12ee91c3f509.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2623",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/512f3cc466fc49dc8bd971d88cab207d.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2282",
+                    "Title": null,
+                    "Text": "##### Sub menu items\n\n<table>\n<thead>\n  <tr>\n    <th>Element</th>\n    <th>Width px/rem</th>\n    <th>Height px/rem</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Container</td>\n    <td>Width varies</td> \n     <td>48 / 12</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1079",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2502",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/bd49da3168744e88b123d6fcf1dee86b.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2503",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/70530996a1884168937949fe4d20aa02.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2283",
+                    "Title": "Typography",
+                    "Text": "Side menu links and sub menu links starts with the first letter set in upper case, and the remaining letters in lower case. The typography remains the same on all breakpoints.\n\n<table>\n<thead>\n  <tr>\n    <th>Text</th>\n    <th>Text style</th>\n    <th>State</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>Sub menu link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Page link</td>\n    <td>$headline-07</td> \n     <td>All states</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$detail-02</td> \n     <td>All states except selected</td> \n  </tr>\n    <tr>\n    <td>Sub page link</td>\n    <td>$headline-07</td> \n     <td>Selected</td> \n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-06-14T15:09:38.013Z"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "301",
+          "title": "Code",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "202",
+                "title": "Coming Q2",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "696",
+                    "Title": null,
+                    "Text": "",
+                    "LeadText": {
+                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
+                      "Introduction": true,
+                      "id": "183"
+                    }
+                  }
+                ],
+                "updated_at": "2021-03-22T17:07:50.023Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "4",
+        "url": "components",
+        "displayLink": null,
+        "title": "Components",
         "thumbnail": null
       },
       "submenus": []
