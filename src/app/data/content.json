@@ -509,7 +509,7 @@
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2568",
-                    "Title": "Container fluid and normal & Rows",
+                    "Title": "Container & Rows",
                     "Text": "You need to surround the content with a container, that will either set a max-width or have a fluid option the follow the column spacing. You need to use ```.sdds-row`` to wrap columns \n\n```\n<div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n       //Max-width container\n    </div>\n</div>\n\n  <div class=\"sdds-container-fluid\">\n    <div class=\"sdds-row\">\n      //Fluid container\n    </div>\n  </div>\n\n\n```\n",
                     "LeadText": null
                   },
@@ -568,7 +568,7 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "2587",
                     "Title": "no padding",
-                    "Text": "**No padding**\n\nIf you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-no-padding sdds-col-max- sdds-col-xxlg-12\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\nYou can also set the class on a parent to apply it to all columns below\n\n`<div class=\"sdds-container 'sdds-no-padding\">`",
+                    "Text": "If you want to use no padding grid system you can apply following classes: \n\n```\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-no-padding sdds-col-max- sdds-col-xxlg-12\">\n        <div class=\"outside\">\n          <span class=\"inside\">1</span>\n        </div>\n      </div>\n    </div>\n  </div>\n```\n\nYou can also set the class on a parent to apply it to all columns below\n\n`<div class=\"sdds-container 'sdds-no-padding\">`",
                     "LeadText": null
                   },
                   {
@@ -593,7 +593,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-07-13T08:23:50.619Z"
+                "updated_at": "2021-07-13T09:11:59.875Z"
               }
             }
           ]
