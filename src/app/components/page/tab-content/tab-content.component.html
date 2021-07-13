@@ -44,7 +44,7 @@
 
         <!-- One column -->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
-          <div class="sdds-tab-component sdds-one-col-plugin sdds-col-max-7 sdds-col-xxlg-8 sdds-col-xlg-9 sdds-col-lg-12 sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12"
+          <div class="sdds-tab-component sdds-one-col-plugin sdds-col-max-8 sdds-col-xxlg-8 sdds-col-xlg-9 sdds-col-lg-12 sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12"
           [ngClass]="((section.LeadText ? 'lead-text-section ' : '') + (typographyPage && section.Text && section.Text.indexOf('\<table') >= 0 ? 'sdds-col-max-7 sdds-col-xxlg-8 sdds-col-xlg-8':'sdds-col-max-7 sdds-col-xxlg-9 sdds-col-xlg-8'))"
           >
             <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [attr.id]='section.Title | generateTabUrl' class="section-title"></h4>
