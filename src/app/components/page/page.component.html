@@ -3,7 +3,7 @@
 <!-- <h1 class='page-title'>{{content.title}}</h1> -->
 <div *ngIf="content.url !== 'home'" class="nav sdds-container-push-fluid">
   <div class="sdds-row">
-    <ul id='page-tabs' class='no-padding sdds-col-xlg-16 sdds-col-md-8 sdds-col-sm-4' role='tablist' *ngIf='content.showTabs'>
+    <ul id='page-tabs' class='sdds-page-component sdds-col-max-12 sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12' role='tablist' *ngIf='content.showTabs'>
       <li class='nav-item' *ngFor='let pagePart of content.pageStructure; let index = index'>
         <a [ngClass]='("nav-link sdds-headline-06 " + (index === 0 && tabActive ? "active" : "") +(pagePart.active ? "" : "disabled"))'
           data-toggle='tab' routerLinkActive="active"
@@ -29,8 +29,8 @@
 
           <!-- One column -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOneColumn'">
-            <div class="no-padding sdds-one-col-plugin sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4"
-            [ngClass]="((section.LeadText ? 'lead-text-section ' : '') + (typographyPage && section.Text && section.Text.indexOf('\<table') >= 0 ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-16':'sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6'))"
+            <div class="sdds-page-component sdds-one-col-plugin sdds-col-max-9 sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12"
+            [ngClass]="((section.LeadText ? 'lead-text-section ' : '') + (typographyPage && section.Text && section.Text.indexOf('\<table') >= 0 ? 'sdds-col-max- sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-12':'sdds-col-max- sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6'))"
             >
               <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [attr.id]='section.Title | generateTabUrl' class="section-title"></h4>
               <div *ngIf='section.LeadText' class="lead-text sdds-paragraph-01">{{section.LeadText.textfield}}</div>
@@ -41,10 +41,10 @@
 
           <!-- Template for Overview page -->
           <ng-template [ngIf]="section.__typename === 'ComponentContentPluginOverviewList'">
-            <div class="sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-4">
+            <div class="sdds-page-component sdds-col-xlg-9 sdds-col-lg-8 sdds-col-sm-12">
               <p class="lead" [innerHTML]='section.description | markdown | keepHtml'></p>
             </div>
-            <section style="margin-top: 12.5rem;" class="sdds-col-xlg-16">
+            <section style="margin-top: 12.5rem;" class="sdds-col-xlg-12">
               <h1 style="margin-bottom: 8rem;">Overview</h1>
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-xl-3 col-sm-12 col-xs-12 mb-5 d-flex" *ngFor="let sub of content.submenus | sortASC; index as i;">
@@ -62,14 +62,14 @@
 
           <!-- Multiple columns-->
         <ng-template [ngIf]="section.__typename === 'ComponentContentPluginTwoColumnsImages'">
-          <div class="no-padding sdds-multi-col-plugin sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4">
+          <div class="sdds-page-component sdds-multi-col-plugin sdds-col-max-9 sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-12 sdds-col-sm-12">
             <h4 *ngIf='section.Title' [innerHTML]='section.Title | markdown | keepHtml' [id]='section.Title | generateTabUrl'></h4>
           </div>
 
             <!-- If texts -->
             <ng-container *ngIf="section.texts">
               <ng-container *ngFor="let text of section.texts">
-                <div class="no-padding sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-8 sdds-col-sm-4">
+                <div class="sdds-page-component sdds-col-max- sdds-col-xxlg-9 sdds-col-xlg-11 sdds-col-lg-6 sdds-col-md-12 sdds-col-sm-12">
                   <div *ngIf='text.Introduction' class="lead-text sdds-paragraph-01">{{text.textfield}}</div>
                   <div *ngIf='!text.Introduction' [innerHTML]='text.textfield | markdown | keepHtml'></div>
                 </div>
@@ -81,7 +81,7 @@
             <!-- If images -->
             <ng-container *ngIf="section.Images">
               <ng-container *ngFor="let image of section.Images; let index=index">
-                <div [ngClass]="('no-padding sdds-images sdds-col-sm-4 ' + (image.size=='Small' ? 'sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (image.size=='ExtraMedium' ? 'sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Medium' ? 'sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'')  + (image.size=='Large' ? 'sdds-col-xxlg-12 sdds-col-xlg-12 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-col-xxlg-15 sdds-col-xlg-15 sdds-col-lg-8 sdds-col-md-8':''))">
+                <div [ngClass]="('sdds-page-component sdds-images sdds-col-sm-12 sdds-col-xs-12 ' + (image.size=='Small' ? 'sdds-sm-image sdds-col-max-4 sdds-col-xxlg-4 sdds-col-xlg-4 sdds-col-lg-4 sdds-col-md-4 ':'') + (image.size=='ExtraMedium' ? 'sdds-extramd-image sdds-col-max-6 sdds-col-xxlg-6 sdds-col-xlg-6 sdds-col-xlg-6 sdds-col-lg-8 sdds-col-md-12':'') + (image.size=='Medium' ? 'sdds-md-image sdds-col-max-6 sdds-col-xxlg-5 sdds-col-xlg-6 sdds-col-lg-4 sdds-col-md-4':'')  + (image.size=='Large' ? 'sdds-lg-image sdds-col-max-8 sdds-col-xxlg-8 sdds-col-xlg-8 sdds-col-lg-8 sdds-col-md-8':'') + (image.size=='Xlarge' ? 'sdds-xlg-image sdds-col-max-10 sdds-col-xxlg-10 sdds-col-xlg-10 sdds-col-lg-10 sdds-col-md-10':''))">
                   <figure>
                     <img *ngIf='image.image[0].url' [ngClass]="{'negative' : image.negative }" [src]="image.image[0].url" alt='{{image.alternate}}'/>
                     <figcaption *ngIf='image.label' class="sdds-detail-02" >
@@ -106,7 +106,7 @@
           <ng-container *ngIf="section.linkCards">
             <sdds-card-site *ngFor="let card of section.linkCards"
             [card]="card"
-            class="no-padding sdds-col-sm-4 sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-5">
+            class="sdds-page-component sdds-col-sm-12 sdds-col-md-6 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4 sdds-col-max-4">
             </sdds-card-site>
           </ng-container>
 
@@ -115,7 +115,7 @@
           <!-- If Dos and Donts -->
           <ng-container *ngIf="section.dosAndDonts">
             <div *ngFor="let item of section.dosAndDonts"
-            [ngClass]="('no-padding sdds-col-sm-4 ' + (item.size === 'Small' || item.size === null ? 'sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-xxlg-4' : '') + (item.size === 'Medium' ? 'sdds-col-md-8 sdds-col-lg-8 sdds-col-xlg-8 sdds-col-xxlg-8' : '') + (item.size === 'Large' ? 'sdds-col-md-8 sdds-col-lg-12 sdds-col-xlg-12 sdds-col-xxlg-12' : '') + '')">
+            [ngClass]="('sdds-page-component sdds-do-donts sdds-col-sm-12 ' + (item.size === 'Small' || item.size === null ? 'sdds-col-md-4 sdds-col-lg-4 sdds-col-xlg-4 sdds-col-max- sdds-col-xxlg-4' : '') + (item.size === 'Medium' ? 'sdds-col-md-12 sdds-col-lg-8 sdds-col-xlg-6 sdds-col-xlg-6' : '') + (item.size === 'Large' ? 'sdds-col-md-12 sdds-col-lg-12 sdds-col-xlg-12 sdds-col-max- sdds-col-xxlg-12' : '') + '')">
               <div [ngClass]="('do-dont '+(item.type))">
                 <img [src]="item.image.url"/>
                 <span class="check-mark"></span>
