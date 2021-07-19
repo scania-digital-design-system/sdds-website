@@ -76,6 +76,10 @@
       max-width: 100%;
     }
 
+    table img {
+      max-width: none;
+    }
+
     .sdds-button-primary{
       padding: var(--sdds-spacing-element-20);
       background-color: var(--sdds-blue-700);
