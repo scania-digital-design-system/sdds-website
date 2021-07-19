@@ -3218,14 +3218,14 @@
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "570",
                     "Title": "Semantic colors",
-                    "Text": "Our extended colour scales are meant to be used to visualised different states.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n    <th>Usage</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_3a1c0cea6c.png\"></td>\n    <td>Negative</td>\n    <td>#FF2340</td>\n    <td>(255, 35, 64, 1)</td>\n    <td>$semantic-red</td>\n    <td>Error and danger message</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1014eaa528.png\"></td>\n    <td>Warning</td>\n    <td>#F1C21B</td>\n    <td>(241,194,27,1)</td>\n    <td>$semantic-yellow</td>\n    <td>Warning messages</td>\n  </tr>\n  <tr>\n    <td><img src=\"dw1u92ia6bs84.cloudfront.net/Images/8fb046b8ac474920abe36225675f01d9.png\"></td>\n    <td>Positive</td>\n    <td>#1DAB8B</td>\n    <td>(29,171,139,1)</td>\n    <td>$semantic-green</td>\n    <td>For success messages, when an action has been completed successfully.</br></br>For showing an active state, when an operation or process is running as intended.</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_85189c98ca.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$semantic-blue</td>\n    <td>Informative message</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "Our extended colour scales are meant to be used to visualised different states.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n    <th>Usage</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_3a1c0cea6c.png\"></td>\n    <td>Negative</td>\n    <td>#FF2340</td>\n    <td>(255, 35, 64, 1)</td>\n    <td>$semantic-red</td>\n    <td>Error and danger message</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1014eaa528.png\"></td>\n    <td>Warning</td>\n    <td>#F1C21B</td>\n    <td>(241,194,27,1)</td>\n    <td>$semantic-yellow</td>\n    <td>Warning messages</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_3cf120211a.png\"></td>\n    <td>Positive</td>\n    <td>#1DAB8B</td>\n    <td>(29,171,139,1)</td>\n    <td>$semantic-green</td>\n    <td>For success messages, when an action has been completed successfully.</br></br>For showing an active state, when an operation or process is running as intended.</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_85189c98ca.png\"></td>\n    <td>Information</td>\n    <td>#2B70D3</td>\n    <td>(43,112,211,1)</td>\n    <td>$semantic-blue</td>\n    <td>Informative message</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
                     "__typename": "ComponentContentPluginOneColumn",
                     "id": "571",
                     "Title": "Background colours",
-                    "Text": "Our grey scale is used to define theming background colours, as well as some graphic element such as dividers.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_13_17ff8f006b.png\"></td>\n    <td>Grey 958</td>\n    <td>#0D0F13</td>\n    <td>(13,15,19,1)</td>\n    <td>$grey-958</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_12_568183c8ba.png\"></td>\n    <td>Grey 900</td>\n    <td>#1D2229</td>\n    <td>(29,34,41,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_11_996b76ab6f.png\"></td>\n    <td>Grey 868</td>\n    <td>#242A33</td>\n    <td>(36,42,51,1)</td>\n    <td>$grey-868</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_10_4f6d3bc441.png\"></td>\n    <td>Grey 846</td>\n    <td>#2B323D</td>\n    <td>(43,50,61,1)</td>\n    <td>$grey-846</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_9_e6988b2d05.png\"></td>\n    <td>Grey 800</td>\n    <td>#37414F</td>\n    <td>(55,65,79,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_8_6341c89387.png\"></td>\n    <td>Grey 700</td>\n    <td>#56657A</td>\n    <td>(86,101,122,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_67ba4afcfd.png\"></td>\n    <td>Grey 600</td>\n    <td>#868FA2</td>\n    <td>(134,143,162,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_9f977a2b95.png\"></td>\n    <td>Grey 500</td>\n    <td>#B0B7C4</td>\n    <td>(176,183,196,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_48b248849c.png\"></td>\n    <td>Grey 400</td>\n    <td>#CDD1DB</td>\n    <td>(205,209,219,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_ac3392686d.png\"></td>\n    <td>Grey 300</td>\n    <td>#DBDFE6</td>\n    <td>(219,223,230,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_6971654570.png\"></td>\n    <td>Grey 200</td>\n    <td>#E7E9EE</td>\n    <td>(231,233,238,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1f3ae391f1.png\"></td>\n    <td>Grey 100</td>\n    <td>#EDEFF3</td>\n    <td>(237,239,243,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_bde3e08d5b.png\"></td>\n    <td>Grey 50</td>\n    <td>#F9FAFB</td>\n    <td>(219,250,251,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
+                    "Text": "Our grey scale is used to define theming background colours, as well as some graphic elements such as dividers.\n\n<table>\n<thead>\n  <tr>\n    <th>Colour</th>\n    <th>Name</th>\n    <th>HEX</th>\n    <th>RGBA</th>\n    <th>Token</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_13_17ff8f006b.png\"></td>\n    <td>Grey 958</td>\n    <td>#0D0F13</td>\n    <td>(13,15,19,1)</td>\n    <td>$grey-958</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_12_568183c8ba.png\"></td>\n    <td>Grey 900</td>\n    <td>#1D2229</td>\n    <td>(29,34,41,1)</td>\n    <td>$grey-900</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_11_996b76ab6f.png\"></td>\n    <td>Grey 868</td>\n    <td>#242A33</td>\n    <td>(36,42,51,1)</td>\n    <td>$grey-868</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_10_4f6d3bc441.png\"></td>\n    <td>Grey 846</td>\n    <td>#2B323D</td>\n    <td>(43,50,61,1)</td>\n    <td>$grey-846</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_9_e6988b2d05.png\"></td>\n    <td>Grey 800</td>\n    <td>#37414F</td>\n    <td>(55,65,79,1)</td>\n    <td>$grey-800</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_8_6341c89387.png\"></td>\n    <td>Grey 700</td>\n    <td>#56657A</td>\n    <td>(86,101,122,1)</td>\n    <td>$grey-700</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_67ba4afcfd.png\"></td>\n    <td>Grey 600</td>\n    <td>#868FA2</td>\n    <td>(134,143,162,1)</td>\n    <td>$grey-600</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_9f977a2b95.png\"></td>\n    <td>Grey 500</td>\n    <td>#B0B7C4</td>\n    <td>(176,183,196,1)</td>\n    <td>$grey-500</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_48b248849c.png\"></td>\n    <td>Grey 400</td>\n    <td>#CDD1DB</td>\n    <td>(205,209,219,1)</td>\n    <td>$grey-400</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_ac3392686d.png\"></td>\n    <td>Grey 300</td>\n    <td>#DBDFE6</td>\n    <td>(219,223,230,1)</td>\n    <td>$grey-300</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_1_6971654570.png\"></td>\n    <td>Grey 200</td>\n    <td>#E7E9EE</td>\n    <td>(231,233,238,1)</td>\n    <td>$grey-200</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_2_1f3ae391f1.png\"></td>\n    <td>Grey 100</td>\n    <td>#EDEFF3</td>\n    <td>(237,239,243,1)</td>\n    <td>$grey-100</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://dw1u92ia6bs84.cloudfront.net/Images/Color_3_bde3e08d5b.png\"></td>\n    <td>Grey 50</td>\n    <td>#F9FAFB</td>\n    <td>(219,250,251,1)</td>\n    <td>$grey-50</td>\n  </tr>\n</tbody>\n</table>\n\n",
                     "LeadText": null
                   },
                   {
@@ -3250,7 +3250,7 @@
                     "LeadText": null
                   }
                 ],
-                "updated_at": "2021-07-13T13:06:24.148Z"
+                "updated_at": "2021-07-15T13:50:12.329Z"
               }
             }
           ]
@@ -13354,6 +13354,13 @@
           "thumbnail": null
         },
         {
+          "id": "189",
+          "url": "footer",
+          "displayLink": "Footer",
+          "title": "Footer",
+          "thumbnail": null
+        },
+        {
           "id": "111",
           "url": "Links",
           "displayLink": null,
@@ -13375,6 +13382,13 @@
           "thumbnail": null
         },
         {
+          "id": "180",
+          "url": "sidemenu",
+          "displayLink": null,
+          "title": "Side menu",
+          "thumbnail": null
+        },
+        {
           "id": "179",
           "url": "Modals",
           "displayLink": null,
@@ -13393,13 +13407,6 @@
           "url": "Tooltips",
           "displayLink": null,
           "title": "Tooltips",
-          "thumbnail": null
-        },
-        {
-          "id": "180",
-          "url": "sidemenu",
-          "displayLink": null,
-          "title": "Side menu",
           "thumbnail": null
         },
         {
@@ -13456,13 +13463,6 @@
           "url": "textfields",
           "displayLink": null,
           "title": "Text fields",
-          "thumbnail": null
-        },
-        {
-          "id": "189",
-          "url": "footer",
-          "displayLink": "Footer",
-          "title": "Footer",
           "thumbnail": null
         },
         {
@@ -23202,6 +23202,413 @@
       "submenus": []
     },
     {
+      "id": "104",
+      "url": "icons",
+      "displayLink": "Icons",
+      "title": "Icons",
+      "thumbnail": null,
+      "showTabs": true,
+      "pageStructure": [
+        {
+          "__typename": "ComponentPagePluginTab",
+          "id": "191",
+          "title": "Information",
+          "active": true,
+          "pageContent": [
+            {
+              "content": {
+                "id": "340",
+                "title": "Foundations Icons Information",
+                "section": [
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2516",
+                    "Title": null,
+                    "Text": null,
+                    "LeadText": {
+                      "textfield": "Iconography allows for communication that goes beyond words and language. Our icons serve to guide our users in our digital experiences making information and navigation easy to understand and interact with.",
+                      "Introduction": true,
+                      "id": "401"
+                    }
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2517",
+                    "Title": "Usage",
+                    "Text": "Icons are used within Scania digital environments to simplify and enrich the user experience. They support the various interactive components, from the navigation to clickable elements, by being universal and coherent communicative assets. They assist the textual content as comprehensive backing visual cues.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2862",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_73_165b6d57c9.png"
+                        }
+                      ]
+                    },
+                    "id": "405"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2518",
+                    "Title": "Sizes",
+                    "Text": "Our icons are designed in four grid sizes: 32x32 px, 24x24 px, 20x20px and 16x16 px. In order to keep an optical alignment between the different icon sizes, the stroke width is adjusted for each of them. You can find in the table below the grid sizes and their corresponding stroke widths.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2863",
+                      "label": null,
+                      "caption": "Icons are diplayed in small sizes, from 32px and less.",
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_8fab5b8f92.png"
+                        }
+                      ]
+                    },
+                    "id": "406"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2530",
+                    "Title": null,
+                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon size (px)</th>\n    <th>Stroke width</th>\n    <th>-</th>\n    <th>-</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>32x32</td>\n    <td>2px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_17_41c4f47208.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_13_f47dcace40.png'/></td>\n  </tr>\n  <tr>\n    <td>24x24</td>\n    <td>1,75px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_16_55ff28bc51.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_12_20d8061372.png'/></td>\n  </tr>\n  <tr>\n    <td>20x20</td>\n    <td>1,5px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_15_536897b204.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_10_053dcd24b1.png'/></td>\n  </tr>\n  <tr>\n    <td>16x16</td>\n    <td>1px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_14_32318e8c3c.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_11_89cd54c287.png'/></td>\n  </tr>\n</tbody>\n</table>",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2519",
+                    "Title": "Level of detail",
+                    "Text": "Our icons should visually be as simple and clear as possible to communicate the function it represents efficiently. Conform to established industry standards if possible when designing icons for our icon library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2864",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_2_75a587d832.png"
+                        }
+                      ]
+                    },
+                    "id": "407"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2520",
+                    "Title": "Styling",
+                    "Text": "All icon paths should have rounded corners.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginFullWidthImage",
+                    "title": null,
+                    "caption": null,
+                    "Image": {
+                      "id": "2865",
+                      "label": null,
+                      "caption": null,
+                      "size": "Large",
+                      "negative": null,
+                      "alternate": null,
+                      "image": [
+                        {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_1_1dae66efba.png"
+                        }
+                      ]
+                    },
+                    "id": "408"
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2521",
+                    "Title": "Guidelines",
+                    "Text": "Icons are build based on a grid divided in 2px units. Four keyshapes deriving from the Scania logo structure can be used as guides to create a consistent UI Icon Kit.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1157",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2866",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6a89670e19.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2867",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_32eed1739e.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2868",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_5324b37619.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2869",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_97f167eb8a.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2522",
+                    "Title": null,
+                    "Text": "In addition to these keyshapes, angles can also be used as guides to design icons angles.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1158",
+                    "Title": null,
+                    "Images": [
+                      {
+                        "id": "2870",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_8d75dabdce.png"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2871",
+                        "label": null,
+                        "caption": null,
+                        "size": "Large",
+                        "negative": null,
+                        "alternate": null,
+                        "image": [
+                          {
+                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_adad630be0.png"
+                          }
+                        ]
+                      }
+                    ],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2523",
+                    "Title": "Clearspace",
+                    "Text": "Icons respect a clearspace of 2px around on 32x32 px grid, and 1px around for smaller grid sizes.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2524",
+                    "Title": "Do’s and Don’ts",
+                    "Text": "Below you will find some best practice solutions for icons.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2525",
+                    "Title": null,
+                    "Text": "##### Functional purpose\nIcons must only be used for funcitonal purpose in small sizes for digital interfaces. For bigger sizes and illustrative purpose, use pictograms.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1159",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_e23b8053f7.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use icons as functional interactive UI element",
+                        "id": "299"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dont_a58cdf71a4.png"
+                        },
+                        "size": "Medium",
+                        "description": "Use icons as a substitute for pictograms, that is not their purpose",
+                        "id": "300"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2526",
+                    "Title": "",
+                    "Text": "##### Simplicity\nIcons are displayed in small sizes, therefore their design should be kept as simple as possible. Avoid adding unnecessary details.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1160",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [],
+                    "dosAndDonts": [
+                      {
+                        "type": "Do",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_6f90d00b65.png"
+                        },
+                        "size": "Medium",
+                        "description": "Keep icon design simple",
+                        "id": "301"
+                      },
+                      {
+                        "type": "Dont",
+                        "image": {
+                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_abe3df1b13.png"
+                        },
+                        "size": "Medium",
+                        "description": "Create complex visuals",
+                        "id": "302"
+                      }
+                    ]
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2527",
+                    "Title": "Resources",
+                    "Text": "You can download all our icons below. If you are looking for a specific one, please browse our Icon Library.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1161",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "304",
+                        "title": "Icon Library",
+                        "description": "Figma",
+                        "info": "245 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.3/figma/icons/sdds_icon_kit.fig"
+                      },
+                      {
+                        "id": "305",
+                        "title": "Icon grids",
+                        "description": "Illustrator",
+                        "info": "196 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icons_grid_system_template_rgb.ai.zip"
+                      },
+                      {
+                        "id": "306",
+                        "title": "Icon grids",
+                        "description": "Figma",
+                        "info": "170 kb",
+                        "image": null,
+                        "detail": null,
+                        "type": "download",
+                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icon_grid_template.fig"
+                      }
+                    ],
+                    "dosAndDonts": []
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2529",
+                    "Title": "Contributing",
+                    "Text": "Scania Digital Design System is an active organism, constantly evolving and adopting to meet the demands of our users. Therefore we strongly encourage and welcome contributions from the whole organisation. Together, we can update and make SDDS a better design system.\n\nWhen final artwork is produced please make sure to outline the vector paths and combine the shapes.",
+                    "LeadText": null
+                  }
+                ],
+                "updated_at": "2021-07-01T06:19:40.008Z"
+              }
+            }
+          ]
+        }
+      ],
+      "parent": {
+        "id": "17",
+        "url": "foundations",
+        "displayLink": null,
+        "title": "Foundations",
+        "thumbnail": null
+      },
+      "submenus": []
+    },
+    {
       "id": "189",
       "url": "footer",
       "displayLink": "Footer",
@@ -23895,22 +24302,100 @@
           "pageContent": [
             {
               "content": {
-                "id": "202",
-                "title": "Coming Q2",
+                "id": "346",
+                "title": "Components Footer Code",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
+                    "id": "2591",
+                    "Title": "Introduction",
+                    "Text": "Documentation and template for Scania footer. Footer consists of bottom part and main part. Combine footer, side menu, and header with the help of SDDS content helper classes.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2592",
+                    "Title": "Basic structure",
+                    "Text": "Wrap footer inside SDDS container or container fluid. Use class \"sdds\" in the body or html or root, and use \"sdds-content\" in the main \"container-fluid\" to apply styling for sticky footer. This class will also remove the padding so the footer can fully cover the width of the screen. Checkout the full page example in [Storybook (Patterns Fullpage) ](https://sdds-storybook.netlify.app/) or [HTML demo](https://github.com/scania-digital-design-system/sdds/tree/master/demo/HTML).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "888",
+                    "title": null,
+                    "code": "<html class=\"sdds\">\n....\n<div class=\"sdds-container-fluid sdds-content\">\n      <div class=\"sdds-row\">\n        ....... column and content .........\n      </div>\n\n     <div class=\"sdds-footer sdds-col-max-12\">\n        <div class=\"sdds-footer-top sdds-container-fluid\">\n          <div class=\"sdds-row\">\n          ....... top part links, use sdds column to divide columns .....\n          </div>\n       </div>\n       <div class=\"sdds-footer-main\">\n          <ul class=\"sdds-footer-main-links\">\n          .... bottom part links .....\n          </ul>\n      </div>\n    </div>\n\n</div>\n....\n</html>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2593",
+                    "Title": "Bottom part",
+                    "Text": "This part is mandatory and the class is called \"sdds-footer-main\".",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "889",
+                    "title": null,
+                    "code": "<div class=\"sdds-footer\">\n   <div class=\"sdds-footer-main\">\n      <ul class=\"sdds-footer-main-links\">\n        <li><a href=\"#\">Legal link</a></li>\n        <li><a href=\"#\">Legal link</a></li>\n        <li><a href=\"#\">Legal link</a></li>\n      </ul>\n      <ul class=\"sdds-footer-social-links\">\n        <li><a href=\"#\">Social 1</a></li>\n        <li><a href=\"#\">Social 1</a></li>\n        <li><a href=\"#\">Social 1</a></li>\n      </ul>\n      <div class=\"sdds-footer-main-brand\">\n        <p>Copyright &copy; 2021 Scania</p>\n      </div>\n    </div>\n  </div>  ",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2594",
+                    "Title": "Top part",
+                    "Text": "This part is optional, and added above the main bottom part. On mobile, the top part links become a dropdown, and the default behavior of the dropdown is closed. To open it, add class \"opened\" to both \"sdds-footer-title opened\" and \"sdds-footer-main-links opened\".",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "890",
+                    "title": null,
+                    "code": "<div class=\"sdds-footer sdds-col-max-12\">\n        <div class=\"sdds-footer-top sdds-container-fluid\">\n          <div class=\"sdds-row\">\n            <div class=\"sdds-footer-top-col sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12\">\n              <div class=\"sdds-footer-title opened\">\n                <span>Title 1</span>\n                <span class=\"sdds-footer-top-icon\">\n                  <svg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'>\n                    <path d='M1 1L6 6L11 1' stroke='currentColor' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' />\n                  </svg>\n                </span>\n              </div>\n              <ul class=\"sdds-footer-main-links opened\">\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n              </ul>\n            </div>\n\n            <div class=\"sdds-col-max sdds-col-xxlg sdds-col-xlg sdds-col-lg sdds-col-md-12 sdds-col-sm-12 sdds-col-xs-12\">\n              <div class=\"sdds-footer-title\">\n                <span>Title 2</span>\n                <span class=\"sdds-footer-top-icon\">\n                  <svg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'>\n                    <path d='M1 1L6 6L11 1' stroke='currentColor' stroke-width='1.25' stroke-linecap='round' stroke-linejoin='round' />\n                  </svg>\n                </span>\n              </div>\n              <ul class=\"sdds-footer-main-links\">\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n                <li><a href=\"#\">Legal link</a></li>\n              </ul>\n            </div>\n          </div>\n        </div>\n        <div class=\"sdds-footer-main\">\n          <ul class=\"sdds-footer-main-links\">\n            <li><a href=\"#\">Legal link</a></li>\n            <li><a href=\"#\">Legal link</a></li>\n            <li><a href=\"#\">Legal link</a></li>\n          </ul>\n          <ul class=\"sdds-footer-social-links\">\n            <li><a href=\"#\">Social 1</a></li>\n            <li><a href=\"#\">Social 1</a></li>\n            <li><a href=\"#\">Social 1</a></li>\n          </ul>\n          <div class=\"sdds-footer-main-brand\">\n            <p>Copyright &copy; 2021 Scania</p>\n          </div>\n        </div>\n      </div>",
+                    "componentTag": null,
+                    "preview": true
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2595",
+                    "Title": "Live example",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1188",
                     "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "310",
+                        "title": "Storybook full page",
+                        "description": null,
+                        "info": null,
+                        "image": null,
+                        "detail": "Check out in Patterns > Full page.",
+                        "type": "linkExternal",
+                        "url": "https://sdds-storybook.netlify.app/"
+                      },
+                      {
+                        "id": "311",
+                        "title": "HTML Demo",
+                        "description": null,
+                        "info": null,
+                        "image": null,
+                        "detail": "Clone repo and run the project locally or check out the HTML in the file side-menu.html",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo/HTML"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
+                "updated_at": "2021-07-16T11:44:05.097Z"
               }
             }
           ]
@@ -23921,413 +24406,6 @@
         "url": "components",
         "displayLink": null,
         "title": "Components",
-        "thumbnail": null
-      },
-      "submenus": []
-    },
-    {
-      "id": "104",
-      "url": "icons",
-      "displayLink": "Icons",
-      "title": "Icons",
-      "thumbnail": null,
-      "showTabs": true,
-      "pageStructure": [
-        {
-          "__typename": "ComponentPagePluginTab",
-          "id": "191",
-          "title": "Information",
-          "active": true,
-          "pageContent": [
-            {
-              "content": {
-                "id": "340",
-                "title": "Foundations Icons Information",
-                "section": [
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2516",
-                    "Title": null,
-                    "Text": null,
-                    "LeadText": {
-                      "textfield": "Iconography allows for communication that goes beyond words and language. Our icons serve to guide our users in our digital experiences making information and navigation easy to understand and interact with.",
-                      "Introduction": true,
-                      "id": "401"
-                    }
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2517",
-                    "Title": "Usage",
-                    "Text": "Icons are used within Scania digital environments to simplify and enrich the user experience. They support the various interactive components, from the navigation to clickable elements, by being universal and coherent communicative assets. They assist the textual content as comprehensive backing visual cues.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2862",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Group_73_165b6d57c9.png"
-                        }
-                      ]
-                    },
-                    "id": "405"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2518",
-                    "Title": "Sizes",
-                    "Text": "Our icons are designed in four grid sizes: 32x32 px, 24x24 px, 20x20px and 16x16 px. In order to keep an optical alignment between the different icon sizes, the stroke width is adjusted for each of them. You can find in the table below the grid sizes and their corresponding stroke widths.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2863",
-                      "label": null,
-                      "caption": "Icons are diplayed in small sizes, from 32px and less.",
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6_8fab5b8f92.png"
-                        }
-                      ]
-                    },
-                    "id": "406"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2530",
-                    "Title": null,
-                    "Text": "<table>\n<thead>\n  <tr>\n    <th>Icon size (px)</th>\n    <th>Stroke width</th>\n    <th>-</th>\n    <th>-</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>32x32</td>\n    <td>2px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_17_41c4f47208.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_13_f47dcace40.png'/></td>\n  </tr>\n  <tr>\n    <td>24x24</td>\n    <td>1,75px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_16_55ff28bc51.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_12_20d8061372.png'/></td>\n  </tr>\n  <tr>\n    <td>20x20</td>\n    <td>1,5px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_15_536897b204.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_10_053dcd24b1.png'/></td>\n  </tr>\n  <tr>\n    <td>16x16</td>\n    <td>1px</td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_14_32318e8c3c.png'/></td>\n    <td><img src='https://dw1u92ia6bs84.cloudfront.net/Images/Frame_11_89cd54c287.png'/></td>\n  </tr>\n</tbody>\n</table>",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2519",
-                    "Title": "Level of detail",
-                    "Text": "Our icons should visually be as simple and clear as possible to communicate the function it represents efficiently. Conform to established industry standards if possible when designing icons for our icon library.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2864",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_2_75a587d832.png"
-                        }
-                      ]
-                    },
-                    "id": "407"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2520",
-                    "Title": "Styling",
-                    "Text": "All icon paths should have rounded corners.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginFullWidthImage",
-                    "title": null,
-                    "caption": null,
-                    "Image": {
-                      "id": "2865",
-                      "label": null,
-                      "caption": null,
-                      "size": "Large",
-                      "negative": null,
-                      "alternate": null,
-                      "image": [
-                        {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/img_icons_1_1dae66efba.png"
-                        }
-                      ]
-                    },
-                    "id": "408"
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2521",
-                    "Title": "Guidelines",
-                    "Text": "Icons are build based on a grid divided in 2px units. Four keyshapes deriving from the Scania logo structure can be used as guides to create a consistent UI Icon Kit.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1157",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2866",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_6a89670e19.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2867",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_1_32eed1739e.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2868",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_2_5324b37619.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2869",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_3_97f167eb8a.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2522",
-                    "Title": null,
-                    "Text": "In addition to these keyshapes, angles can also be used as guides to design icons angles.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1158",
-                    "Title": null,
-                    "Images": [
-                      {
-                        "id": "2870",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_4_8d75dabdce.png"
-                          }
-                        ]
-                      },
-                      {
-                        "id": "2871",
-                        "label": null,
-                        "caption": null,
-                        "size": "Large",
-                        "negative": null,
-                        "alternate": null,
-                        "image": [
-                          {
-                            "url": "https://dw1u92ia6bs84.cloudfront.net/Images/Image_5_adad630be0.png"
-                          }
-                        ]
-                      }
-                    ],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2523",
-                    "Title": "Clearspace",
-                    "Text": "Icons respect a clearspace of 2px around on 32x32 px grid, and 1px around for smaller grid sizes.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2524",
-                    "Title": "Do’s and Don’ts",
-                    "Text": "Below you will find some best practice solutions for icons.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2525",
-                    "Title": null,
-                    "Text": "##### Functional purpose\nIcons must only be used for funcitonal purpose in small sizes for digital interfaces. For bigger sizes and illustrative purpose, use pictograms.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1159",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/1_e23b8053f7.png"
-                        },
-                        "size": "Medium",
-                        "description": "Use icons as functional interactive UI element",
-                        "id": "299"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/dont_a58cdf71a4.png"
-                        },
-                        "size": "Medium",
-                        "description": "Use icons as a substitute for pictograms, that is not their purpose",
-                        "id": "300"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2526",
-                    "Title": "",
-                    "Text": "##### Simplicity\nIcons are displayed in small sizes, therefore their design should be kept as simple as possible. Avoid adding unnecessary details.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1160",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [],
-                    "dosAndDonts": [
-                      {
-                        "type": "Do",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/3_6f90d00b65.png"
-                        },
-                        "size": "Medium",
-                        "description": "Keep icon design simple",
-                        "id": "301"
-                      },
-                      {
-                        "type": "Dont",
-                        "image": {
-                          "url": "https://dw1u92ia6bs84.cloudfront.net/Images/4_abe3df1b13.png"
-                        },
-                        "size": "Medium",
-                        "description": "Create complex visuals",
-                        "id": "302"
-                      }
-                    ]
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2527",
-                    "Title": "Resources",
-                    "Text": "You can download all our icons below. If you are looking for a specific one, please browse our Icon Library.",
-                    "LeadText": null
-                  },
-                  {
-                    "__typename": "ComponentContentPluginTwoColumnsImages",
-                    "id": "1161",
-                    "Title": null,
-                    "Images": [],
-                    "texts": [],
-                    "linkCards": [
-                      {
-                        "id": "304",
-                        "title": "Icon Library",
-                        "description": "Figma",
-                        "info": "245 kb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.3/figma/icons/sdds_icon_kit.fig"
-                      },
-                      {
-                        "id": "305",
-                        "title": "Icon grids",
-                        "description": "Illustrator",
-                        "info": "196 kb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icons_grid_system_template_rgb.ai.zip"
-                      },
-                      {
-                        "id": "306",
-                        "title": "Icon grids",
-                        "description": "Figma",
-                        "info": "170 kb",
-                        "image": null,
-                        "detail": null,
-                        "type": "download",
-                        "url": "https://cdn.digitaldesign.scania.com/design/1.1.2/figma/icons/sdds_icon_grid_template.fig"
-                      }
-                    ],
-                    "dosAndDonts": []
-                  },
-                  {
-                    "__typename": "ComponentContentPluginOneColumn",
-                    "id": "2529",
-                    "Title": "Contributing",
-                    "Text": "Scania Digital Design System is an active organism, constantly evolving and adopting to meet the demands of our users. Therefore we strongly encourage and welcome contributions from the whole organisation. Together, we can update and make SDDS a better design system.\n\nWhen final artwork is produced please make sure to outline the vector paths and combine the shapes.",
-                    "LeadText": null
-                  }
-                ],
-                "updated_at": "2021-07-01T06:19:40.008Z"
-              }
-            }
-          ]
-        }
-      ],
-      "parent": {
-        "id": "17",
-        "url": "foundations",
-        "displayLink": null,
-        "title": "Foundations",
         "thumbnail": null
       },
       "submenus": []
@@ -25232,22 +25310,145 @@
           "pageContent": [
             {
               "content": {
-                "id": "202",
-                "title": "Coming Q2",
+                "id": "345",
+                "title": "Components Side Menu Code",
                 "section": [
                   {
                     "__typename": "ComponentContentPluginOneColumn",
-                    "id": "696",
+                    "id": "2580",
+                    "Title": "Introduction",
+                    "Text": "Documentation and template for Scania side menu with responsive feature. See Usage tab for more information on the design requirements.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2581",
+                    "Title": "Side menu basic structure",
+                    "Text": "To make a full height side-menu you can use the grid push feature. [Read more about the grid](/foundations/unit-grid-system/code). You also need to add '.sdds' class to the root of your application layout. (For example in html, body, or app-root). You also need to add overlay for mobile view. See a working example in the link at the end of the page.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "882",
+                    "title": "Helpers for full height side menu and content",
+                    "code": "<html lang=\"en-GB\" class=\"sdds\">\n.....\n</html>\n\n",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2585",
                     "Title": null,
-                    "Text": "",
-                    "LeadText": {
-                      "textfield": "This section is currently under construction and is planned to be done in Q2 2021.",
-                      "Introduction": true,
-                      "id": "183"
-                    }
+                    "Text": "And then, you can use Scania grid push feature to arrange the layout. Add 'sdds-navbar-side-menu' inside 'sdds-sidebar'. To open the side menu in mobile view, add 'expanded' class to 'sdds-sidebar', 'sdds-navbar-overlay',  and 'sdds-navbar-side-menu'. You can add a collapse button that stays at the bottom of the side menu with classes 'sdds-navbar-menu-item sdds-navbar-menu-item-bottom sdds-navbar-menu-hide-on-mobile'. (See code snippet below).",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "883",
+                    "title": "Main structure",
+                    "code": "<div class=\"sdds-navbar-overlay expanded\"></div>\n\n<!-- If you have header, add it before sdds-push -->\n<nav class=\"sdds-navbar\">\n    <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer expanded\">\n      <span class=\"sdds-icon-drawer\"></span>\n    </button>\n    <div class=\"sdds-navbar-application-brand\">Application</div>\n\n    <div class=\"sdds-navbar-scania-brand\"></div>\n  </nav>\n\n<div class=\"sdds-push sdds-demo-container\">\n  <div class=\"sdds-sidebar expanded\">\n    <div class=\"sdds-navbar-side-menu expanded\">\n      <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item\">\n          ....\n        </li>\n        <li class=\"sdds-navbar-menu-item-dropdown\">\n          ....\n        </li>\n      </ul>\n      <div class=\"sdds-navbar-menu-item sdds-navbar-menu-item-bottom sdds-navbar-menu-hide-on-mobile\">\n        <span class=\"sdds-navbar-icon-button\">\n          <!-- ....put icon here... -->\n        </span>\n        <a id=\"collapse-btn\" class=\"sdds-navbar-menu-item-link\" href=\"#\"> \n        Collapse\n        </a>\n      </div>\n    </div>\n    <div id=\"popover\" class=\"sdds-navbar-menu-popover\" style=\"display:none;position:fixed;\"></div>\n  </div>\n\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col\">...Content ....</div>\n    </div>\n  </div>\n\n</div>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2582",
+                    "Title": "Side menu links",
+                    "Text": "![Components_SideMenu_Code_02.jpg](https://dw1u92ia6bs84.cloudfront.net/Images/Components_Side_Menu_Code_02_cc91bf6805.jpg)\n\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "884",
+                    "title": null,
+                    "code": " <ul class=\"sdds-navbar-menu-list\">\n      <li class=\"sdds-navbar-menu-item active\">\n        <span class=\"sdds-navbar-icon-button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#e2e2e4\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"20\" height=\"20\"/> </svg></span>  \n        <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> \n        Item 1 \n        </a>\n      </li>\n      <li class=\"sdds-navbar-menu-item\">\n        <span class=\"sdds-navbar-icon-button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#e2e2e4\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"20\" height=\"20\"/> </svg></span>\n        <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> \n        Item 2\n        </a>\n      </li>\n </ul>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2583",
+                    "Title": "Side menu dropdowns",
+                    "Text": "![Components_SideMenu_Code_dropdown.jpg](https://dw1u92ia6bs84.cloudfront.net/Images/Components_Side_Menu_Code_dropdown_96229604b6.jpg)\n",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "885",
+                    "title": null,
+                    "code": " <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item-dropdown sdds-navbar-menu-hover\">\n            <div class=\"sdds-navbar-menu-item-dropdown-parent\">\n              <span class=\"sdds-navbar-icon-button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"#e2e2e4\" xmlns=\"http://www.w3.org/2000/svg\"><rect y=\"0.334473\" width=\"20\" height=\"20\"/> </svg></span>\n              <a class=\"sdds-navbar-menu-item-link\" href=\"#\"> \n                <span class=\"sdds-menu-item-dropdown-text\">Item 3</span>\n                <span class=\"sdds-icon-arrow\"></span>\n              </a>\n            </div>\n            <ul class=\"sdds-navbar-menu__dropdown-menu\">\n              <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3-1 long label...</a></li>\n              <li class=\"sdds-navbar-menu__dropdown-item active\"><a href=\"#\">Sub item 3-2</a></li>\n              <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3-3</a></li>\n              <li class=\"sdds-navbar-menu__dropdown-item\"><a href=\"#\">Sub item 3-4 long label...</a></li>\n            </ul>\n          </li>\n </ul>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2584",
+                    "Title": "Popover on collapse",
+                    "Text": "You can use class '.sdds-navbar-menu-popover' to implement the styles for popover menu on collapse state. If you want to use collapse feature, each side menu links needs to have an icon. The popover should appear on menu hover. SDDS do not provide the script to handle the interaction, but we have a working example in simple HTML. Checkout the full page example in [Storybook (Patterns Fullpage) ](https://sdds-storybook.netlify.app/) or [HTML demo](https://github.com/scania-digital-design-system/sdds/tree/master/demo/HTML) or in the link at the end of the page. If you use plugin such as Popper.js, you can try to add this class to Popper container.",
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "886",
+                    "title": null,
+                    "code": "<div id=\"popover\" class=\"sdds-navbar-menu-popover\" style=\"display:none;position:fixed;\">\n<!-- Add dynamic menu here on menu hover -->\n</div>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2586",
+                    "Title": "Full page example",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginCodeExample",
+                    "id": "887",
+                    "title": null,
+                    "code": "<body class=\"sdds\">\n  <sdds-theme></sdds-theme>\n  <div class=\"sdds-navbar-overlay expanded\"></div>\n\n  <nav class=\"sdds-navbar\">\n    <button id=\"menu-mobile\" class=\"sdds-navbar-icon-button sdds-navbar-side-menu-drawer expanded\">\n      <span class=\"sdds-icon-drawer\"></span>\n    </button>\n    <div class=\"sdds-navbar-application-brand\">Application</div>\n\n    <div class=\"sdds-navbar-scania-brand\"></div>\n  </nav>\n\n<div class=\"sdds-push sdds-demo-container\">\n  <div class=\"sdds-sidebar sdds-expanded\">\n    <div class=\"sdds-navbar-side-menu expanded\">\n      <ul class=\"sdds-navbar-menu-list\">\n        <li class=\"sdds-navbar-menu-item\">\n          ....\n        </li>\n        <li class=\"sdds-navbar-menu-item-dropdown\">\n          ....\n        </li>\n      </ul>\n      <div class=\"sdds-navbar-menu-item sdds-navbar-menu-item-bottom sdds-navbar-menu-hide-on-mobile\">\n        <span class=\"sdds-navbar-icon-button\">\n          <!-- ....put icon here... -->\n        </span>\n        <a id=\"collapse-btn\" class=\"sdds-navbar-menu-item-link\" href=\"#\"> \n        Collapse\n        </a>\n      </div>\n    </div>\n    <div id=\"popover\" class=\"sdds-navbar-menu-popover\" style=\"display:none;position:fixed;\"></div>\n  </div>\n\n  <div class=\"sdds-container\">\n    <div class=\"sdds-row\">\n      <div class=\"sdds-col\">...Content ....</div>\n    </div>\n  </div>\n\n</div>\n\n</body>",
+                    "componentTag": null,
+                    "preview": false
+                  },
+                  {
+                    "__typename": "ComponentContentPluginOneColumn",
+                    "id": "2596",
+                    "Title": "Live Example",
+                    "Text": null,
+                    "LeadText": null
+                  },
+                  {
+                    "__typename": "ComponentContentPluginTwoColumnsImages",
+                    "id": "1189",
+                    "Title": null,
+                    "Images": [],
+                    "texts": [],
+                    "linkCards": [
+                      {
+                        "id": "312",
+                        "title": "Storybook full page",
+                        "description": null,
+                        "info": null,
+                        "image": null,
+                        "detail": "Check out the working example under Patterns > Fullpage, and Patterns > Side Menu",
+                        "type": "linkExternal",
+                        "url": "https://sdds-storybook.netlify.app/"
+                      },
+                      {
+                        "id": "313",
+                        "title": "HTML Demo",
+                        "description": null,
+                        "info": null,
+                        "image": null,
+                        "detail": "Clone the repo and run the project locally or check out the HTML code in the file side-menu.html",
+                        "type": "linkExternal",
+                        "url": "https://github.com/scania-digital-design-system/sdds/tree/master/demo/HTML"
+                      }
+                    ],
+                    "dosAndDonts": []
                   }
                 ],
-                "updated_at": "2021-03-22T17:07:50.023Z"
+                "updated_at": "2021-07-16T11:39:11.861Z"
               }
             }
           ]
